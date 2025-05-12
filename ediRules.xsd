@@ -33,7 +33,7 @@
             <xs:attribute name="functionalGroup" type="xs:string"/>
             <xs:attribute name="description" type="xs:string"/>
             <xs:attribute name="validatingMethod" type="xs:string"/>
-            <xs:attribute name="xmlTag" type="xs:string"/>
+            <xs:attribute name="shortName" type="xs:string"/>
         </xs:complexType>
     </xs:element>
 
@@ -103,7 +103,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="xmlTag" type="xs:string"/>
+            <xs:attribute name="shortName" type="xs:string"/>
         </xs:complexType>
     </xs:element>
 
@@ -150,7 +150,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="xmlTag" type="xs:string"/>
+            <xs:attribute name="shortName" type="xs:string"/>
         </xs:complexType>
     </xs:element>
 
@@ -182,7 +182,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="xmlTag" type="xs:string"/>
+            <xs:attribute name="shortName" type="xs:string"/>
         </xs:complexType>
     </xs:element>
 
@@ -238,7 +238,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="xmlTag" type="xs:string"/>
+            <xs:attribute name="shortName" type="xs:string"/>
         </xs:complexType>
     </xs:element>
 
