@@ -4,7 +4,7 @@ The previous version of this code used the package name americancoders.com.  Som
 
 - Joe McVerry usacoder@gmail.   2025-05-13
 
-##oboe.properties file
+## oboe.properties file
 
 Use the oboe.properties file to provide direction for the program.  
 
@@ -24,7 +24,7 @@ Use the oboe.properties file to provide direction for the program.
 
 -validCharacterSet - this was written for EDIFACT and TRADACOMS.
 
-##Helpful Programs.
+## Helpful Programs.
 
 There is a GUI program that uses a stand-alone program that you can use to build programs to parse and create Java programs.
 
@@ -32,7 +32,7 @@ There is a GUI program that uses a stand-alone program that you can use to build
 - The stand-alone program is Util.OBOECodeGenerator
 
 
-##XML Files.
+## XML Files.
 
 When I started writing the OBOE package, 25+ years ago, XML was coming into its own.  
 I defined the EDI message in XML format and wrote code for the package to read and write EDI messages in XML format. EDI in XML format never took off. But these file types became useful for mock testing, so I have left that code in place. You may find using these file formats practical.
