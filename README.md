@@ -32,7 +32,7 @@ The well-formed XML parser uses this property.  For when an incoming document ha
 
 ## Helpful Programs.
 
-There is a GUI program that uses a stand-alone program that you can use to build programs to parse and create Java programs.
+There is a GUI program that uses a stand-alone program that you can use to build programs to parse and create Java programs.   Currently being rewritten.
 
 - The GUI is Util.RulesAndCodeBuilder
 - The stand-alone program is Util.OBOECodeGenerator
