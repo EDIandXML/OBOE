@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<envelope
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+	type="Tradacoms">
+	<segment id="STX" name="Start Transmission" sequence="0"
+		description="Start of Transmission" occurs="1" required="M"
+		shortName="StartTransmission">
+		<compositeDE id="STDS" name="Syntax Identifier" sequence="1"
+			description="Syntax Identifier" required="M"
+			shortName="SyntaxIdentifier">
+			<dataElement id="STDS1" name="Syntax identifier" type="AN"
+				sequence="1" description="Syntax identifier" required="M"
+				minLength="1" maxLength="4" shortName="Syntaxidentifier" />
+			<dataElement id="STDS2" name="Syntax version number" type="N0"
+				sequence="2" description="Syntax version number" required="M"
+				minLength="1" maxLength="1" shortName="Syntaxversionnumber" />
+		</compositeDE>
+		<compositeDE id="FROM" name="Interchange Sender" sequence="2"
+			description="Interchange Sender" required="M"
+			shortName="InterchangeSender">
+			<dataElement id="FROM1" name="Sender Code" type="AN" sequence="1"
+				description="Code" required="C" minLength="1" maxLength="14"
+				shortName="Name" />
+			<dataElement id="FROM2" name="Sender Name" type="AN" sequence="2"
+				description="Name" required="C" minLength="1" maxLength="35"
+				shortName="Code" />
+		</compositeDE>
+		<compositeDE id="UNTO" name="Interchange Recipient" sequence="3"
+			description="Interchange Recipient" required="M"
+			shortName="InterchangeRecipient">
+			<dataElement id="UNTO1" name="Recipient Code" type="AN" sequence="1"
+				description="Code" required="C" minLength="1" maxLength="14"
+				shortName="Name" />
+			<dataElement id="UNTO2" name="Recipient Name" type="AN" sequence="2"
+				description="Name" required="C" minLength="1" maxLength="35"
+				shortName="Code" />
+		</compositeDE>
+		<compositeDE id="TRDT" name="Date Time Of Preparation" sequence="4"
+			description="Date Time Of Preparation"
+			shortName="DateTimeOfPreparation">
+			<dataElement id="TRDT1" name="Date" type="DT" sequence="1"
+				description="Date" required="M" minLength="6" maxLength="6"
+				shortName="Date" />
+			<dataElement id="TRDT2" name="Time" type="TM" sequence="2"
+				description="Time" required="O" minLength="6" maxLength="6"
+				shortName="Time" />
+		</compositeDE>
+		<dataElement id="SNRF" name="Sender Reference" type="AN" sequence="5"
+			description="Sender Reference Number" required="M" minLength="1"
+			maxLength="14" shortName="SenderReference" />
+		<dataElement id="RCRF" name="Recipient Reference" type="AN" sequence="6"
+			description="Recipient Reference Number" required="C" minLength="1"
+			maxLength="14" shortName="RecipientReference" />
+		<dataElement id="APRF" name="Application Reference" type="AN"
+			sequence="7" description="Application Reference Number" required="C"
+			minLength="1" maxLength="14" shortName="ApplicationReference" />
+		<dataElement id="PRCD" name="Transmission Priority Code" type="AN"
+			sequence="8" description="Transmisstion Priority Code" required="C"
+			minLength="1" maxLength="1" shortName="TransmissionPriority">
+			<idList>
+				<idCode>A</idCode>
+				<idValue>Urgent</idValue>
+				<idCode>B</idCode>
+				<idValue>Normal</idValue>
+				<idCode>C</idCode>
+				<idValue>Low</idValue>
+			</idList>
+		</dataElement>
+	</segment>
+	<functionalGroup>
+		<segment id="BAT" name="Batch Header" sequence="0"
+			description="BatchHeader" occurs="1" required="M"
+			shortName="BatchHeader">
+			<dataElement id="SNRF" name="Sender Reference" type="AN"
+				sequence="1" description="Sender Reference Number" required="M"
+				minLength="1" maxLength="14" shortName="SenderReference" />
+		</segment>
+		<transactionSet />
+		<segment id="EOB" name="Batch Trailer" sequence="0"
+			description="Batch Trailer" occurs="1" required="M"
+			shortName="BatchTrailer">
+			<dataElement id="NMST" name="Number of messages" type="N0"
+				sequence="1" description="Number of messages" required="M"
+				minLength="1" maxLength="5" shortName="Numberofsegments" />
+		</segment>
+	</functionalGroup>
+	<segment id="END" name="End Transmission" sequence="0"
+		description="End of Transmission" occurs="1" required="M"
+		shortName="EndTransmission">
+		<dataElement id="NMST" name="Number of messages" type="N0" sequence="1"
+			description="Number of messages" required="M" minLength="1"
+			maxLength="5" shortName="Numberofsegments" />
+	</segment>
+</envelope>

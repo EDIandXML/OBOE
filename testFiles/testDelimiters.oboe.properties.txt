@@ -1,0 +1,22 @@
+/*tell the system where the rules files reside*/
+0xmlPath=d:/johnson/
+xmlPath=xml/
+1xmlPath=D:/OpenBusinessObjects/Current/XML/
+2xmlPath=d:/openbusinessobjects/release300/xml/
+useObject=true
+/*to parse an incoming EDI/XML file point it to its rules file */
+
+RequestForQuotation=840
+
+/*if parsing an EDI/XML file to an EDIFACT rules file */
+
+PurchaseOrderMessage=ORDERS
+TradacomsOrder=ordhdr
+RSGRSG=RSGRSG
+
+/* x12 delimiters: segment field group */
+
+x12Delimiters=|~:
+EDIFACTDelimiters=^&*
+TradacomsDelimiters=^&*
+

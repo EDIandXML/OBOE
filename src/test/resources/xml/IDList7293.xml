@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Construction industry</idValue>
+    <idCode>2</idCode>
+        <idValue>Governmental export conditions</idValue>
+    <idCode>3</idCode>
+        <idValue>Chemical industry</idValue>
+    <idCode>4</idCode>
+        <idValue>Electronic industry</idValue>
+    <idCode>5</idCode>
+        <idValue>Automotive industry</idValue>
+    <idCode>6</idCode>
+        <idValue>Steel industry</idValue>
+    <idCode>7</idCode>
+        <idValue>Factoring</idValue>
+    <idCode>8</idCode>
+        <idValue>Defence industry</idValue>
+    <idCode>9</idCode>
+        <idValue>Alcohol beverage industry</idValue>
+    <idCode>10</idCode>
+        <idValue>Police</idValue>
+    <idCode>11</idCode>
+        <idValue>Customs</idValue>
+    <idCode>12</idCode>
+        <idValue>Health regulation</idValue>
+    <idCode>13</idCode>
+        <idValue>Balance of payments</idValue>
+</idList>

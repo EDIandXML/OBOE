@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactionSet
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+  name="Invoice" id="4RepeatingNumericTest"  revision="004010"
+  functionalGroup="ZZ"
+  description="This Draft Standard for Trial Use contains the format and establishes the data contents of the Invoice Transaction Set (810) for use within the context of an Electronic Data Interchange (EDI) environment. The transaction set can be used to provide for customary and established business and industry practice relative to the billing for goods and services provided."
+  shortName="Invoice">
+    <table section="header">
+        <segment name="Transaction Set Header" id="ST"
+          description="To indicate the start of a transaction set and to assign a control number"
+          sequence="10"
+          occurs="1"
+          required='M'
+          shortName="TransactionSetHeader">
+            <dataElement name="Transaction Set Identifier Code" id="143"
+              sequence="1"
+              description="Code uniquely identifying a Transaction Set"
+              type="AN" required="M"
+              minLength="3" maxLength="21"
+              shortName="transactionSetIdentifierCode">
+             </dataElement>
+            <dataElement name="Transaction Set Control Number" id="329"
+              sequence="2"
+              description="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"
+              type="AN" required="M"
+              minLength="4" maxLength="9"
+              shortName="transactionSetControlNumber">
+             </dataElement>
+        </segment>
+        <segment name="Total Monetary Value Summary" id="TDS"
+          description="To specify the total invoice discounts and amounts"
+          sequence="10"
+          occurs="1"
+          required='M'
+          shortName="TotalMonetaryValueSummary">
+            <dataElement name="Amount" id="610"
+              sequence="1"
+              description="Monetary amount"
+              type="N2" required="M"
+              minLength="1" maxLength="15"
+              shortName="amount">
+             </dataElement>
+            <dataElement name="Amount" id="610"
+              sequence="2"
+              description="Monetary amount"
+              type="N2" required="O"
+              minLength="1" maxLength="15"
+              shortName="amount">
+             </dataElement>
+            <dataElement name="Amount" id="610"
+              sequence="3"
+              description="Monetary amount"
+              type="N2" required="O"
+              minLength="1" maxLength="15"
+              shortName="amount">
+             </dataElement>
+            <dataElement name="Amount" id="610"
+              sequence="4"
+              description="Monetary amount"
+              type="N2" required="O"
+              minLength="1" maxLength="15"
+              shortName="amount">
+             </dataElement>
+        </segment>
+        <segment name="Transaction Set Trailer" id="SE"
+          description="To indicate the end of the transaction set and provide the count of the transmitted segments (including the beginning (ST) and ending (SE) segments)"
+          sequence="80"
+          occurs="1"
+          required='M'
+          shortName="TransactionSetTrailer">
+            <dataElement name="Number of Included Segments" id="96"
+              sequence="1"
+              description="Total number of segments included in a transaction set including ST and SE segments"
+              type="N0" required="M"
+              minLength="1" maxLength="10"
+              shortName="numberOfIncludedSegments">
+             </dataElement>
+            <dataElement name="Transaction Set Control Number" id="329"
+              sequence="2"
+              description="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"
+              type="AN" required="M"
+              minLength="4" maxLength="9"
+              shortName="transactionSetControlNumber">
+             </dataElement>
+        </segment>
+    </table>
+</transactionSet>

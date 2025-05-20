@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Certificate of analysis</idValue>
+    <idCode>2</idCode>
+        <idValue>Certificate of conformity</idValue>
+    <idCode>3</idCode>
+        <idValue>Certificate of quality</idValue>
+    <idCode>4</idCode>
+        <idValue>Test report</idValue>
+    <idCode>5</idCode>
+        <idValue>Product performance report</idValue>
+    <idCode>6</idCode>
+        <idValue>Product specification report</idValue>
+    <idCode>7</idCode>
+        <idValue>Process data report</idValue>
+    <idCode>8</idCode>
+        <idValue>First sample test report</idValue>
+    <idCode>9</idCode>
+        <idValue>Price/sales catalogue</idValue>
+    <idCode>10</idCode>
+        <idValue>Party information</idValue>
+    <idCode>11</idCode>
+        <idValue>Federal label approval</idValue>
+    <idCode>12</idCode>
+        <idValue>Mill certificate</idValue>
+    <idCode>13</idCode>
+        <idValue>Post receipt</idValue>
+    <idCode>14</idCode>
+        <idValue>Weight certificate</idValue>
+    <idCode>15</idCode>
+        <idValue>Weight list</idValue>
+    <idCode>16</idCode>
+        <idValue>Certificate</idValue>
+    <idCode>17</idCode>
+        <idValue>Combined certificate of value and origin</idValue>
+    <idCode>18</idCode>
+        <idValue>Movement certificate A.TR.1</idValue>
+    <idCode>19</idCode>
+        <idValue>Certificate of quantity</idValue>
+    <idCode>20</idCode>
+        <idValue>Quality data message</idValue>
+    <idCode>21</idCode>
+        <idValue>Query</idValue>
+    <idCode>22</idCode>
+        <idValue>Response to query</idValue>
+    <idCode>23</idCode>
+        <idValue>Status information</idValue>
+    <idCode>24</idCode>
+        <idValue>Restow</idValue>
+    <idCode>25</idCode>
+        <idValue>Container discharger list</idValue>
+    <idCode>26</idCode>
+        <idValue>Corporate superannuation contributions advice</idValue>
+    <idCode>27</idCode>
+        <idValue>Industry superannuation contributions advice</idValue>
+    <idCode>28</idCode>
+        <idValue>Corporate superannuation member maintenance message</idValue>
+    <idCode>29</idCode>
+        <idValue>Industry superannuation member maintenance message</idValue>
+    <idCode>30</idCode>
+        <idValue>Life insurance payroll deductions advice</idValue>
+    <idCode>31</idCode>
+        <idValue>Underbond request</idValue>
+    <idCode>32</idCode>
+        <idValue>Underbond approval</idValue>
+    <idCode>33</idCode>
+        <idValue>Certificate of sealing of export meat lockers</idValue>
+    <idCode>34</idCode>
+        <idValue>Cargo status</idValue>
+    <idCode>35</idCode>
+        <idValue>Inventory report</idValue>
+    <idCode>36</idCode>
+        <idValue>Identity card</idValue>
+    <idCode>37</idCode>
+        <idValue>Response to a trade statistics message</idValue>
+    <idCode>38</idCode>
+        <idValue>Vaccination certificate</idValue>
+    <idCode>39</idCode>
+        <idValue>Passport</idValue>
+    <idCode>40</idCode>
+        <idValue>Driving licence (national)</idValue>
+    <idCode>41</idCode>
+        <idValue>Driving licence (international)</idValue>
+    <idCode>42</idCode>
+        <idValue>Free pass</idValue>
+    <idCode>43</idCode>
+        <idValue>Season ticket</idValue>
+    <idCode>44</idCode>
+        <idValue>Transport status report</idValue>
+    <idCode>45</idCode>
+        <idValue>Transport status request</idValue>
+    <idCode>47</idCode>
+        <idValue>Extra-Community trade statistical declaration</idValue>
+    <idCode>48</idCode>
+        <idValue>Written instructions in conformance with ADR article number 10385</idValue>
+    <idCode>49</idCode>
+        <idValue>Damage certification</idValue>
+    <idCode>51</idCode>
+        <idValue>Price/sales catalogue response</idValue>
+    <idCode>52</idCode>
+        <idValue>Price negotiation result</idValue>
+    <idCode>53</idCode>
+        <idValue>Safety and hazard data sheet</idValue>
+    <idCode>54</idCode>
+        <idValue>Legal statement of an account</idValue>
+    <idCode>55</idCode>
+        <idValue>Listing statement of an account</idValue>
+    <idCode>56</idCode>
+        <idValue>Closing statement of an account</idValue>
+    <idCode>57</idCode>
+        <idValue>Transport equipment on-hire report</idValue>
+    <idCode>58</idCode>
+        <idValue>Transport equipment off-hire report</idValue>
+    <idCode>59</idCode>
+        <idValue>Treatment - nil outturn</idValue>
+    <idCode>60</idCode>
+        <idValue>Treatment - time-up underbond</idValue>
+    <idCode>61</idCode>
+        <idValue>Treatment - underbond by sea</idValue>
+    <idCode>62</idCode>
+        <idValue>Treatment - personal effect</idValue>
+    <idCode>63</idCode>
+        <idValue>Treatment - timber</idValue>
+    <idCode>64</idCode>
+        <idValue>Preliminary credit assessment</idValue>
+    <idCode>65</idCode>
+        <idValue>Credit cover</idValue>
+    <idCode>66</idCode>
+        <idValue>Current account</idValue>
+    <idCode>67</idCode>
+        <idValue>Commercial dispute</idValue>
+    <idCode>68</idCode>
+        <idValue>Chargeback</idValue>
+    <idCode>69</idCode>
+        <idValue>Reassignment</idValue>
+    <idCode>70</idCode>
+        <idValue>Collateral account</idValue>
+    <idCode>71</idCode>
+        <idValue>Request for payment</idValue>
+    <idCode>72</idCode>
+        <idValue>Unship permit</idValue>
+    <idCode>73</idCode>
+        <idValue>Statistical definitions</idValue>
+    <idCode>74</idCode>
+        <idValue>Statistical data</idValue>
+    <idCode>75</idCode>
+        <idValue>Request for statistical data</idValue>
+    <idCode>76</idCode>
+        <idValue>Call-off delivery</idValue>
+    <idCode>77</idCode>
+        <idValue>Status report</idValue>
+    <idCode>78</idCode>
+        <idValue>Inventory movement advice</idValue>
+    <idCode>79</idCode>
+        <idValue>Inventory status advice</idValue>
+    <idCode>80</idCode>
+        <idValue>Debit note related to goods or services</idValue>
+    <idCode>81</idCode>
+        <idValue>Credit note related to goods or services</idValue>
+    <idCode>82</idCode>
+        <idValue>Metered services invoice</idValue>
+    <idCode>83</idCode>
+        <idValue>Credit note related to financial adjustments</idValue>
+    <idCode>84</idCode>
+        <idValue>Debit note related to financial adjustments</idValue>
+    <idCode>85</idCode>
+        <idValue>Customs manifest</idValue>
+    <idCode>86</idCode>
+        <idValue>Vessel unpack report</idValue>
+    <idCode>87</idCode>
+        <idValue>General cargo summary manifest report</idValue>
+    <idCode>88</idCode>
+        <idValue>Consignment unpack report</idValue>
+    <idCode>89</idCode>
+        <idValue>Meat and meat by-products sanitary certificate</idValue>
+    <idCode>90</idCode>
+        <idValue>Meat food products sanitary certificate</idValue>
+    <idCode>91</idCode>
+        <idValue>Poultry sanitary certificate</idValue>
+    <idCode>92</idCode>
+        <idValue>Horsemeat sanitary certificate</idValue>
+    <idCode>93</idCode>
+        <idValue>Casing sanitary certificate</idValue>
+    <idCode>94</idCode>
+        <idValue>Pharmaceutical sanitary certificate</idValue>
+    <idCode>95</idCode>
+        <idValue>Inedible sanitary certificate</idValue>
+    <idCode>96</idCode>
+        <idValue>Impending arrival</idValue>
+    <idCode>97</idCode>
+        <idValue>Means of transport advice</idValue>
+    <idCode>98</idCode>
+        <idValue>Arrival information</idValue>
+    <idCode>99</idCode>
+        <idValue>Cargo release notification</idValue>
+    <idCode>100</idCode>
+        <idValue>Excise certificate</idValue>
+    <idCode>101</idCode>
+        <idValue>Registration document</idValue>
+    <idCode>102</idCode>
+        <idValue>Tax notification</idValue>
+    <idCode>103</idCode>
+        <idValue>Transport equipment direct interchange report</idValue>
+    <idCode>104</idCode>
+        <idValue>Transport equipment impending arrival advice</idValue>
+    <idCode>105</idCode>
+        <idValue>Purchase order</idValue>
+    <idCode>106</idCode>
+        <idValue>Transport equipment damage report</idValue>
+    <idCode>107</idCode>
+        <idValue>Transport equipment maintenance and repair work estimate advice</idValue>
+    <idCode>108</idCode>
+        <idValue>Transport equipment empty release instruction</idValue>
+    <idCode>109</idCode>
+        <idValue>Transport movement gate in report</idValue>
+    <idCode>110</idCode>
+        <idValue>Manufacturing instructions</idValue>
+    <idCode>111</idCode>
+        <idValue>Transport movement gate out report</idValue>
+    <idCode>112</idCode>
+        <idValue>Transport equipment unpacking instruction</idValue>
+    <idCode>113</idCode>
+        <idValue>Transport equipment unpacking report</idValue>
+    <idCode>114</idCode>
+        <idValue>Transport equipment pick-up availability request</idValue>
+    <idCode>115</idCode>
+        <idValue>Transport equipment pick-up availability confirmation</idValue>
+    <idCode>116</idCode>
+        <idValue>Transport equipment pick-up report</idValue>
+    <idCode>117</idCode>
+        <idValue>Transport equipment shift report</idValue>
+    <idCode>118</idCode>
+        <idValue>Transport discharge instruction</idValue>
+    <idCode>119</idCode>
+        <idValue>Transport discharge report</idValue>
+    <idCode>120</idCode>
+        <idValue>Stores requisition</idValue>
+    <idCode>121</idCode>
+        <idValue>Transport loading instruction</idValue>
+    <idCode>122</idCode>
+        <idValue>Transport loading report</idValue>
+    <idCode>123</idCode>
+        <idValue>Transport equipment maintenance and repair work authorisation</idValue>
+    <idCode>124</idCode>
+        <idValue>Transport departure report</idValue>
+    <idCode>125</idCode>
+        <idValue>Transport empty equipment advice</idValue>
+    <idCode>126</idCode>
+        <idValue>Transport equipment acceptance order</idValue>
+    <idCode>127</idCode>
+        <idValue>Transport equipment special service instruction</idValue>
+    <idCode>128</idCode>
+        <idValue>Transport equipment stock report</idValue>
+    <idCode>129</idCode>
+        <idValue>Transport cargo release order</idValue>
+    <idCode>130</idCode>
+        <idValue>Invoicing data sheet</idValue>
+    <idCode>131</idCode>
+        <idValue>Transport equipment packing instruction</idValue>
+    <idCode>132</idCode>
+        <idValue>Customs clearance notice</idValue>
+    <idCode>133</idCode>
+        <idValue>Customs documents expiration notice</idValue>
+    <idCode>134</idCode>
+        <idValue>Transport equipment on-hire request</idValue>
+    <idCode>135</idCode>
+        <idValue>Transport equipment on-hire order</idValue>
+    <idCode>136</idCode>
+        <idValue>Transport equipment off-hire request</idValue>
+    <idCode>137</idCode>
+        <idValue>Transport equipment survey order</idValue>
+    <idCode>138</idCode>
+        <idValue>Transport equipment survey order response</idValue>
+    <idCode>139</idCode>
+        <idValue>Transport equipment survey report</idValue>
+    <idCode>140</idCode>
+        <idValue>Packing instructions</idValue>
+    <idCode>142</idCode>
+        <idValue>Transport equipment maintenance and repair work estimate order</idValue>
+    <idCode>143</idCode>
+        <idValue>Transport equipment maintenance and repair notice</idValue>
+    <idCode>144</idCode>
+        <idValue>Empty container disposition order</idValue>
+    <idCode>145</idCode>
+        <idValue>Cargo vessel discharge order</idValue>
+    <idCode>146</idCode>
+        <idValue>Cargo vessel loading order</idValue>
+    <idCode>147</idCode>
+        <idValue>Multidrop order</idValue>
+    <idCode>148</idCode>
+        <idValue>Bailment contract</idValue>
+    <idCode>149</idCode>
+        <idValue>Basic agreement</idValue>
+    <idCode>150</idCode>
+        <idValue>Internal transport order</idValue>
+    <idCode>151</idCode>
+        <idValue>Grant</idValue>
+    <idCode>152</idCode>
+        <idValue>Indefinite delivery indefinite quantity contract</idValue>
+    <idCode>153</idCode>
+        <idValue>Indefinite delivery definite quantity contract</idValue>
+    <idCode>154</idCode>
+        <idValue>Requirements contract</idValue>
+    <idCode>155</idCode>
+        <idValue>Task order</idValue>
+    <idCode>156</idCode>
+        <idValue>Make or buy plan</idValue>
+    <idCode>157</idCode>
+        <idValue>Subcontractor plan</idValue>
+    <idCode>158</idCode>
+        <idValue>Cost data summary</idValue>
+    <idCode>159</idCode>
+        <idValue>Certified cost and price data</idValue>
+    <idCode>160</idCode>
+        <idValue>Wage determination</idValue>
+    <idCode>161</idCode>
+        <idValue>Contract Funds Status Report (CFSR)</idValue>
+    <idCode>162</idCode>
+        <idValue>Certified inspection and test results</idValue>
+    <idCode>163</idCode>
+        <idValue>Material inspection and receiving report</idValue>
+    <idCode>164</idCode>
+        <idValue>Purchasing specification</idValue>
+    <idCode>165</idCode>
+        <idValue>Payment or performance bond</idValue>
+    <idCode>166</idCode>
+        <idValue>Contract security classification specification</idValue>
+    <idCode>167</idCode>
+        <idValue>Manufacturing specification</idValue>
+    <idCode>168</idCode>
+        <idValue>Buy America certificate of compliance</idValue>
+    <idCode>169</idCode>
+        <idValue>Container off-hire notice</idValue>
+    <idCode>170</idCode>
+        <idValue>Cargo acceptance order</idValue>
+    <idCode>171</idCode>
+        <idValue>Pick-up notice</idValue>
+    <idCode>172</idCode>
+        <idValue>Authorisation to plan and suggest orders</idValue>
+    <idCode>173</idCode>
+        <idValue>Authorisation to plan and ship orders</idValue>
+    <idCode>174</idCode>
+        <idValue>Drawing</idValue>
+    <idCode>175</idCode>
+        <idValue>Cost Performance Report (CPR) format 2</idValue>
+    <idCode>176</idCode>
+        <idValue>Cost Schedule Status Report (CSSR)</idValue>
+    <idCode>177</idCode>
+        <idValue>Cost Performance Report (CPR) format 1</idValue>
+    <idCode>178</idCode>
+        <idValue>Cost Performance Report (CPR) format 3</idValue>
+    <idCode>179</idCode>
+        <idValue>Cost Performance Report (CPR) format 4</idValue>
+    <idCode>180</idCode>
+        <idValue>Cost Performance Report (CPR) format 5</idValue>
+    <idCode>181</idCode>
+        <idValue>Progressive discharge report</idValue>
+    <idCode>182</idCode>
+        <idValue>Balance confirmation</idValue>
+    <idCode>183</idCode>
+        <idValue>Container stripping order</idValue>
+    <idCode>184</idCode>
+        <idValue>Container stuffing order</idValue>
+    <idCode>190</idCode>
+        <idValue>Statistical and other administrative internal documents</idValue>
+    <idCode>201</idCode>
+        <idValue>Direct payment valuation request</idValue>
+    <idCode>202</idCode>
+        <idValue>Direct payment valuation</idValue>
+    <idCode>203</idCode>
+        <idValue>Provisional payment valuation</idValue>
+    <idCode>204</idCode>
+        <idValue>Payment valuation</idValue>
+    <idCode>205</idCode>
+        <idValue>Quantity valuation</idValue>
+    <idCode>206</idCode>
+        <idValue>Quantity valuation request</idValue>
+    <idCode>207</idCode>
+        <idValue>Contract bill of quantities - BOQ</idValue>
+    <idCode>208</idCode>
+        <idValue>Unpriced tender BOQ</idValue>
+    <idCode>209</idCode>
+        <idValue>Priced tender BOQ</idValue>
+    <idCode>210</idCode>
+        <idValue>Enquiry</idValue>
+    <idCode>211</idCode>
+        <idValue>Interim application for payment</idValue>
+    <idCode>212</idCode>
+        <idValue>Agreement to pay</idValue>
+    <idCode>215</idCode>
+        <idValue>Letter of intent</idValue>
+    <idCode>220</idCode>
+        <idValue>Order</idValue>
+    <idCode>221</idCode>
+        <idValue>Blanket order</idValue>
+    <idCode>222</idCode>
+        <idValue>Spot order</idValue>
+    <idCode>223</idCode>
+        <idValue>Lease order</idValue>
+    <idCode>224</idCode>
+        <idValue>Rush order</idValue>
+    <idCode>225</idCode>
+        <idValue>Repair order</idValue>
+    <idCode>226</idCode>
+        <idValue>Call off order</idValue>
+    <idCode>227</idCode>
+        <idValue>Consignment order</idValue>
+    <idCode>228</idCode>
+        <idValue>Sample order</idValue>
+    <idCode>229</idCode>
+        <idValue>Swap order</idValue>
+    <idCode>230</idCode>
+        <idValue>Purchase order change request</idValue>
+    <idCode>231</idCode>
+        <idValue>Purchase order response</idValue>
+    <idCode>232</idCode>
+        <idValue>Hire order</idValue>
+    <idCode>233</idCode>
+        <idValue>Spare parts order</idValue>
+    <idCode>240</idCode>
+        <idValue>Delivery instructions</idValue>
+    <idCode>241</idCode>
+        <idValue>Delivery schedule</idValue>
+    <idCode>242</idCode>
+        <idValue>Delivery just-in-time</idValue>
+    <idCode>245</idCode>
+        <idValue>Delivery release</idValue>
+    <idCode>270</idCode>
+        <idValue>Delivery note</idValue>
+    <idCode>271</idCode>
+        <idValue>Packing list</idValue>
+    <idCode>310</idCode>
+        <idValue>Offer/quotation</idValue>
+    <idCode>311</idCode>
+        <idValue>Request for quote</idValue>
+    <idCode>315</idCode>
+        <idValue>Contract</idValue>
+    <idCode>320</idCode>
+        <idValue>Acknowledgement of order</idValue>
+    <idCode>325</idCode>
+        <idValue>Proforma invoice</idValue>
+    <idCode>326</idCode>
+        <idValue>Partial invoice</idValue>
+    <idCode>327</idCode>
+        <idValue>Operating instructions</idValue>
+    <idCode>328</idCode>
+        <idValue>Name/product plate</idValue>
+    <idCode>330</idCode>
+        <idValue>Request for delivery instructions</idValue>
+    <idCode>335</idCode>
+        <idValue>Booking request</idValue>
+    <idCode>340</idCode>
+        <idValue>Shipping instructions</idValue>
+    <idCode>341</idCode>
+        <idValue>Shipper&apos;s letter of instructions (air)</idValue>
+    <idCode>343</idCode>
+        <idValue>Cartage order (local transport)</idValue>
+    <idCode>345</idCode>
+        <idValue>Ready for despatch advice</idValue>
+    <idCode>350</idCode>
+        <idValue>Despatch order</idValue>
+    <idCode>351</idCode>
+        <idValue>Despatch advice</idValue>
+    <idCode>370</idCode>
+        <idValue>Advice of distribution of documents</idValue>
+    <idCode>380</idCode>
+        <idValue>Commercial invoice</idValue>
+    <idCode>381</idCode>
+        <idValue>Credit note</idValue>
+    <idCode>382</idCode>
+        <idValue>Commission note</idValue>
+    <idCode>383</idCode>
+        <idValue>Debit note</idValue>
+    <idCode>384</idCode>
+        <idValue>Corrected invoice</idValue>
+    <idCode>385</idCode>
+        <idValue>Consolidated invoice</idValue>
+    <idCode>386</idCode>
+        <idValue>Prepayment invoice</idValue>
+    <idCode>387</idCode>
+        <idValue>Hire invoice</idValue>
+    <idCode>388</idCode>
+        <idValue>Tax invoice</idValue>
+    <idCode>389</idCode>
+        <idValue>Self-billed invoice</idValue>
+    <idCode>390</idCode>
+        <idValue>Delcredere invoice</idValue>
+    <idCode>393</idCode>
+        <idValue>Factored invoice</idValue>
+    <idCode>394</idCode>
+        <idValue>Lease invoice</idValue>
+    <idCode>395</idCode>
+        <idValue>Consignment invoice</idValue>
+    <idCode>396</idCode>
+        <idValue>Factored credit note</idValue>
+    <idCode>409</idCode>
+        <idValue>Instructions for bank transfer</idValue>
+    <idCode>412</idCode>
+        <idValue>Application for banker&apos;s draft</idValue>
+    <idCode>425</idCode>
+        <idValue>Collection payment advice</idValue>
+    <idCode>426</idCode>
+        <idValue>Documentary credit payment advice</idValue>
+    <idCode>427</idCode>
+        <idValue>Documentary credit acceptance advice</idValue>
+    <idCode>428</idCode>
+        <idValue>Documentary credit negotiation advice</idValue>
+    <idCode>429</idCode>
+        <idValue>Application for banker&apos;s guarantee</idValue>
+    <idCode>430</idCode>
+        <idValue>Banker&apos;s guarantee</idValue>
+    <idCode>431</idCode>
+        <idValue>Documentary credit letter of indemnity</idValue>
+    <idCode>435</idCode>
+        <idValue>Preadvice of a credit</idValue>
+    <idCode>447</idCode>
+        <idValue>Collection order</idValue>
+    <idCode>448</idCode>
+        <idValue>Documents presentation form</idValue>
+    <idCode>450</idCode>
+        <idValue>Payment order</idValue>
+    <idCode>451</idCode>
+        <idValue>Extended payment order</idValue>
+    <idCode>452</idCode>
+        <idValue>Multiple payment order</idValue>
+    <idCode>454</idCode>
+        <idValue>Credit advice</idValue>
+    <idCode>455</idCode>
+        <idValue>Extended credit advice</idValue>
+    <idCode>456</idCode>
+        <idValue>Debit advice</idValue>
+    <idCode>457</idCode>
+        <idValue>Reversal of debit</idValue>
+    <idCode>458</idCode>
+        <idValue>Reversal of credit</idValue>
+    <idCode>460</idCode>
+        <idValue>Documentary credit application</idValue>
+    <idCode>465</idCode>
+        <idValue>Documentary credit</idValue>
+    <idCode>466</idCode>
+        <idValue>Documentary credit notification</idValue>
+    <idCode>467</idCode>
+        <idValue>Documentary credit transfer advice</idValue>
+    <idCode>468</idCode>
+        <idValue>Documentary credit amendment notification</idValue>
+    <idCode>469</idCode>
+        <idValue>Documentary credit amendment</idValue>
+    <idCode>481</idCode>
+        <idValue>Remittance advice</idValue>
+    <idCode>485</idCode>
+        <idValue>Banker&apos;s draft</idValue>
+    <idCode>490</idCode>
+        <idValue>Bill of exchange</idValue>
+    <idCode>491</idCode>
+        <idValue>Promissory note</idValue>
+    <idCode>492</idCode>
+        <idValue>Financial statement of account</idValue>
+    <idCode>493</idCode>
+        <idValue>Statement of account message</idValue>
+    <idCode>520</idCode>
+        <idValue>Insurance certificate</idValue>
+    <idCode>530</idCode>
+        <idValue>Insurance policy</idValue>
+    <idCode>550</idCode>
+        <idValue>Insurance declaration sheet (bordereau)</idValue>
+    <idCode>575</idCode>
+        <idValue>Insurer&apos;s invoice</idValue>
+    <idCode>580</idCode>
+        <idValue>Cover note</idValue>
+    <idCode>610</idCode>
+        <idValue>Forwarding instructions</idValue>
+    <idCode>621</idCode>
+        <idValue>Forwarder&apos;s advice to import agent</idValue>
+    <idCode>622</idCode>
+        <idValue>Forwarder&apos;s advice to exporter</idValue>
+    <idCode>623</idCode>
+        <idValue>Forwarder&apos;s invoice</idValue>
+    <idCode>624</idCode>
+        <idValue>Forwarder&apos;s certificate of receipt</idValue>
+    <idCode>630</idCode>
+        <idValue>Shipping note</idValue>
+    <idCode>631</idCode>
+        <idValue>Forwarder&apos;s warehouse receipt</idValue>
+    <idCode>632</idCode>
+        <idValue>Goods receipt</idValue>
+    <idCode>633</idCode>
+        <idValue>Port charges documents</idValue>
+    <idCode>635</idCode>
+        <idValue>Warehouse warrant</idValue>
+    <idCode>640</idCode>
+        <idValue>Delivery order</idValue>
+    <idCode>650</idCode>
+        <idValue>Handling order</idValue>
+    <idCode>655</idCode>
+        <idValue>Gate pass</idValue>
+    <idCode>700</idCode>
+        <idValue>Waybill</idValue>
+    <idCode>701</idCode>
+        <idValue>Universal (multipurpose) transport document</idValue>
+    <idCode>702</idCode>
+        <idValue>Goods receipt, carriage</idValue>
+    <idCode>703</idCode>
+        <idValue>House waybill</idValue>
+    <idCode>704</idCode>
+        <idValue>Master bill of lading</idValue>
+    <idCode>705</idCode>
+        <idValue>Bill of lading</idValue>
+    <idCode>706</idCode>
+        <idValue>Bill of lading original</idValue>
+    <idCode>707</idCode>
+        <idValue>Bill of lading copy</idValue>
+    <idCode>708</idCode>
+        <idValue>Empty container bill</idValue>
+    <idCode>709</idCode>
+        <idValue>Tanker bill of lading</idValue>
+    <idCode>710</idCode>
+        <idValue>Sea waybill</idValue>
+    <idCode>711</idCode>
+        <idValue>Inland waterway bill of lading</idValue>
+    <idCode>712</idCode>
+        <idValue>Non-negotiable maritime transport document (generic)</idValue>
+    <idCode>713</idCode>
+        <idValue>Mate&apos;s receipt</idValue>
+    <idCode>714</idCode>
+        <idValue>House bill of lading</idValue>
+    <idCode>715</idCode>
+        <idValue>Letter of indemnity for non-surrender of bill of lading</idValue>
+    <idCode>716</idCode>
+        <idValue>Forwarder&apos;s bill of lading</idValue>
+    <idCode>720</idCode>
+        <idValue>Rail consignment note (generic term)</idValue>
+    <idCode>722</idCode>
+        <idValue>Road list-SMGS</idValue>
+    <idCode>723</idCode>
+        <idValue>Escort official recognition</idValue>
+    <idCode>724</idCode>
+        <idValue>Recharging document</idValue>
+    <idCode>730</idCode>
+        <idValue>Road consignment note</idValue>
+    <idCode>740</idCode>
+        <idValue>Air waybill</idValue>
+    <idCode>741</idCode>
+        <idValue>Master air waybill</idValue>
+    <idCode>743</idCode>
+        <idValue>Substitute air waybill</idValue>
+    <idCode>744</idCode>
+        <idValue>Crew&apos;s effects declaration</idValue>
+    <idCode>745</idCode>
+        <idValue>Passenger list</idValue>
+    <idCode>746</idCode>
+        <idValue>Delivery notice (rail transport)</idValue>
+    <idCode>750</idCode>
+        <idValue>Despatch note (post parcels)</idValue>
+    <idCode>760</idCode>
+        <idValue>Multimodal/combined transport document (generic)</idValue>
+    <idCode>761</idCode>
+        <idValue>Through bill of lading</idValue>
+    <idCode>763</idCode>
+        <idValue>Forwarder&apos;s certificate of transport</idValue>
+    <idCode>764</idCode>
+        <idValue>Combined transport document (generic)</idValue>
+    <idCode>765</idCode>
+        <idValue>Multimodal transport document (generic)</idValue>
+    <idCode>766</idCode>
+        <idValue>Combined transport bill of lading/multimodal bill of lading</idValue>
+    <idCode>770</idCode>
+        <idValue>Booking confirmation</idValue>
+    <idCode>775</idCode>
+        <idValue>Calling forward notice</idValue>
+    <idCode>780</idCode>
+        <idValue>Freight invoice</idValue>
+    <idCode>781</idCode>
+        <idValue>Arrival notice (goods)</idValue>
+    <idCode>782</idCode>
+        <idValue>Notice of circumstances preventing delivery (goods)</idValue>
+    <idCode>783</idCode>
+        <idValue>Notice of circumstances preventing transport (goods)</idValue>
+    <idCode>784</idCode>
+        <idValue>Delivery notice (goods)</idValue>
+    <idCode>785</idCode>
+        <idValue>Cargo manifest</idValue>
+    <idCode>786</idCode>
+        <idValue>Freight manifest</idValue>
+    <idCode>787</idCode>
+        <idValue>Bordereau</idValue>
+    <idCode>788</idCode>
+        <idValue>Container manifest (unit packing list)</idValue>
+    <idCode>789</idCode>
+        <idValue>Charges note</idValue>
+    <idCode>790</idCode>
+        <idValue>Advice of collection</idValue>
+    <idCode>791</idCode>
+        <idValue>Safety of ship certificate</idValue>
+    <idCode>792</idCode>
+        <idValue>Safety of radio certificate</idValue>
+    <idCode>793</idCode>
+        <idValue>Safety of equipment certificate</idValue>
+    <idCode>794</idCode>
+        <idValue>Civil liability for oil certificate</idValue>
+    <idCode>795</idCode>
+        <idValue>Loadline document</idValue>
+    <idCode>796</idCode>
+        <idValue>Derat document</idValue>
+    <idCode>797</idCode>
+        <idValue>Maritime declaration of health</idValue>
+    <idCode>798</idCode>
+        <idValue>Certificate of registry</idValue>
+    <idCode>799</idCode>
+        <idValue>Ship&apos;s stores declaration</idValue>
+    <idCode>810</idCode>
+        <idValue>Export licence, application for</idValue>
+    <idCode>811</idCode>
+        <idValue>Export licence</idValue>
+    <idCode>812</idCode>
+        <idValue>Exchange control declaration, export</idValue>
+    <idCode>820</idCode>
+        <idValue>Despatch note model T</idValue>
+    <idCode>821</idCode>
+        <idValue>Despatch note model T1</idValue>
+    <idCode>822</idCode>
+        <idValue>Despatch note model T2</idValue>
+    <idCode>823</idCode>
+        <idValue>Control document T5</idValue>
+    <idCode>824</idCode>
+        <idValue>Re-sending consignment note</idValue>
+    <idCode>825</idCode>
+        <idValue>Despatch note model T2L</idValue>
+    <idCode>830</idCode>
+        <idValue>Goods declaration for exportation</idValue>
+    <idCode>833</idCode>
+        <idValue>Cargo declaration (departure)</idValue>
+    <idCode>840</idCode>
+        <idValue>Application for goods control certificate</idValue>
+    <idCode>841</idCode>
+        <idValue>Goods control certificate</idValue>
+    <idCode>850</idCode>
+        <idValue>Application for phytosanitary certificate</idValue>
+    <idCode>851</idCode>
+        <idValue>Phytosanitary certificate</idValue>
+    <idCode>852</idCode>
+        <idValue>Sanitary certificate</idValue>
+    <idCode>853</idCode>
+        <idValue>Veterinary certificate</idValue>
+    <idCode>855</idCode>
+        <idValue>Application for inspection certificate</idValue>
+    <idCode>856</idCode>
+        <idValue>Inspection certificate</idValue>
+    <idCode>860</idCode>
+        <idValue>Certificate of origin, application for</idValue>
+    <idCode>861</idCode>
+        <idValue>Certificate of origin</idValue>
+    <idCode>862</idCode>
+        <idValue>Declaration of origin</idValue>
+    <idCode>863</idCode>
+        <idValue>Regional appellation certificate</idValue>
+    <idCode>864</idCode>
+        <idValue>Preference certificate of origin</idValue>
+    <idCode>865</idCode>
+        <idValue>Certificate of origin form GSP</idValue>
+    <idCode>870</idCode>
+        <idValue>Consular invoice</idValue>
+    <idCode>890</idCode>
+        <idValue>Dangerous goods declaration</idValue>
+    <idCode>895</idCode>
+        <idValue>Statistical document, export</idValue>
+    <idCode>896</idCode>
+        <idValue>INTRASTAT declaration</idValue>
+    <idCode>901</idCode>
+        <idValue>Delivery verification certificate</idValue>
+    <idCode>910</idCode>
+        <idValue>Import licence, application for</idValue>
+    <idCode>911</idCode>
+        <idValue>Import licence</idValue>
+    <idCode>913</idCode>
+        <idValue>Customs declaration without commercial detail</idValue>
+    <idCode>914</idCode>
+        <idValue>Customs declaration with commercial and item detail</idValue>
+    <idCode>915</idCode>
+        <idValue>Customs declaration without item detail</idValue>
+    <idCode>916</idCode>
+        <idValue>Related document</idValue>
+    <idCode>917</idCode>
+        <idValue>Receipt (Customs)</idValue>
+    <idCode>925</idCode>
+        <idValue>Application for exchange allocation</idValue>
+    <idCode>926</idCode>
+        <idValue>Foreign exchange permit</idValue>
+    <idCode>927</idCode>
+        <idValue>Exchange control declaration (import)</idValue>
+    <idCode>929</idCode>
+        <idValue>Goods declaration for importation</idValue>
+    <idCode>930</idCode>
+        <idValue>Goods declaration for home use</idValue>
+    <idCode>931</idCode>
+        <idValue>Customs immediate release declaration</idValue>
+    <idCode>932</idCode>
+        <idValue>Customs delivery note</idValue>
+    <idCode>933</idCode>
+        <idValue>Cargo declaration (arrival)</idValue>
+    <idCode>934</idCode>
+        <idValue>Value declaration</idValue>
+    <idCode>935</idCode>
+        <idValue>Customs invoice</idValue>
+    <idCode>936</idCode>
+        <idValue>Customs declaration (post parcels)</idValue>
+    <idCode>937</idCode>
+        <idValue>Tax declaration (value added tax)</idValue>
+    <idCode>938</idCode>
+        <idValue>Tax declaration (general)</idValue>
+    <idCode>940</idCode>
+        <idValue>Tax demand</idValue>
+    <idCode>941</idCode>
+        <idValue>Embargo permit</idValue>
+    <idCode>950</idCode>
+        <idValue>Goods declaration for Customs transit</idValue>
+    <idCode>951</idCode>
+        <idValue>TIF form</idValue>
+    <idCode>952</idCode>
+        <idValue>TIR carnet</idValue>
+    <idCode>953</idCode>
+        <idValue>EC carnet</idValue>
+    <idCode>954</idCode>
+        <idValue>EUR 1 certificate of origin</idValue>
+    <idCode>955</idCode>
+        <idValue>ATA carnet</idValue>
+    <idCode>960</idCode>
+        <idValue>Single administrative document</idValue>
+    <idCode>961</idCode>
+        <idValue>General response (Customs)</idValue>
+    <idCode>962</idCode>
+        <idValue>Document response (Customs)</idValue>
+    <idCode>963</idCode>
+        <idValue>Error response (Customs)</idValue>
+    <idCode>964</idCode>
+        <idValue>Package response (Customs)</idValue>
+    <idCode>965</idCode>
+        <idValue>Tax calculation/confirmation response (Customs)</idValue>
+    <idCode>966</idCode>
+        <idValue>Quota prior allocation certificate</idValue>
+    <idCode>990</idCode>
+        <idValue>End use authorization</idValue>
+    <idCode>991</idCode>
+        <idValue>Government contract</idValue>
+    <idCode>995</idCode>
+        <idValue>Statistical document, import</idValue>
+    <idCode>996</idCode>
+        <idValue>Application for documentary credit</idValue>
+    <idCode>998</idCode>
+        <idValue>Previous Customs document/message</idValue>
+</idList>

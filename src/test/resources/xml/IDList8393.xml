@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Loaded with empty 4-block for blocking purposes</idValue>
+    <idCode>2</idCode>
+        <idValue>Empty container with dunnage</idValue>
+    <idCode>3</idCode>
+        <idValue>Empty container</idValue>
+    <idCode>4</idCode>
+        <idValue>Loaded with production material</idValue>
+    <idCode>5</idCode>
+        <idValue>Mixed empty and loaded</idValue>
+    <idCode>6</idCode>
+        <idValue>Obsolete material</idValue>
+    <idCode>7</idCode>
+        <idValue>Loaded with excess returned production material</idValue>
+    <idCode>8</idCode>
+        <idValue>Loaded with rejected material</idValue>
+    <idCode>9</idCode>
+        <idValue>Service part obsolete container</idValue>
+    <idCode>10</idCode>
+        <idValue>Loaded with returned processed material</idValue>
+</idList>

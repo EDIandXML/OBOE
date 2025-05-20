@@ -1,0 +1,18 @@
+
+/*tell the system where the rules files reside*/
+
+xmlPath=xml/
+throwParsingException=true
+useObject=true
+searchDirective=V
+
+
+/*to parse an incoming EDI/XML file point it to its rules file */
+
+RequestForQuotation=840
+
+/*if parsing an EDI/XML file to an EDIFACT rules file */
+
+PurchaseOrderMessage=ORDERS
+TradacomsOrder=ORDHDR
+RSGRSG=RSGRSG

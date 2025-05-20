@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Reference date</idValue>
+    <idCode>2</idCode>
+        <idValue>Before reference</idValue>
+    <idCode>3</idCode>
+        <idValue>After reference</idValue>
+    <idCode>4</idCode>
+        <idValue>End of 10-day period containing the reference date</idValue>
+    <idCode>5</idCode>
+        <idValue>End of 2-week period containing the reference date</idValue>
+    <idCode>6</idCode>
+        <idValue>End of month containing the reference date</idValue>
+    <idCode>7</idCode>
+        <idValue>End of the month following the month of reference date</idValue>
+    <idCode>8</idCode>
+        <idValue>End of quarter containing the reference date</idValue>
+    <idCode>9</idCode>
+        <idValue>End of year containing the reference date</idValue>
+    <idCode>10</idCode>
+        <idValue>End of week containing the reference date</idValue>
+    <idCode>11</idCode>
+        <idValue>End of ten day period following month after reference date&apos;s month</idValue>
+    <idCode>12</idCode>
+        <idValue>End of half year containing the reference date</idValue>
+</idList>

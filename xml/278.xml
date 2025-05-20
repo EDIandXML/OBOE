@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<transactionSet
+	name="Health Care Services Review Information"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+	id="278" revision="005010" functionalGroup="HI"
+	description="This X12 Transaction Set contains the format and establishes the data contents of the Health Care Services Review Information Transaction Set (278) for use within the context of an Electronic Data Interchange (EDI) environment. This transaction set can be used to transmit health care service information, such as subscriber, patient, demographic, diagnosis or treatment data for the purpose of request for review, certification, notification or reporting the outcome of a health care services review.  Expected users of this transaction set are payors, plan sponsors, providers, utilization management and other entities involved in health care services review."
+	shortName="HealthCareServicesReviewInformation">
+	<table section="header">
+		<segment name="Transaction Set Header" id="ST" description=""
+			sequence="100" occurs="1" required='M'
+			shortName="TransactionSetHeader">
+			<dataElement name="Transaction Set Identifier Code"
+				id="143" sequence="1"
+				description="Code uniquely identifying a Transaction Set" type="AN"
+				required="M" minLength="3" maxLength="3"
+				shortName="transactionSetIdentifierCode">
+			</dataElement>
+			<dataElement name="Transaction Set Control Number"
+				id="329" sequence="2"
+				description="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"
+				type="AN" required="M" minLength="4" maxLength="9"
+				shortName="transactionSetControlNumber">
+			</dataElement>
+			<dataElement name="Implementation Convention Reference"
+				id="1705" sequence="3"
+				description="Reference assigned to identify Implementation Convention"
+				type="AN" required="O" minLength="1" maxLength="35"
+				xmlTag="implementationConventionReference" />
+		</segment>
+		<segment name="Beginning of Hierarchical Transaction" id="BHT"
+			description="To define the business hierarchical structure of the transaction set and identify the business application purpose and reference data, i.e., number, date, and time"
+			sequence="200" occurs="1" required='M'
+			shortName="BeginningOfHierarchicalTransaction">
+			<dataElement name="Hierarchical Structure Code" id="1005"
+				sequence="1"
+				description="Code indicating the hierarchical application structure of a transaction set that utilizes the HL segment to define the structure of the transaction set"
+				type="ID" required="M" minLength="4" maxLength="4"
+				shortName="hierarchicalStructureCode">
+				<idList>
+					<idCode>0001</idCode>
+					<idValue>Shipment, Order, Packaging, Item</idValue>
+					<idCode>0002</idCode>
+					<idValue>Shipment, Order, Item, Packaging</idValue>
+					<idCode>0003</idCode>
+					<idValue>Shipment, Packaging, Order, Item</idValue>
+				</idList>
+			</dataElement>
+			<dataElement name="Transaction Set Purpose Code" id="353"
+				sequence="2"
+				description="Code identifying purpose of transaction set" type="ID"
+				required="M" minLength="2" maxLength="2"
+				shortName="transactionSetPurposeCode">
+				<idList>
+					<idCode>00</idCode>
+					<idValue>Original</idValue>
+					<idCode>11</idCode>
+					<idValue>Response</idValue>
+				</idList>
+			</dataElement>
+			<dataElement name="Reference Identification" id="127"
+				sequence="3"
+				description="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"
+				type="AN" required="O" minLength="1" maxLength="50"
+				shortName="referenceIdentification">
+			</dataElement>
+			<dataElement name="Date" id="373" sequence="4"
+				description="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"
+				type="DT" required="O" minLength="8" maxLength="8" shortName="date">
+			</dataElement>
+			<dataElement name="Time" id="337" sequence="5"
+				description="Time expressed in 24-hour clock time as follows: HHMM, or HHMMSS, or HHMMSSD, or HHMMSSDD, where H = hours (00-23), M = minutes (00-59), S = integer seconds (00-59) and DD = decimal seconds; decimal seconds are expressed as follows: D = tenths (0-9) and DD = hundredths (00-99)"
+				type="TM" required="O" minLength="4" maxLength="8" shortName="time">
+			</dataElement>
+			<dataElement name="Transaction Type Code" id="640"
+				sequence="6" description="Code specifying the type of transaction"
+				type="ID" required="O" minLength="2" maxLength="2"
+				shortName="transactionTypeCode">
+				<idList>
+					<idCode>19</idCode>
+					<idValue>Response - Further Updates to Follow</idValue>
+				</idList>
+			</dataElement>
+		</segment>
+	</table>
+	<table section="detail">
+		<loop name="loopHL" id="loopHL" occurs="-1" required='M'
+			shortName="loopHL">
+			<segment name="Hierarchical Level" id="HL" description=""
+				sequence="100" occurs="1" required='M' shortName="HierarchicalLevel">
+				<dataElement name="Hierarchical ID Number" id="628"
+					sequence="1"
+					description="A unique number assigned by the sender to identify a particular data segment in a hierarchical structure"
+					type="AN" required="M" minLength="1" maxLength="12"
+					shortName="hierarchicalIdNumber">
+				</dataElement>
+				<dataElement name="Hierarchical Parent ID Number"
+					id="734" sequence="2"
+					description="Identification number of the next higher hierarchical data segment that the data segment being described is subordinate to"
+					type="AN" required="O" minLength="1" maxLength="12"
+					shortName="hierarchicalParentIdNumber">
+				</dataElement>
+				<dataElement name="Hierarchical Level Code" id="735"
+					sequence="3"
+					description="Code defining the characteristic of a level in a hierarchical structure"
+					type="ID" required="M" minLength="1" maxLength="2"
+					shortName="hierarchicalLevelCode">
+					<idList>
+						<idCode>20</idCode>
+						<idValue>Information Source</idValue>
+						<idCode>21</idCode>
+						<idValue>Information Receiver</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Hierarchical Child Code" id="736"
+					sequence="4"
+					description="Code indicating if there are hierarchical child data segments subordinate to the level being described"
+					type="ID" required="O" minLength="1" maxLength="1"
+					shortName="hierarchicalChildCode">
+					<idList>
+						<idCode>0</idCode>
+						<idValue>No Subordinate HL Segment in This Hierarchical Structure.
+						</idValue>
+						<idCode>1</idCode>
+						<idValue>Additional Subordinate HL Data Segment in This
+							Hierarchical Structure.</idValue>
+					</idList>
+				</dataElement>
+			</segment>
+			<segment name="Trace" id="TRN"
+				description="To uniquely identify a transaction to an application"
+				sequence="200" occurs="9" required='O' shortName="Trace">
+				<dataElement name="Trace Type Code" id="481"
+					sequence="1"
+					description="Code identifying which transaction is being referenced"
+					type="ID" required="M" minLength="1" maxLength="2"
+					shortName="traceTypeCode">
+					<idList>
+						<idCode>1</idCode>
+						<idValue>Current Transaction Trace Numbers</idValue>
+						<idCode>2</idCode>
+						<idValue>Referenced Transaction Trace Numbers</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Reference Identification" id="127"
+					sequence="2"
+					description="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"
+					type="AN" required="M" minLength="1" maxLength="50"
+					shortName="referenceIdentification">
+				</dataElement>
+				<dataElement name="Originating Company Identifier"
+					id="509" sequence="3"
+					description="A unique identifier designating the company initiating the funds transfer instructions, business transaction or assigning tracking reference identification."
+					type="AN" required="O" minLength="10" maxLength="10"
+					shortName="originatingCompanyIdentifier">
+				</dataElement>
+			</segment>
+			<segment name="Health Care Services Review Information"
+				id="UM" description="" sequence="400" occurs="1" required='O'
+				shortName="HealthCareServicesReviewInformation">
+				<dataElement name="Request Category Code" id="1525"
+					sequence="1" description="Code indicating a type of request"
+					type="ID" required="M" minLength="1" maxLength="2"
+					shortName="requestCategoryCode">
+					<idList>
+						<idCode>AR</idCode>
+						<idValue>Admission Review</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Certification Type Code" id="1322"
+					sequence="2"
+					description="Code indicating the type of certification" type="ID"
+					required="O" minLength="1" maxLength="1"
+					shortName="certificationTypeCode">
+					<idList>
+						<idCode>I</idCode>
+						<idValue>Initial</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Service Type Code" id="1365"
+					sequence="3"
+					description="Code identifying the classification of service"
+					type="ID" required="O" minLength="1" maxLength="2"
+					shortName="serviceTypeCode">
+					<idList>
+						<idCode>A4</idCode>
+						<idValue>Psychiatric</idValue>
+						<idCode>A5</idCode>
+						<idValue>Psychiatric - Room and Board</idValue>
+					</idList>
+				</dataElement>
+				<compositeDE
+					name="Health Care Service Location Information" id="C023"
+					sequence="4" required='O'
+					shortName="healthCareServiceLocationInformation">
+					<dataElement name="Facility Code Value" id="1331"
+						sequence="1"
+						description="Code identifying where services were, or may be, performed; the first and second positions of the Uniform Bill Type Code for Institutional Services or the Place of Service Codes for Professional or Dental Services."
+						type="AN" required="M" minLength="1" maxLength="2"
+						shortName="facilityCodeValue">
+					</dataElement>
+					<dataElement name="Facility Code Qualifier" id="1332"
+						sequence="2"
+						description="Code identifying the type of facility referenced"
+						type="ID" required="O" minLength="1" maxLength="2"
+						shortName="facilityCodeQualifier">
+						<idList>
+							<idCode>B</idCode>
+							<idValue>Place of service code from the FAO record of the
+								Electronic Media Claims National Standard Format</idValue>
+						</idList>
+					</dataElement>
+				</compositeDE>
+				<dataElement name="Level of Service Code" id="1338"
+					sequence="6"
+					description="Code specifying the level of service rendered"
+					type="ID" required="O" minLength="1" maxLength="3"
+					shortName="levelOfServiceCode">
+					<idList>
+						<idCode>03</idCode>
+						<idValue>Emergency</idValue>
+						<idCode>04</idCode>
+						<idValue>24 Hour</idValue>
+					</idList>
+				</dataElement>
+			</segment>
+			<segment name="Health Care Services Review" id="HCR"
+				description="To specify the outcome of a health care services review"
+				sequence="500" occurs="1" required='O'
+				shortName="HealthCareServicesReview">
+				<dataElement name="Action Code" id="306" sequence="1"
+					description="Code indicating type of action" type="ID" required="M"
+					minLength="1" maxLength="2" shortName="actionCode">
+					<idList>
+						<idCode>A4</idCode>
+						<idValue>Pended</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Industry Code" id="1271" sequence="3"
+					description="Code indicating a code from a specific industry code list"
+					occurs="5" type="AN" required="O" minLength="1" maxLength="30"
+					shortName="industryCode">
+				</dataElement>
+			</segment>
+			<segment name="Reference Information" id="REF"
+				description="To specify identifying information" sequence="600"
+				occurs="9" required='O' shortName="ReferenceInformation">
+				<dataElement name="Reference Identification Qualifier"
+					id="128" sequence="1"
+					description="Code qualifying the Reference Identification"
+					type="ID" required="M" minLength="2" maxLength="3"
+					shortName="referenceIdentificationQualifier">
+					<idList>
+						<idCode>NT</idCode>
+						<idValue>Administrator&apos;s Reference Number</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Reference Identification" id="127"
+					sequence="2"
+					description="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"
+					type="AN" required="C" minLength="1" maxLength="50"
+					shortName="referenceIdentification">
+				</dataElement>
+				<dataElement name="Description" id="352" sequence="3"
+					description="A free-form description to clarify the related data elements and their content"
+					type="AN" required="C" minLength="1" maxLength="80"
+					shortName="description">
+				</dataElement>
+				<compositeDE name="Reference Identifier" id="C040"
+					sequence="4" required='O' shortName="referenceIdentifier">
+					<dataElement name="Reference Identification Qualifier"
+						id="128" sequence="1"
+						description="Code qualifying the Reference Identification"
+						type="ID" required="M" minLength="2" maxLength="3"
+						shortName="referenceIdentificationQualifier">
+						<idList>
+							<idCode>01</idCode>
+							<idValue>American Bankers Assoc. (ABA) Transit/Routing Number
+								(Including Check Digit, 9 Digits)</idValue>
+							<idCode>02</idCode>
+							<idValue>Society for Worldwide Interbank Financial
+								Telecommunication (S.W.I.F.T.) Identification (8 or 11
+								Characters)</idValue>
+							<idCode>03</idCode>
+							<idValue>Clearing House Interbank Payment System (CHIPS)
+								Participant Number (3 or 4 Digits)</idValue>
+							<idCode>04</idCode>
+							<idValue>Canadian Financial Institution Branch and Institution
+								Number</idValue>
+							<idCode>05</idCode>
+							<idValue>Clearing House Interbank Payment System (CHIPS) User
+								Identification (6 digits)</idValue>
+							<idCode>06</idCode>
+							<idValue>System Number</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Reference Identification" id="127"
+						sequence="2"
+						description="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"
+						type="AN" required="M" minLength="1" maxLength="50"
+						shortName="referenceIdentification">
+					</dataElement>
+					<dataElement name="Reference Identification Qualifier"
+						id="128" sequence="3"
+						description="Code qualifying the Reference Identification"
+						type="ID" required="C" minLength="2" maxLength="3"
+						shortName="referenceIdentificationQualifier">
+						<idList>
+							<idCode>01</idCode>
+							<idValue>American Bankers Assoc. (ABA) Transit/Routing Number
+								(Including Check Digit, 9 Digits)</idValue>
+							<idCode>02</idCode>
+							<idValue>Society for Worldwide Interbank Financial
+								Telecommunication (S.W.I.F.T.) Identification (8 or 11
+								Characters)</idValue>
+							<idCode>03</idCode>
+							<idValue>Clearing House Interbank Payment System (CHIPS)
+								Participant Number (3 or 4 Digits)</idValue>
+							<idCode>04</idCode>
+							<idValue>Canadian Financial Institution Branch and Institution
+								Number</idValue>
+							<idCode>05</idCode>
+							<idValue>Clearing House Interbank Payment System (CHIPS) User
+								Identification (6 digits)</idValue>
+							<idCode>07</idCode>
+							<idValue>Add-On System Number</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Reference Identification" id="127"
+						sequence="4"
+						description="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"
+						type="AN" required="C" minLength="1" maxLength="50"
+						shortName="referenceIdentification">
+					</dataElement>
+					<dataElement name="Reference Identification Qualifier"
+						id="128" sequence="5"
+						description="Code qualifying the Reference Identification"
+						type="ID" required="C" minLength="2" maxLength="3"
+						shortName="referenceIdentificationQualifier">
+						<idList>
+							<idCode>01</idCode>
+							<idValue>American Bankers Assoc. (ABA) Transit/Routing Number
+								(Including Check Digit, 9 Digits)</idValue>
+							<idCode>02</idCode>
+							<idValue>Society for Worldwide Interbank Financial
+								Telecommunication (S.W.I.F.T.) Identification (8 or 11
+								Characters)</idValue>
+							<idCode>03</idCode>
+							<idValue>Clearing House Interbank Payment System (CHIPS)
+								Participant Number (3 or 4 Digits)</idValue>
+							<idCode>04</idCode>
+							<idValue>Canadian Financial Institution Branch and Institution
+								Number</idValue>
+							<idCode>05</idCode>
+							<idValue>Clearing House Interbank Payment System (CHIPS) User
+								Identification (6 digits)</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Reference Identification" id="127"
+						sequence="6"
+						description="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"
+						type="AN" required="C" minLength="1" maxLength="50"
+						shortName="referenceIdentification">
+					</dataElement>
+				</compositeDE>
+				<elementRule rule="oneOrMoreMustExist" positions="2,3" />
+			</segment>
+			<segment name="Health Care Information Codes" id="HI"
+				description="" sequence="800" occurs="1" required='O'
+				shortName="HealthCareInformationCodes">
+				<compositeDE name="Health Care Code Information"
+					id="C022" sequence="1" required='M'
+					shortName="healthCareCodeInformation">
+					<dataElement name="Code List Qualifier Code" id="1270"
+						sequence="1"
+						description="Code identifying a specific industry code list"
+						type="ID" required="M" minLength="1" maxLength="3"
+						shortName="codeListQualifierCode">
+						<idList>
+							<idCode>BF</idCode>
+							<idValue>Diagnosis</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Industry Code" id="1271"
+						sequence="2"
+						description="Code indicating a code from a specific industry code list"
+						type="AN" required="M" minLength="1" maxLength="30"
+						shortName="industryCode">
+					</dataElement>
+					<dataElement name="Date Time Period Format Qualifier"
+						id="1250" sequence="3"
+						description="Code indicating the date format, time format, or date and time format"
+						type="ID" required="C" minLength="2" maxLength="3"
+						shortName="dateTimePeriodFormatQualifier">
+						<idList>
+							<idCode>D8</idCode>
+							<idValue>Date Expressed in Format CCYYMMDD</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Date Time Period" id="1251"
+						sequence="4"
+						description="Expression of a date, a time, or range of dates, times or dates and times"
+						type="AN" required="C" minLength="1" maxLength="35"
+						shortName="dateTimePeriod">
+					</dataElement>
+				</compositeDE>
+			</segment>
+			<segment name="Paperwork" id="PWK"
+				description="To identify the type or transmission or both of paperwork or supporting information"
+				sequence="1550" occurs="-1" required='O' shortName="Paperwork">
+				<dataElement name="Report Type Code" id="755"
+					sequence="1"
+					description="Code indicating the title or contents of a document, report or supporting item"
+					type="ID" required="M" minLength="2" maxLength="2"
+					shortName="reportTypeCode">
+					<idList>
+						<idCode>AS</idCode>
+						<idValue>Admission Summary</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Report Transmission Code" id="756"
+					sequence="2"
+					description="Code defining timing, transmission method or format by which reports are to be sent"
+					type="ID" required="O" minLength="1" maxLength="2"
+					shortName="reportTransmissionCode">
+					<idList>
+						<idCode>VO</idCode>
+						<idValue>Voice</idValue>
+					</idList>
+				</dataElement>
+			</segment>
+			<loop name="loopNM1" id="loopNM1" occurs="-1" required='O'
+				shortName="loopNM1">
+				<segment name="Individual or Organizational Name" id="NM1"
+					description="To supply the full name of an individual or organizational entity"
+					sequence="1700" occurs="1" required='O'
+					shortName="IndividualOrOrganizationalName">
+					<dataElement name="Entity Identifier Code" id="98"
+						sequence="1"
+						description="Code identifying an organizational entity, a physical location, property or an individual"
+						type="ID" required="M" minLength="2" maxLength="3"
+						shortName="entityIdentifierCode">
+						<idList>
+							<idCode>71</idCode>
+							<idValue>Attending Physician</idValue>
+							<idCode>FA</idCode>
+							<idValue>Facility</idValue>
+							<idCode>IL</idCode>
+							<idValue>Insured or Subscriber</idValue>
+							<idCode>SJ</idCode>
+							<idValue>Service Provider</idValue>
+							<idCode>X3</idCode>
+							<idValue>Utilization Management Organization</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Entity Type Qualifier" id="1065"
+						sequence="2" description="Code qualifying the type of entity"
+						type="ID" required="M" minLength="1" maxLength="1"
+						shortName="entityTypeQualifier">
+						<idList>
+							<idCode>1</idCode>
+							<idValue>Person</idValue>
+							<idCode>2</idCode>
+							<idValue>Non-Person Entity</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Name Last or Organization Name"
+						id="1035" sequence="3"
+						description="Individual last name or organizational name"
+						type="AN" required="C" minLength="1" maxLength="60"
+						shortName="nameLastOrOrganizationName">
+					</dataElement>
+					<dataElement name="Name First" id="1036" sequence="4"
+						description="Individual first name" type="AN" required="O"
+						minLength="1" maxLength="35" shortName="nameFirst">
+					</dataElement>
+					<dataElement name="Identification Code Qualifier"
+						id="66" sequence="8"
+						description="Code designating the system/method of code structure used for Identification Code (67)"
+						type="ID" required="C" minLength="1" maxLength="2"
+						shortName="identificationCodeQualifier">
+						<idList>
+							<idCode>24</idCode>
+							<idValue>Employer&apos;s Identification Number</idValue>
+							<idCode>46</idCode>
+							<idValue>Electronic Transmitter Identification Number (ETIN)
+							</idValue>
+							<idCode>MI</idCode>
+							<idValue>Member Identification Number</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Identification Code" id="67"
+						sequence="9" description="Code identifying a party or other code"
+						type="AN" required="C" minLength="2" maxLength="80"
+						shortName="identificationCode">
+					</dataElement>
+					<elementRule rule="allOrNoneMayExist" positions="8,9" />
+				</segment>
+				<segment name="Administrative Communications Contact"
+					id="PER"
+					description="To identify a person or office to whom administrative communications should be directed"
+					sequence="2200" occurs="3" required='O'
+					shortName="AdministrativeCommunicationsContact">
+					<dataElement name="Contact Function Code" id="366"
+						sequence="1"
+						description="Code identifying the major duty or responsibility of the person or group named"
+						type="ID" required="M" minLength="2" maxLength="2"
+						shortName="contactFunctionCode">
+						<idList>
+							<idCode>1C</idCode>
+							<idValue>Health Maintenance Organization (HMO) Contact</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Communication Number Qualifier"
+						id="365" sequence="3"
+						description="Code identifying the type of communication number"
+						type="ID" required="C" minLength="2" maxLength="2"
+						shortName="communicationNumberQualifier">
+						<idList>
+							<idCode>TE</idCode>
+							<idValue>Telephone</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Communication Number" id="364"
+						sequence="4"
+						description="Complete communications number including country or area code when applicable"
+						type="AN" required="C" minLength="1" maxLength="256"
+						shortName="communicationNumber">
+					</dataElement>
+					<elementRule rule="allOrNoneMayExist" positions="3,4" />
+				</segment>
+			</loop>
+		</loop>
+		<segment name="Transaction Set Trailer" id="SE" description=""
+			sequence="2800" occurs="1" required='M'
+			shortName="TransactionSetTrailer">
+			<dataElement name="Number of Included Segments" id="96"
+				sequence="1"
+				description="Total number of segments included in a transaction set including ST and SE segments"
+				type="N0" required="M" minLength="1" maxLength="10"
+				shortName="numberOfIncludedSegments">
+			</dataElement>
+			<dataElement name="Transaction Set Control Number"
+				id="329" sequence="2"
+				description="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"
+				type="AN" required="M" minLength="4" maxLength="9"
+				shortName="transactionSetControlNumber">
+			</dataElement>
+		</segment>
+	</table>
+</transactionSet>

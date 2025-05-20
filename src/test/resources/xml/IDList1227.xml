@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>First step of calculation</idValue>
+    <idCode>2</idCode>
+        <idValue>Second step of calculation</idValue>
+    <idCode>3</idCode>
+        <idValue>Third step of calculation</idValue>
+    <idCode>4</idCode>
+        <idValue>Fourth step of calculation</idValue>
+    <idCode>5</idCode>
+        <idValue>Fifth step of calculation</idValue>
+    <idCode>6</idCode>
+        <idValue>Sixth step of calculation</idValue>
+    <idCode>7</idCode>
+        <idValue>Seventh step of calculation</idValue>
+    <idCode>8</idCode>
+        <idValue>Eighth step of calculation</idValue>
+    <idCode>9</idCode>
+        <idValue>Ninth step of calculation</idValue>
+</idList>

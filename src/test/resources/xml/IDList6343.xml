@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Customs valuation currency</idValue>
+    <idCode>2</idCode>
+        <idValue>Insurance currency</idValue>
+    <idCode>3</idCode>
+        <idValue>Home currency</idValue>
+    <idCode>4</idCode>
+        <idValue>Invoicing currency</idValue>
+    <idCode>5</idCode>
+        <idValue>Account currency</idValue>
+    <idCode>6</idCode>
+        <idValue>Reference currency</idValue>
+    <idCode>7</idCode>
+        <idValue>Target currency</idValue>
+    <idCode>8</idCode>
+        <idValue>Price list currency</idValue>
+    <idCode>9</idCode>
+        <idValue>Order currency</idValue>
+    <idCode>10</idCode>
+        <idValue>Pricing currency</idValue>
+    <idCode>11</idCode>
+        <idValue>Payment currency</idValue>
+    <idCode>12</idCode>
+        <idValue>Quotation currency</idValue>
+    <idCode>13</idCode>
+        <idValue>Recipient local currency</idValue>
+    <idCode>14</idCode>
+        <idValue>Supplier currency</idValue>
+    <idCode>15</idCode>
+        <idValue>Sender local currency</idValue>
+    <idCode>16</idCode>
+        <idValue>Tariff currency</idValue>
+    <idCode>17</idCode>
+        <idValue>Charge calculation currency</idValue>
+</idList>

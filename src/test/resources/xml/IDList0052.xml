@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Status 1 version</idValue>
+    <idCode>2</idCode>
+        <idValue>Status 2 version</idValue>
+    <idCode>88</idCode>
+        <idValue>1988 version</idValue>
+    <idCode>89</idCode>
+        <idValue>1989 version</idValue>
+    <idCode>90</idCode>
+        <idValue>1990 version</idValue>
+    <idCode>D</idCode>
+        <idValue>Draft version/UN/EDIFACT Directory</idValue>
+    <idCode>S</idCode>
+        <idValue>Standard version</idValue>
+</idList>

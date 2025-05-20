@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>A</idCode>
+        <idValue>Price adjustment coefficient</idValue>
+    <idCode>B</idCode>
+        <idValue>Escalation coefficient</idValue>
+    <idCode>C</idCode>
+        <idValue>Timesing factor</idValue>
+    <idCode>CSD</idCode>
+        <idValue>Cost markup multiplier - original cost</idValue>
+    <idCode>CSR</idCode>
+        <idValue>Cost markup multiplier - retail cost</idValue>
+    <idCode>DIS</idCode>
+        <idValue>Discount multiplier</idValue>
+    <idCode>SEL</idCode>
+        <idValue>Selling multiplier</idValue>
+</idList>

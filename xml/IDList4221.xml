@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AA</idCode>
+        <idValue>Item discontinued by wholesaler</idValue>
+    <idCode>AB</idCode>
+        <idValue>Item no longer produced</idValue>
+    <idCode>AC</idCode>
+        <idValue>Over-shipped</idValue>
+    <idCode>AD</idCode>
+        <idValue>Item out of stock at manufacturer</idValue>
+    <idCode>AE</idCode>
+        <idValue>Delivered but not advised</idValue>
+    <idCode>AF</idCode>
+        <idValue>Goods delivered damaged</idValue>
+    <idCode>AG</idCode>
+        <idValue>Delivered too late</idValue>
+    <idCode>AN</idCode>
+        <idValue>Available now - no shipping schedule</idValue>
+    <idCode>AS</idCode>
+        <idValue>Available now - scheduled to ship (date)</idValue>
+    <idCode>BK</idCode>
+        <idValue>Back ordered from previous order</idValue>
+    <idCode>BP</idCode>
+        <idValue>Shipment partial - back order to follow</idValue>
+    <idCode>CA</idCode>
+        <idValue>Customer inquiry - all items</idValue>
+    <idCode>CC</idCode>
+        <idValue>Shipment complete</idValue>
+    <idCode>CE</idCode>
+        <idValue>Shipment includes extra items to meet price break</idValue>
+    <idCode>CI</idCode>
+        <idValue>Customer inquiry - shipped items only</idValue>
+    <idCode>CK</idCode>
+        <idValue>Cancelled from previous order</idValue>
+    <idCode>CM</idCode>
+        <idValue>Shipment complete with additional quantity</idValue>
+    <idCode>CN</idCode>
+        <idValue>Next carrier, PVE - (date)</idValue>
+    <idCode>CO</idCode>
+        <idValue>Customer inquiry - unshipped items only</idValue>
+    <idCode>CP</idCode>
+        <idValue>Shipment partial - considered complete, no backorder</idValue>
+    <idCode>CS</idCode>
+        <idValue>Shipment complete with substitution</idValue>
+    <idCode>IC</idCode>
+        <idValue>Item cancelled</idValue>
+    <idCode>IS</idCode>
+        <idValue>Item represents substitution from original order</idValue>
+    <idCode>LS</idCode>
+        <idValue>Last shipment (date)</idValue>
+    <idCode>NF</idCode>
+        <idValue>Not yet published</idValue>
+    <idCode>NN</idCode>
+        <idValue>Not in process - no shipping schedule</idValue>
+    <idCode>NS</idCode>
+        <idValue>Not in process - schedule to ship (date)</idValue>
+    <idCode>OF</idCode>
+        <idValue>Order sent to factory for production (date)</idValue>
+    <idCode>OM</idCode>
+        <idValue>Item sent to factory for production (date)</idValue>
+    <idCode>OP</idCode>
+        <idValue>Out of print</idValue>
+    <idCode>OS</idCode>
+        <idValue>Item out of stock because of strike of force majeure</idValue>
+    <idCode>OW</idCode>
+        <idValue>Item out of stock at wholesaler</idValue>
+    <idCode>PA</idCode>
+        <idValue>Purchase order inquiry - all items</idValue>
+    <idCode>PD</idCode>
+        <idValue>Purchase order complete</idValue>
+    <idCode>PI</idCode>
+        <idValue>Purchase order inquiry - shipped items only</idValue>
+    <idCode>PK</idCode>
+        <idValue>Packed-to-date (date)</idValue>
+    <idCode>PN</idCode>
+        <idValue>In process - no shipping schedule</idValue>
+    <idCode>PO</idCode>
+        <idValue>Purchase order inquiry - unshipped items only</idValue>
+    <idCode>PP</idCode>
+        <idValue>Purchase order inquiry - specific items</idValue>
+    <idCode>PS</idCode>
+        <idValue>In process - scheduled to ship (date)</idValue>
+    <idCode>RA</idCode>
+        <idValue>Item rationed</idValue>
+    <idCode>SL</idCode>
+        <idValue>Shipped-to-date (date)</idValue>
+    <idCode>SP</idCode>
+        <idValue>Scheduled for production at factory</idValue>
+    <idCode>SS</idCode>
+        <idValue>Split shipment</idValue>
+    <idCode>TW</idCode>
+        <idValue>Item temporary discontinued by wholesaler</idValue>
+    <idCode>UR</idCode>
+        <idValue>Unsolicited report</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

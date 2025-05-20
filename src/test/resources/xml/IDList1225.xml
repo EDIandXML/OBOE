@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Cancellation</idValue>
+    <idCode>2</idCode>
+        <idValue>Addition</idValue>
+    <idCode>3</idCode>
+        <idValue>Deletion</idValue>
+    <idCode>4</idCode>
+        <idValue>Change</idValue>
+    <idCode>5</idCode>
+        <idValue>Replace</idValue>
+    <idCode>6</idCode>
+        <idValue>Confirmation</idValue>
+    <idCode>7</idCode>
+        <idValue>Duplicate</idValue>
+    <idCode>8</idCode>
+        <idValue>Status</idValue>
+    <idCode>9</idCode>
+        <idValue>Original</idValue>
+    <idCode>10</idCode>
+        <idValue>Not found</idValue>
+    <idCode>11</idCode>
+        <idValue>Response</idValue>
+    <idCode>12</idCode>
+        <idValue>Not processed</idValue>
+    <idCode>13</idCode>
+        <idValue>Request</idValue>
+    <idCode>14</idCode>
+        <idValue>Advance notification</idValue>
+    <idCode>15</idCode>
+        <idValue>Reminder</idValue>
+    <idCode>16</idCode>
+        <idValue>Proposal</idValue>
+    <idCode>17</idCode>
+        <idValue>Cancel, to be reissued</idValue>
+    <idCode>18</idCode>
+        <idValue>Reissue</idValue>
+    <idCode>19</idCode>
+        <idValue>Seller initiated change</idValue>
+    <idCode>20</idCode>
+        <idValue>Replace heading section only</idValue>
+    <idCode>21</idCode>
+        <idValue>Replace item detail and summary only</idValue>
+    <idCode>22</idCode>
+        <idValue>Final transmission</idValue>
+    <idCode>23</idCode>
+        <idValue>Transaction on hold</idValue>
+    <idCode>24</idCode>
+        <idValue>Delivery instruction</idValue>
+    <idCode>25</idCode>
+        <idValue>Forecast</idValue>
+    <idCode>26</idCode>
+        <idValue>Delivery instruction and forecast</idValue>
+    <idCode>27</idCode>
+        <idValue>Not accepted</idValue>
+    <idCode>28</idCode>
+        <idValue>Accepted, with amendment in heading section</idValue>
+    <idCode>29</idCode>
+        <idValue>Accepted without amendment</idValue>
+    <idCode>30</idCode>
+        <idValue>Accepted, with amendment in detail section</idValue>
+    <idCode>31</idCode>
+        <idValue>Copy</idValue>
+    <idCode>32</idCode>
+        <idValue>Approval</idValue>
+    <idCode>33</idCode>
+        <idValue>Change in heading section</idValue>
+    <idCode>34</idCode>
+        <idValue>Accepted with amendment</idValue>
+    <idCode>35</idCode>
+        <idValue>Retransmission</idValue>
+    <idCode>36</idCode>
+        <idValue>Change in detail section</idValue>
+    <idCode>37</idCode>
+        <idValue>Reversal of a debit</idValue>
+    <idCode>38</idCode>
+        <idValue>Reversal of a credit</idValue>
+    <idCode>39</idCode>
+        <idValue>Reversal for cancellation</idValue>
+    <idCode>40</idCode>
+        <idValue>Request for deletion</idValue>
+    <idCode>41</idCode>
+        <idValue>Finishing/closing order</idValue>
+    <idCode>42</idCode>
+        <idValue>Confirmation via specific means</idValue>
+    <idCode>43</idCode>
+        <idValue>Additional transmission</idValue>
+    <idCode>44</idCode>
+        <idValue>Accepted without reserves</idValue>
+    <idCode>45</idCode>
+        <idValue>Accepted with reserves</idValue>
+    <idCode>46</idCode>
+        <idValue>Provisional</idValue>
+    <idCode>47</idCode>
+        <idValue>Definitive</idValue>
+    <idCode>48</idCode>
+        <idValue>Accepted, contents rejected</idValue>
+    <idCode>49</idCode>
+        <idValue>Settled dispute</idValue>
+    <idCode>50</idCode>
+        <idValue>Withdraw</idValue>
+    <idCode>51</idCode>
+        <idValue>Authorisation</idValue>
+    <idCode>52</idCode>
+        <idValue>Proposed amendment</idValue>
+    <idCode>53</idCode>
+        <idValue>Test</idValue>
+    <idCode>54</idCode>
+        <idValue>Extract</idValue>
+    <idCode>55</idCode>
+        <idValue>Notification only</idValue>
+</idList>

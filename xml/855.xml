@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+<transactionSet name="Purchase Order Acknowledgment"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+	id="855"
+	revision="004010"
+	functionalGroup="PR"
+	description="This Draft Standard for Trial Use contains the format and establishes the data contents of the Purchase Order Acknowledgment Transaction Set (855) for use within the context of an Electronic Data Interchange (EDI) environment. The transaction set can be used to provide for customary and established business and industry practice relative to a seller&apos;s acknowledgment of a buyer&apos;s purchase order. This transaction set can also be used as notification of a vendor generated order. This usage advises a buyer that a vendor has or will ship merchandise as prearranged in their partnership."
+	shortName="PurchaseOrderAcknowledgment">
+	<table section="header">
+		<segment name="Transaction Set Header" id="ST"
+			description="To indicate the start of a transaction set and to assign a control number"
+			sequence="10"
+			occurs="1"
+			required='M'
+			shortName="TransactionSetHeader">
+			<dataElement name="Transaction Set Identifier Code" id="143"
+				sequence="1"
+				description="Code uniquely identifying a Transaction Set"
+				type="ID" required="M"
+				minLength="3" maxLength="3"
+				shortName="transactionSetIdentifierCode">
+			</dataElement>
+			<dataElement name="Transaction Set Control Number" id="329"
+				sequence="2"
+				description="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"
+				type="AN" required="M"
+				minLength="4" maxLength="9"
+				shortName="transactionSetControlNumber">
+			</dataElement>
+		</segment>
+		<segment name="Beginning Segment for Purchase Order Acknowledgment"
+			id="BAK"
+			description="To indicate the beginning of the Purchase Order Acknowledgment Transaction Set and transmit identifying numbers and dates"
+			sequence="20"
+			occurs="1"
+			required='M'
+			shortName="BeginningSegmentForPurchaseOrderAcknowledgment">
+			<dataElement name="Transaction Set Purpose Code" id="353"
+				sequence="1"
+				description="Code identifying purpose of transaction set"
+				type="ID" required="M"
+				minLength="2" maxLength="2"
+				shortName="transactionSetPurposeCode">
+				<idList>
+					<idCode>00</idCode>
+					<idValue>Original</idValue>
+					<idCode>01</idCode>
+					<idValue>Cancellation</idValue>
+					<idCode>02</idCode>
+					<idValue>Add</idValue>
+				</idList>
+			</dataElement>
+			<dataElement name="Acknowledgment Type" id="587"
+				sequence="2"
+				description="Code specifying the type of acknowledgment"
+				type="ID" required="M"
+				minLength="2" maxLength="2"
+				shortName="acknowledgmentType">
+				<idList>
+					<idCode>AC</idCode>
+					<idValue>Acknowledge - With Detail and Change</idValue>
+					<idCode>NA</idCode>
+					<idValue>No Acknowledgment Needed</idValue>
+				</idList>
+			</dataElement>
+			<dataElement name="Purchase Order Number" id="324"
+				sequence="3"
+				description="Identifying number for Purchase Order assigned by the orderer/purchaser"
+				type="AN" required="M"
+				minLength="1" maxLength="22"
+				shortName="purchaseOrderNumber">
+			</dataElement>
+			<dataElement name="Date" id="373"
+				sequence="4"
+				description="Date expressed as CCYYMMDD"
+				type="DT" required="M"
+				minLength="8" maxLength="8"
+				shortName="date">
+			</dataElement>
+			<dataElement name="Date" id="373"
+				sequence="9"
+				description="Date expressed as CCYYMMDD"
+				type="DT" required="O"
+				minLength="8" maxLength="8"
+				shortName="date">
+			</dataElement>
+		</segment>
+	</table>
+	<table section="detail">
+		<loop name="Baseline Item Data" id="PO1"
+			occurs="100000"
+			required='O'
+			shortName="BaselineItemData">
+			<segment name="Baseline Item Data" id="PO1"
+				description="To specify basic and most frequently used line item data"
+				sequence="10"
+				occurs="1"
+				required='O'
+				shortName="BaselineItemData">
+				<dataElement name="Assigned Identification" id="350"
+					sequence="1"
+					description="Alphanumeric characters assigned for differentiation within a transaction set"
+					type="AN" required="O"
+					minLength="1" maxLength="20"
+					shortName="assignedIdentification">
+				</dataElement>
+				<dataElement name="Quantity Ordered" id="330"
+					sequence="2"
+					description="Quantity ordered"
+					type="R" required="X"
+					minLength="1" maxLength="15"
+					shortName="quantityOrdered">
+				</dataElement>
+				<dataElement name="Unit or Basis for Measurement Code" id="355"
+					sequence="3"
+					description="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"
+					type="ID" required="O"
+					minLength="2" maxLength="2"
+					shortName="unitOrBasisForMeasurementCode">
+					<idList>
+						<idCode>EA</idCode>
+						<idValue>Each</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Unit Price" id="212"
+					sequence="4"
+					description="Price per unit of product, service, commodity, etc."
+					type="R" required="X"
+					minLength="1" maxLength="17"
+					shortName="unitPrice">
+				</dataElement>
+				<dataElement name="Basis of Unit Price Code" id="639"
+					sequence="5"
+					description="Code identifying the type of unit price for an item"
+					type="ID" required="O"
+					minLength="2" maxLength="2"
+					shortName="basisOfUnitPriceCode">
+					<idList>
+						<idCode>QE</idCode>
+						<idValue>Quoted Price per Each</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Product/Service ID Qualifier" id="235"
+					sequence="6"
+					description="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"
+					type="ID" required="X"
+					minLength="2" maxLength="2"
+					shortName="productServiceIdQualifier">
+					<idList>
+						<idCode>PL</idCode>
+						<idValue>Purchaser&apos;s Order Line Number</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Product/Service ID" id="234"
+					sequence="7"
+					description="Identifying number for a product or service"
+					type="AN" required="X"
+					minLength="1" maxLength="48"
+					shortName="productServiceId">
+				</dataElement>
+				<dataElement name="Product/Service ID Qualifier" id="235"
+					sequence="8"
+					description="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"
+					type="ID" required="X"
+					minLength="2" maxLength="2"
+					shortName="productServiceIdQualifier">
+					<idList>
+						<idCode>UP</idCode>
+						<idValue>U.P.C. Consumer Package Code (1-5-5-1)</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Product/Service ID" id="234"
+					sequence="9"
+					description="Identifying number for a product or service"
+					type="AN" required="X"
+					minLength="1" maxLength="48"
+					shortName="productServiceId">
+				</dataElement>
+				<dataElement name="Product/Service ID Qualifier" id="235"
+					sequence="10"
+					description="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"
+					type="ID" required="X"
+					minLength="2" maxLength="2"
+					shortName="productServiceIdQualifier">
+					<idList>
+						<idCode>VP</idCode>
+						<idValue>Vendor&apos;s (Seller&apos;s) Part Number</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Product/Service ID" id="234"
+					sequence="11"
+					description="Identifying number for a product or service"
+					type="AN" required="X"
+					minLength="1" maxLength="48"
+					shortName="productServiceId">
+				</dataElement>
+			</segment>
+			<loop name="Line Item Acknowledgment" id="ACK"
+				occurs="104"
+				required='O'
+				shortName="LineItemAcknowledgment">
+				<segment name="Line Item Acknowledgment" id="ACK"
+					description="To acknowledge the ordered quantities and specify the ready date for a specific line item"
+					sequence="270"
+					occurs="1"
+					required='O'
+					shortName="LineItemAcknowledgment">
+					<dataElement name="Line Item Status Code" id="668"
+						sequence="1"
+						description="Code specifying the action taken by the seller on a line item requested by the buyer"
+						type="ID" required="M"
+						minLength="2" maxLength="2"
+						shortName="lineItemStatusCode">
+						<idList>
+							<idCode>IA</idCode>
+							<idValue>Item Accepted</idValue>
+							<idCode>R2</idCode>
+							<idValue>Item Rejected, Invalid Item Product Number</idValue>
+						</idList>
+					</dataElement>
+				</segment>
+			</loop>
+		</loop>
+	</table>
+	<table section="summary">
+		<loop name="Transaction Totals" id="CTT"
+			occurs="1"
+			required='O'
+			shortName="TransactionTotals">
+			<segment name="Transaction Totals" id="CTT"
+				description="To transmit a hash total for a specific element in the transaction set"
+				sequence="10"
+				occurs="1"
+				required='O'
+				shortName="TransactionTotals">
+				<dataElement name="Number of Line Items" id="354"
+					sequence="1"
+					description="Total number of line items in the transaction set"
+					type="N0" required="M"
+					minLength="1" maxLength="6"
+					shortName="numberOfLineItems">
+				</dataElement>
+				<dataElement name="Hash Total" id="347"
+					sequence="2"
+					description="Sum of values of the specified data element. All values in the data element will be summed without regard to decimal points (explicit or implicit) or signs. Truncation will occur on the left most digits if the sum is greater than the maximum size of the hash total of the data element. Example: -.0018 First occurrence of value being hashed. .18 Second occurrence of value being hashed. 1.8 Third occurrence of value being hashed. 18.01 Fourth occurrence of value being hashed. --------- 1855 Hash total prior to truncation. 855 Hash total after truncation to three-digit field."
+					type="R" required="O"
+					minLength="1" maxLength="10"
+					xmlTag="hashTotal" />
+			</segment>
+		</loop>
+		<segment name="Transaction Set Trailer" id="SE"
+			description="To indicate the end of the transaction set and provide the count of the transmitted segments (including the beginning (ST) and ending (SE) segments)"
+			sequence="30"
+			occurs="1"
+			required='M'
+			shortName="TransactionSetTrailer">
+			<dataElement name="Number of Included Segments" id="96"
+				sequence="1"
+				description="Total number of segments included in a transaction set including ST and SE segments"
+				type="N0" required="M"
+				minLength="1" maxLength="10"
+				shortName="numberOfIncludedSegments">
+			</dataElement>
+			<dataElement name="Transaction Set Control Number" id="329"
+				sequence="2"
+				description="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"
+				type="AN" required="M"
+				minLength="4" maxLength="9"
+				shortName="transactionSetControlNumber">
+			</dataElement>
+		</segment>
+	</table>
+</transactionSet>

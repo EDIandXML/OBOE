@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Packaging cost paid by supplier</idValue>
+    <idCode>2</idCode>
+        <idValue>Packaging cost paid by recipient</idValue>
+    <idCode>3</idCode>
+        <idValue>Packaging cost not charged (returnable)</idValue>
+    <idCode>4</idCode>
+        <idValue>Buyer&apos;s</idValue>
+    <idCode>5</idCode>
+        <idValue>Carrier&apos;s durable</idValue>
+    <idCode>6</idCode>
+        <idValue>Carrier&apos;s expendable</idValue>
+    <idCode>7</idCode>
+        <idValue>Seller&apos;s durable</idValue>
+    <idCode>8</idCode>
+        <idValue>Seller&apos;s expendable</idValue>
+    <idCode>9</idCode>
+        <idValue>Special purpose buyer&apos;s durable</idValue>
+    <idCode>10</idCode>
+        <idValue>Special purpose buyer&apos;s expendable</idValue>
+    <idCode>11</idCode>
+        <idValue>Multiple usage buyer&apos;s durable</idValue>
+    <idCode>12</idCode>
+        <idValue>Multiple usage seller&apos;s durable</idValue>
+    <idCode>13</idCode>
+        <idValue>Not packed</idValue>
+    <idCode>14</idCode>
+        <idValue>Special purpose seller&apos;s durable</idValue>
+    <idCode>15</idCode>
+        <idValue>Export quality</idValue>
+    <idCode>16</idCode>
+        <idValue>Domestic quality</idValue>
+    <idCode>17</idCode>
+        <idValue>Packaging included in price</idValue>
+    <idCode>18</idCode>
+        <idValue>Packaging costs split</idValue>
+    <idCode>19</idCode>
+        <idValue>Packaging costs invoiced separately</idValue>
+    <idCode>20</idCode>
+        <idValue>Nil packaging costs</idValue>
+    <idCode>21</idCode>
+        <idValue>Nil packaging costs if packaging returned</idValue>
+    <idCode>22</idCode>
+        <idValue>Return chargeable</idValue>
+    <idCode>23</idCode>
+        <idValue>Chargeable, two thirds of paid amount with credit note on return of loaned package</idValue>
+</idList>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Algebraic total of the quantity values in line items in a message</idValue>
+    <idCode>2</idCode>
+        <idValue>Number of line items in message</idValue>
+    <idCode>3</idCode>
+        <idValue>Number of line and sub items in message</idValue>
+    <idCode>4</idCode>
+        <idValue>Number of invoice lines</idValue>
+    <idCode>5</idCode>
+        <idValue>Number of Customs item detail lines</idValue>
+    <idCode>6</idCode>
+        <idValue>Number of Customs entries</idValue>
+    <idCode>7</idCode>
+        <idValue>Total gross weight</idValue>
+    <idCode>8</idCode>
+        <idValue>Total pieces</idValue>
+    <idCode>9</idCode>
+        <idValue>Total number of ULD (Unit Load Device)</idValue>
+    <idCode>10</idCode>
+        <idValue>Total number of consignments</idValue>
+    <idCode>11</idCode>
+        <idValue>Total number of packages</idValue>
+    <idCode>12</idCode>
+        <idValue>Invoice total amount</idValue>
+    <idCode>13</idCode>
+        <idValue>Number of loading lists</idValue>
+    <idCode>14</idCode>
+        <idValue>Number of Customs commercial detail lines</idValue>
+    <idCode>15</idCode>
+        <idValue>Total consignment, cube</idValue>
+    <idCode>16</idCode>
+        <idValue>Total number of equipment</idValue>
+    <idCode>17</idCode>
+        <idValue>Declared total Customs value</idValue>
+    <idCode>18</idCode>
+        <idValue>Total reported quantity in net weight</idValue>
+    <idCode>19</idCode>
+        <idValue>Total reported quantity in supplementary units</idValue>
+    <idCode>20</idCode>
+        <idValue>Total reported invoice(s) value</idValue>
+    <idCode>21</idCode>
+        <idValue>Total reported ancillary costs</idValue>
+    <idCode>22</idCode>
+        <idValue>Total reported statistical value</idValue>
+    <idCode>23</idCode>
+        <idValue>Total ordered quantity</idValue>
+    <idCode>24</idCode>
+        <idValue>Number of orders referenced in this message</idValue>
+    <idCode>25</idCode>
+        <idValue>Number of rejected order lines</idValue>
+    <idCode>26</idCode>
+        <idValue>Total gross measurement/cube</idValue>
+    <idCode>27</idCode>
+        <idValue>Total number of credit items given for control purposes</idValue>
+    <idCode>28</idCode>
+        <idValue>Total number of debit items given for control purposes</idValue>
+    <idCode>29</idCode>
+        <idValue>Total net weight of consignment</idValue>
+</idList>

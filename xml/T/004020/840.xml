@@ -1,0 +1,654 @@
+<?xml version="1.0"?>
+<transactionSet name="Request for Quotation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+	id="840"
+	revision="004020"
+	functionalGroup="RQ"
+	description="This Draft Standard for Trial Use contains the format and establishes the data contents of the Request for Quotation Transaction Set (840) for use within the context of an Electronic Data Interchange (EDI) environment. The transaction set can be used to provide potential buyers with the ability to solicit price, delivery schedule, and other items from potential sellers of goods and services."
+	shortName="RequestForQuotation">
+	<table section="header">
+		<segment name="Transaction Set Header" id="ST"
+			description="To indicate the start of a transaction set and to assign a control number"
+			sequence="10"
+			occurs="1"
+			required='M'
+			shortName="TransactionSetHeader">
+			<dataElement name="Transaction Set Identifier Code" id="143"
+				sequence="1"
+				description="Code uniquely identifying a Transaction Set"
+				type="ID" required="M"
+				minLength="3" maxLength="3"
+				shortName="transactionSetIdentifierCode">
+			</dataElement>
+			<dataElement name="Transaction Set Control Number" id="329"
+				sequence="2"
+				description="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"
+				type="AN" required="M"
+				minLength="4" maxLength="9"
+				shortName="transactionSetControlNumber">
+			</dataElement>
+		</segment>
+		<segment name="Beginning Segment for Request for Quotation" id="BQT"
+			description="To indicate the beginning of a Request for Quotation Transaction Set and transmit identifying numbers and dates"
+			sequence="20"
+			occurs="1"
+			required='M'
+			shortName="BeginningSegmentForRequestForQuotation">
+			<dataElement name="Transaction Set Purpose Code" id="353"
+				sequence="1"
+				description="Code identifying purpose of transaction set"
+				type="ID" required="M"
+				minLength="2" maxLength="2"
+				shortName="transactionSetPurposeCode">
+				<idList>
+					<idCode>00</idCode>
+					<idValue>TV Test</idValue>
+				</idList>
+			</dataElement>
+			<dataElement name="Request for Quote Reference Number" id="586"
+				sequence="2"
+				description="Number assigned by the purchaser to identify his request for quote"
+				type="AN" required="M"
+				minLength="1" maxLength="45"
+				shortName="requestForQuoteReferenceNumber">
+			</dataElement>
+			<dataElement name="Date" id="373"
+				sequence="3"
+				description="Date expressed as CCYYMMDD"
+				type="DT" required="M"
+				minLength="8" maxLength="8"
+				shortName="date">
+			</dataElement>
+			<dataElement name="Date/Time Qualifier" id="374"
+				sequence="4"
+				description="Code specifying type of date or time, or both date and time"
+				type="ID" required="X"
+				minLength="3" maxLength="3"
+				shortName="dateTimeQualifier">
+				<idList>
+					<idCode>106</idCode>
+					<idValue>TV Test</idValue>
+				</idList>
+			</dataElement>
+			<dataElement name="Date" id="373"
+				sequence="5"
+				description="Date expressed as CCYYMMDD"
+				type="DT" required="X"
+				minLength="8" maxLength="8"
+				shortName="date">
+			</dataElement>
+		</segment>
+		<segment name="Administrative Communications Contact" id="PER"
+			description="To identify a person or office to whom administrative communications should be directed"
+			sequence="60"
+			occurs="3"
+			required='O'
+			shortName="AdministrativeCommunicationsContact">
+			<dataElement name="Contact Function Code" id="366"
+				sequence="1"
+				description="Code identifying the major duty or responsibility of the person or group named"
+				type="ID" required="M"
+				minLength="2" maxLength="2"
+				shortName="contactFunctionCode">
+				<idList>
+					<idCode>RE</idCode>
+					<idValue>TV Test</idValue>
+				</idList>
+			</dataElement>
+			<dataElement name="Name" id="93"
+				sequence="2"
+				description="Free-form name"
+				type="AN" required="O"
+				minLength="1" maxLength="60"
+				shortName="name">
+			</dataElement>
+			<dataElement name="Communication Number Qualifier" id="365"
+				sequence="3"
+				description="Code identifying the type of communication number"
+				type="ID" required="X"
+				minLength="2" maxLength="2"
+				shortName="communicationNumberQualifier">
+				<idList>
+					<idCode>TE</idCode>
+					<idValue>TV Test</idValue>
+				</idList>
+			</dataElement>
+			<dataElement name="Communication Number" id="364"
+				sequence="4"
+				description="Complete communications number including country or area code when applicable"
+				type="AN" required="X"
+				minLength="1" maxLength="80"
+				shortName="communicationNumber">
+			</dataElement>
+		</segment>
+		<segment name="F.O.B. Related Instructions" id="FOB"
+			description="To specify transportation instructions relating to shipment"
+			sequence="80"
+			occurs="-1"
+			required='O'
+			shortName="FOBRelatedInstructions">
+			<dataElement name="Shipment Method of Payment" id="146"
+				sequence="1"
+				description="Code identifying payment terms for transportation charges"
+				type="ID" required="M"
+				minLength="2" maxLength="2"
+				shortName="shipmentMethodOfPayment">
+				<idList>
+					<idCode>DF</idCode>
+					<idValue>TV Test</idValue>
+				</idList>
+			</dataElement>
+			<dataElement name="Location Qualifier" id="309"
+				sequence="2"
+				description="Code identifying type of location"
+				type="ID" required="X"
+				minLength="1" maxLength="2"
+				shortName="locationQualifier">
+				<idList>
+					<idCode>DE</idCode>
+					<idValue>TV Test</idValue>
+				</idList>
+			</dataElement>
+		</segment>
+		
+		<loop name="Identification Reference" id="N9"
+			occurs="1000"
+			required='O'
+			shortName="IdentificationReference">
+			<segment name="Identification Reference" id="N9"
+				description="To transmit identifying information as specified by the Reference Identification Qualifier"
+				sequence="290"
+				occurs="1"
+				required='O'
+				shortName="IdentificationReference">
+				<dataElement name="Reference Identification Qualifier" id="128"
+					sequence="1"
+					description="Code qualifying the Reference Identification"
+					type="ID" required="M"
+					minLength="2" maxLength="3"
+					shortName="referenceIdentificationQualifier">
+					<idList>
+						<idCode>CJ</idCode>
+						<idValue>TV Test</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Reference Identification" id="127"
+					sequence="2"
+					description="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"
+					type="AN" required="X"
+					minLength="1" maxLength="30"
+					shortName="referenceIdentification">
+				</dataElement>
+				<dataElement name="Date" id="373"
+					sequence="4"
+					description="Date expressed as CCYYMMDD"
+					type="DT" required="O"
+					minLength="8" maxLength="8"
+					shortName="date">
+				</dataElement>
+			</segment>
+			<segment name="Message Text" id="MSG"
+				description="To provide a free-form format that allows the transmission of text information"
+				sequence="300"
+				occurs="1000"
+				required='O'
+				shortName="MessageText">
+				<dataElement name="Free-Form Message Text" id="933"
+					sequence="1"
+					description="Free-form message text"
+					type="AN" required="M"
+					minLength="1" maxLength="264"
+					shortName="freeFormMessageText">
+				</dataElement>
+			</segment>
+		</loop>
+	</table>
+	<table section="detail">
+		<loop name="Baseline Item Data" id="PO1"
+			occurs="100000"
+			required='M'
+			shortName="BaselineItemData">
+			<segment name="Baseline Item Data" id="PO1"
+				description="To specify basic and most frequently used line item data"
+				sequence="10"
+				occurs="1"
+				required='M'
+				shortName="BaselineItemData">
+				<dataElement name="Assigned Identification" id="350"
+					sequence="1"
+					description="Alphanumeric characters assigned for differentiation within a transaction set"
+					type="AN" required="O"
+					minLength="1" maxLength="20"
+					shortName="assignedIdentification">
+				</dataElement>
+				<dataElement name="Quantity Ordered" id="330"
+					sequence="2"
+					description="Quantity ordered"
+					type="R" required="X"
+					minLength="1" maxLength="15"
+					shortName="quantityOrdered">
+				</dataElement>
+				<dataElement name="Unit or Basis for Measurement Code" id="355"
+					sequence="3"
+					description="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"
+					type="ID" required="O"
+					minLength="2" maxLength="2"
+					shortName="unitOrBasisForMeasurementCode">
+					<idList>
+						<idCode>SH</idCode>
+						<idValue>TV Test</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Unit Price" id="212"
+					sequence="4"
+					description="Price per unit of product, service, commodity, etc."
+					type="R" required="X"
+					minLength="1" maxLength="17"
+					shortName="unitPrice" />
+				<dataElement name="Basis of Unit Price Code" id="639"
+					sequence="5"
+					description="Code identifying the type of unit price for an item"
+					type="ID" required="O"
+					minLength="2" maxLength="2"
+					shortName="basisOfUnitPriceCode">
+					<idList>
+						<idCode>AA</idCode>
+						<idValue>TV Test</idValue>
+						<idCode>AB</idCode>
+						<idValue>TV Test</idValue>
+						<idCode>AP</idCode>
+						<idValue>TV Test</idValue>
+
+					</idList>
+				</dataElement>
+				
+				<dataElement name="Product/Service ID Qualifier" id="235"
+					sequence="6"
+					description="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"
+					type="ID" required="X"
+					minLength="2" maxLength="2"
+					shortName="productServiceIdQualifier">
+					<idList>
+						<idCode>FT</idCode>
+						<idValue>TV Test</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Product/Service ID" id="234"
+					sequence="7"
+					description="Identifying number for a product or service"
+					type="AN" required="X"
+					minLength="1" maxLength="48"
+					shortName="productServiceId">
+				</dataElement>
+				<dataElement name="Product/Service ID Qualifier" id="235"
+					sequence="8"
+					description="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"
+					type="ID" required="X"
+					minLength="2" maxLength="2"
+					shortName="productServiceIdQualifier">
+					<idList>
+						<idCode>SI</idCode>
+						<idValue>TV Test</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Product/Service ID" id="234"
+					sequence="9"
+					description="Identifying number for a product or service"
+					type="AN" required="X"
+					minLength="1" maxLength="48"
+					shortName="productServiceId">
+				</dataElement>
+				<dataElement name="Product/Service ID Qualifier" id="235"
+					sequence="10"
+					description="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"
+					type="ID" required="X"
+					minLength="2" maxLength="2"
+					shortName="productServiceIdQualifier">
+					<idList>
+						<idCode>SW</idCode>
+						<idValue>TV Test</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Product/Service ID" id="234"
+					sequence="11"
+					description="Identifying number for a product or service"
+					type="AN" required="X"
+					minLength="1" maxLength="48"
+					shortName="productServiceId">
+				</dataElement>
+			</segment>
+			<segment name="Item Identification" id="LIN"
+              description="To specify basic item identification data"
+              sequence="15"
+              occurs="-1"
+              required='O'
+              shortName="ItemIdentification">
+                <dataElement name="Assigned Identification" id="350"
+                  sequence="1"
+                  description="Alphanumeric characters assigned for differentiation within a transaction set"
+                  type="AN" required="O"
+                  minLength="1" maxLength="20"
+                  shortName="assignedIdentification"/>
+                <dataElement name="Product/Service ID Qualifier" id="235"
+                  sequence="2"
+                  description="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"
+                  type="ID" required="M"
+                  minLength="2" maxLength="2"
+                  shortName="productServiceIdQualifier">
+                  <idList><idCode>2</idCode><idValue>TV Test</idValue></idList>
+                </dataElement>
+                <dataElement name="Product/Service ID" id="234"
+                  sequence="3"
+                  description="Identifying number for a product or service"
+                  type="AN" required="M"
+                  minLength="1" maxLength="48"
+                  shortName="productServiceId"/>
+        </segment>
+         <segment name="Maintenance Type" id="G53"
+              description="To identify the specific type of item maintenance"
+              sequence="17"
+              occurs="1"
+              required='O'
+              shortName="MaintenanceType">
+                <dataElement name="Maintenance Type Code" id="875"
+                  sequence="1"
+                  description="Code identifying the specific type of item maintenance"
+                  type="ID" required="M"
+                  minLength="3" maxLength="3"
+                  shortName="maintenanceTypeCode">
+                  <idList><idCode>ZZZ</idCode>
+        <idValue>TV Test</idValue></idList>
+                </dataElement>
+            </segment>
+			<loop name="Product/Item Description" id="PID"
+				occurs="1000"
+				required='O'
+				shortName="ProductItemDescription">
+				<segment name="Product/Item Description" id="PID"
+					description="To describe a product or process in coded or free-form format"
+					sequence="50"
+					occurs="1"
+					required='O'
+					shortName="ProductItemDescription">
+					<dataElement name="Item Description Type" id="349"
+						sequence="1"
+						description="Code indicating the format of a description"
+						type="ID" required="M"
+						minLength="1" maxLength="1"
+						shortName="itemDescriptionType">
+						<idList>
+							<idCode>F</idCode>
+							<idValue>TV Test</idValue>
+							<idCode>S</idCode>
+							<idValue>TV Test</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Description" id="352"
+						sequence="5"
+						description="A free-form description to clarify the related data elements and their content"
+						type="AN" required="X"
+						minLength="1" maxLength="80"
+						shortName="description">
+					</dataElement>
+				</segment>
+				<segment name="Measurements" id="MEA"
+					description="To specify physical measurements or counts, including dimensions, tolerances, variances, and weights  (See Figures Appendix for example of use of C001)"
+					sequence="60"
+					occurs="10"
+					required='O'
+					shortName="Measurements">
+					<dataElement name="Measurement Reference ID Code" id="737"
+						sequence="1"
+						description="Code identifying the broad category to which a measurement applies"
+						type="ID" required="O"
+						minLength="2" maxLength="2"
+						shortName="measurementReferenceIdCode">
+						<idList>
+							<idCode>CT</idCode>
+							<idValue>TV Test</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Measurement Qualifier" id="738"
+						sequence="2"
+						description="Code identifying a specific product or process characteristic to which a measurement applies"
+						type="ID" required="O"
+						minLength="1" maxLength="3"
+						shortName="measurementQualifier">
+						<idList>
+							<idCode>PO</idCode>
+							<idValue>TV Test</idValue>
+						</idList>
+					</dataElement>
+					<compositeDE name="Composite Unit of Measure" id="C001"
+						sequence="4"
+						required='O'
+						shortName="compositeUnitOfMeasure">
+						<dataElement name="Unit or Basis for Measurement Code"
+							id="355"
+							sequence="1"
+							description="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"
+							type="ID" required="M"
+							minLength="2" maxLength="2"
+							shortName="unitOrBasisForMeasurementCode">
+							<idList>
+								<idCode>P1</idCode>
+								<idValue>TV Test</idValue>
+							</idList>
+						</dataElement>
+					</compositeDE>
+					<dataElement name="Range Minimum" id="740"
+						sequence="5"
+						description="The value specifying the minimum of the measurement range"
+						type="R" required="X"
+						minLength="1" maxLength="20"
+						shortName="rangeMinimum">
+					</dataElement>
+					<dataElement name="Range Maximum" id="741"
+						sequence="6"
+						description="The value specifying the maximum of the measurement range"
+						type="R" required="X"
+						minLength="1" maxLength="20"
+						shortName="rangeMaximum">
+					</dataElement>
+				</segment>
+			</loop>
+			<segment name="Reference Identification" id="REF"
+				description="To specify identifying information"
+				sequence="100"
+				occurs="-1"
+				required='O'
+				shortName="ReferenceIdentification">
+				<dataElement name="Reference Identification Qualifier" id="128"
+					sequence="1"
+					description="Code qualifying the Reference Identification"
+					type="ID" required="M"
+					minLength="2" maxLength="3"
+					shortName="referenceIdentificationQualifier">
+					<idList>
+						<idCode>RQ</idCode>
+						<idValue>TV Test</idValue>
+					</idList>
+				</dataElement>
+				<dataElement name="Reference Identification" id="127"
+					sequence="2"
+					description="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"
+					type="AN" required="X"
+					minLength="1" maxLength="30"
+					shortName="referenceIdentification">
+				</dataElement>
+				<dataElement name="Description" id="352"
+					sequence="3"
+					description="A free-form description to clarify the related data elements and their content"
+					type="AN" required="X"
+					minLength="1" maxLength="80"
+					shortName="description">
+				</dataElement>
+			</segment>
+			<loop name="Line Item Schedule" id="SCH"
+				occurs="104"
+				required='O'
+				shortName="LineItemSchedule">
+				<segment name="Line Item Schedule" id="SCH"
+					description="To specify the data for scheduling a specific line-item"
+					sequence="296"
+					occurs="1"
+					required='O'
+					shortName="LineItemSchedule">
+					<dataElement name="Quantity" id="380"
+						sequence="1"
+						description="Numeric value of quantity"
+						type="R" required="M"
+						minLength="1" maxLength="15"
+						shortName="quantity">
+					</dataElement>
+					<dataElement name="Unit or Basis for Measurement Code"
+						id="355"
+						sequence="2"
+						description="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"
+						type="ID" required="M"
+						minLength="2" maxLength="2"
+						shortName="unitOrBasisForMeasurementCode">
+						<idList>
+							<idCode>SH</idCode>
+							<idValue>TV Test</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Date/Time Qualifier" id="374"
+						sequence="5"
+						description="Code specifying type of date or time, or both date and time"
+						type="ID" required="M"
+						minLength="3" maxLength="3"
+						shortName="dateTimeQualifier">
+						<idList>
+							<idCode>002</idCode>
+							<idValue>TV Test</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Date" id="373"
+						sequence="6"
+						description="Date expressed as CCYYMMDD"
+						type="DT" required="M"
+						minLength="8" maxLength="8"
+						shortName="date">
+					</dataElement>
+				</segment>
+			</loop>
+			<loop name="Name" id="N1"
+				occurs="-1"
+				required='O'
+				shortName="Name">
+				<segment name="Name" id="N1"
+					description="To identify a party by type of organization, name, and code"
+					sequence="340"
+					occurs="1"
+					required='O'
+					shortName="Name">
+					<dataElement name="Entity Identifier Code" id="98"
+						sequence="1"
+						description="Code identifying an organizational entity, a physical location, property or an individual"
+						type="ID" required="M"
+						minLength="2" maxLength="3"
+						shortName="entityIdentifierCode">
+						<idList>
+							<idCode>ST</idCode>
+							<idValue>TV Test</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Name" id="93"
+						sequence="2"
+						description="Free-form name"
+						type="AN" required="X"
+						minLength="1" maxLength="60"
+						shortName="name">
+					</dataElement>
+					<dataElement name="Identification Code Qualifier" id="66"
+						sequence="3"
+						description="Code designating the system/method of code structure used for Identification Code (67)"
+						type="ID" required="X"
+						minLength="1" maxLength="2"
+						shortName="identificationCodeQualifier">
+						<idList>
+							<idCode>16</idCode>
+							<idValue>TV Test</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Identification Code" id="67"
+						sequence="4"
+						description="Code identifying a party or other code"
+						type="AN" required="X"
+						minLength="2" maxLength="80"
+						shortName="identificationCode">
+					</dataElement>
+				</segment>
+				<segment name="Note/Special Instruction" id="NTE"
+					description="To transmit information in a free-form format, if necessary, for comment or special instruction"
+					sequence="341"
+					occurs="-1"
+					required='O'
+					shortName="NoteSpecialInstruction">
+					<dataElement name="Note Reference Code" id="363"
+						sequence="1"
+						description="Code identifying the functional area or purpose for which the note applies"
+						type="ID" required="O"
+						minLength="3" maxLength="3"
+						shortName="noteReferenceCode">
+						<idList>
+							<idCode>SPH</idCode>
+							<idValue>TV Test</idValue>
+						</idList>
+					</dataElement>
+					<dataElement name="Description" id="352"
+						sequence="2"
+						description="A free-form description to clarify the related data elements and their content"
+						type="AN" required="M"
+						minLength="1" maxLength="80"
+						shortName="description">
+					</dataElement>
+				</segment>
+			</loop>
+		</loop>
+	</table>
+	<table section="summary">
+		<segment name="Transaction Totals" id="CTT"
+			description="To transmit a hash total for a specific element in the transaction set"
+			sequence="10"
+			occurs="1"
+			required='O'
+			shortName="TransactionTotals">
+			<dataElement name="Number of Line Items" id="354"
+				sequence="1"
+				description="Total number of line items in the transaction set"
+				type="N0" required="M"
+				minLength="1" maxLength="6"
+				shortName="numberOfLineItems">
+			</dataElement>            <dataElement name="Hash Total" id="347"
+              sequence="2"
+              description="Sum of values of the specified data element. All values in the data element will be summed without regard to decimal points (explicit or implicit) or signs. Truncation will occur on the left most digits if the sum is greater than the maximum size of the hash total of the data element. Example: -.0018 First occurrence of value being hashed. .18 Second occurrence of value being hashed. 1.8 Third occurrence of value being hashed. 18.01 Fourth occurrence of value being hashed. --------- 1855 Hash total prior to truncation. 855 Hash total after truncation to three-digit field."
+              type="R" required="O"
+              minLength="1" maxLength="10"
+              shortName="hashTotal"/>
+		</segment>
+		<segment name="Transaction Set Trailer" id="SE"
+			description="To indicate the end of the transaction set and provide the count of the transmitted segments (including the beginning (ST) and ending (SE) segments)"
+			sequence="20"
+			occurs="1"
+			required='M'
+			shortName="TransactionSetTrailer">
+			<dataElement name="Number of Included Segments" id="96"
+				sequence="1"
+				description="Total number of segments included in a transaction set including ST and SE segments"
+				type="N0" required="M"
+				minLength="1" maxLength="10"
+				shortName="numberOfIncludedSegments">
+			</dataElement>
+			<dataElement name="Transaction Set Control Number" id="329"
+				sequence="2"
+				description="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"
+				type="AN" required="M"
+				minLength="4" maxLength="9"
+				shortName="transactionSetControlNumber">
+			</dataElement>
+		</segment>
+	</table>
+</transactionSet>

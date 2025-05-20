@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AA</idCode>
+        <idValue>Cancellation price</idValue>
+    <idCode>AB</idCode>
+        <idValue>Per ton</idValue>
+    <idCode>AC</idCode>
+        <idValue>Minimum order price</idValue>
+    <idCode>AD</idCode>
+        <idValue>Export price</idValue>
+    <idCode>AE</idCode>
+        <idValue>Range dependent price</idValue>
+    <idCode>AI</idCode>
+        <idValue>Active ingredient</idValue>
+    <idCode>AQ</idCode>
+        <idValue>As is quantity</idValue>
+    <idCode>CA</idCode>
+        <idValue>Catalogue</idValue>
+    <idCode>CT</idCode>
+        <idValue>Contract</idValue>
+    <idCode>CU</idCode>
+        <idValue>Consumer unit</idValue>
+    <idCode>DI</idCode>
+        <idValue>Distributor</idValue>
+    <idCode>EC</idCode>
+        <idValue>ECSC price</idValue>
+    <idCode>NW</idCode>
+        <idValue>Net weight</idValue>
+    <idCode>PC</idCode>
+        <idValue>Price catalogue</idValue>
+    <idCode>PE</idCode>
+        <idValue>Per each</idValue>
+    <idCode>PK</idCode>
+        <idValue>Per kilogram</idValue>
+    <idCode>PL</idCode>
+        <idValue>Per litre</idValue>
+    <idCode>PT</idCode>
+        <idValue>Per tonne</idValue>
+    <idCode>PU</idCode>
+        <idValue>Specified unit</idValue>
+    <idCode>PV</idCode>
+        <idValue>Provisional price</idValue>
+    <idCode>PW</idCode>
+        <idValue>Gross weight</idValue>
+    <idCode>QT</idCode>
+        <idValue>Quoted</idValue>
+    <idCode>SR</idCode>
+        <idValue>Suggested retail</idValue>
+    <idCode>TB</idCode>
+        <idValue>To be negotiated</idValue>
+    <idCode>TU</idCode>
+        <idValue>Traded unit</idValue>
+    <idCode>TW</idCode>
+        <idValue>Theoretical weight</idValue>
+    <idCode>WH</idCode>
+        <idValue>Wholesale</idValue>
+</idList>

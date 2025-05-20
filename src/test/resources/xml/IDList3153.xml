@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AA</idCode>
+        <idValue>Circuit switching</idValue>
+    <idCode>AB</idCode>
+        <idValue>SITA</idValue>
+    <idCode>AC</idCode>
+        <idValue>ARINC</idValue>
+    <idCode>CA</idCode>
+        <idValue>Cable address</idValue>
+    <idCode>EI</idCode>
+        <idValue>EDI transmission</idValue>
+    <idCode>EM</idCode>
+        <idValue>Electronic mail</idValue>
+    <idCode>EX</idCode>
+        <idValue>Extension</idValue>
+    <idCode>FT</idCode>
+        <idValue>File transfer access method</idValue>
+    <idCode>FX</idCode>
+        <idValue>Telefax</idValue>
+    <idCode>GM</idCode>
+        <idValue>GEIS (General Electric Information Service) mailbox</idValue>
+    <idCode>IE</idCode>
+        <idValue>IBM information exchange</idValue>
+    <idCode>IM</idCode>
+        <idValue>Internal mail</idValue>
+    <idCode>MA</idCode>
+        <idValue>Mail</idValue>
+    <idCode>PB</idCode>
+        <idValue>Postbox no.</idValue>
+    <idCode>PS</idCode>
+        <idValue>Packet switching</idValue>
+    <idCode>SW</idCode>
+        <idValue>S.W.I.F.T.</idValue>
+    <idCode>TE</idCode>
+        <idValue>Telephone</idValue>
+    <idCode>TG</idCode>
+        <idValue>Telegraph</idValue>
+    <idCode>TL</idCode>
+        <idValue>Telex</idValue>
+    <idCode>TM</idCode>
+        <idValue>Telemail</idValue>
+    <idCode>TT</idCode>
+        <idValue>Teletext</idValue>
+    <idCode>TX</idCode>
+        <idValue>TWX</idValue>
+    <idCode>XF</idCode>
+        <idValue>X.400</idValue>
+</idList>

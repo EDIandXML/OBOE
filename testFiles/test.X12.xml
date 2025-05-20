@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<!DOCTYPE envelope PUBLIC "envelope" "https://raw.githubusercontent.com/EDIandXML/OBOE/main/envelope.dtd">
+<envelope format="X12">
+<segment code="ISA" name="Interchange Control Header">
+<element code="I01" name="Authorization Information Qualifier"><value description="No Authorization Information Present (No Meaningful Information in I02)">00</value></element>
+<element code="I02" name="Authorization Information"> <value>          </value></element>
+<element code="I03" name="Security Information Qualifier"><value description="No Security Information Present (No Meaningful Information in I04)">00</value></element>
+<element code="I04" name="Security Information"> <value>          </value></element>
+<element code="I05" name="Interchange ID Qualifier"><value description="Mutually Defined">ZZ</value></element>
+<element code="I06" name="Interchange Sender ID"> <value>DMCOGDEN       </value></element>
+<element code="I05" name="Interchange ID Qualifier"><value description="Mutually Defined">ZZ</value></element>
+<element code="I07" name="Interchange Receiver ID"> <value>PUBLIC         </value></element>
+<element code="I08" name="Interchange Date"> <value>000817</value></element>
+<element code="I09" name="Interchange Time"> <value>1520</value></element>
+<element code="I10" name="Interchange Control Standards Identifier"> <value>U</value></element>
+<element code="I11" name="Interchange Control Version Number"><value description="Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1997">00401</value></element>
+<element code="I12" name="Interchange Control Number"><value>300017389</value></element>
+<element code="I13" name="Acknowledgment Requested"><value description="Interchange Acknowledgment Requested">1</value></element>
+<element code="I14" name="Usage Indicator"><value description="Production Data">P</value></element>
+<element code="I15" name="Component Element Separator"> <value>&lt;</value></element>
+</segment>
+<functionalgroup>
+<segment code="GS" name="Functional Group Header">
+<element code="479" name="Functional Identifier Code"><value description="Request for Quotation (840) and Procurement Notices
+						(836)">RQ</value></element>
+<element code="142" name="Application Sender's Code"> <value>HILLGW201401</value></element>
+<element code="124" name="Application Receiver's Code"> <value>PUBLIC</value></element>
+<element code="373" name="Date"> <value>20010317</value></element>
+<element code="337" name="Time"> <value>1520</value></element>
+<element code="28" name="Group Control Number"><value>300017389</value></element>
+<element code="455" name="Responsible Agency Code"><value description="Accredited Standards Committee X12">X</value></element>
+<element code="480" name="Version / Release / Industry Identifier Code"><value description="Standards Approved for Publication by ASC X12
+		Procedures Review Board">004010</value></element>
+</segment>
+<transactionset code="840" name="Request for Quotation">
+<table section="header">
+<segment code="ST" name="Transaction Set Header">
+<element code="143" name="Transaction Set Identifier Code"><value description="840">840</value></element>
+<element code="329" name="Transaction Set Control Number"> <value>300017389</value></element>
+</segment>
+<segment code="BQT" name="Beginning Segment for Request for Quotation">
+<element code="353" name="Transaction Set Purpose Code"><value description="Original">00</value></element>
+<element code="586" name="Request for Quote Reference Number"> <value>F0470097T3125</value></element>
+<element code="373" name="Date"> <value>20000317</value></element>
+<element code="374" name="Date/Time Qualifier"><value description="Required By">106</value></element>
+<element code="373" name="Date"> <value>20000324</value></element>
+</segment>
+<segment code="PER" name="Administrative Communications Contact">
+<element code="366" name="Contact Function Code"><value description="Receiving Contact">RE</value></element>
+<element code="93" name="Name"> <value>DARLENE ANDERSON</value></element>
+<element code="365" name="Communication Number Qualifier"><value description="Telephone">TE</value></element>
+<element code="364" name="Communication Number"> <value>8052773900</value></element>
+</segment>
+<segment code="FOB" name="F.O.B. Related Instructions">
+<element code="146" name="Shipment Method of Payment"><value description="Defined by Buyer and Seller">DF</value></element>
+<element code="309" name="Location Qualifier"><value description="Destination (Shipping)">DE</value></element>
+</segment>
+<loop code="N9" name="Identification Reference">
+<segment code="N9" name="Identification Reference">
+<element code="128" name="Reference Identification Qualifier"><value description="Clause Number">CJ</value></element>
+<element code="127" name="Reference Identification"> <value>52.212-4</value></element>
+<element code="373" name="Date"> <value>20000801</value></element>
+</segment>
+<segment code="MSG" name="Message Text">
+<element code="933" name="Free-Form Message Text"> <value>CONTRACT TERMS AND CONDITIONS        COMMERCIAL ITEMS</value></element>
+</segment>
+</loop>
+<loop code="N9" name="Identification Reference">
+<segment code="N9" name="Identification Reference">
+<element code="128" name="Reference Identification Qualifier"><value description="Clause Number">CJ</value></element>
+<element code="127" name="Reference Identification"> <value>52.212-5</value></element>
+<element code="373" name="Date"> <value>20000801</value></element>
+</segment>
+<segment code="MSG" name="Message Text">
+<element code="933" name="Free-Form Message Text"> <value>CONTRACT TERMS AND CONDITIONS REQD TOIMPLEMENT STATUTES OR EXECUTIVE ORDERS--</value></element>
+</segment>
+</loop>
+<loop code="N9" name="Identification Reference">
+<segment code="N9" name="Identification Reference">
+<element code="128" name="Reference Identification Qualifier"><value description="Clause Number">CJ</value></element>
+<element code="127" name="Reference Identification"> <value>52.222-26</value></element>
+</segment>
+<segment code="MSG" name="Message Text">
+<element code="933" name="Free-Form Message Text"> <value>_X_ (6) 52.222-26, EQUAL OPPORTUNITY (E.O. 11246)</value></element>
+</segment>
+</loop>
+<loop code="N9" name="Identification Reference">
+<segment code="N9" name="Identification Reference">
+<element code="128" name="Reference Identification Qualifier"><value description="Clause Number">CJ</value></element>
+<element code="127" name="Reference Identification"> <value>52.232-33</value></element>
+<element code="373" name="Date"> <value>20000801</value></element>
+</segment>
+<segment code="MSG" name="Message Text">
+<element code="933" name="Free-Form Message Text"> <value>MANDATORY INFORMATION FOR ELECTRONIC FUNDS TRANSFER PAYMENT</value></element>
+</segment>
+</loop>
+<loop code="N9" name="Identification Reference">
+<segment code="N9" name="Identification Reference">
+<element code="128" name="Reference Identification Qualifier"><value description="Clause Number">CJ</value></element>
+<element code="127" name="Reference Identification"> <value>252.212-7001</value></element>
+<element code="373" name="Date"> <value>19951101</value></element>
+</segment>
+<segment code="MSG" name="Message Text">
+<element code="933" name="Free-Form Message Text"> <value>CONTRACT TERMS AND CONDITIONS        REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE</value></element>
+</segment>
+</loop>
+<loop code="N9" name="Identification Reference">
+<segment code="N9" name="Identification Reference">
+<element code="128" name="Reference Identification Qualifier"><value description="Clause Number">CJ</value></element>
+<element code="127" name="Reference Identification"> <value>5352.215-9000</value></element>
+<element code="373" name="Date"> <value>19920701</value></element>
+</segment>
+<segment code="MSG" name="Message Text">
+<element code="933" name="Free-Form Message Text"> <value>REPRESENTATIONS, CERTIFICATONS</value></element>
+</segment>
+</loop>
+<loop code="N9" name="Identification Reference">
+<segment code="N9" name="Identification Reference">
+<element code="128" name="Reference Identification Qualifier"><value description="Clause Number">CJ</value></element>
+<element code="127" name="Reference Identification"> <value>52.212-3</value></element>
+<element code="373" name="Date"> <value>20000601</value></element>
+</segment>
+<segment code="MSG" name="Message Text">
+<element code="933" name="Free-Form Message Text"> <value>OFFEROR REPRESENTATIONS AND          CERTIFICATIONS COMMERCIAL ITEMS</value></element>
+</segment>
+</loop>
+</table>
+<table section="detail">
+<loop code="PO1" name="Baseline Item Data">
+<segment code="PO1" name="Baseline Item Data">
+<element code="350" name="Assigned Identification"> <value>0001</value></element>
+<element code="330" name="Quantity Ordered"><value>25</value></element>
+<element code="355" name="Unit or Basis for Measurement Code"><value description="Sheet">SH</value></element>
+<element code="235" name="Product/Service ID Qualifier"><value description="Federal Supply Classification">FT</value></element>
+<element code="234" name="Product/Service ID"> <value>9545</value></element>
+<element code="235" name="Product/Service ID Qualifier"><value description="Standard Industrial Classification Code">SI</value></element>
+<element code="234" name="Product/Service ID"> <value>3356</value></element>
+<element code="235" name="Product/Service ID Qualifier"><value description="Stock Number">SW</value></element>
+<element code="234" name="Product/Service ID"> <value>9545LAB187I</value></element>
+</segment>
+<loop code="PID" name="Product/Item Description">
+<segment code="PID" name="Product/Item Description">
+<element code="349" name="Item Description Type"><value description="Free-form">F</value></element>
+<element code="352" name="Description"> <value>SHEET MATERIAL BRASS TYPE ENGRAVING</value></element>
+</segment>
+</loop>
+<loop code="PID" name="Product/Item Description">
+<segment code="PID" name="Product/Item Description">
+<element code="349" name="Item Description Type"><value description="Free-form">F</value></element>
+<element code="352" name="Description"> <value>SIZE 12&quot;X24&quot; OTHER GLOSSBROWN</value></element>
+</segment>
+</loop>
+<loop code="PID" name="Product/Item Description">
+<segment code="PID" name="Product/Item Description">
+<element code="349" name="Item Description Type"><value description="Free-form">F</value></element>
+<element code="352" name="Description"> <value>.025THICK.</value></element>
+</segment>
+</loop>
+<loop code="PID" name="Product/Item Description">
+<segment code="PID" name="Product/Item Description">
+<element code="349" name="Item Description Type"><value description="Free-form">F</value></element>
+<element code="352" name="Description"> <value> MFG NAME ROWMARK</value></element>
+</segment>
+</loop>
+<loop code="PID" name="Product/Item Description">
+<segment code="PID" name="Product/Item Description">
+<element code="349" name="Item Description Type"><value description="Free-form">F</value></element>
+<element code="352" name="Description"> <value> MFG PART -BR-4</value></element>
+</segment>
+<segment code="MEA" name="Measurements">
+<element code="737" name="Measurement Reference ID Code"><value description="Counts">CT</value></element>
+<element code="738" name="Measurement Qualifier"><value description="Percent of Order (-, +)">PO</value></element>
+<composite code="C001" name="Composite Unit of Measure">
+<element code="355" name="Unit or Basis for Measurement Code"><value description="Percent">P1</value></element>
+</composite>
+<element code="740" name="Range Minimum"><value>0</value></element>
+<element code="741" name="Range Maximum"><value>0</value></element>
+</segment>
+</loop>
+<segment code="REF" name="Reference Identification">
+<element code="128" name="Reference Identification Qualifier"><value description="Purchase Requisition Number">RQ</value></element>
+<element code="127" name="Reference Identification"> <value>FC280570726094</value></element>
+<element code="352" name="Description"> <value>00025</value></element>
+</segment>
+<loop code="SCH" name="Line Item Schedule">
+<segment code="SCH" name="Line Item Schedule">
+<element code="380" name="Quantity"><value>25</value></element>
+<element code="355" name="Unit or Basis for Measurement Code"><value description="Sheet">SH</value></element>
+<element code="374" name="Date/Time Qualifier"><value description="Delivery Requested">002</value></element>
+<element code="373" name="Date"> <value>20000711</value></element>
+</segment>
+</loop>
+<loop code="N1" name="Name">
+<segment code="N1" name="Name">
+<element code="98" name="Entity Identifier Code"><value description="Ship To">ST</value></element>
+<element code="93" name="Name"> <value>EDWARDS AFB, CA</value></element>
+<element code="66" name="Identification Code Qualifier"><value description="ZIP Code">16</value></element>
+<element code="67" name="Identification Code"> <value>935248540</value></element>
+</segment>
+<segment code="NTE" name="Note/Special Instruction">
+<element code="363" name="Note Reference Code"><value description="Special Handling">SPH</value></element>
+<element code="352" name="Description"> <value>THIS IS A TEST</value></element>
+</segment>
+</loop>
+</loop>
+</table>
+<table section="summary">
+<segment code="CTT" name="Transaction Totals">
+<element code="354" name="Number of Line Items"><value>1</value></element>
+</segment>
+<segment code="SE" name="Transaction Set Trailer">
+<element code="96" name="Number of Included Segments"><value>31</value></element>
+<element code="329" name="Transaction Set Control Number"> <value>300017389</value></element>
+</segment>
+</table>
+</transactionset>
+<segment code="GE" name="Functional Group Trailer">
+<element code="97" name="Number of Transaction Sets Included"><value>1</value></element>
+<element code="28" name="Group Control Number"><value>300017389</value></element>
+</segment>
+</functionalgroup>
+<segment code="IEA" name="Interchange Control Trailer">
+<element code="I16" name="Number of Included Functional Groups"><value>1</value></element>
+<element code="I12" name="Interchange Control Number"><value>300017389</value></element>
+</segment>
+</envelope>

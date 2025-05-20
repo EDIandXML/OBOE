@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>A</idCode>
+        <idValue>Consolidated weight</idValue>
+    <idCode>AAA</idCode>
+        <idValue>Unit net weight</idValue>
+    <idCode>AAB</idCode>
+        <idValue>Unit gross weight</idValue>
+    <idCode>AAC</idCode>
+        <idValue>Total net weight</idValue>
+    <idCode>AAD</idCode>
+        <idValue>Total gross weight</idValue>
+    <idCode>AAE</idCode>
+        <idValue>Item gross weight</idValue>
+    <idCode>AAF</idCode>
+        <idValue>Net net weight</idValue>
+    <idCode>AAG</idCode>
+        <idValue>Gross weight (item level)</idValue>
+    <idCode>AAH</idCode>
+        <idValue>Customs line item measurement</idValue>
+    <idCode>AAI</idCode>
+        <idValue>Visa quantity</idValue>
+    <idCode>AAL</idCode>
+        <idValue>Net weight</idValue>
+    <idCode>AAM</idCode>
+        <idValue>Gross tonnage of the vessel</idValue>
+    <idCode>AAN</idCode>
+        <idValue>Net tonnage of the vessel</idValue>
+    <idCode>AAO</idCode>
+        <idValue>Humidity</idValue>
+    <idCode>AAP</idCode>
+        <idValue>Voltage</idValue>
+    <idCode>AAQ</idCode>
+        <idValue>Power consumption</idValue>
+    <idCode>AAR</idCode>
+        <idValue>Heat dissipation</idValue>
+    <idCode>AAS</idCode>
+        <idValue>Air flow</idValue>
+    <idCode>AAT</idCode>
+        <idValue>Shock impact</idValue>
+    <idCode>AAU</idCode>
+        <idValue>Operative temperature</idValue>
+    <idCode>AAV</idCode>
+        <idValue>Non operative temperature</idValue>
+    <idCode>AAW</idCode>
+        <idValue>Gross volume</idValue>
+    <idCode>AAX</idCode>
+        <idValue>Net volume</idValue>
+    <idCode>AAY</idCode>
+        <idValue>Water content</idValue>
+    <idCode>AAZ</idCode>
+        <idValue>Tensile stress</idValue>
+    <idCode>ABA</idCode>
+        <idValue>Fibrosity</idValue>
+    <idCode>ABB</idCode>
+        <idValue>Gauge length</idValue>
+    <idCode>ABC</idCode>
+        <idValue>Radius</idValue>
+    <idCode>ABD</idCode>
+        <idValue>Straightness</idValue>
+    <idCode>ABE</idCode>
+        <idValue>Strain</idValue>
+    <idCode>ABF</idCode>
+        <idValue>Test piece dimensions</idValue>
+    <idCode>ABG</idCode>
+        <idValue>Average reading</idValue>
+    <idCode>ABH</idCode>
+        <idValue>External dimension</idValue>
+    <idCode>ABI</idCode>
+        <idValue>Internal dimension</idValue>
+    <idCode>ABJ</idCode>
+        <idValue>Volume</idValue>
+    <idCode>ABK</idCode>
+        <idValue>Loading meter</idValue>
+    <idCode>ABL</idCode>
+        <idValue>Retail container dimension</idValue>
+    <idCode>ABM</idCode>
+        <idValue>Retail container size</idValue>
+    <idCode>ABN</idCode>
+        <idValue>Other US Government agency application</idValue>
+    <idCode>ABO</idCode>
+        <idValue>Measurement</idValue>
+    <idCode>ABQ</idCode>
+        <idValue>Percentage of alcohol (by volume)</idValue>
+    <idCode>ABR</idCode>
+        <idValue>Dimensions total weight</idValue>
+    <idCode>ABS</idCode>
+        <idValue>Item weight</idValue>
+    <idCode>ABU</idCode>
+        <idValue>Licence (quantity deducted)</idValue>
+    <idCode>ABV</idCode>
+        <idValue>Cargo loaded</idValue>
+    <idCode>ABW</idCode>
+        <idValue>Cargo discharged</idValue>
+    <idCode>ABX</idCode>
+        <idValue>Weight of conveyance</idValue>
+    <idCode>ABY</idCode>
+        <idValue>Conveyance summer dead weight</idValue>
+    <idCode>ABZ</idCode>
+        <idValue>Containerized cargo on vessel&apos;s weight</idValue>
+    <idCode>ACA</idCode>
+        <idValue>Non-containerized cargo on vessel&apos;s weight</idValue>
+    <idCode>ACB</idCode>
+        <idValue>1st specified tariff quantity</idValue>
+    <idCode>ACC</idCode>
+        <idValue>2nd specified tariff quantity</idValue>
+    <idCode>ACD</idCode>
+        <idValue>3rd specified tariff quantity</idValue>
+    <idCode>ACE</idCode>
+        <idValue>Weight ascertained</idValue>
+    <idCode>ACF</idCode>
+        <idValue>Chemistry</idValue>
+    <idCode>ACG</idCode>
+        <idValue>Chargeable weight</idValue>
+    <idCode>ACH</idCode>
+        <idValue>Core notch dimensions</idValue>
+    <idCode>ACI</idCode>
+        <idValue>Core size</idValue>
+    <idCode>ACJ</idCode>
+        <idValue>Decision result value</idValue>
+    <idCode>ACK</idCode>
+        <idValue>Dimensional tolerance</idValue>
+    <idCode>ACL</idCode>
+        <idValue>Discrete measurement value</idValue>
+    <idCode>ACM</idCode>
+        <idValue>Dimension used in price extension</idValue>
+    <idCode>ACN</idCode>
+        <idValue>Estimated gross weight</idValue>
+    <idCode>ACO</idCode>
+        <idValue>Environmental conditions</idValue>
+    <idCode>ACP</idCode>
+        <idValue>Estimated volume</idValue>
+    <idCode>ACQ</idCode>
+        <idValue>Footage</idValue>
+    <idCode>ACR</idCode>
+        <idValue>Interpolated value</idValue>
+    <idCode>ACS</idCode>
+        <idValue>Vessel overall length</idValue>
+    <idCode>ACT</idCode>
+        <idValue>Limited coil measurement</idValue>
+    <idCode>ACU</idCode>
+        <idValue>Lift limitation</idValue>
+    <idCode>ACV</idCode>
+        <idValue>Loading meters</idValue>
+    <idCode>ACW</idCode>
+        <idValue>Number of axles</idValue>
+    <idCode>ACX</idCode>
+        <idValue>Payload</idValue>
+    <idCode>ACY</idCode>
+        <idValue>Parting cut (sawcut)</idValue>
+    <idCode>ACZ</idCode>
+        <idValue>Physical dimensions</idValue>
+    <idCode>ADA</idCode>
+        <idValue>Package limitations</idValue>
+    <idCode>ADB</idCode>
+        <idValue>Platform limitation</idValue>
+    <idCode>ADC</idCode>
+        <idValue>Receiving facility limitations</idValue>
+    <idCode>ADD</idCode>
+        <idValue>Property specification</idValue>
+    <idCode>ADE</idCode>
+        <idValue>Shipping tolerance</idValue>
+    <idCode>ADF</idCode>
+        <idValue>Shade</idValue>
+    <idCode>ADG</idCode>
+        <idValue>Storage limitation</idValue>
+    <idCode>ADH</idCode>
+        <idValue>Surface roughness</idValue>
+    <idCode>ADI</idCode>
+        <idValue>Surface treatment</idValue>
+    <idCode>ADJ</idCode>
+        <idValue>Surface</idValue>
+    <idCode>ADK</idCode>
+        <idValue>Specification value</idValue>
+    <idCode>ADL</idCode>
+        <idValue>Transportation equipment limitations</idValue>
+    <idCode>ADM</idCode>
+        <idValue>Test result</idValue>
+    <idCode>ADN</idCode>
+        <idValue>Time used in price extension</idValue>
+    <idCode>ADO</idCode>
+        <idValue>Observed value</idValue>
+    <idCode>ADP</idCode>
+        <idValue>True value</idValue>
+    <idCode>ADQ</idCode>
+        <idValue>Weight used in price extension</idValue>
+    <idCode>ADR</idCode>
+        <idValue>Start position in the length</idValue>
+    <idCode>ADS</idCode>
+        <idValue>End position in the length</idValue>
+    <idCode>ADT</idCode>
+        <idValue>Start position in the width</idValue>
+    <idCode>ADU</idCode>
+        <idValue>End position in the width</idValue>
+    <idCode>ADV</idCode>
+        <idValue>Start position in the thickness</idValue>
+    <idCode>ADW</idCode>
+        <idValue>End position in the thickness</idValue>
+    <idCode>ADX</idCode>
+        <idValue>Transport container actual filling weight</idValue>
+    <idCode>ADY</idCode>
+        <idValue>Transport container maximum capacity</idValue>
+    <idCode>ADZ</idCode>
+        <idValue>Declared net weight</idValue>
+    <idCode>AEA</idCode>
+        <idValue>Loading height</idValue>
+    <idCode>AEB</idCode>
+        <idValue>Stacking height</idValue>
+    <idCode>AEC</idCode>
+        <idValue>Calculated weight</idValue>
+    <idCode>AED</idCode>
+        <idValue>Ferrite</idValue>
+    <idCode>AEE</idCode>
+        <idValue>Impurity</idValue>
+    <idCode>AEF</idCode>
+        <idValue>Grain size</idValue>
+    <idCode>AEG</idCode>
+        <idValue>Lanthanides</idValue>
+    <idCode>AEH</idCode>
+        <idValue>Elasticity</idValue>
+    <idCode>AEI</idCode>
+        <idValue>Drained weight</idValue>
+    <idCode>AEJ</idCode>
+        <idValue>Gallium</idValue>
+    <idCode>AEK</idCode>
+        <idValue>Strontium</idValue>
+    <idCode>AEM</idCode>
+        <idValue>Equipment storage limitation</idValue>
+    <idCode>AF</idCode>
+        <idValue>Angle of bend</idValue>
+    <idCode>B</idCode>
+        <idValue>Billed weight</idValue>
+    <idCode>BL</idCode>
+        <idValue>Breaking load</idValue>
+    <idCode>BND</idCode>
+        <idValue>Bands</idValue>
+    <idCode>BR</idCode>
+        <idValue>Brightness</idValue>
+    <idCode>BRA</idCode>
+        <idValue>Brakes</idValue>
+    <idCode>BRE</idCode>
+        <idValue>Break</idValue>
+    <idCode>BS</idCode>
+        <idValue>Breaking strength</idValue>
+    <idCode>BSW</idCode>
+        <idValue>Breaking strength wet</idValue>
+    <idCode>BW</idCode>
+        <idValue>Basis weight</idValue>
+    <idCode>CHN</idCode>
+        <idValue>Change</idValue>
+    <idCode>CM</idCode>
+        <idValue>Color</idValue>
+    <idCode>CT</idCode>
+        <idValue>Contents of package</idValue>
+    <idCode>CV</idCode>
+        <idValue>Commercial weight</idValue>
+    <idCode>CZ</idCode>
+        <idValue>Core length</idValue>
+    <idCode>D</idCode>
+        <idValue>Destination weight agreement</idValue>
+    <idCode>DI</idCode>
+        <idValue>Diameter</idValue>
+    <idCode>DL</idCode>
+        <idValue>Delta value L</idValue>
+    <idCode>DN</idCode>
+        <idValue>Density</idValue>
+    <idCode>DP</idCode>
+        <idValue>Depth</idValue>
+    <idCode>DR</idCode>
+        <idValue>Denier</idValue>
+    <idCode>DS</idCode>
+        <idValue>Distance between points</idValue>
+    <idCode>DW</idCode>
+        <idValue>Width, boxcar door</idValue>
+    <idCode>E</idCode>
+        <idValue>Estimated new weight</idValue>
+    <idCode>EA</idCode>
+        <idValue>Elongation</idValue>
+    <idCode>F</idCode>
+        <idValue>Deficit weight</idValue>
+    <idCode>FI</idCode>
+        <idValue>Filament count</idValue>
+    <idCode>FL</idCode>
+        <idValue>Longitudinal flatness</idValue>
+    <idCode>FN</idCode>
+        <idValue>Flatness</idValue>
+    <idCode>FV</idCode>
+        <idValue>Transverse flatness</idValue>
+    <idCode>G</idCode>
+        <idValue>Gross weight</idValue>
+    <idCode>GG</idCode>
+        <idValue>Gauge</idValue>
+    <idCode>GW</idCode>
+        <idValue>Gross weight, maximum</idValue>
+    <idCode>HF</idCode>
+        <idValue>Hardness</idValue>
+    <idCode>HM</idCode>
+        <idValue>Height, maximum</idValue>
+    <idCode>HT</idCode>
+        <idValue>Height dimension</idValue>
+    <idCode>IB</idCode>
+        <idValue>Impact energy</idValue>
+    <idCode>ID</idCode>
+        <idValue>Inside diameter</idValue>
+    <idCode>L</idCode>
+        <idValue>Legal weight</idValue>
+    <idCode>LM</idCode>
+        <idValue>Length, maximum</idValue>
+    <idCode>LN</idCode>
+        <idValue>Length dimension</idValue>
+    <idCode>LND</idCode>
+        <idValue>Lost end</idValue>
+    <idCode>M</idCode>
+        <idValue>Minimum weight</idValue>
+    <idCode>MO</idCode>
+        <idValue>Moisture</idValue>
+    <idCode>MW</idCode>
+        <idValue>Maximum weight</idValue>
+    <idCode>N</idCode>
+        <idValue>Actual net weight</idValue>
+    <idCode>OD</idCode>
+        <idValue>Outside diameter</idValue>
+    <idCode>PRS</idCode>
+        <idValue>Pre stretch</idValue>
+    <idCode>PTN</idCode>
+        <idValue>Per tonne</idValue>
+    <idCode>RA</idCode>
+        <idValue>Relative humidity</idValue>
+    <idCode>RF</idCode>
+        <idValue>Resistivity</idValue>
+    <idCode>RJ</idCode>
+        <idValue>Rockwell C</idValue>
+    <idCode>RMW</idCode>
+        <idValue>Ream weight</idValue>
+    <idCode>RP</idCode>
+        <idValue>Reduction of area</idValue>
+    <idCode>RUN</idCode>
+        <idValue>Run (process)</idValue>
+    <idCode>RY</idCode>
+        <idValue>Ratio</idValue>
+    <idCode>SQ</idCode>
+        <idValue>Shipped quantity</idValue>
+    <idCode>T</idCode>
+        <idValue>Tare weight</idValue>
+    <idCode>TC</idCode>
+        <idValue>Temperature</idValue>
+    <idCode>TH</idCode>
+        <idValue>Thickness</idValue>
+    <idCode>TN</idCode>
+        <idValue>Time period</idValue>
+    <idCode>TT</idCode>
+        <idValue>Time</idValue>
+    <idCode>U</idCode>
+        <idValue>Weight per unit</idValue>
+    <idCode>VH</idCode>
+        <idValue>Height, van door</idValue>
+    <idCode>VW</idCode>
+        <idValue>Width, van door</idValue>
+    <idCode>WA</idCode>
+        <idValue>Weight per unit of area</idValue>
+    <idCode>WD</idCode>
+        <idValue>Width dimension</idValue>
+    <idCode>WM</idCode>
+        <idValue>Width, maximum</idValue>
+    <idCode>WT</idCode>
+        <idValue>Weight</idValue>
+    <idCode>WU</idCode>
+        <idValue>Weight per unit of length</idValue>
+    <idCode>XH</idCode>
+        <idValue>Side height, flat bed with removable sides</idValue>
+    <idCode>XQ</idCode>
+        <idValue>Squareness</idValue>
+    <idCode>XZ</idCode>
+        <idValue>Spool size</idValue>
+    <idCode>YS</idCode>
+        <idValue>Yield stress</idValue>
+    <idCode>ZAL</idCode>
+        <idValue>Aluminium</idValue>
+    <idCode>ZAS</idCode>
+        <idValue>Arsenic</idValue>
+    <idCode>ZB</idCode>
+        <idValue>Boron</idValue>
+    <idCode>ZBI</idCode>
+        <idValue>Bismuth</idValue>
+    <idCode>ZC</idCode>
+        <idValue>Carbon</idValue>
+    <idCode>ZCA</idCode>
+        <idValue>Calcium</idValue>
+    <idCode>ZCB</idCode>
+        <idValue>Columbium</idValue>
+    <idCode>ZCE</idCode>
+        <idValue>Cerium</idValue>
+    <idCode>ZCL</idCode>
+        <idValue>Chlorine</idValue>
+    <idCode>ZCO</idCode>
+        <idValue>Cobalt</idValue>
+    <idCode>ZCR</idCode>
+        <idValue>Chromium</idValue>
+    <idCode>ZCU</idCode>
+        <idValue>Copper</idValue>
+    <idCode>ZFE</idCode>
+        <idValue>Iron</idValue>
+    <idCode>ZFS</idCode>
+        <idValue>Iron plus silicon</idValue>
+    <idCode>ZGE</idCode>
+        <idValue>Germanium</idValue>
+    <idCode>ZH</idCode>
+        <idValue>Hydrogen</idValue>
+    <idCode>ZK</idCode>
+        <idValue>Potassium</idValue>
+    <idCode>ZMG</idCode>
+        <idValue>Magnesium</idValue>
+    <idCode>ZMN</idCode>
+        <idValue>Manganese</idValue>
+    <idCode>ZMO</idCode>
+        <idValue>Molybdenum</idValue>
+    <idCode>ZN</idCode>
+        <idValue>Nitrogen</idValue>
+    <idCode>ZNA</idCode>
+        <idValue>Sodium</idValue>
+    <idCode>ZNB</idCode>
+        <idValue>Niobium</idValue>
+    <idCode>ZNI</idCode>
+        <idValue>Nickel</idValue>
+    <idCode>ZO</idCode>
+        <idValue>Oxygen</idValue>
+    <idCode>ZP</idCode>
+        <idValue>Phosphorus</idValue>
+    <idCode>ZPB</idCode>
+        <idValue>Lead</idValue>
+    <idCode>ZS</idCode>
+        <idValue>Sulphur</idValue>
+    <idCode>ZSB</idCode>
+        <idValue>Antimony</idValue>
+    <idCode>ZSE</idCode>
+        <idValue>Selenium</idValue>
+    <idCode>ZSI</idCode>
+        <idValue>Silicon</idValue>
+    <idCode>ZSL</idCode>
+        <idValue>Silicium oxyd</idValue>
+    <idCode>ZSN</idCode>
+        <idValue>Tin</idValue>
+    <idCode>ZTA</idCode>
+        <idValue>Tantalium</idValue>
+    <idCode>ZTE</idCode>
+        <idValue>Tellurium</idValue>
+    <idCode>ZTI</idCode>
+        <idValue>Titanium</idValue>
+    <idCode>ZV</idCode>
+        <idValue>Vanadium</idValue>
+    <idCode>ZW</idCode>
+        <idValue>Tungsten</idValue>
+    <idCode>ZWA</idCode>
+        <idValue>Waste content</idValue>
+    <idCode>ZZN</idCode>
+        <idValue>Zinc</idValue>
+    <idCode>ZZR</idCode>
+        <idValue>Zirconium</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

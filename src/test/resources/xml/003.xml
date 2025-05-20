@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactionSet
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+  name="test" id="--3.xml"  revision="004010"
+  functionalGroup="XX"
+  description="This Draft Standard for Trial Use contains the format and establishes the data contents of the Health Care Claim Transaction Set (837) for use within the context of an Electronic Data Interchange (EDI) environment. This transaction set can be used to submit health care claim billing information, encounter information, or both, from providers of health care services to payers, either directly or via intermediary billers and claims clearinghouses. It can also be used to transmit health care claims and billing payment information between payers with different payment responsibilities where coordination of benefits is required or between payers and regulatory agencies to monitor the rendering, billing, and/or payment of health care services within a specific health care/insurance industry segment. For purposes of this standard, providers of health care products or services may include entities such as physicians, hospitals and other medical facilities or suppliers, dentists, and pharmacies, and entities providing medical information to meet regulatory requirements. The payer refers to a third party entity that pays claims or administers the insurance product or benefit or both. For example, a payer may be an insurance company, health maintenance organization (HMO), preferred provider organization (PPO), government agency (Medicare, Medicaid, Civilian Health and Medical Program of the Uniformed Services (CHAMPUS), etc.) or an entity such as a third party administrator (TPA) or third party organization (TPO) that may be contracted by one of those groups. A regulatory agency is an entity responsible, by law or rule, for administering and monitoring a statutory benefits program or a specific health care/insurance industry segment."
+  shortName="test">
+    <table section="header">
+                    <segment name="Date - Order Date" id="DTP"
+                      description="To specify any or all of a date, a time, or a time period"
+                      sequence="135"
+                      occurs="1"
+                      required='O'
+                      shortName="DateOrderDate">
+                        <dataElement name="Date Time Qualifier" id="374"
+                          sequence="1"
+                          description=""
+                          type="ID" required="M"
+                          minLength="3" maxLength="3"
+                          shortName="dateTimeQualifier">
+                          <idList>
+                                <idCode>938</idCode>
+                                    <idValue>Order</idValue>
+                          </idList>
+                          <default from="constant">938</default>
+                         </dataElement>
+                        <dataElement name="Date Time Period Format Qualifier" id="1250"
+                          sequence="2"
+                          description=""
+                          type="ID" required="M"
+                          minLength="2" maxLength="3"
+                          shortName="dateTimePeriodFormatQualifier">
+                          <idList>
+                                <idCode>D8</idCode>
+                                    <idValue>Date Expressed in Format CCYYMMDD</idValue>
+                          </idList>
+                          <default from="constant">D8</default>
+                         </dataElement>
+                        <dataElement name="Order Date" id="1251"
+                          sequence="3"
+                          description=""
+                          type="AN" required="M"
+                          minLength="1" maxLength="35"
+                          shortName="orderDate">
+                         </dataElement>
+                    </segment>
+                    <segment name="Date - Initial Treatment" id="DTP"
+                      description="To specify any or all of a date, a time, or a time period"
+                      sequence="135"
+                      occurs="1"
+                      required='O'
+                      shortName="DateInitialTreatment">
+                        <dataElement name="Date Time Qualifier" id="374"
+                          sequence="1"
+                          description=""
+                          type="ID" required="M"
+                          minLength="3" maxLength="3"
+                          shortName="dateTimeQualifier">
+                          <idList>
+                                <idCode>454</idCode>
+                                    <idValue>Initial Treatment</idValue>
+                          </idList>
+                          <default from="constant">454</default>
+                         </dataElement>
+                        <dataElement name="Date Time Period Format Qualifier" id="1250"
+                          sequence="2"
+                          description=""
+                          type="ID" required="M"
+                          minLength="2" maxLength="3"
+                          shortName="dateTimePeriodFormatQualifier">
+                          <idList>
+                                <idCode>D8</idCode>
+                                    <idValue>Date Expressed in Format CCYYMMDD</idValue>
+                          </idList>
+                          <default from="constant">D8</default>
+                         </dataElement>
+                        <dataElement name="Initial Treatment Date" id="1251"
+                          sequence="3"
+                          description=""
+                          type="AN" required="M"
+                          minLength="1" maxLength="35"
+                          shortName="initialTreatmentDate">
+                         </dataElement>
+                    </segment>
+    </table>
+</transactionSet>                    

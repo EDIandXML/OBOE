@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>3</idCode>
+        <idValue>Approximately</idValue>
+    <idCode>4</idCode>
+        <idValue>Equal to</idValue>
+    <idCode>5</idCode>
+        <idValue>Greater than or equal to</idValue>
+    <idCode>6</idCode>
+        <idValue>Greater than</idValue>
+    <idCode>7</idCode>
+        <idValue>Less than</idValue>
+    <idCode>8</idCode>
+        <idValue>Less than or equal to</idValue>
+    <idCode>10</idCode>
+        <idValue>Not equal to</idValue>
+    <idCode>11</idCode>
+        <idValue>Trace</idValue>
+    <idCode>12</idCode>
+        <idValue>True value</idValue>
+    <idCode>13</idCode>
+        <idValue>Observed value</idValue>
+    <idCode>15</idCode>
+        <idValue>Out of range</idValue>
+</idList>

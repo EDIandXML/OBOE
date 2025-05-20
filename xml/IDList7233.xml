@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>34</idCode>
+        <idValue>Product marking</idValue>
+    <idCode>35</idCode>
+        <idValue>Type of package</idValue>
+    <idCode>36</idCode>
+        <idValue>Package specifications</idValue>
+    <idCode>37</idCode>
+        <idValue>Package protection</idValue>
+    <idCode>38</idCode>
+        <idValue>Tarping</idValue>
+    <idCode>39</idCode>
+        <idValue>Platform/skid location</idValue>
+    <idCode>40</idCode>
+        <idValue>Bearing piece location</idValue>
+    <idCode>41</idCode>
+        <idValue>Skid/pallet type</idValue>
+    <idCode>42</idCode>
+        <idValue>Placement on carrier</idValue>
+    <idCode>43</idCode>
+        <idValue>Spacing directions</idValue>
+    <idCode>44</idCode>
+        <idValue>Unloading device</idValue>
+    <idCode>45</idCode>
+        <idValue>Unloading equipment</idValue>
+    <idCode>50</idCode>
+        <idValue>Package barcoded EAN-13 or EAN-8</idValue>
+    <idCode>51</idCode>
+        <idValue>Package barcoded ITF-14 or ITF-6</idValue>
+    <idCode>52</idCode>
+        <idValue>Package barcoded UCC or EAN-128</idValue>
+    <idCode>53</idCode>
+        <idValue>Package price marked</idValue>
+    <idCode>54</idCode>
+        <idValue>Product ingredients marked on package</idValue>
+    <idCode>55</idCode>
+        <idValue>Core characteristics</idValue>
+    <idCode>56</idCode>
+        <idValue>Shipping requirement</idValue>
+    <idCode>57</idCode>
+        <idValue>Customs requirement</idValue>
+    <idCode>58</idCode>
+        <idValue>Transport contract requirement</idValue>
+    <idCode>59</idCode>
+        <idValue>Preservation method</idValue>
+    <idCode>60</idCode>
+        <idValue>Product marking pattern</idValue>
+    <idCode>61</idCode>
+        <idValue>Product marking location</idValue>
+    <idCode>62</idCode>
+        <idValue>Package/container mark location</idValue>
+    <idCode>63</idCode>
+        <idValue>Marking method</idValue>
+    <idCode>66</idCode>
+        <idValue>Receiving facility limitations</idValue>
+    <idCode>67</idCode>
+        <idValue>Tagging/bar code instructions</idValue>
+    <idCode>68</idCode>
+        <idValue>Shipping package labelling</idValue>
+    <idCode>69</idCode>
+        <idValue>Shipping package sealing</idValue>
+    <idCode>70</idCode>
+        <idValue>Optional packaging procedure</idValue>
+    <idCode>71</idCode>
+        <idValue>Cleaning or drying specification</idValue>
+    <idCode>72</idCode>
+        <idValue>Cushioning thickness specification</idValue>
+    <idCode>73</idCode>
+        <idValue>Cushioning and dunnage specification</idValue>
+    <idCode>74</idCode>
+        <idValue>Level of preservation specification</idValue>
+    <idCode>75</idCode>
+        <idValue>Preservation material specification</idValue>
+    <idCode>76</idCode>
+        <idValue>Unit container specification</idValue>
+    <idCode>77</idCode>
+        <idValue>Material wrapping specification</idValue>
+</idList>

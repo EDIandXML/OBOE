@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>12</idCode>
+        <idValue>Telephone directory</idValue>
+    <idCode>16</idCode>
+        <idValue>Postcode directory</idValue>
+    <idCode>23</idCode>
+        <idValue>Clearing house automated payment</idValue>
+    <idCode>25</idCode>
+        <idValue>Bank identification</idValue>
+    <idCode>35</idCode>
+        <idValue>Rail additional charges</idValue>
+    <idCode>36</idCode>
+        <idValue>Railways networks</idValue>
+    <idCode>37</idCode>
+        <idValue>Railway locations</idValue>
+    <idCode>38</idCode>
+        <idValue>Rail customers</idValue>
+    <idCode>39</idCode>
+        <idValue>Rail unified nomenclature of goods</idValue>
+    <idCode>42</idCode>
+        <idValue>Business function</idValue>
+    <idCode>43</idCode>
+        <idValue>Clearing House Interbank Payment System Participants ID</idValue>
+    <idCode>44</idCode>
+        <idValue>Clearing House Interbank Payment System Universal ID</idValue>
+    <idCode>45</idCode>
+        <idValue>United Nations Common Coding System (UNCCS)</idValue>
+    <idCode>46</idCode>
+        <idValue>DUNS (Dun and Bradstreet) +4</idValue>
+    <idCode>52</idCode>
+        <idValue>Value added tax identification</idValue>
+    <idCode>53</idCode>
+        <idValue>Passport number</idValue>
+    <idCode>54</idCode>
+        <idValue>Statistical object</idValue>
+    <idCode>55</idCode>
+        <idValue>Quality conformance</idValue>
+    <idCode>56</idCode>
+        <idValue>Safety regulation</idValue>
+    <idCode>57</idCode>
+        <idValue>Product code</idValue>
+    <idCode>58</idCode>
+        <idValue>Business account number</idValue>
+    <idCode>59</idCode>
+        <idValue>Railway services harmonized code</idValue>
+    <idCode>60</idCode>
+        <idValue>Type of financial account</idValue>
+    <idCode>61</idCode>
+        <idValue>Type of assets and liabilities</idValue>
+    <idCode>62</idCode>
+        <idValue>Requirements indicator</idValue>
+    <idCode>63</idCode>
+        <idValue>Handling action</idValue>
+    <idCode>64</idCode>
+        <idValue>Freight forwarder</idValue>
+    <idCode>65</idCode>
+        <idValue>Shipping agent</idValue>
+    <idCode>67</idCode>
+        <idValue>Type of package</idValue>
+    <idCode>68</idCode>
+        <idValue>Type of industrial activity</idValue>
+    <idCode>69</idCode>
+        <idValue>Type of survey question</idValue>
+    <idCode>70</idCode>
+        <idValue>Customs inspection type</idValue>
+    <idCode>71</idCode>
+        <idValue>Nature of transaction</idValue>
+    <idCode>72</idCode>
+        <idValue>Container terminal</idValue>
+    <idCode>100</idCode>
+        <idValue>Enhanced party identification</idValue>
+    <idCode>101</idCode>
+        <idValue>Air carrier</idValue>
+    <idCode>102</idCode>
+        <idValue>Size and type</idValue>
+    <idCode>103</idCode>
+        <idValue>Call sign directory</idValue>
+    <idCode>104</idCode>
+        <idValue>Customs area of transaction</idValue>
+    <idCode>105</idCode>
+        <idValue>Customs declaration type</idValue>
+    <idCode>106</idCode>
+        <idValue>Incoterms 1980</idValue>
+    <idCode>107</idCode>
+        <idValue>Excise duty</idValue>
+    <idCode>108</idCode>
+        <idValue>Tariff schedule</idValue>
+    <idCode>109</idCode>
+        <idValue>Customs indicator</idValue>
+    <idCode>110</idCode>
+        <idValue>Customs special codes</idValue>
+    <idCode>112</idCode>
+        <idValue>Statistical nature of transaction</idValue>
+    <idCode>113</idCode>
+        <idValue>Customs office</idValue>
+    <idCode>114</idCode>
+        <idValue>Railcar letter marking</idValue>
+    <idCode>115</idCode>
+        <idValue>Examination facility</idValue>
+    <idCode>116</idCode>
+        <idValue>Customs preference</idValue>
+    <idCode>117</idCode>
+        <idValue>Customs procedure</idValue>
+    <idCode>118</idCode>
+        <idValue>Government agency procedure</idValue>
+    <idCode>119</idCode>
+        <idValue>Customs simplified procedure</idValue>
+    <idCode>120</idCode>
+        <idValue>Customs status of goods</idValue>
+    <idCode>121</idCode>
+        <idValue>Shipment description</idValue>
+    <idCode>122</idCode>
+        <idValue>Commodity</idValue>
+    <idCode>123</idCode>
+        <idValue>Entitlement</idValue>
+    <idCode>125</idCode>
+        <idValue>Customs transit guarantee</idValue>
+    <idCode>126</idCode>
+        <idValue>Accounting information identifier</idValue>
+    <idCode>127</idCode>
+        <idValue>Customs valuation method</idValue>
+    <idCode>128</idCode>
+        <idValue>Service</idValue>
+    <idCode>129</idCode>
+        <idValue>Customs warehouse</idValue>
+    <idCode>130</idCode>
+        <idValue>Special handling</idValue>
+    <idCode>131</idCode>
+        <idValue>Free zone</idValue>
+    <idCode>132</idCode>
+        <idValue>Charge</idValue>
+    <idCode>133</idCode>
+        <idValue>Financial regime</idValue>
+    <idCode>134</idCode>
+        <idValue>Duty, tax or fee payment method</idValue>
+    <idCode>135</idCode>
+        <idValue>Rate class</idValue>
+    <idCode>136</idCode>
+        <idValue>Restrictions/prohibitions on re-use of certain wagons</idValue>
+    <idCode>137</idCode>
+        <idValue>Rail harmonized codification of tariffs</idValue>
+    <idCode>139</idCode>
+        <idValue>Port</idValue>
+    <idCode>140</idCode>
+        <idValue>Area</idValue>
+    <idCode>141</idCode>
+        <idValue>Forwarding restrictions</idValue>
+    <idCode>142</idCode>
+        <idValue>Train identification</idValue>
+    <idCode>143</idCode>
+        <idValue>Removable accessories and special equipment on railcars</idValue>
+    <idCode>144</idCode>
+        <idValue>Rail routes</idValue>
+    <idCode>145</idCode>
+        <idValue>Airport/city</idValue>
+    <idCode>146</idCode>
+        <idValue>Means of transport identification</idValue>
+    <idCode>147</idCode>
+        <idValue>Document requested by Customs</idValue>
+    <idCode>148</idCode>
+        <idValue>Customs release notification</idValue>
+    <idCode>149</idCode>
+        <idValue>Customs transit type</idValue>
+    <idCode>150</idCode>
+        <idValue>Financial routing</idValue>
+    <idCode>151</idCode>
+        <idValue>Locations for tariff calculation</idValue>
+    <idCode>152</idCode>
+        <idValue>Materials</idValue>
+    <idCode>153</idCode>
+        <idValue>Methods of payment</idValue>
+    <idCode>154</idCode>
+        <idValue>Bank branch sorting identification</idValue>
+    <idCode>155</idCode>
+        <idValue>Automated clearing house</idValue>
+    <idCode>156</idCode>
+        <idValue>Location of goods</idValue>
+    <idCode>157</idCode>
+        <idValue>Clearing code</idValue>
+    <idCode>158</idCode>
+        <idValue>Terms of delivery</idValue>
+    <idCode>160</idCode>
+        <idValue>Party identification</idValue>
+    <idCode>161</idCode>
+        <idValue>Goods description</idValue>
+    <idCode>162</idCode>
+        <idValue>Country</idValue>
+    <idCode>163</idCode>
+        <idValue>Country sub-entity</idValue>
+    <idCode>164</idCode>
+        <idValue>Member organizations</idValue>
+    <idCode>165</idCode>
+        <idValue>Amendment code (Customs)</idValue>
+    <idCode>166</idCode>
+        <idValue>Social security identification</idValue>
+    <idCode>167</idCode>
+        <idValue>Tax party identification</idValue>
+    <idCode>168</idCode>
+        <idValue>Rail document names</idValue>
+    <idCode>169</idCode>
+        <idValue>Harmonized system</idValue>
+    <idCode>170</idCode>
+        <idValue>Bank securities code</idValue>
+    <idCode>172</idCode>
+        <idValue>Carrier code</idValue>
+    <idCode>173</idCode>
+        <idValue>Export requirements</idValue>
+    <idCode>174</idCode>
+        <idValue>Citizen identification</idValue>
+    <idCode>175</idCode>
+        <idValue>Account analysis codes</idValue>
+    <idCode>176</idCode>
+        <idValue>Flow of the goods</idValue>
+    <idCode>177</idCode>
+        <idValue>Statistical procedures</idValue>
+    <idCode>178</idCode>
+        <idValue>Standard text according US embargo regulations</idValue>
+    <idCode>179</idCode>
+        <idValue>Standard text for export according national prescriptions</idValue>
+    <idCode>180</idCode>
+        <idValue>Airport terminal</idValue>
+    <idCode>181</idCode>
+        <idValue>Activity</idValue>
+    <idCode>182</idCode>
+        <idValue>Combiterms 1990</idValue>
+    <idCode>183</idCode>
+        <idValue>Dangerous goods packing type</idValue>
+    <idCode>184</idCode>
+        <idValue>Tax assessment method</idValue>
+    <idCode>185</idCode>
+        <idValue>Item type</idValue>
+    <idCode>186</idCode>
+        <idValue>Product supply condition</idValue>
+    <idCode>187</idCode>
+        <idValue>Supplier&apos;s stock turnover</idValue>
+    <idCode>188</idCode>
+        <idValue>Article status</idValue>
+    <idCode>189</idCode>
+        <idValue>Quality control code</idValue>
+    <idCode>190</idCode>
+        <idValue>Item sourcing category</idValue>
+    <idCode>191</idCode>
+        <idValue>Dumping or countervailing assessment method</idValue>
+    <idCode>192</idCode>
+        <idValue>Dumping specification</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

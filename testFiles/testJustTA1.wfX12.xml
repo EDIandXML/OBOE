@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Envelope>
+<InterchangeControlHeader>
+<authorizationInformationQualifier>00</authorizationInformationQualifier>
+<authorizationInformation>          </authorizationInformation>
+<securityInformationQualifier>00</securityInformationQualifier>
+<securityInformation>          </securityInformation>
+<interchangeIdQualifier>ZZ</interchangeIdQualifier>
+<interchangeSenderId>DMCOGDEN       </interchangeSenderId>
+<interchangeIdQualifier>ZZ</interchangeIdQualifier>
+<interchangeReceiverId>PUBLIC         </interchangeReceiverId>
+<interchangeDate>000817</interchangeDate>
+<interchangeTime>1520</interchangeTime>
+<interchangeControlStandardsIdentifier>U</interchangeControlStandardsIdentifier>
+<interchangeControlVersionNumber>00401</interchangeControlVersionNumber>
+<interchangeControlNumber>300017389</interchangeControlNumber>
+<acknowledgmentRequested>1</acknowledgmentRequested>
+<usageIndicator>P</usageIndicator>
+<componentElementSeparator>&lt;</componentElementSeparator>
+</InterchangeControlHeader>
+<InterchangeAcknowledgment>
+<interchangeControlNumber>723010635</interchangeControlNumber>
+<interchangeDate>061024</interchangeDate>
+<interchangeTime>1006</interchangeTime>
+<interchangeAcknowledgmentCode>R</interchangeAcknowledgmentCode>
+<interchangeNoteCode>024</interchangeNoteCode>
+</InterchangeAcknowledgment>
+<InterchangeControlTrailer>
+<numberOfIncludedFunctionalGroups>1</numberOfIncludedFunctionalGroups>
+<interchangeControlNumber>300017389</interchangeControlNumber>
+</InterchangeControlTrailer>
+</Envelope>

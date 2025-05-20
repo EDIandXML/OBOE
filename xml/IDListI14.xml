@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>I</idCode>
+        <idValue>Information</idValue>
+    <idCode>P</idCode>
+        <idValue>Production Data</idValue>
+    <idCode>T</idCode>
+        <idValue>Test Data</idValue>
+</idList>

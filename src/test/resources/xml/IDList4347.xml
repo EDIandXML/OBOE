@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Additional identification</idValue>
+    <idCode>2</idCode>
+        <idValue>Identification for potential substitution</idValue>
+    <idCode>3</idCode>
+        <idValue>Substituted by</idValue>
+    <idCode>4</idCode>
+        <idValue>Substituted for</idValue>
+    <idCode>5</idCode>
+        <idValue>Product identification</idValue>
+    <idCode>6</idCode>
+        <idValue>Successor product id</idValue>
+    <idCode>7</idCode>
+        <idValue>Predecessor product id</idValue>
+    <idCode>8</idCode>
+        <idValue>Expired/out of production</idValue>
+    <idCode>9</idCode>
+        <idValue>Deletion of secondary identification</idValue>
+</idList>

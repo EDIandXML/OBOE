@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>BS</idCode>
+        <idValue>Buyer to seller</idValue>
+    <idCode>SB</idCode>
+        <idValue>Seller to buyer</idValue>
+    <idCode>SC</idCode>
+        <idValue>Subcontractor to seller</idValue>
+    <idCode>SD</idCode>
+        <idValue>Seller to drop ship designated location</idValue>
+    <idCode>SF</idCode>
+        <idValue>Seller to freight forwarder</idValue>
+    <idCode>SS</idCode>
+        <idValue>Seller to subcontractor</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

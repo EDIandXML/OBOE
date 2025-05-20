@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>A</idCode>
+        <idValue>Mixed tax rate</idValue>
+    <idCode>B</idCode>
+        <idValue>Transferred (VAT)</idValue>
+    <idCode>C</idCode>
+        <idValue>Duty paid by supplier</idValue>
+    <idCode>E</idCode>
+        <idValue>Exempt from tax</idValue>
+    <idCode>G</idCode>
+        <idValue>Free export item, tax not charged</idValue>
+    <idCode>H</idCode>
+        <idValue>Higher rate</idValue>
+    <idCode>O</idCode>
+        <idValue>Services outside scope of tax</idValue>
+    <idCode>S</idCode>
+        <idValue>Standard rate</idValue>
+    <idCode>Z</idCode>
+        <idValue>Zero rated goods</idValue>
+</idList>

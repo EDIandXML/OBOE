@@ -1,0 +1,17 @@
+/*tell the system where the rules files reside*/
+
+xmlPath=xml/
+
+/* search directive to find xml files */
+
+searchDirective=R
+useObject=true
+/*to parse an incoming EDI/XML file point it to its rules file */
+
+RequestForQuotation=840
+
+/*if parsing an EDI/XML file to an EDIFACT rules file */
+
+PurchaseOrderMessage=ORDERS
+TradacomsOrder=ordhdr
+RSGRSG=RSGRSG

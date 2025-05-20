@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Added</idValue>
+    <idCode>2</idCode>
+        <idValue>Deleted</idValue>
+    <idCode>3</idCode>
+        <idValue>Changed</idValue>
+    <idCode>4</idCode>
+        <idValue>No action</idValue>
+    <idCode>5</idCode>
+        <idValue>Accepted without amendment</idValue>
+    <idCode>6</idCode>
+        <idValue>Accepted with amendment</idValue>
+    <idCode>7</idCode>
+        <idValue>Not accepted</idValue>
+    <idCode>8</idCode>
+        <idValue>Schedule only</idValue>
+    <idCode>9</idCode>
+        <idValue>Amendments</idValue>
+    <idCode>10</idCode>
+        <idValue>Not found</idValue>
+    <idCode>11</idCode>
+        <idValue>Not amended</idValue>
+    <idCode>12</idCode>
+        <idValue>Line item numbers changed</idValue>
+    <idCode>13</idCode>
+        <idValue>Buyer has deducted amount</idValue>
+    <idCode>14</idCode>
+        <idValue>Buyer claims against invoice</idValue>
+    <idCode>15</idCode>
+        <idValue>Charge back by seller</idValue>
+    <idCode>16</idCode>
+        <idValue>Seller will issue credit note</idValue>
+    <idCode>17</idCode>
+        <idValue>Terms changed for new terms</idValue>
+    <idCode>18</idCode>
+        <idValue>Abide outcome of negotiations</idValue>
+    <idCode>19</idCode>
+        <idValue>Seller rejects dispute</idValue>
+    <idCode>20</idCode>
+        <idValue>Settlement</idValue>
+    <idCode>21</idCode>
+        <idValue>No delivery</idValue>
+    <idCode>22</idCode>
+        <idValue>Call-off delivery</idValue>
+    <idCode>23</idCode>
+        <idValue>Proposed amendment</idValue>
+    <idCode>24</idCode>
+        <idValue>Accepted with amendment, no confirmation required</idValue>
+    <idCode>25</idCode>
+        <idValue>Equipment provisionally repaired</idValue>
+</idList>

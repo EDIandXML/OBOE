@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Per unit</idValue>
+    <idCode>2</idCode>
+        <idValue>Per ton</idValue>
+    <idCode>3</idCode>
+        <idValue>Per equipment unit</idValue>
+    <idCode>4</idCode>
+        <idValue>Per unit price</idValue>
+    <idCode>5</idCode>
+        <idValue>Per quantity</idValue>
+    <idCode>6</idCode>
+        <idValue>Basic charge</idValue>
+    <idCode>7</idCode>
+        <idValue>Rate per kilogram</idValue>
+    <idCode>8</idCode>
+        <idValue>Minimum charge</idValue>
+    <idCode>9</idCode>
+        <idValue>Normal rate</idValue>
+    <idCode>10</idCode>
+        <idValue>Quantity rate</idValue>
+    <idCode>11</idCode>
+        <idValue>Amount of drawing</idValue>
+    <idCode>12</idCode>
+        <idValue>Documentary credit amount</idValue>
+    <idCode>13</idCode>
+        <idValue>Invoice value</idValue>
+    <idCode>14</idCode>
+        <idValue>CIF value</idValue>
+    <idCode>15</idCode>
+        <idValue>Contract cost</idValue>
+    <idCode>16</idCode>
+        <idValue>Labour hours</idValue>
+</idList>

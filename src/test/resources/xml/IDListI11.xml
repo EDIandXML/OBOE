@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>00200</idCode>
+        <idValue>Standard Issued as ANSI X12.5-1987</idValue>
+    <idCode>00201</idCode>
+        <idValue>Standard Approved by ASC X12 Through August 1988</idValue>
+    <idCode>00204</idCode>
+        <idValue>Standard Approved by ASC X12 Through May 1989</idValue>
+    <idCode>00300</idCode>
+        <idValue>Standard Issued as ANSI X12.5-1992</idValue>
+    <idCode>00301</idCode>
+        <idValue>Standard Approved for Publication by ASC X12 Procedures Review Board Through October 1990</idValue>
+    <idCode>00302</idCode>
+        <idValue>Standard Approved for Publication by ASC X12 Procedures Review Board Through October 1991</idValue>
+    <idCode>00303</idCode>
+        <idValue>Standard Approved for Publication by ASC X12 Procedures Review Board Through October 1992</idValue>
+    <idCode>00304</idCode>
+        <idValue>Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1993</idValue>
+    <idCode>00305</idCode>
+        <idValue>Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1994</idValue>
+    <idCode>00306</idCode>
+        <idValue>Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1995</idValue>
+    <idCode>00307</idCode>
+        <idValue>Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1996</idValue>
+    <idCode>00400</idCode>
+        <idValue>Standard Issued as ANSI X12.5-1997</idValue>
+    <idCode>00401</idCode>
+        <idValue>Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1997</idValue>
+    <idCode>00402</idCode>
+        <idValue>Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1998</idValue>
+    <idCode>00403</idCode>
+        <idValue>Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1999</idValue>
+    <idCode>00404</idCode>
+	<idValue>Standards Approved for Publication by ASC X12 Procedures Review Board through October 2000</idValue>
+    <idCode>00405</idCode>
+	<idValue>Standards Approved for Publication by ASC X12 Procedures Review Board through October 2001</idValue>
+    <idCode>00406</idCode>
+	<idValue>Standards Approved for Publication by ASC X12 Procedures Review Board through October 2002</idValue>
+    <idCode>00500</idCode>
+	<idValue>ASC X12 Standards Issued by ANSI in 2003</idValue>
+    <idCode>00501</idCode>
+	<idValue>Standards Approved for Publication by ASC X12 Procedures Review Board through October 2003</idValue>
+</idList>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Allowance</idValue>
+    <idCode>2</idCode>
+        <idValue>Charge</idValue>
+    <idCode>3</idCode>
+        <idValue>Allowance or charge</idValue>
+    <idCode>4</idCode>
+        <idValue>Reinsurer&apos;s share</idValue>
+    <idCode>5</idCode>
+        <idValue>Entry percentage</idValue>
+    <idCode>6</idCode>
+        <idValue>Quality/yield</idValue>
+    <idCode>7</idCode>
+        <idValue>Percentage of invoice</idValue>
+    <idCode>8</idCode>
+        <idValue>Reduction/surcharge percentage</idValue>
+    <idCode>9</idCode>
+        <idValue>Adjustment</idValue>
+    <idCode>10</idCode>
+        <idValue>Bureau share</idValue>
+    <idCode>11</idCode>
+        <idValue>Buffer stock requirement</idValue>
+    <idCode>12</idCode>
+        <idValue>Discount</idValue>
+    <idCode>13</idCode>
+        <idValue>Amount tolerance</idValue>
+    <idCode>14</idCode>
+        <idValue>Percentage of note</idValue>
+    <idCode>15</idCode>
+        <idValue>Penalty percentage</idValue>
+    <idCode>16</idCode>
+        <idValue>Interest percentage</idValue>
+    <idCode>17</idCode>
+        <idValue>Part of documentary credit amount</idValue>
+    <idCode>18</idCode>
+        <idValue>Percentage credit note</idValue>
+    <idCode>19</idCode>
+        <idValue>Percentage debit note</idValue>
+    <idCode>20</idCode>
+        <idValue>Percentage of insurance</idValue>
+    <idCode>21</idCode>
+        <idValue>Own risk percentage</idValue>
+    <idCode>22</idCode>
+        <idValue>Transferred VAT percentage</idValue>
+    <idCode>23</idCode>
+        <idValue>Part time employment</idValue>
+    <idCode>24</idCode>
+        <idValue>Voluntary contribution</idValue>
+    <idCode>25</idCode>
+        <idValue>Attribute factor</idValue>
+    <idCode>26</idCode>
+        <idValue>Additional contribution</idValue>
+    <idCode>27</idCode>
+        <idValue>Benefits allocation</idValue>
+    <idCode>28</idCode>
+        <idValue>Attribute classification</idValue>
+    <idCode>29</idCode>
+        <idValue>Renegotiation trigger upper limit</idValue>
+    <idCode>30</idCode>
+        <idValue>Renegotiation trigger lower limit</idValue>
+    <idCode>31</idCode>
+        <idValue>Material reduction factor</idValue>
+    <idCode>32</idCode>
+        <idValue>Acceptable price difference</idValue>
+    <idCode>33</idCode>
+        <idValue>Share of buyer&apos;s total requirement</idValue>
+    <idCode>34</idCode>
+        <idValue>Price increase</idValue>
+    <idCode>35</idCode>
+        <idValue>Share of tool cost paid by buyer</idValue>
+    <idCode>36</idCode>
+        <idValue>Volume capacity usage</idValue>
+    <idCode>37</idCode>
+        <idValue>Weight capacity usage</idValue>
+    <idCode>38</idCode>
+        <idValue>Loading length capacity usage</idValue>
+    <idCode>39</idCode>
+        <idValue>Share of packaging cost paid by vendor</idValue>
+    <idCode>40</idCode>
+        <idValue>Reduction percentage</idValue>
+    <idCode>41</idCode>
+        <idValue>Surcharge percentage</idValue>
+    <idCode>42</idCode>
+        <idValue>Local content</idValue>
+    <idCode>43</idCode>
+        <idValue>Chargeback</idValue>
+    <idCode>44</idCode>
+        <idValue>Gross turnover commission</idValue>
+    <idCode>45</idCode>
+        <idValue>Progress payment percentage</idValue>
+    <idCode>46</idCode>
+        <idValue>Offset</idValue>
+    <idCode>47</idCode>
+        <idValue>Prepaid payment percentage</idValue>
+    <idCode>48</idCode>
+        <idValue>Percentage of work completed</idValue>
+    <idCode>49</idCode>
+        <idValue>Underwriting rating</idValue>
+    <idCode>50</idCode>
+        <idValue>Mortgage interest rate</idValue>
+    <idCode>51</idCode>
+        <idValue>Maximum cost of living adjustment rate</idValue>
+    <idCode>52</idCode>
+        <idValue>Humidity</idValue>
+    <idCode>53</idCode>
+        <idValue>Minimum cost of living adjustment rate</idValue>
+    <idCode>54</idCode>
+        <idValue>Contractor cost share</idValue>
+    <idCode>55</idCode>
+        <idValue>Government cost share</idValue>
+    <idCode>56</idCode>
+        <idValue>Progress payment liquidation percentage</idValue>
+    <idCode>57</idCode>
+        <idValue>Fee percentage</idValue>
+</idList>

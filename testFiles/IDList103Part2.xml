@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>01</idCode>
+        <idValue>Aluminum</idValue>
+    <idCode>04</idCode>
+        <idValue>As Specified by the DOT</idValue>
+    <idCode>07</idCode>
+        <idValue>Burlap</idValue>
+    <idCode>10</idCode>
+        <idValue>Chemically Hardened Fibre</idValue>
+ </idList>

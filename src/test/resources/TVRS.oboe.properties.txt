@@ -1,0 +1,67 @@
+/*tell the system where the rules files reside*/
+
+xmlPath=xml/
+throwParsingException=true
+/* Used by RICE - Rules Implementation Convention Editor
+/* specified the directory where static rules files reside.
+/* In this directory you should place the generic rules files
+/* RICE will uses these files as the base definition for the rules
+/* This should not be the directory that you point to with xmlPath, 
+
+baseDirectory=originalxml/
+
+
+/* search directive to find xml files */
+
+searchDirective=TVRS
+useObject=true
+/*to parse an incoming EDI/XML file point it to its rules file */
+
+RequestForQuotation=840
+
+/*if parsing an EDI/XML file to an EDIFACT rules file */
+
+PurchaseOrderMessage=orders
+TradacomsOrder=ORDHDR
+RSGRSG=RSGRSG
+/* x12 delimiters: segment field group */
+
+testx12Delimiters=|~:
+testEDIFactDelimiters=^&*
+
+/* search directive to find xml files */
+
+/* Server properties file parameter */
+
+hostServerID=www.americancoders.com
+portNumber=4400
+
+mailServerID=mail.ipass.net
+
+incomingMailType=pop3
+incomingMailID=amcverry@americancoders.com
+incomingMailPassword=par3
+outgoingMailID=amcverry@americancoders.com
+outgoingMailType=smtp
+
+/* how often should incoming mail be looked for in seconds */
+mailCheckInterval=300   
+
+/* system out and err log work check in seconds */
+outCheckInterval=10
+
+/* good edi mail directory */
+
+goodIncomingEDIDirectory=c:/my projects/good/
+
+/* bad edi directory, where incoming documents are stored */
+
+badIncomingEDIDirectory=c:/my projects/bad/
+
+/* where response messages are stored */
+
+responseDirectory=c:/my projects/response/
+
+/* where log files are stored */
+
+logDirectory=c:/my projects/logs/

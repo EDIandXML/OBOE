@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AA</idCode>
+        <idValue>House bill of lading</idValue>
+    <idCode>AB</idCode>
+        <idValue>1st structure element name</idValue>
+    <idCode>AC</idCode>
+        <idValue>2nd structure element name</idValue>
+    <idCode>AD</idCode>
+        <idValue>3rd structure element name</idValue>
+    <idCode>AE</idCode>
+        <idValue>4th structure element name</idValue>
+    <idCode>AF</idCode>
+        <idValue>5th structure element name</idValue>
+    <idCode>AG</idCode>
+        <idValue>6th structure element name</idValue>
+    <idCode>AH</idCode>
+        <idValue>7th structure element name</idValue>
+    <idCode>AI</idCode>
+        <idValue>8th structure element name</idValue>
+    <idCode>AJ</idCode>
+        <idValue>9th structure element name</idValue>
+    <idCode>AK</idCode>
+        <idValue>Data set</idValue>
+    <idCode>AL</idCode>
+        <idValue>Kanban card number</idValue>
+    <idCode>AM</idCode>
+        <idValue>Level number</idValue>
+    <idCode>AN</idCode>
+        <idValue>Manufacturing reference number</idValue>
+    <idCode>AO</idCode>
+        <idValue>Position number in package</idValue>
+    <idCode>AP</idCode>
+        <idValue>Product</idValue>
+    <idCode>AQ</idCode>
+        <idValue>Release number</idValue>
+    <idCode>AR</idCode>
+        <idValue>Statistical concept</idValue>
+    <idCode>AS</idCode>
+        <idValue>Table</idValue>
+    <idCode>AT</idCode>
+        <idValue>Transport packing group number</idValue>
+    <idCode>AU</idCode>
+        <idValue>Value list</idValue>
+    <idCode>AV</idCode>
+        <idValue>Value list subset</idValue>
+    <idCode>AW</idCode>
+        <idValue>Serial shipping container code</idValue>
+    <idCode>AX</idCode>
+        <idValue>Case number</idValue>
+    <idCode>AY</idCode>
+        <idValue>Financial security identification number</idValue>
+    <idCode>AZ</idCode>
+        <idValue>Compact disk player security code number</idValue>
+    <idCode>BA</idCode>
+        <idValue>Question in questionnaire</idValue>
+    <idCode>BB</idCode>
+        <idValue>Questionnaire</idValue>
+    <idCode>BC</idCode>
+        <idValue>Check digit</idValue>
+    <idCode>BD</idCode>
+        <idValue>Vehicle telephone identification number</idValue>
+    <idCode>BE</idCode>
+        <idValue>Batch excluded</idValue>
+    <idCode>BF</idCode>
+        <idValue>Door key number</idValue>
+    <idCode>BG</idCode>
+        <idValue>Fleet number</idValue>
+    <idCode>BH</idCode>
+        <idValue>Ignition key number</idValue>
+    <idCode>BI</idCode>
+        <idValue>Radio security code number</idValue>
+    <idCode>BJ</idCode>
+        <idValue>Serial shipping container code</idValue>
+    <idCode>BK</idCode>
+        <idValue>Fleet vehicle unit number</idValue>
+    <idCode>BL</idCode>
+        <idValue>Vehicle registration number</idValue>
+    <idCode>BM</idCode>
+        <idValue>Accounting Classification Reference Number (ACRN)</idValue>
+    <idCode>BN</idCode>
+        <idValue>Serial number</idValue>
+    <idCode>BO</idCode>
+        <idValue>Fund</idValue>
+    <idCode>BP</idCode>
+        <idValue>Special Accounting Classification Reference Number (ACRN)</idValue>
+    <idCode>BQ</idCode>
+        <idValue>Project</idValue>
+    <idCode>BR</idCode>
+        <idValue>Transportation Account Code (TAC)</idValue>
+    <idCode>BS</idCode>
+        <idValue>Financial details</idValue>
+    <idCode>BT</idCode>
+        <idValue>Account manager</idValue>
+    <idCode>BX</idCode>
+        <idValue>Batch number</idValue>
+    <idCode>CN</idCode>
+        <idValue>Chassis number</idValue>
+    <idCode>EE</idCode>
+        <idValue>Engine number</idValue>
+    <idCode>EM</idCode>
+        <idValue>Emulsion number</idValue>
+    <idCode>IL</idCode>
+        <idValue>Invoice line number</idValue>
+    <idCode>ML</idCode>
+        <idValue>Marking/label number</idValue>
+    <idCode>PN</idCode>
+        <idValue>Part number</idValue>
+    <idCode>SC</idCode>
+        <idValue>Secondary Customs tariff number</idValue>
+    <idCode>VV</idCode>
+        <idValue>Vehicle identity number</idValue>
+</idList>

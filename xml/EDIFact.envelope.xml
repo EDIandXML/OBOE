@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<envelope
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+	type="EDIFACT">
+	<segment name="Service String" id="UNA" occurs="1" sequence="0" required="O"
+		description="Identify tokens." shortName="Service_String">
+		<dataElement name="Delimiters" id="" sequence="1"
+			description="delimiters separators for fields groups and segments"
+			type="AN" required="M" minLength="1" maxLength="6"
+			shortName="fieldDelimiter" />
+	</segment>
+	<segment id="UNB" name="Interchange Header" sequence="0"
+		description="Interchange Header" occurs="1" required="M"
+		shortName="InterchangeHeader">
+		<compositeDE id="S001" name="Syntax Identifier" sequence="1"
+			description="Syntax Identifier" shortName="SyntaxIdentifier">
+			<dataElement id="0001" name="Syntax identifier" type="AN"
+				sequence="1" description="Syntax identifier" required="M"
+				minLength="4" maxLength="4" shortName="Syntaxidentifier" />
+			<dataElement id="0002" name="Syntax version number" type="AN"
+				sequence="2" description="Syntax version number" required="M"
+				minLength="1" maxLength="8" shortName="Syntaxversionnumber" />
+		</compositeDE>
+		<compositeDE id="S002" name="Interchange Sender" sequence="2"
+			description="Interchange Sender" shortName="InterchangeSender">
+			<dataElement id="0004" name="Sender identification" type="AN"
+				sequence="1" description="Sender identification" required="M"
+				minLength="1" maxLength="35" shortName="Senderidentification" />
+			<dataElement id="0007" name="Partner identification" type="AN"
+				sequence="2" description="Partner identification" required="C"
+				minLength="1" maxLength="4" shortName="Partneridentification" />
+			<dataElement id="0008" name="Address for reverse" type="AN"
+				sequence="3" description="Address for reverse" required="C"
+				minLength="1" maxLength="14" shortName="Addressforreverse" />
+		</compositeDE>
+		<compositeDE id="S003" name="Interchange Recipient" sequence="3"
+			description="Interchange Recipient" shortName="InterchangeRecipient">
+			<dataElement id="0010" name="Recipient Identification" type="AN"
+				sequence="1" description="Recipient Identification" required="M"
+				minLength="1" maxLength="35" shortName="RecipientIdentification" />
+			<dataElement id="0007" name="Partner identification" type="AN"
+				sequence="2" description="Partner identification" required="C"
+				minLength="1" maxLength="4" shortName="Partneridentification" />
+			<dataElement id="0014" name="Routing address" type="AN" sequence="3"
+				description="Routing address" required="C" minLength="1"
+				maxLength="14" shortName="Routingaddress" />
+		</compositeDE>
+		<compositeDE id="S004" name="Date Time Of Preparation" sequence="4"
+			description="Date Time Of Preparation"
+			shortName="DateTimeOfPreparation">
+			<dataElement id="0017" name="Date" type="DT" sequence="1"
+				description="Date" required="M" minLength="6" maxLength="8"
+				shortName="Date" />
+			<dataElement id="0019" name="Time" type="TM" sequence="2"
+				description="Time" required="M" minLength="4" maxLength="4"
+				shortName="Time" />
+		</compositeDE>
+		<dataElement id="0020" name="Interchange Control" type="AN" sequence="5"
+			description="Interchange Control" required="M" minLength="1"
+			maxLength="14" shortName="InterchangeControl" />
+		<compositeDE id="S005" name="Recipients Reference" sequence="6"
+			description="Recipients Reference" shortName="RecipientsReference">
+			<dataElement id="0022" name="Recipient's reference" type="AN"
+				sequence="1" description="Recipient's reference" required="M"
+				minLength="1" maxLength="14" shortName="Recipientsreference" />
+			<dataElement id="0025" name="Recipient's reference" type="AN"
+				sequence="2" description="Recipient's reference" required="C"
+				minLength="2" maxLength="2" shortName="Recipientsreference" />
+		</compositeDE>
+		<dataElement id="0026" name="Application Reference" type="AN"
+			sequence="7" description="Application Reference" required="C"
+			minLength="1" maxLength="14" shortName="ApplicationReference" />
+		<dataElement id="0029" name="Processing Priority Code" type="AN"
+			sequence="8" description="Processing Priority Code" required="C"
+			minLength="1" maxLength="1" shortName="ProcessingPriorityCode" />
+		<dataElement id="0031" name="Acknowledgement Request" type="AN"
+			sequence="9" description="Acknowledgement Request" required="C"
+			minLength="1" maxLength="1" shortName="AcknowledgementRequest" />
+		<dataElement id="0032" name="Communications Agreement" type="AN"
+			sequence="10" description="Communications Agreement" required="C"
+			minLength="1" maxLength="35" shortName="CommunicationsAgreement" />
+		<dataElement id="0035" name="Test Indicator" type="AN" sequence="11"
+			description="Test Indicator" required="C" minLength="1"
+			maxLength="1" shortName="TestIndicator" />
+	</segment>
+	<functionalGroup>
+		<segment id="UNG" name="Functional Group Header" sequence="0"
+			description="FunctionalGroupHeader" occurs="1" required="M"
+			shortName="FunctionalGroupHeader">
+			<dataElement id="0038" name="Functional Group Identification"
+				type="AN" sequence="1" description="functionalGroupID"
+				required="M" minLength="1" maxLength="6"
+				shortName="FunctionalGroupIdentification" />
+			<compositeDE id="S006" name="SenderID" sequence="2"
+				description="Sender Identification" shortName="SenderID">
+				<dataElement id="0040" name="Sender ID" type="AN" sequence="1"
+					description="senderID" required="M" minLength="1"
+					maxLength="35" shortName="SenderID" />
+				<dataElement id="0007" name="Identifier Code Qualifier"
+					type="AN" sequence="2" description="idCodeQualifier"
+					required="C" minLength="1" maxLength="4"
+					shortName="IdentifierCodeQualifier" />
+			</compositeDE>
+			<compositeDE id="S007" name="ReceiverID" sequence="3"
+				description="Receiver Identification" shortName="ReceiverID">
+				<dataElement id="0044" name="Receiver ID" type="AN" sequence="1"
+					description="receiver ID" required="M" minLength="1"
+					maxLength="35" shortName="ReceiverID" />
+				<dataElement id="0007" name="Identifier Code Qualifier"
+					type="AN" sequence="2" description="idCodeQualifier"
+					required="C" minLength="1" maxLength="4"
+					shortName="IdentifierCodeQualifier" />
+			</compositeDE>
+			<compositeDE id="S004" name="DateTime" sequence="4"
+				description="Date Time" shortName="DateTime">
+				<dataElement id="0017" name="Date" type="DT" sequence="1"
+					description="date" required="O" minLength="6" maxLength="8"
+					shortName="Date" />
+				<dataElement id="0019" name="Time" type="TM" sequence="2"
+					description="time" required="O" minLength="4" maxLength="6"
+					shortName="Time" />
+			</compositeDE>
+			<dataElement id="0048" name="Group Reference Number" type="N0"
+				sequence="5" description="groupReferenceNumber" required="M"
+				minLength="1" maxLength="14" shortName="GroupReferenceNumber" />
+			<dataElement id="0051" name="Controlling Agency" type="AN"
+				sequence="6" description="controllingAgency" required="M"
+				minLength="1" maxLength="2" shortName="ControllingAgency" />
+			<compositeDE id="S008" name="MessageVersion" sequence="7"
+				description="Message Version" shortName="MessageVersion">
+				<dataElement id="0052" name="Message type version number"
+					type="AN" sequence="1"
+					description="messageTypeVersionNumber" required="M"
+					minLength="1" maxLength="3"
+					shortName="Messagetypeversionnumber" />
+				<dataElement id="0054" name="Message type release number"
+					type="AN" sequence="2"
+					description="messageTypeReleaseNumber" required="M"
+					minLength="1" maxLength="3"
+					shortName="Messagetypereleasenumber" />
+				<dataElement id="0057" name="Association assigned code"
+					type="AN" sequence="3" description="AssociationAssignedCode"
+					required="O" minLength="1" maxLength="6"
+					shortName="Associationassignedcode" />
+			</compositeDE>
+			<dataElement id="0058" name="Application Password" type="AN"
+				sequence="8" description="applicationPassword" required="C"
+				minLength="1" maxLength="14" shortName="ApplicationPassword" />
+		</segment>
+		<transactionSet />
+		<segment id="UNE" name="Functional Group Trailer" sequence="0"
+			description="Functional Group Trailer" occurs="1" required="M"
+			shortName="FunctionalGroupTrailer">
+			<dataElement id="0060" name="Transaction Set Count" type="N0"
+				sequence="1" description="Number of Transaction Sets"
+				required="M" minLength="1" maxLength="6"
+				shortName="TransactionSetCount" />
+			<dataElement id="0048" name="Group Control" type="N0" sequence="2"
+				description="ControlNumber" minLength="1" maxLength="14"
+				shortName="GroupControl" />
+		</segment>
+	</functionalGroup>
+	<segment id="UNZ" name="Interchange Trailer" sequence="0"
+		description="Interchange Trailer" occurs="1" required="M"
+		shortName="InterchangeTrailer">
+		<dataElement id="0036" name="Number of segments" type="N0" sequence="1"
+			description="Number of segments in a Interchange" required="O"
+			minLength="1" maxLength="6" shortName="Numberofsegments" />
+		<dataElement id="0020" name="Interchange reference number" type="AN"
+			sequence="2" description="Interchange reference number" required="O"
+			minLength="1" maxLength="14" shortName="Interchangereferencenumber" />
+	</segment>
+</envelope>

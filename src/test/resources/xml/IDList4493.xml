@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AA</idCode>
+        <idValue>Ship on authorization</idValue>
+    <idCode>BK</idCode>
+        <idValue>Ship partial - balance back order</idValue>
+    <idCode>CD</idCode>
+        <idValue>Cancel if not delivered by date</idValue>
+    <idCode>DA</idCode>
+        <idValue>Do not deliver after</idValue>
+    <idCode>DB</idCode>
+        <idValue>Do not deliver before</idValue>
+    <idCode>DD</idCode>
+        <idValue>Deliver on date</idValue>
+    <idCode>IS</idCode>
+        <idValue>Substitute item</idValue>
+    <idCode>P1</idCode>
+        <idValue>No schedule established</idValue>
+    <idCode>P2</idCode>
+        <idValue>Ship as soon as possible</idValue>
+    <idCode>SC</idCode>
+        <idValue>Ship complete order</idValue>
+    <idCode>SF</idCode>
+        <idValue>Ship partial, if no freight rate increase</idValue>
+    <idCode>SP</idCode>
+        <idValue>Ship partial - balance cancel</idValue>
+</idList>

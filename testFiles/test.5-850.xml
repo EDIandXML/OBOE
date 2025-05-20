@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<!DOCTYPE envelope PUBLIC "envelope" "https://raw.githubusercontent.com/EDIandXML/OBOE/main/envelope.dtd">
+<envelope format="X12">
+<segment code="ISA" name="Interchange Control Header">
+<element code="I01" name="Authorization Information Qualifier"><value description="No Authorization Information Present (No Meaningful Information in I02)">00</value></element>
+<element code="I02" name="Authorization Information"> <value>          </value></element>
+<element code="I03" name="Security Information Qualifier"><value description="No Security Information Present (No Meaningful Information in I04)">00</value></element>
+<element code="I04" name="Security Information"> <value>          </value></element>
+<element code="I05" name="Interchange ID Qualifier"><value description="Mutually Defined">ZZ</value></element>
+<element code="I06" name="Interchange Sender ID"> <value>756110870      </value></element>
+<element code="I05" name="Interchange ID Qualifier"><value description="Mutually Defined">ZZ</value></element>
+<element code="I07" name="Interchange Receiver ID"> <value>36060674160    </value></element>
+<element code="I08" name="Interchange Date"> <value>010510</value></element>
+<element code="I09" name="Interchange Time"> <value>1213</value></element>
+<element code="I10" name="Interchange Control Standards Identifier"> <value>U</value></element>
+<element code="I11" name="Interchange Control Version Number"><value description="Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1993">00304</value></element>
+<element code="I12" name="Interchange Control Number"><value>000002311</value></element>
+<element code="I13" name="Acknowledgment Requested"><value description="No Acknowledgment Requested">0</value></element>
+<element code="I14" name="Usage Indicator"><value description="Production Data">P</value></element>
+<element code="I15" name="Component Element Separator"> <value>@</value></element>
+</segment>
+<functionalgroup>
+<segment code="GS" name="Functional Group Header">
+<element code="479" name="Functional Identifier Code"><value description="Purchase Order (850)">PO</value></element>
+<element code="142" name="Application Sender's Code"> <value>756110870</value></element>
+<element code="124" name="Application Receiver's Code"> <value>360606741</value></element>
+<element code="373" name="Date"> <value>010510</value></element>
+<element code="337" name="Time"> <value>121304</value></element>
+<element code="28" name="Group Control Number"><value>1</value></element>
+<element code="455" name="Responsible Agency Code"><value description="Accredited Standards Committee X12">X</value></element>
+<element code="480" name="Version / Release / Industry Identifier Code"><value description="Standards Approved for Publication by ASC X12
+		Procedures Review Board
+	">003040</value></element>
+</segment>
+<transactionset code="850" name="Purchase Order">
+<table section="header">
+<segment code="ST" name="Transaction Set Header">
+<element code="143" name="Transaction Set Identifier Code"><value description="850">850</value></element>
+<element code="329" name="Transaction Set Control Number"> <value>0001</value></element>
+</segment>
+<segment code="BEG" name="Beginning Segment for Purchase Order">
+<element code="353" name="Transaction Set Purpose Code"><value description="Original">00</value></element>
+<element code="92" name="Purchase Order Type Code"><value description="Stand-alone Order">SA</value></element>
+<element code="324" name="Purchase Order Number"> <value>2308</value></element>
+<element code="373" name="Date"> <value>20010510</value></element>
+<element code="1019" name="Invoice Type Code"><value description="Invoice By Mail">IBM</value></element>
+</segment>
+<segment code="REF" name="Reference Identification">
+<element code="128" name="Reference Identification Qualifier"><value description="Reference Version Number">ZI</value></element>
+<element code="127" name="Reference Identification"> <value>1.1</value></element>
+</segment>
+<segment code="PER" name="Administrative Communications Contact">
+<element code="366" name="Contact Function Code"><value description="Receiving Contact">RE</value></element>
+<element code="93" name="Name"> <value>JOHN BATAGELI</value></element>
+<element code="365" name="Communication Number Qualifier"><value description="Telephone">TE</value></element>
+<element code="364" name="Communication Number"> <value>+61 8 8226 5239</value></element>
+<element code="365" name="Communication Number Qualifier"><value description="Facsimile">FX</value></element>
+<element code="364" name="Communication Number"> <value>+61 8 8226 5646</value></element>
+</segment>
+<segment code="PER" name="Administrative Communications Contact">
+<element code="366" name="Contact Function Code"><value description="Receiving Contact">RE</value></element>
+<element code="93" name="Name"> <value>JOHN BATAGELI</value></element>
+<element code="365" name="Communication Number Qualifier"><value description="Electronic Mail">EM</value></element>
+<element code="364" name="Communication Number"> <value>BATAGELI.JOHN@SAUGOV.SA.GOV.AU</value></element>
+</segment>
+<segment code="CSH" name="Sales Requirements">
+<element code="563" name="Sales Requirement Code"><value description="Ship Partial, Balance Cancel">SP</value></element>
+</segment>
+<segment code="DTM" name="Date/Time Reference">
+<element code="374" name="Date/Time Qualifier"><value description="Effective">007</value></element>
+<element code="373" name="Date"> <value>20010510</value></element>
+<element code="337" name="Time"> <value>121338</value></element>
+</segment>
+<segment code="DTM" name="Date/Time Reference">
+<element code="374" name="Date/Time Qualifier"><value description="Delivery Requested">002</value></element>
+<element code="373" name="Date"> <value>20010512</value></element>
+</segment>
+<loop code="N1" name="Name">
+<segment code="N1" name="Name">
+<element code="98" name="Entity Identifier Code"><value description="Employee Name">EY</value></element>
+<element code="93" name="Name"> <value>JOHN BATAGELI</value></element>
+<element code="66" name="Identification Code Qualifier"><value description="Assigned by Buyer or Buyer&apos;s Agent">92</value></element>
+<element code="67" name="Identification Code"> <value>68</value></element>
+</segment>
+</loop>
+<loop code="N1" name="Name">
+<segment code="N1" name="Name">
+<element code="98" name="Entity Identifier Code"><value description="Buying Party (Purchaser)">BY</value></element>
+<element code="93" name="Name"> <value>DAIS</value></element>
+<element code="66" name="Identification Code Qualifier"><value description="D-U-N-S Number, Dun &amp; Bradstreet">1</value></element>
+<element code="67" name="Identification Code"> <value>756110870</value></element>
+</segment>
+<segment code="N3" name="Address Information">
+<element code="166" name="Address Information"> <value>WAKEFIELD HOUSE</value></element>
+<element code="166" name="Address Information"> <value>30 WAKEFIELD ST</value></element>
+</segment>
+<segment code="N4" name="Geographic Location">
+<element code="19" name="City Name"> <value>ADELAIDE</value></element>
+<element code="156" name="State or Province Code"> <value>SA</value></element>
+<element code="116" name="Postal Code"> <value>5000</value></element>
+<element code="26" name="Country Code"> <value>AU</value></element>
+</segment>
+</loop>
+<loop code="N1" name="Name">
+<segment code="N1" name="Name">
+<element code="98" name="Entity Identifier Code"><value description="Bill-to-Party">BT</value></element>
+<element code="93" name="Name"> <value>DO NOT USE</value></element>
+<element code="66" name="Identification Code Qualifier"><value description="D-U-N-S Number, Dun &amp; Bradstreet">1</value></element>
+<element code="67" name="Identification Code"> <value>NOT_USABLE</value></element>
+</segment>
+<segment code="N3" name="Address Information">
+<element code="166" name="Address Information"> <value>30 WAKEFIELD ST</value></element>
+</segment>
+<segment code="N4" name="Geographic Location">
+<element code="19" name="City Name"> <value>ADELAIDE</value></element>
+<element code="156" name="State or Province Code"> <value>SA</value></element>
+<element code="116" name="Postal Code"> <value>5000</value></element>
+<element code="26" name="Country Code"> <value>US</value></element>
+</segment>
+</loop>
+<loop code="N1" name="Name">
+<segment code="N1" name="Name">
+<element code="98" name="Entity Identifier Code"><value description="Ship To">ST</value></element>
+<element code="93" name="Name"> <value>JOHN BATAGELI</value></element>
+<element code="66" name="Identification Code Qualifier"><value description="Assigned by Buyer or Buyer&apos;s Agent">92</value></element>
+<element code="67" name="Identification Code"> <value>WH11</value></element>
+</segment>
+<segment code="N2" name="Additional Name Information">
+<element code="93" name="Name"> <value>1</value></element>
+<element code="93" name="Name"> <value>DAIS</value></element>
+</segment>
+<segment code="N3" name="Address Information">
+<element code="166" name="Address Information"> <value>LEVEL 11 WAKEFIELD HOUSE</value></element>
+<element code="166" name="Address Information"> <value>30 WAKEFIELD STREET</value></element>
+</segment>
+<segment code="N4" name="Geographic Location">
+<element code="19" name="City Name"> <value>ADELAIDE</value></element>
+<element code="156" name="State or Province Code"> <value>SA</value></element>
+<element code="116" name="Postal Code"> <value>5000</value></element>
+<element code="26" name="Country Code"> <value>AUS</value></element>
+</segment>
+</loop>
+<loop code="N1" name="Name">
+<segment code="N1" name="Name">
+<element code="98" name="Entity Identifier Code"><value description="Selling Party">SE</value></element>
+<element code="93" name="Name"> <value>PANDEE SERVICES TEST</value></element>
+<element code="66" name="Identification Code Qualifier"><value description="D-U-N-S Number, Dun &amp; Bradstreet">1</value></element>
+<element code="67" name="Identification Code"> <value>36060674160</value></element>
+</segment>
+<segment code="N3" name="Address Information">
+<element code="166" name="Address Information"> <value>28 GRAY STREET</value></element>
+</segment>
+<segment code="N4" name="Geographic Location">
+<element code="19" name="City Name"> <value>KILKENNY</value></element>
+<element code="156" name="State or Province Code"> <value>SA</value></element>
+<element code="116" name="Postal Code"> <value>5009</value></element>
+<element code="26" name="Country Code"> <value>AUS</value></element>
+</segment>
+</loop>
+</table>
+<table section="detail">
+<loop code="PO1" name="Baseline Item Data">
+<segment code="PO1" name="Baseline Item Data">
+<element code="350" name="Assigned Identification"> <value>1</value></element>
+<element code="330" name="Quantity Ordered"><value>1</value></element>
+<element code="355" name="Unit or Basis for Measurement Code"><value description="Each">EA</value></element>
+<element code="212" name="Unit Price"><value>38.39</value></element>
+<element code="235" name="Product/Service ID Qualifier"><value description="Vendor&apos;s (Seller&apos;s) Part Number">VP</value></element>
+<element code="234" name="Product/Service ID"> <value>CBBLUBR2/5</value></element>
+<element code="235" name="Product/Service ID Qualifier"><value description="Commodity Grouping">CG</value></element>
+<element code="234" name="Product/Service ID"> <value>0</value></element>
+</segment>
+<loop code="PID" name="Product/Item Description">
+<segment code="PID" name="Product/Item Description">
+<element code="349" name="Item Description Type"><value description="Free-form">F</value></element>
+<element code="352" name="Description"> <value>4-BLUE BRITE LIQUID LAUNDRY [CTN (2X5L)]</value></element>
+</segment>
+</loop>
+<loop code="SAC" name="Service, Promotion, Allowance, or Charge Information">
+<segment code="SAC" name="Service, Promotion, Allowance, or Charge Information">
+<element code="248" name="Allowance or Charge Indicator"><value description="No Allowance or Charge">N</value></element>
+<element code="1300" name="Service, Promotion, Allowance, or Charge Code"><value description="Mutually Defined">ZZZZ</value></element>
+<element code="127" name="Reference Identification"> <value>BBC</value></element>
+<element code="352" name="Description"> <value>BBC ADMIN SERVICES</value></element>
+</segment>
+<segment code="NTE" name="Note/Special Instruction">
+<element code="363" name="Note Reference Code"><value description="Special Handling">SPH</value></element>
+<element code="352" name="Description"> <value>THIS IS A TEST ORDER1.</value></element>
+</segment>
+<segment code="NTE" name="Note/Special Instruction">
+<element code="363" name="Note Reference Code"><value description="Special Handling">SPH</value></element>
+<element code="352" name="Description"> <value>THIS IS A TEST ORDER2.</value></element>
+</segment>
+<segment code="NTE" name="Note/Special Instruction">
+<element code="363" name="Note Reference Code"><value description="Special Handling">SPH</value></element>
+<element code="352" name="Description"> <value>THIS IS A TEST ORDER3.</value></element>
+</segment>
+</loop>
+<segment code="TXI" name="Tax Information">
+<element code="963" name="Tax Type Code"><value description="All Taxes">TX</value></element>
+<element code="441" name="Tax Exempt Code"><value description="No (Not Tax Exempt)">2</value></element>
+</segment>
+</loop>
+</table>
+<table section="summary">
+<loop code="CTT" name="Transaction Totals">
+<segment code="CTT" name="Transaction Totals">
+<element code="354" name="Number of Line Items"><value>1</value></element>
+</segment>
+<segment code="AMT" name="Monetary Amount">
+<element code="522" name="Amount Qualifier Code"><value description="Total Transaction Amount">TT</value></element>
+<element code="782" name="Monetary Amount"><value>38.39</value></element>
+</segment>
+</loop>
+<segment code="SE" name="Transaction Set Trailer">
+<element code="96" name="Number of Included Segments"><value>32</value></element>
+<element code="329" name="Transaction Set Control Number"> <value>0001</value></element>
+</segment>
+</table>
+</transactionset>
+<segment code="GE" name="Functional Group Trailer">
+<element code="97" name="Number of Transaction Sets Included"><value>1</value></element>
+<element code="28" name="Group Control Number"><value>1</value></element>
+</segment>
+</functionalgroup>
+<segment code="IEA" name="Interchange Control Trailer">
+<element code="I16" name="Number of Included Functional Groups"><value>1</value></element>
+<element code="I12" name="Interchange Control Number"><value>000002311</value></element>
+</segment>
+</envelope>

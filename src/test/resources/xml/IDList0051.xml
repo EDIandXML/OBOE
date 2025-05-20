@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AA</idCode>
+        <idValue>EDICONSTRUCT</idValue>
+    <idCode>AB</idCode>
+        <idValue>DIN (Deutsches Institut fuer Normung)</idValue>
+    <idCode>AC</idCode>
+        <idValue>ICS (International Chamber of Shipping)</idValue>
+    <idCode>AD</idCode>
+        <idValue>UPU (Union Postale Universelle)</idValue>
+    <idCode>CC</idCode>
+        <idValue>CCC (Customs Co-operation Council)</idValue>
+    <idCode>CE</idCode>
+        <idValue>CEFIC (Conseil Europeen des Federations de l&apos;Industrie Chimique)</idValue>
+    <idCode>EC</idCode>
+        <idValue>EDICON</idValue>
+    <idCode>ED</idCode>
+        <idValue>EDIFICE (Electronic industries project)</idValue>
+    <idCode>EE</idCode>
+        <idValue>EC + EFTA (European Communities and European Free Trade Association)</idValue>
+    <idCode>EN</idCode>
+        <idValue>EAN (European Article Numbering Association)</idValue>
+    <idCode>ER</idCode>
+        <idValue>UIC (International Union of railways)</idValue>
+    <idCode>EU</idCode>
+        <idValue>European Union</idValue>
+    <idCode>EX</idCode>
+        <idValue>IECC (International Express Carriers Conference)</idValue>
+    <idCode>IA</idCode>
+        <idValue>IATA (International Air Transport Association)</idValue>
+    <idCode>KE</idCode>
+        <idValue>KEC (Korea EDIFACT Committee)</idValue>
+    <idCode>LI</idCode>
+        <idValue>LIMNET</idValue>
+    <idCode>OD</idCode>
+        <idValue>ODETTE (Organization for Data Exchange through Tele- Transmission in Europe)</idValue>
+    <idCode>RI</idCode>
+        <idValue>RINET (Reinsurance and Insurance Network)</idValue>
+    <idCode>RT</idCode>
+        <idValue>UN/ECE/TRADE/WP.4/GE.1/EDIFACT Rapporteurs&apos; Teams</idValue>
+    <idCode>UN</idCode>
+        <idValue>UN/ECE/TRADE/WP.4</idValue>
+</idList>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>A</idCode>
+        <idValue>Allowance</idValue>
+    <idCode>B</idCode>
+        <idValue>Total other</idValue>
+    <idCode>C</idCode>
+        <idValue>Charge</idValue>
+    <idCode>D</idCode>
+        <idValue>Allowance per call of</idValue>
+    <idCode>E</idCode>
+        <idValue>Charge per call of</idValue>
+    <idCode>F</idCode>
+        <idValue>Allowance message</idValue>
+    <idCode>G</idCode>
+        <idValue>Allowance line items</idValue>
+    <idCode>H</idCode>
+        <idValue>Line item allowance</idValue>
+    <idCode>J</idCode>
+        <idValue>Adjustment</idValue>
+    <idCode>K</idCode>
+        <idValue>Charge message</idValue>
+    <idCode>L</idCode>
+        <idValue>Charge line items</idValue>
+    <idCode>M</idCode>
+        <idValue>Line item charge</idValue>
+    <idCode>N</idCode>
+        <idValue>No allowance or charge</idValue>
+    <idCode>O</idCode>
+        <idValue>About</idValue>
+    <idCode>P</idCode>
+        <idValue>Minus (percentage)</idValue>
+    <idCode>Q</idCode>
+        <idValue>Minus (amount)</idValue>
+    <idCode>R</idCode>
+        <idValue>Plus (percentage)</idValue>
+    <idCode>S</idCode>
+        <idValue>Plus (amount)</idValue>
+    <idCode>T</idCode>
+        <idValue>Plus/minus (percentage)</idValue>
+    <idCode>U</idCode>
+        <idValue>Plus/minus (amount)</idValue>
+    <idCode>V</idCode>
+        <idValue>No allowance</idValue>
+    <idCode>W</idCode>
+        <idValue>No charge</idValue>
+    <idCode>X</idCode>
+        <idValue>Maximum</idValue>
+    <idCode>Y</idCode>
+        <idValue>Exact</idValue>
+</idList>

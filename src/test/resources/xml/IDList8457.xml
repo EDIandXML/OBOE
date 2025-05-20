@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>A</idCode>
+        <idValue>Special rail car order, schedule increase forecast change</idValue>
+    <idCode>B</idCode>
+        <idValue>Engineering change or late release</idValue>
+    <idCode>C</idCode>
+        <idValue>Specification (schedule) error/overbuilding</idValue>
+    <idCode>D</idCode>
+        <idValue>Shipment tracing delay</idValue>
+    <idCode>E</idCode>
+        <idValue>Plant inventory loss</idValue>
+    <idCode>F</idCode>
+        <idValue>Building ahead of schedule</idValue>
+    <idCode>G</idCode>
+        <idValue>Vendor behind schedule</idValue>
+    <idCode>H</idCode>
+        <idValue>Failed to include in last shipment</idValue>
+    <idCode>I</idCode>
+        <idValue>Carrier loss claim</idValue>
+    <idCode>J</idCode>
+        <idValue>Transportation failure</idValue>
+    <idCode>K</idCode>
+        <idValue>Insufficient weight for carload</idValue>
+    <idCode>L</idCode>
+        <idValue>Reject or discrepancy (material rejected in prior shipment)</idValue>
+    <idCode>M</idCode>
+        <idValue>Transportation delay</idValue>
+    <idCode>N</idCode>
+        <idValue>Lack of railcar or railroad equipment</idValue>
+    <idCode>P</idCode>
+        <idValue>Releasing error</idValue>
+    <idCode>R</idCode>
+        <idValue>Record error or cate reported discrepancy report</idValue>
+    <idCode>T</idCode>
+        <idValue>Common or peculiar part schedule increase</idValue>
+    <idCode>U</idCode>
+        <idValue>Alternative supplier shipping for responsible supplier</idValue>
+    <idCode>V</idCode>
+        <idValue>Direct schedule or locally controlled</idValue>
+    <idCode>W</idCode>
+        <idValue>Purchasing waiver approval</idValue>
+    <idCode>X</idCode>
+        <idValue>Authorization code to be determined</idValue>
+    <idCode>Y</idCode>
+        <idValue>Pilot material</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

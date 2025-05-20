@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>2</idCode>
+        <idValue>Delivery date/time, requested</idValue>
+    <idCode>3</idCode>
+        <idValue>Invoice date/time</idValue>
+    <idCode>4</idCode>
+        <idValue>Order date/time</idValue>
+    <idCode>7</idCode>
+        <idValue>Effective date/time</idValue>
+    <idCode>8</idCode>
+        <idValue>Order received date/time</idValue>
+    <idCode>9</idCode>
+        <idValue>Processing date/time</idValue>
+    <idCode>10</idCode>
+        <idValue>Shipment date/time, requested</idValue>
+    <idCode>11</idCode>
+        <idValue>Despatch date and or time</idValue>
+    <idCode>12</idCode>
+        <idValue>Terms discount due date/time</idValue>
+    <idCode>13</idCode>
+        <idValue>Terms net due date</idValue>
+    <idCode>14</idCode>
+        <idValue>Payment date/time, deferred</idValue>
+    <idCode>15</idCode>
+        <idValue>Promotion start date/time</idValue>
+    <idCode>16</idCode>
+        <idValue>Promotion end date/time</idValue>
+    <idCode>17</idCode>
+        <idValue>Delivery date/time, estimated</idValue>
+    <idCode>18</idCode>
+        <idValue>Installation date/time/period</idValue>
+    <idCode>20</idCode>
+        <idValue>Cheque date/time</idValue>
+    <idCode>21</idCode>
+        <idValue>Charge back date/time</idValue>
+    <idCode>22</idCode>
+        <idValue>Freight bill date/time</idValue>
+    <idCode>35</idCode>
+        <idValue>Delivery date/time, actual</idValue>
+    <idCode>36</idCode>
+        <idValue>Expiry date</idValue>
+    <idCode>37</idCode>
+        <idValue>Ship not before date/time</idValue>
+    <idCode>38</idCode>
+        <idValue>Ship not later than date/time</idValue>
+    <idCode>39</idCode>
+        <idValue>Ship week of date</idValue>
+    <idCode>42</idCode>
+        <idValue>Superseded date/time</idValue>
+    <idCode>44</idCode>
+        <idValue>Availability</idValue>
+    <idCode>45</idCode>
+        <idValue>Compilation date and time</idValue>
+    <idCode>46</idCode>
+        <idValue>Cancellation date</idValue>
+    <idCode>47</idCode>
+        <idValue>Statistical time series date</idValue>
+    <idCode>48</idCode>
+        <idValue>Duration</idValue>
+    <idCode>49</idCode>
+        <idValue>Deliver not before and not after dates</idValue>
+    <idCode>50</idCode>
+        <idValue>Goods receipt date/time</idValue>
+    <idCode>51</idCode>
+        <idValue>Cumulative quantity start date</idValue>
+    <idCode>52</idCode>
+        <idValue>Cumulative quantity end date</idValue>
+    <idCode>53</idCode>
+        <idValue>Buyer&apos;s local time</idValue>
+    <idCode>54</idCode>
+        <idValue>Seller&apos;s local time</idValue>
+    <idCode>55</idCode>
+        <idValue>Confirmed date/time</idValue>
+    <idCode>58</idCode>
+        <idValue>Clearance date (Customs)</idValue>
+    <idCode>59</idCode>
+        <idValue>Inbond movement authorization date</idValue>
+    <idCode>60</idCode>
+        <idValue>Engineering change level date</idValue>
+    <idCode>61</idCode>
+        <idValue>Cancel if not delivered by this date</idValue>
+    <idCode>63</idCode>
+        <idValue>Delivery date/time, latest</idValue>
+    <idCode>64</idCode>
+        <idValue>Delivery date/time, earliest</idValue>
+    <idCode>65</idCode>
+        <idValue>Delivery date/time, 1st schedule</idValue>
+    <idCode>67</idCode>
+        <idValue>Delivery date/time, current schedule</idValue>
+    <idCode>69</idCode>
+        <idValue>Delivery date/time, promised for</idValue>
+    <idCode>71</idCode>
+        <idValue>Delivery date/time, requested for (after and including)</idValue>
+    <idCode>72</idCode>
+        <idValue>Delivery date/time, promised for (after and including)</idValue>
+    <idCode>74</idCode>
+        <idValue>Delivery date/time, requested for (prior to and including)</idValue>
+    <idCode>75</idCode>
+        <idValue>Delivery date/time, promised for (prior to and including)</idValue>
+    <idCode>76</idCode>
+        <idValue>Delivery date/time, scheduled for</idValue>
+    <idCode>79</idCode>
+        <idValue>Shipment date/time, promised for</idValue>
+    <idCode>81</idCode>
+        <idValue>Shipment date/time, requested for (after and including)</idValue>
+    <idCode>84</idCode>
+        <idValue>Shipment date/time, requested for (prior to and including)</idValue>
+    <idCode>85</idCode>
+        <idValue>Shipment date/time, promised for (prior to and including)</idValue>
+    <idCode>89</idCode>
+        <idValue>Inquiry date</idValue>
+    <idCode>90</idCode>
+        <idValue>Report start date</idValue>
+    <idCode>91</idCode>
+        <idValue>Report end date</idValue>
+    <idCode>92</idCode>
+        <idValue>Contract effective date</idValue>
+    <idCode>93</idCode>
+        <idValue>Contract expiry date</idValue>
+    <idCode>94</idCode>
+        <idValue>Production/manufacture date</idValue>
+    <idCode>95</idCode>
+        <idValue>Bill of lading date</idValue>
+    <idCode>96</idCode>
+        <idValue>Discharge date/time</idValue>
+    <idCode>97</idCode>
+        <idValue>Transaction creation date</idValue>
+    <idCode>101</idCode>
+        <idValue>Production date, no schedule established as of</idValue>
+    <idCode>107</idCode>
+        <idValue>Deposit date/time</idValue>
+    <idCode>108</idCode>
+        <idValue>Postmark date/time</idValue>
+    <idCode>109</idCode>
+        <idValue>Receive at lockbox date</idValue>
+    <idCode>110</idCode>
+        <idValue>Ship date, originally scheduled</idValue>
+    <idCode>111</idCode>
+        <idValue>Manifest/ship notice date</idValue>
+    <idCode>113</idCode>
+        <idValue>Sample required date</idValue>
+    <idCode>114</idCode>
+        <idValue>Tooling required date</idValue>
+    <idCode>115</idCode>
+        <idValue>Sample available date</idValue>
+    <idCode>116</idCode>
+        <idValue>Equipment return period, expected</idValue>
+    <idCode>117</idCode>
+        <idValue>Delivery date/time, first</idValue>
+    <idCode>118</idCode>
+        <idValue>Cargo booking confirmed date/time</idValue>
+    <idCode>119</idCode>
+        <idValue>Test completion date</idValue>
+    <idCode>123</idCode>
+        <idValue>Documentary credit expiry date/time</idValue>
+    <idCode>124</idCode>
+        <idValue>Despatch note date</idValue>
+    <idCode>125</idCode>
+        <idValue>Import licence date</idValue>
+    <idCode>126</idCode>
+        <idValue>Contract date</idValue>
+    <idCode>128</idCode>
+        <idValue>Delivery date/time, last</idValue>
+    <idCode>129</idCode>
+        <idValue>Exportation date</idValue>
+    <idCode>131</idCode>
+        <idValue>Tax point date</idValue>
+    <idCode>132</idCode>
+        <idValue>Arrival date/time, estimated</idValue>
+    <idCode>133</idCode>
+        <idValue>Departure date/time, estimated</idValue>
+    <idCode>134</idCode>
+        <idValue>Rate of exchange date/time</idValue>
+    <idCode>135</idCode>
+        <idValue>Telex date</idValue>
+    <idCode>136</idCode>
+        <idValue>Departure date/time</idValue>
+    <idCode>137</idCode>
+        <idValue>Document/message date/time</idValue>
+    <idCode>138</idCode>
+        <idValue>Payment date</idValue>
+    <idCode>140</idCode>
+        <idValue>Payment due date</idValue>
+    <idCode>141</idCode>
+        <idValue>Presentation date of Goods declaration (Customs)</idValue>
+    <idCode>142</idCode>
+        <idValue>Labour wage determination date</idValue>
+    <idCode>143</idCode>
+        <idValue>Acceptance date/time of goods</idValue>
+    <idCode>144</idCode>
+        <idValue>Quota date</idValue>
+    <idCode>145</idCode>
+        <idValue>Event date</idValue>
+    <idCode>146</idCode>
+        <idValue>Entry date, estimated (Customs)</idValue>
+    <idCode>147</idCode>
+        <idValue>Expiry date of export licence</idValue>
+    <idCode>148</idCode>
+        <idValue>Acceptance date of Goods declaration (Customs)</idValue>
+    <idCode>149</idCode>
+        <idValue>Invoice date, required</idValue>
+    <idCode>150</idCode>
+        <idValue>Declaration/presentation date</idValue>
+    <idCode>151</idCode>
+        <idValue>Importation date</idValue>
+    <idCode>152</idCode>
+        <idValue>Exportation date for textiles</idValue>
+    <idCode>153</idCode>
+        <idValue>Cancellation date/time, latest</idValue>
+    <idCode>154</idCode>
+        <idValue>Acceptance date of document</idValue>
+    <idCode>155</idCode>
+        <idValue>Accounting period start date</idValue>
+    <idCode>156</idCode>
+        <idValue>Accounting period end date</idValue>
+    <idCode>157</idCode>
+        <idValue>Validity start date</idValue>
+    <idCode>158</idCode>
+        <idValue>Horizon start date</idValue>
+    <idCode>159</idCode>
+        <idValue>Horizon end date</idValue>
+    <idCode>160</idCode>
+        <idValue>Authorization date</idValue>
+    <idCode>161</idCode>
+        <idValue>Release date of customer</idValue>
+    <idCode>162</idCode>
+        <idValue>Release date of supplier</idValue>
+    <idCode>163</idCode>
+        <idValue>Processing start date/time</idValue>
+    <idCode>164</idCode>
+        <idValue>Processing end date/time</idValue>
+    <idCode>165</idCode>
+        <idValue>Tax period start date</idValue>
+    <idCode>166</idCode>
+        <idValue>Tax period end date</idValue>
+    <idCode>167</idCode>
+        <idValue>Charge period start date</idValue>
+    <idCode>168</idCode>
+        <idValue>Charge period end date</idValue>
+    <idCode>169</idCode>
+        <idValue>Lead time</idValue>
+    <idCode>170</idCode>
+        <idValue>Settlement due date</idValue>
+    <idCode>171</idCode>
+        <idValue>Reference date/time</idValue>
+    <idCode>172</idCode>
+        <idValue>Hired from date</idValue>
+    <idCode>173</idCode>
+        <idValue>Hired until date</idValue>
+    <idCode>174</idCode>
+        <idValue>Advise after date/time</idValue>
+    <idCode>175</idCode>
+        <idValue>Advise before date/time</idValue>
+    <idCode>176</idCode>
+        <idValue>Advise completed date/time</idValue>
+    <idCode>177</idCode>
+        <idValue>Advise on date/time</idValue>
+    <idCode>178</idCode>
+        <idValue>Arrival date/time, actual</idValue>
+    <idCode>179</idCode>
+        <idValue>Booking date/time</idValue>
+    <idCode>180</idCode>
+        <idValue>Closing date/time</idValue>
+    <idCode>181</idCode>
+        <idValue>Positioning date/time of equipment</idValue>
+    <idCode>182</idCode>
+        <idValue>Issue date</idValue>
+    <idCode>183</idCode>
+        <idValue>Date, as at</idValue>
+    <idCode>184</idCode>
+        <idValue>Notification date/time</idValue>
+    <idCode>185</idCode>
+        <idValue>Commenced tank cleaning date/time</idValue>
+    <idCode>186</idCode>
+        <idValue>Departure date/time, actual</idValue>
+    <idCode>187</idCode>
+        <idValue>Authentication date/time of document</idValue>
+    <idCode>188</idCode>
+        <idValue>Previous current account date</idValue>
+    <idCode>189</idCode>
+        <idValue>Departure date/time, scheduled</idValue>
+    <idCode>190</idCode>
+        <idValue>Transhipment date/time</idValue>
+    <idCode>191</idCode>
+        <idValue>Delivery date/time, expected</idValue>
+    <idCode>192</idCode>
+        <idValue>Expiration date/time of customs document</idValue>
+    <idCode>193</idCode>
+        <idValue>Execution date</idValue>
+    <idCode>194</idCode>
+        <idValue>Start date/time</idValue>
+    <idCode>195</idCode>
+        <idValue>Expiry date of import licence</idValue>
+    <idCode>196</idCode>
+        <idValue>Departure date/time, earliest</idValue>
+    <idCode>197</idCode>
+        <idValue>Lay-time first day</idValue>
+    <idCode>198</idCode>
+        <idValue>Lay-time last day</idValue>
+    <idCode>199</idCode>
+        <idValue>Positioning date/time of goods</idValue>
+    <idCode>200</idCode>
+        <idValue>Pick-up/collection date/time of cargo</idValue>
+    <idCode>201</idCode>
+        <idValue>Pick-up date/time of equipment</idValue>
+    <idCode>202</idCode>
+        <idValue>Posting date</idValue>
+    <idCode>203</idCode>
+        <idValue>Execution date/time, requested</idValue>
+    <idCode>204</idCode>
+        <idValue>Release date (Customs)</idValue>
+    <idCode>205</idCode>
+        <idValue>Settlement date</idValue>
+    <idCode>206</idCode>
+        <idValue>End date/time</idValue>
+    <idCode>207</idCode>
+        <idValue>Commenced pumping ballast date/time</idValue>
+    <idCode>208</idCode>
+        <idValue>Departure date/time, ultimate</idValue>
+    <idCode>209</idCode>
+        <idValue>Value date</idValue>
+    <idCode>210</idCode>
+        <idValue>Reinsurance current account period</idValue>
+    <idCode>211</idCode>
+        <idValue>360/30</idValue>
+    <idCode>212</idCode>
+        <idValue>360/28-31</idValue>
+    <idCode>213</idCode>
+        <idValue>365-6/30</idValue>
+    <idCode>214</idCode>
+        <idValue>365-6/28-31</idValue>
+    <idCode>215</idCode>
+        <idValue>365/28-31</idValue>
+    <idCode>216</idCode>
+        <idValue>365/30</idValue>
+    <idCode>217</idCode>
+        <idValue>From date of award to latest delivery</idValue>
+    <idCode>218</idCode>
+        <idValue>Authentication/validation date/time</idValue>
+    <idCode>219</idCode>
+        <idValue>Crossborder date/time</idValue>
+    <idCode>221</idCode>
+        <idValue>Interest period</idValue>
+    <idCode>222</idCode>
+        <idValue>Presentation date, latest</idValue>
+    <idCode>223</idCode>
+        <idValue>Delivery date/time, deferred</idValue>
+    <idCode>224</idCode>
+        <idValue>Permit to admit date</idValue>
+    <idCode>225</idCode>
+        <idValue>Certification of weight date/time</idValue>
+    <idCode>226</idCode>
+        <idValue>Discrepancy date/time</idValue>
+    <idCode>227</idCode>
+        <idValue>Beneficiary&apos;s banks due date</idValue>
+    <idCode>228</idCode>
+        <idValue>Debit value date, requested</idValue>
+    <idCode>229</idCode>
+        <idValue>Hoses connected date/time</idValue>
+    <idCode>230</idCode>
+        <idValue>Hoses disconnected date/time</idValue>
+    <idCode>231</idCode>
+        <idValue>Arrival date/time, earliest</idValue>
+    <idCode>232</idCode>
+        <idValue>Arrival date/time, scheduled</idValue>
+    <idCode>233</idCode>
+        <idValue>Arrival date/time, ultimate</idValue>
+    <idCode>234</idCode>
+        <idValue>Collection date/time, earliest</idValue>
+    <idCode>235</idCode>
+        <idValue>Collection date/time, latest</idValue>
+    <idCode>236</idCode>
+        <idValue>Completed pumping ballast date/time</idValue>
+    <idCode>237</idCode>
+        <idValue>Completed tank cleaning date/time</idValue>
+    <idCode>238</idCode>
+        <idValue>Tanks accepted date/time</idValue>
+    <idCode>239</idCode>
+        <idValue>Tanks inspected date/time</idValue>
+    <idCode>240</idCode>
+        <idValue>Reinsurance accounting period</idValue>
+    <idCode>241</idCode>
+        <idValue>From date of award to earliest delivery</idValue>
+    <idCode>242</idCode>
+        <idValue>Preparation date/time of document</idValue>
+    <idCode>243</idCode>
+        <idValue>Transmission date/time of document</idValue>
+    <idCode>244</idCode>
+        <idValue>Settlement date, planned</idValue>
+    <idCode>245</idCode>
+        <idValue>Underwriting year</idValue>
+    <idCode>246</idCode>
+        <idValue>Accounting year</idValue>
+    <idCode>247</idCode>
+        <idValue>Year of occurrence</idValue>
+    <idCode>248</idCode>
+        <idValue>Loss</idValue>
+    <idCode>249</idCode>
+        <idValue>Cash call date</idValue>
+    <idCode>250</idCode>
+        <idValue>Re-exportation date</idValue>
+    <idCode>251</idCode>
+        <idValue>Re-importation date</idValue>
+    <idCode>252</idCode>
+        <idValue>Arrival date/time at initial port</idValue>
+    <idCode>253</idCode>
+        <idValue>Departure date/time from last port of call</idValue>
+    <idCode>254</idCode>
+        <idValue>Registration date of previous Customs declaration</idValue>
+    <idCode>255</idCode>
+        <idValue>Availability due date</idValue>
+    <idCode>256</idCode>
+        <idValue>From date of award to completion</idValue>
+    <idCode>257</idCode>
+        <idValue>Calculation date</idValue>
+    <idCode>258</idCode>
+        <idValue>Guarantee date (Customs)</idValue>
+    <idCode>259</idCode>
+        <idValue>Conveyance registration date</idValue>
+    <idCode>260</idCode>
+        <idValue>Valuation date (Customs)</idValue>
+    <idCode>261</idCode>
+        <idValue>Release date/time</idValue>
+    <idCode>262</idCode>
+        <idValue>Closure date/time/period</idValue>
+    <idCode>263</idCode>
+        <idValue>Invoicing period</idValue>
+    <idCode>264</idCode>
+        <idValue>Release frequency</idValue>
+    <idCode>265</idCode>
+        <idValue>Due date</idValue>
+    <idCode>266</idCode>
+        <idValue>Validation date</idValue>
+    <idCode>267</idCode>
+        <idValue>Rate/price date/time</idValue>
+    <idCode>268</idCode>
+        <idValue>Transit time/limits</idValue>
+    <idCode>270</idCode>
+        <idValue>Ship during date</idValue>
+    <idCode>271</idCode>
+        <idValue>Ship on or about date</idValue>
+    <idCode>272</idCode>
+        <idValue>Documentary credit presentation period</idValue>
+    <idCode>273</idCode>
+        <idValue>Validity period</idValue>
+    <idCode>274</idCode>
+        <idValue>From date of order receipt to sample ready</idValue>
+    <idCode>275</idCode>
+        <idValue>From date of tooling authorization to sample ready</idValue>
+    <idCode>276</idCode>
+        <idValue>From date of receipt of tooling aids to sample ready</idValue>
+    <idCode>277</idCode>
+        <idValue>From date of sample approval to first product shipment</idValue>
+    <idCode>278</idCode>
+        <idValue>From date of order receipt to shipment</idValue>
+    <idCode>279</idCode>
+        <idValue>From date of order receipt to delivery</idValue>
+    <idCode>280</idCode>
+        <idValue>From last booked order to delivery</idValue>
+    <idCode>281</idCode>
+        <idValue>Date of order lead time</idValue>
+    <idCode>282</idCode>
+        <idValue>Confirmation date lead time</idValue>
+    <idCode>283</idCode>
+        <idValue>Arrival date/time of transport lead time</idValue>
+    <idCode>284</idCode>
+        <idValue>Before inventory is replenished based on stock check lead time</idValue>
+    <idCode>285</idCode>
+        <idValue>Invitation to tender date/time</idValue>
+    <idCode>286</idCode>
+        <idValue>Tender submission date/time</idValue>
+    <idCode>287</idCode>
+        <idValue>Contract award date/time</idValue>
+    <idCode>288</idCode>
+        <idValue>Price base date/time</idValue>
+    <idCode>290</idCode>
+        <idValue>Contractual start date/time</idValue>
+    <idCode>291</idCode>
+        <idValue>Start date/time, planned</idValue>
+    <idCode>292</idCode>
+        <idValue>Works completion date/time, planned</idValue>
+    <idCode>293</idCode>
+        <idValue>Works completion date/time, actual</idValue>
+    <idCode>294</idCode>
+        <idValue>Hand over date/time, planned</idValue>
+    <idCode>295</idCode>
+        <idValue>Hand over date/time, actual</idValue>
+    <idCode>296</idCode>
+        <idValue>Retention release date/time</idValue>
+    <idCode>297</idCode>
+        <idValue>Retention release date/time, partial</idValue>
+    <idCode>298</idCode>
+        <idValue>Escalation start date</idValue>
+    <idCode>299</idCode>
+        <idValue>Price adjustment start date</idValue>
+    <idCode>300</idCode>
+        <idValue>Price adjustment limit date</idValue>
+    <idCode>301</idCode>
+        <idValue>Value date of index</idValue>
+    <idCode>302</idCode>
+        <idValue>Publication date</idValue>
+    <idCode>303</idCode>
+        <idValue>Escalation date</idValue>
+    <idCode>304</idCode>
+        <idValue>Price adjustment date</idValue>
+    <idCode>305</idCode>
+        <idValue>Latest price adjustment date</idValue>
+    <idCode>306</idCode>
+        <idValue>Work period</idValue>
+    <idCode>307</idCode>
+        <idValue>Payment instruction date/time</idValue>
+    <idCode>308</idCode>
+        <idValue>Payment valuation presentation date/time</idValue>
+    <idCode>309</idCode>
+        <idValue>Blanks value date</idValue>
+    <idCode>310</idCode>
+        <idValue>Received date/time</idValue>
+    <idCode>311</idCode>
+        <idValue>On</idValue>
+    <idCode>312</idCode>
+        <idValue>Ship not before and not after date/time</idValue>
+    <idCode>313</idCode>
+        <idValue>Order to proceed date</idValue>
+    <idCode>314</idCode>
+        <idValue>Planned duration of works</idValue>
+    <idCode>315</idCode>
+        <idValue>Agreement to pay date</idValue>
+    <idCode>316</idCode>
+        <idValue>Valuation date/time</idValue>
+    <idCode>317</idCode>
+        <idValue>Reply date</idValue>
+    <idCode>318</idCode>
+        <idValue>Request date</idValue>
+    <idCode>319</idCode>
+        <idValue>Customer value date</idValue>
+    <idCode>320</idCode>
+        <idValue>Declaration reference period</idValue>
+    <idCode>321</idCode>
+        <idValue>Promotion date/period</idValue>
+    <idCode>322</idCode>
+        <idValue>Accounting period</idValue>
+    <idCode>323</idCode>
+        <idValue>Horizon period</idValue>
+    <idCode>324</idCode>
+        <idValue>Processing date/period</idValue>
+    <idCode>325</idCode>
+        <idValue>Tax period</idValue>
+    <idCode>326</idCode>
+        <idValue>Charge period</idValue>
+    <idCode>327</idCode>
+        <idValue>Instalment payment due date</idValue>
+    <idCode>328</idCode>
+        <idValue>Payroll deduction date/time</idValue>
+    <idCode>329</idCode>
+        <idValue>Birth date/time</idValue>
+    <idCode>330</idCode>
+        <idValue>Joined employer date</idValue>
+    <idCode>331</idCode>
+        <idValue>Contributions ceasing date/time</idValue>
+    <idCode>332</idCode>
+        <idValue>Contribution period end date/time</idValue>
+    <idCode>333</idCode>
+        <idValue>Part-time working change date/time</idValue>
+    <idCode>334</idCode>
+        <idValue>Status change date/time</idValue>
+    <idCode>335</idCode>
+        <idValue>Contribution period start date/time</idValue>
+    <idCode>336</idCode>
+        <idValue>Salary change effective date</idValue>
+    <idCode>337</idCode>
+        <idValue>Left employer date</idValue>
+    <idCode>338</idCode>
+        <idValue>Benefit change date/time</idValue>
+    <idCode>339</idCode>
+        <idValue>Category change date/time</idValue>
+    <idCode>340</idCode>
+        <idValue>Joined fund date/time</idValue>
+    <idCode>341</idCode>
+        <idValue>Waiting time</idValue>
+    <idCode>342</idCode>
+        <idValue>On-board date</idValue>
+    <idCode>343</idCode>
+        <idValue>Date/time of discount termination</idValue>
+    <idCode>344</idCode>
+        <idValue>Date/time of interest due</idValue>
+    <idCode>345</idCode>
+        <idValue>Days of operation</idValue>
+    <idCode>346</idCode>
+        <idValue>Latest check-in time</idValue>
+    <idCode>347</idCode>
+        <idValue>Slaughtering start date</idValue>
+    <idCode>348</idCode>
+        <idValue>Packing start date</idValue>
+    <idCode>349</idCode>
+        <idValue>Packing end date</idValue>
+    <idCode>350</idCode>
+        <idValue>Test start date</idValue>
+    <idCode>351</idCode>
+        <idValue>Inspection date</idValue>
+    <idCode>352</idCode>
+        <idValue>Slaughtering end date</idValue>
+    <idCode>353</idCode>
+        <idValue>Accounting transaction date</idValue>
+    <idCode>354</idCode>
+        <idValue>Activity period date range</idValue>
+    <idCode>355</idCode>
+        <idValue>Contractual delivery date</idValue>
+    <idCode>356</idCode>
+        <idValue>Sales date, and or time, and or period</idValue>
+    <idCode>357</idCode>
+        <idValue>Cancel if not published by this date</idValue>
+    <idCode>358</idCode>
+        <idValue>Scheduled for delivery on or after</idValue>
+    <idCode>359</idCode>
+        <idValue>Scheduled for delivery on or before</idValue>
+    <idCode>360</idCode>
+        <idValue>Sell by date</idValue>
+    <idCode>361</idCode>
+        <idValue>Best before date</idValue>
+    <idCode>362</idCode>
+        <idValue>End availability date</idValue>
+    <idCode>363</idCode>
+        <idValue>Total shelf life period</idValue>
+    <idCode>364</idCode>
+        <idValue>Minimum shelf life remaining at time of despatch period</idValue>
+    <idCode>365</idCode>
+        <idValue>Packaging date</idValue>
+    <idCode>366</idCode>
+        <idValue>Inventory report date</idValue>
+    <idCode>367</idCode>
+        <idValue>Previous meter reading date</idValue>
+    <idCode>368</idCode>
+        <idValue>Latest meter reading date</idValue>
+    <idCode>369</idCode>
+        <idValue>Date and or time of handling, estimated</idValue>
+    <idCode>370</idCode>
+        <idValue>Date when container equipment becomes domestic</idValue>
+    <idCode>371</idCode>
+        <idValue>Hydrotest date</idValue>
+    <idCode>372</idCode>
+        <idValue>Equipment pre-trip date</idValue>
+    <idCode>373</idCode>
+        <idValue>Mooring, date and time</idValue>
+    <idCode>374</idCode>
+        <idValue>Road fund tax expiry date</idValue>
+    <idCode>375</idCode>
+        <idValue>Date of first registration</idValue>
+    <idCode>376</idCode>
+        <idValue>Biannual terminal inspection date</idValue>
+    <idCode>377</idCode>
+        <idValue>Federal HighWay Administration (FHWA) inspection date</idValue>
+    <idCode>378</idCode>
+        <idValue>Container Safety Convention (CSC) inspection date</idValue>
+    <idCode>379</idCode>
+        <idValue>Periodic inspection date</idValue>
+    <idCode>380</idCode>
+        <idValue>Drawing revision date</idValue>
+    <idCode>381</idCode>
+        <idValue>Product lifespan at time of production</idValue>
+    <idCode>382</idCode>
+        <idValue>Earliest sale date</idValue>
+    <idCode>383</idCode>
+        <idValue>Cancel if not shipped by this date</idValue>
+    <idCode>384</idCode>
+        <idValue>Previous invoice date</idValue>
+    <idCode>387</idCode>
+        <idValue>Repair turnaround time</idValue>
+    <idCode>388</idCode>
+        <idValue>Order amendment binding date</idValue>
+    <idCode>389</idCode>
+        <idValue>Cure time</idValue>
+    <idCode>390</idCode>
+        <idValue>From date of award to delivery</idValue>
+    <idCode>391</idCode>
+        <idValue>From date of receipt of item to approval</idValue>
+    <idCode>392</idCode>
+        <idValue>Equipment collection or pick-up date/time, earliest</idValue>
+    <idCode>393</idCode>
+        <idValue>Equipment collection or pick-up date/time, planned</idValue>
+    <idCode>394</idCode>
+        <idValue>Equipment positioning date/time, actual</idValue>
+    <idCode>395</idCode>
+        <idValue>Equipment positioning date/time, estimated</idValue>
+    <idCode>396</idCode>
+        <idValue>Equipment positioning date/time, requested</idValue>
+    <idCode>397</idCode>
+        <idValue>Equipment positioning date/time, ultimate</idValue>
+    <idCode>398</idCode>
+        <idValue>Goods collection or pick-up date/time, planned</idValue>
+    <idCode>399</idCode>
+        <idValue>Goods positioning date/time, expected</idValue>
+    <idCode>400</idCode>
+        <idValue>Cargo release date/time, ultimate</idValue>
+    <idCode>401</idCode>
+        <idValue>Container Safety Convention (CSC) plate expiration date</idValue>
+    <idCode>402</idCode>
+        <idValue>Document received date/time</idValue>
+    <idCode>403</idCode>
+        <idValue>Discharge date/time, actual</idValue>
+    <idCode>404</idCode>
+        <idValue>Loading date/time, actual</idValue>
+    <idCode>405</idCode>
+        <idValue>Equipment collection or pick-up date/time, actual</idValue>
+    <idCode>406</idCode>
+        <idValue>Goods positioning date/time, planned</idValue>
+    <idCode>407</idCode>
+        <idValue>Document requested date/time</idValue>
+    <idCode>408</idCode>
+        <idValue>Expected container hire from date/time</idValue>
+    <idCode>409</idCode>
+        <idValue>Order completion date/time, ultimate</idValue>
+    <idCode>410</idCode>
+        <idValue>Equipment repair ready date/time, ultimate</idValue>
+    <idCode>411</idCode>
+        <idValue>Container stuffing date/time, ultimate</idValue>
+    <idCode>412</idCode>
+        <idValue>Container stripping date/time, ultimate</idValue>
+    <idCode>413</idCode>
+        <idValue>Discharge and loading completed date/time</idValue>
+    <idCode>414</idCode>
+        <idValue>Equipment stock check date/time</idValue>
+    <idCode>415</idCode>
+        <idValue>Activity reporting date</idValue>
+    <idCode>416</idCode>
+        <idValue>Submission date</idValue>
+    <idCode>417</idCode>
+        <idValue>Previous booking date/time</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE envelope PUBLIC "envelope" "https://raw.githubusercontent.com/EDIandXML/OBOE/main/envelope.dtd">
+<envelope format="EDIFACT">
+<segment code="UNB" name="Interchange Header">
+<composite code="S001" name="Syntax Identifier">
+<element code="0001" name="Syntax identifier"> <value>UNOB</value></element>
+<element code="0002" name="Syntax version number"> <value>1</value></element>
+</composite>
+<composite code="S002" name="Interchange Sender">
+<element code="0004" name="Sender identification"> <value>003897733</value></element>
+<element code="0007" name="Partner identification"> <value>01</value></element>
+<element code="0008" name="Address for reverse"> <value>MFGB-PO</value></element>
+</composite>
+<composite code="S003" name="Interchange Recipient">
+<element code="0010" name="Recipient Identification"> <value>PARTNER ID</value></element>
+<element code="0007" name="Partner identification"> <value>ZZ</value></element>
+</composite>
+<composite code="S004" name="Date Time Of Preparation">
+<element code="0017" name="Date"> <value>000101</value></element>
+<element code="0019" name="Time"> <value>1050</value></element>
+</composite>
+<element code="0020" name="Interchange Control"> <value>00000000000916</value></element>
+<element code="0026" name="Application Reference"> <value>ORDERS</value></element>
+</segment>
+<functionalgroup>
+<transactionset code="ORDERS" name="Purchase Order Message">
+<table section="header">
+<segment code="UNH" name="Message Header">
+<element code="0062" name="Message reference number"> <value>000000101</value></element>
+<composite code="S009" name="messageIdentifier">
+<element code="0065" name="Message type identifier"> <value>ORDERS</value></element>
+<element code="0052" name="Message type version"> <value>D</value></element>
+<element code="0054" name="Message type release"> <value> 96A</value></element>
+<element code="0051" name="Controlling agency"> <value>UN</value></element>
+<element code="0057" name="Association assigned code"> <value>EAN008</value></element>
+</composite>
+</segment>
+<segment code="BGM" name="Beginning of Message">
+<composite code="C002" name="Document/Message Name">
+<element code="1001" name="Document/message name, coded"><value description="Order">220</value></element>
+</composite>
+<composite code="C106" name="Document/Message Identification">
+<element code="1004" name="Document/message number"> <value>0123456789123</value></element>
+</composite>
+<element code="1225" name="Message function, coded"><value description="Original">9</value></element>
+<element code="4343" name="Response type, coded"><value description="Acknowledge - with detail and change">AC</value></element>
+</segment>
+<segment code="DTM" name="Date/Time/Period">
+<composite code="C507" name="Date/Time/Period">
+<element code="2005" name="Date/time/period qualifier"><value description="Document/message date/time">137</value></element>
+<element code="2380" name="Date/time/period"> <value>19980106</value></element>
+<element code="2379" name="Date/time/period format qualifier"><value description="CCYYMMDD">102</value></element>
+</composite>
+</segment>
+<segment code="DTM" name="Date/Time/Period">
+<composite code="C507" name="Date/Time/Period">
+<element code="2005" name="Date/time/period qualifier"><value description="Cancel if not delivered by this date">61</value></element>
+<element code="2380" name="Date/time/period"> <value>19980615</value></element>
+<element code="2379" name="Date/time/period format qualifier"><value description="CCYYMMDD">102</value></element>
+</composite>
+</segment>
+<segment code="FTX" name="Free Text">
+<element code="4451" name="Text subject qualifier"><value description="Entire transaction set">GEN</value></element>
+<composite code="C107" name="Text Reference">
+<element code="4441" name="Free text identification"> <value>DUY</value></element>
+<element code="1131" name="Code list qualifier"><value description="Telephone directory">12</value></element>
+<element code="3055" name="Code list responsible agency, coded"><value description="EDITEUR (European book sector electronic data interchange group)">28</value></element>
+</composite>
+</segment>
+<loop code="NAD" name="Name and Address">
+<segment code="NAD" name="Name and Address">
+<element code="3035" name="Party qualifier"><value description="Buyer">BY</value></element>
+<composite code="C082" name="Party Identification Details">
+<element code="3039" name="Party identification"> <value>1135309</value></element>
+<element code="1131" name="Code list qualifier"><value description="Telephone directory">12</value></element>
+</composite>
+</segment>
+</loop>
+<loop code="NAD" name="Name and Address">
+<segment code="NAD" name="Name and Address">
+<element code="3035" name="Party qualifier"><value description="Delivery party">DP</value></element>
+<composite code="C082" name="Party Identification Details">
+<element code="3039" name="Party identification"> <value>6678157</value></element>
+<element code="1131" name="Code list qualifier"><value description="Telephone directory">12</value></element>
+</composite>
+</segment>
+</loop>
+<loop code="NAD" name="Name and Address">
+<segment code="NAD" name="Name and Address">
+<element code="3035" name="Party qualifier"><value description="Supplier">SU</value></element>
+<composite code="C082" name="Party Identification Details">
+<element code="3039" name="Party identification"> <value>3333333</value></element>
+<element code="1131" name="Code list qualifier"><value description="Telephone directory">12</value></element>
+</composite>
+</segment>
+</loop>
+</table>
+<table section="detail">
+<loop code="LIN" name="Line Item">
+<segment code="LIN" name="Line Item">
+<element code="1082" name="Line item number"> <value>1</value></element>
+</segment>
+<segment code="PIA" name="Additional Product Id">
+<element code="4347" name="Product id. function qualifier"><value description="Product identification">5</value></element>
+<composite code="C212" name="Item Number Identification">
+<element code="7140" name="Item number"> <value>0835201031</value></element>
+<element code="7143" name="Item number type, coded"><value description="ISBN (International Standard Book Number)">IB</value></element>
+</composite>
+</segment>
+<segment code="QTY" name="Quantity">
+<composite code="C186" name="Quantity Details">
+<element code="6063" name="Quantity qualifier"><value description="Ordered quantity">21</value></element>
+<element code="6060" name="Quantity"><value>2</value></element>
+</composite>
+</segment>
+<loop code="PRI" name="Price Details">
+<segment code="PRI" name="Price Details">
+<composite code="C509" name="Price Information">
+<element code="5125" name="Price qualifier"><value description="Calculation gross">AAB</value></element>
+<element code="5118" name="Price"><value>10.5</value></element>
+<element code="5375" name="Price type, coded"><value description=""></value></element>
+<element code="5387" name="Price type qualifier"><value description="Suggested retail price">SRP</value></element>
+</composite>
+</segment>
+</loop>
+<loop code="ALC" name="Allowance or Charge">
+<segment code="ALC" name="Allowance or Charge">
+<element code="5463" name="Allowance or charge qualifier"><value description="Allowance">A</value></element>
+</segment>
+<loop code="PCD" name="Percentage Details">
+<segment code="PCD" name="Percentage Details">
+<composite code="C501" name="Percentage Details">
+<element code="5245" name="Percentage qualifier"><value description="Allowance or charge">3</value></element>
+<element code="5482" name="Percentage"><value>20</value></element>
+</composite>
+</segment>
+</loop>
+</loop>
+</loop>
+<loop code="LIN" name="Line Item">
+<segment code="LIN" name="Line Item">
+<element code="1082" name="Line item number"> <value>2</value></element>
+</segment>
+<segment code="PIA" name="Additional Product Id">
+<element code="4347" name="Product id. function qualifier"><value description="Product identification">5</value></element>
+<composite code="C212" name="Item Number Identification">
+<element code="7140" name="Item number"> <value>0835202151</value></element>
+<element code="7143" name="Item number type, coded"><value description="ISBN (International Standard Book Number)">IB</value></element>
+</composite>
+</segment>
+<segment code="QTY" name="Quantity">
+<composite code="C186" name="Quantity Details">
+<element code="6063" name="Quantity qualifier"><value description="Ordered quantity">21</value></element>
+<element code="6060" name="Quantity"><value>10</value></element>
+</composite>
+</segment>
+<loop code="PRI" name="Price Details">
+<segment code="PRI" name="Price Details">
+<composite code="C509" name="Price Information">
+<element code="5125" name="Price qualifier"><value description="Calculation gross">AAB</value></element>
+<element code="5118" name="Price"><value>9.25</value></element>
+<element code="5375" name="Price type, coded"><value description=""></value></element>
+<element code="5387" name="Price type qualifier"><value description="Suggested retail price">SRP</value></element>
+</composite>
+</segment>
+</loop>
+<loop code="ALC" name="Allowance or Charge">
+<segment code="ALC" name="Allowance or Charge">
+<element code="5463" name="Allowance or charge qualifier"><value description="Allowance">A</value></element>
+</segment>
+<loop code="PCD" name="Percentage Details">
+<segment code="PCD" name="Percentage Details">
+<composite code="C501" name="Percentage Details">
+<element code="5245" name="Percentage qualifier"><value description="Allowance or charge">3</value></element>
+<element code="5482" name="Percentage"><value>20</value></element>
+</composite>
+</segment>
+</loop>
+</loop>
+</loop>
+<loop code="LIN" name="Line Item">
+<segment code="LIN" name="Line Item">
+<element code="1082" name="Line item number"> <value>3</value></element>
+</segment>
+<segment code="PIA" name="Additional Product Id">
+<element code="4347" name="Product id. function qualifier"><value description="Product identification">5</value></element>
+<composite code="C212" name="Item Number Identification">
+<element code="7140" name="Item number"> <value>0835208338</value></element>
+<element code="7143" name="Item number type, coded"><value description="ISBN (International Standard Book Number)">IB</value></element>
+</composite>
+</segment>
+<segment code="QTY" name="Quantity">
+<composite code="C186" name="Quantity Details">
+<element code="6063" name="Quantity qualifier"><value description="Ordered quantity">21</value></element>
+<element code="6060" name="Quantity"><value>5</value></element>
+</composite>
+</segment>
+<loop code="PRI" name="Price Details">
+<segment code="PRI" name="Price Details">
+<composite code="C509" name="Price Information">
+<element code="5125" name="Price qualifier"><value description="Calculation gross">AAB</value></element>
+<element code="5118" name="Price"><value>30</value></element>
+<element code="5375" name="Price type, coded"><value description=""></value></element>
+<element code="5387" name="Price type qualifier"><value description="Suggested retail price">SRP</value></element>
+</composite>
+</segment>
+</loop>
+<loop code="ALC" name="Allowance or Charge">
+<segment code="ALC" name="Allowance or Charge">
+<element code="5463" name="Allowance or charge qualifier"><value description="Allowance">A</value></element>
+</segment>
+<loop code="PCD" name="Percentage Details">
+<segment code="PCD" name="Percentage Details">
+<composite code="C501" name="Percentage Details">
+<element code="5245" name="Percentage qualifier"><value description="Allowance or charge">3</value></element>
+<element code="5482" name="Percentage"><value>20</value></element>
+</composite>
+</segment>
+</loop>
+</loop>
+</loop>
+</table>
+<table section="summary">
+<segment code="UNS" name="Section Control">
+<element code="0081" name="Section identifier"><value description="Detail/summary section separation">S</value></element>
+</segment>
+<segment code="CNT" name="Control Total">
+<composite code="C270" name="Control">
+<element code="6069" name="Control qualifier"><value description="Number of line items in message">2</value></element>
+<element code="6066" name="Control value"><value>3</value></element>
+</composite>
+</segment>
+<segment code="CNT" name="Control Total">
+<composite code="C270" name="Control">
+<element code="6069" name="Control qualifier"><value description="Algebraic total of the quantity values in line items in a message">1</value></element>
+<element code="6066" name="Control value"><value>17</value></element>
+</composite>
+</segment>
+<segment code="UNT" name="Message Trailer">
+<element code="0074" name="Number of segments in a message"><value>30</value></element>
+<element code="0062" name="Message reference number"> <value>000000101</value></element>
+</segment>
+</table>
+</transactionset>
+</functionalgroup>
+<segment code="UNZ" name="Interchange Trailer">
+<element code="0036" name="Number of segments"><value>1</value></element>
+<element code="0020" name="Interchange reference number"> <value>00000916</value></element>
+</segment>
+</envelope>

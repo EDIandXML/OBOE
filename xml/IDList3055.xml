@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>CCC (Customs Co-operation Council)</idValue>
+    <idCode>2</idCode>
+        <idValue>CEC (Commission of the European Communities)</idValue>
+    <idCode>3</idCode>
+        <idValue>IATA (International Air Transport Association)</idValue>
+    <idCode>4</idCode>
+        <idValue>ICC (International Chamber of Commerce)</idValue>
+    <idCode>5</idCode>
+        <idValue>ISO (International Organization for Standardization)</idValue>
+    <idCode>6</idCode>
+        <idValue>UN/ECE (United Nations - Economic Commission for Europe)</idValue>
+    <idCode>7</idCode>
+        <idValue>CEFIC (Conseil Europeen des Federations de l&apos;Industrie Chimique)</idValue>
+    <idCode>8</idCode>
+        <idValue>EDIFICE</idValue>
+    <idCode>9</idCode>
+        <idValue>EAN (International Article Numbering association)</idValue>
+    <idCode>10</idCode>
+        <idValue>ODETTE</idValue>
+    <idCode>11</idCode>
+        <idValue>Lloyd&apos;s register of shipping</idValue>
+    <idCode>12</idCode>
+        <idValue>UIC (International union of railways)</idValue>
+    <idCode>13</idCode>
+        <idValue>ICAO (International Civil Aviation Organisation)</idValue>
+    <idCode>14</idCode>
+        <idValue>ICS (International Chamber of Shipping)</idValue>
+    <idCode>15</idCode>
+        <idValue>RINET (Reinsurance and Insurance Network)</idValue>
+    <idCode>16</idCode>
+        <idValue>DUNS (Dun &amp; Bradstreet)</idValue>
+    <idCode>17</idCode>
+        <idValue>S.W.I.F.T.</idValue>
+    <idCode>18</idCode>
+        <idValue>Conventions on SAD and transit (EC and EFTA)</idValue>
+    <idCode>19</idCode>
+        <idValue>FRRC (Federal Reserve Routing Code)</idValue>
+    <idCode>20</idCode>
+        <idValue>BIC (Bureau International des Containeurs)</idValue>
+    <idCode>21</idCode>
+        <idValue>Assigned by transport company</idValue>
+    <idCode>22</idCode>
+        <idValue>US, ISA (Information Systems Agreement)</idValue>
+    <idCode>23</idCode>
+        <idValue>FR, EDITRANSPORT</idValue>
+    <idCode>24</idCode>
+        <idValue>AU, ROA (Railways of Australia)</idValue>
+    <idCode>25</idCode>
+        <idValue>EDITEX (Europe)</idValue>
+    <idCode>26</idCode>
+        <idValue>NL, Foundation Uniform Transport Code</idValue>
+    <idCode>27</idCode>
+        <idValue>US, FDA (Food and Drug Administration)</idValue>
+    <idCode>28</idCode>
+        <idValue>EDITEUR (European book sector electronic data interchange group)</idValue>
+    <idCode>29</idCode>
+        <idValue>GB, FLEETNET</idValue>
+    <idCode>30</idCode>
+        <idValue>GB, ABTA (Association of British Travel Agencies)</idValue>
+    <idCode>31</idCode>
+        <idValue>FI, Finish State Railway</idValue>
+    <idCode>32</idCode>
+        <idValue>PL, Polish State Railway</idValue>
+    <idCode>33</idCode>
+        <idValue>BG, Bulgaria State Railway</idValue>
+    <idCode>34</idCode>
+        <idValue>RO, Rumanian State Railway</idValue>
+    <idCode>35</idCode>
+        <idValue>CZ, Tchechian State Railway</idValue>
+    <idCode>36</idCode>
+        <idValue>HU, Hungarian State Railway</idValue>
+    <idCode>37</idCode>
+        <idValue>GB, British Railways</idValue>
+    <idCode>38</idCode>
+        <idValue>ES, Spanish National Railway</idValue>
+    <idCode>39</idCode>
+        <idValue>SE, Swedish State Railway</idValue>
+    <idCode>40</idCode>
+        <idValue>NO, Norwegian State Railway</idValue>
+    <idCode>41</idCode>
+        <idValue>DE, German Railway</idValue>
+    <idCode>42</idCode>
+        <idValue>AT, Austrian Federal Railways</idValue>
+    <idCode>43</idCode>
+        <idValue>LU, Luxembourg National Railway Company</idValue>
+    <idCode>44</idCode>
+        <idValue>IT, Italian State Railways</idValue>
+    <idCode>45</idCode>
+        <idValue>NL, Netherlands Railways</idValue>
+    <idCode>46</idCode>
+        <idValue>CH, Swiss Federal Railways</idValue>
+    <idCode>47</idCode>
+        <idValue>DK, Danish State Railways</idValue>
+    <idCode>48</idCode>
+        <idValue>FR, French National Railway Company</idValue>
+    <idCode>49</idCode>
+        <idValue>BE, Belgian National Railway Company</idValue>
+    <idCode>50</idCode>
+        <idValue>PT, Portuguese Railways</idValue>
+    <idCode>51</idCode>
+        <idValue>SK, Slovakian State Railways</idValue>
+    <idCode>52</idCode>
+        <idValue>IE, Irish Transport Company</idValue>
+    <idCode>53</idCode>
+        <idValue>FIATA (International Federation of Freight Forwarders Associations)</idValue>
+    <idCode>54</idCode>
+        <idValue>IMO (International Maritime Organisation)</idValue>
+    <idCode>55</idCode>
+        <idValue>US, DOT (United States Department of Transportation)</idValue>
+    <idCode>56</idCode>
+        <idValue>TW, Trade-van</idValue>
+    <idCode>57</idCode>
+        <idValue>TW, Chinese Taipei Customs</idValue>
+    <idCode>58</idCode>
+        <idValue>EUROFER</idValue>
+    <idCode>59</idCode>
+        <idValue>DE, EDIBAU</idValue>
+    <idCode>60</idCode>
+        <idValue>Assigned by national trade agency</idValue>
+    <idCode>61</idCode>
+        <idValue>Association Europeenne des Constructeurs de Materiel Aerospatial (AECMA)</idValue>
+    <idCode>62</idCode>
+        <idValue>US, DIstilled Spirits Council of the United States (DISCUS)</idValue>
+    <idCode>63</idCode>
+        <idValue>North Atlantic Treaty Organization (NATO)</idValue>
+    <idCode>64</idCode>
+        <idValue>FR, EDIFRANCE</idValue>
+    <idCode>65</idCode>
+        <idValue>FR, GENCOD</idValue>
+    <idCode>66</idCode>
+        <idValue>MY, Malaysian Customs and Excise</idValue>
+    <idCode>67</idCode>
+        <idValue>MY, Malaysia Central Bank</idValue>
+    <idCode>68</idCode>
+        <idValue>US, Bureau of Alcohol, Tobacco and Firearms (BATF)</idValue>
+    <idCode>69</idCode>
+        <idValue>US, National Alcohol Beverage Control Association (NABCA)</idValue>
+    <idCode>70</idCode>
+        <idValue>MY, Dagang.Net</idValue>
+    <idCode>71</idCode>
+        <idValue>US, FCC (Federal Communications Commission)</idValue>
+    <idCode>72</idCode>
+        <idValue>US, MARAD (Maritime Administration)</idValue>
+    <idCode>73</idCode>
+        <idValue>US, DSAA (Defense Security Assistance Agency)</idValue>
+    <idCode>74</idCode>
+        <idValue>US, NRC (Nuclear Regulatory Commission)</idValue>
+    <idCode>75</idCode>
+        <idValue>US, ODTC (Office of Defense Trade Controls)</idValue>
+    <idCode>76</idCode>
+        <idValue>US, ATF (Bureau of Alcohol, Tobacco and Firearms)</idValue>
+    <idCode>77</idCode>
+        <idValue>US, BXA (Bureau of Export Administration)</idValue>
+    <idCode>78</idCode>
+        <idValue>US, FWS (Fish and Wildlife Service)</idValue>
+    <idCode>79</idCode>
+        <idValue>US, OFAC (Office of Foreign Assets Control)</idValue>
+    <idCode>80</idCode>
+        <idValue>BRMA/RAA - LIMNET - RINET Joint Venture</idValue>
+    <idCode>81</idCode>
+        <idValue>RU, (SFT) Society for Financial Telecommunications</idValue>
+    <idCode>82</idCode>
+        <idValue>NO, Enhetsregisteret ved Bronnoysundregisterne</idValue>
+    <idCode>83</idCode>
+        <idValue>US, National Retail Federation</idValue>
+    <idCode>84</idCode>
+        <idValue>DE, BRD (Gesetzgeber der Bundesrepublik Deutschland)</idValue>
+    <idCode>85</idCode>
+        <idValue>North America, Telecommunications Industry Forum</idValue>
+    <idCode>86</idCode>
+        <idValue>Assigned by party originating the message</idValue>
+    <idCode>87</idCode>
+        <idValue>Assigned by carrier</idValue>
+    <idCode>88</idCode>
+        <idValue>Assigned by owner of operation</idValue>
+    <idCode>89</idCode>
+        <idValue>Assigned by distributor</idValue>
+    <idCode>90</idCode>
+        <idValue>Assigned by manufacturer</idValue>
+    <idCode>91</idCode>
+        <idValue>Assigned by seller or seller&apos;s agent</idValue>
+    <idCode>92</idCode>
+        <idValue>Assigned by buyer or buyer&apos;s agent</idValue>
+    <idCode>93</idCode>
+        <idValue>AT, Austrian Customs</idValue>
+    <idCode>94</idCode>
+        <idValue>AT, Austrian PTT</idValue>
+    <idCode>95</idCode>
+        <idValue>AU, Australian Customs Services</idValue>
+    <idCode>96</idCode>
+        <idValue>CA, Revenue Canada, Customs and Excise</idValue>
+    <idCode>97</idCode>
+        <idValue>CH, Administration federale des contributions</idValue>
+    <idCode>98</idCode>
+        <idValue>CH, Direction generale des douanes</idValue>
+    <idCode>99</idCode>
+        <idValue>CH, Division des importations et exportations, OFAEE</idValue>
+    <idCode>100</idCode>
+        <idValue>CH, Entreprise des PTT</idValue>
+    <idCode>101</idCode>
+        <idValue>CH, Carbura</idValue>
+    <idCode>102</idCode>
+        <idValue>CH, Centrale suisse pour l&apos;importation du charbon</idValue>
+    <idCode>103</idCode>
+        <idValue>CH, Office fiduciaire des importateurs de denrees alimentaires</idValue>
+    <idCode>104</idCode>
+        <idValue>CH, Association suisse code des articles</idValue>
+    <idCode>105</idCode>
+        <idValue>DK, Ministry of taxation, Central Customs and Tax Administration</idValue>
+    <idCode>106</idCode>
+        <idValue>FR, Direction generale des douanes et droits indirects</idValue>
+    <idCode>107</idCode>
+        <idValue>FR, INSEE</idValue>
+    <idCode>108</idCode>
+        <idValue>FR, Banque de France</idValue>
+    <idCode>109</idCode>
+        <idValue>GB, H.M. Customs &amp; Excise</idValue>
+    <idCode>110</idCode>
+        <idValue>IE, Revenue Commissionners, Customs AEP project</idValue>
+    <idCode>111</idCode>
+        <idValue>US, U.S. Customs Service</idValue>
+    <idCode>112</idCode>
+        <idValue>US, U.S. Census Bureau</idValue>
+    <idCode>113</idCode>
+        <idValue>US, UCC (Uniform Code Council)</idValue>
+    <idCode>114</idCode>
+        <idValue>US, ABA (American Bankers Association)</idValue>
+    <idCode>115</idCode>
+        <idValue>US, DODAAC (Department Of Defense Active Agency Code)</idValue>
+    <idCode>116</idCode>
+        <idValue>US, ANSI ASC X12</idValue>
+    <idCode>117</idCode>
+        <idValue>AT, Geldausgabeautomaten-Service Gesellschaft m.b.H.</idValue>
+    <idCode>118</idCode>
+        <idValue>SE, Svenska Bankfoereningen</idValue>
+    <idCode>119</idCode>
+        <idValue>IT, Associazione Bancaria Italiana</idValue>
+    <idCode>120</idCode>
+        <idValue>IT, Socieata&apos; Interbancaria per l&apos;Automazione</idValue>
+    <idCode>121</idCode>
+        <idValue>CH, Telekurs AG</idValue>
+    <idCode>122</idCode>
+        <idValue>CH, Swiss Securities Clearing Corporation</idValue>
+    <idCode>123</idCode>
+        <idValue>NO, Norwegian Interbank Research Organization</idValue>
+    <idCode>124</idCode>
+        <idValue>NO, Norwegian Bankers Ass.</idValue>
+    <idCode>125</idCode>
+        <idValue>FI, The Finnish Bankers&apos; Association</idValue>
+    <idCode>126</idCode>
+        <idValue>US, NCCMA (Account Analysis Codes)</idValue>
+    <idCode>128</idCode>
+        <idValue>BE, Belgian Bankers&apos; Association</idValue>
+    <idCode>129</idCode>
+        <idValue>BE, Belgian Ministry of Finance</idValue>
+    <idCode>130</idCode>
+        <idValue>DK, PBS (Pengainstitutternes Betalings Service)</idValue>
+    <idCode>131</idCode>
+        <idValue>DE, German Bankers Association</idValue>
+    <idCode>132</idCode>
+        <idValue>GB, BACS Limited</idValue>
+    <idCode>133</idCode>
+        <idValue>GB, Association for Payment Clearing Services</idValue>
+    <idCode>134</idCode>
+        <idValue>GB, CHAPS and Town Clearing Company Ltd.</idValue>
+    <idCode>135</idCode>
+        <idValue>GB, The Clearing House</idValue>
+    <idCode>136</idCode>
+        <idValue>GB, Article Number Association (UK) Limited</idValue>
+    <idCode>137</idCode>
+        <idValue>AT, Verband oesterreichischer Banken und Bankiers</idValue>
+    <idCode>138</idCode>
+        <idValue>FR, CFONB (Comite francais d&apos;organ. et de normalisation bancaires)</idValue>
+    <idCode>139</idCode>
+        <idValue>UPU (Universal Postal Union)</idValue>
+    <idCode>140</idCode>
+        <idValue>CEC (Commission of the European Communities), DG/XXI-01</idValue>
+    <idCode>141</idCode>
+        <idValue>CEC (Commission of the European Communities), DG/XXI-B-1</idValue>
+    <idCode>142</idCode>
+        <idValue>CEC (Commission of the European Communities), DG/XXXIV</idValue>
+    <idCode>143</idCode>
+        <idValue>NZ, New Zealand Customs</idValue>
+    <idCode>144</idCode>
+        <idValue>NL, Netherlands Customs</idValue>
+    <idCode>145</idCode>
+        <idValue>SE, Swedish Customs</idValue>
+    <idCode>146</idCode>
+        <idValue>DE, German Customs</idValue>
+    <idCode>147</idCode>
+        <idValue>BE, Belgian Customs</idValue>
+    <idCode>148</idCode>
+        <idValue>ES, Spanish Customs</idValue>
+    <idCode>149</idCode>
+        <idValue>IL, Israel Customs</idValue>
+    <idCode>150</idCode>
+        <idValue>HK, Hong Kong Customs</idValue>
+    <idCode>151</idCode>
+        <idValue>JP, Japan Customs</idValue>
+    <idCode>152</idCode>
+        <idValue>SA, Saudi Arabia Customs</idValue>
+    <idCode>153</idCode>
+        <idValue>IT, Italian Customs</idValue>
+    <idCode>154</idCode>
+        <idValue>GR, Greek Customs</idValue>
+    <idCode>155</idCode>
+        <idValue>PT, Portuguese Customs</idValue>
+    <idCode>156</idCode>
+        <idValue>LU, Luxembourg Customs</idValue>
+    <idCode>157</idCode>
+        <idValue>NO, Norwegian Customs</idValue>
+    <idCode>158</idCode>
+        <idValue>FI, Finnish Customs</idValue>
+    <idCode>159</idCode>
+        <idValue>IS, Iceland Customs</idValue>
+    <idCode>160</idCode>
+        <idValue>LI, Liechtenstein authority</idValue>
+    <idCode>161</idCode>
+        <idValue>UNCTAD (United Nations - Conference on Trade And Development)</idValue>
+    <idCode>162</idCode>
+        <idValue>CEC (Commission of the European Communities), DG/XIII-D-5</idValue>
+    <idCode>163</idCode>
+        <idValue>US, FMC (Federal Maritime Commission)</idValue>
+    <idCode>164</idCode>
+        <idValue>US, DEA (Drug Enforcement Agency)</idValue>
+    <idCode>165</idCode>
+        <idValue>US, DCI (Distribution Codes, INC.)</idValue>
+    <idCode>166</idCode>
+        <idValue>US, National Motor Freight Classification Association</idValue>
+    <idCode>167</idCode>
+        <idValue>US, AIAG (Automotive Industry Action Group)</idValue>
+    <idCode>168</idCode>
+        <idValue>US, FIPS (Federal Information Publishing Standard)</idValue>
+    <idCode>169</idCode>
+        <idValue>CA, SCC (Standards Council of Canada)</idValue>
+    <idCode>170</idCode>
+        <idValue>CA, CPA (Canadian Payment Association)</idValue>
+    <idCode>171</idCode>
+        <idValue>NL, Bank Girocentrale BV</idValue>
+    <idCode>172</idCode>
+        <idValue>NL, BEANET BV</idValue>
+    <idCode>173</idCode>
+        <idValue>NO, NORPRO</idValue>
+    <idCode>174</idCode>
+        <idValue>DE, DIN (Deutsches Institut fuer Normung)</idValue>
+    <idCode>175</idCode>
+        <idValue>FCI (Factors Chain International)</idValue>
+    <idCode>176</idCode>
+        <idValue>BR, Banco Central do Brazil</idValue>
+    <idCode>177</idCode>
+        <idValue>AU, LIFA (Life Insurance Federation of Australia)</idValue>
+    <idCode>178</idCode>
+        <idValue>AU, SAA (Standards Association of Australia)</idValue>
+    <idCode>179</idCode>
+        <idValue>US, Air transport association of America</idValue>
+    <idCode>180</idCode>
+        <idValue>DE, BIA (Berufsgenossenschaftliches Institut fuer Arbeitssicherheit)</idValue>
+    <idCode>181</idCode>
+        <idValue>Edibuild</idValue>
+    <idCode>182</idCode>
+        <idValue>US, Standard Carrier Alpha Code (Motor)</idValue>
+    <idCode>183</idCode>
+        <idValue>US, American Petroleum Institute</idValue>
+    <idCode>184</idCode>
+        <idValue>AU, ACOS (Australian Chamber of Shipping)</idValue>
+    <idCode>185</idCode>
+        <idValue>DE, BDI (Bundesverband der Deutschen Industrie e.V.)</idValue>
+    <idCode>186</idCode>
+        <idValue>US, GSA (General Services Administration)</idValue>
+    <idCode>187</idCode>
+        <idValue>US, DLMSO (Defense Logistics Management Standards Office)</idValue>
+    <idCode>188</idCode>
+        <idValue>US, NIST (National Institute of Standards and Technology)</idValue>
+    <idCode>189</idCode>
+        <idValue>US, DoD (Department of Defense)</idValue>
+    <idCode>190</idCode>
+        <idValue>US, VA (Department of Veterans Affairs)</idValue>
+    <idCode>191</idCode>
+        <idValue>IAPSO (United Nations Inter-Agency Procurement Services Office)</idValue>
+    <idCode>192</idCode>
+        <idValue>Shipper&apos;s association</idValue>
+    <idCode>193</idCode>
+        <idValue>EU, European Telecommunications Informatics Services (ETIS)</idValue>
+    <idCode>194</idCode>
+        <idValue>AU, AQIS (Australian Quarantine and Inspection Service)</idValue>
+    <idCode>195</idCode>
+        <idValue>CO, DIAN (Direccion de Impuestos y Aduanas Nacionales)</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactionSet
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/ediRules.xsd"
+  name="OBOE Test" id="001"  revision="004010"
+  functionalGroup="ZZ"
+  description="Used to test effectiveness of Parser"
+  shortName="OBOETest1">
+    <table section="header">
+        <segment name="Transaction Set Header" id="ST"
+          description="To indicate the start of a transaction set and to assign a control number"
+          sequence="10"
+          occurs="1"
+          required='M'
+          shortName="TransactionSetHeader">
+            <dataElement name="Transaction Set Identifier Code" id="143"
+              sequence="1"
+              description="Code uniquely identifying a Transaction Set"
+              type="ID" required="M"
+              minLength="3" maxLength="3"
+              shortName="transactionSetIdentifierCode">
+             </dataElement>
+            <dataElement name="Transaction Set Control Number" id="329"
+              sequence="2"
+              description="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"
+              type="AN" required="M"
+              minLength="4" maxLength="9"
+              shortName="transactionSetControlNumber">
+             </dataElement>
+        </segment>
+        <segment name="Segment One" id="A1"
+          description="Test Segment 1"
+          sequence="20"
+          occurs="1"
+          required='M'
+          shortName="SegmentOne">
+            <dataElement name="DE1" id="1"
+              sequence="1"
+              description="Test Field 1"
+              type="AN" required="O"
+              minLength="1" maxLength="1"
+              shortName="DE1">
+             </dataElement>
+            <dataElement name="DE2" id="2"
+              sequence="2"
+              description="Test Field 2"
+              type="AN" required="M"
+              minLength="1" maxLength="22"
+              shortName="DE2">
+             </dataElement>
+        </segment>
+        <segment name="Segment Two" id="A2"
+          description="Test Segment 2 - 2 DEs but in position 1 and 3"
+          sequence="30"
+          occurs="1"
+          required='M'
+          shortName="SegmentTwo">
+            <dataElement name="DE1" id="1"
+              sequence="1"
+              description="Test Field 1"
+              type="AN" required="O"
+              minLength="1" maxLength="1"
+              shortName="DE1">
+             </dataElement>
+            <dataElement name="DE3" id="3"
+              sequence="3"
+              description="Test Field 3"
+              type="AN" required="M"
+              minLength="1" maxLength="22"
+              shortName="DE3">
+             </dataElement>
+        </segment>
+        <segment name="Segment Three" id="A3"
+          description="Test Segment 3 - 3 Numerics to test numeric parse"
+          sequence="40"
+          occurs="1"
+          required='O'
+          shortName="SegmentThree">
+            <dataElement name="DE1" id="1"
+              sequence="1"
+              description="Test Field 1"
+              type="N0" required="O"
+              minLength="1" maxLength="10"
+              shortName="DE1">
+             </dataElement>
+            <dataElement name="DE2" id="2"
+              sequence="2"
+              description="Test Field 2"
+              type="N4" required="M"
+              minLength="1" maxLength="22"
+              shortName="DE2">
+             </dataElement>
+            <dataElement name="DE3" id="3"
+              sequence="3"
+              description="Test Field 3"
+              type="R" required="M"
+              minLength="1" maxLength="22"
+              shortName="DE3">
+             </dataElement>
+             <dataElement name="Packaging Code" id="103"
+              sequence="4"
+              description="Code identifying the type of packaging; Part 1: Packaging Form, Part 2: Packaging Material; if the Data Element is used, then Part 1 is always required"
+              type="AN" required="O"
+              minLength="3" maxLength="5"
+              shortName="packagingCode">
+              <idListClass className="io.github.EDIandXML.OBOE.x12.IDList103Processor"/>
+            </dataElement>
+        </segment>
+        <segment name="Transaction Set Trailer" id="SE"
+          description="To indicate the end of the transaction set and provide the count of the transmitted segments (including the beginning (ST) and ending (SE) segments)"
+          sequence="45"
+          occurs="1"
+          required='M'
+          shortName="TransactionSetTrailer">
+            <dataElement name="Number of Included Segments" id="96"
+              sequence="1"
+              description="Total number of segments included in a transaction set including ST and SE segments"
+              type="N0" required="M"
+              minLength="1" maxLength="10"
+              shortName="numberOfIncludedSegments">
+             </dataElement>
+            <dataElement name="Transaction Set Control Number" id="329"
+              sequence="2"
+              description="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"
+              type="AN" required="M"
+              minLength="4" maxLength="9"
+              shortName="transactionSetControlNumber">
+             </dataElement>
+        </segment>
+    </table>
+</transactionSet>

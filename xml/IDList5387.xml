@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AAA</idCode>
+        <idValue>Reference price</idValue>
+    <idCode>AAB</idCode>
+        <idValue>Price includes tax</idValue>
+    <idCode>AAC</idCode>
+        <idValue>Buyer suggested retail price</idValue>
+    <idCode>AAD</idCode>
+        <idValue>Ocean charges rate</idValue>
+    <idCode>AAE</idCode>
+        <idValue>Not subject to fluctuation</idValue>
+    <idCode>AAF</idCode>
+        <idValue>Subject to escalation</idValue>
+    <idCode>AAG</idCode>
+        <idValue>Subject to price adjustment</idValue>
+    <idCode>AAH</idCode>
+        <idValue>Subject to escalation and price adjustment</idValue>
+    <idCode>AAI</idCode>
+        <idValue>Fluctuation conditions not specified</idValue>
+    <idCode>AAJ</idCode>
+        <idValue>All in price</idValue>
+    <idCode>AAK</idCode>
+        <idValue>New price</idValue>
+    <idCode>AAL</idCode>
+        <idValue>Old price</idValue>
+    <idCode>AAM</idCode>
+        <idValue>Per week</idValue>
+    <idCode>AAN</idCode>
+        <idValue>Price on application</idValue>
+    <idCode>AAO</idCode>
+        <idValue>Unpacked price</idValue>
+    <idCode>AAP</idCode>
+        <idValue>Trade price</idValue>
+    <idCode>AAQ</idCode>
+        <idValue>Firm price</idValue>
+    <idCode>AAR</idCode>
+        <idValue>Material share of item price</idValue>
+    <idCode>AAS</idCode>
+        <idValue>Labour share of item price</idValue>
+    <idCode>AAT</idCode>
+        <idValue>Transport share of item price</idValue>
+    <idCode>AAU</idCode>
+        <idValue>Packing share of item price</idValue>
+    <idCode>AAV</idCode>
+        <idValue>Tooling share of item price</idValue>
+    <idCode>AAW</idCode>
+        <idValue>Temporary vehicle charge</idValue>
+    <idCode>AAX</idCode>
+        <idValue>Price component due to interest</idValue>
+    <idCode>AAY</idCode>
+        <idValue>Price component due to management services</idValue>
+    <idCode>AAZ</idCode>
+        <idValue>Price component due to maintenance</idValue>
+    <idCode>ABA</idCode>
+        <idValue>Individual buyer price</idValue>
+    <idCode>ABB</idCode>
+        <idValue>Group buying price</idValue>
+    <idCode>ABC</idCode>
+        <idValue>Group member buying price</idValue>
+    <idCode>ABD</idCode>
+        <idValue>Pre-payment price</idValue>
+    <idCode>ABE</idCode>
+        <idValue>Retail price - excluding taxes</idValue>
+    <idCode>ABF</idCode>
+        <idValue>Suggested retail price - excluding taxes</idValue>
+    <idCode>ABG</idCode>
+        <idValue>Agreed minimum price</idValue>
+    <idCode>ABH</idCode>
+        <idValue>Statutory minimum retail price</idValue>
+    <idCode>ABI</idCode>
+        <idValue>Cost reimbursement price</idValue>
+    <idCode>ABJ</idCode>
+        <idValue>Market price</idValue>
+    <idCode>ABK</idCode>
+        <idValue>Open tender price</idValue>
+    <idCode>AI</idCode>
+        <idValue>Active ingredient</idValue>
+    <idCode>ALT</idCode>
+        <idValue>Alternate price</idValue>
+    <idCode>AP</idCode>
+        <idValue>Advice price</idValue>
+    <idCode>BR</idCode>
+        <idValue>Broker price</idValue>
+    <idCode>CAT</idCode>
+        <idValue>Catalogue price</idValue>
+    <idCode>CDV</idCode>
+        <idValue>Current domestic value</idValue>
+    <idCode>CON</idCode>
+        <idValue>Contract price</idValue>
+    <idCode>CP</idCode>
+        <idValue>Current price</idValue>
+    <idCode>CU</idCode>
+        <idValue>Consumer unit</idValue>
+    <idCode>CUP</idCode>
+        <idValue>Confirmed unit price</idValue>
+    <idCode>CUS</idCode>
+        <idValue>Declared customs unit value</idValue>
+    <idCode>DAP</idCode>
+        <idValue>Dealer adjusted price</idValue>
+    <idCode>DIS</idCode>
+        <idValue>Distributor price</idValue>
+    <idCode>DPR</idCode>
+        <idValue>Discount price</idValue>
+    <idCode>DR</idCode>
+        <idValue>Dealer price</idValue>
+    <idCode>DSC</idCode>
+        <idValue>Discount amount allowed</idValue>
+    <idCode>EC</idCode>
+        <idValue>ECSC price</idValue>
+    <idCode>ES</idCode>
+        <idValue>Estimated price</idValue>
+    <idCode>EUP</idCode>
+        <idValue>Expected unit price</idValue>
+    <idCode>FCR</idCode>
+        <idValue>Freight/charge rate</idValue>
+    <idCode>GRP</idCode>
+        <idValue>Gross unit price</idValue>
+    <idCode>INV</idCode>
+        <idValue>Invoice price</idValue>
+    <idCode>LBL</idCode>
+        <idValue>Labelling price</idValue>
+    <idCode>MAX</idCode>
+        <idValue>Maximum order quantity price</idValue>
+    <idCode>MIN</idCode>
+        <idValue>Minimum order quantity price</idValue>
+    <idCode>MNR</idCode>
+        <idValue>Minimum release quantity price</idValue>
+    <idCode>MSR</idCode>
+        <idValue>Manufacturer&apos;s suggested retail</idValue>
+    <idCode>MXR</idCode>
+        <idValue>Maximum release quantity price</idValue>
+    <idCode>NE</idCode>
+        <idValue>Not-to-exceed price</idValue>
+    <idCode>NQT</idCode>
+        <idValue>No quote</idValue>
+    <idCode>NTP</idCode>
+        <idValue>Net unit price</idValue>
+    <idCode>NW</idCode>
+        <idValue>Net weight</idValue>
+    <idCode>OCR</idCode>
+        <idValue>Ocean charges rate</idValue>
+    <idCode>OFR</idCode>
+        <idValue>Ocean freight rate</idValue>
+    <idCode>PAQ</idCode>
+        <idValue>Price break quantity(s)</idValue>
+    <idCode>PBQ</idCode>
+        <idValue>Unit price beginning quantity</idValue>
+    <idCode>PPD</idCode>
+        <idValue>Prepaid freight charges</idValue>
+    <idCode>PPR</idCode>
+        <idValue>Provisional price</idValue>
+    <idCode>PRO</idCode>
+        <idValue>Producer&apos;s price</idValue>
+    <idCode>PRP</idCode>
+        <idValue>Promotional price</idValue>
+    <idCode>PW</idCode>
+        <idValue>Gross weight</idValue>
+    <idCode>QTE</idCode>
+        <idValue>Quote price</idValue>
+    <idCode>RES</idCode>
+        <idValue>Resale price</idValue>
+    <idCode>RTP</idCode>
+        <idValue>Retail price</idValue>
+    <idCode>SHD</idCode>
+        <idValue>Ship and debit</idValue>
+    <idCode>SRP</idCode>
+        <idValue>Suggested retail price</idValue>
+    <idCode>SW</idCode>
+        <idValue>Gross weight without wooden pallets</idValue>
+    <idCode>TB</idCode>
+        <idValue>To be negotiated</idValue>
+    <idCode>TRF</idCode>
+        <idValue>Transfer</idValue>
+    <idCode>TU</idCode>
+        <idValue>Traded unit</idValue>
+    <idCode>TW</idCode>
+        <idValue>Theoretical weight</idValue>
+    <idCode>WH</idCode>
+        <idValue>Wholesale price</idValue>
+</idList>

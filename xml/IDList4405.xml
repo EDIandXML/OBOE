@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>To be done</idValue>
+    <idCode>2</idCode>
+        <idValue>Done</idValue>
+    <idCode>3</idCode>
+        <idValue>Passed on</idValue>
+    <idCode>4</idCode>
+        <idValue>Final</idValue>
+    <idCode>5</idCode>
+        <idValue>Subject to final payment</idValue>
+    <idCode>6</idCode>
+        <idValue>Minimum</idValue>
+    <idCode>7</idCode>
+        <idValue>Fixed</idValue>
+    <idCode>8</idCode>
+        <idValue>Maximum</idValue>
+    <idCode>9</idCode>
+        <idValue>Information</idValue>
+    <idCode>10</idCode>
+        <idValue>0 day available</idValue>
+    <idCode>11</idCode>
+        <idValue>1 day available</idValue>
+    <idCode>12</idCode>
+        <idValue>2 days available</idValue>
+    <idCode>13</idCode>
+        <idValue>3 days available</idValue>
+    <idCode>14</idCode>
+        <idValue>Uncollected funds</idValue>
+    <idCode>15</idCode>
+        <idValue>Nil</idValue>
+    <idCode>16</idCode>
+        <idValue>None advised</idValue>
+    <idCode>17</idCode>
+        <idValue>Requested</idValue>
+    <idCode>18</idCode>
+        <idValue>Free of charge</idValue>
+    <idCode>19</idCode>
+        <idValue>Rounded</idValue>
+    <idCode>20</idCode>
+        <idValue>Permanent</idValue>
+    <idCode>21</idCode>
+        <idValue>Temporary</idValue>
+</idList>

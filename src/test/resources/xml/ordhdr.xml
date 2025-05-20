@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactionSet
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+  name="ORDERS" id="ORDHDR" revision="???" description="ORDERS" shortName="TradacomsOrder"><table section="header">
+  <segment id="MHD" name="Message Header"
+    sequence="10" occurs="1" required='M'>
+     <dataElement id="MSRF" name="Message Reference"
+         sequence="1" required='M'
+        minLength="1" maxLength="12" type="N0"
+        description="Consecutive count of messages within the transmission"/>
+     <compositeDE id="TYPE" name="Type Of Message"
+         sequence="2" required='M' shortName="TypeOfMessage">
+       <dataElement id="TYPE1" name="Type"
+         sequence="1" required='M'
+          minLength="6" maxLength="6" type="ID"
+          description="Order Header Identifier">
+         <idList><idCode>ORDHDR</idCode><idValue>Order Header</idValue></idList>
+        </dataElement> 
+       <dataElement id="TYPE2" name="Version Number"
+         sequence="2" required='M'
+          minLength="1" maxLength="1" type="N0"
+          description="&apos;9&apos; for this version"/>
+     </compositeDE>
+  </segment>
+  <segment id="TYP" name="Transaction Type Details"
+    sequence="20" occurs="1" required='M'>
+     <dataElement id="TCDE" name="Transaction Code"
+         sequence="1" required='M'
+        minLength="4" maxLength="4" type="ID"
+        description="Code Values List 2">
+      <idList>
+        <idCode>0100</idCode>
+          <idValue>Complete transmission of Product Information File with products chained together</idValue>
+        <idCode>0101</idCode>
+          <idValue>Update transmission of Product Information File with products chained together</idValue>
+        <idCode>0102</idCode>
+          <idValue>Complete transmission of Product Information File with products linked together in a hierarchy</idValue>
+        <idCode>0103</idCode>
+          <idValue>Update transmission of Product Information File with products linked together in a hierarchy</idValue>
+        <idCode>0150</idCode>
+          <idValue>Complete transmission of Price Information File from supplier to customer</idValue>
+        <idCode>0151</idCode>
+          <idValue>Update transmission of Price Information File from supplier to customer</idValue>
+        <idCode>0152</idCode>
+          <idValue>Complete transmission of Price Information File sent from customer to supplier</idValue>
+        <idCode>0153</idCode>
+          <idValue>Update transmission of Price Information File sent from customer to supplier</idValue>
+        <idCode>0200</idCode>
+          <idValue>Complete transmission of Customer Information File</idValue>
+        <idCode>0201</idCode>
+          <idValue>Update transmission of Customer Information File</idValue>
+        <idCode>0205</idCode>
+          <idValue>Complete transmission of Location Information File</idValue>
+        <idCode>0206</idCode>
+          <idValue>Update transmission of Location Information File</idValue>
+        <idCode>0210</idCode>
+          <idValue>Complete transmission of Retailer Standing Database File</idValue>
+        <idCode>0211</idCode>
+          <idValue>Update transmission of Retailer Standing Database File</idValue>
+        <idCode>0215</idCode>
+          <idValue>Complete transmission of Retailer Database Report</idValue>
+        <idCode>0216</idCode>
+          <idValue>Update transmission of Retailer Database Report</idValue>
+        <idCode>0350</idCode>
+          <idValue>Proposed Orders = planned orders which will subsequently be confirmed.  Usually sent to help a supplier plan production.</idValue>
+        <idCode>0355</idCode>
+          <idValue>Order for goods on approval/inspection = order for goods which may be returned after a period of inspection without being invoiced</idValue>
+        <idCode>0360</idCode>
+          <idValue>Exceptions to Proposed Orders = changes to a previously sent proposed order, which could be made either by the customer or the supplier</idValue>
+        <idCode>0365</idCode>
+          <idValue>Planning Orders = follow Proposed Orders and will subsequently be confirmed by the customer.  Used to show all lines with details of quantities required and delivery locations.  Intended to give a firm basis for the supplier to plan production and supplies.</idValue>
+        <idCode>0400</idCode>
+          <idValue>Cancelled Orders = used to cancel outstanding orders.  These may originate either from the customer, when their requirements have changed, or the supplier if they cannot meet the order</idValue>
+        <idCode>0405</idCode>
+          <idValue>Confirmation of Cancelled Orders = confirms that outstanding orders have been cancelled within the sender's system</idValue>
+        <idCode>0410</idCode>
+          <idValue>Export Order = order placed on UK supplier for delivery overseas</idValue>
+        <idCode>0420</idCode>
+          <idValue>Standing Order = an order for regular supplies, valid over a long term</idValue>
+        <idCode>0430</idCode>
+          <idValue>New Orders = new order for goods and/or services</idValue>
+        <idCode>0435</idCode>
+          <idValue>Order for retained approval goods = retrospective order to cover goods already received on approval/inspection when these are being retained</idValue>
+        <idCode>0440</idCode>
+          <idValue>Order Amendment = contains changes to an outstanding order, such as quantities, prices and delivery dates.  To minimise transmission costs, only send the details for the products which have been amended.  Use transaction codes 0475 for re=scheduled orders or transaction code 0485 for additional lines.  Note that order amendments can rarely be processed automatically.</idValue>
+        <idCode>0445</idCode>
+          <idValue>Order Chaser = used to chase delivery of an outstanding order</idValue>
+        <idCode>0450</idCode>
+          <idValue>Copy Orders = a copy of an order previously sent by EDI or other media.</idValue>
+        <idCode>0460</idCode>
+          <idValue>Confirmation of Order by Ordering Company = used for example when an order is placed by telephone or fax</idValue>
+        <idCode>0470</idCode>
+          <idValue>Mixed Order Types = the file contains a mixture of different types of order.  Each order should be processed according to the Order Code given in ORD ORCD.</idValue>
+        <idCode>0475</idCode>
+          <idValue>Re=Scheduled Orders = used to change the delivery date of an order or order line.  Only the lines which have been re=scheduled need be sent</idValue>
+        <idCode>0480</idCode>
+          <idValue>Call=Off Orders = request for delivery against a contract, blanket or standing order</idValue>
+        <idCode>0485</idCode>
+          <idValue>Addition to Existing Orders, Existing Requirements Unchanged = additional lines to be added to an outstanding order.  Only the new lines need be sent</idValue>
+        <idCode>0490</idCode>
+          <idValue>Order Commitment = a contract to supply, not an instruction to deliver</idValue>
+        <idCode>0500</idCode>
+          <idValue>Complete transmission of Hot Card File</idValue>
+        <idCode>0501</idCode>
+          <idValue>Update transmission of Hot Card File</idValue>
+        <idCode>0600</idCode>
+          <idValue>Delivery = a notification of delivery against an order, containing details of all the lines on the order.  Normally produced by the supplier once goods have been picked for that order</idValue>
+        <idCode>0610</idCode>
+          <idValue>Consignment Note = sent by the supplier to the carrier to control the movement of a consignment through the distribution network to the customer</idValue>
+        <idCode>0620</idCode>
+          <idValue>Instruction to Deliver = a request for a delivery to be made</idValue>
+        <idCode>0630</idCode>
+          <idValue>Planned Delivery = used to report the status of a future delivery</idValue>
+        <idCode>0640</idCode>
+          <idValue>Delivery Adjustment = a notification of changes to a delivery, used when amendments are made or requested after a proposed delivery or request to deliver has been sent</idValue>
+        <idCode>0650</idCode>
+          <idValue>Balance = used to notify details of a part delivery when balances are accepted. Only includes those lines which are being delivered, not all the lines on the order, some of which may already have been received.</idValue>
+        <idCode>0660</idCode>
+          <idValue>Proposed Delivery = advance notice of an impending delivery</idValue>
+        <idCode>0695</idCode>
+          <idValue>Warehouse Receipt = notification that goods have been received at a warehouse</idValue>
+        <idCode>6001</idCode>
+          <idValue>Pallet Exchange Note = notification that pallets have been, or are to be exchanged.  These may be either full or empty pallets.  Used when different types of pallet movements are being recorded (ie mixed file type).</idValue>
+        <idCode>6002</idCode>
+          <idValue>Pallet Control Voucher = control document issued when goods have been delivered on pallets and no empty pallets were available for exchange.</idValue>
+        <idCode>6003</idCode>
+          <idValue>Pallet Issue Note = notification that fresh pallets have been, or are to be issued.  May also be used when goods on pallets have been recalled.</idValue>
+        <idCode>6004</idCode>
+          <idValue>Pallet Return Note = notification that pallets have been, or are to be returned</idValue>
+        <idCode>6005</idCode>
+          <idValue>Pallet Transfer Note = record of, or request for transfer of pallets</idValue>
+        <idCode>6006</idCode>
+          <idValue>Pallet Query Note = request for information on the status of pallet movements.  Used when no empty pallets or control vouchers were received.</idValue>
+        <idCode>6007</idCode>
+          <idValue>Pallet Return Advice Note = notification that returns have been made</idValue>
+        <idCode>6008</idCode>
+          <idValue>Pallet Ex Factory Movement = record of pallet transfers out of a factory.  Pallets may be empty or full.</idValue>
+        <idCode>6009</idCode>
+          <idValue>Pallet Collection Request = request for pallets to be collected/uplifted</idValue>
+        <idCode>6010</idCode>
+          <idValue>Load Collection Request = request for goods to be collected/uplifted</idValue>
+        <idCode>0670</idCode>
+          <idValue>Confirmation of Delivery = confirms the goods and quantities which have been delivered at a location</idValue>
+        <idCode>0680</idCode>
+          <idValue>Confirmation of Despatch = confirms the goods and quantities which have been despatched to a location</idValue>
+        <idCode>0690</idCode>
+          <idValue>Confirmation of Delivery Status Report = confirms the status of a delivery in preparation or transit</idValue>
+        <idCode>6000</idCode>
+          <idValue>Equipment Movement Confirmation = confirms the transfer of an item of equipment</idValue>
+        <idCode>0700</idCode>
+          <idValue>Invoices Only = commercial document (sales invoice) issued by a supplier to a customer listing the goods or services supplied and stating the sum of money due.  For ease of reconciliation it is recommended that one invoice relates to one order and/or one delivery.  Contains tax details where applicable.</idValue>
+        <idCode>0701</idCode>
+          <idValue>Self Billed Invoices = commercial invoice raised by the customer based on the order placed, delivery received and the contract of supply</idValue>
+        <idCode>0702</idCode>
+          <idValue>Retrospective Self=Billed Invoice = commercial invoice raised by the customer retrospectively</idValue>
+        <idCode>0705</idCode>
+          <idValue>Factored Invoice = commercial invoice sent by a supplier to a factor who will be receiving the payment from the customer</idValue>
+        <idCode>0707</idCode>
+          <idValue>Assigned Debt Invoice.  Used by sellers to send an invoice file via EDI to the buyers advising them that the debt has been assigned to the factoring company</idValue>
+        <idCode>0709</idCode>
+          <idValue>Copy Invoice = not for VAT purposes.  Raised when copies of an invoice document are sent from one party to another by EDI for information purposes only.  The original invoice may have been sent by EDI or on paper.</idValue>
+        <idCode>0750</idCode>
+          <idValue>Provisional invoice, not valid for tax purposes. A periodic consolidated    tax invoice must follow  (either EDI or paper document).</idValue>
+        <idCode>0710</idCode>
+          <idValue>Credit Claims (News trade) = claim for credit against unsold copies of a newspaper or magazine</idValue>
+        <idCode>0711</idCode>
+          <idValue>Sales Report = not final claim for credit.  Report of sales of newspapers and magazines</idValue>
+        <idCode>0715</idCode>
+          <idValue>Utility Bill = commercial invoice for metered services.  Contains tax details where applicable.</idValue>
+        <idCode>0716</idCode>
+          <idValue>Copy Bill = not for VAT purposes.  Copy of a utility bill previously sent by EDI or other means.  For information purposes only.</idValue>
+        <idCode>0717</idCode>
+          <idValue>Utility Credit Note = credit notes only</idValue>
+        <idCode>0720</idCode>
+          <idValue>Debit Notes Only = notification of a sum or sums owing, raised by the debtor (customer).  Trading partners should agree whether this will contain VAT details, or whether the supplier will subsequently raise a Credit Note as the VAT document.</idValue>
+        <idCode>0740</idCode>
+          <idValue>Credit Notes Only = notification of a sum or sums to be credited.  Usually sent by a supplier to a customer</idValue>
+        <idCode>0741</idCode>
+          <idValue>Self Billed Credit Notes = a credit note raised by the customer based on information already known</idValue>
+        <idCode>0742</idCode>
+          <idValue>Retrospective Self=Billed Credit Note = credit note raised by the customer retrospectively</idValue>
+        <idCode>0749</idCode>
+          <idValue>Copy Credit Note = not for VAT purposes.  Copy of a credit note sent by EDI  or other means for information only</idValue>
+        <idCode>0810</idCode>
+          <idValue>Electronic Funds Transaction</idValue>
+        <idCode>0820</idCode>
+          <idValue>Statement Details Only = list of credits and debits with the outstanding balance, sent either as a report or to request payment from the customer by the supplier</idValue>
+        <idCode>0830</idCode>
+          <idValue>Remittance Details Only = details of the items against which a payment is being made.  Sent by the payer to the payee.</idValue>
+        <idCode>0900</idCode>
+          <idValue>Uplift Notification = notification of a an uplift (collection) of goods which is being, or has been made</idValue>
+        <idCode>0910</idCode>
+          <idValue>Planned Uplift = advance notification of an uplift (collection) of goods which is to be made</idValue>
+        <idCode>0920</idCode>
+          <idValue>Uplift Confirmation = confirmation of the items and quantities which are being, or have been, uplifted</idValue>
+        <idCode>0930</idCode>
+          <idValue>Confirmation of Uplift Status Report = report of the status of an uplift (collection) which is being, or is due to be, made</idValue>
+        <idCode>1000</idCode>
+          <idValue>Picking Instructions Only = instructions on what to pick for an order or delivery</idValue>
+        <idCode>1010</idCode>
+          <idValue>Picking Instructions Amendments = change to a picking instruction</idValue>
+        <idCode>2000</idCode>
+          <idValue>Availability Report Only = report of actual or planned stock availability</idValue>
+        <idCode>2100</idCode>
+          <idValue>Stock Snapshot Only = report of current stock holdings, usually sent by the stockholder to a supplier</idValue>
+        <idCode>2200</idCode>
+          <idValue>Stock Adjustment Only = notification of adjustments to stock holdings, usually sent by a third party stockholder (eg a carrier) to the owner of the stock</idValue>
+        <idCode>2300</idCode>
+          <idValue>Product Planning Report = planning report on products held at different locations</idValue>
+        <idCode>2305</idCode>
+          <idValue>Location Planning Report =  report for locations holding various products</idValue>
+        <idCode>3100</idCode>
+          <idValue>Acknowledgement that an Order has been received, with no further reference to the original purchase order line details.</idValue>
+        <idCode>3110</idCode>
+          <idValue>Acknowledgement that an Order, with line details as shown, has been received, with no reference as to whether or not the supplier can meets its requirements</idValue>
+        <idCode>3120</idCode>
+          <idValue>Acknowledgement, including expected delivery, for ALL lines ordered.</idValue>
+        <idCode>3130</idCode>
+          <idValue>Acknowledgement, including expected delivery, for SOME lines ordered.  Assumes the remaining lines will be, or have been, acknowledged separately.  (Not used by EDICUG)</idValue>
+        <idCode>3140</idCode>
+          <idValue>Acknowledgement providing expected delivery information ONLY for those lines where the Supplier cannot meet the requested delivery date(s).  Assumes  the lines not included will be delivered as requested.  (Not used by EDICUG)</idValue>
+        <idCode>3145</idCode>
+          <idValue>Acknowledgement of order not able to be supplied.  Query outstanding on customer account.  No reference is made to the order line details</idValue>
+        <idCode>3150</idCode>
+          <idValue>Acknowledgement changing details which have previously been advised, eg. change in Date, Quantity, Price, etc.  All details for a line must be shown, including those which have not changed</idValue>
+        <idCode>3160</idCode>
+          <idValue>Acknowledgement category NOT defined.  Will be used where the supplier's system does not have inbuilt indicators</idValue>
+        <idCode>3170</idCode>
+          <idValue>Acknowledgement that a request to cancel an order has been received and actioned. No reference is made to the order line details.(Not used by EDICUG)</idValue>
+        <idCode>3200</idCode>
+          <idValue>Claims Acknowledgement (News trade) = response to a claim for credit, indicating which claims have been accepted or rejected</idValue>
+        <idCode>0835</idCode>
+          <idValue>Payment Order = instruction on a bank to make a payment to a third party</idValue>
+        <idCode>0840</idCode>
+          <idValue>Debit Advice = notification given by the bank to the payer to confirm that a payment has been, or will be, taken from their account</idValue>
+        <idCode>0845</idCode>
+          <idValue>Credit Advice = notification given by the bank to the payee that a credit payment has been, or will be, made to their account</idValue>
+        <idCode>0850</idCode>
+          <idValue>Exception = report from the bank to the payer that a problem has been identified with a payment</idValue>
+        <idCode>9000</idCode>
+          <idValue>Issues (News trade) = master file showing details of the current issues of a magazine or newspaper, with selling restrictions</idValue>
+        <idCode>9005</idCode>
+          <idValue>Supply and Returns (News trade) = report of the number of copies of an issued newspaper or magazine which have been sold or remain unsold</idValue>
+        <idCode>9010</idCode>
+          <idValue>Dye Order = order for special textile dying and finishing operations</idValue>
+        <idCode>9011</idCode>
+          <idValue>Return Dye Instruction = accompanies the returned dyed and finished items</idValue>
+        <idCode>9020</idCode>
+          <idValue>Complete transmission of Price and Availability Update File</idValue>
+        <idCode>9021</idCode>
+          <idValue>Update transmission of Price and Availability Update File</idValue>
+      </idList>
+    </dataElement>
+     <dataElement id="TTYP" name="Transaction Type"
+         sequence="2" required='C'
+        minLength="1" maxLength="12" type="ID"
+        description="Code Values List 3">
+      <idList>
+        <idCode>ORDHDR</idCode>
+          <idValue>Order Header</idValue>
+      </idList>
+
+    </dataElement>
+  </segment>
+  <segment id="SDT" name="Supplier Details"
+    sequence="30" occurs="1" required='M'>
+     <compositeDE id="SIDN" name="Supplier&apos;s Identity"
+         sequence="1" required='M'>
+       <dataElement id="SIDN1" name="Supplier&apos;s EAN Location Number"
+         sequence="1" required='O'
+          minLength="13" maxLength="13" type="N0"
+          description="EAN Location number identifying supplier"/>
+       <dataElement id="SIDN2" name="Supplier&apos;s Identity Allocated by"
+         sequence="2" required='O'
+          minLength="1" maxLength="17" type="AN"
+          description="Supplier&apos;s Code as allocated/used by customer"/>
+     </compositeDE>
+     <dataElement id="SNAM" name="Supplier&apos;s Name"
+         sequence="2" required='C'
+        minLength="1" maxLength="40" type="AN"
+        description="Supplier&apos;s legal name as printed on invoices"/>
+     <compositeDE id="SADD" name="Supplier&apos;s Address"
+         sequence="3" required='O'>
+       <dataElement id="SADD1" name="Supplier&apos;s Address Line 1"
+         sequence="1" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+       <dataElement id="SADD2" name="Supplier&apos;s Address Line 2"
+         sequence="2" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+       <dataElement id="SADD3" name="Supplier&apos;s Address Line 3"
+         sequence="3" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+       <dataElement id="SADD4" name="Supplier&apos;s Address Line 4"
+         sequence="4" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+       <dataElement id="SADD5" name="Supplier&apos;s Post Code"
+         sequence="5" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+     </compositeDE>
+     <compositeDE id="VATN" name="Supplier&apos;s Vat Registration Number"
+         sequence="4" required='O'>
+       <dataElement id="VATN1" name="Numeric VAT Registration Number"
+         sequence="1" required='O'
+          minLength="9" maxLength="9" type="N0"
+          description="Trader&apos;s VAT number allocated by HM Customs &amp; Excise"/>
+       <dataElement id="VATN2" name="Alphanumeric VAT Registration"
+         sequence="2" required='O'
+          minLength="1" maxLength="17" type="AN"
+          description="Government department or non-UK VAT number"/>
+     </compositeDE>
+  </segment>
+  <segment id="CDT" name="Customer Details"
+    sequence="40" occurs="1" required='M'>
+     <compositeDE id="CIDN" name="Customer&apos;s Identity"
+         sequence="1" required='M'>
+       <dataElement id="CIDN1" name="Customer&apos;s EAN Location Number"
+         sequence="1" required='O'
+          minLength="13" maxLength="13" type="N0"
+          description="EAN Location number identifying the customer"/>
+       <dataElement id="CIDN2" name="Customer&apos;s Identity Allocated by"
+         sequence="2" required='O'
+          minLength="1" maxLength="17" type="AN"
+          description="Customer&apos;s Code as allocated/used by supplier"/>
+     </compositeDE>
+     <dataElement id="CNAM" name="Customer&apos;s Name"
+         sequence="2" required='C'
+        minLength="1" maxLength="40" type="AN"
+        description="Customer&apos;s registered legal name"/>
+     <compositeDE id="CADD" name="Customer&apos;s Address"
+         sequence="3" required='O'>
+       <dataElement id="CADD1" name="Customer&apos;s Address Line 1"
+         sequence="1" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+       <dataElement id="CADD2" name="Customer&apos;s Address Line 2"
+         sequence="2" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+       <dataElement id="CADD3" name="Customer&apos;s Address Line 3"
+         sequence="3" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+       <dataElement id="CADD4" name="Customer&apos;s Address Line 4"
+         sequence="4" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+       <dataElement id="CADD5" name="Customer&apos;s Post Code"
+         sequence="5" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+     </compositeDE>
+     <compositeDE id="VATR" name="Customer&apos;s Vat Registration Number"
+         sequence="4" required='O'>
+       <dataElement id="VATR1" name="Numeric VAT Registration Number"
+         sequence="1" required='O'
+          minLength="9" maxLength="9" type="N0"
+          description="Trader&apos;s VAT number allocated by HM Customs &amp; Excise"/>
+       <dataElement id="VATR2" name="Alphanumeric VAT Registration"
+         sequence="2" required='O'
+          minLength="1" maxLength="17" type="AN"
+          description="Government department or non-UK VAT number"/>
+     </compositeDE>
+  </segment>
+  <segment id="DNA" name="Data Narrative"
+    sequence="50" occurs="-1" required='O'>
+     <dataElement id="SEQA" name="First Level Sequence Number"
+         sequence="1" required='M'
+        minLength="1" maxLength="10" type="N0"
+        description="Starts at 1 &amp; incremented by 1 for each 1st level repeat"/>
+     <compositeDE id="DNAC" name="Data Narrative Code"
+         sequence="2" required='O'>
+       <dataElement id="DNAC1" name="Code Table Number"
+         sequence="1" required='O'
+          minLength="1" maxLength="4" type="N0"
+          description="Code Value from code list"/>
+       <dataElement id="DNAC2" name="Code Value"
+         sequence="2" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+     </compositeDE>
+     <compositeDE id="RTEX" name="Registered Text"
+         sequence="3" required='O'>
+       <dataElement id="RTEX1" name="First Registered Application Code"
+         sequence="1" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+       <dataElement id="RTEX2" name="Application Text"
+         sequence="2" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="RTEX3" name="Second Registered Application Code"
+         sequence="3" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+       <dataElement id="RTEX4" name="Application Text"
+         sequence="4" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="RTEX5" name="Third Registered application Code"
+         sequence="5" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+       <dataElement id="RTEX6" name="Application Text"
+         sequence="6" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="RTEX7" name="Fourth Registered Application Code"
+         sequence="7" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+       <dataElement id="RTEX8" name="Application Text"
+         sequence="8" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+     </compositeDE>
+     <compositeDE id="GNAR" name="General Narrative"
+         sequence="4" required='O'>
+       <dataElement id="GNAR1" name="General Narrative Line 1"
+         sequence="1" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="GNAR2" name="General Narrative Line 2"
+         sequence="2" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="GNAR3" name="General Narrative Line 3"
+         sequence="3" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="GNAR4" name="General Narrative Line 4"
+         sequence="4" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+     </compositeDE>
+  </segment>
+  <segment id="FIL" name="File Details"
+    sequence="60" occurs="1" required='M'>
+     <dataElement id="FLGN" name="File Generation Number"
+         sequence="1" required='M'
+        minLength="1" maxLength="4" type="N0"
+        description="This number is sequential, per file type, per trading partner"/>
+     <dataElement id="FLVN" name="File Version Number"
+         sequence="2" required='M'
+        minLength="1" maxLength="4" type="N0"
+        description="Original (which is always 1) is incremented by 1 for each additional copy created"/>
+     <dataElement id="FLDT" name="File Creation Date"
+         sequence="3" required='M'
+        minLength="6" maxLength="6" type="DT"
+        description="Date the file is createdFormat: YYMMDD"/>
+     <dataElement id="FLID" name="File (Reel) Identification"
+         sequence="4" required='C'
+        minLength="1" maxLength="6" type="AN"
+        description="Reference on the outside of the reel containing the file"/>
+  </segment>
+  <segment id="MTR" name="Message Trailer"
+    sequence="70" occurs="1" required='M'>
+     <dataElement id="NOSG" name="Number of Segments in Message"
+         sequence="1" required='M'
+        minLength="1" maxLength="10" type="N0"
+        description="Control count of the number of segments comprising message. The count includes the MHD and MTR segments surrounding the message"/>
+  </segment>
+</table>
+<table section="detail">
+  <loop id="Message" name="Detail Message"
+       occurs="-1" required='M' shortName="DetailMessage">
+  <segment id="MHD" name="Message Header"
+    sequence="10" occurs="1" required='M'>
+     <dataElement id="MSRF" name="Message Reference"
+         sequence="1" required='M'
+        minLength="1" maxLength="12" type="N0"
+        description="Consecutive count of messages within the transmission"/>
+     <compositeDE id="TYPE" name="Type Of Message"
+         sequence="2" required='M' shortName="TypeOfMessage">
+       <dataElement id="TYPE1" name="Type"
+         sequence="1" required='M'
+          minLength="6" maxLength="6" type="ID"
+          description="Order Details Identifier">
+         <idList><idCode>ORDERS</idCode><idValue>Order Detail</idValue></idList>
+        </dataElement>
+       <dataElement id="TYPE2" name="Version Number"
+         sequence="2" required='M'
+          minLength="1" maxLength="1" type="N0"
+          description="&apos;9&apos; for this version"/>
+     </compositeDE>
+  </segment>
+  <segment id="CLO" name="Customer&apos;s Location"
+    sequence="20" occurs="1" required='M'>
+     <compositeDE id="CLOC" name="Customer&apos;s Location"
+         sequence="1" required='M'>
+       <dataElement id="CLOC1" name="Customer&apos;s EAN Location Number"
+         sequence="1" required='O'
+          minLength="13" maxLength="13" type="N0"
+          description="EAN number identifying the customer&apos;s location"/>
+       <dataElement id="CLOC2" name="Customer&apos;s Own Location Number"
+         sequence="2" required='O'
+          minLength="1" maxLength="17" type="AN"
+          description="Customer&apos;s identity for the location"/>
+       <dataElement id="CLOC3" name="Supplier&apos;s Identity of Customer&apos;s"
+         sequence="3" required='O'
+          minLength="1" maxLength="17" type="AN"
+          description="Supplier&apos;s reference for the customer&apos;s location"/>
+     </compositeDE>
+     <dataElement id="CNAM" name="Customer&apos;s Name"
+         sequence="2" required='C'
+        minLength="1" maxLength="40" type="AN"
+        description="Customer&apos;s registered legal name"/>
+     <compositeDE id="CADD" name="Customer&apos; Address"
+         sequence="3" required='O'>
+       <dataElement id="CADD1" name="Customer&apos;s Address Line 1"
+         sequence="1" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+       <dataElement id="CADD2" name="Customer&apos;s Address Line 2"
+         sequence="2" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+       <dataElement id="CADD3" name="Customer&apos;s Address Line 3"
+         sequence="3" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+       <dataElement id="CADD4" name="Customer&apos;s Address Line 4"
+         sequence="4" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+       <dataElement id="CADD5" name="Customer&apos;s Post Code"
+         sequence="5" required='O'
+          minLength="1" maxLength="35" type="AN"
+          description=""/>
+     </compositeDE>
+  </segment>
+  <segment id="ORD" name="Order References"
+    sequence="30" occurs="1" required='M'>
+     <compositeDE id="ORNO" name="Order Number And Date"
+         sequence="1" required='M'>
+       <dataElement id="ORNO1" name="Customer&apos;s Order Number"
+         sequence="1" required='O'
+          minLength="1" maxLength="17" type="AN"
+          description="As allocated by the customer to identify the order"/>
+       <dataElement id="ORNO2" name="Supplier&apos;s Order Number"
+         sequence="2" required='O'
+          minLength="1" maxLength="17" type="AN"
+          description="As allocated by the supplier to identify the order"/>
+       <dataElement id="ORNO3" name="Date Order Placed by Customer"
+         sequence="3" required='O'
+          minLength="6" maxLength="6" type="DT"
+          description="Date order placed, which may be date of file."/>
+       <dataElement id="ORNO4" name="Date Order Received by Supplier"
+         sequence="4" required='O'
+          minLength="6" maxLength="6" type="DT"
+          description="Format: YYMMDD"/>
+     </compositeDE>
+     <dataElement id="CLAS" name="Order Classification"
+         sequence="2" required='C'
+        minLength="1" maxLength="1" type="ID"
+        description="Code Values List 6">
+      <idList>
+        <idCode>C</idCode>
+          <idValue>Campaign</idValue>
+        <idCode>E</idCode>
+          <idValue>Easter</idValue>
+        <idCode>N</idCode>
+          <idValue>New Release</idValue>
+        <idCode>R</idCode>
+          <idValue>Request (special customer order for items not usually stocked)</idValue>
+        <idCode>S</idCode>
+          <idValue>Stock (replenishment order)</idValue>
+        <idCode>X</idCode>
+          <idValue>Christmas</idValue>
+      </idList>
+    </dataElement>
+     <dataElement id="ORCD" name="Order Code"
+         sequence="3" required='C'
+        minLength="1" maxLength="1" type="ID"
+        description="Code Values List 7">
+      <idList>
+        <idCode>A</idCode>
+          <idValue>Order Amendment</idValue>
+        <idCode>B</idCode>
+          <idValue>Branch Delivery Order</idValue>
+        <idCode>C</idCode>
+          <idValue>Cancelled Order</idValue>
+        <idCode>D</idCode>
+          <idValue>Home Delivery Order</idValue>
+        <idCode>E</idCode>
+          <idValue>Exception to Proposed Order</idValue>
+        <idCode>F</idCode>
+          <idValue>Confirmation Order</idValue>
+        <idCode>G</idCode>
+          <idValue>Standing Order</idValue>
+        <idCode>H</idCode>
+          <idValue>Order for Retained Approval Goods</idValue>
+        <idCode>K</idCode>
+          <idValue>Confirmation of Cancelled Order</idValue>
+        <idCode>L</idCode>
+          <idValue>Lines Cancelled in Amended Order</idValue>
+        <idCode>N</idCode>
+          <idValue>New Order</idValue>
+        <idCode>O</idCode>
+          <idValue>Call Off Order</idValue>
+        <idCode>P</idCode>
+          <idValue>Proposed Order</idValue>
+        <idCode>R</idCode>
+          <idValue>Re-Scheduled Order</idValue>
+        <idCode>S</idCode>
+          <idValue>Order for Goods on Approval or Inspection</idValue>
+        <idCode>T</idCode>
+          <idValue>Order Commitment</idValue>
+        <idCode>W</idCode>
+          <idValue>Order Chaser</idValue>
+        <idCode>X</idCode>
+          <idValue>Addition to Existing Order</idValue>
+      </idList>
+    </dataElement>
+     <compositeDE id="SCRF" name="Specification/contract References"
+         sequence="4" required='O'>
+       <dataElement id="SCRF1" name="Specification Number"
+         sequence="1" required='O'
+          minLength="1" maxLength="17" type="AN"
+          description="Specification No. to which order relates"/>
+       <dataElement id="SCRF2" name="Contract Number"
+         sequence="2" required='O'
+          minLength="1" maxLength="17" type="AN"
+          description="Contract No. to which order relates"/>
+     </compositeDE>
+  </segment>
+  <segment id="DIN" name="Delivery Instructions"
+    sequence="40" occurs="1" required='O'>
+     <dataElement id="EDAT" name="Earliest Delivery Date"
+         sequence="1" required='C'
+        minLength="6" maxLength="6" type="DT"
+        description="Date of delivery or earliest date the delivery could take place.Format: YYMMDD"/>
+     <dataElement id="LDAT" name="Latest Delivery Date"
+         sequence="2" required='C'
+        minLength="6" maxLength="6" type="DT"
+        description="Only present if more than one delivery or when delivery must take place before this date.Format: YYMMDD"/>
+     <compositeDE id="RATM" name="Required Arrival Time"
+         sequence="3" required='O'>
+       <dataElement id="RATM1" name="Earliest Time"
+         sequence="1" required='O'
+          minLength="4" maxLength="4" type="TM"
+          description="Format: HHMM"/>
+       <dataElement id="RATM2" name="Latest Time"
+         sequence="2" required='O'
+          minLength="4" maxLength="4" type="TM"
+          description="Format: HHMM"/>
+     </compositeDE>
+     <compositeDE id="DINS" name="Delivery Instruction Narrative"
+         sequence="4" required='O'>
+       <dataElement id="DINS1" name="Delivery Instruction Narrative Line 1"
+         sequence="1" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="DINS2" name="Delivery Instruction Narrative Line 2"
+         sequence="2" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="DINS3" name="Delivery Instruction Narrative Line 3"
+         sequence="3" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="DINS4" name="Delivery Instruction Narrative Line 4"
+         sequence="4" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+     </compositeDE>
+     <dataElement id="DINN" name="Delivery Instruction Number"
+         sequence="5" required='C'
+        minLength="1" maxLength="17" type="AN"
+        description="Reference number of pre-defined delivery instructions statement"/>
+  </segment>
+  <segment id="DNA" name="Data Narrative"
+    sequence="50" occurs="-1" required='O'>
+     <dataElement id="SEQA" name="First Level Sequence Number"
+         sequence="1" required='M'
+        minLength="1" maxLength="10" type="N0"
+        description="Starts at 1 &amp; incremented by 1 for each 1st level repeat"/>
+     <compositeDE id="DNAC" name="Data Narrative Code"
+         sequence="2" required='O'>
+       <dataElement id="DNAC1" name="Code Table Number"
+         sequence="1" required='O'
+          minLength="1" maxLength="4" type="N0"
+          description="Code Value from code list"/>
+       <dataElement id="DNAC2" name="Code Value"
+         sequence="2" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+     </compositeDE>
+     <compositeDE id="RTEX" name="Registered Text"
+         sequence="3" required='O'>
+       <dataElement id="RTEX1" name="First Registered Application Code"
+         sequence="1" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+       <dataElement id="RTEX2" name="Application Text"
+         sequence="2" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="RTEX3" name="Second Registered Application Code"
+         sequence="3" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+       <dataElement id="RTEX4" name="Application Text"
+         sequence="4" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="RTEX5" name="Third Registered Application Code"
+         sequence="5" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+       <dataElement id="RTEX6" name="Application Text"
+         sequence="6" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="RTEX7" name="Fourth Registered Application Code"
+         sequence="7" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+       <dataElement id="RTEX8" name="Application Text"
+         sequence="8" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+     </compositeDE>
+     <compositeDE id="GNAR" name="General Narrative"
+         sequence="4" required='O'>
+       <dataElement id="GNAR1" name="General Narrative Line 1"
+         sequence="1" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="GNAR2" name="General Narrative Line 2"
+         sequence="2" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="GNAR3" name="General Narrative Line 3"
+         sequence="3" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="GNAR4" name="General Narrative Line 4"
+         sequence="4" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+     </compositeDE>
+  </segment>
+  </loop>
+  <loop id="OLD" name="Order Line Details"
+       occurs="-1" required='M'>
+  <segment id="OLD" name="Order Line Details"
+    sequence="60" occurs="1" required='M'>
+     <dataElement id="SEQA" name="First Level Sequence Number"
+         sequence="1" required='M'
+        minLength="1" maxLength="10" type="N0"
+        description="Starts at 1 and is incremented by 1 for each segment of this type in this message"/>
+     <compositeDE id="SPRO" name="Supplier&apos;s Product Number"
+         sequence="2" required='M'>
+       <dataElement id="SPRO1" name="EAN-13 Article Number for the Traded"
+         sequence="1" required='O'
+          minLength="13" maxLength="13" type="AN"
+          description="EAN article number for the unit of trade"/>
+       <dataElement id="SPRO2" name="Unit"
+         sequence="2" required='O'
+          minLength="1" maxLength="30" type="AN"
+          description="Supplier&apos;s internal reference (non-EAN) identifying the unit of trade"/>
+       <dataElement id="SPRO3" name="Supplier&apos;s Code for the Traded Unit"
+         sequence="3" required='O'
+          minLength="1" maxLength="30" type="AN"
+          description="Code for the traded unit allocated under the alternative (DUN-14) EAN system"/>
+     </compositeDE>
+     <dataElement id="SACU" name="Supplier&apos;s EAN Article Number for the Designated Consumer Unit"
+         sequence="3" required='C'
+        minLength="13" maxLength="13" type="N0"
+        description="EAN number allocated to the retail (POS) unit. (Insert five leading zeros before eight digit codes.)"/>
+     <compositeDE id="CPRO" name="Customer&apos;s Product Number"
+         sequence="4" required='O'>
+       <dataElement id="CPRO1" name="Customer&apos;s Own Brand EAN Number"
+         sequence="1" required='O'
+          minLength="15" maxLength="15" type="N0"
+          description="Can be used for &apos;own label&apos; items allocated an in-store number in a general format. EAN Prefix - 2 dig; customer&apos;s number - 5 dig; consumer unit number - 8 dig"/>
+       <dataElement id="CPRO2" name="Customer&apos;s Item Code"
+         sequence="2" required='O'
+          minLength="1" maxLength="30" type="AN"
+          description=""/>
+     </compositeDE>
+     <compositeDE id="UNOR" name="Unit Of Ordering"
+         sequence="5" required='M'>
+       <dataElement id="UNOR1" name="Consumer Units in Traded Unit"
+         sequence="1" required='O'
+          minLength="1" maxLength="15" type="N0"
+          description="Number of consumer units making up the supplier&apos;s traded unit"/>
+       <dataElement id="UNOR2" name="Ordering Measure"
+         sequence="2" required='O'
+          minLength="1" maxLength="10" type="N3"
+          description="Required when an item is ordered as a multiple of a defined measure"/>
+       <dataElement id="UNOR3" name="Measure Indicator"
+         sequence="3" required='O'
+          minLength="1" maxLength="6" type="AN"
+          description="Mnemonic defining the ordering measure, eg. pounds, metres, litres. Code Values List 4. Mandatory if Ordering Measure used"/>
+     </compositeDE>
+     <compositeDE id="OQTY" name="Quantity Ordered"
+         sequence="6" required='M'>
+       <dataElement id="OQTY1" name="Number of Traded Units Ordered"
+         sequence="1" required='O'
+          minLength="1" maxLength="15" type="N0"
+          description=""/>
+       <dataElement id="OQTY2" name="Total Measure Ordered"
+         sequence="2" required='O'
+          minLength="1" maxLength="10" type="N3"
+          description=""/>
+       <dataElement id="OQTY3" name="Measure Indicator"
+         sequence="3" required='O'
+          minLength="1" maxLength="6" type="AN"
+          description=""/>
+     </compositeDE>
+     <compositeDE id="OUCT" name="Ordering Unit Cost"
+         sequence="7" required='O'>
+       <dataElement id="OUCT1" name="Cost Price"
+         sequence="1" required='O'
+          minLength="1" maxLength="10" type="N4"
+          description="Optional field identifying the agreed or expected cost per unit ordered. This is the net cost in pounds ie. after deducting line discounts, etc. but before the application of VAT, of a traded unit or measure as defined by the measure indicator"/>
+       <dataElement id="OUCT2" name="Measure Indicator"
+         sequence="2" required='O'
+          minLength="1" maxLength="6" type="AN"
+          description=""/>
+     </compositeDE>
+     <dataElement id="PIND" name="Special Price Indicator"
+         sequence="8" required='C'
+        minLength="1" maxLength="4" type="ID"
+        description="Code Values List 5">
+      <idList>
+        <idCode>E</idCode>
+          <idValue>Export</idValue>
+        <idCode>F</idCode>
+          <idValue>Free</idValue>
+        <idCode>P</idCode>
+          <idValue>Promotion</idValue>
+      </idList>
+    </dataElement>
+     <dataElement id="TFIN" name="To Follow Indicator"
+         sequence="9" required='C'
+        minLength="1" maxLength="1" type="ID"
+        description="Code Values List 8">
+	<idList>
+	  <idCode>N</idCode>
+	    <idValue>Not to follow</idValue>
+	  <idCode>T</idCode>
+	    <idValue>To follow</idValue>
+	</idList>
+    </dataElement>
+     <compositeDE id="TDES" name="Traded Unit Description"
+         sequence="10" required='O'>
+       <dataElement id="TDES1" name="Traded Unit Description Line 1"
+         sequence="1" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="TDES2" name="Traded Unit Description Line 2"
+         sequence="2" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+     </compositeDE>
+     <compositeDE id="SCRF" name="Specification/contract References"
+         sequence="11" required='O'>
+       <dataElement id="SCRF1" name="Specification Number"
+         sequence="1" required='O'
+          minLength="1" maxLength="17" type="AN"
+          description="Specification No. to which line relates"/>
+       <dataElement id="SCRF2" name="Contract Number"
+         sequence="2" required='O'
+          minLength="1" maxLength="17" type="AN"
+          description="Contract No. to which line relates"/>
+     </compositeDE>
+  </segment>   
+  <segment id="DNB" name="Data Narrative"
+    sequence="70" occurs="-1" required='O'>
+     <dataElement id="SEQA" name="First Level Sequence Number"
+         sequence="1" required='M'
+        minLength="1" maxLength="10" type="N0"
+        description="Takes the value of SEQA in the preceding segment with which this segment is nested"/>
+     <dataElement id="SEQB" name="Second Level Sequence Number"
+         sequence="2" required='M'
+        minLength="1" maxLength="10" type="N0"
+        description="Starts at 1 &amp; incremented by 1 for each 2nd level repeat"/>
+     <compositeDE id="DNAC" name="Data Narrative Code"
+         sequence="3" required='O'>
+       <dataElement id="DNAC1" name="Code Table Number"
+         sequence="1" required='O'
+          minLength="1" maxLength="4" type="N0"
+          description="Code Value from code list"/>
+       <dataElement id="DNAC2" name="Code Value"
+         sequence="2" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+     </compositeDE>
+     <compositeDE id="RTEX" name="Registered Text"
+         sequence="4" required='O'>
+       <dataElement id="RTEX1" name="First Registered Application Code"
+         sequence="1" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+       <dataElement id="RTEX2" name="Application Text"
+         sequence="2" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="RTEX3" name="Second Registered Application Code"
+         sequence="3" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+       <dataElement id="RTEX4" name="Application Text"
+         sequence="4" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="RTEX5" name="Third Registered Application Code"
+         sequence="5" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+       <dataElement id="RTEX6" name="Application Text"
+         sequence="6" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="RTEX7" name="Fourth Registered Application Code"
+         sequence="7" required='O'
+          minLength="1" maxLength="3" type="AN"
+          description=""/>
+       <dataElement id="RTEX8" name="Application Text"
+         sequence="8" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+     </compositeDE>
+     <compositeDE id="GNAR" name="General Narrative"
+         sequence="5" required='O'>
+       <dataElement id="GNAR1" name="General Narrative Line 1"
+         sequence="1" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="GNAR2" name="General Narrative Line 2"
+         sequence="2" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="GNAR3" name="General Narrative Line 3"
+         sequence="3" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+       <dataElement id="GNAR4" name="General Narrative Line 4"
+         sequence="4" required='O'
+          minLength="1" maxLength="40" type="AN"
+          description=""/>
+     </compositeDE>
+  </segment>
+  </loop>
+    <segment id="OTR" name="Order Trailer"
+      sequence="80" occurs="1" required='M'>
+       <dataElement id="LORD" name="Lines Ordered"
+           sequence="1" required='M'
+          minLength="1" maxLength="10" type="N0"
+          description="Number of OLD segments for this order"/>
+    </segment>
+    <segment id="MTR" name="Message Trailer"
+      sequence="90" occurs="1" required='M'>
+       <dataElement id="NOSG" name="Number of Segments in Message"
+           sequence="1" required='M'
+          minLength="1" maxLength="10" type="N0"
+          description="Control count of the number of segments comprising message. The count includes the MHD and MTR segments surrounding the message"/>
+    </segment>
+
+</table>
+<table section="summary">
+  <segment id="MHD" name="Message Header"
+    sequence="10" occurs="1" required='M'>
+     <dataElement id="MSRF" name="Message Reference"
+         sequence="1" required='M'
+        minLength="1" maxLength="12" type="N0"
+        description="Consecutive count of messages within the transmission"/>
+     <compositeDE id="TYPE" name="Type Of Message"
+         sequence="2" required='M' shortName="TypeOfMessage">
+       <dataElement id="TYPE1" name="Type"
+         sequence="1" required='M'
+          minLength="6" maxLength="6" type="ID"
+          description="Order Trailer Identifier">
+         <idList><idCode>ORDTLR</idCode><idValue>Order Trailer</idValue></idList>
+        </dataElement>
+       <dataElement id="TYPE2" name="Version Number"
+         sequence="2" required='M'
+          minLength="1" maxLength="1" type="N0"
+          description="&apos;9&apos; for this Version"/>
+     </compositeDE>
+  </segment>
+  <segment id="OFT" name="Order File Totals"
+    sequence="20" occurs="1" required='M'>
+     <dataElement id="FTOR" name="File Total Number of Orders"
+         sequence="1" required='M'
+        minLength="1" maxLength="10" type="N0"
+        description="Total Number of order details messages in the file"/>
+  </segment>
+  <segment id="MTR" name="Message Trailer"
+    sequence="30" occurs="1" required='O'>
+     <dataElement id="NOSG" name="Number of Segments in Message"
+         sequence="1" required='M'
+        minLength="1" maxLength="10" type="N0"
+        description="Control count of the number of segments comprising message. The count includes the MHD and MTR segments surrounding the message"/>
+  </segment>
+</table>
+</transactionSet>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Ordinary post</idValue>
+    <idCode>2</idCode>
+        <idValue>Air mail</idValue>
+    <idCode>3</idCode>
+        <idValue>Telegraph</idValue>
+    <idCode>4</idCode>
+        <idValue>Telex</idValue>
+    <idCode>5</idCode>
+        <idValue>S.W.I.F.T.</idValue>
+    <idCode>6</idCode>
+        <idValue>Other transmission networks</idValue>
+    <idCode>7</idCode>
+        <idValue>Networks not defined</idValue>
+    <idCode>8</idCode>
+        <idValue>Fedwire</idValue>
+    <idCode>9</idCode>
+        <idValue>Personal (face-to-face)</idValue>
+    <idCode>10</idCode>
+        <idValue>Registered air mail</idValue>
+    <idCode>11</idCode>
+        <idValue>Registered mail</idValue>
+    <idCode>12</idCode>
+        <idValue>Courier</idValue>
+    <idCode>13</idCode>
+        <idValue>Messenger</idValue>
+    <idCode>14</idCode>
+        <idValue>National ACH</idValue>
+    <idCode>15</idCode>
+        <idValue>Other ACH</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

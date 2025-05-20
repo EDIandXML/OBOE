@@ -1,0 +1,33 @@
+/*tell the system where the rules files reside*/
+
+xmlPath=xml/
+searchClassPathForMessageFiles=true
+
+throwParsingException=false
+/* Used by RICE - Rules Implementation Convention Editor
+/* specified the directory where static rules files reside.
+/* In this directory you should place the generic rules files
+/* RICE will uses these files as the base definition for the rules
+/* This should not be the directory that you point to with xmlPath, 
+
+baseDirectory=originalxml/
+useObject=false
+
+/* search directive to find xml files */
+
+searchDirective=V
+
+/*to parse an incoming EDI/XML file point it to its rules file */
+
+RequestForQuotation=840
+
+/*if parsing an EDI/XML file to an EDIFACT rules file */
+
+PurchaseOrderMessage=ORDERS
+TradacomsOrder=ORDHDR
+RSGRSG=RSGRSG
+/* x12 delimiters: segment field group */
+
+testx12Delimiters=|~:
+testEDIFACTDelimiters=^&*
+

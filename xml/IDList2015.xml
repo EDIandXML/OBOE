@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>1st week of the month</idValue>
+    <idCode>2</idCode>
+        <idValue>2nd week of the month</idValue>
+    <idCode>3</idCode>
+        <idValue>3rd week of the month</idValue>
+    <idCode>4</idCode>
+        <idValue>4th week of the month</idValue>
+    <idCode>5</idCode>
+        <idValue>5th week of the month</idValue>
+    <idCode>6</idCode>
+        <idValue>1st and 3rd weeks of the month</idValue>
+    <idCode>7</idCode>
+        <idValue>2nd and 4th weeks of the month</idValue>
+    <idCode>10</idCode>
+        <idValue>Monday through Friday</idValue>
+    <idCode>11</idCode>
+        <idValue>Monday through Saturday</idValue>
+    <idCode>12</idCode>
+        <idValue>Monday through Sunday</idValue>
+    <idCode>13</idCode>
+        <idValue>Monday</idValue>
+    <idCode>14</idCode>
+        <idValue>Tuesday</idValue>
+    <idCode>15</idCode>
+        <idValue>Wednesday</idValue>
+    <idCode>16</idCode>
+        <idValue>Thursday</idValue>
+    <idCode>17</idCode>
+        <idValue>Friday</idValue>
+    <idCode>18</idCode>
+        <idValue>Saturday</idValue>
+    <idCode>19</idCode>
+        <idValue>Sunday</idValue>
+    <idCode>20</idCode>
+        <idValue>Immediately</idValue>
+    <idCode>21</idCode>
+        <idValue>As directed</idValue>
+    <idCode>22</idCode>
+        <idValue>Each week of the month</idValue>
+    <idCode>23</idCode>
+        <idValue>Daily Monday through Friday</idValue>
+    <idCode>24</idCode>
+        <idValue>First decade of the month</idValue>
+    <idCode>25</idCode>
+        <idValue>Second decade of the month</idValue>
+    <idCode>26</idCode>
+        <idValue>Third decade of the month</idValue>
+    <idCode>27</idCode>
+        <idValue>Each working hour</idValue>
+    <idCode>28</idCode>
+        <idValue>Each 2 working hours</idValue>
+    <idCode>29</idCode>
+        <idValue>Each 3 working hours</idValue>
+    <idCode>30</idCode>
+        <idValue>Each 4 working hours</idValue>
+    <idCode>31</idCode>
+        <idValue>Each working day</idValue>
+    <idCode>32</idCode>
+        <idValue>Each 2 working days</idValue>
+    <idCode>33</idCode>
+        <idValue>Each 3 working days</idValue>
+    <idCode>34</idCode>
+        <idValue>Each 4 working days</idValue>
+    <idCode>35</idCode>
+        <idValue>Each 5 working days</idValue>
+    <idCode>36</idCode>
+        <idValue>Each 6 working days</idValue>
+    <idCode>37</idCode>
+        <idValue>Each 8 working days</idValue>
+    <idCode>38</idCode>
+        <idValue>Each 9 working days</idValue>
+    <idCode>39</idCode>
+        <idValue>Each 10 working days</idValue>
+    <idCode>40</idCode>
+        <idValue>Each 11 working days</idValue>
+    <idCode>41</idCode>
+        <idValue>Each 12 working days</idValue>
+    <idCode>42</idCode>
+        <idValue>Each 13 working days</idValue>
+    <idCode>43</idCode>
+        <idValue>Each working week</idValue>
+    <idCode>44</idCode>
+        <idValue>Each 2 working weeks</idValue>
+    <idCode>45</idCode>
+        <idValue>Each 3 working weeks</idValue>
+    <idCode>46</idCode>
+        <idValue>Each 4 working weeks</idValue>
+    <idCode>47</idCode>
+        <idValue>Each working month</idValue>
+    <idCode>48</idCode>
+        <idValue>Each 2 working months</idValue>
+    <idCode>49</idCode>
+        <idValue>Each 3 working months</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

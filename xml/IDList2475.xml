@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Date of order</idValue>
+    <idCode>2</idCode>
+        <idValue>Date of confirmation</idValue>
+    <idCode>3</idCode>
+        <idValue>Date of contract</idValue>
+    <idCode>4</idCode>
+        <idValue>Date of signature of contract</idValue>
+    <idCode>5</idCode>
+        <idValue>Date of invoice</idValue>
+    <idCode>6</idCode>
+        <idValue>Date of credit note</idValue>
+    <idCode>7</idCode>
+        <idValue>Date of present document</idValue>
+    <idCode>8</idCode>
+        <idValue>Date of confirmation of order received</idValue>
+    <idCode>9</idCode>
+        <idValue>Date invoice received</idValue>
+    <idCode>11</idCode>
+        <idValue>Date credit note received</idValue>
+    <idCode>12</idCode>
+        <idValue>Date present document received</idValue>
+    <idCode>13</idCode>
+        <idValue>Date of resale by buyer</idValue>
+    <idCode>14</idCode>
+        <idValue>Date proceeds of resale collected by buyer</idValue>
+    <idCode>21</idCode>
+        <idValue>Date goods received by buyer</idValue>
+    <idCode>22</idCode>
+        <idValue>Date goods received by buyer&apos;s agent</idValue>
+    <idCode>23</idCode>
+        <idValue>Date goods received by carrier</idValue>
+    <idCode>24</idCode>
+        <idValue>Date ex-works</idValue>
+    <idCode>25</idCode>
+        <idValue>Date goods handed over for shipment by seller or agent</idValue>
+    <idCode>26</idCode>
+        <idValue>Date of arrival of transport</idValue>
+    <idCode>27</idCode>
+        <idValue>Date of outward frontier crossing</idValue>
+    <idCode>28</idCode>
+        <idValue>Date of inward frontier crossing</idValue>
+    <idCode>29</idCode>
+        <idValue>Date of delivery of goods to establishments/domicile/site</idValue>
+    <idCode>31</idCode>
+        <idValue>Stipulated date for payment of documentary credit</idValue>
+    <idCode>32</idCode>
+        <idValue>Stipulated date for acceptance of documentary credit</idValue>
+    <idCode>33</idCode>
+        <idValue>Stipulated date for negotiation of documentary credit</idValue>
+    <idCode>41</idCode>
+        <idValue>Date of delivery to buyer of documents representing goods</idValue>
+    <idCode>42</idCode>
+        <idValue>Date of delivery to buyer&apos;s agent of documents representing goods</idValue>
+    <idCode>43</idCode>
+        <idValue>Date of delivery to carrier of documents representing goods</idValue>
+    <idCode>44</idCode>
+        <idValue>Date of delivery to intermediary bank of documents representing good</idValue>
+    <idCode>45</idCode>
+        <idValue>Date of bill of lading, consignment note or other transport document</idValue>
+    <idCode>46</idCode>
+        <idValue>Date of receipt for loading (mate&apos;s receipt)</idValue>
+    <idCode>47</idCode>
+        <idValue>Date of negotiable instrument (draft, promissory note, bank)</idValue>
+    <idCode>48</idCode>
+        <idValue>Date of receipt of tool dependent initial samples plus unlimited absolute bank guarantee plus value added tax</idValue>
+    <idCode>52</idCode>
+        <idValue>Due date of negotiable instrument</idValue>
+    <idCode>53</idCode>
+        <idValue>Date of presentation of negotiable instrument</idValue>
+    <idCode>54</idCode>
+        <idValue>Date of acceptance of negotiable instrument</idValue>
+    <idCode>55</idCode>
+        <idValue>Date of acceptance of tooling</idValue>
+    <idCode>56</idCode>
+        <idValue>Date of receipt of tooling</idValue>
+    <idCode>57</idCode>
+        <idValue>Date of acceptance of first samples produced under production conditions</idValue>
+    <idCode>60</idCode>
+        <idValue>Date of start of work</idValue>
+    <idCode>61</idCode>
+        <idValue>Date of end of work</idValue>
+    <idCode>62</idCode>
+        <idValue>Date of provisional reception of work</idValue>
+    <idCode>63</idCode>
+        <idValue>Date of final acceptance of work</idValue>
+    <idCode>64</idCode>
+        <idValue>Date of certificate of preliminary acceptance</idValue>
+    <idCode>65</idCode>
+        <idValue>Date of certificate of final acceptance</idValue>
+    <idCode>66</idCode>
+        <idValue>Specified date</idValue>
+    <idCode>67</idCode>
+        <idValue>Anticipated delivery date</idValue>
+    <idCode>68</idCode>
+        <idValue>Effective date</idValue>
+    <idCode>69</idCode>
+        <idValue>Invoice transmission date</idValue>
+    <idCode>70</idCode>
+        <idValue>Date of issue of transport document(s)</idValue>
+    <idCode>71</idCode>
+        <idValue>Date of presentation of documents</idValue>
+    <idCode>72</idCode>
+        <idValue>Payment date</idValue>
+    <idCode>73</idCode>
+        <idValue>Draft(s) at ... days sight</idValue>
+    <idCode>74</idCode>
+        <idValue>Draft(s) at ... days date</idValue>
+    <idCode>75</idCode>
+        <idValue>Draft(s) at ... days after date of issuance of transport document(s)</idValue>
+    <idCode>76</idCode>
+        <idValue>Draft(s) at ... days after date of presentation of documents</idValue>
+    <idCode>77</idCode>
+        <idValue>Specified draft date</idValue>
+    <idCode>78</idCode>
+        <idValue>Customs clearance date (import)</idValue>
+    <idCode>79</idCode>
+        <idValue>Customs clearance date (export)</idValue>
+    <idCode>80</idCode>
+        <idValue>Date of salary payment</idValue>
+    <idCode>81</idCode>
+        <idValue>Date of shipment as evidenced by the transport document(s)</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Other reference date agreed upon between the parties</idValue>
+</idList>

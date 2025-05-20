@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1S</idCode>
+        <idValue>Side one</idValue>
+    <idCode>2S</idCode>
+        <idValue>Side two</idValue>
+    <idCode>AA</idCode>
+        <idValue>On surface</idValue>
+    <idCode>AB</idCode>
+        <idValue>Off surface</idValue>
+    <idCode>AC</idCode>
+        <idValue>Soluble</idValue>
+    <idCode>AD</idCode>
+        <idValue>Opposite corners</idValue>
+    <idCode>AE</idCode>
+        <idValue>Corner Diagonals</idValue>
+    <idCode>BC</idCode>
+        <idValue>Back of cab</idValue>
+    <idCode>BS</idCode>
+        <idValue>Both sides</idValue>
+    <idCode>BT</idCode>
+        <idValue>Bottom</idValue>
+    <idCode>DF</idCode>
+        <idValue>Dual fuel tank positions</idValue>
+    <idCode>FR</idCode>
+        <idValue>Front</idValue>
+    <idCode>IN</idCode>
+        <idValue>Inside</idValue>
+    <idCode>LE</idCode>
+        <idValue>Left</idValue>
+    <idCode>OA</idCode>
+        <idValue>Overall</idValue>
+    <idCode>OS</idCode>
+        <idValue>One side</idValue>
+    <idCode>OT</idCode>
+        <idValue>Outside</idValue>
+    <idCode>RI</idCode>
+        <idValue>Right</idValue>
+    <idCode>RR</idCode>
+        <idValue>Rear</idValue>
+    <idCode>ST</idCode>
+        <idValue>Spare tyre position</idValue>
+    <idCode>TB</idCode>
+        <idValue>Tank bottom</idValue>
+    <idCode>TP</idCode>
+        <idValue>Top</idValue>
+    <idCode>TS</idCode>
+        <idValue>Two sides</idValue>
+    <idCode>UC</idCode>
+        <idValue>Under cab</idValue>
+</idList>

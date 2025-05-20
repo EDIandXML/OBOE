@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>A</idCode>
+        <idValue>Account</idValue>
+    <idCode>CA</idCode>
+        <idValue>Advance collect</idValue>
+    <idCode>CC</idCode>
+        <idValue>Collect</idValue>
+    <idCode>CF</idCode>
+        <idValue>Collect, freight credited to payment customer</idValue>
+    <idCode>DF</idCode>
+        <idValue>Defined by buyer and seller</idValue>
+    <idCode>FO</idCode>
+        <idValue>FOB port of call</idValue>
+    <idCode>IC</idCode>
+        <idValue>Information copy, no payment due</idValue>
+    <idCode>MX</idCode>
+        <idValue>Mixed</idValue>
+    <idCode>NC</idCode>
+        <idValue>Service freight, no charge</idValue>
+    <idCode>NS</idCode>
+        <idValue>Not specified</idValue>
+    <idCode>PA</idCode>
+        <idValue>Advance prepaid</idValue>
+    <idCode>PB</idCode>
+        <idValue>Customer pick-up/backhaul</idValue>
+    <idCode>PC</idCode>
+        <idValue>Prepaid but charged to customer</idValue>
+    <idCode>PE</idCode>
+        <idValue>Payable elsewhere</idValue>
+    <idCode>PO</idCode>
+        <idValue>Prepaid only</idValue>
+    <idCode>PP</idCode>
+        <idValue>Prepaid (by seller)</idValue>
+    <idCode>PU</idCode>
+        <idValue>Pickup</idValue>
+    <idCode>RC</idCode>
+        <idValue>Return container freight paid by customer</idValue>
+    <idCode>RF</idCode>
+        <idValue>Return container freight free</idValue>
+    <idCode>RS</idCode>
+        <idValue>Return container freight paid by supplier</idValue>
+    <idCode>TP</idCode>
+        <idValue>Third party pay</idValue>
+    <idCode>WC</idCode>
+        <idValue>Weight condition</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

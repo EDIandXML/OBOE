@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Certificate of conformity</idValue>
+    <idCode>2</idCode>
+        <idValue>General product form</idValue>
+    <idCode>3</idCode>
+        <idValue>Ship to stock</idValue>
+    <idCode>4</idCode>
+        <idValue>Finish</idValue>
+    <idCode>5</idCode>
+        <idValue>End use application</idValue>
+    <idCode>8</idCode>
+        <idValue>Product</idValue>
+    <idCode>9</idCode>
+        <idValue>Sub-product</idValue>
+    <idCode>10</idCode>
+        <idValue>Grain direction</idValue>
+    <idCode>11</idCode>
+        <idValue>Customs specifications</idValue>
+    <idCode>12</idCode>
+        <idValue>Type and/or process</idValue>
+    <idCode>13</idCode>
+        <idValue>Quality</idValue>
+    <idCode>14</idCode>
+        <idValue>Surface condition</idValue>
+    <idCode>15</idCode>
+        <idValue>Heat treat/anneal</idValue>
+    <idCode>17</idCode>
+        <idValue>Coating</idValue>
+    <idCode>18</idCode>
+        <idValue>Surface treatment, chemical</idValue>
+    <idCode>19</idCode>
+        <idValue>Surface treatment, mechanical</idValue>
+    <idCode>21</idCode>
+        <idValue>Forming</idValue>
+    <idCode>22</idCode>
+        <idValue>Edge treatment</idValue>
+    <idCode>23</idCode>
+        <idValue>Welds/splices</idValue>
+    <idCode>24</idCode>
+        <idValue>Control item</idValue>
+    <idCode>25</idCode>
+        <idValue>End treatment</idValue>
+    <idCode>26</idCode>
+        <idValue>Ship to line</idValue>
+    <idCode>28</idCode>
+        <idValue>Test sample frequency</idValue>
+    <idCode>30</idCode>
+        <idValue>Test sample direction</idValue>
+    <idCode>32</idCode>
+        <idValue>Type of test/inspection</idValue>
+    <idCode>35</idCode>
+        <idValue>Colour</idValue>
+    <idCode>38</idCode>
+        <idValue>Grade</idValue>
+    <idCode>43</idCode>
+        <idValue>Twist</idValue>
+    <idCode>54</idCode>
+        <idValue>Section profile</idValue>
+    <idCode>56</idCode>
+        <idValue>Special processing</idValue>
+    <idCode>58</idCode>
+        <idValue>Winding instructions</idValue>
+    <idCode>59</idCode>
+        <idValue>Surface protection</idValue>
+    <idCode>61</idCode>
+        <idValue>New article</idValue>
+    <idCode>62</idCode>
+        <idValue>Obsolete article</idValue>
+    <idCode>63</idCode>
+        <idValue>Current article</idValue>
+    <idCode>64</idCode>
+        <idValue>Revised design</idValue>
+    <idCode>65</idCode>
+        <idValue>Reinstated article</idValue>
+    <idCode>66</idCode>
+        <idValue>Current article spares</idValue>
+    <idCode>67</idCode>
+        <idValue>Balance out article</idValue>
+    <idCode>68</idCode>
+        <idValue>Initial sample</idValue>
+    <idCode>69</idCode>
+        <idValue>Field test</idValue>
+    <idCode>70</idCode>
+        <idValue>Revised article</idValue>
+    <idCode>71</idCode>
+        <idValue>Refurbished article</idValue>
+    <idCode>72</idCode>
+        <idValue>Vintage</idValue>
+    <idCode>73</idCode>
+        <idValue>Beverage age</idValue>
+    <idCode>74</idCode>
+        <idValue>Beverage brand</idValue>
+    <idCode>75</idCode>
+        <idValue>Artist</idValue>
+    <idCode>76</idCode>
+        <idValue>Author</idValue>
+    <idCode>77</idCode>
+        <idValue>Binding</idValue>
+    <idCode>78</idCode>
+        <idValue>Edition</idValue>
+    <idCode>79</idCode>
+        <idValue>Other physical description</idValue>
+    <idCode>80</idCode>
+        <idValue>Publisher</idValue>
+    <idCode>81</idCode>
+        <idValue>Title</idValue>
+    <idCode>82</idCode>
+        <idValue>Series title</idValue>
+    <idCode>83</idCode>
+        <idValue>Volume title</idValue>
+    <idCode>84</idCode>
+        <idValue>Composer</idValue>
+    <idCode>85</idCode>
+        <idValue>Recording medium</idValue>
+    <idCode>86</idCode>
+        <idValue>Music style</idValue>
+    <idCode>87</idCode>
+        <idValue>Promotional event</idValue>
+    <idCode>88</idCode>
+        <idValue>Promotional offer</idValue>
+    <idCode>89</idCode>
+        <idValue>Alcohol beverage class</idValue>
+    <idCode>90</idCode>
+        <idValue>Alcohol beverage type</idValue>
+    <idCode>91</idCode>
+        <idValue>Secondary grape</idValue>
+    <idCode>92</idCode>
+        <idValue>Primary grape</idValue>
+    <idCode>93</idCode>
+        <idValue>Beverage category</idValue>
+    <idCode>94</idCode>
+        <idValue>Beverage flavour</idValue>
+    <idCode>95</idCode>
+        <idValue>Wine growing region</idValue>
+    <idCode>96</idCode>
+        <idValue>Wine fruit</idValue>
+    <idCode>97</idCode>
+        <idValue>Beverage container characteristics</idValue>
+    <idCode>98</idCode>
+        <idValue>Size</idValue>
+    <idCode>100</idCode>
+        <idValue>Project subject</idValue>
+    <idCode>101</idCode>
+        <idValue>Test panel type</idValue>
+    <idCode>102</idCode>
+        <idValue>Anatomical origin of sample</idValue>
+    <idCode>103</idCode>
+        <idValue>Type of sample</idValue>
+    <idCode>104</idCode>
+        <idValue>Shelf-life code</idValue>
+    <idCode>105</idCode>
+        <idValue>Limiting operation</idValue>
+    <idCode>106</idCode>
+        <idValue>Temper</idValue>
+    <idCode>107</idCode>
+        <idValue>Filament</idValue>
+    <idCode>108</idCode>
+        <idValue>Denier</idValue>
+    <idCode>109</idCode>
+        <idValue>Fibre</idValue>
+    <idCode>110</idCode>
+        <idValue>Lustre</idValue>
+    <idCode>111</idCode>
+        <idValue>Shade</idValue>
+    <idCode>112</idCode>
+        <idValue>Tint</idValue>
+    <idCode>113</idCode>
+        <idValue>Fibre tow</idValue>
+    <idCode>114</idCode>
+        <idValue>Alloy</idValue>
+    <idCode>115</idCode>
+        <idValue>Machine run</idValue>
+    <idCode>116</idCode>
+        <idValue>Corrosion resistance</idValue>
+    <idCode>117</idCode>
+        <idValue>Visual</idValue>
+    <idCode>118</idCode>
+        <idValue>Electrical</idValue>
+    <idCode>119</idCode>
+        <idValue>Functional performance</idValue>
+    <idCode>120</idCode>
+        <idValue>Chemistry</idValue>
+    <idCode>121</idCode>
+        <idValue>Physical</idValue>
+    <idCode>122</idCode>
+        <idValue>Magnetic</idValue>
+    <idCode>123</idCode>
+        <idValue>Mechanical</idValue>
+    <idCode>124</idCode>
+        <idValue>Metallographic</idValue>
+    <idCode>125</idCode>
+        <idValue>Dye lot</idValue>
+    <idCode>126</idCode>
+        <idValue>Pattern</idValue>
+    <idCode>127</idCode>
+        <idValue>Appearance</idValue>
+    <idCode>128</idCode>
+        <idValue>Dispersion</idValue>
+    <idCode>129</idCode>
+        <idValue>Fluid</idValue>
+    <idCode>130</idCode>
+        <idValue>Flow</idValue>
+    <idCode>131</idCode>
+        <idValue>Moisture</idValue>
+    <idCode>132</idCode>
+        <idValue>Fabric</idValue>
+    <idCode>133</idCode>
+        <idValue>Shipping unit component</idValue>
+    <idCode>134</idCode>
+        <idValue>Manufacturing method</idValue>
+    <idCode>135</idCode>
+        <idValue>Engine</idValue>
+    <idCode>136</idCode>
+        <idValue>Transmission</idValue>
+    <idCode>137</idCode>
+        <idValue>Controlled substance class 3 (narcotic)</idValue>
+    <idCode>138</idCode>
+        <idValue>Controlled substance class 3N (non-narcotic)</idValue>
+    <idCode>139</idCode>
+        <idValue>Collateral</idValue>
+    <idCode>140</idCode>
+        <idValue>Chassis</idValue>
+    <idCode>141</idCode>
+        <idValue>Compliance method</idValue>
+    <idCode>142</idCode>
+        <idValue>Pipe coupling</idValue>
+    <idCode>143</idCode>
+        <idValue>Drug efficacy</idValue>
+    <idCode>144</idCode>
+        <idValue>Dosage form</idValue>
+    <idCode>145</idCode>
+        <idValue>Dimensional</idValue>
+    <idCode>146</idCode>
+        <idValue>Fold configuration</idValue>
+    <idCode>147</idCode>
+        <idValue>Fuel</idValue>
+    <idCode>149</idCode>
+        <idValue>Hydraulics</idValue>
+    <idCode>150</idCode>
+        <idValue>Coordinates</idValue>
+    <idCode>151</idCode>
+        <idValue>Options</idValue>
+    <idCode>152</idCode>
+        <idValue>Non-prescription drug</idValue>
+    <idCode>153</idCode>
+        <idValue>Prescription drug</idValue>
+    <idCode>154</idCode>
+        <idValue>Source</idValue>
+    <idCode>155</idCode>
+        <idValue>Therapeutic class</idValue>
+    <idCode>156</idCode>
+        <idValue>Therapeutic equivalency</idValue>
+    <idCode>157</idCode>
+        <idValue>Filter</idValue>
+    <idCode>158</idCode>
+        <idValue>Trim</idValue>
+    <idCode>159</idCode>
+        <idValue>Waste</idValue>
+    <idCode>160</idCode>
+        <idValue>Bottomhole location method</idValue>
+    <idCode>161</idCode>
+        <idValue>Bottomhole pressure method</idValue>
+    <idCode>162</idCode>
+        <idValue>Common chemical name</idValue>
+    <idCode>163</idCode>
+        <idValue>Chemical family name</idValue>
+    <idCode>164</idCode>
+        <idValue>Casing or liner type</idValue>
+    <idCode>165</idCode>
+        <idValue>Well direction</idValue>
+    <idCode>166</idCode>
+        <idValue>Electronic field</idValue>
+    <idCode>167</idCode>
+        <idValue>Formula</idValue>
+    <idCode>168</idCode>
+        <idValue>Ingredient</idValue>
+    <idCode>169</idCode>
+        <idValue>Market segment</idValue>
+    <idCode>170</idCode>
+        <idValue>Odour</idValue>
+    <idCode>171</idCode>
+        <idValue>Physical form</idValue>
+    <idCode>172</idCode>
+        <idValue>Well perforation continuity</idValue>
+    <idCode>173</idCode>
+        <idValue>Well perforation interval</idValue>
+    <idCode>174</idCode>
+        <idValue>Pipeline stream</idValue>
+    <idCode>175</idCode>
+        <idValue>Surface location method</idValue>
+    <idCode>176</idCode>
+        <idValue>Threshold</idValue>
+    <idCode>177</idCode>
+        <idValue>Well classification</idValue>
+    <idCode>178</idCode>
+        <idValue>Well test type</idValue>
+    <idCode>179</idCode>
+        <idValue>Major grade</idValue>
+    <idCode>180</idCode>
+        <idValue>Specification</idValue>
+    <idCode>181</idCode>
+        <idValue>Test sample location - ends</idValue>
+    <idCode>182</idCode>
+        <idValue>Product life cycle</idValue>
+    <idCode>183</idCode>
+        <idValue>Storage and display</idValue>
+    <idCode>184</idCode>
+        <idValue>Density</idValue>
+    <idCode>185</idCode>
+        <idValue>Print orientation</idValue>
+    <idCode>186</idCode>
+        <idValue>Solubility</idValue>
+</idList>

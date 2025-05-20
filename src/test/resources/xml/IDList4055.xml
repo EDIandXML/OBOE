@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Price condition</idValue>
+    <idCode>2</idCode>
+        <idValue>Despatch condition</idValue>
+    <idCode>3</idCode>
+        <idValue>Price and despatch condition</idValue>
+    <idCode>4</idCode>
+        <idValue>Collected by customer</idValue>
+    <idCode>5</idCode>
+        <idValue>Transport condition</idValue>
+    <idCode>6</idCode>
+        <idValue>Delivery condition</idValue>
+</idList>

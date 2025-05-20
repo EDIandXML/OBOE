@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Dime coated tank</idValue>
+    <idCode>2</idCode>
+        <idValue>Epoxy coated tank</idValue>
+    <idCode>3</idCode>
+        <idValue>IMO1</idValue>
+    <idCode>4</idCode>
+        <idValue>IMO2</idValue>
+    <idCode>5</idCode>
+        <idValue>IMO3</idValue>
+    <idCode>6</idCode>
+        <idValue>Pressurized tank</idValue>
+    <idCode>7</idCode>
+        <idValue>Refrigerated tank</idValue>
+    <idCode>8</idCode>
+        <idValue>Semi-refrigerated</idValue>
+    <idCode>9</idCode>
+        <idValue>Stainless steel tank</idValue>
+    <idCode>10</idCode>
+        <idValue>Nonworking reefer container 40 ft</idValue>
+    <idCode>11</idCode>
+        <idValue>Box pallet</idValue>
+    <idCode>12</idCode>
+        <idValue>Europallet</idValue>
+    <idCode>13</idCode>
+        <idValue>Scandinavian pallet</idValue>
+    <idCode>14</idCode>
+        <idValue>Trailer</idValue>
+    <idCode>15</idCode>
+        <idValue>Nonworking reefer container 20 ft</idValue>
+    <idCode>16</idCode>
+        <idValue>Exchangeable pallet</idValue>
+    <idCode>17</idCode>
+        <idValue>Semi-trailer</idValue>
+    <idCode>18</idCode>
+        <idValue>Tank container 20 ft.</idValue>
+    <idCode>19</idCode>
+        <idValue>Tank container 30 ft.</idValue>
+    <idCode>20</idCode>
+        <idValue>Tank container 40 ft.</idValue>
+    <idCode>21</idCode>
+        <idValue>Container IC 20 ft.</idValue>
+    <idCode>22</idCode>
+        <idValue>Container IC 30 ft.</idValue>
+    <idCode>23</idCode>
+        <idValue>Container IC 40 ft.</idValue>
+    <idCode>24</idCode>
+        <idValue>Refrigerator tank 20 ft.</idValue>
+    <idCode>25</idCode>
+        <idValue>Refrigerator tank 30 ft.</idValue>
+    <idCode>26</idCode>
+        <idValue>Refrigerator tank 40 ft.</idValue>
+    <idCode>27</idCode>
+        <idValue>Tank container IC 20 ft.</idValue>
+    <idCode>28</idCode>
+        <idValue>Tank container IC 30 ft.</idValue>
+    <idCode>29</idCode>
+        <idValue>Tank container IC 40 ft.</idValue>
+    <idCode>30</idCode>
+        <idValue>Refrigerator tank IC 20 ft.</idValue>
+    <idCode>32</idCode>
+        <idValue>Refrigerator tank IC 40 ft.</idValue>
+    <idCode>33</idCode>
+        <idValue>Movable case: L &lt; 6,15m</idValue>
+    <idCode>34</idCode>
+        <idValue>Movable case: 6,15m &lt; L &lt; 7,82m</idValue>
+    <idCode>35</idCode>
+        <idValue>Movable case: 7,82m &lt; L &lt; 9,15m</idValue>
+    <idCode>36</idCode>
+        <idValue>Movable case: 9,15m &lt; L &lt; 10,90m</idValue>
+    <idCode>37</idCode>
+        <idValue>Movable case: 10,90m &lt; L &lt; 13,75m</idValue>
+    <idCode>38</idCode>
+        <idValue>Totebin</idValue>
+    <idCode>39</idCode>
+        <idValue>Temperature controlled container 20 ft</idValue>
+    <idCode>40</idCode>
+        <idValue>Temperature controlled container 40 ft</idValue>
+</idList>

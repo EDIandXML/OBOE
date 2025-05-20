@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AAA</idCode>
+        <idValue>Paris exchange</idValue>
+    <idCode>AMS</idCode>
+        <idValue>Amsterdam exchange</idValue>
+    <idCode>ARG</idCode>
+        <idValue>Bolsa de Comercio de Buenos Aires</idValue>
+    <idCode>AST</idCode>
+        <idValue>Australian exchange</idValue>
+    <idCode>AUS</idCode>
+        <idValue>Wien exchange</idValue>
+    <idCode>BEL</idCode>
+        <idValue>Brussels exchange</idValue>
+    <idCode>CAN</idCode>
+        <idValue>Toronto exchange</idValue>
+    <idCode>CAR</idCode>
+        <idValue>Contractual agreement exchange rate</idValue>
+    <idCode>CIE</idCode>
+        <idValue>US Customs Information Exchange</idValue>
+    <idCode>DEN</idCode>
+        <idValue>Copenhagen exchange</idValue>
+    <idCode>ECR</idCode>
+        <idValue>European Community period exchange rate</idValue>
+    <idCode>FIN</idCode>
+        <idValue>Helsinki exchange</idValue>
+    <idCode>FRA</idCode>
+        <idValue>Frankfurt exchange</idValue>
+    <idCode>IMF</idCode>
+        <idValue>International Monetary Fund</idValue>
+    <idCode>LNF</idCode>
+        <idValue>London exchange, first closing</idValue>
+    <idCode>LNS</idCode>
+        <idValue>London exchange, second closing</idValue>
+    <idCode>MIL</idCode>
+        <idValue>Milan exchange</idValue>
+    <idCode>NOR</idCode>
+        <idValue>Oslo exchange</idValue>
+    <idCode>NYC</idCode>
+        <idValue>New York exchange</idValue>
+    <idCode>PHI</idCode>
+        <idValue>Philadelphia exchange</idValue>
+    <idCode>SRE</idCode>
+        <idValue>Specific railway exchange currency</idValue>
+    <idCode>SWE</idCode>
+        <idValue>Stockholm exchange</idValue>
+    <idCode>ZUR</idCode>
+        <idValue>Zurich exchange</idValue>
+</idList>

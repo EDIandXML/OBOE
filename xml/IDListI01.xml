@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<idList
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>00</idCode>
+        <idValue>No Authorization Information Present (No Meaningful Information in I02)</idValue>
+    <idCode>01</idCode>
+        <idValue>UCS Communications ID</idValue>
+    <idCode>02</idCode>
+        <idValue>EDX Communications ID</idValue>
+    <idCode>03</idCode>
+        <idValue>Additional Data Identification</idValue>
+    <idCode>04</idCode>
+        <idValue>Rail Communications ID</idValue>
+    <idCode>05</idCode>
+        <idValue>Department of Defense (DoD) Communication Identifier</idValue>
+    <idCode>06</idCode>
+        <idValue>United States Federal Government Communication Identifier</idValue>
+</idList>

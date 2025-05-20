@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Wood preparation</idValue>
+    <idCode>2</idCode>
+        <idValue>Causticizing</idValue>
+    <idCode>3</idCode>
+        <idValue>Digesting</idValue>
+    <idCode>4</idCode>
+        <idValue>Brownstock washing</idValue>
+    <idCode>5</idCode>
+        <idValue>Bleaching</idValue>
+    <idCode>6</idCode>
+        <idValue>Pulp drying</idValue>
+    <idCode>7</idCode>
+        <idValue>Freezing</idValue>
+    <idCode>8</idCode>
+        <idValue>Processing of structured information</idValue>
+    <idCode>9</idCode>
+        <idValue>Processing of identical information in structured and unstructured form</idValue>
+    <idCode>10</idCode>
+        <idValue>Processing of different information in structured and unstructured form</idValue>
+    <idCode>11</idCode>
+        <idValue>Processing of unstructured information</idValue>
+    <idCode>12</idCode>
+        <idValue>Slaughter</idValue>
+    <idCode>13</idCode>
+        <idValue>Packing</idValue>
+    <idCode>14</idCode>
+        <idValue>Heat sterilisation</idValue>
+    <idCode>15</idCode>
+        <idValue>Chemical sterilisation</idValue>
+    <idCode>16</idCode>
+        <idValue>Fumigation</idValue>
+    <idCode>17</idCode>
+        <idValue>Irradiation</idValue>
+</idList>

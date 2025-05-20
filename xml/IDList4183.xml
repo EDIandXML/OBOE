@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Item for national preference</idValue>
+    <idCode>2</idCode>
+        <idValue>Item qualifying for payment discount</idValue>
+    <idCode>3</idCode>
+        <idValue>Item not qualifying for payment discount</idValue>
+    <idCode>5</idCode>
+        <idValue>Item not to be included in bonus calculation</idValue>
+    <idCode>6</idCode>
+        <idValue>Subject to bonus</idValue>
+    <idCode>7</idCode>
+        <idValue>Subject to commission</idValue>
+    <idCode>8</idCode>
+        <idValue>Subject to discount</idValue>
+    <idCode>9</idCode>
+        <idValue>Freely available in EEC</idValue>
+    <idCode>10</idCode>
+        <idValue>Subject to settlement discount</idValue>
+    <idCode>11</idCode>
+        <idValue>Price includes excise</idValue>
+    <idCode>12</idCode>
+        <idValue>Price includes tax</idValue>
+    <idCode>13</idCode>
+        <idValue>Price include duty</idValue>
+    <idCode>14</idCode>
+        <idValue>Not subject to commission</idValue>
+    <idCode>15</idCode>
+        <idValue>Not subject to discount</idValue>
+    <idCode>16</idCode>
+        <idValue>Subject to embargo restriction</idValue>
+    <idCode>17</idCode>
+        <idValue>Item not subject to embargo restrictions</idValue>
+    <idCode>18</idCode>
+        <idValue>Item subject to national export restrictions</idValue>
+    <idCode>19</idCode>
+        <idValue>Item not subject to national export restrictions</idValue>
+    <idCode>20</idCode>
+        <idValue>Item subject to import restrictions</idValue>
+    <idCode>21</idCode>
+        <idValue>Item not subject to import restrictions</idValue>
+    <idCode>22</idCode>
+        <idValue>Signed</idValue>
+    <idCode>23</idCode>
+        <idValue>Authenticated</idValue>
+    <idCode>24</idCode>
+        <idValue>Original(s) to be certified</idValue>
+    <idCode>25</idCode>
+        <idValue>Original(s) to be legalized</idValue>
+    <idCode>26</idCode>
+        <idValue>Quote documentary credit number</idValue>
+    <idCode>27</idCode>
+        <idValue>Full set bill of lading</idValue>
+    <idCode>28</idCode>
+        <idValue>Full set bill of lading less one original</idValue>
+    <idCode>29</idCode>
+        <idValue>Full set bill of lading less two originals</idValue>
+    <idCode>30</idCode>
+        <idValue>Shipped on board</idValue>
+    <idCode>31</idCode>
+        <idValue>Freight prepaid to be marked</idValue>
+    <idCode>32</idCode>
+        <idValue>Freight collect to be marked</idValue>
+    <idCode>33</idCode>
+        <idValue>Issued to order and blank endorsed</idValue>
+    <idCode>34</idCode>
+        <idValue>Issued and/or endorsed to the order of</idValue>
+    <idCode>35</idCode>
+        <idValue>Consigned to</idValue>
+    <idCode>36</idCode>
+        <idValue>Notify</idValue>
+    <idCode>37</idCode>
+        <idValue>Issued by</idValue>
+    <idCode>38</idCode>
+        <idValue>Charter party allowed</idValue>
+    <idCode>39</idCode>
+        <idValue>Loading on deck allowed</idValue>
+    <idCode>40</idCode>
+        <idValue>Quote actual flight date and flight number</idValue>
+    <idCode>41</idCode>
+        <idValue>House AWB allowed</idValue>
+    <idCode>42</idCode>
+        <idValue>Express post receipt</idValue>
+    <idCode>43</idCode>
+        <idValue>Air parcel post receipt</idValue>
+    <idCode>44</idCode>
+        <idValue>Parcel post receipt</idValue>
+    <idCode>45</idCode>
+        <idValue>Issued to bearer</idValue>
+    <idCode>46</idCode>
+        <idValue>Full set of insurance certificate</idValue>
+    <idCode>47</idCode>
+        <idValue>Full set of insurance policy</idValue>
+    <idCode>48</idCode>
+        <idValue>Addressed to</idValue>
+    <idCode>49</idCode>
+        <idValue>Transmission by telecommunication</idValue>
+    <idCode>50</idCode>
+        <idValue>Bill of exchange drawn on</idValue>
+    <idCode>51</idCode>
+        <idValue>Bill of exchange in duplicate</idValue>
+    <idCode>52</idCode>
+        <idValue>Insurance certificate alternative</idValue>
+    <idCode>53</idCode>
+        <idValue>Insurance policy alternative</idValue>
+    <idCode>54</idCode>
+        <idValue>Original(s) and copies to be certified</idValue>
+    <idCode>55</idCode>
+        <idValue>Original(s) and copies to be legalized</idValue>
+    <idCode>56</idCode>
+        <idValue>Consolidators AWB allowed</idValue>
+    <idCode>57</idCode>
+        <idValue>Full set</idValue>
+    <idCode>58</idCode>
+        <idValue>Full set less one original</idValue>
+    <idCode>59</idCode>
+        <idValue>Full set less two originals</idValue>
+    <idCode>60</idCode>
+        <idValue>Goods despatched to</idValue>
+    <idCode>61</idCode>
+        <idValue>Insurance certificate allowed</idValue>
+    <idCode>62</idCode>
+        <idValue>Issued to</idValue>
+    <idCode>63</idCode>
+        <idValue>Original(s) and copy(ies) signed</idValue>
+    <idCode>64</idCode>
+        <idValue>Original(s) signed</idValue>
+    <idCode>65</idCode>
+        <idValue>No disposal clause</idValue>
+    <idCode>66</idCode>
+        <idValue>Delivery without change of ownership</idValue>
+    <idCode>67</idCode>
+        <idValue>Delivery with change of ownership</idValue>
+    <idCode>68</idCode>
+        <idValue>Supply for outright purchase/sale</idValue>
+    <idCode>69</idCode>
+        <idValue>Supply for consignment</idValue>
+    <idCode>70</idCode>
+        <idValue>Supply for sale &apos;on approval&apos; or after trial</idValue>
+    <idCode>71</idCode>
+        <idValue>Exchange of goods compensated in kind</idValue>
+    <idCode>72</idCode>
+        <idValue>Sale for export by foreigner travelling in member state concerned</idValue>
+    <idCode>73</idCode>
+        <idValue>Samples</idValue>
+    <idCode>74</idCode>
+        <idValue>Temporary export, loan or hire</idValue>
+    <idCode>75</idCode>
+        <idValue>Temporary export, leasing</idValue>
+    <idCode>76</idCode>
+        <idValue>Temporary export, operation for job processing</idValue>
+    <idCode>77</idCode>
+        <idValue>Temporary export, repair and maintenance against payment</idValue>
+    <idCode>78</idCode>
+        <idValue>Temporary export, repair and maintenance free of charge</idValue>
+    <idCode>79</idCode>
+        <idValue>Reimport following job processing</idValue>
+    <idCode>80</idCode>
+        <idValue>Reimport following repair and maintenance against payment</idValue>
+    <idCode>81</idCode>
+        <idValue>Reimport following repair and maintenance free of charge</idValue>
+    <idCode>82</idCode>
+        <idValue>Supply of goods under joint production contract for defence purposes</idValue>
+    <idCode>83</idCode>
+        <idValue>Supply of goods under joint production contract for civil purposes</idValue>
+    <idCode>84</idCode>
+        <idValue>Supply of goods for warehousing for foreign account</idValue>
+    <idCode>85</idCode>
+        <idValue>Supply of goods as gifts by country of despatch and food aid under European Economic Community regulation</idValue>
+    <idCode>86</idCode>
+        <idValue>Supply of goods for disaster relief equipment</idValue>
+    <idCode>87</idCode>
+        <idValue>Supply of goods as transactions without compensation</idValue>
+    <idCode>88</idCode>
+        <idValue>Supply of goods as returned consignment on which payment has been made</idValue>
+    <idCode>89</idCode>
+        <idValue>Supply of goods as returned consignment on which no payment has been made</idValue>
+    <idCode>90</idCode>
+        <idValue>Supply of goods in standard exchange giving rise to payment</idValue>
+    <idCode>91</idCode>
+        <idValue>Supply of goods in standard exchange not giving rise to payment</idValue>
+    <idCode>92</idCode>
+        <idValue>Supply of goods/services in standard exchange under warranty</idValue>
+    <idCode>93</idCode>
+        <idValue>Goods</idValue>
+    <idCode>94</idCode>
+        <idValue>Service</idValue>
+    <idCode>95</idCode>
+        <idValue>Financial regulation</idValue>
+    <idCode>96</idCode>
+        <idValue>Promotional advertising</idValue>
+    <idCode>97</idCode>
+        <idValue>Promotional price</idValue>
+    <idCode>98</idCode>
+        <idValue>Promotional shelf display</idValue>
+    <idCode>99</idCode>
+        <idValue>Safety data sheet required to accompany goods when moved</idValue>
+    <idCode>100</idCode>
+        <idValue>Multiple delivery points</idValue>
+    <idCode>101</idCode>
+        <idValue>Provisional settlement</idValue>
+    <idCode>102</idCode>
+        <idValue>Hire purchase</idValue>
+    <idCode>103</idCode>
+        <idValue>Loan</idValue>
+    <idCode>104</idCode>
+        <idValue>Rental</idValue>
+    <idCode>105</idCode>
+        <idValue>Processing</idValue>
+    <idCode>106</idCode>
+        <idValue>Exchange</idValue>
+    <idCode>107</idCode>
+        <idValue>Sale on commission</idValue>
+    <idCode>108</idCode>
+        <idValue>Financial compensation</idValue>
+    <idCode>109</idCode>
+        <idValue>Sale or return</idValue>
+    <idCode>110</idCode>
+        <idValue>Final settlement</idValue>
+    <idCode>111</idCode>
+        <idValue>Requires national pricing authority agreement</idValue>
+    <idCode>112</idCode>
+        <idValue>National pricing authority approved price</idValue>
+    <idCode>113</idCode>
+        <idValue>Not subject to national pricing authority approval</idValue>
+    <idCode>114</idCode>
+        <idValue>Agency approved price</idValue>
+    <idCode>115</idCode>
+        <idValue>Exempt from tax</idValue>
+    <idCode>116</idCode>
+        <idValue>Subject to postponed discount</idValue>
+    <idCode>117</idCode>
+        <idValue>Repair</idValue>
+    <idCode>118</idCode>
+        <idValue>Illustration affected by provisioning change</idValue>
+</idList>

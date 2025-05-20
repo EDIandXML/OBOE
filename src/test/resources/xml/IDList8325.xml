@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>ADNR code, OS</idValue>
+    <idCode>2</idCode>
+        <idValue>ADNR code, 1N</idValue>
+    <idCode>3</idCode>
+        <idValue>ADNR code, 1S</idValue>
+    <idCode>4</idCode>
+        <idValue>ADNR code, 2</idValue>
+    <idCode>5</idCode>
+        <idValue>ADNR code, 3</idValue>
+    <idCode>6</idCode>
+        <idValue>ADNR code, F</idValue>
+    <idCode>7</idCode>
+        <idValue>ADNR code, NF</idValue>
+    <idCode>8</idCode>
+        <idValue>ADNR code, ON</idValue>
+    <idCode>9</idCode>
+        <idValue>ADNR code, X</idValue>
+</idList>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE envelope SYSTEM "envelopeRules.dtd">
 <envelope type="X12">
@@ -305,3 +306,312 @@
         shortName="interchangeControlNumber"/>
   </segment>
 </envelope>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE envelope SYSTEM "envelopeRules.dtd">
+<envelope type="X12">
+  <segment name="Interchange Control Header" id="ISA"
+    occurs="1"
+    sequence="0"
+    required='M'
+    description="To start and identify an interchange of zero or more functional groups and interchange-related control segments"
+    shortName="InterchangeControlHeader">
+      <dataElement name="Authorization Information Qualifier" id="I01"
+        sequence="1"
+        description="Code to identify the type of information in the Authorization Information"
+        type="ID" required="M"
+        minLength="2" maxLength="2"
+        shortName="authorizationInformationQualifier">
+        <idListFile fileName="IDListI01.xml"/>
+      </dataElement>  
+      <dataElement name="Authorization Information" id="I02"
+        sequence="2"
+        description="Information used for additional identification or authorization of the interchange sender or the data in the interchange; the type of information is set by the Authorization Information Qualifier (I01)"
+        type="AN" required="M"
+        minLength="10" maxLength="10"
+        shortName="authorizationInformation"/>
+      <dataElement name="Security Information Qualifier" id="I03"
+        sequence="3"
+        description="Code to identify the type of information in the Security Information"
+        type="ID" required="M"
+        minLength="2" maxLength="2"
+        shortName="securityInformationQualifier">
+        <idListFile fileName="IDListI03.xml"/>
+      </dataElement>  
+      <dataElement name="Security Information" id="I04"
+        sequence="4"
+        description="This is used for identifying the security information about the interchange sender or the data in the interchange; the type of information is set by the Security Information Qualifier (I03)"
+        type="AN" required="M"
+        minLength="10" maxLength="10"
+        shortName="securityInformation"/>
+      <dataElement name="Interchange ID Qualifier" id="I05"
+        sequence="5"
+        description="Qualifier to designate the system/method of code structure used to designate the sender or receiver ID element being qualified"
+        type="ID" required="M"
+        minLength="2" maxLength="2"
+        shortName="interchangeIdQualifier">
+        <idListFile fileName="IDListI05.xml"/>
+      </dataElement>  
+      <dataElement name="Interchange Sender ID" id="I06"
+        sequence="6"
+        description="Identification code published by the sender for other parties to use as the receiver ID to route data to them; the sender always codes this value in the sender ID element"
+        type="AN" required="M"
+        minLength="15" maxLength="15"
+        shortName="interchangeSenderId"/>
+      <dataElement name="Interchange ID Qualifier" id="I05"
+        sequence="7"
+        description="Qualifier to designate the system/method of code structure used to designate the sender or receiver ID element being qualified"
+        type="ID" required="M"
+        minLength="2" maxLength="2"
+        shortName="interchangeIdQualifier">
+        <idListFile fileName="IDListI05.xml"/>
+      </dataElement>  
+      <dataElement name="Interchange Receiver ID" id="I07"
+        sequence="8"
+        description="Identification code published by the receiver of the data; When sending, it is used by the sender as their sending ID, thus other parties sending to them will use this as a receiving ID to route data to them"
+        type="AN" required="M"
+        minLength="15" maxLength="15"
+        shortName="interchangeReceiverId"/>
+      <dataElement name="Interchange Date" id="I08"
+        sequence="9"
+        description="Date of the interchange"
+        type="DT" required="M"
+        minLength="6" maxLength="6"
+        shortName="interchangeDate"/>
+      <dataElement name="Interchange Time" id="I09"
+        sequence="10"
+        description="Time of the interchange"
+        type="TM" required="M"
+        minLength="4" maxLength="4"
+        shortName="interchangeTime"/>
+      <dataElement name="Interchange Control Standards Identifier" id="I10"
+        sequence="11"
+        description="this is i65 in new versions"
+        type="AN" required="M"
+        minLength="1" maxLength="1"
+        shortName="interchangeControlStandardsIdentifier">
+      </dataElement>  
+      <dataElement name="Interchange Control Version Number" id="I11"
+        sequence="12"
+        description="This version number covers the interchange control segments"
+        type="ID" required="M"
+        minLength="5" maxLength="5"
+        shortName="interchangeControlVersionNumber">
+        <idListFile fileName="IDListI11.xml"/>
+      </dataElement>  
+      <dataElement name="Interchange Control Number" id="I12"
+        sequence="13"
+        description="A control number assigned by the interchange sender"
+        type="N0" required="M"
+        minLength="9" maxLength="9"
+        shortName="interchangeControlNumber"/>
+      <dataElement name="Acknowledgment Requested" id="I13"
+        sequence="14"
+        description="Code sent by the sender to request an interchange acknowledgment (TA1)"
+        type="ID" required="M"
+        minLength="1" maxLength="1"
+        shortName="acknowledgmentRequested">
+        <idListFile fileName="IDListI13.xml"/>
+      </dataElement>  
+      <dataElement name="Usage Indicator" id="I14"
+        sequence="15"
+        description="Code to indicate whether data enclosed by this interchange envelope is test, production or information"
+        type="ID" required="M"
+        minLength="1" maxLength="1"
+        shortName="usageIndicator">
+        <idListFile fileName="IDListI14.xml"/>
+      </dataElement>  
+      <dataElement name="Component Element Separator" id="I15"
+        sequence="16"
+        description="Type is not applicable; the component element separator is a delimiter and not a data element; this field provides the delimiter used to separate component data elements within a composite data structure; this value must be different than the data element separator and the segment terminator"
+        type="AN" required="M"
+        minLength="1" maxLength="1"
+        shortName="componentElementSeparator"/>
+  </segment>
+  <segment name="Grade of Service Request Segment" id="ISB"
+    occurs="1"
+    sequence="0"
+    required='O'
+    description="To request a delivery priority for this interchange higher or lower than normally provided"
+    shortName="GradeOfServiceRequestSegment">
+      <dataElement name="Grade of Service Code" id="I34"
+        sequence="1"
+        description="This indicates the relative urgency of the interchange as determined by the interchange sender"
+        type="ID" required="M"
+        minLength="1" maxLength="1"
+        shortName="gradeOfServiceCode">
+        <idListFile fileName="IDListI34.xml"/>
+      </dataElement>  
+  </segment>
+  <segment name="Deferred Delivery Request Segment" id="ISE"
+    occurs="1"
+    sequence="0"
+    required='O'
+    description="To specify the earliest time when the interchange can be delivered"
+    shortName="DeferredDeliveryRequestSegment">
+      <dataElement name="Delivery Date" id="I35"
+        sequence="1"
+        description="This is the earliest date the interchange can be delivered to the recipient"
+        type="DT" required="M"
+        minLength="6" maxLength="6"
+        shortName="deliveryDate"/>
+      <dataElement name="Delivery Time" id="I36"
+        sequence="2"
+        description="This is the earliest time the interchange can be delivered to the recipient"
+        type="TM" required="M"
+        minLength="4" maxLength="4"
+        shortName="deliveryTime"/>
+      <dataElement name="Delivery Time Code" id="I37"
+        sequence="3"
+        description="Code identifying the delivery time; in accordance with International Organization for Standardization (ISO) standard 8601, time can be specified by a + or - and an indication in hours in relation to universal time coordination (UTC) time; since + is a restricted character, the + and - are substituted by P and M in the codes that follow"
+        type="ID" required="O"
+        minLength="2" maxLength="2"
+        shortName="deliveryTimeCode">
+        <idListFile fileName="IDListI37.xml"/>
+      </dataElement>  
+  </segment>
+  <segment name="Interchange Acknowledgment" id="TA1"
+    occurs="-1"
+    sequence="0"
+    required='O'
+    description="To report the status of processing a received interchange header and trailer or the non-delivery by a network provider"
+    shortName="InterchangeAcknowledgment">
+      <dataElement name="Interchange Control Number" id="I12"
+        sequence="1"
+        description="A control number assigned by the interchange sender"
+        type="N0" required="M"
+        minLength="9" maxLength="9"
+        shortName="interchangeControlNumber"/>
+      <dataElement name="Interchange Date" id="I08"
+        sequence="2"
+        description="Date of the interchange"
+        type="DT" required="M"
+        minLength="6" maxLength="6"
+        shortName="interchangeDate"/>
+      <dataElement name="Interchange Time" id="I09"
+        sequence="3"
+        description="Time of the interchange"
+        type="TM" required="M"
+        minLength="4" maxLength="4"
+        shortName="interchangeTime"/>
+      <dataElement name="Interchange Acknowledgment Code" id="I17"
+        sequence="4"
+        description="This indicates the status of the receipt of the interchange control structure"
+        type="ID" required="M"
+        minLength="1" maxLength="1"
+        shortName="interchangeAcknowledgmentCode">
+        <idListFile fileName="IDListI17.xml"/>
+      </dataElement>  
+      <dataElement name="Interchange Note Code" id="I18"
+        sequence="5"
+        description="This numeric code indicates the error found processing the interchange control structure"
+        type="ID" required="M"
+        minLength="3" maxLength="3"
+        shortName="interchangeNoteCode">
+        <idListFile fileName="IDListI18.xml"/>
+      </dataElement>  
+  </segment>
+  <functionalGroup>
+      <segment name="Functional Group Header" id="GS"
+        occurs="1"
+        sequence="0"
+        required='M'
+        description="To indicate the beginning of a functional group and to provide control information"
+        shortName="FunctionalGroupHeader">
+          <dataElement name="Functional Identifier Code" id="479"
+            sequence="1"
+            description="Code identifying a group of application related transaction sets"
+            type="ID" required="M"
+            minLength="2" maxLength="2"
+            shortName="functionalIdentifierCode">
+            <idListFile fileName="IDList479.xml"/>
+          </dataElement>  
+          <dataElement name="Application Sender&apos;s Code" id="142"
+            sequence="2"
+            description="Code identifying party sending transmission; codes agreed to by trading partners"
+            type="AN" required="M"
+            minLength="2" maxLength="15"
+            shortName="applicationSenderSCode"/>
+          <dataElement name="Application Receiver&apos;s Code" id="124"
+            sequence="3"
+            description="Code identifying party receiving transmission; codes agreed to by trading partners"
+            type="AN" required="M"
+            minLength="2" maxLength="15"
+            shortName="applicationReceiverSCode"/>
+          <dataElement name="Date" id="373"
+            sequence="4"
+            description="Date expressed as CCYYMMDD"
+            type="DT" required="M"
+            minLength="6" maxLength="8"
+            shortName="date"/>
+          <dataElement name="Time" id="337"
+            sequence="5"
+            description="Time expressed in 24-hour clock time as follows: HHMM, or HHMMSS, or HHMMSSD, or HHMMSSDD, where H = hours (00-23), M = minutes (00-59), S = integer seconds (00-59) and DD = decimal seconds; decimal seconds are expressed as follows: D = tenths (0-9) and DD = hundredths (00-99)"
+            type="TM" required="M"
+            minLength="4" maxLength="8"
+            shortName="time"/>
+          <dataElement name="Group Control Number" id="28"
+            sequence="6"
+            description="Assigned number originated and maintained by the sender"
+            type="N0" required="M"
+            minLength="1" maxLength="9"
+            shortName="groupControlNumber"/>
+          <dataElement name="Responsible Agency Code" id="455"
+            sequence="7"
+            description="Code used in conjunction with Data Element 480 to identify the issuer of the standard"
+            type="ID" required="M"
+            minLength="1" maxLength="2"
+            shortName="responsibleAgencyCode">
+            <idListFile fileName="IDList455.xml"/>
+          </dataElement>  
+          <dataElement name="Version / Release / Industry Identifier Code" id="480"
+            sequence="8"
+            description="Code indicating the version, release, subrelease, and industry identifier of the EDI standard being used, including the GS and GE segments; if code in DE455 in GS segment is X, then in DE 480 positions 1-3 are the version number; positions 4-6 are the release and subrelease, level of the version; and positions 7-12 are the industry or trade association identifiers (optionally assigned by user); if code in DE455 in GS segment is T, then other formats are allowed"
+            type="AN" required="M"
+            minLength="1" maxLength="12"
+            shortName="versionReleaseIndustryIdentifierCode">
+            <idListFile fileName="IDList480.xml"/>
+          </dataElement>  
+      </segment>
+    <transactionSet/>
+    <segment name="Functional Group Trailer" id="GE"
+        occurs="1"
+        sequence="0"
+        required='M'
+        description="To indicate the end of a functional group and to provide control information"
+        shortName="FunctionalGroupTrailer">
+          <dataElement name="Number of Transaction Sets Included" id="97"
+            sequence="1"
+            description="Total number of transaction sets included in the functional group or interchange (transmission) group terminated by the trailer containing this data element"
+            type="N0" required="M"
+            minLength="1" maxLength="6"
+            shortName="numberOfTransactionSetsIncluded"/>
+          <dataElement name="Group Control Number" id="28"
+            sequence="2"
+            description="Assigned number originated and maintained by the sender"
+            type="N0" required="M"
+            minLength="1" maxLength="9"
+            shortName="groupControlNumber"/>
+      </segment>
+  </functionalGroup>
+  <segment name="Interchange Control Trailer" id="IEA"
+    occurs="1"
+    sequence="0"
+    required='M'
+    description="To define the end of an interchange of zero or more functional groups and interchange-related control segments"
+    shortName="InterchangeControlTrailer">
+      <dataElement name="Number of Included Functional Groups" id="I16"
+        sequence="1"
+        description="A count of the number of functional groups included in an interchange"
+        type="N0" required="M"
+        minLength="1" maxLength="5"
+        shortName="numberOfIncludedFunctionalGroups"/>
+      <dataElement name="Interchange Control Number" id="I12"
+        sequence="2"
+        description="A control number assigned by the interchange sender"
+        type="N0" required="M"
+        minLength="9" maxLength="9"
+        shortName="interchangeControlNumber"/>
+  </segment>
+</envelope>
+>>>>>>> 8e98933 (commit on 5.20.2025)

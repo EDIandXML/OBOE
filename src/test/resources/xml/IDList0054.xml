@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>First release</idValue>
+    <idCode>2</idCode>
+        <idValue>Second release</idValue>
+    <idCode>902</idCode>
+        <idValue>Trial release 1990</idValue>
+    <idCode>911</idCode>
+        <idValue>Trial release 1991</idValue>
+    <idCode>912</idCode>
+        <idValue>Standard release 1991</idValue>
+    <idCode>921</idCode>
+        <idValue>Trial release 1992</idValue>
+    <idCode>932</idCode>
+        <idValue>Standard release 1993</idValue>
+    <idCode>93A</idCode>
+        <idValue>Release 1993 - A</idValue>
+    <idCode>94A</idCode>
+        <idValue>Release 1994 - A</idValue>
+    <idCode>94B</idCode>
+        <idValue>Release 1994 - B</idValue>
+    <idCode>95A</idCode>
+        <idValue>Release 1995 - A</idValue>
+    <idCode>95B</idCode>
+        <idValue>Release 1995 - B</idValue>
+    <idCode>96A</idCode>
+        <idValue>Release 1996 - A</idValue>
+    <idCode>96B</idCode>
+        <idValue>Release 1996 - B</idValue>
+    <idCode>97A</idCode>
+        <idValue>Release 1997 - A</idValue>
+</idList>

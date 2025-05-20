@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AA</idCode>
+        <idValue>Product version number</idValue>
+    <idCode>AB</idCode>
+        <idValue>Assembly</idValue>
+    <idCode>AC</idCode>
+        <idValue>HIBC (Health Industry Bar Code)</idValue>
+    <idCode>AD</idCode>
+        <idValue>Cold roll number</idValue>
+    <idCode>AE</idCode>
+        <idValue>Hot roll number</idValue>
+    <idCode>AF</idCode>
+        <idValue>Slab number</idValue>
+    <idCode>AG</idCode>
+        <idValue>Software revision number</idValue>
+    <idCode>AH</idCode>
+        <idValue>UPC (Universal Product Code) Consumer package code (1-5-5)</idValue>
+    <idCode>AI</idCode>
+        <idValue>UPC (Universal Product Code) Consumer package code (1-5-5-1)</idValue>
+    <idCode>AJ</idCode>
+        <idValue>Sample number</idValue>
+    <idCode>AK</idCode>
+        <idValue>Pack number</idValue>
+    <idCode>AL</idCode>
+        <idValue>UPC (Universal Product Code) Shipping container code (1-2-5- 5)</idValue>
+    <idCode>AM</idCode>
+        <idValue>UPC (Universal Product Code)/EAN (European article number) Shipping container code (1-2-5-5-1)</idValue>
+    <idCode>AN</idCode>
+        <idValue>UPC (Universal Product Code) suffix</idValue>
+    <idCode>AO</idCode>
+        <idValue>State label code</idValue>
+    <idCode>AP</idCode>
+        <idValue>Heat number</idValue>
+    <idCode>AT</idCode>
+        <idValue>Price look up number</idValue>
+    <idCode>AU</idCode>
+        <idValue>NSN (North Atlantic Treaty Organization Stock Number)</idValue>
+    <idCode>AV</idCode>
+        <idValue>Refined product code</idValue>
+    <idCode>AW</idCode>
+        <idValue>Exhibit</idValue>
+    <idCode>AX</idCode>
+        <idValue>End item</idValue>
+    <idCode>AY</idCode>
+        <idValue>Federal supply classification</idValue>
+    <idCode>AZ</idCode>
+        <idValue>Engineering data list</idValue>
+    <idCode>BB</idCode>
+        <idValue>Lot number</idValue>
+    <idCode>BC</idCode>
+        <idValue>National drug code 4-4-2 format</idValue>
+    <idCode>BD</idCode>
+        <idValue>National drug code 5-3-2 format</idValue>
+    <idCode>BE</idCode>
+        <idValue>National drug code 5-4-1 format</idValue>
+    <idCode>BF</idCode>
+        <idValue>National drug code 5-4-2 format</idValue>
+    <idCode>BG</idCode>
+        <idValue>National drug code</idValue>
+    <idCode>BH</idCode>
+        <idValue>Part number</idValue>
+    <idCode>BI</idCode>
+        <idValue>Local Stock Number (LSN)</idValue>
+    <idCode>BJ</idCode>
+        <idValue>Next higher assembly number</idValue>
+    <idCode>BK</idCode>
+        <idValue>Data category</idValue>
+    <idCode>BL</idCode>
+        <idValue>Control number</idValue>
+    <idCode>BM</idCode>
+        <idValue>Special material identification code</idValue>
+    <idCode>BO</idCode>
+        <idValue>Buyers color</idValue>
+    <idCode>BP</idCode>
+        <idValue>Buyer&apos;s part number</idValue>
+    <idCode>CC</idCode>
+        <idValue>Industry commodity code</idValue>
+    <idCode>CG</idCode>
+        <idValue>Commodity grouping</idValue>
+    <idCode>CL</idCode>
+        <idValue>Color number</idValue>
+    <idCode>CR</idCode>
+        <idValue>Contract number</idValue>
+    <idCode>CV</idCode>
+        <idValue>Customs article number</idValue>
+    <idCode>DR</idCode>
+        <idValue>Drawing revision number</idValue>
+    <idCode>DW</idCode>
+        <idValue>Drawing</idValue>
+    <idCode>EC</idCode>
+        <idValue>Engineering change level</idValue>
+    <idCode>EF</idCode>
+        <idValue>Material code</idValue>
+    <idCode>EN</idCode>
+        <idValue>International Article Numbering Association (EAN)</idValue>
+    <idCode>GB</idCode>
+        <idValue>Buyer&apos;s internal product group code</idValue>
+    <idCode>GN</idCode>
+        <idValue>National product group code</idValue>
+    <idCode>GS</idCode>
+        <idValue>General specification number</idValue>
+    <idCode>HS</idCode>
+        <idValue>Harmonised system</idValue>
+    <idCode>IB</idCode>
+        <idValue>ISBN (International Standard Book Number)</idValue>
+    <idCode>IN</idCode>
+        <idValue>Buyer&apos;s item number</idValue>
+    <idCode>IS</idCode>
+        <idValue>ISSN (International Standard Serial Number)</idValue>
+    <idCode>IT</idCode>
+        <idValue>Buyer&apos;s style number</idValue>
+    <idCode>IZ</idCode>
+        <idValue>Buyer&apos;s size code</idValue>
+    <idCode>MA</idCode>
+        <idValue>Machine number</idValue>
+    <idCode>MF</idCode>
+        <idValue>Manufacturer&apos;s (producer&apos;s) article number</idValue>
+    <idCode>MN</idCode>
+        <idValue>Model number</idValue>
+    <idCode>MP</idCode>
+        <idValue>Product/service identification number</idValue>
+    <idCode>NB</idCode>
+        <idValue>Batch number</idValue>
+    <idCode>ON</idCode>
+        <idValue>Customer order number</idValue>
+    <idCode>PD</idCode>
+        <idValue>Part number description</idValue>
+    <idCode>PL</idCode>
+        <idValue>Purchaser&apos;s order line number</idValue>
+    <idCode>PO</idCode>
+        <idValue>Purchase order number</idValue>
+    <idCode>PV</idCode>
+        <idValue>Promotional variant number</idValue>
+    <idCode>QS</idCode>
+        <idValue>Buyer&apos;s qualifier for size</idValue>
+    <idCode>RC</idCode>
+        <idValue>Returnable container number</idValue>
+    <idCode>RN</idCode>
+        <idValue>Release number</idValue>
+    <idCode>RU</idCode>
+        <idValue>Run number</idValue>
+    <idCode>RY</idCode>
+        <idValue>Record keeping of model year</idValue>
+    <idCode>SA</idCode>
+        <idValue>Supplier&apos;s article number</idValue>
+    <idCode>SG</idCode>
+        <idValue>Standard group of products (mixed assortment)</idValue>
+    <idCode>SK</idCode>
+        <idValue>SKU (Stock keeping unit)</idValue>
+    <idCode>SN</idCode>
+        <idValue>Serial number</idValue>
+    <idCode>SRS</idCode>
+        <idValue>RSK number</idValue>
+    <idCode>SS</idCode>
+        <idValue>Supplier&apos;s supplier article number</idValue>
+    <idCode>ST</idCode>
+        <idValue>Style number</idValue>
+    <idCode>TG</idCode>
+        <idValue>Transport group number</idValue>
+    <idCode>UA</idCode>
+        <idValue>Ultimate customer&apos;s article number</idValue>
+    <idCode>UP</idCode>
+        <idValue>UPC (Universal product code)</idValue>
+    <idCode>VN</idCode>
+        <idValue>Vendor item number</idValue>
+    <idCode>VP</idCode>
+        <idValue>Vendor&apos;s (seller&apos;s) part number</idValue>
+    <idCode>VS</idCode>
+        <idValue>Vendor&apos;s supplemental item number</idValue>
+    <idCode>VX</idCode>
+        <idValue>Vendor specification number</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

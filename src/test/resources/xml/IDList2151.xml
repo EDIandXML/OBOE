@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>3M</idCode>
+        <idValue>Quarter</idValue>
+    <idCode>6M</idCode>
+        <idValue>Half-year</idValue>
+    <idCode>AA</idCode>
+        <idValue>Air hour</idValue>
+    <idCode>AD</idCode>
+        <idValue>Air day</idValue>
+    <idCode>CD</idCode>
+        <idValue>Calendar day (includes weekends and holidays)</idValue>
+    <idCode>CW</idCode>
+        <idValue>Calendar week (7day)</idValue>
+    <idCode>D</idCode>
+        <idValue>Day</idValue>
+    <idCode>DC</idCode>
+        <idValue>Ten days period</idValue>
+    <idCode>DW</idCode>
+        <idValue>Work day</idValue>
+    <idCode>F</idCode>
+        <idValue>Period of two weeks</idValue>
+    <idCode>H</idCode>
+        <idValue>Hour</idValue>
+    <idCode>HM</idCode>
+        <idValue>Half month</idValue>
+    <idCode>M</idCode>
+        <idValue>Month</idValue>
+    <idCode>MN</idCode>
+        <idValue>Minute</idValue>
+    <idCode>P</idCode>
+        <idValue>Four month period</idValue>
+    <idCode>S</idCode>
+        <idValue>Second</idValue>
+    <idCode>SD</idCode>
+        <idValue>Surface day</idValue>
+    <idCode>SI</idCode>
+        <idValue>Indefinite</idValue>
+    <idCode>W</idCode>
+        <idValue>Week</idValue>
+    <idCode>WD</idCode>
+        <idValue>Working days</idValue>
+    <idCode>WW</idCode>
+        <idValue>5 day work week</idValue>
+    <idCode>Y</idCode>
+        <idValue>Year</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

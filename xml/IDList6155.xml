@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Clear</idValue>
+    <idCode>2</idCode>
+        <idValue>Hazy</idValue>
+    <idCode>3</idCode>
+        <idValue>Excess</idValue>
+    <idCode>4</idCode>
+        <idValue>Some</idValue>
+    <idCode>5</idCode>
+        <idValue>Undetectable</idValue>
+    <idCode>6</idCode>
+        <idValue>Trace</idValue>
+    <idCode>7</idCode>
+        <idValue>Yes</idValue>
+    <idCode>8</idCode>
+        <idValue>Closed</idValue>
+    <idCode>9</idCode>
+        <idValue>Passed</idValue>
+    <idCode>10</idCode>
+        <idValue>Present</idValue>
+    <idCode>11</idCode>
+        <idValue>Gel</idValue>
+    <idCode>12</idCode>
+        <idValue>OK</idValue>
+    <idCode>13</idCode>
+        <idValue>Slight</idValue>
+    <idCode>14</idCode>
+        <idValue>No Good</idValue>
+    <idCode>15</idCode>
+        <idValue>Marginal</idValue>
+    <idCode>16</idCode>
+        <idValue>Nil</idValue>
+    <idCode>18</idCode>
+        <idValue>Open</idValue>
+    <idCode>19</idCode>
+        <idValue>Free</idValue>
+    <idCode>20</idCode>
+        <idValue>No</idValue>
+    <idCode>21</idCode>
+        <idValue>Checked</idValue>
+    <idCode>22</idCode>
+        <idValue>Fail</idValue>
+    <idCode>23</idCode>
+        <idValue>Absent</idValue>
+    <idCode>24</idCode>
+        <idValue>Good</idValue>
+    <idCode>25</idCode>
+        <idValue>Fair</idValue>
+    <idCode>26</idCode>
+        <idValue>Poor</idValue>
+    <idCode>27</idCode>
+        <idValue>Excellent</idValue>
+    <idCode>28</idCode>
+        <idValue>Bright</idValue>
+    <idCode>29</idCode>
+        <idValue>To be determined</idValue>
+    <idCode>32</idCode>
+        <idValue>Conditional, free</idValue>
+    <idCode>33</idCode>
+        <idValue>Balance</idValue>
+    <idCode>34</idCode>
+        <idValue>Complete</idValue>
+    <idCode>35</idCode>
+        <idValue>Low</idValue>
+    <idCode>36</idCode>
+        <idValue>Not applicable</idValue>
+    <idCode>37</idCode>
+        <idValue>Not determined</idValue>
+    <idCode>38</idCode>
+        <idValue>Negligible</idValue>
+    <idCode>39</idCode>
+        <idValue>Moderate</idValue>
+    <idCode>40</idCode>
+        <idValue>Appreciable</idValue>
+    <idCode>41</idCode>
+        <idValue>Not available</idValue>
+    <idCode>42</idCode>
+        <idValue>Uncontrolled temperature</idValue>
+    <idCode>43</idCode>
+        <idValue>Chilled</idValue>
+    <idCode>44</idCode>
+        <idValue>Frozen</idValue>
+    <idCode>45</idCode>
+        <idValue>Temperature controlled</idValue>
+</idList>

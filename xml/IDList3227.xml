@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Place of terms of delivery</idValue>
+    <idCode>2</idCode>
+        <idValue>Payment place</idValue>
+    <idCode>4</idCode>
+        <idValue>Goods receipt place</idValue>
+    <idCode>5</idCode>
+        <idValue>Place of departure</idValue>
+    <idCode>7</idCode>
+        <idValue>Place of delivery</idValue>
+    <idCode>8</idCode>
+        <idValue>Place of destination</idValue>
+    <idCode>9</idCode>
+        <idValue>Place/port of loading</idValue>
+    <idCode>10</idCode>
+        <idValue>Place of acceptance</idValue>
+    <idCode>11</idCode>
+        <idValue>Place/port of discharge</idValue>
+    <idCode>12</idCode>
+        <idValue>Port of discharge</idValue>
+    <idCode>13</idCode>
+        <idValue>Place of transhipment</idValue>
+    <idCode>14</idCode>
+        <idValue>Location of goods</idValue>
+    <idCode>15</idCode>
+        <idValue>Place of transfer responsibility</idValue>
+    <idCode>16</idCode>
+        <idValue>Place of transfer of ownership</idValue>
+    <idCode>17</idCode>
+        <idValue>Border crossing place</idValue>
+    <idCode>18</idCode>
+        <idValue>Warehouse</idValue>
+    <idCode>19</idCode>
+        <idValue>Factory/plant</idValue>
+    <idCode>20</idCode>
+        <idValue>Place of ultimate destination of goods</idValue>
+    <idCode>21</idCode>
+        <idValue>Terms of sale place</idValue>
+    <idCode>22</idCode>
+        <idValue>Customs office of clearance</idValue>
+    <idCode>23</idCode>
+        <idValue>Port of release</idValue>
+    <idCode>24</idCode>
+        <idValue>Port of entry</idValue>
+    <idCode>25</idCode>
+        <idValue>Country</idValue>
+    <idCode>26</idCode>
+        <idValue>City</idValue>
+    <idCode>27</idCode>
+        <idValue>Country of origin</idValue>
+    <idCode>28</idCode>
+        <idValue>Country of destination of goods</idValue>
+    <idCode>29</idCode>
+        <idValue>Railway station</idValue>
+    <idCode>30</idCode>
+        <idValue>Country of source</idValue>
+    <idCode>31</idCode>
+        <idValue>Building</idValue>
+    <idCode>32</idCode>
+        <idValue>Beginning of chargeable section</idValue>
+    <idCode>33</idCode>
+        <idValue>Baseport of discharge</idValue>
+    <idCode>34</idCode>
+        <idValue>Baseport of loading</idValue>
+    <idCode>35</idCode>
+        <idValue>Country of exportation/despatch</idValue>
+    <idCode>36</idCode>
+        <idValue>Country of ultimate destination</idValue>
+    <idCode>37</idCode>
+        <idValue>Country of last consignment</idValue>
+    <idCode>38</idCode>
+        <idValue>Country of first destination</idValue>
+    <idCode>39</idCode>
+        <idValue>Country of production</idValue>
+    <idCode>40</idCode>
+        <idValue>Country of trading</idValue>
+    <idCode>41</idCode>
+        <idValue>Customs office of entry</idValue>
+    <idCode>42</idCode>
+        <idValue>Customs office of exit</idValue>
+    <idCode>43</idCode>
+        <idValue>Place of Customs examination</idValue>
+    <idCode>44</idCode>
+        <idValue>Place of authentication of document</idValue>
+    <idCode>45</idCode>
+        <idValue>Customs office of destination (transit)</idValue>
+    <idCode>46</idCode>
+        <idValue>Region of despatch</idValue>
+    <idCode>47</idCode>
+        <idValue>Region of destination</idValue>
+    <idCode>48</idCode>
+        <idValue>Region of production</idValue>
+    <idCode>49</idCode>
+        <idValue>Country of transit</idValue>
+    <idCode>50</idCode>
+        <idValue>Customs office of transit</idValue>
+    <idCode>51</idCode>
+        <idValue>Country of invalid transit guarantee</idValue>
+    <idCode>52</idCode>
+        <idValue>Country of destination (transit)</idValue>
+    <idCode>53</idCode>
+        <idValue>Charge and freight due from</idValue>
+    <idCode>54</idCode>
+        <idValue>Manufacturing department</idValue>
+    <idCode>55</idCode>
+        <idValue>Charges and freight payable to</idValue>
+    <idCode>56</idCode>
+        <idValue>End of chargeable section</idValue>
+    <idCode>57</idCode>
+        <idValue>Place of payment</idValue>
+    <idCode>58</idCode>
+        <idValue>Full track loading or unloading</idValue>
+    <idCode>60</idCode>
+        <idValue>Place of arrival</idValue>
+    <idCode>61</idCode>
+        <idValue>Next port of call</idValue>
+    <idCode>62</idCode>
+        <idValue>On-carriage port</idValue>
+    <idCode>64</idCode>
+        <idValue>First optional place of discharge</idValue>
+    <idCode>65</idCode>
+        <idValue>Final port or place of discharge</idValue>
+    <idCode>66</idCode>
+        <idValue>Express railway station</idValue>
+    <idCode>67</idCode>
+        <idValue>Mixed cargo railway station</idValue>
+    <idCode>68</idCode>
+        <idValue>Second optional place of discharge</idValue>
+    <idCode>69</idCode>
+        <idValue>Next non-discharge port of call</idValue>
+    <idCode>70</idCode>
+        <idValue>Third optional place of discharge</idValue>
+    <idCode>71</idCode>
+        <idValue>Reconsolidation point</idValue>
+    <idCode>72</idCode>
+        <idValue>Fourth optional place of discharge</idValue>
+    <idCode>73</idCode>
+        <idValue>Bill of lading release office</idValue>
+    <idCode>74</idCode>
+        <idValue>Transhipment excluding this place</idValue>
+    <idCode>75</idCode>
+        <idValue>Transhipment limited to this place</idValue>
+    <idCode>76</idCode>
+        <idValue>Original port of loading</idValue>
+    <idCode>77</idCode>
+        <idValue>First port of call - non-discharging</idValue>
+    <idCode>78</idCode>
+        <idValue>First port of call - discharging</idValue>
+    <idCode>79</idCode>
+        <idValue>Place/port of first entry</idValue>
+    <idCode>80</idCode>
+        <idValue>Place of despatch</idValue>
+    <idCode>81</idCode>
+        <idValue>Fifth optional place of discharge</idValue>
+    <idCode>82</idCode>
+        <idValue>Pre-carriage port</idValue>
+    <idCode>83</idCode>
+        <idValue>Place of delivery (by on carriage)</idValue>
+    <idCode>84</idCode>
+        <idValue>Transport contract place of acceptance</idValue>
+    <idCode>85</idCode>
+        <idValue>Transport contract place of destination</idValue>
+    <idCode>86</idCode>
+        <idValue>Country of valid transit guarantee</idValue>
+    <idCode>87</idCode>
+        <idValue>Place/port of conveyance initial arrival</idValue>
+    <idCode>88</idCode>
+        <idValue>Place of receipt</idValue>
+    <idCode>89</idCode>
+        <idValue>Place of registration</idValue>
+    <idCode>90</idCode>
+        <idValue>Place/location where special treatments have happened or must happen</idValue>
+    <idCode>91</idCode>
+        <idValue>Place of document issue</idValue>
+    <idCode>92</idCode>
+        <idValue>Routing</idValue>
+    <idCode>93</idCode>
+        <idValue>Station of application of additional costs</idValue>
+    <idCode>94</idCode>
+        <idValue>Previous port of call</idValue>
+    <idCode>95</idCode>
+        <idValue>Sailing destination area</idValue>
+    <idCode>96</idCode>
+        <idValue>Place of lodgement of documents</idValue>
+    <idCode>97</idCode>
+        <idValue>Optional place of discharge</idValue>
+    <idCode>98</idCode>
+        <idValue>Place of empty equipment despatch</idValue>
+    <idCode>99</idCode>
+        <idValue>Place of empty equipment return</idValue>
+    <idCode>100</idCode>
+        <idValue>Place/port of warehouse entry</idValue>
+    <idCode>101</idCode>
+        <idValue>Country of first sale</idValue>
+    <idCode>102</idCode>
+        <idValue>Country of purchase</idValue>
+    <idCode>103</idCode>
+        <idValue>Place of transfer</idValue>
+    <idCode>104</idCode>
+        <idValue>Place of deconsolidation</idValue>
+    <idCode>105</idCode>
+        <idValue>Place of consumption</idValue>
+    <idCode>106</idCode>
+        <idValue>Region of origin</idValue>
+    <idCode>107</idCode>
+        <idValue>Place of consolidation</idValue>
+    <idCode>108</idCode>
+        <idValue>Rate combination point</idValue>
+    <idCode>109</idCode>
+        <idValue>Place of prolongation decision of delivery delay</idValue>
+    <idCode>110</idCode>
+        <idValue>Recharging place/location</idValue>
+    <idCode>111</idCode>
+        <idValue>Customs office of despatch</idValue>
+    <idCode>112</idCode>
+        <idValue>Region of equipment availability</idValue>
+    <idCode>113</idCode>
+        <idValue>Country of despatch</idValue>
+    <idCode>114</idCode>
+        <idValue>Customs office of export</idValue>
+    <idCode>115</idCode>
+        <idValue>Free zone of export</idValue>
+    <idCode>116</idCode>
+        <idValue>Region of export/despatch</idValue>
+    <idCode>117</idCode>
+        <idValue>Place of collection</idValue>
+    <idCode>118</idCode>
+        <idValue>Customs office of departure</idValue>
+    <idCode>119</idCode>
+        <idValue>Customs office of transit guarantee</idValue>
+    <idCode>120</idCode>
+        <idValue>Country of transhipment</idValue>
+    <idCode>121</idCode>
+        <idValue>Country of sale</idValue>
+    <idCode>122</idCode>
+        <idValue>Customs office of destination</idValue>
+    <idCode>123</idCode>
+        <idValue>Wagon-load railway station</idValue>
+    <idCode>124</idCode>
+        <idValue>Siding</idValue>
+    <idCode>125</idCode>
+        <idValue>Last place/port of call of conveyance</idValue>
+    <idCode>126</idCode>
+        <idValue>Country of previous Customs procedure</idValue>
+    <idCode>127</idCode>
+        <idValue>Customs office of registration of previous Customs declaration</idValue>
+    <idCode>128</idCode>
+        <idValue>Participant sender location</idValue>
+    <idCode>129</idCode>
+        <idValue>Wage negotiation district</idValue>
+    <idCode>130</idCode>
+        <idValue>Place of ultimate destination of conveyance</idValue>
+    <idCode>131</idCode>
+        <idValue>Place of loading of empty equipment</idValue>
+    <idCode>132</idCode>
+        <idValue>Place of discharge of empty equipment</idValue>
+    <idCode>133</idCode>
+        <idValue>Region of delivery</idValue>
+    <idCode>134</idCode>
+        <idValue>Petroleum warehouse</idValue>
+    <idCode>135</idCode>
+        <idValue>Place of entry (Customs)</idValue>
+    <idCode>136</idCode>
+        <idValue>Living animals care place</idValue>
+    <idCode>137</idCode>
+        <idValue>Re-icing place</idValue>
+    <idCode>138</idCode>
+        <idValue>Weighting place</idValue>
+    <idCode>139</idCode>
+        <idValue>Marshalling yard</idValue>
+    <idCode>140</idCode>
+        <idValue>Shopping station</idValue>
+    <idCode>141</idCode>
+        <idValue>Loading dock</idValue>
+    <idCode>142</idCode>
+        <idValue>Port connection</idValue>
+    <idCode>143</idCode>
+        <idValue>Place of expiry</idValue>
+    <idCode>144</idCode>
+        <idValue>Place of negotiation</idValue>
+    <idCode>145</idCode>
+        <idValue>Claims payable place</idValue>
+    <idCode>146</idCode>
+        <idValue>Documentary credit available in</idValue>
+    <idCode>147</idCode>
+        <idValue>Stowage cell</idValue>
+    <idCode>148</idCode>
+        <idValue>For transportation to</idValue>
+    <idCode>149</idCode>
+        <idValue>Loading on board/despatch/taking in charge at/from</idValue>
+    <idCode>150</idCode>
+        <idValue>Container stack position</idValue>
+    <idCode>151</idCode>
+        <idValue>Private box</idValue>
+    <idCode>152</idCode>
+        <idValue>Next port of discharge</idValue>
+    <idCode>153</idCode>
+        <idValue>Port of call</idValue>
+    <idCode>154</idCode>
+        <idValue>Place/location of on-hire</idValue>
+    <idCode>155</idCode>
+        <idValue>Place/location of off-hire</idValue>
+    <idCode>156</idCode>
+        <idValue>Other carriers terminal</idValue>
+    <idCode>157</idCode>
+        <idValue>Country of Value Added Tax (VAT) jurisdiction</idValue>
+    <idCode>158</idCode>
+        <idValue>Contact location</idValue>
+    <idCode>159</idCode>
+        <idValue>Additional internal destination</idValue>
+    <idCode>160</idCode>
+        <idValue>Foreign port of call</idValue>
+    <idCode>161</idCode>
+        <idValue>Maintenance location</idValue>
+    <idCode>162</idCode>
+        <idValue>Place or location of sale</idValue>
+    <idCode>163</idCode>
+        <idValue>Direct investment country</idValue>
+    <idCode>164</idCode>
+        <idValue>Berth</idValue>
+    <idCode>165</idCode>
+        <idValue>Construction country</idValue>
+    <idCode>166</idCode>
+        <idValue>Donation acting country</idValue>
+    <idCode>167</idCode>
+        <idValue>Payment transaction country</idValue>
+    <idCode>168</idCode>
+        <idValue>Physical place of return of item</idValue>
+    <idCode>169</idCode>
+        <idValue>Relay port</idValue>
+    <idCode>170</idCode>
+        <idValue>Final port of discharge</idValue>
+    <idCode>171</idCode>
+        <idValue>Place of destination for pre-stacking prior to stowage</idValue>
+    <idCode>172</idCode>
+        <idValue>Reporting location</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

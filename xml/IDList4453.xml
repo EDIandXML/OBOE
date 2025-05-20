@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Text for subsequent use</idValue>
+    <idCode>2</idCode>
+        <idValue>Text replacing missing code</idValue>
+    <idCode>3</idCode>
+        <idValue>Text for immediate use</idValue>
+    <idCode>4</idCode>
+        <idValue>No action required</idValue>
+</idList>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Product</idValue>
+    <idCode>2</idCode>
+        <idValue>Licence</idValue>
+    <idCode>3</idCode>
+        <idValue>Package</idValue>
+    <idCode>4</idCode>
+        <idValue>Vehicle reference set</idValue>
+    <idCode>5</idCode>
+        <idValue>Source database</idValue>
+    <idCode>6</idCode>
+        <idValue>Target database</idValue>
+    <idCode>7</idCode>
+        <idValue>Value list</idValue>
+    <idCode>8</idCode>
+        <idValue>Contract</idValue>
+    <idCode>9</idCode>
+        <idValue>Financial security</idValue>
+    <idCode>10</idCode>
+        <idValue>Accounting</idValue>
+</idList>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Charge payment currency</idValue>
+    <idCode>2</idCode>
+        <idValue>Reference currency</idValue>
+    <idCode>3</idCode>
+        <idValue>Target currency</idValue>
+    <idCode>4</idCode>
+        <idValue>Transport document currency</idValue>
+    <idCode>5</idCode>
+        <idValue>Calculation base currency</idValue>
+    <idCode>6</idCode>
+        <idValue>Information Currency</idValue>
+    <idCode>7</idCode>
+        <idValue>Currency of the account</idValue>
+</idList>

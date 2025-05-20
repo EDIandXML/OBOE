@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Barge chemical tanker</idValue>
+    <idCode>2</idCode>
+        <idValue>Coaster chemical tanker</idValue>
+    <idCode>3</idCode>
+        <idValue>Dry bulk carrier</idValue>
+    <idCode>4</idCode>
+        <idValue>Deep sea chemical tanker</idValue>
+    <idCode>5</idCode>
+        <idValue>Gas tanker</idValue>
+    <idCode>6</idCode>
+        <idValue>Aircraft</idValue>
+    <idCode>9</idCode>
+        <idValue>Exceptional transport</idValue>
+    <idCode>11</idCode>
+        <idValue>Ship</idValue>
+    <idCode>12</idCode>
+        <idValue>Ship tanker</idValue>
+    <idCode>13</idCode>
+        <idValue>Ocean vessel</idValue>
+    <idCode>21</idCode>
+        <idValue>Rail tanker</idValue>
+    <idCode>22</idCode>
+        <idValue>Rail silo tanker</idValue>
+    <idCode>23</idCode>
+        <idValue>Rail bulk car</idValue>
+    <idCode>24</idCode>
+        <idValue>Customer rail tanker</idValue>
+    <idCode>25</idCode>
+        <idValue>Rail express</idValue>
+    <idCode>31</idCode>
+        <idValue>Truck</idValue>
+    <idCode>32</idCode>
+        <idValue>Road tanker</idValue>
+    <idCode>33</idCode>
+        <idValue>Road silo tanker</idValue>
+    <idCode>35</idCode>
+        <idValue>Truck/trailer with tilt</idValue>
+    <idCode>36</idCode>
+        <idValue>Pipeline</idValue>
+    <idCode>37</idCode>
+        <idValue>Hydrant cart</idValue>
+</idList>

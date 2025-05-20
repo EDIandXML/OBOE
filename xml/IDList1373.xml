@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>BM</idCode>
+        <idValue>Bellows Meter</idValue>
+    <idCode>BO</idCode>
+        <idValue>Based on 120 Days List to Contract</idValue>
+    <idCode>DM</idCode>
+        <idValue>Displacement Meter</idValue>
+    <idCode>FT</idCode>
+        <idValue>Flange Tap</idValue>
+    <idCode>MA</idCode>
+        <idValue>Measured Over Six Months</idValue>
+    <idCode>MM</idCode>
+        <idValue>Mercury Meter</idValue>
+    <idCode>OM</idCode>
+        <idValue>Orifice Meter</idValue>
+    <idCode>PT</idCode>
+        <idValue>Pipe Tap</idValue>
+    <idCode>TM</idCode>
+        <idValue>Turbine Meter</idValue>
+    <idCode>VA</idCode>
+        <idValue>Valued at 90 Day Marketing Time Method</idValue>
+    <idCode>VB</idCode>
+        <idValue>Valued at 120 Day Marketing Time Method</idValue>
+    <idCode>VC</idCode>
+        <idValue>Valued at 180 Day Marketing Time Method</idValue>
+</idList>

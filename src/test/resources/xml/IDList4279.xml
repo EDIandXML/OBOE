@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Basic</idValue>
+    <idCode>2</idCode>
+        <idValue>End of month</idValue>
+    <idCode>3</idCode>
+        <idValue>Fixed date</idValue>
+    <idCode>4</idCode>
+        <idValue>Deferred</idValue>
+    <idCode>5</idCode>
+        <idValue>Discount not applicable</idValue>
+    <idCode>6</idCode>
+        <idValue>Mixed</idValue>
+    <idCode>7</idCode>
+        <idValue>Extended</idValue>
+    <idCode>8</idCode>
+        <idValue>Basic discount offered</idValue>
+    <idCode>9</idCode>
+        <idValue>Proximo</idValue>
+    <idCode>10</idCode>
+        <idValue>Instant</idValue>
+    <idCode>11</idCode>
+        <idValue>Elective</idValue>
+    <idCode>12</idCode>
+        <idValue>10 days after end of month</idValue>
+    <idCode>13</idCode>
+        <idValue>Seller to advise buyer</idValue>
+    <idCode>14</idCode>
+        <idValue>Paid against statement</idValue>
+    <idCode>15</idCode>
+        <idValue>No charge</idValue>
+    <idCode>16</idCode>
+        <idValue>Not yet defined</idValue>
+    <idCode>17</idCode>
+        <idValue>Ultimo</idValue>
+    <idCode>18</idCode>
+        <idValue>Previously agreed upon</idValue>
+    <idCode>20</idCode>
+        <idValue>Penalty terms</idValue>
+    <idCode>21</idCode>
+        <idValue>Payment by instalment</idValue>
+    <idCode>22</idCode>
+        <idValue>Discount</idValue>
+    <idCode>23</idCode>
+        <idValue>Available by sight payment</idValue>
+    <idCode>24</idCode>
+        <idValue>Available by deferred payment</idValue>
+    <idCode>25</idCode>
+        <idValue>Available by acceptance</idValue>
+    <idCode>26</idCode>
+        <idValue>Available by negotiation with any bank</idValue>
+    <idCode>27</idCode>
+        <idValue>Available by negotiation with any bank in ...</idValue>
+    <idCode>28</idCode>
+        <idValue>Available by negotiation by named bank</idValue>
+    <idCode>29</idCode>
+        <idValue>Available by negotiation</idValue>
+    <idCode>30</idCode>
+        <idValue>Adjustment payment</idValue>
+    <idCode>31</idCode>
+        <idValue>Late payment</idValue>
+    <idCode>32</idCode>
+        <idValue>Advanced payment</idValue>
+    <idCode>33</idCode>
+        <idValue>Payment by instalments according to progress (as agreed)</idValue>
+    <idCode>34</idCode>
+        <idValue>Payment by instalments according to progress (to be agreed)</idValue>
+    <idCode>35</idCode>
+        <idValue>Nonstandard</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

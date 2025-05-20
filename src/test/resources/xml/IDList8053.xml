@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AA</idCode>
+        <idValue>Ground equipment</idValue>
+    <idCode>AB</idCode>
+        <idValue>Chain</idValue>
+    <idCode>AD</idCode>
+        <idValue>Temperature recorder</idValue>
+    <idCode>AE</idCode>
+        <idValue>Body trailer</idValue>
+    <idCode>BL</idCode>
+        <idValue>Blocks</idValue>
+    <idCode>BPN</idCode>
+        <idValue>Box pallet non exchangeable</idValue>
+    <idCode>BPY</idCode>
+        <idValue>Box pallet EUR Y non exchangeable</idValue>
+    <idCode>BR</idCode>
+        <idValue>Barge</idValue>
+    <idCode>BX</idCode>
+        <idValue>Boxcar</idValue>
+    <idCode>CH</idCode>
+        <idValue>Chassis</idValue>
+    <idCode>CN</idCode>
+        <idValue>Container</idValue>
+    <idCode>DPA</idCode>
+        <idValue>Deadlight (panel)</idValue>
+    <idCode>EFP</idCode>
+        <idValue>Exchangeable EUR flat pallet</idValue>
+    <idCode>EYP</idCode>
+        <idValue>Exchangeable EUR Y box pallet</idValue>
+    <idCode>FPN</idCode>
+        <idValue>Flat pallet EUR non exchangeable</idValue>
+    <idCode>FPR</idCode>
+        <idValue>Flat pallet (railway property) non exchangeable</idValue>
+    <idCode>FSU</idCode>
+        <idValue>Forked support</idValue>
+    <idCode>LAR</idCode>
+        <idValue>Lashing rope</idValue>
+    <idCode>LU</idCode>
+        <idValue>Load/unload device on equipment</idValue>
+    <idCode>MPA</idCode>
+        <idValue>Movable panel</idValue>
+    <idCode>PA</idCode>
+        <idValue>Pallet</idValue>
+    <idCode>PBP</idCode>
+        <idValue>Identified private box pallet</idValue>
+    <idCode>PFP</idCode>
+        <idValue>Identified private flat pallet</idValue>
+    <idCode>PL</idCode>
+        <idValue>Platform</idValue>
+    <idCode>PPA</idCode>
+        <idValue>Protecting panel</idValue>
+    <idCode>PST</idCode>
+        <idValue>Portable stove</idValue>
+    <idCode>RF</idCode>
+        <idValue>Flat car</idValue>
+    <idCode>RG</idCode>
+        <idValue>Reefer generator</idValue>
+    <idCode>RGF</idCode>
+        <idValue>Ground facility</idValue>
+    <idCode>RO</idCode>
+        <idValue>Rope</idValue>
+    <idCode>RR</idCode>
+        <idValue>Rail car</idValue>
+    <idCode>SCA</idCode>
+        <idValue>Small container category A</idValue>
+    <idCode>SCB</idCode>
+        <idValue>Small container category B</idValue>
+    <idCode>SCC</idCode>
+        <idValue>Small container category C</idValue>
+    <idCode>SFA</idCode>
+        <idValue>Stiffening ring of frame</idValue>
+    <idCode>SPP</idCode>
+        <idValue>Identified special pallet</idValue>
+    <idCode>STR</idCode>
+        <idValue>Strap</idValue>
+    <idCode>SW</idCode>
+        <idValue>Swap body</idValue>
+    <idCode>TE</idCode>
+        <idValue>Trailer</idValue>
+    <idCode>TP</idCode>
+        <idValue>Tarpaulin</idValue>
+    <idCode>TS</idCode>
+        <idValue>Tackles</idValue>
+    <idCode>TSU</idCode>
+        <idValue>Tarpaulin support</idValue>
+    <idCode>UL</idCode>
+        <idValue>ULD (Unit load device)</idValue>
+</idList>

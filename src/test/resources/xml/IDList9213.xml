@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Origin subject to EC/EFTA preference</idValue>
+    <idCode>2</idCode>
+        <idValue>Origin subject to other preference agreement</idValue>
+    <idCode>3</idCode>
+        <idValue>No preference origin</idValue>
+    <idCode>8</idCode>
+        <idValue>Excluded origin</idValue>
+    <idCode>9</idCode>
+        <idValue>Imposed origin</idValue>
+</idList>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AAA</idCode>
+        <idValue>Line item measurement</idValue>
+    <idCode>AAB</idCode>
+        <idValue>Retail container dimension</idValue>
+    <idCode>AAC</idCode>
+        <idValue>Retail container size</idValue>
+    <idCode>AAD</idCode>
+        <idValue>Other US Government agency application</idValue>
+    <idCode>AAE</idCode>
+        <idValue>Measurement</idValue>
+    <idCode>AAF</idCode>
+        <idValue>Customs line item measurement</idValue>
+    <idCode>AAG</idCode>
+        <idValue>Percentage of alcohol (by volume)</idValue>
+    <idCode>AAH</idCode>
+        <idValue>Dimensions total weight</idValue>
+    <idCode>AAI</idCode>
+        <idValue>Item weight</idValue>
+    <idCode>AAJ</idCode>
+        <idValue>Visa quantity</idValue>
+    <idCode>AAK</idCode>
+        <idValue>Licence (quantity deducted)</idValue>
+    <idCode>AAL</idCode>
+        <idValue>Cargo loaded</idValue>
+    <idCode>AAM</idCode>
+        <idValue>Cargo discharged</idValue>
+    <idCode>AAN</idCode>
+        <idValue>Weight of conveyance</idValue>
+    <idCode>AAO</idCode>
+        <idValue>Conveyance summer dead weight</idValue>
+    <idCode>AAP</idCode>
+        <idValue>Containerized cargo on vessel&apos;s weight</idValue>
+    <idCode>AAQ</idCode>
+        <idValue>Non-containerized cargo on vessel&apos;s weight</idValue>
+    <idCode>AAR</idCode>
+        <idValue>1st specified tariff quantity</idValue>
+    <idCode>AAS</idCode>
+        <idValue>2nd specified tariff quantity</idValue>
+    <idCode>AAT</idCode>
+        <idValue>3rd specified tariff quantity</idValue>
+    <idCode>AAU</idCode>
+        <idValue>Package</idValue>
+    <idCode>AAV</idCode>
+        <idValue>Person</idValue>
+    <idCode>AAW</idCode>
+        <idValue>Accuracy</idValue>
+    <idCode>AAX</idCode>
+        <idValue>Consignment measurement</idValue>
+    <idCode>AAY</idCode>
+        <idValue>Package measurement</idValue>
+    <idCode>AAZ</idCode>
+        <idValue>Handling unit measurement</idValue>
+    <idCode>ABA</idCode>
+        <idValue>Unit of measure used for ordered quantities</idValue>
+    <idCode>ABB</idCode>
+        <idValue>Colour</idValue>
+    <idCode>ABC</idCode>
+        <idValue>Size</idValue>
+    <idCode>ABD</idCode>
+        <idValue>Length</idValue>
+    <idCode>ABE</idCode>
+        <idValue>Height</idValue>
+    <idCode>ABF</idCode>
+        <idValue>Width</idValue>
+    <idCode>ABG</idCode>
+        <idValue>Diameter</idValue>
+    <idCode>ABH</idCode>
+        <idValue>Depth</idValue>
+    <idCode>ABI</idCode>
+        <idValue>Ventilation</idValue>
+    <idCode>ABJ</idCode>
+        <idValue>Original unit of issue</idValue>
+    <idCode>ABK</idCode>
+        <idValue>External dimension</idValue>
+    <idCode>ABL</idCode>
+        <idValue>Internal dimension</idValue>
+    <idCode>ABM</idCode>
+        <idValue>Test piece dimensions</idValue>
+    <idCode>ABN</idCode>
+        <idValue>Average reading</idValue>
+    <idCode>ABP</idCode>
+        <idValue>Unit of measure per unit of issue</idValue>
+    <idCode>ASW</idCode>
+        <idValue>Weight ascertained</idValue>
+    <idCode>CH</idCode>
+        <idValue>Chemistry</idValue>
+    <idCode>CHW</idCode>
+        <idValue>Chargeable weight</idValue>
+    <idCode>CN</idCode>
+        <idValue>Core notch dimensions</idValue>
+    <idCode>CS</idCode>
+        <idValue>Core size</idValue>
+    <idCode>CT</idCode>
+        <idValue>Counts</idValue>
+    <idCode>DEN</idCode>
+        <idValue>Density</idValue>
+    <idCode>DR</idCode>
+        <idValue>Decision result value</idValue>
+    <idCode>DT</idCode>
+        <idValue>Dimensional tolerance</idValue>
+    <idCode>DV</idCode>
+        <idValue>Discrete measurement value</idValue>
+    <idCode>DX</idCode>
+        <idValue>Dimension used in price extension</idValue>
+    <idCode>EGW</idCode>
+        <idValue>Estimated gross weight</idValue>
+    <idCode>EN</idCode>
+        <idValue>Environmental conditions</idValue>
+    <idCode>EVO</idCode>
+        <idValue>Estimated volume</idValue>
+    <idCode>FO</idCode>
+        <idValue>Footage</idValue>
+    <idCode>IV</idCode>
+        <idValue>Interpolated value</idValue>
+    <idCode>LAO</idCode>
+        <idValue>Vessel overall length</idValue>
+    <idCode>LC</idCode>
+        <idValue>Limited weight/size coils</idValue>
+    <idCode>LGL</idCode>
+        <idValue>Length limitations</idValue>
+    <idCode>LL</idCode>
+        <idValue>Lift limitation</idValue>
+    <idCode>LMT</idCode>
+        <idValue>Loading meters</idValue>
+    <idCode>NAX</idCode>
+        <idValue>Number of axles</idValue>
+    <idCode>PAL</idCode>
+        <idValue>Payload</idValue>
+    <idCode>PC</idCode>
+        <idValue>Parting cut (sawcut)</idValue>
+    <idCode>PD</idCode>
+        <idValue>Physical dimensions (product ordered)</idValue>
+    <idCode>PL</idCode>
+        <idValue>Package limitations</idValue>
+    <idCode>PLL</idCode>
+        <idValue>Platform limitation</idValue>
+    <idCode>RL</idCode>
+        <idValue>Receiving facility limitations</idValue>
+    <idCode>RN</idCode>
+        <idValue>Length limitations</idValue>
+    <idCode>SE</idCode>
+        <idValue>Property specification</idValue>
+    <idCode>SH</idCode>
+        <idValue>Shipping tolerance</idValue>
+    <idCode>SM</idCode>
+        <idValue>Shade</idValue>
+    <idCode>SO</idCode>
+        <idValue>Storage limitation</idValue>
+    <idCode>SPG</idCode>
+        <idValue>Specific gravity</idValue>
+    <idCode>SR</idCode>
+        <idValue>Surface roughness</idValue>
+    <idCode>ST</idCode>
+        <idValue>Surface treatment</idValue>
+    <idCode>SU</idCode>
+        <idValue>Surface</idValue>
+    <idCode>SV</idCode>
+        <idValue>Specification value</idValue>
+    <idCode>TE</idCode>
+        <idValue>Temperature</idValue>
+    <idCode>TL</idCode>
+        <idValue>Transportation equipment limitations</idValue>
+    <idCode>TR</idCode>
+        <idValue>Test result</idValue>
+    <idCode>TX</idCode>
+        <idValue>Time used in price extension</idValue>
+    <idCode>VO</idCode>
+        <idValue>Observed value</idValue>
+    <idCode>VOL</idCode>
+        <idValue>Volume</idValue>
+    <idCode>VT</idCode>
+        <idValue>True value</idValue>
+    <idCode>WT</idCode>
+        <idValue>Weights</idValue>
+    <idCode>WX</idCode>
+        <idValue>Weight used in price extension</idValue>
+</idList>

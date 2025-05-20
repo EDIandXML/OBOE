@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>A</idCode>
+        <idValue>Free-form long description</idValue>
+    <idCode>B</idCode>
+        <idValue>Code and text</idValue>
+    <idCode>C</idCode>
+        <idValue>Code (from industry code list)</idValue>
+    <idCode>D</idCode>
+        <idValue>Free-form price look up</idValue>
+    <idCode>E</idCode>
+        <idValue>Free-form short description</idValue>
+    <idCode>F</idCode>
+        <idValue>Free-form</idValue>
+    <idCode>S</idCode>
+        <idValue>Structured (from industry code list)</idValue>
+    <idCode>X</idCode>
+        <idValue>Semi-structured (code + text)</idValue>
+</idList>

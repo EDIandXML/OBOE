@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AA</idCode>
+        <idValue>Insurance contact</idValue>
+    <idCode>AB</idCode>
+        <idValue>Workshop contact</idValue>
+    <idCode>AC</idCode>
+        <idValue>Accepting contact</idValue>
+    <idCode>AD</idCode>
+        <idValue>Accounting contact</idValue>
+    <idCode>AE</idCode>
+        <idValue>Contract contact</idValue>
+    <idCode>AF</idCode>
+        <idValue>Land registry contact</idValue>
+    <idCode>AG</idCode>
+        <idValue>Agent</idValue>
+    <idCode>AH</idCode>
+        <idValue>Coordination contact</idValue>
+    <idCode>AI</idCode>
+        <idValue>Project management contact</idValue>
+    <idCode>AJ</idCode>
+        <idValue>Investment contact</idValue>
+    <idCode>AK</idCode>
+        <idValue>Works management contact</idValue>
+    <idCode>AL</idCode>
+        <idValue>Personnel contact</idValue>
+    <idCode>AM</idCode>
+        <idValue>Claims contact</idValue>
+    <idCode>AN</idCode>
+        <idValue>Laboratory contact</idValue>
+    <idCode>AO</idCode>
+        <idValue>Plant/equipment contact</idValue>
+    <idCode>AP</idCode>
+        <idValue>Accounts payable contact</idValue>
+    <idCode>AQ</idCode>
+        <idValue>Quantity surveyor contact</idValue>
+    <idCode>AR</idCode>
+        <idValue>Accounts receivable contact</idValue>
+    <idCode>AS</idCode>
+        <idValue>Public relations contact</idValue>
+    <idCode>AT</idCode>
+        <idValue>Technical contact</idValue>
+    <idCode>AU</idCode>
+        <idValue>City works authority contact</idValue>
+    <idCode>AV</idCode>
+        <idValue>Maintenance contact</idValue>
+    <idCode>AW</idCode>
+        <idValue>Town planning contact</idValue>
+    <idCode>AX</idCode>
+        <idValue>Traffic authority contact</idValue>
+    <idCode>AY</idCode>
+        <idValue>Electricity supply contact</idValue>
+    <idCode>AZ</idCode>
+        <idValue>Gas supply contact</idValue>
+    <idCode>BA</idCode>
+        <idValue>Water supply contact</idValue>
+    <idCode>BB</idCode>
+        <idValue>Telecommunications network contact</idValue>
+    <idCode>BC</idCode>
+        <idValue>Banking contact</idValue>
+    <idCode>BD</idCode>
+        <idValue>New developments contact</idValue>
+    <idCode>BE</idCode>
+        <idValue>Transport infrastructure authority</idValue>
+    <idCode>BF</idCode>
+        <idValue>Service contact</idValue>
+    <idCode>BU</idCode>
+        <idValue>Ultimate consignee</idValue>
+    <idCode>CA</idCode>
+        <idValue>Carrier</idValue>
+    <idCode>CB</idCode>
+        <idValue>Changed by</idValue>
+    <idCode>CC</idCode>
+        <idValue>Responsible person for information production</idValue>
+    <idCode>CD</idCode>
+        <idValue>Responsible person for information dissemination</idValue>
+    <idCode>CE</idCode>
+        <idValue>Head of unit for computer data processing</idValue>
+    <idCode>CF</idCode>
+        <idValue>Head of unit for information production</idValue>
+    <idCode>CG</idCode>
+        <idValue>Head of unit for information dissemination</idValue>
+    <idCode>CN</idCode>
+        <idValue>Consignee</idValue>
+    <idCode>CO</idCode>
+        <idValue>Consignor</idValue>
+    <idCode>CP</idCode>
+        <idValue>Responsible person for computer data processing</idValue>
+    <idCode>CR</idCode>
+        <idValue>Customer relations</idValue>
+    <idCode>CW</idCode>
+        <idValue>Confirmed with</idValue>
+    <idCode>DE</idCode>
+        <idValue>Department/employee to execute export procedures</idValue>
+    <idCode>DI</idCode>
+        <idValue>Department/employee to execute import procedures</idValue>
+    <idCode>DL</idCode>
+        <idValue>Delivery contact</idValue>
+    <idCode>EB</idCode>
+        <idValue>Entered by</idValue>
+    <idCode>EC</idCode>
+        <idValue>Education coordinator</idValue>
+    <idCode>ED</idCode>
+        <idValue>Engineering contact</idValue>
+    <idCode>EX</idCode>
+        <idValue>Expeditor</idValue>
+    <idCode>GR</idCode>
+        <idValue>Goods receiving contact</idValue>
+    <idCode>HE</idCode>
+        <idValue>Emergency dangerous goods contact</idValue>
+    <idCode>HG</idCode>
+        <idValue>Dangerous goods contact</idValue>
+    <idCode>HM</idCode>
+        <idValue>Hazardous material contact</idValue>
+    <idCode>IC</idCode>
+        <idValue>Information contact</idValue>
+    <idCode>IN</idCode>
+        <idValue>Insurer contact</idValue>
+    <idCode>LB</idCode>
+        <idValue>Place of delivery contact</idValue>
+    <idCode>LO</idCode>
+        <idValue>Place of collection contact</idValue>
+    <idCode>MC</idCode>
+        <idValue>Material control contact</idValue>
+    <idCode>MD</idCode>
+        <idValue>Material disposition contact</idValue>
+    <idCode>MH</idCode>
+        <idValue>Material handling contact</idValue>
+    <idCode>MR</idCode>
+        <idValue>Message recipient contact</idValue>
+    <idCode>MS</idCode>
+        <idValue>Message sender contact</idValue>
+    <idCode>NT</idCode>
+        <idValue>Notification contact</idValue>
+    <idCode>OC</idCode>
+        <idValue>Order contact</idValue>
+    <idCode>PA</idCode>
+        <idValue>Prototype coordinator</idValue>
+    <idCode>PD</idCode>
+        <idValue>Purchasing contact</idValue>
+    <idCode>PE</idCode>
+        <idValue>Payee contact</idValue>
+    <idCode>PM</idCode>
+        <idValue>Product management contact</idValue>
+    <idCode>QA</idCode>
+        <idValue>Quality assurance contact</idValue>
+    <idCode>QC</idCode>
+        <idValue>Quality coordinator contact</idValue>
+    <idCode>RD</idCode>
+        <idValue>Receiving dock contact</idValue>
+    <idCode>SA</idCode>
+        <idValue>Sales administration</idValue>
+    <idCode>SC</idCode>
+        <idValue>Schedule contact</idValue>
+    <idCode>SD</idCode>
+        <idValue>Shipping contact</idValue>
+    <idCode>SR</idCode>
+        <idValue>Sales representative or department</idValue>
+    <idCode>SU</idCode>
+        <idValue>Supplier contact</idValue>
+    <idCode>TA</idCode>
+        <idValue>Traffic administrator</idValue>
+    <idCode>TD</idCode>
+        <idValue>Test contact</idValue>
+    <idCode>TI</idCode>
+        <idValue>Technical documentation recipient</idValue>
+    <idCode>TR</idCode>
+        <idValue>Transport contact</idValue>
+    <idCode>WH</idCode>
+        <idValue>Warehouse</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

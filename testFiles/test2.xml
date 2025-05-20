@@ -1,0 +1,15 @@
+<!DOCTYPE root>
+<TRANSACTION>
+<segments>
+<segment id='DTM' name='Departure Date' required='M'>
+<de pos='1' id='DTM_3__1' name='Requested Departure Date' required='M' min='3' max='3' type='DisplayOnly' value='274'>
+<valueList name='listName'>
+<id code='274' value='Requested Departure Date'></id>
+</valueList>
+</de>
+<de pos='2' id='DTM_3__2' name='Date - YYMMDD' required='M' min='6' max='6' type='DT' value=''>
+</de>
+</segment>
+</segments>
+</TRANSACTION>
+

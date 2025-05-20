@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AAA</idCode>
+        <idValue>Petroleum tax</idValue>
+    <idCode>AAB</idCode>
+        <idValue>Provisional countervailing duty cash</idValue>
+    <idCode>AAC</idCode>
+        <idValue>Provisional countervailing duty bond</idValue>
+    <idCode>ADD</idCode>
+        <idValue>Anti-dumping duty</idValue>
+    <idCode>BOL</idCode>
+        <idValue>Stamp duty (Imposta di Bollo)</idValue>
+    <idCode>CAP</idCode>
+        <idValue>Agricultural levy</idValue>
+    <idCode>CAR</idCode>
+        <idValue>Car tax</idValue>
+    <idCode>COC</idCode>
+        <idValue>Paper consortium tax (Italy)</idValue>
+    <idCode>CST</idCode>
+        <idValue>Commodity specific tax</idValue>
+    <idCode>CUD</idCode>
+        <idValue>Customs duty</idValue>
+    <idCode>CVD</idCode>
+        <idValue>Countervailing duty</idValue>
+    <idCode>ENV</idCode>
+        <idValue>Environmental tax</idValue>
+    <idCode>EXC</idCode>
+        <idValue>Excise duty</idValue>
+    <idCode>EXP</idCode>
+        <idValue>Agricultural export rebate</idValue>
+    <idCode>FET</idCode>
+        <idValue>Federal excise tax</idValue>
+    <idCode>FRE</idCode>
+        <idValue>Free</idValue>
+    <idCode>GCN</idCode>
+        <idValue>General construction tax</idValue>
+    <idCode>GST</idCode>
+        <idValue>Goods and services tax</idValue>
+    <idCode>ILL</idCode>
+        <idValue>Illuminants tax</idValue>
+    <idCode>IMP</idCode>
+        <idValue>Import tax</idValue>
+    <idCode>IND</idCode>
+        <idValue>Individual tax</idValue>
+    <idCode>LAC</idCode>
+        <idValue>Business license fee</idValue>
+    <idCode>LCN</idCode>
+        <idValue>Local construction tax</idValue>
+    <idCode>LDP</idCode>
+        <idValue>Light dues payable</idValue>
+    <idCode>LOC</idCode>
+        <idValue>Local sales taxes</idValue>
+    <idCode>LST</idCode>
+        <idValue>Lust tax</idValue>
+    <idCode>MCA</idCode>
+        <idValue>Monetary compensatory amount</idValue>
+    <idCode>MCD</idCode>
+        <idValue>Miscellaneous cash deposit</idValue>
+    <idCode>OTH</idCode>
+        <idValue>Other taxes</idValue>
+    <idCode>PDB</idCode>
+        <idValue>Provisional duty bond</idValue>
+    <idCode>PDC</idCode>
+        <idValue>Provisional duty cash</idValue>
+    <idCode>PRF</idCode>
+        <idValue>Preference duty</idValue>
+    <idCode>SCN</idCode>
+        <idValue>Special construction tax</idValue>
+    <idCode>SSS</idCode>
+        <idValue>Shifted social securities</idValue>
+    <idCode>STT</idCode>
+        <idValue>State/provincial sales tax</idValue>
+    <idCode>SUP</idCode>
+        <idValue>Suspended duty</idValue>
+    <idCode>SUR</idCode>
+        <idValue>Surtax</idValue>
+    <idCode>SWT</idCode>
+        <idValue>Shifted wage tax</idValue>
+    <idCode>TAC</idCode>
+        <idValue>Alcohol mark tax</idValue>
+    <idCode>TOT</idCode>
+        <idValue>Total</idValue>
+    <idCode>TOX</idCode>
+        <idValue>Turnover tax</idValue>
+    <idCode>TTA</idCode>
+        <idValue>Tonnage taxes</idValue>
+    <idCode>VAD</idCode>
+        <idValue>Valuation deposit</idValue>
+    <idCode>VAT</idCode>
+        <idValue>Value added tax</idValue>
+</idList>

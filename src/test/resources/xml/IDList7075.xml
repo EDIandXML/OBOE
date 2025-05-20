@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Inner</idValue>
+    <idCode>2</idCode>
+        <idValue>Intermediate</idValue>
+    <idCode>3</idCode>
+        <idValue>Outer</idValue>
+    <idCode>4</idCode>
+        <idValue>No packaging hierarchy</idValue>
+</idList>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>APERAK</idCode>
+        <idValue>Application error and acknowledgement message</idValue>
+    <idCode>AUTACK</idCode>
+        <idValue>Secure authentication and acknowledgement message</idValue>
+    <idCode>AUTHOR</idCode>
+        <idValue>Authorization message</idValue>
+    <idCode>BANSTA</idCode>
+        <idValue>Banking status message</idValue>
+    <idCode>BAPLIE</idCode>
+        <idValue>Bayplan/stowage plan occupied and empty locations message</idValue>
+    <idCode>BAPLTE</idCode>
+        <idValue>Bayplan/stowage plan total numbers message</idValue>
+    <idCode>BOPBNK</idCode>
+        <idValue>Bank transactions and portfolio transactions report message</idValue>
+    <idCode>BOPCUS</idCode>
+        <idValue>Balance of payment customer transaction report message</idValue>
+    <idCode>BOPDIR</idCode>
+        <idValue>Direct balance of payment declaration message</idValue>
+    <idCode>BOPINF</idCode>
+        <idValue>Balance of payment information from customer message</idValue>
+    <idCode>CALINF</idCode>
+        <idValue>Vessel call information message</idValue>
+    <idCode>CASINT</idCode>
+        <idValue>Request for legal administration action in civil proceedings message</idValue>
+    <idCode>CASRES</idCode>
+        <idValue>Legal administration response in civil proceedings message</idValue>
+    <idCode>COARRI</idCode>
+        <idValue>Container discharge/loading report message</idValue>
+    <idCode>CODECO</idCode>
+        <idValue>Container gate-in/gate-out report message</idValue>
+    <idCode>CODENO</idCode>
+        <idValue>Permit expiration/clearance ready notice message</idValue>
+    <idCode>COEDOR</idCode>
+        <idValue>Container stock report message</idValue>
+    <idCode>COHAOR</idCode>
+        <idValue>Container special handling order message</idValue>
+    <idCode>COMDIS</idCode>
+        <idValue>Commercial dispute message</idValue>
+    <idCode>CONAPW</idCode>
+        <idValue>Advice on pending works message</idValue>
+    <idCode>CONDPV</idCode>
+        <idValue>Direct payment valuation message</idValue>
+    <idCode>CONDRA</idCode>
+        <idValue>Drawing administration message</idValue>
+    <idCode>CONDRO</idCode>
+        <idValue>Drawing organisation message</idValue>
+    <idCode>CONEST</idCode>
+        <idValue>Establishment of contract message</idValue>
+    <idCode>CONITT</idCode>
+        <idValue>Invitation to tender message</idValue>
+    <idCode>CONPVA</idCode>
+        <idValue>Payment valuation message</idValue>
+    <idCode>CONQVA</idCode>
+        <idValue>Quantity valuation message</idValue>
+    <idCode>CONRPW</idCode>
+        <idValue>Response of pending works message</idValue>
+    <idCode>CONTEN</idCode>
+        <idValue>Tender message</idValue>
+    <idCode>CONTRL</idCode>
+        <idValue>Syntax and service report message</idValue>
+    <idCode>CONWQD</idCode>
+        <idValue>Work item quantity determination message</idValue>
+    <idCode>COPARN</idCode>
+        <idValue>Container announcement message</idValue>
+    <idCode>COPINO</idCode>
+        <idValue>Container pre-notification message</idValue>
+    <idCode>COPRAR</idCode>
+        <idValue>Container discharge/loading order message</idValue>
+    <idCode>COREOR</idCode>
+        <idValue>Container release order message</idValue>
+    <idCode>COSTCO</idCode>
+        <idValue>Container stuffing/stripping confirmation message</idValue>
+    <idCode>COSTOR</idCode>
+        <idValue>Container stuffing/stripping order message</idValue>
+    <idCode>CREADV</idCode>
+        <idValue>Credit advice message</idValue>
+    <idCode>CREEXT</idCode>
+        <idValue>Extended credit advice message</idValue>
+    <idCode>CREMUL</idCode>
+        <idValue>Multiple credit advice message</idValue>
+    <idCode>CUSCAR</idCode>
+        <idValue>Customs cargo report message</idValue>
+    <idCode>CUSDEC</idCode>
+        <idValue>Customs declaration message</idValue>
+    <idCode>CUSEXP</idCode>
+        <idValue>Customs express consignment declaration message</idValue>
+    <idCode>CUSREP</idCode>
+        <idValue>Customs conveyance report message</idValue>
+    <idCode>CUSRES</idCode>
+        <idValue>Customs response message</idValue>
+    <idCode>DEBADV</idCode>
+        <idValue>Debit advice message</idValue>
+    <idCode>DEBMUL</idCode>
+        <idValue>Multiple debit advice message</idValue>
+    <idCode>DELFOR</idCode>
+        <idValue>Delivery schedule message</idValue>
+    <idCode>DELJIT</idCode>
+        <idValue>Delivery just in time message</idValue>
+    <idCode>DESADV</idCode>
+        <idValue>Despatch advice message</idValue>
+    <idCode>DESTIM</idCode>
+        <idValue>Equipment damage and repair estimate message</idValue>
+    <idCode>DGRECA</idCode>
+        <idValue>Dangerous goods recapitulation message</idValue>
+    <idCode>DIRDEB</idCode>
+        <idValue>Direct debit message</idValue>
+    <idCode>DIRDEF</idCode>
+        <idValue>Directory definition message</idValue>
+    <idCode>DOCADV</idCode>
+        <idValue>Documentary credit advice message</idValue>
+    <idCode>DOCAMA</idCode>
+        <idValue>Advice of an amendment of a documentary credit message</idValue>
+    <idCode>DOCAMI</idCode>
+        <idValue>Documentary credit amendment information message</idValue>
+    <idCode>DOCAMR</idCode>
+        <idValue>Request for an amendment of a documentary credit message</idValue>
+    <idCode>DOCAPP</idCode>
+        <idValue>Documentary credit application message</idValue>
+    <idCode>DOCARE</idCode>
+        <idValue>Response to an amendment of a documentary credit message</idValue>
+    <idCode>DOCINF</idCode>
+        <idValue>Documentary credit issuance information message</idValue>
+    <idCode>FINCAN</idCode>
+        <idValue>Financial cancellation message</idValue>
+    <idCode>FINSTA</idCode>
+        <idValue>Financial statement of an account message</idValue>
+    <idCode>GENRAL</idCode>
+        <idValue>General purpose message</idValue>
+    <idCode>GESMES</idCode>
+        <idValue>Generic statistical message</idValue>
+    <idCode>HANMOV</idCode>
+        <idValue>Cargo/goods handling and movement message</idValue>
+    <idCode>IFCSUM</idCode>
+        <idValue>Forwarding and consolidation summary message</idValue>
+    <idCode>IFTCCA</idCode>
+        <idValue>Forwarding and transport shipment charge calculation message</idValue>
+    <idCode>IFTDGN</idCode>
+        <idValue>Dangerous goods notification message</idValue>
+    <idCode>IFTFCC</idCode>
+        <idValue>International transport freight costs and other charges message</idValue>
+    <idCode>IFTIAG</idCode>
+        <idValue>Dangerous cargo list message</idValue>
+    <idCode>IFTMAN</idCode>
+        <idValue>Arrival notice message</idValue>
+    <idCode>IFTMBC</idCode>
+        <idValue>Booking confirmation message</idValue>
+    <idCode>IFTMBF</idCode>
+        <idValue>Firm booking message</idValue>
+    <idCode>IFTMBP</idCode>
+        <idValue>Provisional booking message</idValue>
+    <idCode>IFTMCS</idCode>
+        <idValue>Instruction contract status message</idValue>
+    <idCode>IFTMIN</idCode>
+        <idValue>Instruction message</idValue>
+    <idCode>IFTRIN</idCode>
+        <idValue>Forwarding and transport rate information message</idValue>
+    <idCode>IFTSAI</idCode>
+        <idValue>Forwarding and transport schedule and availability information message</idValue>
+    <idCode>IFTSTA</idCode>
+        <idValue>International multimodal status report message</idValue>
+    <idCode>IFTSTQ</idCode>
+        <idValue>International multimodal status request message</idValue>
+    <idCode>INSPRE</idCode>
+        <idValue>Insurance premium message</idValue>
+    <idCode>INVOIC</idCode>
+        <idValue>Invoice message</idValue>
+    <idCode>INVRPT</idCode>
+        <idValue>Inventory report message</idValue>
+    <idCode>ITRRPT</idCode>
+        <idValue>In transit report detail message</idValue>
+    <idCode>JAPRES</idCode>
+        <idValue>Job application result message</idValue>
+    <idCode>JINFDE</idCode>
+        <idValue>Job information demand message</idValue>
+    <idCode>JOBAPP</idCode>
+        <idValue>Job application proposal message</idValue>
+    <idCode>JOBCON</idCode>
+        <idValue>Job order confirmation message</idValue>
+    <idCode>JOBMOD</idCode>
+        <idValue>Job order modification message</idValue>
+    <idCode>JOBOFF</idCode>
+        <idValue>Job order message</idValue>
+    <idCode>MEDPID</idCode>
+        <idValue>Person identification message</idValue>
+    <idCode>MEDREQ</idCode>
+        <idValue>Medical service request message</idValue>
+    <idCode>MEDRPT</idCode>
+        <idValue>Medical service report message</idValue>
+    <idCode>MEQPOS</idCode>
+        <idValue>Means of transport and equipment position message</idValue>
+    <idCode>MOVINS</idCode>
+        <idValue>Stowage instruction message</idValue>
+    <idCode>MSCONS</idCode>
+        <idValue>Metered services consumption report message</idValue>
+    <idCode>ORDCHG</idCode>
+        <idValue>Purchase order change request message</idValue>
+    <idCode>ORDERS</idCode>
+        <idValue>Purchase order message</idValue>
+    <idCode>ORDRSP</idCode>
+        <idValue>Purchase order response message</idValue>
+    <idCode>OSTENQ</idCode>
+        <idValue>Order status enquiry message</idValue>
+    <idCode>OSTRPT</idCode>
+        <idValue>Order status report message</idValue>
+    <idCode>PARTIN</idCode>
+        <idValue>Party information message</idValue>
+    <idCode>PAXLST</idCode>
+        <idValue>Passenger list message</idValue>
+    <idCode>PAYDUC</idCode>
+        <idValue>Payroll deductions advice message</idValue>
+    <idCode>PAYEXT</idCode>
+        <idValue>Extended payment order message</idValue>
+    <idCode>PAYMUL</idCode>
+        <idValue>Multiple payment order message</idValue>
+    <idCode>PAYORD</idCode>
+        <idValue>Payment order message</idValue>
+    <idCode>PRICAT</idCode>
+        <idValue>Price/sales catalogue message</idValue>
+    <idCode>PRODAT</idCode>
+        <idValue>Product data message</idValue>
+    <idCode>PRODEX</idCode>
+        <idValue>Product exchange reconciliation message</idValue>
+    <idCode>PROINQ</idCode>
+        <idValue>Product inquiry message</idValue>
+    <idCode>PRPAID</idCode>
+        <idValue>Insurance premium payment message</idValue>
+    <idCode>QALITY</idCode>
+        <idValue>Quality data message</idValue>
+    <idCode>QUOTES</idCode>
+        <idValue>Quote message</idValue>
+    <idCode>RDRMES</idCode>
+        <idValue>Raw data reporting message</idValue>
+    <idCode>REBORD</idCode>
+        <idValue>Reinsurance bordereau message</idValue>
+    <idCode>RECADV</idCode>
+        <idValue>Receiving advice message</idValue>
+    <idCode>RECALC</idCode>
+        <idValue>Reinsurance calculation message</idValue>
+    <idCode>RECECO</idCode>
+        <idValue>Credit risk cover message</idValue>
+    <idCode>RECLAM</idCode>
+        <idValue>Reinsurance claims message</idValue>
+    <idCode>REMADV</idCode>
+        <idValue>Remittance advice message</idValue>
+    <idCode>REPREM</idCode>
+        <idValue>Reinsurance premium message</idValue>
+    <idCode>REQDOC</idCode>
+        <idValue>Request for document message</idValue>
+    <idCode>REQOTE</idCode>
+        <idValue>Request for quote message</idValue>
+    <idCode>RESETT</idCode>
+        <idValue>Reinsurance settlement message</idValue>
+    <idCode>RESMSG</idCode>
+        <idValue>Reservation message</idValue>
+    <idCode>RETACC</idCode>
+        <idValue>Reinsurance technical account message</idValue>
+    <idCode>SAFHAZ</idCode>
+        <idValue>Safety and hazard data message</idValue>
+    <idCode>SANCRT</idCode>
+        <idValue>International movement of goods governmental regulatory message</idValue>
+    <idCode>SLSFCT</idCode>
+        <idValue>Sales forecast message</idValue>
+    <idCode>SLSRPT</idCode>
+        <idValue>Sales data report message</idValue>
+    <idCode>SSIMOD</idCode>
+        <idValue>Modification of identity details message</idValue>
+    <idCode>SSRECH</idCode>
+        <idValue>Worker&apos;s insurance history message</idValue>
+    <idCode>SSREGW</idCode>
+        <idValue>Notification of registration of a worker message</idValue>
+    <idCode>STATAC</idCode>
+        <idValue>Statement of account message</idValue>
+    <idCode>SUPCOT</idCode>
+        <idValue>Superannuation contributions advice message</idValue>
+    <idCode>SUPMAN</idCode>
+        <idValue>Superannuation maintenance message</idValue>
+    <idCode>SUPRES</idCode>
+        <idValue>Supplier response message</idValue>
+    <idCode>TANSTA</idCode>
+        <idValue>Tank status report message</idValue>
+    <idCode>VATDEC</idCode>
+        <idValue>Value added tax message</idValue>
+    <idCode>VESDEP</idCode>
+        <idValue>Vessel departure message</idValue>
+    <idCode>WASDIS</idCode>
+        <idValue>Waste disposal information message</idValue>
+    <idCode>WKGRDC</idCode>
+        <idValue>Work grant decision message</idValue>
+    <idCode>WKGRRE</idCode>
+        <idValue>Work grant request message</idValue>
+</idList>

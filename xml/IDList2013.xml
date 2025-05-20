@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>A</idCode>
+        <idValue>Annually (calendar year)</idValue>
+    <idCode>B</idCode>
+        <idValue>Continuous</idValue>
+    <idCode>C</idCode>
+        <idValue>Synchronous</idValue>
+    <idCode>D</idCode>
+        <idValue>Discrete</idValue>
+    <idCode>E</idCode>
+        <idValue>Replenishment</idValue>
+    <idCode>F</idCode>
+        <idValue>Flexible interval (from date X through date Y)</idValue>
+    <idCode>J</idCode>
+        <idValue>Just-in-time</idValue>
+    <idCode>M</idCode>
+        <idValue>Monthly (calendar months)</idValue>
+    <idCode>Q</idCode>
+        <idValue>Quarterly (calendar quarters)</idValue>
+    <idCode>S</idCode>
+        <idValue>Semi-annually (calendar year)</idValue>
+    <idCode>T</idCode>
+        <idValue>Four week period (13 periods per year)</idValue>
+    <idCode>W</idCode>
+        <idValue>Weekly</idValue>
+    <idCode>Y</idCode>
+        <idValue>Daily</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

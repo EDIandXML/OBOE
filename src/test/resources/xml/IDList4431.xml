@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Factor guarantee</idValue>
+    <idCode>10</idCode>
+        <idValue>Bank guarantee</idValue>
+    <idCode>11</idCode>
+        <idValue>Public authority guarantee</idValue>
+    <idCode>12</idCode>
+        <idValue>Third party guarantee</idValue>
+    <idCode>13</idCode>
+        <idValue>Standby letter of credit</idValue>
+    <idCode>14</idCode>
+        <idValue>No guarantee</idValue>
+    <idCode>20</idCode>
+        <idValue>Goods as security</idValue>
+    <idCode>21</idCode>
+        <idValue>Business as security</idValue>
+    <idCode>23</idCode>
+        <idValue>Warrant or similar (warehouse receipts)</idValue>
+    <idCode>24</idCode>
+        <idValue>Mortgage</idValue>
+    <idCode>41</idCode>
+        <idValue>Book guarantee/book bond</idValue>
+    <idCode>44</idCode>
+        <idValue>Group guarantee</idValue>
+    <idCode>45</idCode>
+        <idValue>Insurance certificate</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

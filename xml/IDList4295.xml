@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AA</idCode>
+        <idValue>Member attribute change</idValue>
+    <idCode>AB</idCode>
+        <idValue>Abroad</idValue>
+    <idCode>AC</idCode>
+        <idValue>Member category change</idValue>
+    <idCode>AD</idCode>
+        <idValue>Death</idValue>
+    <idCode>AE</idCode>
+        <idValue>Disability</idValue>
+    <idCode>AF</idCode>
+        <idValue>Early retirement</idValue>
+    <idCode>AG</idCode>
+        <idValue>Hardship</idValue>
+    <idCode>AH</idCode>
+        <idValue>Ill health</idValue>
+    <idCode>AI</idCode>
+        <idValue>Leaving employer</idValue>
+    <idCode>AJ</idCode>
+        <idValue>Leaving industry</idValue>
+    <idCode>AK</idCode>
+        <idValue>Level/rate table change</idValue>
+    <idCode>AL</idCode>
+        <idValue>Normal retirement</idValue>
+    <idCode>AM</idCode>
+        <idValue>Other</idValue>
+    <idCode>AN</idCode>
+        <idValue>Retrenchment</idValue>
+    <idCode>AO</idCode>
+        <idValue>Resignation</idValue>
+    <idCode>AP</idCode>
+        <idValue>Member status change</idValue>
+    <idCode>AQ</idCode>
+        <idValue>Alternate quantity and unit of measurement</idValue>
+    <idCode>AR</idCode>
+        <idValue>Article out of assortment for particular company</idValue>
+    <idCode>AS</idCode>
+        <idValue>Article out of assortment</idValue>
+    <idCode>AT</idCode>
+        <idValue>Item not ordered</idValue>
+    <idCode>AU</idCode>
+        <idValue>No delivery due to outstanding payments</idValue>
+    <idCode>AV</idCode>
+        <idValue>Out of inventory</idValue>
+    <idCode>AW</idCode>
+        <idValue>Quantity adjustment</idValue>
+    <idCode>AX</idCode>
+        <idValue>National pricing authority agreement is final</idValue>
+    <idCode>BA</idCode>
+        <idValue>Damaged goods</idValue>
+    <idCode>BD</idCode>
+        <idValue>Blueprint deviation</idValue>
+    <idCode>BQ</idCode>
+        <idValue>Balancing quantity</idValue>
+    <idCode>DC</idCode>
+        <idValue>Date change</idValue>
+    <idCode>EV</idCode>
+        <idValue>Estimated quantity</idValue>
+    <idCode>GU</idCode>
+        <idValue>Gross volume per pack and unit of measure</idValue>
+    <idCode>GW</idCode>
+        <idValue>Gross weight per pack</idValue>
+    <idCode>LD</idCode>
+        <idValue>Length difference</idValue>
+    <idCode>MC</idCode>
+        <idValue>Pack/size measure difference</idValue>
+    <idCode>PC</idCode>
+        <idValue>Pack difference</idValue>
+    <idCode>PD</idCode>
+        <idValue>Pack dimension difference</idValue>
+    <idCode>PQ</idCode>
+        <idValue>Pack quantity</idValue>
+    <idCode>PS</idCode>
+        <idValue>Product/services ID change</idValue>
+    <idCode>PW</idCode>
+        <idValue>Pack weight difference</idValue>
+    <idCode>PZ</idCode>
+        <idValue>Pack size difference</idValue>
+    <idCode>QO</idCode>
+        <idValue>Quantity ordered</idValue>
+    <idCode>QP</idCode>
+        <idValue>Quantity based on price qualifier</idValue>
+    <idCode>QT</idCode>
+        <idValue>Quantity price break</idValue>
+    <idCode>SC</idCode>
+        <idValue>Size difference</idValue>
+    <idCode>UM</idCode>
+        <idValue>Unit of measure difference</idValue>
+    <idCode>UP</idCode>
+        <idValue>Unit price</idValue>
+    <idCode>WD</idCode>
+        <idValue>Width difference</idValue>
+    <idCode>WO</idCode>
+        <idValue>Weight qualifier/gross weight per package</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

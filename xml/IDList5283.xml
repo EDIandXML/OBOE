@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Individual duty, tax or fee (Customs item)</idValue>
+    <idCode>2</idCode>
+        <idValue>Total of all duties, taxes and fees (Customs item)</idValue>
+    <idCode>3</idCode>
+        <idValue>Total of each duty, tax or fee type (Customs declaration)</idValue>
+    <idCode>4</idCode>
+        <idValue>Total of all duties, taxes and fee types (Customs declaration)</idValue>
+    <idCode>5</idCode>
+        <idValue>Customs duty</idValue>
+    <idCode>6</idCode>
+        <idValue>Fee</idValue>
+    <idCode>7</idCode>
+        <idValue>Tax</idValue>
+    <idCode>9</idCode>
+        <idValue>Tax related information</idValue>
+</idList>

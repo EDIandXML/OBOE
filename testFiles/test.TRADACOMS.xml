@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE envelope PUBLIC "envelope" "https://raw.githubusercontent.com/EDIandXML/OBOE/main/envelope.dtd">
+<envelope format="Tradacoms">
+<segment code="STX" name="Start Transmission">
+<composite code="STDS" name="Syntax Identifier">
+<element code="STDS1" name="Syntax identifier"> <value>ANAA</value></element>
+<element code="STDS2" name="Syntax version number"><value>1</value></element>
+</composite>
+<composite code="FROM" name="Interchange Sender">
+<element code="FROM1" name="Sender Code"> <value>5098765432156</value></element>
+<element code="FROM2" name="Sender Name"> <value>ABC BOOKSELLERS</value></element>
+</composite>
+<composite code="UNTO" name="Interchange Recipient">
+<element code="UNTO1" name="Recipient Code"> <value>5023456789541</value></element>
+<element code="UNTO2" name="Recipient Name"> <value>XYZ PUBLISHERS</value></element>
+</composite>
+<composite code="TRDT" name="Date Time Of Preparation">
+<element code="TRDT1" name="Date"> <value>930831</value></element>
+</composite>
+<element code="SNRF" name="Sender Reference"> <value>P4371</value></element>
+<element code="APRF" name="Application Reference"> <value>ORDERS9</value></element>
+</segment>
+<functionalgroup>
+<transactionset code="ORDHDR" name="ORDERS">
+<table section="header">
+<segment code="MHD" name="Message Header">
+<element code="MSRF" name="Message Reference"><value>1</value></element>
+<composite code="TYPE" name="Type Of Message">
+<element code="TYPE1" name="Type"><value description="Order Header">ORDHDR</value></element>
+<element code="TYPE2" name="Version Number"><value>9</value></element>
+</composite>
+</segment>
+<segment code="TYP" name="Transaction Type Details">
+<element code="TCDE" name="Transaction Code"><value description="New Orders = new order for goods and/or services">0430</value></element>
+</segment>
+<segment code="SDT" name="Supplier Details">
+<composite code="SIDN" name="Supplier's Identity">
+<element code="SIDN1" name="Supplier's EAN Location Number"><value>5023456789541</value></element>
+</composite>
+</segment>
+<segment code="CDT" name="Customer Details">
+<composite code="CIDN" name="Customer's Identity">
+<element code="CIDN1" name="Customer's EAN Location Number"><value>5098765432156</value></element>
+</composite>
+</segment>
+<segment code="DNA" name="Data Narrative">
+<element code="SEQA" name="First Level Sequence Number"><value>1</value></element>
+<composite code="DNAC" name="Data Narrative Code">
+<element code="DNAC1" name="Code Table Number"><value>206</value></element>
+<element code="DNAC2" name="Code Value"> <value>T01</value></element>
+</composite>
+</segment>
+<segment code="DNA" name="Data Narrative">
+<element code="SEQA" name="First Level Sequence Number"><value>1</value></element>
+<composite code="DNAC" name="Data Narrative Code">
+<element code="DNAC1" name="Code Table Number"><value>207</value></element>
+<element code="DNAC2" name="Code Value"> <value>006</value></element>
+</composite>
+</segment>
+<segment code="FIL" name="File Details">
+<element code="FLGN" name="File Generation Number"><value>1</value></element>
+<element code="FLVN" name="File Version Number"><value>1</value></element>
+<element code="FLDT" name="File Creation Date"> <value>930831</value></element>
+</segment>
+<segment code="MTR" name="Message Trailer">
+<element code="NOSG" name="Number of Segments in Message"><value>8</value></element>
+</segment>
+</table>
+<table section="detail">
+<loop code="Message" name="Detail Message">
+<segment code="MHD" name="Message Header">
+<element code="MSRF" name="Message Reference"><value>2</value></element>
+<composite code="TYPE" name="Type Of Message">
+<element code="TYPE1" name="Type"><value description="Order Detail">ORDERS</value></element>
+<element code="TYPE2" name="Version Number"><value>9</value></element>
+</composite>
+</segment>
+<segment code="CLO" name="Customer's Location">
+<composite code="CLOC" name="Customer's Location">
+<element code="CLOC1" name="Customer's EAN Location Number"><value>5012345678954</value></element>
+</composite>
+</segment>
+<segment code="ORD" name="Order References">
+<composite code="ORNO" name="Order Number And Date">
+<element code="ORNO1" name="Customer's Order Number"> <value>JX93/1347</value></element>
+<element code="ORNO2" name="Supplier's Order Number"> <value></value></element>
+<element code="ORNO3" name="Date Order Placed by Customer"> <value>930828</value></element>
+</composite>
+</segment>
+</loop>
+<loop code="OLD" name="Order Line Details">
+<segment code="OLD" name="Order Line Details">
+<element code="SEQA" name="First Level Sequence Number"><value>1</value></element>
+<composite code="SPRO" name="Supplier's Product Number">
+<element code="SPRO1" name="EAN-13 Article Number for the Traded"> <value>978086287321X</value></element>
+<element code="SPRO2" name="Unit"> <value>0862873215</value></element>
+</composite>
+<composite code="UNOR" name="Unit Of Ordering">
+<element code="UNOR1" name="Consumer Units in Traded Unit"><value>1</value></element>
+</composite>
+<composite code="OQTY" name="Quantity Ordered">
+<element code="OQTY1" name="Number of Traded Units Ordered"><value>4</value></element>
+</composite>
+<element code="TFIN" name="To Follow Indicator"><value description="Not to follow">N</value></element>
+<composite code="TDES" name="Traded Unit Description">
+<element code="TDES1" name="Traded Unit Description Line 1"> <value>Terry/Women in Khaki</value></element>
+</composite>
+</segment>
+</loop>
+<loop code="OLD" name="Order Line Details">
+<segment code="OLD" name="Order Line Details">
+<element code="SEQA" name="First Level Sequence Number"><value>2</value></element>
+<composite code="SPRO" name="Supplier's Product Number">
+<element code="SPRO1" name="EAN-13 Article Number for the Traded"> <value>9780006355364</value></element>
+<element code="SPRO2" name="Unit"> <value>0006355366</value></element>
+</composite>
+<composite code="UNOR" name="Unit Of Ordering">
+<element code="UNOR1" name="Consumer Units in Traded Unit"><value>1</value></element>
+</composite>
+<composite code="OQTY" name="Quantity Ordered">
+<element code="OQTY1" name="Number of Traded Units Ordered"><value>2</value></element>
+</composite>
+<element code="TFIN" name="To Follow Indicator"><value description="Not to follow">N</value></element>
+<composite code="TDES" name="Traded Unit Description">
+<element code="TDES1" name="Traded Unit Description Line 1"> <value>Elliott/Bean Book</value></element>
+</composite>
+</segment>
+</loop>
+<segment code="OTR" name="Order Trailer">
+<element code="LORD" name="Lines Ordered"><value>2</value></element>
+</segment>
+<segment code="MTR" name="Message Trailer">
+<element code="NOSG" name="Number of Segments in Message"><value>7</value></element>
+</segment>
+</table>
+<table section="summary">
+<segment code="MHD" name="Message Header">
+<element code="MSRF" name="Message Reference"><value>3</value></element>
+<composite code="TYPE" name="Type Of Message">
+<element code="TYPE1" name="Type"><value description="Order Trailer">ORDTLR</value></element>
+<element code="TYPE2" name="Version Number"><value>9</value></element>
+</composite>
+</segment>
+<segment code="OFT" name="Order File Totals">
+<element code="FTOR" name="File Total Number of Orders"><value>1</value></element>
+</segment>
+</table>
+</transactionset>
+<transactionset code="RSGRSG" name="Reconciliation Message">
+<table section="header">
+<segment code="MHD" name="Message Header">
+<element code="MSRF" name="Message Reference"><value>4</value></element>
+<composite code="TYPE" name="Type Of Message">
+<element code="TYPE1" name="Type"><value description="Reconciliation Header">RSGRSG</value></element>
+<element code="TYPE2" name="Version Number"><value>2</value></element>
+</composite>
+</segment>
+</table>
+<table section="detail">
+<segment code="RSG" name="Reconcilation Detail">
+<element code="RSGA" name="STX SNRF Reconciliation Field"> <value>P4371</value></element>
+<composite code="RSGB" name="STX Receiver Reconciliation Field">
+<element code="UNTO1" name="Recipient Code"> <value>5023456789541</value></element>
+<element code="UNTO2" name="Recipient Name"> <value>XYZ PUBLISHERS</value></element>
+</composite>
+</segment>
+</table>
+<table section="summary">
+<segment code="MTR" name="Message Trailer">
+<element code="NOSG" name="Number of Segments in Message"><value>3</value></element>
+</segment>
+</table>
+</transactionset>
+</functionalgroup>
+<segment code="END" name="End Transmission">
+<element code="NMST" name="Number of messages"><value>4</value></element>
+</segment>
+</envelope>

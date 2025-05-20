@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>AMM</idCode>
+        <idValue>Ammo Pack</idValue>
+    <idCode>AMP</idCode>
+        <idValue>Ampoule</idValue>
+    <idCode>ATH</idCode>
+        <idValue>Attachment</idValue>
+  </idList>

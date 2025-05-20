@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Handling commission</idValue>
+    <idCode>2</idCode>
+        <idValue>Amendment commission</idValue>
+    <idCode>3</idCode>
+        <idValue>Acceptance commission</idValue>
+    <idCode>4</idCode>
+        <idValue>Commission for obtaining acceptance</idValue>
+    <idCode>5</idCode>
+        <idValue>Commission on delivery</idValue>
+    <idCode>6</idCode>
+        <idValue>Advising commission</idValue>
+    <idCode>7</idCode>
+        <idValue>Confirmation commission</idValue>
+    <idCode>8</idCode>
+        <idValue>Deferred payment commission</idValue>
+    <idCode>9</idCode>
+        <idValue>Commission for taking up documents</idValue>
+    <idCode>10</idCode>
+        <idValue>Opening commission</idValue>
+    <idCode>11</idCode>
+        <idValue>Fee for payment under reserve</idValue>
+    <idCode>12</idCode>
+        <idValue>Discrepancy fee</idValue>
+    <idCode>13</idCode>
+        <idValue>Domicilation commission</idValue>
+    <idCode>14</idCode>
+        <idValue>Commission for release of goods</idValue>
+    <idCode>15</idCode>
+        <idValue>Collection commission</idValue>
+    <idCode>16</idCode>
+        <idValue>Negotiation commission</idValue>
+    <idCode>17</idCode>
+        <idValue>Return commission</idValue>
+    <idCode>18</idCode>
+        <idValue>B/L splitting charges</idValue>
+    <idCode>19</idCode>
+        <idValue>Trust commission</idValue>
+    <idCode>20</idCode>
+        <idValue>Transfer commission</idValue>
+    <idCode>21</idCode>
+        <idValue>Commission for opening irrevocable doc. credits</idValue>
+    <idCode>22</idCode>
+        <idValue>Pre-advice commission</idValue>
+    <idCode>23</idCode>
+        <idValue>Supervisory commission</idValue>
+    <idCode>24</idCode>
+        <idValue>Model charges</idValue>
+    <idCode>25</idCode>
+        <idValue>Risk commission</idValue>
+    <idCode>26</idCode>
+        <idValue>Guarantee commission</idValue>
+    <idCode>27</idCode>
+        <idValue>Reimbursement commission</idValue>
+    <idCode>28</idCode>
+        <idValue>Stamp duty</idValue>
+    <idCode>29</idCode>
+        <idValue>Brokerage</idValue>
+    <idCode>30</idCode>
+        <idValue>Bank charges</idValue>
+    <idCode>31</idCode>
+        <idValue>Bank charges information</idValue>
+    <idCode>32</idCode>
+        <idValue>Courier fee</idValue>
+    <idCode>33</idCode>
+        <idValue>Phone fee</idValue>
+    <idCode>34</idCode>
+        <idValue>Postage fee</idValue>
+    <idCode>35</idCode>
+        <idValue>S.W.I.F.T. fee</idValue>
+    <idCode>36</idCode>
+        <idValue>Telex fee</idValue>
+    <idCode>37</idCode>
+        <idValue>Penalty for late delivery of documents</idValue>
+    <idCode>38</idCode>
+        <idValue>Penalty for late delivery of valuation of works</idValue>
+    <idCode>39</idCode>
+        <idValue>Penalty for execution of works behind schedule</idValue>
+    <idCode>40</idCode>
+        <idValue>Other penalties</idValue>
+    <idCode>41</idCode>
+        <idValue>Bonus for works ahead of schedule</idValue>
+    <idCode>42</idCode>
+        <idValue>Other bonus</idValue>
+    <idCode>43</idCode>
+        <idValue>Penalty refund</idValue>
+    <idCode>44</idCode>
+        <idValue>Project management cost</idValue>
+    <idCode>45</idCode>
+        <idValue>Pro rata retention</idValue>
+    <idCode>46</idCode>
+        <idValue>Contractual retention</idValue>
+    <idCode>47</idCode>
+        <idValue>Other retentions</idValue>
+    <idCode>48</idCode>
+        <idValue>Interest on arrears</idValue>
+    <idCode>49</idCode>
+        <idValue>Interest</idValue>
+    <idCode>50</idCode>
+        <idValue>Charge per credit cover</idValue>
+    <idCode>51</idCode>
+        <idValue>Charge per unused credit cover</idValue>
+    <idCode>52</idCode>
+        <idValue>Minimum commission</idValue>
+    <idCode>53</idCode>
+        <idValue>Factoring commission</idValue>
+</idList>

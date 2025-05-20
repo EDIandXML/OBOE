@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactionSet
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+  name="Reconciliation Message" id="RSGRSG" revision="???" description="Used to vaerify message integrity" shortName="RSGRSG"><table section="header">
+  <segment id="MHD" name="Message Header"
+    sequence="10" occurs="1" required='M'>
+     <dataElement id="MSRF" name="Message Reference"
+         sequence="1" required='M'
+        minLength="1" maxLength="12" type="N0"
+        description="Consecutive count of messages within the transmission"/>
+     <compositeDE id="TYPE" name="Type Of Message"
+         sequence="2" required='M'>
+       <dataElement id="TYPE1" name="Type"
+         sequence="1" required='M'
+          minLength="6" maxLength="6" type="ID"
+          description="Order Header Identifier">
+         <idList><idCode>RSGRSG</idCode><idValue>Reconciliation Header</idValue></idList>
+        </dataElement> 
+       <dataElement id="TYPE2" name="Version Number"
+         sequence="2" required='M'
+          minLength="1" maxLength="1" type="N0"
+          description="&apos;2&apos; for this version"/>
+     </compositeDE>
+  </segment>
+</table>
+<table section="detail">
+  <segment id="RSG" name="Reconcilation Detail"
+    sequence="10" occurs="1" required='M'>
+     <dataElement id="RSGA" name="STX SNRF Reconciliation Field"
+         sequence="1" required='M'
+        minLength="1" maxLength="14" type="AN"
+        description="Must equal SNRF in STX Segment"/>
+    <compositeDE id="RSGB" name="STX Receiver Reconciliation Field"
+         sequence="2" required='M' description="Must equal UNTO in STX Segment">
+	<dataElement id="UNTO1" name="Recipient Code" type="AN" sequence="1" description="Code" required="C" minLength="1" maxLength="14" shortName="Name"/>
+	<dataElement id="UNTO2" name="Recipient Name" type="AN" sequence="2" description="Name" required="C" minLength="1" maxLength="35" shortName="Code"/>
+    </compositeDE>     
+  </segment>
+</table>
+<table section="summary">
+  <segment id="MTR" name="Message Trailer"
+    sequence="30" occurs="1" required='M'>
+     <dataElement id="NOSG" name="Number of Segments in Message"
+         sequence="1" required='M'
+        minLength="1" maxLength="10" type="N0"
+        description="Control count of the number of segments comprising message. The count includes the MHD and MTR segments surrounding the message"/>
+  </segment>
+</table>
+</transactionSet>

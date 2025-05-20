@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Allowance range</idValue>
+    <idCode>2</idCode>
+        <idValue>Charge range</idValue>
+    <idCode>3</idCode>
+        <idValue>Monetary range</idValue>
+    <idCode>4</idCode>
+        <idValue>Quantity range</idValue>
+    <idCode>5</idCode>
+        <idValue>Temperature range</idValue>
+    <idCode>6</idCode>
+        <idValue>Order quantity range</idValue>
+    <idCode>7</idCode>
+        <idValue>Delivery quantity range</idValue>
+    <idCode>8</idCode>
+        <idValue>Production batch range</idValue>
+    <idCode>9</idCode>
+        <idValue>Monthly quantity range</idValue>
+    <idCode>10</idCode>
+        <idValue>Annual quantity range</idValue>
+</idList>

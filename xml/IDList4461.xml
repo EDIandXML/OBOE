@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Instrument not defined</idValue>
+    <idCode>2</idCode>
+        <idValue>Automated clearing house credit</idValue>
+    <idCode>3</idCode>
+        <idValue>Automated clearing house debit</idValue>
+    <idCode>4</idCode>
+        <idValue>ACH demand debit reversal</idValue>
+    <idCode>5</idCode>
+        <idValue>ACH demand credit reversal</idValue>
+    <idCode>6</idCode>
+        <idValue>ACH demand credit</idValue>
+    <idCode>7</idCode>
+        <idValue>ACH demand debit</idValue>
+    <idCode>8</idCode>
+        <idValue>Hold</idValue>
+    <idCode>9</idCode>
+        <idValue>National or regional clearing</idValue>
+    <idCode>10</idCode>
+        <idValue>In cash</idValue>
+    <idCode>11</idCode>
+        <idValue>ACH savings credit reversal</idValue>
+    <idCode>12</idCode>
+        <idValue>ACH savings debit reversal</idValue>
+    <idCode>13</idCode>
+        <idValue>ACH savings credit</idValue>
+    <idCode>14</idCode>
+        <idValue>ACH savings debit</idValue>
+    <idCode>15</idCode>
+        <idValue>Bookentry credit</idValue>
+    <idCode>16</idCode>
+        <idValue>Bookentry debit</idValue>
+    <idCode>17</idCode>
+        <idValue>ACH demand cash concentration/disbursement (CCD) credit</idValue>
+    <idCode>18</idCode>
+        <idValue>ACH demand cash concentration/disbursement (CCD) debit</idValue>
+    <idCode>19</idCode>
+        <idValue>ACH demand corporate trade payment (CTP) credit</idValue>
+    <idCode>20</idCode>
+        <idValue>Cheque</idValue>
+    <idCode>21</idCode>
+        <idValue>Banker&apos;s draft</idValue>
+    <idCode>22</idCode>
+        <idValue>Certified banker&apos;s draft</idValue>
+    <idCode>23</idCode>
+        <idValue>Bank cheque (issued by a banking or similar establishment)</idValue>
+    <idCode>25</idCode>
+        <idValue>Certified cheque</idValue>
+    <idCode>26</idCode>
+        <idValue>Local cheque</idValue>
+    <idCode>27</idCode>
+        <idValue>ACH demand corporate trade payment (CTP) debit</idValue>
+    <idCode>28</idCode>
+        <idValue>ACH demand corporate trade exchange (CTX) credit</idValue>
+    <idCode>29</idCode>
+        <idValue>ACH demand corporate trade exchange (CTX) debit</idValue>
+    <idCode>30</idCode>
+        <idValue>Credit transfer</idValue>
+    <idCode>31</idCode>
+        <idValue>Debit transfer</idValue>
+    <idCode>32</idCode>
+        <idValue>ACH demand cash concentration/disbursement plus (CCD+) credit</idValue>
+    <idCode>33</idCode>
+        <idValue>ACH demand cash concentration/disbursement plus (CCD+) debit</idValue>
+    <idCode>34</idCode>
+        <idValue>ACH prearranged payment and deposit (PPD)</idValue>
+    <idCode>35</idCode>
+        <idValue>ACH savings cash concentration/disbursement (CCD) credit</idValue>
+    <idCode>36</idCode>
+        <idValue>ACH savings cash concentration/disbursement (CCD) debit</idValue>
+    <idCode>37</idCode>
+        <idValue>ACH savings corporate trade payment (CTP) credit</idValue>
+    <idCode>38</idCode>
+        <idValue>ACH savings corporate trade payment (CTP) debit</idValue>
+    <idCode>39</idCode>
+        <idValue>ACH savings corporate trade exchange (CTX) credit</idValue>
+    <idCode>40</idCode>
+        <idValue>ACH savings corporate trade exchange (CTX) debit</idValue>
+    <idCode>41</idCode>
+        <idValue>ACH savings cash concentration/disbursement plus (CCD+) credit</idValue>
+    <idCode>42</idCode>
+        <idValue>Payment to bank account</idValue>
+    <idCode>43</idCode>
+        <idValue>ACH savings cash concentration/disbursement plus (CCD+) debit</idValue>
+    <idCode>50</idCode>
+        <idValue>Payment by postgiro</idValue>
+    <idCode>60</idCode>
+        <idValue>Promissory note</idValue>
+    <idCode>61</idCode>
+        <idValue>Promissory note signed by the debtor</idValue>
+    <idCode>62</idCode>
+        <idValue>Promissory note signed by the debtor and endorsed by a bank</idValue>
+    <idCode>63</idCode>
+        <idValue>Promissory note signed by the debtor and endorsed by a third party</idValue>
+    <idCode>64</idCode>
+        <idValue>Promissory note signed by a bank</idValue>
+    <idCode>65</idCode>
+        <idValue>Promissory note signed by a bank and endorsed by another bank</idValue>
+    <idCode>66</idCode>
+        <idValue>Promissory note signed by a third party</idValue>
+    <idCode>67</idCode>
+        <idValue>Promissory note signed by a third party and endorsed by a bank</idValue>
+    <idCode>70</idCode>
+        <idValue>Bill drawn by the creditor on the debtor</idValue>
+    <idCode>74</idCode>
+        <idValue>Bill drawn by the creditor on a bank</idValue>
+    <idCode>75</idCode>
+        <idValue>Bill drawn by the creditor, endorsed by another bank</idValue>
+    <idCode>76</idCode>
+        <idValue>Bill drawn by the creditor on a bank and endorsed by a third party</idValue>
+    <idCode>77</idCode>
+        <idValue>Bill drawn by the creditor on a third party</idValue>
+    <idCode>78</idCode>
+        <idValue>Bill drawn by creditor on third party, accepted and endorsed by bank</idValue>
+    <idCode>91</idCode>
+        <idValue>Not transferable banker&apos;s draft</idValue>
+    <idCode>92</idCode>
+        <idValue>Not transferable local cheque</idValue>
+    <idCode>93</idCode>
+        <idValue>Reference giro</idValue>
+    <idCode>94</idCode>
+        <idValue>Urgent giro</idValue>
+    <idCode>95</idCode>
+        <idValue>Free format giro</idValue>
+    <idCode>96</idCode>
+        <idValue>Requested method for payment was not used</idValue>
+    <idCode>97</idCode>
+        <idValue>Clearing between partners</idValue>
+    <idCode>U</idCode>
+        <idValue>sed in Finnish national banking system.</idValue>
+    <idCode>ZZZ</idCode>
+        <idValue>Mutually defined</idValue>
+</idList>

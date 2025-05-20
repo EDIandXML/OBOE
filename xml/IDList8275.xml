@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+    <idCode>1</idCode>
+        <idValue>Full load</idValue>
+    <idCode>2</idCode>
+        <idValue>Part load</idValue>
+    <idCode>3</idCode>
+        <idValue>Full load mixed consignments</idValue>
+    <idCode>4</idCode>
+        <idValue>Part load mixed consignments</idValue>
+    <idCode>5</idCode>
+        <idValue>Single invoiced load</idValue>
+    <idCode>6</idCode>
+        <idValue>Multi invoiced load</idValue>
+    <idCode>7</idCode>
+        <idValue>Empty</idValue>
+    <idCode>8</idCode>
+        <idValue>Full load, multiple bills</idValue>
+</idList>
