@@ -1,0 +1,44 @@
+<?xml encoding="UTF-8"?>
+<!ELEMENT envelope ((segment+, functionalgroup+, segment+)|(segment+))>
+<!ATTLIST envelope
+	format (X12 | EDIFACT | Tradacoms |ACH | ACH-CBR-PBR) #REQUIRED
+	version CDATA #IMPLIED
+>
+<!ELEMENT functionalgroup (segment?, transactionset+, segment?)>
+<!ELEMENT transactionset (table+)>
+<!ATTLIST transactionset
+	code CDATA #REQUIRED
+	name CDATA #IMPLIED
+	version CDATA #IMPLIED
+>
+<!ELEMENT table (loop?, segment?)*>
+<!ATTLIST table
+	section CDATA #REQUIRED
+>
+<!ELEMENT loop (loop?, segment?)*>
+<!ATTLIST loop
+	code CDATA #REQUIRED
+	name CDATA #IMPLIED
+>
+<!ELEMENT segment (composite?, element?)*>
+<!ATTLIST segment
+	code CDATA #REQUIRED
+	name CDATA #IMPLIED
+	docPosition CDATA #IMPLIED
+>
+<!ELEMENT composite (element)+>
+<!ATTLIST composite
+	code CDATA #REQUIRED
+	name CDATA #IMPLIED
+	docPosition CDATA #IMPLIED
+>
+<!ELEMENT element (#PCDATA | value)*>
+<!ATTLIST element
+	code CDATA #REQUIRED
+	name CDATA #IMPLIED
+    docPosition CDATA #IMPLIED
+>
+<!ELEMENT value (#PCDATA)>
+<!ATTLIST value
+	description CDATA #IMPLIED
+>
