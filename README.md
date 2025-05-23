@@ -39,7 +39,7 @@ There is a GUI program that uses a stand-alone program that you can use to build
 - The GUI is Util.TransactionSetMessageEditor will edit the message files and create Java programs
 - The stand-alone program is Util.OBOECodeGenerator, called by TransactionSetMessageEditor to create Java programs.
 
-## Creating Message Files
+## Creating Message Description Files (aka Rules Files) 
 
 I create X12 transaction files using the X12 definitions purchased from X12.org many years ago. 
 For TRADACOMS and EDIFACT files, a friend wrote a Perl script to parse the respective PDF files. The script's output is downloaded into a SQL database. If you're interested in the program, let me know - THERE IS NO DOCUMENTATION AND I HAVEN'T USED THE SCRIPT IN 20 YEARS.
