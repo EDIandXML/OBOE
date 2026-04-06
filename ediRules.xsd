@@ -248,35 +248,35 @@
 	<!-- Updated idList - idValue is now a CHILD of idCode -->
 	<!-- ============================================= -->
 	
-	<xs:element name="idList">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="idCode" maxOccurs="unbounded">
-					<xs:complexType mixed="true">
-						<!-- idValue is now a proper child element inside idCode -->
-						<xs:sequence>
-							<xs:element name="idValue"
-								type="xs:string"
-								minOccurs="0"
-								maxOccurs="1" />
-						</xs:sequence>
 
-						<!-- Original 'used' attribute is preserved -->
-						<xs:attribute name="used" default="Y">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:enumeration value="Y" />
-									<xs:enumeration value="N" />
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:attribute>
-					</xs:complexType>
-				</xs:element>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-	<!-- idValue -->
-	<xs:element name="idValue" type="xs:string" />
+<xs:element name="idList">
+    <xs:complexType>
+        <xs:sequence>
+            <!-- Each code can now have its own description -->
+            <xs:element name="idCode" maxOccurs="unbounded">
+                <xs:complexType mixed="true">
+                    <!-- idValue is a child element inside idCode -->
+                    <xs:sequence>
+                        <xs:element name="idValue" 
+                                    type="xs:string" 
+                                    minOccurs="0" 
+                                    maxOccurs="1"/>
+                    </xs:sequence>
+                    
+                    <!-- Original 'used' attribute is preserved -->
+                    <xs:attribute name="used" default="Y">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="Y"/>
+                                <xs:enumeration value="N"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
 
 	<!-- idListClass -->
 	<xs:element name="idListClass">
