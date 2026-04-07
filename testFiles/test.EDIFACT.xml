@@ -64,7 +64,8 @@
 <composite code="C107" name="Text Reference">
 <element code="4441" name="Free text identification"> <value>DUY</value></element>
 <element code="1131" name="Code list qualifier"><value description="Telephone directory">12</value></element>
-<element code="3055" name="Code list responsible agency, coded"><value description="EDITEUR (European book sector electronic data interchange group)">28</value></element>
+<element code="3055" name="Code list responsible agency, coded"><value description="EDITEUR (European book sector electronic data
+		interchange group)">28</value></element>
 </composite>
 </segment>
 <loop code="NAD" name="Name and Address">
@@ -232,7 +233,8 @@
 </segment>
 <segment code="CNT" name="Control Total">
 <composite code="C270" name="Control">
-<element code="6069" name="Control qualifier"><value description="Algebraic total of the quantity values in line items in a message">1</value></element>
+<element code="6069" name="Control qualifier"><value description="Algebraic total of the quantity values in line items in a
+		message">1</value></element>
 <element code="6066" name="Control value"><value>17</value></element>
 </composite>
 </segment>

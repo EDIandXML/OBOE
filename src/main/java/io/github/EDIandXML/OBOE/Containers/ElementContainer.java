@@ -676,7 +676,7 @@ public class ElementContainer implements IElementContainer {
 			if (elm.IAmADataElement()) {
 				DataElement de = (DataElement) elm;
 				if (de.getType().equals("ID")) {
-					de.set(idl.getCodeByPos(0));
+					de.set(idl.getCodesValues().firstKey());
 				}
 
 			}

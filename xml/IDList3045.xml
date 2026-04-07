@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Name components in sequence as defined in description below</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Name components in sequence as defined in description
+		below</idValue>
+	</idCode>
 </idList>

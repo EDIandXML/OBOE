@@ -216,6 +216,7 @@ public class TradacomsDocumentParser extends EDIDocumentParser {
 						if (halted()) {
 							return false;
 						}
+						logr.debug("not halted");
 						break;
 					} else if (findID.compareTo(
 							TradacomsFunctionalGroup.idTrailer) == 0) {
@@ -223,6 +224,7 @@ public class TradacomsDocumentParser extends EDIDocumentParser {
 						if (halted()) {
 							return false;
 						}
+						
 						break;
 					} else if (findID.compareTo(
 							TradacomsEnvelope.idInterchangeTrailer) == 0) {

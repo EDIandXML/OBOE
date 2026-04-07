@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>A</idCode>
-        <idValue>Customer plant (receiving location)</idValue>
-    <idCode>B</idCode>
-        <idValue>Material release issuer</idValue>
-    <idCode>S</idCode>
-        <idValue>Supplier authority</idValue>
-    <idCode>X</idCode>
-        <idValue>Responsibility to be determined</idValue>
-    <idCode>ZZZ</idCode>
-        <idValue>Mutually defined</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>A <idValue>Customer plant (receiving location)</idValue>
+	</idCode>
+	<idCode>B <idValue>Material release issuer</idValue>
+	</idCode>
+	<idCode>S <idValue>Supplier authority</idValue>
+	</idCode>
+	<idCode>X <idValue>Responsibility to be determined</idValue>
+	</idCode>
+	<idCode>ZZZ <idValue>Mutually defined</idValue>
+	</idCode>
 </idList>

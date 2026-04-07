@@ -1747,8 +1747,8 @@ public class TransactionSetMessageEditor extends JFrame
 		IDListProcessor idl = tde.getIDList();
 		if ((idl == null) && (tde.getType().equals("ID"))) {
 			tde.setType("AN");
-		} else if ((idl != null) && (idl.getCodes() != null)
-				&& (idl.getCodes().size() != 0)
+		} else if ((idl != null) && (idl.getCodesValues() != null)
+				&& (idl.getCodesValues().size() != 0)
 				&& (tde.getType().equals("ID") == false)) {
 			tde.setType("ID");
 		}
@@ -1847,7 +1847,7 @@ public class TransactionSetMessageEditor extends JFrame
 
 		idl = (IDList) tde.getIDList();
 
-		ArrayList<String> codes = idl.getCodes();
+		var codes = idl.getCodesValues();
 		if (codes.size() != 1) {
 			return;
 		}
@@ -1884,16 +1884,15 @@ public class TransactionSetMessageEditor extends JFrame
 		idl = (IDList) tde.getIDList();
 		if (delete) { // user doesn't want deleted id list elements
 			writeWork(writer, Util.lineFeed + addDepth(depth) + "  <idList>");
-			ArrayList<String> codes = idl.getCodes();
-			ArrayList<String> values = idl.getValues();
-			for (int r = 0; r < codes.size(); r++) {
+			 
+			for (var cv:idl.getCodesValues().entrySet()) {
 				writeWork(writer,
 						Util.lineFeed + addDepth(depth + 1) + "    <idCode>"
-								+ Util.normalize(codes.get(r)) + "</idCode>");
+								+ Util.normalize(cv.getKey()));
 				writeWork(writer,
 						Util.lineFeed + addDepth(depth + 1)
 								+ "        <idValue>"
-								+ Util.normalize(values.get(r)) + "</idValue>");
+								+ Util.normalize(cv.getValue()) + "</idValue></idCode>");
 			}
 
 			writeWork(writer, Util.lineFeed + addDepth(depth) + "  </idList>");
@@ -1902,16 +1901,14 @@ public class TransactionSetMessageEditor extends JFrame
 					|| (idl.getShortName().length() == 0)) {
 				writeWork(writer,
 						Util.lineFeed + addDepth(depth) + "  <idList>");
-				ArrayList<String> codes = idl.getCodes();
-				ArrayList<String> values = idl.getValues();
-				for (int r = 0; r < codes.size(); r++) {
+				for (var cv:idl.getCodesValues().entrySet())  {
 					writeWork(writer,
 							Util.lineFeed + addDepth(depth + 1) + "    <idCode>"
-									+ Util.normalize(codes.get(r))
-									+ "</idCode>");
+									+ Util.normalize(cv.getKey())
+									);
 					writeWork(writer, Util.lineFeed + addDepth(depth + 1)
 							+ "        <idValue>"
-							+ Util.normalize(values.get(r)) + "</idValue>");
+							+ Util.normalize(cv.getValue()) + "</idValue></idCode>");
 				}
 
 				writeWork(writer,
@@ -1949,13 +1946,11 @@ public class TransactionSetMessageEditor extends JFrame
 				"  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"");
 		idWriter.println(
 				"  xsi:noNamespaceSchemaLocation=\"https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd\">");
-		ArrayList<String> codes = idl.getCodes();
-		ArrayList<String> values = idl.getValues();
-		for (int r = 0; r < codes.size(); r++) {
-			idWriter.println("    <idCode>" + Util.normalize(codes.get(r))
-					+ "</idCode>");
-			idWriter.println("        <idValue>" + Util.normalize(values.get(r))
-					+ "</idValue>");
+		for (var cv:idl.getCodesValues().entrySet())  {
+			idWriter.println("    <idCode>" + Util.normalize(cv.getKey())
+					);
+			idWriter.println("        <idValue>" + Util.normalize(cv.getValue())
+					+ "</idValue></idCode>");
 		}
 		idWriter.println("</idList>");
 		idWriter.flush();

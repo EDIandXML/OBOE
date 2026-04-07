@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transactionSet
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
   name="Purchase Order Message" id="ORDERS"  revision="D99A"
   description="A message specifying details for goods or services ordered under conditions agreed between the seller and the buyer."
   shortName="PurchaseOrderMessage">

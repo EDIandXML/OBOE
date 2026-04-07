@@ -42,6 +42,7 @@ import org.xml.sax.helpers.DefaultHandler;
 import io.github.EDIandXML.OBOE.Containers.MetaTemplateContainer;
 import io.github.EDIandXML.OBOE.Containers.TransactionSet;
 import io.github.EDIandXML.OBOE.DataElements.IDList;
+import io.github.EDIandXML.OBOE.DataElements.IDList.IncludeOrExclude;
 import io.github.EDIandXML.OBOE.DataElements.IDListProcessor;
 import io.github.EDIandXML.OBOE.Errors.OBOEException;
 import io.github.EDIandXML.OBOE.Parsers.IDListParser;
@@ -54,10 +55,10 @@ import io.github.EDIandXML.OBOE.Templates.TemplateTransactionSet;
 import io.github.EDIandXML.OBOE.util.Util;
 
 /**
- * class for building a Transaction Set from an edi xml file this is a
- * subclass of the SAX2 handler <br>
- * Class contains a main method to allow it to be invoked as an
- * application. <br>
+ * class for building a Transaction Set from an edi xml file this is a subclass
+ * of the SAX2 handler <br>
+ * Class contains a main method to allow it to be invoked as an application.
+ * <br>
  * xmlfilename, <br>
  * 
  * OBOE - Open Business Objects for EDI <br>
@@ -66,8 +67,7 @@ import io.github.EDIandXML.OBOE.util.Util;
  * 
  */
 
-public class TransactionSetFactory extends DefaultHandler
-		implements ContentHandler {
+public class TransactionSetFactory extends DefaultHandler implements ContentHandler {
 
 	/**
 	 * current element number
@@ -114,6 +114,8 @@ public class TransactionSetFactory extends DefaultHandler
 	protected String elementID = "";
 
 	/** simple string processor */
+	protected CharArrayWriter codeContents = new CharArrayWriter();
+	protected CharArrayWriter valueContents = new CharArrayWriter();
 	protected CharArrayWriter contents = new CharArrayWriter();
 
 	/**
@@ -184,7 +186,15 @@ public class TransactionSetFactory extends DefaultHandler
 		definedMessageFolder = Util.getMessageDescriptionFolder();
 		foundMessageFolder = definedMessageFolder;
 
+		spf.setValidating(false);
 		spf.setNamespaceAware(true);
+		// Disable schema validation (most common cause of the error)
+		spf.setFeature("http://apache.org/xml/features/validation/schema", false);
+
+		// Optional but helpful for lenient parsing
+		spf.setFeature("http://xml.org/sax/features/validation", false);
+		spf.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar", false);
+		spf.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
 
 		parser = spf.newSAXParser();
 
@@ -222,9 +232,8 @@ public class TransactionSetFactory extends DefaultHandler
 			parser.parse(is, this);
 		} catch (SAXException e1) {
 			logr.error("Caught exception: " + e1.getMessage());
-			logr.error("Near element #: " + _iElement + "     line: " + _iLine
-					+ "     nodeName: " + nodeName + "     name or id: "
-					+ nameOrID);
+			logr.error("Near element #: " + _iElement + "     line: " + _iLine + "     nodeName: " + nodeName
+					+ "     name or id: " + nameOrID);
 			logr.error(e1.getMessage(), e1);
 			throw e1;
 		}
@@ -244,9 +253,8 @@ public class TransactionSetFactory extends DefaultHandler
 			parser.parse(is, this);
 		} catch (SAXException e1) {
 			logr.error("Caught exception: " + e1.getMessage());
-			logr.error("Near element #: " + _iElement + "     line: " + _iLine
-					+ "     nodeName: " + nodeName + "     name or id: "
-					+ nameOrID);
+			logr.error("Near element #: " + _iElement + "     line: " + _iLine + "     nodeName: " + nodeName
+					+ "     name or id: " + nameOrID);
 			logr.error(e1.getMessage(), e1);
 			throw e1;
 		}
@@ -257,8 +265,8 @@ public class TransactionSetFactory extends DefaultHandler
 	 * method called for each xml element found. <br>
 	 * process logic
 	 * <ul>
-	 * <li>test each name found for edi type: transactionSet, table,
-	 * segment, dataelement
+	 * <li>test each name found for edi type: transactionSet, table, segment,
+	 * dataelement
 	 * <li>for each type pull appropriate attributes and construct object
 	 * <li>for transaction set build transaction set
 	 * <li>for table build a table
@@ -272,21 +280,18 @@ public class TransactionSetFactory extends DefaultHandler
 	 * @throws SAXException many possible exceptions
 	 */
 	@Override
-	public void startElement(java.lang.String uri, java.lang.String localName,
-			java.lang.String rawName, Attributes attributes)
-			throws SAXException {
+	public void startElement(java.lang.String uri, java.lang.String localName, java.lang.String rawName,
+			Attributes attributes) throws SAXException {
 		int i;
 		reportPosition();
 		nodeName = rawName;
 		_iElement++;
-		contents.reset();
 
 		if (nodeName.equals("transactionSet")) {
 
 			logr.debug("validating = " + spf.isValidating());
 
-			String id = "", tsName = "", revision = "", functionalGroup = "",
-					description = "", shortName = null;
+			String id = "", tsName = "", revision = "", functionalGroup = "", description = "", shortName = null;
 
 			String validatingMethod = null;
 
@@ -329,13 +334,11 @@ public class TransactionSetFactory extends DefaultHandler
 				format = Format.EDIFACT_FORMAT;
 			}
 
-			currentTransactionSet = new TemplateTransactionSet(format, id,
-					tsName, revision, functionalGroup, description, shortName,
-					null);
+			currentTransactionSet = new TemplateTransactionSet(format, id, tsName, revision, functionalGroup,
+					description, shortName, null);
 
 			if (validatingMethod != null) {
-				currentTransactionSet.setValidatingMethod(getValidatingMethod(
-						validatingMethod, currentTransactionSet));
+				currentTransactionSet.setValidatingMethod(getValidatingMethod(validatingMethod, currentTransactionSet));
 			}
 			// templateContainerStack.push(currentTemplateContainer);
 			// nothing to put onto the stack yet
@@ -360,40 +363,30 @@ public class TransactionSetFactory extends DefaultHandler
 				}
 			}
 			if (i >= attributes.getLength()) {
-				throw new SAXException(
-						"Table section name missing, see element " + _iElement);
+				throw new SAXException("Table section name missing, see element " + _iElement);
 			}
 			if (attributes.getValue(i).equals("header")) {
 				if (currentTransactionSet.getHeaderTemplateTable() == null) {
-					currentTable = new TemplateTable(attributes.getValue(i),
-							currentTransactionSet);
+					currentTable = new TemplateTable(attributes.getValue(i), currentTransactionSet);
 
 				} else {
-					throw new SAXException(
-							"Header table already defined, see element "
-									+ _iElement);
+					throw new SAXException("Header table already defined, see element " + _iElement);
 				}
 			}
 			if (attributes.getValue(i).equals("detail")) {
 				if (currentTransactionSet.getDetailTemplateTable() == null) {
-					currentTable = new TemplateTable(attributes.getValue(i),
-							currentTransactionSet);
+					currentTable = new TemplateTable(attributes.getValue(i), currentTransactionSet);
 
 				} else {
-					throw new SAXException(
-							"Detail table already defined, see element "
-									+ _iElement);
+					throw new SAXException("Detail table already defined, see element " + _iElement);
 				}
 			}
 			if (attributes.getValue(i).equals("summary")) {
 				if (currentTransactionSet.getSummaryTemplateTable() == null) {
-					currentTable = new TemplateTable(attributes.getValue(i),
-							currentTransactionSet);
+					currentTable = new TemplateTable(attributes.getValue(i), currentTransactionSet);
 
 				} else {
-					throw new SAXException(
-							"Summary table already defined, see element "
-									+ _iElement);
+					throw new SAXException("Summary table already defined, see element " + _iElement);
 				}
 			}
 
@@ -411,8 +404,7 @@ public class TransactionSetFactory extends DefaultHandler
 			}
 
 			if (validatingMethod != null) {
-				currentTable.setValidatingMethod(
-						getValidatingMethod(validatingMethod, currentTable));
+				currentTable.setValidatingMethod(getValidatingMethod(validatingMethod, currentTable));
 			}
 			templateContainerStack.push(currentTemplateContainer);
 			currentTemplateContainer.addContainer(currentTable);
@@ -442,7 +434,9 @@ public class TransactionSetFactory extends DefaultHandler
 				}
 				if (attributes.getQName(i).equals("occurs")) {
 					String sOccurs = attributes.getValue(i).trim();
-					if (sOccurs.length() > 0) {
+					if (sOccurs.equals("unbounded"))
+						occurs = -1; // -1 means unbounded;
+					else if (sOccurs.length() > 0) {
 						// let a numeric parsing exception occur on its own
 						occurs = Integer.parseInt(sOccurs);
 					}
@@ -466,12 +460,11 @@ public class TransactionSetFactory extends DefaultHandler
 				shortName = "Loop_" + currentID;
 			}
 
-			currentLoop = new TemplateLoop(currentID, currentName, occurs,
-					required, shortName, used, currentTemplateContainer);
+			currentLoop = new TemplateLoop(currentID, currentName, occurs, required, shortName, used,
+					currentTemplateContainer);
 
 			if (validatingMethod != null) {
-				currentLoop.setValidatingMethod(
-						getValidatingMethod(validatingMethod, currentLoop));
+				currentLoop.setValidatingMethod(getValidatingMethod(validatingMethod, currentLoop));
 			}
 			templateContainerStack.push(currentTemplateContainer);
 			currentTemplateContainer.addContainer(currentLoop);
@@ -512,8 +505,9 @@ public class TransactionSetFactory extends DefaultHandler
 				}
 				if (attributes.getQName(i).equals("occurs")) {
 					String sOccurs = attributes.getValue(i).trim();
-					if (sOccurs.length() > 0) {
-						// let a numeric parsing exception occur on its own
+					if (sOccurs.equals("unbounded"))
+						occurs = -1; // -1 means unbounded;
+					else if (sOccurs.length() > 0) {
 						occurs = Integer.parseInt(sOccurs);
 					}
 				}
@@ -534,15 +528,12 @@ public class TransactionSetFactory extends DefaultHandler
 				shortName = "Segment_" + currentID + "_" + sequence;
 			}
 
-			nameOrID = currentID + " name:" + currentName + " sequence: "
-					+ sequence + " shortName: " + shortName;
-			currentSegment = new TemplateSegment(currentID, currentName,
-					sequence, description, occurs, required, shortName, used,
-					currentTemplateContainer);
+			nameOrID = currentID + " name:" + currentName + " sequence: " + sequence + " shortName: " + shortName;
+			currentSegment = new TemplateSegment(currentID, currentName, sequence, description, occurs, required,
+					shortName, used, currentTemplateContainer);
 
 			if (validatingMethod != null) {
-				currentSegment.setValidatingMethod(
-						getValidatingMethod(validatingMethod, currentSegment));
+				currentSegment.setValidatingMethod(getValidatingMethod(validatingMethod, currentSegment));
 			}
 
 			try {
@@ -559,8 +550,7 @@ public class TransactionSetFactory extends DefaultHandler
 		}
 
 		if (nodeName.equals("compositeDE")) {
-			currentCompositeElement = setTemplateComposite(
-					currentSegment.getContainerSize(), attributes);
+			currentCompositeElement = setTemplateComposite(currentSegment.getContainerSize(), attributes);
 			nameOrID = currentCompositeElement.getID();
 			try {
 				currentSegment.addElement(currentCompositeElement);
@@ -601,71 +591,55 @@ public class TransactionSetFactory extends DefaultHandler
 
 			if (currentDataElement.getType().equals("AN")) {
 				currentDataElement.setType("ID");
-				logr.info("changed dataelement id =\""
-						+ currentDataElement.getID()
+				logr.info("changed dataelement id =\"" + currentDataElement.getID()
 						+ "\" from type AN to ID because of idListClass node");
 			}
 
 			if (currentDataElement.getType().equals("ID") == false) {
-				logr.error("cannot use idListClass node with dataelement id =\""
-						+ currentDataElement.getID() + "\"");
+				logr.error("cannot use idListClass node with dataelement id =\"" + currentDataElement.getID() + "\"");
 			}
 
 			try {
-				currentIDListProcessor = (IDListProcessor) Class
-						.forName(attributes.getValue("className"))
+				currentIDListProcessor = (IDListProcessor) Class.forName(attributes.getValue("className"))
 						.getDeclaredConstructor().newInstance();
 			} catch (Exception exc) {
 				logr.error(exc.getMessage(), exc);
-				throw new OBOEException("Exception looking for idListClass="
-						+ attributes.getValue("className"));
+				throw new OBOEException("Exception looking for idListClass=" + attributes.getValue("className"));
 			}
 			currentDataElement.setIDList(currentIDListProcessor);
 			return;
 
 		}
 		if (nodeName.equals("idListFile")) {
-			if ((currentDataElement.getType().equals("A"))
-					|| (currentDataElement.getType().equals("AN"))) {
+			if ((currentDataElement.getType().equals("A")) || (currentDataElement.getType().equals("AN"))) {
 				currentDataElement.setType("ID");
-				logr.info("changed dataelement id =\""
-						+ currentDataElement.getID()
+				logr.info("changed dataelement id =\"" + currentDataElement.getID()
 						+ "\" from type AN to ID because of idListFile node");
 			}
 
 			if (currentDataElement.getType().equals("ID") == false) {
-				logr.error("cannot use idListFile node with dataelement id =\""
-						+ currentDataElement.getID() + "\"");
+				logr.error("cannot use idListFile node with dataelement id =\"" + currentDataElement.getID() + "\"");
 			}
 
-			currentIDList = idLists
-					.get(foundMessageFolder + attributes.getValue("fileName"));
+			currentIDList = idLists.get(foundMessageFolder + attributes.getValue("fileName"));
 
 			if (currentIDList == null) {
-				currentIDList = new IDList(
-						foundMessageFolder + attributes.getValue("fileName"),
-						definedMessageFolder, idListParser);
-				idLists.put(
-						foundMessageFolder + attributes.getValue("fileName"),
-						currentIDList);
-				currentTransactionSet.addIDListFile(new File(
-						foundMessageFolder + attributes.getValue("fileName")));
+				currentIDList = new IDList(foundMessageFolder + attributes.getValue("fileName"), definedMessageFolder,
+						idListParser);
+				idLists.put(foundMessageFolder + attributes.getValue("fileName"), currentIDList);
+				currentTransactionSet.addIDListFile(new File(foundMessageFolder + attributes.getValue("fileName")));
 			}
 			for (i = 0; i < attributes.getLength(); i++) {
 				if (attributes.getQName(i).equals("fileName")) {
 					continue;
 				}
 				if (attributes.getQName(i).equals("include")) {
-					currentIDList = currentIDList.idListWork('i',
-							attributes.getValue(i));
-					currentIDList.setFilterList(
-							"include=\"" + attributes.getValue(i) + "\"");
+					currentIDList = currentIDList.idListWork(IncludeOrExclude.INCLUDE, attributes.getValue(i));
+					currentIDList.setFilterList("include=\"" + attributes.getValue(i) + "\"");
 				}
 				if (attributes.getQName(i).equals("exclude")) {
-					currentIDList = currentIDList.idListWork('x',
-							attributes.getValue(i));
-					currentIDList.setFilterList(
-							"exclude=\"" + attributes.getValue(i) + "\"");
+					currentIDList = currentIDList.idListWork(IncludeOrExclude.EXCLUDE, attributes.getValue(i));
+					currentIDList.setFilterList("exclude=\"" + attributes.getValue(i) + "\"");
 				}
 			}
 			currentIDListProcessor = currentIDList;
@@ -675,14 +649,12 @@ public class TransactionSetFactory extends DefaultHandler
 		if (nodeName.equals("idList")) {
 			if (currentDataElement.getType().equals("AN")) {
 				currentDataElement.setType("ID");
-				logr.info("changed dataelement id =\""
-						+ currentDataElement.getID()
+				logr.info("changed dataelement id =\"" + currentDataElement.getID()
 						+ "\" from type AN to ID because of idList node");
 			}
 
 			if (currentDataElement.getType().equals("ID") == false) {
-				logr.error("cannot use idList node with dataelement id =\""
-						+ currentDataElement.getID() + "\"");
+				logr.error("cannot use idList node with dataelement id =\"" + currentDataElement.getID() + "\"");
 			}
 
 			currentIDList = new IDList();
@@ -692,14 +664,19 @@ public class TransactionSetFactory extends DefaultHandler
 		}
 
 		if (rawName.equals("idCode")) {
+			codeContents = new CharArrayWriter();
+			contents = codeContents;
 			return;
 		}
 
 		if (rawName.equals("idValue")) {
+			valueContents = new CharArrayWriter();
+			contents = valueContents;
 			return;
 		}
 
 		if (nodeName.equals("default")) {
+			contents = new CharArrayWriter();
 			defaultFrom = attributes.getValue(0); // only one attribute
 			nameOrID = defaultFrom;
 			return;
@@ -719,21 +696,18 @@ public class TransactionSetFactory extends DefaultHandler
 			currentRule = new ElementRules(rule, positions);
 
 			for (int ci = 1; ci <= currentRule.getPositionCount(); ci++) {
-				if ((currentRule.getPosition(ci) < 1)
-						|| (currentRule.getPosition(
-								ci) > currentSegment.myElementContainer.templateDataElementList
-										.lastKey())) {
-					throw new SAXException(
-							"ElementRule position specification invalid. No data element at "
-									+ currentRule.getPosition(ci));
+				if ((currentRule.getPosition(ci) < 1) || (currentRule
+						.getPosition(ci) > currentSegment.myElementContainer.templateDataElementList.lastKey())) {
+					throw new SAXException("ElementRule position specification invalid. No data element at "
+							+ currentRule.getPosition(ci));
 				}
 			}
 			currentSegment.addElementRule(currentRule);
 			return;
 		}
 
-		throw new SAXException("logic error: unknown type " + nodeName + " "
-				+ currentID + " for element: " + _iElement);
+		throw new SAXException(
+				"logic error: unknown type " + nodeName + " " + currentID + " for element: " + _iElement);
 
 	}
 
@@ -751,8 +725,8 @@ public class TransactionSetFactory extends DefaultHandler
 	 * @throws SAXException many possible *
 	 */
 	@Override
-	public void endElement(java.lang.String uri, java.lang.String localName,
-			java.lang.String rawName) throws SAXException {
+	public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String rawName)
+			throws SAXException {
 
 		reportPosition();
 
@@ -776,8 +750,7 @@ public class TransactionSetFactory extends DefaultHandler
 				currentTable = (TemplateTable) currentTemplateContainer;
 			} else {
 				throw new SAXException(
-						"bad OBOE logic, what is this doing in the stack "
-								+ currentTemplateContainer.getID());
+						"bad OBOE logic, what is this doing in the stack " + currentTemplateContainer.getID());
 			}
 			return;
 		}
@@ -809,17 +782,19 @@ public class TransactionSetFactory extends DefaultHandler
 		}
 
 		if (rawName.equals("idCode")) {
-			idCode = contents.toString(); // code comes before value so save it
+			currentIDList.add(codeContents.toString().trim(), valueContents.toString().trim());
+			codeContents.reset();
+			valueContents.reset();
 			return;
 		}
 
 		if (rawName.equals("idValue")) {
-			currentIDList.add(idCode, contents.toString());
+
 			return;
 		}
 
 		if (name.equals("default")) {
-			String s = contents.toString();
+			String s = contents.toString().trim();
 			if (defaultFrom.equals("constant")) {
 				currentDataElement.setLoadFromConstant(s);
 			} else if (defaultFrom.equals("property")) {
@@ -864,8 +839,7 @@ public class TransactionSetFactory extends DefaultHandler
 	 * @param attributes SAX2 attributes
 	 * @throws SAXException SAX errors
 	 */
-	public TemplateCompositeElement setTemplateComposite(int pos,
-			Attributes attributes) throws SAXException {
+	public TemplateCompositeElement setTemplateComposite(int pos, Attributes attributes) throws SAXException {
 		int i;
 		String id = "", thisName = "", description = "";
 		int occurs = 1;
@@ -894,10 +868,8 @@ public class TransactionSetFactory extends DefaultHandler
 				try {
 					sequence = Integer.parseInt(attributes.getValue(i));
 				} catch (NumberFormatException nfe) {
-					throw new OBOEException("sequence not numeric. "
-							+ " look for sequence=\"" + attributes.getValue(i)
-							+ "\"" + " nodeName: CompositeElement" + " name: "
-							+ thisName + " id:" + id);
+					throw new OBOEException("sequence not numeric. " + " look for sequence=\"" + attributes.getValue(i)
+							+ "\"" + " nodeName: CompositeElement" + " name: " + thisName + " id:" + id);
 				}
 			}
 			if (attributes.getQName(i).equals("shortName")) {
@@ -909,17 +881,13 @@ public class TransactionSetFactory extends DefaultHandler
 					try {
 						occurs = Integer.parseInt(sOccurs);
 						if (occurs < 1) {
-							throw new OBOEException("occurs less than 1. "
-									+ " look for occurs=\""
-									+ attributes.getValue(i) + "\""
-									+ " nodeName: CompositeElement" + " name: "
-									+ thisName + " id:" + id);
+							throw new OBOEException(
+									"occurs less than 1. " + " look for occurs=\"" + attributes.getValue(i) + "\""
+											+ " nodeName: CompositeElement" + " name: " + thisName + " id:" + id);
 						}
 					} catch (NumberFormatException nfe) {
-						throw new OBOEException("occurs not numeric. "
-								+ " look for occurs=\"" + attributes.getValue(i)
-								+ "\"" + " nodeName: CompositeElement"
-								+ " name: " + thisName + " id:" + id);
+						throw new OBOEException("occurs not numeric. " + " look for occurs=\"" + attributes.getValue(i)
+								+ "\"" + " nodeName: CompositeElement" + " name: " + thisName + " id:" + id);
 					}
 				}
 			}
@@ -939,13 +907,11 @@ public class TransactionSetFactory extends DefaultHandler
 		}
 
 		elementID = elementID + sPosition + "_";
-		TemplateCompositeElement currentComposite = new TemplateCompositeElement(
-				id, thisName, required, sequence, description, shortName,
-				currentSegment, occurs, used);
+		TemplateCompositeElement currentComposite = new TemplateCompositeElement(id, thisName, required, sequence,
+				description, shortName, currentSegment, occurs, used);
 
 		if (validatingMethod != null) {
-			currentComposite.setValidatingMethod(
-					getValidatingMethod(validatingMethod, currentComposite));
+			currentComposite.setValidatingMethod(getValidatingMethod(validatingMethod, currentComposite));
 		}
 
 		return currentComposite;
@@ -959,8 +925,7 @@ public class TransactionSetFactory extends DefaultHandler
 	 * @param attributes SAX2 attributes
 	 * @throws SAXException SAX errors
 	 */
-	public TemplateDataElement setDataElement(int pos, Attributes attributes)
-			throws SAXException {
+	public TemplateDataElement setDataElement(int pos, Attributes attributes) throws SAXException {
 		int i;
 
 		idListFile = null;
@@ -996,30 +961,26 @@ public class TransactionSetFactory extends DefaultHandler
 					sPosition = attributes.getValue(i);
 					position = Integer.parseInt(sPosition);
 				} catch (NumberFormatException nfe) {
-					throw new OBOEException("position not numeric. "
-							+ " look for position=\"" + attributes.getValue(i)
-							+ "\"" + " nodeName: dataElement" + " name: "
-							+ thisName + " id:" + id);
+					throw new OBOEException("position not numeric. " + " look for position=\"" + attributes.getValue(i)
+							+ "\"" + " nodeName: dataElement" + " name: " + thisName + " id:" + id);
 				}
 			}
 			if (attributes.getQName(i).equals("minLength")) {
 				try {
 					minLength = Integer.parseInt(attributes.getValue(i));
 				} catch (NumberFormatException nfe) {
-					throw new OBOEException("minLength not numeric. "
-							+ " look for minLength=\"" + attributes.getValue(i)
-							+ "\"" + " nodeName: dataElement" + " name: "
-							+ thisName + " id:" + id);
+					throw new OBOEException(
+							"minLength not numeric. " + " look for minLength=\"" + attributes.getValue(i) + "\""
+									+ " nodeName: dataElement" + " name: " + thisName + " id:" + id);
 				}
 			}
 			if (attributes.getQName(i).equals("maxLength")) {
 				try {
 					maxLength = Integer.parseInt(attributes.getValue(i));
 				} catch (NumberFormatException nfe) {
-					throw new OBOEException("maxLength not numeric. "
-							+ " look for maxLength=\"" + attributes.getValue(i)
-							+ "\"" + " nodeName: dataElement" + " name: "
-							+ thisName + " id:" + id);
+					throw new OBOEException(
+							"maxLength not numeric. " + " look for maxLength=\"" + attributes.getValue(i) + "\""
+									+ " nodeName: dataElement" + " name: " + thisName + " id:" + id);
 				}
 			}
 			if (attributes.getQName(i).equals("shortName")) {
@@ -1036,17 +997,13 @@ public class TransactionSetFactory extends DefaultHandler
 					try {
 						occurs = Integer.parseInt(sOccurs);
 						if (occurs < 1) {
-							throw new OBOEException("occurs less than 1. "
-									+ " look for occurs=\""
-									+ attributes.getValue(i) + "\""
-									+ " nodeName: dataElement" + " name: "
-									+ thisName + " id:" + id);
+							throw new OBOEException(
+									"occurs less than 1. " + " look for occurs=\"" + attributes.getValue(i) + "\""
+											+ " nodeName: dataElement" + " name: " + thisName + " id:" + id);
 						}
 					} catch (NumberFormatException nfe) {
-						throw new OBOEException("occurs not numeric. "
-								+ " look for occurs=\"" + attributes.getValue(i)
-								+ "\"" + " nodeName: dataElement" + " name: "
-								+ thisName + " id:" + id);
+						throw new OBOEException("occurs not numeric. " + " look for occurs=\"" + attributes.getValue(i)
+								+ "\"" + " nodeName: dataElement" + " name: " + thisName + " id:" + id);
 					}
 				}
 			}
@@ -1065,13 +1022,11 @@ public class TransactionSetFactory extends DefaultHandler
 			shortName = elementID + sPosition;
 		}
 
-		TemplateDataElement currentDE = new TemplateDataElement(id, thisName,
-				position, type, required.charAt(0), description, minLength,
-				maxLength, shortName, null, null, occurs, used);
+		TemplateDataElement currentDE = new TemplateDataElement(id, thisName, position, type, required.charAt(0),
+				description, minLength, maxLength, shortName, null, null, occurs, used);
 
 		if (validatingMethod != null) {
-			currentDE.setValidatingMethod(
-					getValidatingMethod(validatingMethod, currentDE));
+			currentDE.setValidatingMethod(getValidatingMethod(validatingMethod, currentDE));
 		}
 
 		return currentDE;
@@ -1080,10 +1035,9 @@ public class TransactionSetFactory extends DefaultHandler
 	/**
 	 * method returns the validating method,
 	 *
-	 * @param inValidatingMethodName name from transaction set message
-	 *                               description <br>
-	 *                               format is class name + '.' + method
-	 *                               name (e.g.
+	 * @param inValidatingMethodName name from transaction set message description
+	 *                               <br>
+	 *                               format is class name + '.' + method name (e.g.
 	 *                               "com.americancders.edi.validatingClass.validatingMethod")
 	 *                               <br>
 	 *                               getValidatingMethod checks
@@ -1091,22 +1045,20 @@ public class TransactionSetFactory extends DefaultHandler
 	 *                               <li>the method exits.
 	 *                               <li>the method is public.
 	 *                               <li>the method is static.
-	 *                               <li>the method takes two objects ,
-	 *                               class being validated (as defined by
-	 *                               the message description file and
+	 *                               <li>the method takes two objects , class being
+	 *                               validated (as defined by the message
+	 *                               description file and
 	 *                               <li>the method returns a boolean.
 	 * @param inObject               object to be validated
 	 * @return Method
 	 */
-	public static Method getValidatingMethod(String inValidatingMethodName,
-			Object inObject) throws OBOEException {
+	public static Method getValidatingMethod(String inValidatingMethodName, Object inObject) throws OBOEException {
 		if (inValidatingMethodName == null) {
 			return null;
 		}
 		int pos = inValidatingMethodName.lastIndexOf(".");
 		if (pos < 0) {
-			throw new OBOEException(
-					"Validating method name format incorrect, use className+\".\"+methodName");
+			throw new OBOEException("Validating method name format incorrect, use className+\".\"+methodName");
 		}
 		Class<?> testClass = null;
 
@@ -1118,8 +1070,7 @@ public class TransactionSetFactory extends DefaultHandler
 
 			validatingClass = Class.forName(vClass);
 			if (inObject instanceof TemplateTransactionSet) {
-				testClass = Class
-						.forName("io.github.EDIandXML.OBOE.TransactionSet");
+				testClass = Class.forName("io.github.EDIandXML.OBOE.TransactionSet");
 			}
 			if (inObject instanceof TemplateTable) {
 				testClass = Class.forName("io.github.EDIandXML.OBOE.Table");
@@ -1131,20 +1082,16 @@ public class TransactionSetFactory extends DefaultHandler
 				testClass = Class.forName("io.github.EDIandXML.OBOE.Segment");
 			}
 			if (inObject instanceof TemplateCompositeElement) {
-				testClass = Class
-						.forName("io.github.EDIandXML.OBOE.CompositeElement");
+				testClass = Class.forName("io.github.EDIandXML.OBOE.CompositeElement");
 			}
 			if (inObject instanceof TemplateDataElement) {
-				testClass = Class
-						.forName("io.github.EDIandXML.OBOE.DataElement");
+				testClass = Class.forName("io.github.EDIandXML.OBOE.DataElement");
 			}
 			classes[0] = testClass;
-			classes[1] = Class
-					.forName("io.github.EDIandXML.OBOE.DocumentErrors");
+			classes[1] = Class.forName("io.github.EDIandXML.OBOE.DocumentErrors");
 		} catch (java.lang.ClassNotFoundException cfne) {
 			logr.error(cfne.getMessage(), cfne);
-			throw new OBOEException("Validating class not found " + vClass
-					+ " see " + inValidatingMethodName);
+			throw new OBOEException("Validating class not found " + vClass + " see " + inValidatingMethodName);
 		}
 
 		// test to see if method exists
@@ -1155,41 +1102,30 @@ public class TransactionSetFactory extends DefaultHandler
 			testValidatingMethod = validatingClass.getMethod(vMethod, classes);
 		} catch (java.lang.NoSuchMethodException nsme) {
 			logr.error(nsme.getMessage(), nsme);
-			throw new OBOEException(vMethod + "(" + testClass.getName()
-					+ ", DocumentErrors) method not found in Class=" + vClass
-					+ " see " + inValidatingMethodName);
+			throw new OBOEException(vMethod + "(" + testClass.getName() + ", DocumentErrors) method not found in Class="
+					+ vClass + " see " + inValidatingMethodName);
 		} catch (java.lang.SecurityException se) {
 			logr.error(se.getMessage(), se);
-			throw new OBOEException(
-					"Security Exception while looking for validate method in Class="
-							+ inValidatingMethodName + " see "
-							+ inValidatingMethodName);
+			throw new OBOEException("Security Exception while looking for validate method in Class="
+					+ inValidatingMethodName + " see " + inValidatingMethodName);
 		}
 
-		if (java.lang.reflect.Modifier
-				.isStatic(testValidatingMethod.getModifiers())) {
+		if (java.lang.reflect.Modifier.isStatic(testValidatingMethod.getModifiers())) {
 			;
 		} else {
-			throw new OBOEException(vMethod
-					+ "(object, DocumentErrors) method in Class=" + vClass
-					+ " must be defined with static modifier; see "
-					+ inValidatingMethodName);
+			throw new OBOEException(vMethod + "(object, DocumentErrors) method in Class=" + vClass
+					+ " must be defined with static modifier; see " + inValidatingMethodName);
 		}
 
-		if (java.lang.reflect.Modifier
-				.isPublic(testValidatingMethod.getModifiers())) {
+		if (java.lang.reflect.Modifier.isPublic(testValidatingMethod.getModifiers())) {
 			;
 		} else {
-			throw new OBOEException(vMethod
-					+ "(object, DocumentErrors) method in Class=" + vClass
-					+ " must be defined with public modifier; see "
-					+ inValidatingMethodName);
+			throw new OBOEException(vMethod + "(object, DocumentErrors) method in Class=" + vClass
+					+ " must be defined with public modifier; see " + inValidatingMethodName);
 		}
 
-		if (testValidatingMethod.getReturnType().getName()
-				.equals("boolean") == false) {
-			throw new OBOEException(vMethod
-					+ "(object, DocumentErrors) method in Class=" + vClass
+		if (testValidatingMethod.getReturnType().getName().equals("boolean") == false) {
+			throw new OBOEException(vMethod + "(object, DocumentErrors) method in Class=" + vClass
 					+ " must return boolean; see " + inValidatingMethodName);
 		}
 
@@ -1216,48 +1152,43 @@ public class TransactionSetFactory extends DefaultHandler
 	}
 
 	/**
-	 * catches warning SAXParseExceptions this code sends exception to stdio
-	 * and allows public classto continue
+	 * catches warning SAXParseExceptions this code sends exception to stdio and
+	 * allows public classto continue
 	 *
 	 * @param e SaxException object
 	 * @throws SAXException exception
 	 */
 	@Override
 	public void warning(SAXParseException e) throws SAXException {
-		logr.error("SAX Warning at (file "
-				+ (knownSystemID == null ? e.getSystemId() : knownSystemID)
-				+ "{" + e.getPublicId() + "}," + ", line " + e.getLineNumber()
-				+ ", char " + e.getColumnNumber() + "): " + e.getMessage());
+		logr.error("SAX Warning at (file " + (knownSystemID == null ? e.getSystemId() : knownSystemID) + "{"
+				+ e.getPublicId() + "}," + ", line " + e.getLineNumber() + ", char " + e.getColumnNumber() + "): "
+				+ e.getMessage());
 	}
 
 	/**
-	 * catches error SAXParseExceptions this code causes exception to
-	 * continue
+	 * catches error SAXParseExceptions this code causes exception to continue
 	 *
 	 * @param e SaxException object
 	 * @throws SAXException thrown
 	 */
 	@Override
 	public void error(SAXParseException e) throws SAXException {
-		throw new SAXException("Error at (file "
-				+ (knownSystemID == null ? e.getSystemId() : knownSystemID)
-				+ "{" + e.getPublicId() + "}," + ", line " + e.getLineNumber()
-				+ ", char " + e.getColumnNumber() + "): " + e.getMessage());
+		throw new SAXException("Error at (file " + (knownSystemID == null ? e.getSystemId() : knownSystemID) + "{"
+				+ e.getPublicId() + "}," + ", line " + e.getLineNumber() + ", char " + e.getColumnNumber() + "): "
+				+ e.getMessage());
 	}
 
 	/**
-	 * catches fatal SAXParseExceptions this code causes exception to
-	 * continue
+	 * catches fatal SAXParseExceptions this code causes exception to continue
 	 *
 	 * @param e SAXException object
 	 * @throws SAXException thrown
 	 */
 	@Override
 	public void fatalError(SAXParseException e) throws SAXException {
-		throw new SAXException("SAX Fatal Error at (file "
-				+ (knownSystemID == null ? e.getSystemId() : knownSystemID)
-				+ "{" + e.getPublicId() + "}," + ", line " + e.getLineNumber()
-				+ ", char " + e.getColumnNumber() + "): " + e.getMessage());
+		throw new SAXException("SAX Fatal Error at (file " + (knownSystemID == null ? e.getSystemId() : knownSystemID)
+				+ "{" + e.getPublicId() + "}," + ", line " + e.getLineNumber() + ", char " + e.getColumnNumber() + "): "
+				+ e.getMessage());
 	}
 
 	private void setDirectoryPaths(String inPath, String inFoundPath) {
@@ -1271,8 +1202,7 @@ public class TransactionSetFactory extends DefaultHandler
 	/**
 	 * @return the tsBuilt
 	 */
-	public static TemplateTransactionSet getTemplateTransactionSet(String path,
-			String id) {
+	public static TemplateTransactionSet getTemplateTransactionSet(String path, String id) {
 		return tsBuilt.get(path + id);
 	}
 
@@ -1284,69 +1214,63 @@ public class TransactionSetFactory extends DefaultHandler
 	}
 
 	/**
-	 * static class method will build a transaction set based on input
-	 * string and OBOE.properties defintion see OBOE.properties file to
-	 * define the directory path
+	 * static class method will build a transaction set based on input string and
+	 * OBOE.properties defintion see OBOE.properties file to define the directory
+	 * path
 	 *
 	 * @return TransactionSet
 	 * @param inTSID String trransaction set id
 	 * @throws OBOEException io error most likely
 	 */
-	public static TransactionSet buildTransactionSet(String inTSID)
-			throws OBOEException {
+	public static TransactionSet buildTransactionSet(String inTSID) throws OBOEException {
 
 		return buildTransactionSet(inTSID, null, null, null, null, null, true);
 
 	}
 
 	/**
-	 * static class method will build a transaction set based on input
-	 * string, the searchDirective, the four search directories and
-	 * OBOE.properties definition
+	 * static class method will build a transaction set based on input string, the
+	 * searchDirective, the four search directories and OBOE.properties definition
 	 *
 	 * @return TransactionSet
 	 * @param inTSID                      String TransactionSet id
-	 * @param inSearchDirective           String - any combination of V, S,
-	 *                                    R, T. These provide the search
-	 *                                    path for the message descriptions
-	 *                                    through a directory structure as
-	 *                                    specified by the next four
-	 *                                    parameters. See full method for
-	 *                                    more details about this and the
-	 *                                    other parameters.
-	 * @param inVersionDirectory          - specify directory as defined by
-	 *                                    the Version value.
+	 * @param inSearchDirective           String - any combination of V, S, R, T.
+	 *                                    These provide the search path for the
+	 *                                    message descriptions through a directory
+	 *                                    structure as specified by the next four
+	 *                                    parameters. See full method for more
+	 *                                    details about this and the other
+	 *                                    parameters.
+	 * @param inVersionDirectory          - specify directory as defined by the
+	 *                                    Version value.
 	 * @param inReceiverIDDirectory       - specify directory as defined by
 	 * @param inSenderIDDirectory         - specify directory as defined by
 	 * @param inTestOrProductionDirectory - specify directory as defined by
 	 * @throws OBOEException io exception
 	 */
-	public static TransactionSet buildTransactionSet(String inTSID,
-			String inSearchDirective, String inVersionDirectory,
-			String inReceiverIDDirectory, String inSenderIDDirectory,
-			String inTestOrProductionDirectory) throws OBOEException {
+	public static TransactionSet buildTransactionSet(String inTSID, String inSearchDirective, String inVersionDirectory,
+			String inReceiverIDDirectory, String inSenderIDDirectory, String inTestOrProductionDirectory)
+			throws OBOEException {
 
-		return buildTransactionSet(inTSID, inSearchDirective,
-				inVersionDirectory, inReceiverIDDirectory, inSenderIDDirectory,
-				inTestOrProductionDirectory, true);
+		return buildTransactionSet(inTSID, inSearchDirective, inVersionDirectory, inReceiverIDDirectory,
+				inSenderIDDirectory, inTestOrProductionDirectory, true);
 	}
 
 	/**
-	 * static class method will build a transaction set based on input
-	 * string, the searchDirective, the four search directories and
-	 * OBOE.properties definition see OBOE.properties file to define the
-	 * directory path and optional searchDirective. At the very least the
-	 * message description must reside in the directory specified by the
-	 * messageDescriptionFolder. The message description name is appended
-	 * with ".xml" <br>
+	 * static class method will build a transaction set based on input string, the
+	 * searchDirective, the four search directories and OBOE.properties definition
+	 * see OBOE.properties file to define the directory path and optional
+	 * searchDirective. At the very least the message description must reside in the
+	 * directory specified by the messageDescriptionFolder. The message description
+	 * name is appended with ".xml" <br>
 	 * example #1 no search directive <br>
-	 * OBOE.properties file contains: messageDescriptionFolder =
-	 * c:/xmlDefinitions/ <br>
+	 * OBOE.properties file contains: messageDescriptionFolder = c:/xmlDefinitions/
+	 * <br>
 	 * input String is 840 <br>
 	 * method will read file named: c:/xmlDefinitions/840.xml <br>
 	 * example #2 full search directive <br>
-	 * OBOE.properties file contains: messageDescriptionFolder =
-	 * c:/xmlDefinitions/ <br>
+	 * OBOE.properties file contains: messageDescriptionFolder = c:/xmlDefinitions/
+	 * <br>
 	 * input String is 840 <br>
 	 * searchDirective is VTRS <br>
 	 * inVersion is 004010 <br>
@@ -1361,147 +1285,128 @@ public class TransactionSetFactory extends DefaultHandler
 	 * c:/xmlDefinitions/004010/P/840.xml <br>
 	 * if not found then it will search for file named:
 	 * c:/xmlDefinitions/004010/840.xml <br>
-	 * if not found then it will search for file named:
-	 * c:/xmlDefinitions/840.xml <br>
+	 * if not found then it will search for file named: c:/xmlDefinitions/840.xml
+	 * <br>
 	 * if not found then it will throw OBOEException <br>
 	 * example #2 partial search directive <br>
-	 * OBOE.properties file contains: messageDescriptionFolder =
-	 * c:/xmlDefinitions/ <br>
+	 * OBOE.properties file contains: messageDescriptionFolder = c:/xmlDefinitions/
+	 * <br>
 	 * input String is 840 <br>
 	 * searchDirective is RV <br>
 	 * inVersion is 004010 <br>
 	 * inTestProduction is P <br>
 	 * inReceiverID is 000001 <br>
 	 * inSenderID is AAAAA <br>
-	 * method will search for file named:
-	 * c:/xmlDefinitions/000001/004010/840.xml <br>
+	 * method will search for file named: c:/xmlDefinitions/000001/004010/840.xml
+	 * <br>
 	 * if not found then it will search for file named:
 	 * c:/xmlDefinitions/000001/840.xml <br>
-	 * if not found then it will search for file named:
-	 * c:/xmlDefinitions/840.xml <br>
+	 * if not found then it will search for file named: c:/xmlDefinitions/840.xml
+	 * <br>
 	 * if not found then it will throw OBOEException <br>
-	 * <i>Note</i>If any directory parameter is null or zero length that
-	 * directory is ignored even if the searchDirective specifies its usage.
+	 * <i>Note</i>If any directory parameter is null or zero length that directory
+	 * is ignored even if the searchDirective specifies its usage.
 	 * 
-	 * <i>Note</i>Name the directories with the values a possible specified
-	 * by your standard. This will be the only way the incoming document
-	 * parser can find them. For instance in X12 specify a Version directory
-	 * with the possible values of GS 480 value such as "004010" or
-	 * "003031". In EDIFACT concatenate the UNH 0052 and 0054 fields such as
-	 * "D93A" or "D99B".
+	 * <i>Note</i>Name the directories with the values a possible specified by your
+	 * standard. This will be the only way the incoming document parser can find
+	 * them. For instance in X12 specify a Version directory with the possible
+	 * values of GS 480 value such as "004010" or "003031". In EDIFACT concatenate
+	 * the UNH 0052 and 0054 fields such as "D93A" or "D99B".
 	 *
 	 * @return TransactionSet
 	 * @param inTSID                      String TransactionSet id
-	 * @param inSearchDirective           String - any combination of V, S,
-	 *                                    R, T. These provide the search
-	 *                                    path for the message descriptions
-	 *                                    through a directory structure as
-	 *                                    specified by the next four
-	 *                                    parameters. The base directory is
-	 *                                    defined by the
-	 *                                    messageDescriptionFolder property
-	 *                                    in OBOE.properties. Any
-	 *                                    combination is possible to provide
-	 *                                    for the search directive. The
-	 *                                    directive value of "STV" -
-	 *                                    indicates to search using the
-	 *                                    SendId parameter value as a
-	 *                                    directory, Test Indicator as as
-	 *                                    Directory, and Version parameter
-	 *                                    value as a directory. While "VR"
-	 *                                    indicates to use the Version
-	 *                                    number as a directory and Receiver
-	 *                                    id. The package starts at the
-	 *                                    lowest directory with its search.
-	 *                                    If the message description files
-	 *                                    is not found there it will go up
-	 *                                    to the next directory and repeat
-	 *                                    this process until the directory
-	 *                                    as specified by the
-	 *                                    messageDescriptionFolder property.
-	 *                                    <br>
-	 *                                    <i><b>Note</b></i>If a null is
-	 *                                    passed, the method will look in
-	 *                                    the OBOE.properties file for a
-	 *                                    property named
-	 *                                    <i>searchDirective</i>using the
-	 *                                    same values. Use this property for
-	 *                                    incoming documents.
-	 * @param inVersionDirectory          - specify directory as defined by
-	 *                                    the Version value. For this and
-	 *                                    the other directory parameters do
-	 *                                    not specify a directory separator.
-	 *                                    If used specify the names as the
-	 *                                    same as the the incoming process.
+	 * @param inSearchDirective           String - any combination of V, S, R, T.
+	 *                                    These provide the search path for the
+	 *                                    message descriptions through a directory
+	 *                                    structure as specified by the next four
+	 *                                    parameters. The base directory is defined
+	 *                                    by the messageDescriptionFolder property
+	 *                                    in OBOE.properties. Any combination is
+	 *                                    possible to provide for the search
+	 *                                    directive. The directive value of "STV" -
+	 *                                    indicates to search using the SendId
+	 *                                    parameter value as a directory, Test
+	 *                                    Indicator as as Directory, and Version
+	 *                                    parameter value as a directory. While "VR"
+	 *                                    indicates to use the Version number as a
+	 *                                    directory and Receiver id. The package
+	 *                                    starts at the lowest directory with its
+	 *                                    search. If the message description files
+	 *                                    is not found there it will go up to the
+	 *                                    next directory and repeat this process
+	 *                                    until the directory as specified by the
+	 *                                    messageDescriptionFolder property. <br>
+	 *                                    <i><b>Note</b></i>If a null is passed, the
+	 *                                    method will look in the OBOE.properties
+	 *                                    file for a property named
+	 *                                    <i>searchDirective</i>using the same
+	 *                                    values. Use this property for incoming
+	 *                                    documents.
+	 * @param inVersionDirectory          - specify directory as defined by the
+	 *                                    Version value. For this and the other
+	 *                                    directory parameters do not specify a
+	 *                                    directory separator. If used specify the
+	 *                                    names as the same as the the incoming
+	 *                                    process.
 	 *                                    <ul>
-	 *                                    For incoming processing the
-	 *                                    directory name will be passed from
-	 *                                    <li>X12: "480 - Version Release
-	 *                                    Industry Identifier Code" from GS
-	 *                                    - Functional Group Header segment
-	 *                                    <li>EDIFACT: the concatenation of
-	 *                                    "0052 - Message type version" and
-	 *                                    "0054 Message type release" from
-	 *                                    UNH - Message Header
+	 *                                    For incoming processing the directory name
+	 *                                    will be passed from
+	 *                                    <li>X12: "480 - Version Release Industry
+	 *                                    Identifier Code" from GS - Functional
+	 *                                    Group Header segment
+	 *                                    <li>EDIFACT: the concatenation of "0052 -
+	 *                                    Message type version" and "0054 Message
+	 *                                    type release" from UNH - Message Header
 	 *                                    </ul>
-	 * @param inReceiverIDDirectory       - specify directory as defined by
-	 *                                    For this and the other directory
-	 *                                    parameters do not specify a
-	 *                                    directory separator. If used
-	 *                                    specify the names as the same as
-	 *                                    the the incoming process.
+	 * @param inReceiverIDDirectory       - specify directory as defined by For this
+	 *                                    and the other directory parameters do not
+	 *                                    specify a directory separator. If used
+	 *                                    specify the names as the same as the the
+	 *                                    incoming process.
 	 *                                    <ul>
-	 *                                    For incoming processing the
-	 *                                    directory name will be passed from
-	 *                                    <li>X12: "I07 - Interchange
-	 *                                    Receiver ID"
+	 *                                    For incoming processing the directory name
+	 *                                    will be passed from
+	 *                                    <li>X12: "I07 - Interchange Receiver ID"
 	 *                                    <li>EDIFACT: "0010 - Recipient
 	 *                                    Identification"
 	 *                                    </ul>
-	 * @param inSenderIDDirectory         - specify directory as defined by
-	 *                                    For this and the other directory
-	 *                                    parameters do not specify a
-	 *                                    directory separator. If used
-	 *                                    specify the names as the same as
-	 *                                    the the incoming process.
+	 * @param inSenderIDDirectory         - specify directory as defined by For this
+	 *                                    and the other directory parameters do not
+	 *                                    specify a directory separator. If used
+	 *                                    specify the names as the same as the the
+	 *                                    incoming process.
 	 *                                    <ul>
-	 *                                    For incoming processing the
-	 *                                    directory name will be passed from
-	 *                                    <li>X12: "I06 - Interchange Sender
-	 *                                    ID"
+	 *                                    For incoming processing the directory name
+	 *                                    will be passed from
+	 *                                    <li>X12: "I06 - Interchange Sender ID"
 	 *                                    <li>EDIFACT: "0004 - Sender
 	 *                                    identification",
 	 *                                    </ul>
-	 * @param inTestOrProductionDirectory - specify directory as defined by
-	 *                                    For this and the other directory
-	 *                                    parameters do not specify a
-	 *                                    directory separator. If used
-	 *                                    specify the names as the same as
-	 *                                    the the incoming process.
+	 * @param inTestOrProductionDirectory - specify directory as defined by For this
+	 *                                    and the other directory parameters do not
+	 *                                    specify a directory separator. If used
+	 *                                    specify the names as the same as the the
+	 *                                    incoming process.
 	 *                                    <ul>
-	 *                                    For incoming processing the
-	 *                                    directory name will be passed from
-	 *                                    <li>X12: "I14 - Test Indicator"
-	 *                                    values of P or T.
-	 *                                    <li>EDIFACT: "0035 - TEST
-	 *                                    INDICATOR"
+	 *                                    For incoming processing the directory name
+	 *                                    will be passed from
+	 *                                    <li>X12: "I14 - Test Indicator" values of
+	 *                                    P or T.
+	 *                                    <li>EDIFACT: "0035 - TEST INDICATOR"
 	 *                                    </ul>
-	 * @param inSaveInArrayListIndicator  boolean to save EDI object in the
-	 *                                    tsBuilt ArrayList
+	 * @param inSaveInArrayListIndicator  boolean to save EDI object in the tsBuilt
+	 *                                    ArrayList
 	 * @throws OBOEException io exception
 	 */
-	public static TransactionSet buildTransactionSet(String inTSID,
-			String inSearchDirective, String inVersionDirectory,
-			String inReceiverIDDirectory, String inSenderIDDirectory,
-			String inTestOrProductionDirectory,
+	public static TransactionSet buildTransactionSet(String inTSID, String inSearchDirective, String inVersionDirectory,
+			String inReceiverIDDirectory, String inSenderIDDirectory, String inTestOrProductionDirectory,
 			boolean inSaveInArrayListIndicator) throws OBOEException {
 		// messageDescriptionFolder - OBOE.properties value
 		// messageDescriptionSearchPath - directory path to found message
 		// description
 		// messageDescriptionFolder - full path name to message description
 
-		String messageDescriptionFolder = "", messageDescriptionSearchPath = "",
-				messageDescriptionFolderPath = "";
+		String messageDescriptionFolder = "", messageDescriptionSearchPath = "", messageDescriptionFolderPath = "";
 
 		TemplateTransactionSet currentTransactionSet;
 
@@ -1535,15 +1440,13 @@ public class TransactionSetFactory extends DefaultHandler
 				searchLoop: for (int idirs = 0; idirs < lilDirectives.length; idirs++) {
 
 					searchPaths = new String[lilDirectives[idirs].length() + 1];
-					StringBuilder searchPath = new StringBuilder(
-							messageDescriptionFolder);
+					StringBuilder searchPath = new StringBuilder(messageDescriptionFolder);
 					searchPaths[0] = messageDescriptionFolder;
 
 					for (i = 0; i < lilDirectives[idirs].length(); i++) {
 						switch (lilDirectives[idirs].charAt(i)) {
 						case 'V':
-							if ((inVersionDirectory != null)
-									&& (inVersionDirectory.length() > 0)) {
+							if ((inVersionDirectory != null) && (inVersionDirectory.length() > 0)) {
 								searchPath.append(inVersionDirectory.trim());
 								searchPath.append(File.separatorChar);
 							}
@@ -1551,40 +1454,31 @@ public class TransactionSetFactory extends DefaultHandler
 							break;
 						case 'X': // gets a substring of the version
 							// e.g. 004010X097 becomes 004010
-							if ((inVersionDirectory != null)
-									&& (inVersionDirectory.length() > 0)) {
-								logr.debug("X directive: using "
-										+ inVersionDirectory.trim()
+							if ((inVersionDirectory != null) && (inVersionDirectory.length() > 0)) {
+								logr.debug("X directive: using " + inVersionDirectory.trim()
 										+ " to search directory with name of "
-										+ inVersionDirectory.trim().substring(0,
-												6));
-								searchPath.append(inVersionDirectory.trim()
-										.substring(0, 6));
+										+ inVersionDirectory.trim().substring(0, 6));
+								searchPath.append(inVersionDirectory.trim().substring(0, 6));
 								searchPath.append(File.separatorChar);
 							}
 							break;
 						case 'R':
-							if ((inReceiverIDDirectory != null)
-									&& (inReceiverIDDirectory.length() > 0)) {
+							if ((inReceiverIDDirectory != null) && (inReceiverIDDirectory.length() > 0)) {
 								searchPath.append(inReceiverIDDirectory.trim());
 								searchPath.append(File.separatorChar);
 							}
 
 							break;
 						case 'S':
-							if ((inSenderIDDirectory != null)
-									&& (inSenderIDDirectory.length() > 0)) {
+							if ((inSenderIDDirectory != null) && (inSenderIDDirectory.length() > 0)) {
 								searchPath.append(inSenderIDDirectory.trim());
 								searchPath.append(File.separatorChar);
 							}
 
 							break;
 						case 'T':
-							if ((inTestOrProductionDirectory != null)
-									&& (inTestOrProductionDirectory
-											.length() > 0)) {
-								searchPath.append(
-										inTestOrProductionDirectory.trim());
+							if ((inTestOrProductionDirectory != null) && (inTestOrProductionDirectory.length() > 0)) {
+								searchPath.append(inTestOrProductionDirectory.trim());
 								searchPath.append(File.separatorChar);
 							}
 
@@ -1592,8 +1486,7 @@ public class TransactionSetFactory extends DefaultHandler
 
 						default:
 							throw new OBOEException(
-									"searchDirective (" + lilDirectives[idirs]
-											+ ") contains illegal character");
+									"searchDirective (" + lilDirectives[idirs] + ") contains illegal character");
 						} // switch
 						searchPaths[i + 1] = new String(searchPath);
 					} // for int i
@@ -1602,13 +1495,11 @@ public class TransactionSetFactory extends DefaultHandler
 																		// least
 																		// one
 					{
-						messageDescriptionFolderPath = searchPaths[i] + inTSID
-								+ ".xml";
+						messageDescriptionFolderPath = searchPaths[i] + inTSID + ".xml";
 
 						xmlFile = new File(messageDescriptionFolderPath);
 
-						logr.debug(
-								"looking for " + messageDescriptionFolderPath);
+						logr.debug("looking for " + messageDescriptionFolderPath);
 						if (xmlFile.exists()) {
 							messageDescriptionSearchPath = searchPaths[i];
 							foundXMLFile = true;
@@ -1620,24 +1511,21 @@ public class TransactionSetFactory extends DefaultHandler
 			}
 		}
 		if (foundXMLFile == false) {
-			messageDescriptionFolderPath = messageDescriptionFolder + inTSID
-					+ ".xml";
+			messageDescriptionFolderPath = messageDescriptionFolder + inTSID + ".xml";
 			logr.debug("looking for " + messageDescriptionFolderPath);
 			messageDescriptionSearchPath = messageDescriptionFolder;
 			xmlFile = new File(messageDescriptionFolderPath);
 		}
 
 		if (inSaveInArrayListIndicator) {
-			TemplateTransactionSet tts = tsBuilt
-					.get(messageDescriptionFolderPath);
+			TemplateTransactionSet tts = tsBuilt.get(messageDescriptionFolderPath);
 			if (tts != null) {
 				return new TransactionSet(tts, null);
 			}
 		}
 
 		if ((xmlFile.exists() == false)) {
-			throw new OBOEException("XML Message Description not found "
-					+ messageDescriptionFolderPath);
+			throw new OBOEException("XML Message Description not found " + messageDescriptionFolderPath);
 		}
 
 		try {
@@ -1648,28 +1536,23 @@ public class TransactionSetFactory extends DefaultHandler
 
 				tsf.knownSystemID = messageDescriptionFolderPath;
 
-				logr.debug("using ts description file"
-						+ xmlFile.getAbsolutePath());
+				logr.debug("using ts description file" + xmlFile.getAbsolutePath());
 
-				tsf.setDirectoryPaths(messageDescriptionFolder,
-						messageDescriptionSearchPath);
+				tsf.setDirectoryPaths(messageDescriptionFolder, messageDescriptionSearchPath);
 
 				InputSource is;
 				if (Util.findMessageDefinitionFilesInClassPath()) {
 					logr.debug(" using classpath xml file " + xmlFile);
-					is = new InputSource(TransactionSetFactory.class
-							.getClassLoader()
+					is = new InputSource(TransactionSetFactory.class.getClassLoader()
 							.getResourceAsStream(messageDescriptionFolderPath));
 				} else {
 					logr.debug("idlistparser using xml file " + xmlFile);
-					is = new InputSource(
-							new FileReader(messageDescriptionFolderPath));
+					is = new InputSource(new FileReader(messageDescriptionFolderPath));
 				}
 
 				tsf.parse(is);
 				currentTransactionSet = tsf.currentTransactionSet;
-				tsBuilt.put(messageDescriptionFolderPath,
-						currentTransactionSet);
+				tsBuilt.put(messageDescriptionFolderPath, currentTransactionSet);
 			}
 
 			return new TransactionSet(currentTransactionSet, null);

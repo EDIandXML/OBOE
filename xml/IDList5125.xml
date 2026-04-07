@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>AAA</idCode>
-        <idValue>Calculation net</idValue>
-    <idCode>AAB</idCode>
-        <idValue>Calculation gross</idValue>
-    <idCode>AAC</idCode>
-        <idValue>Allowances and charges not included, tax included</idValue>
-    <idCode>AAD</idCode>
-        <idValue>Average selling price</idValue>
-    <idCode>AAE</idCode>
-        <idValue>Information price, excluding allowances or charges, including taxes</idValue>
-    <idCode>AAF</idCode>
-        <idValue>Information price, excluding allowances or charges, and taxes</idValue>
-    <idCode>AAG</idCode>
-        <idValue>Additive unit price component</idValue>
-    <idCode>CAL</idCode>
-        <idValue>Calculation price</idValue>
-    <idCode>INF</idCode>
-        <idValue>Information</idValue>
-    <idCode>INV</idCode>
-        <idValue>Invoice price</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>AAA <idValue>Calculation net</idValue>
+	</idCode>
+	<idCode>AAB <idValue>Calculation gross</idValue>
+	</idCode>
+	<idCode>AAC <idValue>Allowances and charges not included, tax included</idValue>
+	</idCode>
+	<idCode>AAD <idValue>Average selling price</idValue>
+	</idCode>
+	<idCode>AAE <idValue>Information price, excluding allowances or charges,
+		including taxes</idValue>
+	</idCode>
+	<idCode>AAF <idValue>Information price, excluding allowances or charges, and
+		taxes</idValue>
+	</idCode>
+	<idCode>AAG <idValue>Additive unit price component</idValue>
+	</idCode>
+	<idCode>CAL <idValue>Calculation price</idValue>
+	</idCode>
+	<idCode>INF <idValue>Information</idValue>
+	</idCode>
+	<idCode>INV <idValue>Invoice price</idValue>
+	</idCode>
 </idList>

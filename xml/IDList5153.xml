@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>AAA</idCode>
-        <idValue>Petroleum tax</idValue>
-    <idCode>AAB</idCode>
-        <idValue>Provisional countervailing duty cash</idValue>
-    <idCode>AAC</idCode>
-        <idValue>Provisional countervailing duty bond</idValue>
-    <idCode>ADD</idCode>
-        <idValue>Anti-dumping duty</idValue>
-    <idCode>BOL</idCode>
-        <idValue>Stamp duty (Imposta di Bollo)</idValue>
-    <idCode>CAP</idCode>
-        <idValue>Agricultural levy</idValue>
-    <idCode>CAR</idCode>
-        <idValue>Car tax</idValue>
-    <idCode>COC</idCode>
-        <idValue>Paper consortium tax (Italy)</idValue>
-    <idCode>CST</idCode>
-        <idValue>Commodity specific tax</idValue>
-    <idCode>CUD</idCode>
-        <idValue>Customs duty</idValue>
-    <idCode>CVD</idCode>
-        <idValue>Countervailing duty</idValue>
-    <idCode>ENV</idCode>
-        <idValue>Environmental tax</idValue>
-    <idCode>EXC</idCode>
-        <idValue>Excise duty</idValue>
-    <idCode>EXP</idCode>
-        <idValue>Agricultural export rebate</idValue>
-    <idCode>FET</idCode>
-        <idValue>Federal excise tax</idValue>
-    <idCode>FRE</idCode>
-        <idValue>Free</idValue>
-    <idCode>GCN</idCode>
-        <idValue>General construction tax</idValue>
-    <idCode>GST</idCode>
-        <idValue>Goods and services tax</idValue>
-    <idCode>ILL</idCode>
-        <idValue>Illuminants tax</idValue>
-    <idCode>IMP</idCode>
-        <idValue>Import tax</idValue>
-    <idCode>IND</idCode>
-        <idValue>Individual tax</idValue>
-    <idCode>LAC</idCode>
-        <idValue>Business license fee</idValue>
-    <idCode>LCN</idCode>
-        <idValue>Local construction tax</idValue>
-    <idCode>LDP</idCode>
-        <idValue>Light dues payable</idValue>
-    <idCode>LOC</idCode>
-        <idValue>Local sales taxes</idValue>
-    <idCode>LST</idCode>
-        <idValue>Lust tax</idValue>
-    <idCode>MCA</idCode>
-        <idValue>Monetary compensatory amount</idValue>
-    <idCode>MCD</idCode>
-        <idValue>Miscellaneous cash deposit</idValue>
-    <idCode>OTH</idCode>
-        <idValue>Other taxes</idValue>
-    <idCode>PDB</idCode>
-        <idValue>Provisional duty bond</idValue>
-    <idCode>PDC</idCode>
-        <idValue>Provisional duty cash</idValue>
-    <idCode>PRF</idCode>
-        <idValue>Preference duty</idValue>
-    <idCode>SCN</idCode>
-        <idValue>Special construction tax</idValue>
-    <idCode>SSS</idCode>
-        <idValue>Shifted social securities</idValue>
-    <idCode>STT</idCode>
-        <idValue>State/provincial sales tax</idValue>
-    <idCode>SUP</idCode>
-        <idValue>Suspended duty</idValue>
-    <idCode>SUR</idCode>
-        <idValue>Surtax</idValue>
-    <idCode>SWT</idCode>
-        <idValue>Shifted wage tax</idValue>
-    <idCode>TAC</idCode>
-        <idValue>Alcohol mark tax</idValue>
-    <idCode>TOT</idCode>
-        <idValue>Total</idValue>
-    <idCode>TOX</idCode>
-        <idValue>Turnover tax</idValue>
-    <idCode>TTA</idCode>
-        <idValue>Tonnage taxes</idValue>
-    <idCode>VAD</idCode>
-        <idValue>Valuation deposit</idValue>
-    <idCode>VAT</idCode>
-        <idValue>Value added tax</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>AAA <idValue>Petroleum tax</idValue>
+	</idCode>
+	<idCode>AAB <idValue>Provisional countervailing duty cash</idValue>
+	</idCode>
+	<idCode>AAC <idValue>Provisional countervailing duty bond</idValue>
+	</idCode>
+	<idCode>ADD <idValue>Anti-dumping duty</idValue>
+	</idCode>
+	<idCode>BOL <idValue>Stamp duty (Imposta di Bollo)</idValue>
+	</idCode>
+	<idCode>CAP <idValue>Agricultural levy</idValue>
+	</idCode>
+	<idCode>CAR <idValue>Car tax</idValue>
+	</idCode>
+	<idCode>COC <idValue>Paper consortium tax (Italy)</idValue>
+	</idCode>
+	<idCode>CST <idValue>Commodity specific tax</idValue>
+	</idCode>
+	<idCode>CUD <idValue>Customs duty</idValue>
+	</idCode>
+	<idCode>CVD <idValue>Countervailing duty</idValue>
+	</idCode>
+	<idCode>ENV <idValue>Environmental tax</idValue>
+	</idCode>
+	<idCode>EXC <idValue>Excise duty</idValue>
+	</idCode>
+	<idCode>EXP <idValue>Agricultural export rebate</idValue>
+	</idCode>
+	<idCode>FET <idValue>Federal excise tax</idValue>
+	</idCode>
+	<idCode>FRE <idValue>Free</idValue>
+	</idCode>
+	<idCode>GCN <idValue>General construction tax</idValue>
+	</idCode>
+	<idCode>GST <idValue>Goods and services tax</idValue>
+	</idCode>
+	<idCode>ILL <idValue>Illuminants tax</idValue>
+	</idCode>
+	<idCode>IMP <idValue>Import tax</idValue>
+	</idCode>
+	<idCode>IND <idValue>Individual tax</idValue>
+	</idCode>
+	<idCode>LAC <idValue>Business license fee</idValue>
+	</idCode>
+	<idCode>LCN <idValue>Local construction tax</idValue>
+	</idCode>
+	<idCode>LDP <idValue>Light dues payable</idValue>
+	</idCode>
+	<idCode>LOC <idValue>Local sales taxes</idValue>
+	</idCode>
+	<idCode>LST <idValue>Lust tax</idValue>
+	</idCode>
+	<idCode>MCA <idValue>Monetary compensatory amount</idValue>
+	</idCode>
+	<idCode>MCD <idValue>Miscellaneous cash deposit</idValue>
+	</idCode>
+	<idCode>OTH <idValue>Other taxes</idValue>
+	</idCode>
+	<idCode>PDB <idValue>Provisional duty bond</idValue>
+	</idCode>
+	<idCode>PDC <idValue>Provisional duty cash</idValue>
+	</idCode>
+	<idCode>PRF <idValue>Preference duty</idValue>
+	</idCode>
+	<idCode>SCN <idValue>Special construction tax</idValue>
+	</idCode>
+	<idCode>SSS <idValue>Shifted social securities</idValue>
+	</idCode>
+	<idCode>STT <idValue>State/provincial sales tax</idValue>
+	</idCode>
+	<idCode>SUP <idValue>Suspended duty</idValue>
+	</idCode>
+	<idCode>SUR <idValue>Surtax</idValue>
+	</idCode>
+	<idCode>SWT <idValue>Shifted wage tax</idValue>
+	</idCode>
+	<idCode>TAC <idValue>Alcohol mark tax</idValue>
+	</idCode>
+	<idCode>TOT <idValue>Total</idValue>
+	</idCode>
+	<idCode>TOX <idValue>Turnover tax</idValue>
+	</idCode>
+	<idCode>TTA <idValue>Tonnage taxes</idValue>
+	</idCode>
+	<idCode>VAD <idValue>Valuation deposit</idValue>
+	</idCode>
+	<idCode>VAT <idValue>Value added tax</idValue>
+	</idCode>
 </idList>

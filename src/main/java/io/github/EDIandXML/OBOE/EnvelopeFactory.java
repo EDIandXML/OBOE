@@ -38,6 +38,7 @@ import org.xml.sax.helpers.DefaultHandler;
 
 import io.github.EDIandXML.OBOE.Containers.MetaTemplateContainer;
 import io.github.EDIandXML.OBOE.DataElements.IDList;
+import io.github.EDIandXML.OBOE.DataElements.IDList.IncludeOrExclude;
 import io.github.EDIandXML.OBOE.DataElements.IDListProcessor;
 import io.github.EDIandXML.OBOE.Errors.OBOEException;
 import io.github.EDIandXML.OBOE.Parsers.IDListParser;
@@ -99,7 +100,9 @@ public class EnvelopeFactory extends DefaultHandler implements ContentHandler {
 	 */
 	protected String currentID = "";
 
-	/** simple string processor */
+	 
+	protected CharArrayWriter codeContents = new CharArrayWriter();
+	protected CharArrayWriter valueContents = new CharArrayWriter();
 	protected CharArrayWriter contents = new CharArrayWriter();
 
 	/**
@@ -180,7 +183,15 @@ public class EnvelopeFactory extends DefaultHandler implements ContentHandler {
 		xmlDirectoryPath = Util.getMessageDescriptionFolder();
 		xmlFoundDirectoryPath = xmlDirectoryPath;
 
+		spf.setValidating(false);
 		spf.setNamespaceAware(true);
+		// Disable schema validation (most common cause of the error)
+		spf.setFeature("http://apache.org/xml/features/validation/schema", false);
+
+		// Optional but helpful for lenient parsing
+		spf.setFeature("http://xml.org/sax/features/validation", false);
+		spf.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar", false);
+		spf.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
 
 		parser = spf.newSAXParser();
 
@@ -258,7 +269,7 @@ public class EnvelopeFactory extends DefaultHandler implements ContentHandler {
 		int i;
 		String name = rawName;
 		_iElement++;
-		contents.reset();
+		 
 
 		String validatingMethod = null;
 
@@ -305,7 +316,10 @@ public class EnvelopeFactory extends DefaultHandler implements ContentHandler {
 				}
 				if (attributes.getQName(i).equals("occurs")) {
 					String sOccurs = attributes.getValue(i).trim();
-					if (sOccurs.length() > 0) {
+					if (sOccurs.equals("unbounded"))
+						occurs = -1;  // -1 means unbounded;
+					else
+	if (sOccurs.length() > 0) {
 						// let it numeric parsing exception occur on its own
 						occurs = Integer.parseInt(sOccurs);
 					}
@@ -436,13 +450,13 @@ public class EnvelopeFactory extends DefaultHandler implements ContentHandler {
 					continue;
 				}
 				if (attributes.getQName(i).equals("include")) {
-					currentIDList = currentIDList.idListWork('i',
+					currentIDList = currentIDList.idListWork(IncludeOrExclude.INCLUDE,
 							attributes.getValue(i));
 					currentIDList.setFilterList(
 							"include=\"" + attributes.getValue(i) + "\"");
 				}
 				if (attributes.getQName(i).equals("exclude")) {
-					currentIDList = currentIDList.idListWork('x',
+					currentIDList = currentIDList.idListWork(IncludeOrExclude.EXCLUDE,
 							attributes.getValue(i));
 					currentIDList.setFilterList(
 							"exclude=\"" + attributes.getValue(i) + "\"");
@@ -473,14 +487,19 @@ public class EnvelopeFactory extends DefaultHandler implements ContentHandler {
 		}
 
 		if (rawName.equals("idCode")) {
+			codeContents = new CharArrayWriter();
+			contents = codeContents;
 			return;
 		}
 
 		if (rawName.equals("idValue")) {
+			valueContents = new CharArrayWriter();
+			contents = valueContents;
 			return;
 		}
 
 		if (name.equals("default")) {
+			contents = new CharArrayWriter();
 			defaultFrom = attributes.getValue(0); // only one attribute
 			nameOrID = defaultFrom;
 			return;
@@ -554,17 +573,18 @@ public class EnvelopeFactory extends DefaultHandler implements ContentHandler {
 		}
 
 		if (rawName.equals("idCode")) {
-			idCode = contents.toString(); // code comes before value so save it
+			currentIDList.add(codeContents.toString().trim(), valueContents.toString().trim());
+			codeContents.reset();
+			valueContents.reset();
 			return;
 		}
 
 		if (rawName.equals("idValue")) {
-			currentIDList.add(idCode, contents.toString());
 			return;
 		}
 
 		if (name.equals("default")) {
-			String s = contents.toString();
+			String s = contents.toString().trim();
 			if (defaultFrom.equals("constant")) {
 				currentDataElement.setLoadFromConstant(s);
 			} else if (defaultFrom.equals("property")) {

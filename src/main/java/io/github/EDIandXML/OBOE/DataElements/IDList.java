@@ -17,15 +17,14 @@
 package io.github.EDIandXML.OBOE.DataElements;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.StringTokenizer;
+import java.util.TreeMap;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import io.github.EDIandXML.OBOE.Errors.OBOEException;
 import io.github.EDIandXML.OBOE.Parsers.IDListParser;
-import io.github.EDIandXML.OBOE.util.Util;
+ 
 
 /**
  * An class for processing IDLists
@@ -40,7 +39,7 @@ public class IDList implements IDListProcessor {
 	/**
 	 * codes and descriptive values associated with IDList
 	 */
-	protected ArrayList<String> codes, values;
+	protected TreeMap<String, String> codesValues;
 
 	/**
 	 * IDList short filename
@@ -72,15 +71,14 @@ public class IDList implements IDListProcessor {
 		File f = new File(name);
 		shortname = f.getName();
 
-		idListParser.parse(xmlFile, inLastDirectoryToLook, codes, values);
+		idListParser.parse(xmlFile, inLastDirectoryToLook, codesValues);
 	}
 
 	/**
 	 * Construct an id list object with no values
 	 */
 	public IDList() {
-		codes = new ArrayList<String>();
-		values = new ArrayList<String>();
+		codesValues = new TreeMap<>();
 	}
 
 	/**
@@ -126,15 +124,14 @@ public class IDList implements IDListProcessor {
 	}
 
 	/**
-	 * Add code and description to the ArrayLists
+	 * Add code and description 
 	 * 
 	 * @param inCode     String code
 	 * @param inDescribe String descriptive value
 	 */
 	@Override
 	public void add(String inCode, String inDescribe) {
-		codes.add(inCode);
-		values.add(inDescribe);
+		codesValues.put(inCode,inDescribe);
 	}
 
 	/**
@@ -145,17 +142,7 @@ public class IDList implements IDListProcessor {
 	 */
 	@Override
 	public boolean isCodeValid(String inCode) {
-		String test;
-		for (int i = 0; i < codes.size(); i++) {
-			test = codes.get(i);
-			if (test == null) {
-				continue;
-			}
-			if (test.compareTo(inCode) == 0) {
-				return true;
-			}
-		}
-		return false;
+		return codesValues.containsKey(inCode);
 	}
 
 	/**
@@ -167,18 +154,12 @@ public class IDList implements IDListProcessor {
 	 */
 	@Override
 	public String describe(String inCode) {
-		String test;
-		for (int i = 0; i < codes.size(); i++) {
-			test = codes.get(i);
-			if (test.compareTo(inCode) == 0) {
-				if (values.get(i) == null) {
-					return inCode;
-				} else {
-					return values.get(i);
-				}
-			}
-		}
-		return inCode;
+		
+		if (codesValues.containsKey(inCode))
+			return codesValues.get(inCode).length() == 0 ? inCode:
+				codesValues.get(inCode);
+		
+		return null;
 	}
 
 	/**
@@ -191,48 +172,17 @@ public class IDList implements IDListProcessor {
 
 	@Override
 	public String getCode(String inValue) {
-		String test;
-		for (int i = 0; i < values.size(); i++) {
-			test = values.get(i);
-			if (test.compareTo(inValue) == 0) {
-				return codes.get(i);
-			}
+		if (!codesValues.containsValue(inValue))
+			return null;
+		
+		for (var ke:codesValues.entrySet()) {
+			if (ke.getValue().equals(inValue))
+				return ke.getKey();
 		}
-		return inValue;
+		return null;
 	}
 
-	/**
-	 * returns a code at a specific position in ArrayList
-	 * 
-	 * @param pos int String position
-	 * @return String
-	 */
-	@Override
-	public String getCodeByPos(int pos) {
-		return codes.get(pos);
-	}
 
-	/**
-	 * returns the code ArrayList
-	 *
-	 * @return ArrayList
-	 */
-
-	@Override
-	public ArrayList<String> getCodes() {
-		return codes;
-	}
-
-	/**
-	 * returns the value ArrayList
-	 *
-	 * @return ArrayList
-	 */
-
-	@Override
-	public ArrayList<String> getValues() {
-		return values;
-	}
 
 	public boolean isFiltered() {
 		return filtered;
@@ -250,158 +200,122 @@ public class IDList implements IDListProcessor {
 		this.filterList = filterList;
 		setFiltered(true);
 	}
-
+	public enum IncludeOrExclude {EXCLUDE, INCLUDE};
 	/**
-	 * @param c      'i' or 'x', include or exclude
+	 * @param IncludeOrExclude        include or exclude
 	 * @param string inclusion/exclusion list <br>
 	 *               comma separated and dash range specifier
 	 * @return new idlist object
 	 */
-	public IDList idListWork(char c, String string) {
+	public IDList idListWork(IncludeOrExclude iore, String string) {
 
 		IDList idl = new IDList();
+		//if excluding let's add 'em first then remove.
+		if (iore == IncludeOrExclude.EXCLUDE)
+		for (var cve:codesValues.entrySet()) {
+			idl.add(cve.getKey(), cve.getValue());
+		}
 		idl.shortname = this.shortname;
 		idl.setFiltered(true);
-		StringTokenizer st = new StringTokenizer(string, ",");
-		String tkn, strt, stp;
-		String lststrt = "";
-		int i;
-		int currentpos = 0;
-		int currentlength = this.getCodes().size();
+		var Strings = string.split(",");
+		
 		if (string.length() == 0) {
 			throw new OBOEException(
 					"IDList inclusion/exclusion attribute error; too small or length is zero");
 		}
-		while (st.hasMoreTokens()) {
-			tkn = st.nextToken().trim();
+		var keIter = codesValues.entrySet().iterator();
+		nextWorkString:
+		for (var workString:Strings) {
+			var tkn = workString.trim();
 
-			if (tkn.indexOf('-') < 0) {
-				strt = tkn;
-				if (strt.length() == 0) {
-					throw new OBOEException(
-							"IDList inclusion/exclusion attribute error; start value too small or length is zero "
-									+ tkn);
+			if (!tkn.contains("-")) {
+				if (iore == IncludeOrExclude.EXCLUDE) {
+					// include every thing but this
+					while (keIter.hasNext()) {
+						var ke = keIter.next();
+						if (ke.getKey().equals(tkn)) {
+							idl.remove(ke.getKey());
+							continue nextWorkString;
+						}
+						
+					}
+					continue nextWorkString;
 				}
-				stp = tkn;
+				else {// exclude everything but this
+					while (keIter.hasNext()) {
+						var ke = keIter.next();
+						if (ke.getKey().equals(tkn)) {
+							idl.add(ke.getKey(), ke.getValue());
+							continue nextWorkString;  // found now add and exit.
+						}
+					}
+					continue nextWorkString;
+				}
+				
+				
 			} else {
-				strt = "";
-				stp = "";
-				for (i = 0; i < tkn.indexOf('-'); i++) {
-					strt += tkn.charAt(i);
-				}
-				strt = strt.trim();
-				if (strt.length() == 0) {
-					throw new OBOEException(
-							"IDList inclusion/exclusion attribute error; start value too small or length is zero "
-									+ tkn);
-				}
-				for (i++; i < tkn.length(); i++) {
-					if (tkn.charAt(i) == '-') {
-						throw new OBOEException(
-								"IDList inclusion/exclusion attribute error; too many dashes in "
-										+ tkn + " within " + string);
+				var tkns = tkn.split(";");
+				if (iore == IncludeOrExclude.EXCLUDE) {
+					// include every thing up to the first and stop adding at the second
+					while (keIter.hasNext()) {
+						var ke = keIter.next();
+						if (ke.getKey().equals(tkns[0])) {
+							idl.remove(tkns[0]);
+							break;
+						}
+						
 					}
-					stp += tkn.charAt(i);
+					while (keIter.hasNext()) {
+						var ke = keIter.next();
+						idl.remove(tkns[1]);
+						if (ke.getKey().equals(tkns[1]))
+							continue nextWorkString;
+					}
+					continue nextWorkString;
 				}
-				stp = stp.trim();
-				if (stp.length() == 0) {
-					throw new OBOEException(
-							"IDList inclusion/exclusion attribute error; stop value too small or length is zero "
-									+ tkn);
+				else {// exclude everything up to the first and include everything up to the second
+					while (keIter.hasNext()) {
+						var ke = keIter.next();
+						if (ke.getKey().equals(tkns[0])) {
+							idl.add(ke.getKey(), ke.getValue());
+							break;  // found now add and get the rest.
+						}
+					}
+					while (keIter.hasNext()) {
+						var ke = keIter.next();
+						if (ke.getKey().equals(tkns[1])) {
+							idl.add(ke.getKey(), ke.getValue());
+							continue nextWorkString;
+						}
+						idl.add(ke.getKey(), ke.getValue());
+					}
+					continue nextWorkString;
 				}
+
+				
 			}
 
-			boolean numCheck = (Util.isInteger(strt) && Util.isInteger(stp));
-			if (numCheck) {
-				int s = Integer.parseInt(strt);
-				int p = Integer.parseInt(stp);
-				if (s > p) {
-					throw new OBOEException(
-							"IDList inclusion/exclusion attribute error; invalid range of values in "
-									+ tkn + " within " + string);
-				}
-			} else if (strt.compareTo(stp) > 0) {
-				throw new OBOEException(
-						"IDList inclusion/exclusion attribute error; invalid range of values in "
-								+ tkn + " within " + string);
-			}
 
-			if (Util.isInteger(strt) && Util.isInteger(lststrt)) {
-				int s = Integer.parseInt(strt);
-				int p = Integer.parseInt(lststrt);
-				if (s < p) {
-					throw new OBOEException(
-							"IDList inclusion/exclusion attribute error; new start value is less than old start value "
-									+ tkn + " within " + string);
-				}
-			} else if (strt.compareTo(lststrt) <= 0) {
-				throw new OBOEException(
-						"IDList inclusion/exclusion attribute error; new start value is less than old start value "
-								+ tkn + " within " + string);
-			}
-
-			lststrt = strt;
-
-			logr.debug("working with " + c + " token is " + tkn + " start is "
-					+ strt + " stop is " + stp);
-			for (; currentpos < currentlength; currentpos++) {
-
-				String cd = this.getCodeByPos(currentpos);
-				if (c == 'i') {
-					if (numCheck && Util.isInteger(cd) && (Integer
-							.parseInt(cd) < Integer.parseInt(strt))) {
-						continue;
-					}
-					if (!numCheck && (cd.compareTo(strt) < 0)) {
-						continue; // inner while loop;
-					}
-					if (numCheck && Util.isInteger(cd)
-							&& (Integer.parseInt(cd) > Integer.parseInt(stp))) {
-						break;
-					}
-					if (!numCheck && (cd.compareTo(stp) > 0)) {
-						break; // inner while loop;
-					}
-
-					idl.add(cd, this.describe(cd));
-
-				} else // c is 'x'
-				{
-					if (numCheck && Util.isInteger(cd) && (Integer
-							.parseInt(cd) < Integer.parseInt(strt))) {
-						idl.add(cd, this.describe(cd));
-						continue; // inner while loop;
-					}
-					if (!numCheck && (cd.compareTo(strt) < 0)) // not there yet
-					{
-						idl.add(cd, this.describe(cd));
-						continue; // inner while loop;
-					}
-					// are we done, if so break inner while loop
-					if (numCheck && Util.isInteger(cd)
-							&& (Integer.parseInt(cd) > Integer.parseInt(stp))) {
-						break;
-					}
-					if (!numCheck && (cd.compareTo(stp) > 0)) {
-						break;
-					}
-
-				}
-
-			}
 
 		}
 
-		for (; currentpos < currentlength; currentpos++) {
-
-			String cd = this.getCodeByPos(currentpos);
-			if (c == 'x') {
-				idl.add(cd, this.describe(cd));
-			}
-
-		}
 
 		return idl;
+	}
+
+	private void remove(String key) {
+		codesValues.remove(key);
+	
+	}
+
+	public int getSize() {
+		 
+		return codesValues.size();
+	}
+
+	public TreeMap<String, String> getCodesValues() {
+		 
+		return codesValues;
 	}
 
 }

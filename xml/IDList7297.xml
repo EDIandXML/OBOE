@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Product</idValue>
-    <idCode>2</idCode>
-        <idValue>Licence</idValue>
-    <idCode>3</idCode>
-        <idValue>Package</idValue>
-    <idCode>4</idCode>
-        <idValue>Vehicle reference set</idValue>
-    <idCode>5</idCode>
-        <idValue>Source database</idValue>
-    <idCode>6</idCode>
-        <idValue>Target database</idValue>
-    <idCode>7</idCode>
-        <idValue>Value list</idValue>
-    <idCode>8</idCode>
-        <idValue>Contract</idValue>
-    <idCode>9</idCode>
-        <idValue>Financial security</idValue>
-    <idCode>10</idCode>
-        <idValue>Accounting</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Product</idValue>
+	</idCode>
+	<idCode>2 <idValue>Licence</idValue>
+	</idCode>
+	<idCode>3 <idValue>Package</idValue>
+	</idCode>
+	<idCode>4 <idValue>Vehicle reference set</idValue>
+	</idCode>
+	<idCode>5 <idValue>Source database</idValue>
+	</idCode>
+	<idCode>6 <idValue>Target database</idValue>
+	</idCode>
+	<idCode>7 <idValue>Value list</idValue>
+	</idCode>
+	<idCode>8 <idValue>Contract</idValue>
+	</idCode>
+	<idCode>9 <idValue>Financial security</idValue>
+	</idCode>
+	<idCode>10 <idValue>Accounting</idValue>
+	</idCode>
 </idList>

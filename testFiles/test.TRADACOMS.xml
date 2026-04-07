@@ -31,7 +31,8 @@
 </composite>
 </segment>
 <segment code="TYP" name="Transaction Type Details">
-<element code="TCDE" name="Transaction Code"><value description="New Orders = new order for goods and/or services">0430</value></element>
+<element code="TCDE" name="Transaction Code"><value description="New Orders = new order for goods
+						and/or services">0430</value></element>
 </segment>
 <segment code="SDT" name="Supplier Details">
 <composite code="SIDN" name="Supplier's Identity">

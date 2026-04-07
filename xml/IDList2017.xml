@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>A</idCode>
-        <idValue>1st shift (normal working hours)</idValue>
-    <idCode>B</idCode>
-        <idValue>2nd shift</idValue>
-    <idCode>C</idCode>
-        <idValue>3rd shift</idValue>
-    <idCode>D</idCode>
-        <idValue>A.M.</idValue>
-    <idCode>E</idCode>
-        <idValue>P.M.</idValue>
-    <idCode>F</idCode>
-        <idValue>As directed</idValue>
-    <idCode>G</idCode>
-        <idValue>Any shift</idValue>
-    <idCode>H</idCode>
-        <idValue>24 hour clock</idValue>
-    <idCode>Y</idCode>
-        <idValue>None</idValue>
-    <idCode>ZZZ</idCode>
-        <idValue>Mutually defined</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>A <idValue>1st shift (normal working hours)</idValue>
+	</idCode>
+	<idCode>B <idValue>2nd shift</idValue>
+	</idCode>
+	<idCode>C <idValue>3rd shift</idValue>
+	</idCode>
+	<idCode>D <idValue>A.M.</idValue>
+	</idCode>
+	<idCode>E <idValue>P.M.</idValue>
+	</idCode>
+	<idCode>F <idValue>As directed</idValue>
+	</idCode>
+	<idCode>G <idValue>Any shift</idValue>
+	</idCode>
+	<idCode>H <idValue>24 hour clock</idValue>
+	</idCode>
+	<idCode>Y <idValue>None</idValue>
+	</idCode>
+	<idCode>ZZZ <idValue>Mutually defined</idValue>
+	</idCode>
 </idList>

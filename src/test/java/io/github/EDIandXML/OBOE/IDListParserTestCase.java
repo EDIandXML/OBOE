@@ -17,7 +17,8 @@ package io.github.EDIandXML.OBOE;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.ArrayList;
+ 
+import java.util.TreeMap;
 
 import org.junit.jupiter.api.Test;
 
@@ -33,35 +34,27 @@ public class IDListParserTestCase {
 	@Test
 	public void testAllIdCodeIdValues() {
 		IDListParser idlp = new IDListParser();
-		ArrayList<String> vCodes = new ArrayList<String>(),
-				vValues = new ArrayList<String>();
-		idlp.parse("xml/idList1.xml", "", vCodes, vValues);
-		assertEquals(vCodes.size(), vValues.size());
-		assertEquals(3, vCodes.size());
-		assertEquals("A", vCodes.get(0));
-		assertEquals("B", vCodes.get(1));
-		assertEquals("C", vCodes.get(2));
-		assertEquals("Urgent", vValues.get(0));
-		assertEquals("Normal", vValues.get(1));
-		assertEquals("Low", vValues.get(2));
+		TreeMap<String, String> vCodesValues = new TreeMap<>();
+				
+		idlp.parse("xml/idList1.xml", "", vCodesValues);
+		assertEquals(3, vCodesValues.size());
+		assertEquals("Urgent", vCodesValues.get("A"));
+		assertEquals("Normal", vCodesValues.get("B"));
+		assertEquals("Low", vCodesValues.get("C"));
 
 	}
 
 	@Test
 	public void testSomeMissingIdValues() {
-		// B is missing so B should comme back with vValues(2)
+		// B is missing so B should come back with code(2)
 		IDListParser idlp = new IDListParser();
-		ArrayList<String> vCodes = new ArrayList<String>(),
-				vValues = new ArrayList<String>();
-		idlp.parse("xml/idList1Missing.xml", "", vCodes, vValues);
-		assertEquals(vValues.size(), vCodes.size());
-		assertEquals(3, vCodes.size());
-		assertEquals("A", vCodes.get(0));
-		assertEquals("B", vCodes.get(1));
-		assertEquals("C", vCodes.get(2));
-		assertEquals("Urgent", vValues.get(0));
-		assertEquals("B", vValues.get(1));
-		assertEquals("Low", vValues.get(2));
+		TreeMap<String, String> vCodesValues = new TreeMap<>();
+		idlp.parse("xml/idList1Missing.xml", "", vCodesValues);
+		 
+		assertEquals(3, vCodesValues.size());
+		assertEquals("Urgent", vCodesValues.get("A"));
+		assertEquals("", vCodesValues.get("B"));
+		assertEquals("Low", vCodesValues.get("C"));
 
 	}
 
@@ -69,32 +62,16 @@ public class IDListParserTestCase {
 	public void testIDListMissingIDValues() {
 		IDListParser idlp = new IDListParser();
 		IDList idl = new IDList("xml/idList1Missing.xml", "", idlp);
-		assertEquals(idl.getValues().size(), idl.getCodes().size());
-		assertEquals(3, idl.getValues().size());
+		assertEquals(3, idl.getCodesValues().size());
 
-		assertEquals("A", idl.getCodes().get(0));
-		assertEquals("B", idl.getCodes().get(1));
-		assertEquals("C", idl.getCodes().get(2));
-		assertEquals("Urgent", idl.describe(idl.getCodes().get(0)));
-		assertEquals("B", idl.describe(idl.getCodes().get(1)));
-		assertEquals("Low", idl.describe(idl.getCodes().get(2)));
-
-	}
-
-	@Test
-	public void testIDList() {
-		IDListParser idlp = new IDListParser();
-		IDList idl = new IDList("xml/idList1.xml", "", idlp);
-		assertEquals(idl.getValues().size(), idl.getCodes().size());
-		assertEquals(3, idl.getValues().size());
-
-		assertEquals("A", idl.getCodes().get(0));
-		assertEquals("B", idl.getCodes().get(1));
-		assertEquals("C", idl.getCodes().get(2));
-		assertEquals("Urgent", idl.describe(idl.getCodes().get(0)));
-		assertEquals("Normal", idl.describe(idl.getCodes().get(1)));
-		assertEquals("Low", idl.describe(idl.getCodes().get(2)));
+		assertEquals("Urgent", idl.describe("A"));
+		assertEquals("B", idl.describe("B"));
+		assertEquals("Low", idl.describe("C"));
+		assertEquals("Urgent", idl.describe("A"));
+		assertEquals("B", idl.describe("B"));
+		assertEquals("Low", idl.describe("C"));
 
 	}
 
+	 
 }

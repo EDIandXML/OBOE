@@ -33,8 +33,8 @@
 package io.github.EDIandXML.OBOE.x12;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.TreeMap;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -71,7 +71,7 @@ public class IDList103Processor implements IDListProcessor {
 		if (idListParser != null) {
 			return; // done this already;
 		}
-		ArrayList<String> v, c;
+		TreeMap<String, String> codesValues;
 		try {
 			idListParser = new IDListParser();
 		} catch (Exception e) {
@@ -83,22 +83,21 @@ public class IDList103Processor implements IDListProcessor {
 		IDList currentIDList = new IDList(
 				Util.getMessageDescriptionFolder() + "IDList103Part1.xml",
 				msgDescriptionFolder, idListParser);
-		v = currentIDList.getValues();
-		c = currentIDList.getCodes();
-		code1 = new Hashtable<String, String>(v.size());
-		int i;
-		for (i = 0; i < v.size(); i++) {
-			code1.put(c.get(i), v.get(i));
+		codesValues = currentIDList.getCodesValues();
+		
+		code1 = new Hashtable<String, String>(codesValues.size());
+		
+		for (var cv:codesValues.entrySet()) {
+			code1.put(cv.getKey(), cv.getValue());
 		}
 		currentIDList = new IDList(
 				Util.getMessageDescriptionFolder() + "IDList103Part2.xml",
 				msgDescriptionFolder, idListParser);
 
-		v = currentIDList.getValues();
-		c = currentIDList.getCodes();
-		code2 = new Hashtable<String, String>(v.size());
-		for (i = 0; i < v.size(); i++) {
-			code2.put(c.get(i), v.get(i));
+		codesValues = currentIDList.getCodesValues();
+		code2 = new Hashtable<String, String>(codesValues.size());
+		for (var cv:codesValues.entrySet()) {
+			code2.put(cv.getKey(), cv.getValue());
 		}
 
 	}
@@ -182,34 +181,13 @@ public class IDList103Processor implements IDListProcessor {
 		return inValue;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 */
 	@Override
-	public String getCodeByPos(int pos) throws UnsupportedOperationException {
-		//
+	public TreeMap<String, String> getCodesValues() {
+		// TODO Auto-generated method stub
 		return null;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 */
-	@Override
-	public ArrayList<String> getCodes() {
-		//
-		return null;
-	}
+	
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 */
-	@Override
-	public ArrayList<String> getValues() {
-		//
-		return null;
-	}
 
 }

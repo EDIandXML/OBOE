@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>AG</idCode>
-        <idValue>Agency</idValue>
-    <idCode>BG</idCode>
-        <idValue>Buying group</idValue>
-    <idCode>BR</idCode>
-        <idValue>Broker</idValue>
-    <idCode>CN</idCode>
-        <idValue>Consolidator (master distributor)</idValue>
-    <idCode>DE</idCode>
-        <idValue>Dealer</idValue>
-    <idCode>DI</idCode>
-        <idValue>Distributor</idValue>
-    <idCode>JB</idCode>
-        <idValue>Jobber</idValue>
-    <idCode>MF</idCode>
-        <idValue>Manufacturer</idValue>
-    <idCode>OE</idCode>
-        <idValue>OEM (Original equipment manufacturer)</idValue>
-    <idCode>RS</idCode>
-        <idValue>Resale</idValue>
-    <idCode>RT</idCode>
-        <idValue>Retailer</idValue>
-    <idCode>ST</idCode>
-        <idValue>Stationer</idValue>
-    <idCode>WH</idCode>
-        <idValue>Wholesaler</idValue>
-    <idCode>WS</idCode>
-        <idValue>User</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>AG <idValue>Agency</idValue>
+	</idCode>
+	<idCode>BG <idValue>Buying group</idValue>
+	</idCode>
+	<idCode>BR <idValue>Broker</idValue>
+	</idCode>
+	<idCode>CN <idValue>Consolidator (master distributor)</idValue>
+	</idCode>
+	<idCode>DE <idValue>Dealer</idValue>
+	</idCode>
+	<idCode>DI <idValue>Distributor</idValue>
+	</idCode>
+	<idCode>JB <idValue>Jobber</idValue>
+	</idCode>
+	<idCode>MF <idValue>Manufacturer</idValue>
+	</idCode>
+	<idCode>OE <idValue>OEM (Original equipment manufacturer)</idValue>
+	</idCode>
+	<idCode>RS <idValue>Resale</idValue>
+	</idCode>
+	<idCode>RT <idValue>Retailer</idValue>
+	</idCode>
+	<idCode>ST <idValue>Stationer</idValue>
+	</idCode>
+	<idCode>WH <idValue>Wholesaler</idValue>
+	</idCode>
+	<idCode>WS <idValue>User</idValue>
+	</idCode>
 </idList>

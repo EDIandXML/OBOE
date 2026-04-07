@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <idList
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
     <idCode>00402</idCode>
         <idValue>Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1998</idValue>
     <idCode>00403</idCode>

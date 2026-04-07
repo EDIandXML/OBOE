@@ -20,7 +20,7 @@ package io.github.EDIandXML.OBOE.Parsers;
 import java.io.CharArrayWriter;
 import java.io.File;
 import java.io.FileReader;
-import java.util.ArrayList;
+import java.util.TreeMap;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -42,6 +42,8 @@ import io.github.EDIandXML.OBOE.util.Util;
  * 
  */
 
+
+
 public class IDListParser extends DefaultHandler implements LexicalHandler {
 	/**
 	 * current element count
@@ -54,7 +56,9 @@ public class IDListParser extends DefaultHandler implements LexicalHandler {
 	/**
 	 * ArrayLists of idlist codes and values
 	 */
-	protected ArrayList<String> codes, values;
+	
+	
+	protected TreeMap<String, String> codesValues;
 
 	// protected org.xml.sax.Parser parser;
 	/**
@@ -63,6 +67,8 @@ public class IDListParser extends DefaultHandler implements LexicalHandler {
 	protected SAXParser parser;
 	// Buffer for collecting data from
 	// the "characters" SAX event.
+	private CharArrayWriter codeContents = new CharArrayWriter();
+	private CharArrayWriter valueContents = new CharArrayWriter();
 	private CharArrayWriter contents = new CharArrayWriter();
 
 	/**
@@ -111,11 +117,10 @@ public class IDListParser extends DefaultHandler implements LexicalHandler {
 	 * @param vValues               ArrayList of code descriptive values
 	 */
 	public void parse(String inXMLFile, String inLastDirectoryToLook,
-			ArrayList<String> vCodes, ArrayList<String> vValues) {
+			TreeMap<String, String> vCodesValues) {
 		xmlFile = Util.searchForFile(inXMLFile, inLastDirectoryToLook);
 		try {
-			codes = vCodes;
-			values = vValues;
+			codesValues = vCodesValues;
 
 			InputSource is;
 			if (Util.findMessageDefinitionFilesInClassPath()) {
@@ -160,7 +165,7 @@ public class IDListParser extends DefaultHandler implements LexicalHandler {
 
 		_iElement++;
 
-		contents.reset();
+		 
 
 		// Standard
 
@@ -172,6 +177,15 @@ public class IDListParser extends DefaultHandler implements LexicalHandler {
 		if (rawName.equals("idList")) {
 			return;
 		}
+		if (rawName.equals("idCode")) {
+			codeContents = new CharArrayWriter();
+			contents = codeContents;
+		}
+		else if (rawName.equals("idValue")) {
+			valueContents = new CharArrayWriter();
+			contents = valueContents;
+		}
+		else contents = new CharArrayWriter();
 
 	}
 
@@ -195,6 +209,7 @@ public class IDListParser extends DefaultHandler implements LexicalHandler {
 
 	}
 
+	String saveValue = "";
 	/**
 	 * Method called by the SAX parser at the </
 	 * 
@@ -208,13 +223,11 @@ public class IDListParser extends DefaultHandler implements LexicalHandler {
 			java.lang.String rawName) throws SAXException {
 
 		if (rawName.equals("idCode")) {
-			codes.add(contents.toString());
-			values.add(contents.toString());
+			codesValues.put(codeContents.toString().trim(), valueContents.toString().trim());
+			codeContents.reset();
+			valueContents.reset();
 		}
 
-		if (rawName.equals("idValue")) {
-			values.set(codes.size() - 1, contents.toString());
-		}
 
 	}
 
@@ -375,27 +388,9 @@ public class IDListParser extends DefaultHandler implements LexicalHandler {
 	 * @return int
 	 */
 	public int getCount() {
-		return codes.size();
+		return codesValues.size();
 	}
 
-	/**
-	 * gets code as specific location
-	 * 
-	 * @param i int position to look at
-	 * @return String
-	 */
-	public String getCode(int i) {
-		return codes.get(i);
-	}
-
-	/**
-	 * returns descriptive value at position
-	 * 
-	 * @param i int position to look at
-	 * @return String
-	 */
-	public String getValue(int i) {
-		return values.get(i);
-	}
+	
 
 }

@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>ADR</idCode>
-        <idValue>European agreement regarding the total carriage of dangerous goods</idValue>
-    <idCode>CFR</idCode>
-        <idValue>49 code of federal regulations</idValue>
-    <idCode>ICA</idCode>
-        <idValue>IATA ICAO</idValue>
-    <idCode>IMD</idCode>
-        <idValue>IMO IMDG code</idValue>
-    <idCode>RID</idCode>
-        <idValue>Railroad dangerous goods book (RID)</idValue>
-    <idCode>TEC</idCode>
-        <idValue>Transport emergency trem card</idValue>
-    <idCode>UI</idCode>
-        <idValue>UK IMO book</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>ADR <idValue>European agreement regarding the total carriage of
+		dangerous goods</idValue>
+	</idCode>
+	<idCode>CFR <idValue>49 code of federal regulations</idValue>
+	</idCode>
+	<idCode>ICA <idValue>IATA ICAO</idValue>
+	</idCode>
+	<idCode>IMD <idValue>IMO IMDG code</idValue>
+	</idCode>
+	<idCode>RID <idValue>Railroad dangerous goods book (RID)</idValue>
+	</idCode>
+	<idCode>TEC <idValue>Transport emergency trem card</idValue>
+	</idCode>
+	<idCode>UI <idValue>UK IMO book</idValue>
+	</idCode>
 </idList>

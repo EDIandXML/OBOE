@@ -116,7 +116,11 @@ public class DocumentRegisterHandlerTestCase implements EDIDocumentHandler
 		try {
 			fr = new FileReader("testFiles/sample.output.840.1");
 			x.startParsing(fr);
-		} catch (FileNotFoundException e) {
+		}
+		catch (OBOEException e) {
+			e.getDocumentErrors().logErrors();
+		}
+		catch (FileNotFoundException e) {
 			fail(e.getMessage());
 		}
 
@@ -144,7 +148,7 @@ public class DocumentRegisterHandlerTestCase implements EDIDocumentHandler
 		for (int i = 0; i < 8; i++) {
 			if (all[i] == false) {
 				fail("on number " + i);
-			}
+			} 
 		}
 
 	}

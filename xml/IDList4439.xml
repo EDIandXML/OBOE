@@ -1,115 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Direct payment</idValue>
-    <idCode>2</idCode>
-        <idValue>Automatic clearing house credit</idValue>
-    <idCode>3</idCode>
-        <idValue>Automatic clearing house debit</idValue>
-    <idCode>4</idCode>
-        <idValue>Automatic clearing house credit-savings account</idValue>
-    <idCode>5</idCode>
-        <idValue>Automatic clearing house debit-demand account</idValue>
-    <idCode>6</idCode>
-        <idValue>Bank book transfer (credit)</idValue>
-    <idCode>7</idCode>
-        <idValue>Bank book transfer (debit)</idValue>
-    <idCode>8</idCode>
-        <idValue>Doc collection via 3rd party with bill of EX</idValue>
-    <idCode>9</idCode>
-        <idValue>Doc collection via 3rd party no bill of EX</idValue>
-    <idCode>10</idCode>
-        <idValue>Irrevocable documentary credit</idValue>
-    <idCode>11</idCode>
-        <idValue>Transferable irrevocable documentary credit</idValue>
-    <idCode>12</idCode>
-        <idValue>Confirmed irrevocable documentary credit</idValue>
-    <idCode>13</idCode>
-        <idValue>Transferable confirmed irrevocable documentary credit</idValue>
-    <idCode>14</idCode>
-        <idValue>Revocable documentary credit</idValue>
-    <idCode>15</idCode>
-        <idValue>Irrevocable letter of credit-confirmed</idValue>
-    <idCode>16</idCode>
-        <idValue>Letter of guarantee</idValue>
-    <idCode>17</idCode>
-        <idValue>Revocable letter of credit</idValue>
-    <idCode>18</idCode>
-        <idValue>Standby letter of credit</idValue>
-    <idCode>19</idCode>
-        <idValue>Irrevocable letter of credit unconfirmed</idValue>
-    <idCode>20</idCode>
-        <idValue>Clean collection (ICC)</idValue>
-    <idCode>21</idCode>
-        <idValue>Documentary collection (ICC)</idValue>
-    <idCode>22</idCode>
-        <idValue>Documentary sight collection (ICC)</idValue>
-    <idCode>23</idCode>
-        <idValue>Documentary collection with date of expiry (ICC)</idValue>
-    <idCode>24</idCode>
-        <idValue>Documentary collection: bill of exchange against acceptance</idValue>
-    <idCode>25</idCode>
-        <idValue>Documentary collection: bill of exchange against payment</idValue>
-    <idCode>26</idCode>
-        <idValue>Collection subject to buyer&apos;s approval (ICC)</idValue>
-    <idCode>27</idCode>
-        <idValue>Collection by a bank consignee for the goods (ICC)</idValue>
-    <idCode>28</idCode>
-        <idValue>Collection under CMEA rules with immediate payment and subsequent AC</idValue>
-    <idCode>29</idCode>
-        <idValue>Collection under CMEA rules with prior acceptance</idValue>
-    <idCode>30</idCode>
-        <idValue>Other collection</idValue>
-    <idCode>31</idCode>
-        <idValue>Open account against payment in advance</idValue>
-    <idCode>32</idCode>
-        <idValue>Open account for contra</idValue>
-    <idCode>33</idCode>
-        <idValue>Open account for payment</idValue>
-    <idCode>34</idCode>
-        <idValue>Seller to advise buyer</idValue>
-    <idCode>35</idCode>
-        <idValue>Documents through banks</idValue>
-    <idCode>36</idCode>
-        <idValue>Charging (to account)</idValue>
-    <idCode>37</idCode>
-        <idValue>Available with issuing bank</idValue>
-    <idCode>38</idCode>
-        <idValue>Available with advising bank</idValue>
-    <idCode>39</idCode>
-        <idValue>Available with named bank</idValue>
-    <idCode>40</idCode>
-        <idValue>Available with any bank</idValue>
-    <idCode>41</idCode>
-        <idValue>Available with any bank in ...</idValue>
-    <idCode>42</idCode>
-        <idValue>Indirect payment</idValue>
-    <idCode>43</idCode>
-        <idValue>Reassignment</idValue>
-    <idCode>44</idCode>
-        <idValue>Offset</idValue>
-    <idCode>45</idCode>
-        <idValue>Special entries</idValue>
-    <idCode>46</idCode>
-        <idValue>Instalment payment</idValue>
-    <idCode>47</idCode>
-        <idValue>Instalment payment with draft</idValue>
-    <idCode>61</idCode>
-        <idValue>Set-off by exchange of documents</idValue>
-    <idCode>62</idCode>
-        <idValue>Set-off by reciprocal credits</idValue>
-    <idCode>63</idCode>
-        <idValue>Set-off by &quot;linkage&quot; (against reciprocal benefits)</idValue>
-    <idCode>64</idCode>
-        <idValue>Set-off by exchange of goods</idValue>
-    <idCode>69</idCode>
-        <idValue>Other set-off</idValue>
-    <idCode>70</idCode>
-        <idValue>Supplier to invoice</idValue>
-    <idCode>71</idCode>
-        <idValue>Recipient to self bill</idValue>
-    <idCode>ZZZ</idCode>
-        <idValue>Mutually defined</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Direct payment</idValue>
+	</idCode>
+	<idCode>2 <idValue>Automatic clearing house credit</idValue>
+	</idCode>
+	<idCode>3 <idValue>Automatic clearing house debit</idValue>
+	</idCode>
+	<idCode>4 <idValue>Automatic clearing house credit-savings account</idValue>
+	</idCode>
+	<idCode>5 <idValue>Automatic clearing house debit-demand account</idValue>
+	</idCode>
+	<idCode>6 <idValue>Bank book transfer (credit)</idValue>
+	</idCode>
+	<idCode>7 <idValue>Bank book transfer (debit)</idValue>
+	</idCode>
+	<idCode>8 <idValue>Doc collection via 3rd party with bill of EX</idValue>
+	</idCode>
+	<idCode>9 <idValue>Doc collection via 3rd party no bill of EX</idValue>
+	</idCode>
+	<idCode>10 <idValue>Irrevocable documentary credit</idValue>
+	</idCode>
+	<idCode>11 <idValue>Transferable irrevocable documentary credit</idValue>
+	</idCode>
+	<idCode>12 <idValue>Confirmed irrevocable documentary credit</idValue>
+	</idCode>
+	<idCode>13 <idValue>Transferable confirmed irrevocable documentary credit</idValue>
+	</idCode>
+	<idCode>14 <idValue>Revocable documentary credit</idValue>
+	</idCode>
+	<idCode>15 <idValue>Irrevocable letter of credit-confirmed</idValue>
+	</idCode>
+	<idCode>16 <idValue>Letter of guarantee</idValue>
+	</idCode>
+	<idCode>17 <idValue>Revocable letter of credit</idValue>
+	</idCode>
+	<idCode>18 <idValue>Standby letter of credit</idValue>
+	</idCode>
+	<idCode>19 <idValue>Irrevocable letter of credit unconfirmed</idValue>
+	</idCode>
+	<idCode>20 <idValue>Clean collection (ICC)</idValue>
+	</idCode>
+	<idCode>21 <idValue>Documentary collection (ICC)</idValue>
+	</idCode>
+	<idCode>22 <idValue>Documentary sight collection (ICC)</idValue>
+	</idCode>
+	<idCode>23 <idValue>Documentary collection with date of expiry (ICC)</idValue>
+	</idCode>
+	<idCode>24 <idValue>Documentary collection: bill of exchange against
+		acceptance</idValue>
+	</idCode>
+	<idCode>25 <idValue>Documentary collection: bill of exchange against payment</idValue>
+	</idCode>
+	<idCode>26 <idValue>Collection subject to buyer&apos;s approval (ICC)</idValue>
+	</idCode>
+	<idCode>27 <idValue>Collection by a bank consignee for the goods (ICC)</idValue>
+	</idCode>
+	<idCode>28 <idValue>Collection under CMEA rules with immediate payment and
+		subsequent AC</idValue>
+	</idCode>
+	<idCode>29 <idValue>Collection under CMEA rules with prior acceptance</idValue>
+	</idCode>
+	<idCode>30 <idValue>Other collection</idValue>
+	</idCode>
+	<idCode>31 <idValue>Open account against payment in advance</idValue>
+	</idCode>
+	<idCode>32 <idValue>Open account for contra</idValue>
+	</idCode>
+	<idCode>33 <idValue>Open account for payment</idValue>
+	</idCode>
+	<idCode>34 <idValue>Seller to advise buyer</idValue>
+	</idCode>
+	<idCode>35 <idValue>Documents through banks</idValue>
+	</idCode>
+	<idCode>36 <idValue>Charging (to account)</idValue>
+	</idCode>
+	<idCode>37 <idValue>Available with issuing bank</idValue>
+	</idCode>
+	<idCode>38 <idValue>Available with advising bank</idValue>
+	</idCode>
+	<idCode>39 <idValue>Available with named bank</idValue>
+	</idCode>
+	<idCode>40 <idValue>Available with any bank</idValue>
+	</idCode>
+	<idCode>41 <idValue>Available with any bank in ...</idValue>
+	</idCode>
+	<idCode>42 <idValue>Indirect payment</idValue>
+	</idCode>
+	<idCode>43 <idValue>Reassignment</idValue>
+	</idCode>
+	<idCode>44 <idValue>Offset</idValue>
+	</idCode>
+	<idCode>45 <idValue>Special entries</idValue>
+	</idCode>
+	<idCode>46 <idValue>Instalment payment</idValue>
+	</idCode>
+	<idCode>47 <idValue>Instalment payment with draft</idValue>
+	</idCode>
+	<idCode>61 <idValue>Set-off by exchange of documents</idValue>
+	</idCode>
+	<idCode>62 <idValue>Set-off by reciprocal credits</idValue>
+	</idCode>
+	<idCode>63 <idValue>Set-off by &quot;linkage&quot; (against reciprocal
+		benefits)</idValue>
+	</idCode>
+	<idCode>64 <idValue>Set-off by exchange of goods</idValue>
+	</idCode>
+	<idCode>69 <idValue>Other set-off</idValue>
+	</idCode>
+	<idCode>70 <idValue>Supplier to invoice</idValue>
+	</idCode>
+	<idCode>71 <idValue>Recipient to self bill</idValue>
+	</idCode>
+	<idCode>ZZZ <idValue>Mutually defined</idValue>
+	</idCode>
 </idList>

@@ -47,6 +47,8 @@ public class MissingStuffTestCases {
 		EDIFACTDocumentHandler p1 = null;
 		try {
 			p1 = new EDIFACTDocumentHandler(fr);
+			p1.getDocumentErrors().logErrors();
+			System.out.println(p1.getDocumentErrors().toString());
 			assertEquals(1, p1.getDocumentErrors().getErrorCount());
 			assertEquals("C5071", p1.getDocumentErrors().getErrorID(0));
 			assertTrue(p1.getDocumentErrors().getErrorDescription(0)

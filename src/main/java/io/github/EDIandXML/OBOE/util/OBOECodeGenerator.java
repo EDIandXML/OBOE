@@ -21,8 +21,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.TreeMap;
 
 import io.github.EDIandXML.OBOE.EnvelopeFactory;
 import io.github.EDIandXML.OBOE.TransactionSetFactory;
@@ -1064,7 +1064,7 @@ public class OBOECodeGenerator
 						+ "  throws OBOEException" + lineFeed + "{" + lineFeed);
 			}
 			if (seg.canYouPrevalidate()) {
-				ArrayList<String> v = getIDList(seg);
+				var v = getIDList(seg);
 				if (v.size() == 1) {
 					pw.write("  Segment segment = inTable.createSegment(\"" + seg.getID() + "\", \"" + v.get(0) + "\");"
 							+ lineFeed);
@@ -1096,7 +1096,7 @@ public class OBOECodeGenerator
 						+ "(Loop inLoop)  throws OBOEException" + lineFeed + "{" + lineFeed);
 			}
 			if (seg.canYouPrevalidate()) {
-				ArrayList<String> v = getIDList(seg);
+				var v = getIDList(seg);
 				if (v.size() == 1) {
 					pw.write("  Segment segment = inLoop.createSegment(\"" + seg.getID() + "\", \"" + v.get(0) + "\");"
 							+ lineFeed);
@@ -1183,7 +1183,7 @@ public class OBOECodeGenerator
 		return pw.toString();
 	}
 
-	private ArrayList<String> getIDList(TemplateSegment seg) {
+	private TreeMap<String, String> getIDList(TemplateSegment seg) {
 		for (int i = 0; i < seg.getContainerSize(); i++) {
 			if (seg.isTemplateComposite(i + 1) && (seg.getTemplateElement(i + 1).isRequired())) {
 				TemplateCompositeElement tce = (TemplateCompositeElement) seg.getTemplateElement(i + 1);
@@ -1193,7 +1193,7 @@ public class OBOECodeGenerator
 						break;
 					}
 
-					return tde.getIDList().getCodes();
+					return tde.getIDList().getCodesValues();
 				}
 				continue;
 			}
@@ -1207,7 +1207,7 @@ public class OBOECodeGenerator
 				if (((TemplateDataElement) seg.getTemplateElement(i + 1)).getIDList() == null) {
 					continue;
 				}
-				return ((TemplateDataElement) seg.getTemplateElement(i + 1)).getIDList().getCodes();
+				return ((TemplateDataElement) seg.getTemplateElement(i + 1)).getIDList().getCodesValues();
 			}
 		}
 		return null;

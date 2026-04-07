@@ -1,69 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>000</idCode>
-        <idValue>No error</idValue>
-    <idCode>001</idCode>
-        <idValue>The Interchange Control Number in the Header and Trailer Do Not Match. The Value From the Header is Used in the Acknowledgment.</idValue>
-    <idCode>002</idCode>
-        <idValue>This Standard as Noted in the Control Standards Identifier is Not Supported.</idValue>
-    <idCode>003</idCode>
-        <idValue>This Version of the Controls is Not Supported</idValue>
-    <idCode>004</idCode>
-        <idValue>The Segment Terminator is Invalid</idValue>
-    <idCode>005</idCode>
-        <idValue>Invalid Interchange ID Qualifier for Sender</idValue>
-    <idCode>006</idCode>
-        <idValue>Invalid Interchange Sender ID</idValue>
-    <idCode>007</idCode>
-        <idValue>Invalid Interchange ID Qualifier for Receiver</idValue>
-    <idCode>008</idCode>
-        <idValue>Invalid Interchange Receiver ID</idValue>
-    <idCode>009</idCode>
-        <idValue>Unknown Interchange Receiver ID</idValue>
-    <idCode>010</idCode>
-        <idValue>Invalid Authorization Information Qualifier Value</idValue>
-    <idCode>011</idCode>
-        <idValue>Invalid Authorization Information Value</idValue>
-    <idCode>012</idCode>
-        <idValue>Invalid Security Information Qualifier Value</idValue>
-    <idCode>013</idCode>
-        <idValue>Invalid Security Information Value</idValue>
-    <idCode>014</idCode>
-        <idValue>Invalid Interchange Date Value</idValue>
-    <idCode>015</idCode>
-        <idValue>Invalid Interchange Time Value</idValue>
-    <idCode>016</idCode>
-        <idValue>Invalid Interchange Standards Identifier Value</idValue>
-    <idCode>017</idCode>
-        <idValue>Invalid Interchange Version ID Value</idValue>
-    <idCode>018</idCode>
-        <idValue>Invalid Interchange Control Number Value</idValue>
-    <idCode>019</idCode>
-        <idValue>Invalid Acknowledgment Requested Value</idValue>
-    <idCode>020</idCode>
-        <idValue>Invalid Test Indicator Value</idValue>
-    <idCode>021</idCode>
-        <idValue>Invalid Number of Included Groups Value</idValue>
-    <idCode>022</idCode>
-        <idValue>Invalid Control Structure</idValue>
-    <idCode>023</idCode>
-        <idValue>Improper (Premature) End-of-File (Transmission)</idValue>
-    <idCode>024</idCode>
-        <idValue>Invalid Interchange Content (e.g., Invalid GS Segment)</idValue>
-    <idCode>025</idCode>
-        <idValue>Duplicate Interchange Control Number</idValue>
-    <idCode>026</idCode>
-        <idValue>Invalid Data Element Separator</idValue>
-    <idCode>027</idCode>
-        <idValue>Invalid Component Element Separator</idValue>
-    <idCode>028</idCode>
-        <idValue>Invalid Delivery Date in Deferred Delivery Request</idValue>
-    <idCode>029</idCode>
-        <idValue>Invalid Delivery Time in Deferred Delivery Request</idValue>
-    <idCode>030</idCode>
-        <idValue>Invalid Delivery Time Code in Deferred Delivery Request</idValue>
-    <idCode>031</idCode>
-        <idValue>Invalid Grade of Service Code</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>000 <idValue>No error</idValue>
+	</idCode>
+	<idCode>001 <idValue>The Interchange Control Number in the Header and
+		Trailer Do Not Match. The Value From the Header is Used in the
+		Acknowledgment.</idValue>
+	</idCode>
+	<idCode>002 <idValue>This Standard as Noted in the Control Standards
+		Identifier is Not Supported.</idValue>
+	</idCode>
+	<idCode>003 <idValue>This Version of the Controls is Not Supported</idValue>
+	</idCode>
+	<idCode>004 <idValue>The Segment Terminator is Invalid</idValue>
+	</idCode>
+	<idCode>005 <idValue>Invalid Interchange ID Qualifier for Sender</idValue>
+	</idCode>
+	<idCode>006 <idValue>Invalid Interchange Sender ID</idValue>
+	</idCode>
+	<idCode>007 <idValue>Invalid Interchange ID Qualifier for Receiver</idValue>
+	</idCode>
+	<idCode>008 <idValue>Invalid Interchange Receiver ID</idValue>
+	</idCode>
+	<idCode>009 <idValue>Unknown Interchange Receiver ID</idValue>
+	</idCode>
+	<idCode>010 <idValue>Invalid Authorization Information Qualifier Value</idValue>
+	</idCode>
+	<idCode>011 <idValue>Invalid Authorization Information Value</idValue>
+	</idCode>
+	<idCode>012 <idValue>Invalid Security Information Qualifier Value</idValue>
+	</idCode>
+	<idCode>013 <idValue>Invalid Security Information Value</idValue>
+	</idCode>
+	<idCode>014 <idValue>Invalid Interchange Date Value</idValue>
+	</idCode>
+	<idCode>015 <idValue>Invalid Interchange Time Value</idValue>
+	</idCode>
+	<idCode>016 <idValue>Invalid Interchange Standards Identifier Value</idValue>
+	</idCode>
+	<idCode>017 <idValue>Invalid Interchange Version ID Value</idValue>
+	</idCode>
+	<idCode>018 <idValue>Invalid Interchange Control Number Value</idValue>
+	</idCode>
+	<idCode>019 <idValue>Invalid Acknowledgment Requested Value</idValue>
+	</idCode>
+	<idCode>020 <idValue>Invalid Test Indicator Value</idValue>
+	</idCode>
+	<idCode>021 <idValue>Invalid Number of Included Groups Value</idValue>
+	</idCode>
+	<idCode>022 <idValue>Invalid Control Structure</idValue>
+	</idCode>
+	<idCode>023 <idValue>Improper (Premature) End-of-File (Transmission)</idValue>
+	</idCode>
+	<idCode>024 <idValue>Invalid Interchange Content (e.g., Invalid GS Segment)</idValue>
+	</idCode>
+	<idCode>025 <idValue>Duplicate Interchange Control Number</idValue>
+	</idCode>
+	<idCode>026 <idValue>Invalid Data Element Separator</idValue>
+	</idCode>
+	<idCode>027 <idValue>Invalid Component Element Separator</idValue>
+	</idCode>
+	<idCode>028 <idValue>Invalid Delivery Date in Deferred Delivery Request</idValue>
+	</idCode>
+	<idCode>029 <idValue>Invalid Delivery Time in Deferred Delivery Request</idValue>
+	</idCode>
+	<idCode>030 <idValue>Invalid Delivery Time Code in Deferred Delivery Request</idValue>
+	</idCode>
+	<idCode>031 <idValue>Invalid Grade of Service Code</idValue>
+	</idCode>
 </idList>

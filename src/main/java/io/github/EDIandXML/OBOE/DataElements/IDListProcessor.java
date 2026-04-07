@@ -16,7 +16,9 @@
 
 package io.github.EDIandXML.OBOE.DataElements;
 
-import java.util.ArrayList;
+ 
+import java.util.TreeMap;
+
 
 /**
  * An interface for classes that process ID lists
@@ -63,31 +65,9 @@ public interface IDListProcessor {
 
 	public String getCode(String inValue);
 
-	/**
-	 * returns a code at a specific position in ArrayList <br>
-	 * An optional method.
-	 *
-	 * @param pos int String position
-	 * @return String
-	 * @exception java.lang.UnsupportedOperationException
-	 */
-	public String getCodeByPos(int pos)
-			throws java.lang.UnsupportedOperationException;
+ 
 
-	/**
-	 * returns the code ArrayList
-	 *
-	 * @return ArrayList
-	 */
+	public TreeMap<String, String> getCodesValues();
 
-	public ArrayList<String> getCodes();
-
-	/**
-	 * returns the value ArrayList
-	 *
-	 * @return ArrayList
-	 */
-
-	public ArrayList<String> getValues();
-
+	 
 }

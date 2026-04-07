@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Centre</idValue>
-    <idCode>2</idCode>
-        <idValue>Left</idValue>
-    <idCode>3</idCode>
-        <idValue>Right</idValue>
-    <idCode>4</idCode>
-        <idValue>Justified</idValue>
-    <idCode>5</idCode>
-        <idValue>Preceded by one blank line</idValue>
-    <idCode>6</idCode>
-        <idValue>Preceded by two blank lines</idValue>
-    <idCode>7</idCode>
-        <idValue>Preceded by three blank lines</idValue>
-    <idCode>8</idCode>
-        <idValue>Continuation</idValue>
-    <idCode>9</idCode>
-        <idValue>New page</idValue>
-    <idCode>10</idCode>
-        <idValue>End text</idValue>
-    <idCode>11</idCode>
-        <idValue>New line</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Centre</idValue>
+	</idCode>
+	<idCode>2 <idValue>Left</idValue>
+	</idCode>
+	<idCode>3 <idValue>Right</idValue>
+	</idCode>
+	<idCode>4 <idValue>Justified</idValue>
+	</idCode>
+	<idCode>5 <idValue>Preceded by one blank line</idValue>
+	</idCode>
+	<idCode>6 <idValue>Preceded by two blank lines</idValue>
+	</idCode>
+	<idCode>7 <idValue>Preceded by three blank lines</idValue>
+	</idCode>
+	<idCode>8 <idValue>Continuation</idValue>
+	</idCode>
+	<idCode>9 <idValue>New page</idValue>
+	</idCode>
+	<idCode>10 <idValue>End text</idValue>
+	</idCode>
+	<idCode>11 <idValue>New line</idValue>
+	</idCode>
 </idList>

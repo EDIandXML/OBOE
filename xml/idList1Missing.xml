@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-  <idCode>A</idCode>
-    <idValue>Urgent</idValue>
-  <idCode>B</idCode>
-  <idCode>C</idCode>
-    <idValue>Low</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>A <idValue>Urgent</idValue>
+	</idCode>
+	<idCode>B</idCode>
+	<idCode>C <idValue>Low</idValue>
+	</idCode>
 </idList>

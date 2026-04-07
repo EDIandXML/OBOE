@@ -2,40 +2,39 @@
 <!DOCTYPE envelope PUBLIC "envelope" "https://raw.githubusercontent.com/EDIandXML/OBOE/main/envelope.dtd">
 <envelope format="X12">
 <segment code="ISA" name="Interchange Control Header">
-<element code="I01" name="Authorization Information Qualifier"><value description="No Authorization Information Present (No Meaningful Information in I02)">00</value></element>
+<element code="I01" name="Authorization Information Qualifier"><value description="00">00</value></element>
 <element code="I02" name="Authorization Information"> <value>          </value></element>
-<element code="I03" name="Security Information Qualifier"><value description="No Security Information Present (No Meaningful Information in I04)">00</value></element>
+<element code="I03" name="Security Information Qualifier"><value description="United States Federal Government Communication Identifier">00</value></element>
 <element code="I04" name="Security Information"> <value>          </value></element>
-<element code="I05" name="Interchange ID Qualifier"><value description="Mutually Defined">ZZ</value></element>
+<element code="I05" name="Interchange ID Qualifier"><value description="Standard Address Number">ZZ</value></element>
 <element code="I06" name="Interchange Sender ID"> <value>DMCOGDEN       </value></element>
-<element code="I05" name="Interchange ID Qualifier"><value description="Mutually Defined">ZZ</value></element>
+<element code="I05" name="Interchange ID Qualifier"><value description="Standard Address Number">ZZ</value></element>
 <element code="I07" name="Interchange Receiver ID"> <value>PUBLIC         </value></element>
 <element code="I08" name="Interchange Date"> <value>000817</value></element>
 <element code="I09" name="Interchange Time"> <value>1520</value></element>
 <element code="I10" name="Interchange Control Standards Identifier"> <value>U</value></element>
-<element code="I11" name="Interchange Control Version Number"><value description="Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1997">00401</value></element>
+<element code="I11" name="Interchange Control Version Number"><value description="Standard Issued as ANSI X12.5-1997">00401</value></element>
 <element code="I12" name="Interchange Control Number"><value>300017389</value></element>
-<element code="I13" name="Acknowledgment Requested"><value description="Interchange Acknowledgment Requested">1</value></element>
-<element code="I14" name="Usage Indicator"><value description="Production Data">P</value></element>
+<element code="I13" name="Acknowledgment Requested"><value description="No Acknowledgment Requested">1</value></element>
+<element code="I14" name="Usage Indicator"><value description="Information">P</value></element>
 <element code="I15" name="Component Element Separator"> <value>&lt;</value></element>
 </segment>
 <segment code="TA1" name="Interchange Acknowledgment">
 <element code="I12" name="Interchange Control Number"><value>723010535</value></element>
 <element code="I08" name="Interchange Date"> <value>061024</value></element>
 <element code="I09" name="Interchange Time"> <value>1006</value></element>
-<element code="I17" name="Interchange Acknowledgment Code"><value description="The Transmitted Interchange Control Structure Header and Trailer are Rejected Because of Errors.">R</value></element>
-<element code="I18" name="Interchange Note Code"><value description="Invalid Interchange Content (e.g., Invalid GS Segment)">024</value></element>
+<element code="I17" name="Interchange Acknowledgment Code"><value description="The Transmitted Interchange Control Structure Header and Trailer Have Been Received and Are Accepted But Errors Are Noted. This Means the Sender Must Not Resend This Data.">R</value></element>
+<element code="I18" name="Interchange Note Code"><value description="Improper (Premature) End-of-File (Transmission)">024</value></element>
 </segment>
 <functionalgroup>
 <segment code="GS" name="Functional Group Header">
-<element code="479" name="Functional Identifier Code"><value description="Request for Quotation (840) and Procurement Notices
-						(836)">RQ</value></element>
+<element code="479" name="Functional Identifier Code"><value description="Purchase Order Acknowledgement (855)">RQ</value></element>
 <element code="142" name="Application Sender's Code"> <value>HILLGW201401</value></element>
 <element code="124" name="Application Receiver's Code"> <value>PUBLIC</value></element>
 <element code="373" name="Date"> <value>20010317</value></element>
 <element code="337" name="Time"> <value>1520</value></element>
 <element code="28" name="Group Control Number"><value>300017389</value></element>
-<element code="455" name="Responsible Agency Code"><value description="Accredited Standards Committee X12">X</value></element>
+<element code="455" name="Responsible Agency Code"><value description="Transportation Data Coordinating Committee (TDCC)">X</value></element>
 <element code="480" name="Version / Release / Industry Identifier Code"><value description="Standards Approved for Publication by ASC X12
 		Procedures Review Board">004010</value></element>
 </segment>
@@ -140,7 +139,8 @@
 <element code="355" name="Unit or Basis for Measurement Code"><value description="Sheet">SH</value></element>
 <element code="235" name="Product/Service ID Qualifier"><value description="Federal Supply Classification">FT</value></element>
 <element code="234" name="Product/Service ID"> <value>9545</value></element>
-<element code="235" name="Product/Service ID Qualifier"><value description="Standard Industrial Classification Code">SI</value></element>
+<element code="235" name="Product/Service ID Qualifier"><value description="Standard Industrial Classification
+							Code">SI</value></element>
 <element code="234" name="Product/Service ID"> <value>3356</value></element>
 <element code="235" name="Product/Service ID Qualifier"><value description="Stock Number">SW</value></element>
 <element code="234" name="Product/Service ID"> <value>9545LAB187I</value></element>

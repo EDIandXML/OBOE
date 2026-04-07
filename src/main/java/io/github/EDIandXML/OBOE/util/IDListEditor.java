@@ -41,6 +41,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.util.ArrayList;
+import java.util.TreeMap;
 
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -60,6 +61,7 @@ import javax.swing.table.AbstractTableModel;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 
 import io.github.EDIandXML.OBOE.DataElements.IDList;
 import io.github.EDIandXML.OBOE.Templates.TemplateDataElement;
@@ -239,7 +241,7 @@ public class IDListEditor extends JFrame
 		Boolean b;
 		IDList idlsave = (IDList) workingDE.getIDList();
 
-		ArrayList<String> v = idl.getCodes();
+		 
 		int set = 0;
 
 		for (int i = 0; i < idViewer.getRowCount(); i++) {
@@ -256,7 +258,7 @@ public class IDListEditor extends JFrame
 			return false;
 		}
 
-		boolean equal = (v.size() == set);
+		boolean equal = (idlsave.getSize() == set);
 
 		((IDList) workingDE.getIDList())
 				.setName("IDList" + workingDE.getID() + ".xml");
@@ -266,7 +268,7 @@ public class IDListEditor extends JFrame
 			return true;
 		}
 
-		include = ((v.size() / 2) > set);
+		include = ((idlsave.getSize() / 2) > set);
 		StringBuilder sb = new StringBuilder();
 		if (include) {
 			sb.append("include=\"");
@@ -436,16 +438,15 @@ public class IDListEditor extends JFrame
 		 *
 		 */
 		private static final long serialVersionUID = 1L;
-		ArrayList<String> code;
-		ArrayList<String> value;
-		ArrayList<String> editCode;
+		TreeMap<String, String> codesValues;
+		TreeMap<String, String> editCodesValues;
 		Boolean aBoolean[], tBoolean[];
 		int inRow;
 		String columnName[] = { "Selected", "ID Code", "Description" };
 
 		int columnCount = 3;
 		int rowCount = 0;
-
+		TreeMap<String, String> editCode;
 		/**
 		 * Constructor for TableModel
 		 *
@@ -453,38 +454,38 @@ public class IDListEditor extends JFrame
 		 * @param idListEdit IDList to be workedon
 		 */
 		public Coder_IDViewer(IDList idListSave, IDList idListEdit) {
-			code = idListSave.getCodes();
-			value = idListSave.getValues();
+			codesValues = idListSave.getCodesValues();
+			
 
 			if (idListEdit == null) {
-				editCode = new ArrayList<String>(0);
+				editCode = new TreeMap<String, String>();
 			} else {
-				editCode = idListEdit.getCodes();
+				editCode = idListEdit.getCodesValues();
 			}
 
-			aBoolean = new Boolean[code.size()];
-			tBoolean = new Boolean[code.size()];
+			aBoolean = new Boolean[codesValues.size()];
+			tBoolean = new Boolean[codesValues.size()];
 
 			String codeFull, codeEdited;
 			int i, j;
-			for (i = 0, j = 0; (i < value.size())
-					&& (j < editCode.size()); i++) {
-				codeEdited = editCode.get(j);
-				codeFull = code.get(i);
-				if (codeFull.compareTo(codeEdited) == 0) {
-					aBoolean[i] = true;
-					tBoolean[i] = true;
-					j++;
-				} else {
-					aBoolean[i] = false;
-					tBoolean[i] = false;
-				}
-			}
-
-			for (; i < value.size(); i++) {
-				aBoolean[i] = false;
-				tBoolean[i] = false;
-			}
+//			for (i = 0, j = 0; (i < codesValues.size())
+//					&& (j < editCode.size()); i++) {
+//				codeEdited = editCode.get(j).code();
+//				codeFull = codesValues.get(i).code();
+//				if (codeFull.compareTo(codeEdited) == 0) {
+//					aBoolean[i] = true;
+//					tBoolean[i] = true;
+//					j++;
+//				} else {
+//					aBoolean[i] = false;
+//					tBoolean[i] = false;
+//				}
+//			}
+//
+//			for (; i < codesValues.size(); i++) {
+//				aBoolean[i] = false;
+//				tBoolean[i] = false;
+//			}
 
 		}
 
@@ -514,13 +515,14 @@ public class IDListEditor extends JFrame
 		 */
 		@Override
 		public Object getValueAt(int r, int c) {
-			if (c == 0) {
-				return aBoolean[r];
-			}
-			if (c == 1) {
-				return code.get(r);
-			}
-			return value.get(r);
+//			if (c == 0) {
+//				return aBoolean[r];
+//			}
+//			if (c == 1) {
+//				return codesValues.get(r).code();
+//			}
+//			return codesValues.get(r).value();
+			return null;
 		}
 
 		/**
@@ -548,7 +550,7 @@ public class IDListEditor extends JFrame
 		 */
 		@Override
 		public int getRowCount() {
-			return value.size();
+			return codesValues.size();
 		}
 
 		/**
@@ -593,7 +595,7 @@ public class IDListEditor extends JFrame
 		 */
 		public void setAll() {
 			Boolean b = true;
-			for (int r = 0; r < value.size(); r++) {
+			for (int r = 0; r < codesValues.size(); r++) {
 				setValueAt(b, r, 0);
 				fireTableCellUpdated(r, 0);
 			}
@@ -604,7 +606,7 @@ public class IDListEditor extends JFrame
 		 */
 		public void unsetAll() {
 			Boolean b = false;
-			for (int r = 0; r < value.size(); r++) {
+			for (int r = 0; r < codesValues.size(); r++) {
 				setValueAt(b, r, 0);
 				fireTableCellUpdated(r, 0);
 			}
@@ -614,7 +616,7 @@ public class IDListEditor extends JFrame
 		 *
 		 */
 		public void resetTBoolean() {
-			for (int r = 0; r < value.size(); r++) {
+			for (int r = 0; r < codesValues.size(); r++) {
 				tBoolean[r] = aBoolean[r].booleanValue();
 			}
 		}

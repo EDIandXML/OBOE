@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Chemistry</idValue>
-    <idCode>2</idCode>
-        <idValue>Mechanical</idValue>
-    <idCode>3</idCode>
-        <idValue>Component of measurable quantity</idValue>
-    <idCode>4</idCode>
-        <idValue>System of measurable quantity</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Chemistry</idValue>
+	</idCode>
+	<idCode>2 <idValue>Mechanical</idValue>
+	</idCode>
+	<idCode>3 <idValue>Component of measurable quantity</idValue>
+	</idCode>
+	<idCode>4 <idValue>System of measurable quantity</idValue>
+	</idCode>
 </idList>

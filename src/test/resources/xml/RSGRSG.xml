@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transactionSet
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
   name="Reconciliation Message" id="RSGRSG" revision="???" description="Used to vaerify message integrity" shortName="RSGRSG"><table section="header">
   <segment id="MHD" name="Message Header"
     sequence="10" occurs="1" required='M'>

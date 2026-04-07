@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transactionSet
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
   name="test" id="006.xml" revision="004010"	functionalGroup="ZZ" description="Test equivalent segments " shortName="test">
 	<table section="header">
         <segment name="Transaction Set Header" id="ST"

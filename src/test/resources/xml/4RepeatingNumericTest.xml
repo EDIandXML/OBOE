@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transactionSet
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
   name="Invoice" id="4RepeatingNumericTest"  revision="004010"
   functionalGroup="ZZ"
   description="This Draft Standard for Trial Use contains the format and establishes the data contents of the Invoice Transaction Set (810) for use within the context of an Electronic Data Interchange (EDI) environment. The transaction set can be used to provide for customary and established business and industry practice relative to the billing for goods and services provided."

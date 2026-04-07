@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>00</idCode>
-        <idValue>No Security Information Present (No Meaningful Information in I04)</idValue>
-    <idCode>01</idCode>
-        <idValue>Password</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>00 <idValue>No Security Information Present (No Meaningful
+		Information in I04)</idValue>
+	</idCode>
+	<idCode>01 <idValue>Password</idValue>
+	</idCode>
 </idList>

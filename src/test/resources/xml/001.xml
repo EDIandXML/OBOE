@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transactionSet
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/ediRules.xsd"
+  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/ediRules.xsd"
   name="OBOE Test" id="001"  revision="004010"
   functionalGroup="ZZ"
   description="Used to test effectiveness of Parser"

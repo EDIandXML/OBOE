@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <envelope
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
 	type="EDIFACT">
 	<segment name="Service String" id="UNA" occurs="1" sequence="0" required="O"
 		description="Identify tokens." shortName="Service_String">

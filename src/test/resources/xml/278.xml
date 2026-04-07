@@ -2,7 +2,7 @@
 <transactionSet
 	name="Health Care Services Review Information"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
 	id="278" revision="005010" functionalGroup="HI"
 	description="This X12 Transaction Set contains the format and establishes the data contents of the Health Care Services Review Information Transaction Set (278) for use within the context of an Electronic Data Interchange (EDI) environment. This transaction set can be used to transmit health care service information, such as subscriber, patient, demographic, diagnosis or treatment data for the purpose of request for review, certification, notification or reporting the outcome of a health care services review.  Expected users of this transaction set are payors, plan sponsors, providers, utilization management and other entities involved in health care services review."
 	shortName="HealthCareServicesReviewInformation">

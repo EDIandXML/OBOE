@@ -27,6 +27,7 @@ import java.nio.file.StandardCopyOption;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Before;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -46,12 +47,15 @@ public class EnvelopeVersioningWithClasspath {
 	@BeforeEach
 	protected void setUp() throws Exception {
 		EnvelopeFactory.reloadbuiltTable();
+		Util.closeOBOEProperty();
+		logr.debug("reset properties files");
 		try {
 
 			Files.copy(Paths
 					.get("testFiles/UseVersionClasspath.oboe.properties.txt"),
 					Paths.get("OBOE.properties"),
 					StandardCopyOption.REPLACE_EXISTING);
+			
 
 		} catch (Exception e1) {
 			e1.printStackTrace();
@@ -84,6 +88,8 @@ public class EnvelopeVersioningWithClasspath {
 			assertFalse(de.isCodeValid("00"));
 			DocumentErrors derr = new DocumentErrors();
 			env.validate(derr);
+			if (derr.getErrorCount()!=1)
+				derr.logErrors();
 			assertEquals(1, derr.getErrorCount());
 			assertEquals(derr.getErrorDescription(0),
 					"Invalid ID dataelement text (0040X), see Interchange Control Version Number at position 12");

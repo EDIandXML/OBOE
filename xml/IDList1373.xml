@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>BM</idCode>
-        <idValue>Bellows Meter</idValue>
-    <idCode>BO</idCode>
-        <idValue>Based on 120 Days List to Contract</idValue>
-    <idCode>DM</idCode>
-        <idValue>Displacement Meter</idValue>
-    <idCode>FT</idCode>
-        <idValue>Flange Tap</idValue>
-    <idCode>MA</idCode>
-        <idValue>Measured Over Six Months</idValue>
-    <idCode>MM</idCode>
-        <idValue>Mercury Meter</idValue>
-    <idCode>OM</idCode>
-        <idValue>Orifice Meter</idValue>
-    <idCode>PT</idCode>
-        <idValue>Pipe Tap</idValue>
-    <idCode>TM</idCode>
-        <idValue>Turbine Meter</idValue>
-    <idCode>VA</idCode>
-        <idValue>Valued at 90 Day Marketing Time Method</idValue>
-    <idCode>VB</idCode>
-        <idValue>Valued at 120 Day Marketing Time Method</idValue>
-    <idCode>VC</idCode>
-        <idValue>Valued at 180 Day Marketing Time Method</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>BM <idValue>Bellows Meter</idValue>
+	</idCode>
+	<idCode>BO <idValue>Based on 120 Days List to Contract</idValue>
+	</idCode>
+	<idCode>DM <idValue>Displacement Meter</idValue>
+	</idCode>
+	<idCode>FT <idValue>Flange Tap</idValue>
+	</idCode>
+	<idCode>MA <idValue>Measured Over Six Months</idValue>
+	</idCode>
+	<idCode>MM <idValue>Mercury Meter</idValue>
+	</idCode>
+	<idCode>OM <idValue>Orifice Meter</idValue>
+	</idCode>
+	<idCode>PT <idValue>Pipe Tap</idValue>
+	</idCode>
+	<idCode>TM <idValue>Turbine Meter</idValue>
+	</idCode>
+	<idCode>VA <idValue>Valued at 90 Day Marketing Time Method</idValue>
+	</idCode>
+	<idCode>VB <idValue>Valued at 120 Day Marketing Time Method</idValue>
+	</idCode>
+	<idCode>VC <idValue>Valued at 180 Day Marketing Time Method</idValue>
+	</idCode>
 </idList>
