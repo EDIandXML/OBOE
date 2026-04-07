@@ -248,6 +248,7 @@
 	<!-- Updated idList - idValue is now a CHILD of idCode -->
 	<!-- ============================================= -->
 	
+<<<<<<< HEAD
 	<xs:element name="idList">
 		<xs:complexType>
 			<xs:sequence>
@@ -260,7 +261,10 @@
 								minOccurs="0"
 								maxOccurs="1" />
 						</xs:sequence>
+=======
+>>>>>>> refs/remotes/origin/main
 
+<<<<<<< HEAD
 						<!-- Original 'used' attribute is preserved -->
 						<xs:attribute name="used" default="Y">
 							<xs:simpleType>
@@ -278,6 +282,94 @@
 	<!-- idValue -->
 	<xs:element name="idValue" type="xs:string" />
 
+	<!-- idListClass -->
+	<xs:element name="idListClass">
+		<xs:complexType>
+			<xs:attribute name="className" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<!-- idListFile -->
+	<xs:element name="idListFile">
+		<xs:complexType>
+			<xs:attribute name="fileName" type="xs:string" use="required" />
+			<xs:attribute name="include" type="xs:string" />
+			<xs:attribute name="exclude" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Default -->
+	<xs:element name="default">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="from" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="constant" />
+								<xs:enumeration value="property" />
+								<xs:enumeration value="method" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+=======
+<xs:element name="idList">
+    <xs:complexType>
+        <xs:sequence>
+            <!-- Each code can now have its own description -->
+            <xs:element name="idCode" maxOccurs="unbounded">
+                <xs:complexType mixed="true">
+                    <!-- idValue is a child element inside idCode -->
+                    <xs:sequence>
+                        <xs:element name="idValue" 
+                                    type="xs:string" 
+                                    minOccurs="0" 
+                                    maxOccurs="1"/>
+                    </xs:sequence>
+                    
+                    <!-- Original 'used' attribute is preserved -->
+                    <xs:attribute name="used" default="Y">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="Y"/>
+                                <xs:enumeration value="N"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+>>>>>>> refs/remotes/origin/main
+
+<<<<<<< HEAD
+	<!-- ElementRule -->
+	<xs:element name="elementRule">
+		<xs:complexType>
+			<xs:attribute name="rule" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="oneOrMoreMustExist" />
+						<xs:enumeration value="ifFirstExistsThenAllMustExist" />
+						<xs:enumeration value="oneAndOnlyOneMayExist" />
+						<xs:enumeration
+							value="ifFirstExistsThenAtLeastOneMoreMustExist" />
+						<xs:enumeration value="allOrNoneMayExist" />
+						<xs:enumeration
+							value="ifFirstExistsThenNoOthersMayExist" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="positions" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+=======
 	<!-- idListClass -->
 	<xs:element name="idListClass">
 		<xs:complexType>
@@ -334,3 +426,4 @@
 		</xs:complexType>
 	</xs:element>
 </xs:schema>
+>>>>>>> refs/remotes/origin/main
