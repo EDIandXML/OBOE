@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>AA</idCode>
-        <idValue>Debit advice</idValue>
-    <idCode>AB</idCode>
-        <idValue>Message acknowledgement</idValue>
-    <idCode>AC</idCode>
-        <idValue>Acknowledge - with detail and change</idValue>
-    <idCode>AD</idCode>
-        <idValue>Acknowledge - with detail, no change</idValue>
-    <idCode>AF</idCode>
-        <idValue>Debit advice/message acknowledgement</idValue>
-    <idCode>AG</idCode>
-        <idValue>Authentication</idValue>
-    <idCode>AI</idCode>
-        <idValue>Acknowledge only changes</idValue>
-    <idCode>AJ</idCode>
-        <idValue>Pending</idValue>
-    <idCode>AP</idCode>
-        <idValue>Accepted</idValue>
-    <idCode>CA</idCode>
-        <idValue>Conditionally accepted</idValue>
-    <idCode>CO</idCode>
-        <idValue>Confirmation of measurements</idValue>
-    <idCode>NA</idCode>
-        <idValue>No acknowledgement needed</idValue>
-    <idCode>RE</idCode>
-        <idValue>Rejected</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>AA <idValue>Debit advice</idValue>
+	</idCode>
+	<idCode>AB <idValue>Message acknowledgement</idValue>
+	</idCode>
+	<idCode>AC <idValue>Acknowledge - with detail and change</idValue>
+	</idCode>
+	<idCode>AD <idValue>Acknowledge - with detail, no change</idValue>
+	</idCode>
+	<idCode>AF <idValue>Debit advice/message acknowledgement</idValue>
+	</idCode>
+	<idCode>AG <idValue>Authentication</idValue>
+	</idCode>
+	<idCode>AI <idValue>Acknowledge only changes</idValue>
+	</idCode>
+	<idCode>AJ <idValue>Pending</idValue>
+	</idCode>
+	<idCode>AP <idValue>Accepted</idValue>
+	</idCode>
+	<idCode>CA <idValue>Conditionally accepted</idValue>
+	</idCode>
+	<idCode>CO <idValue>Confirmation of measurements</idValue>
+	</idCode>
+	<idCode>NA <idValue>No acknowledgement needed</idValue>
+	</idCode>
+	<idCode>RE <idValue>Rejected</idValue>
+	</idCode>
 </idList>

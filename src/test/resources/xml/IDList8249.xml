@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Continental</idValue>
-    <idCode>2</idCode>
-        <idValue>Export</idValue>
-    <idCode>3</idCode>
-        <idValue>Import</idValue>
-    <idCode>4</idCode>
-        <idValue>Remain on board</idValue>
-    <idCode>5</idCode>
-        <idValue>Shifter</idValue>
-    <idCode>6</idCode>
-        <idValue>Transhipment</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Continental</idValue>
+	</idCode>
+	<idCode>2 <idValue>Export</idValue>
+	</idCode>
+	<idCode>3 <idValue>Import</idValue>
+	</idCode>
+	<idCode>4 <idValue>Remain on board</idValue>
+	</idCode>
+	<idCode>5 <idValue>Shifter</idValue>
+	</idCode>
+	<idCode>6 <idValue>Transhipment</idValue>
+	</idCode>
 </idList>

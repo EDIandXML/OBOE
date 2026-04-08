@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE envelope PUBLIC "envelope" "https://raw.githubusercontent.com/EDIandXML/OBOE/main/envelope.dtd">
+<!DOCTYPE envelope PUBLIC "envelope" "https://raw.githubusercontent.com/ediandxml/OBOE/main/envelope.dtd">
 <envelope format="Tradacoms">
 <segment code="STX" name="Start Transmission">
 <composite code="STDS" name="Syntax Identifier">

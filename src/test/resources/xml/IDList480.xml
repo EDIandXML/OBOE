@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-	<idCode>003040</idCode>
-	<idValue>Standards Approved for Publication by ASC X12
+	<idCode>003040 <idValue>Standards Approved for Publication by ASC X12
 		Procedures Review Board
-	</idValue>
-	<idCode>004010</idCode>
-	<idValue>Standards Approved for Publication by ASC X12
+		</idValue>
+	</idCode>
+	<idCode>004010 <idValue>Standards Approved for Publication by ASC X12
 		Procedures Review Board</idValue>
-	<idCode>004020</idCode>
-	<idValue>Standards Approved for Publication by ASC X12
+	</idCode>
+	<idCode>004020 <idValue>Standards Approved for Publication by ASC X12
 		Procedures Review Board
-	</idValue>
+		</idValue>
+	</idCode>
 </idList>

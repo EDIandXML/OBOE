@@ -1,0 +1,419 @@
+<?xml version="1.0" ?>
+<idList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/ediRules.xsd">
+	<idCode>
+		001000
+		<idValue>ASC X12 Standards Approved by ANSI in 1983</idValue>
+	</idCode>
+	<idCode>
+		002000
+		<idValue>ASC X12 Standards Approved by ANSI in 1986</idValue>
+	</idCode>
+	<idCode>
+		002001
+		<idValue>Draft Standards Approved by ASC X12 in November 1987
+		</idValue>
+	</idCode>
+	<idCode>
+		002002
+		<idValue>Draft Standards Approved by ASC X12 through February 1988
+		</idValue>
+	</idCode>
+	<idCode>
+		002003
+		<idValue>Draft Standards Approved by ASC X12 through August 1988
+		</idValue>
+	</idCode>
+	<idCode>
+		002031
+		<idValue>Draft Standards Approved by ASC X12 through February 1989
+		</idValue>
+	</idCode>
+	<idCode>
+		002040
+		<idValue>Draft Standards Approved by ASC X12 through May 1989
+		</idValue>
+	</idCode>
+	<idCode>
+		002041
+		<idValue>Draft Standards Approved by ASC X12 through October 1989
+		</idValue>
+	</idCode>
+	<idCode>
+		002042
+		<idValue>Draft Standards Approved by ASC X12 through February 1990
+		</idValue>
+	</idCode>
+	<idCode>
+		003000
+		<idValue>ASC X12 Standards Approved by ANSI in 1992</idValue>
+	</idCode>
+	<idCode>
+		003010
+		<idValue>Draft Standards Approved by ASC X12 through June 1990
+		</idValue>
+	</idCode>
+	<idCode>
+		003011
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003012
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003020
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003021
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003022
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003030
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003031
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003032
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003040
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003041
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003042
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003050
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003051
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003052
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003060
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003061
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003062
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003070
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003071
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		003072
+		<idValue>Draft Standards Approved for Publication by ASC X12
+			Procedures Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004000
+		<idValue>ASC X12 Standards Approved by ANSI in 1997</idValue>
+	</idCode>
+	<idCode>
+		004010
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004011
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004012
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004020
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004021
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004022
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004030
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004031
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004032
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004040
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004041
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004042
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004050
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004051
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004052
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004060
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004061
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		004062
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<idCode>
+		005000
+		<idValue>ASC X12 Standards Approved by ANSI in 2003</idValue>
+	</idCode>
+	<idCode>
+		005010
+		<idValue>Standards Approved for Publication by ASC X12 Procedures
+			Review Board
+		</idValue>
+	</idCode>
+	<!--HIPAA extensions -->
+	<idCode>
+		004010X061
+		<idValue>HIPAA 820 Specification</idValue>
+	</idCode>
+	<idCode>
+		004010X061A1
+		<idValue>HIPAA 820 Specification - Addenda</idValue>
+	</idCode>
+	<idCode>
+		004010X091
+		<idValue>HIPAA 835 Specification</idValue>
+	</idCode>
+	<idCode>
+		004010X091A1
+		<idValue>HIPAA 835 Specification - Addenda</idValue>
+	</idCode>
+	<idCode>
+		004010X092
+		<idValue>HIPAA 270 &amp; 271 Specification</idValue>
+	</idCode>
+	<idCode>
+		004010X092A1
+		<idValue>HIPAA 270 &amp; 271 Specification - Addenda</idValue>
+	</idCode>
+	<idCode>
+		004010X093
+		<idValue>HIPAA 276 &amp; 277 Specification</idValue>
+	</idCode>
+	<idCode>
+		004010X093A1
+		<idValue>HIPAA 276 &amp; 277 Specification - Addenda</idValue>
+	</idCode>
+	<idCode>
+		004010X094
+		<idValue>HIPAA 278 Specification</idValue>
+	</idCode>
+	<idCode>
+		004010X094A1
+		<idValue>HIPAA 278 Specification - Addenda</idValue>
+	</idCode>
+	<idCode>
+		004010X095
+		<idValue>HIPAA 834 Specification</idValue>
+	</idCode>
+	<idCode>
+		004010X095A1
+		<idValue>HIPAA 834 Specification - Addenda</idValue>
+	</idCode>
+	<idCode>
+		004010X096
+		<idValue>HIPAA 837 Institutional Specification</idValue>
+	</idCode>
+	<idCode>
+		004010X096A1
+		<idValue>HIPAA 837 Institutional Specification- Addenda</idValue>
+	</idCode>
+	<idCode>
+		004010X097
+		<idValue>HIPAA 837 Dental Specification</idValue>
+	</idCode>
+	<idCode>
+		004010X097A1
+		<idValue>HIPAA 837 Dental Specification- Addenda</idValue>
+	</idCode>
+	<idCode>
+		004010X098
+		<idValue>HIPAA 837 Professional Specification</idValue>
+	</idCode>
+	<idCode>
+		004010X098A1
+		<idValue>HIPAA 837 Professional Specification- Addenda</idValue>
+	</idCode>
+	<idCode>
+		004010X104
+		<idValue>HIPAA 277 &amp; 275 Specification</idValue>
+	</idCode>
+	<idCode>
+		004010X107
+		<idValue>HIPAA 275 Specification</idValue>
+	</idCode>
+	<idCode>
+		004040X167
+		<idValue>HIPAA 277 Specification</idValue>
+	</idCode>
+	<idCode>
+		005010X212
+		<idValue>HIPAA 276 &amp; 277 Specification</idValue>
+	</idCode>
+	<idCode>
+		005010X217
+		<idValue>HIPAA 278 Specification</idValue>
+	</idCode>
+	<idCode>
+		005010X218
+		<idValue>HIPAA 820 Specification</idValue>
+	</idCode>
+	<idCode>
+		005010X220
+		<idValue>HIPAA 834 Specification</idValue>
+	</idCode>
+	<idCode>
+		005010X221
+		<idValue>HIPAA 835 Specification</idValue>
+	</idCode>
+	<idCode>
+		005010X222
+		<idValue>HIPAA 837 Professional Specification</idValue>
+	</idCode>
+	<idCode>
+		005010X223
+		<idValue>HIPAA 837 Institutional Specification</idValue>
+	</idCode>
+	<idCode>
+		005010X224
+		<idValue>HIPAA 837 Dental Specification</idValue>
+	</idCode>
+	<idCode>
+		005010X279
+		<idValue>HIPAA 270 &amp; 271 Specification</idValue>
+	</idCode>
+</idList>

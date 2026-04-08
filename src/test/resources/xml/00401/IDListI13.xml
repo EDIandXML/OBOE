@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<idList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/ediRules.xsd">
+	<idCode>
+		0
+		<idValue>No Acknowledgment Requested</idValue>
+	</idCode>
+	<idCode>
+		1
+		<idValue>Interchange Acknowledgment Requested</idValue>
+	</idCode>
+</idList>

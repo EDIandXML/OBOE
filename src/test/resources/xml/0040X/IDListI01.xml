@@ -1,12 +1,7 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <idList
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-      <idCode>05</idCode>
-      
-        <idValue>Department of Defense (DoD) Communication Identifier</idValue>
-    <idCode>06</idCode>
-        <idValue>United States Federal Government Communication Identifier</idValue>
-   <idCode>JJ</idCode>
-        <idValue>For Testing Purposes</idValue>
+      <idCode>JJ
+        <idValue>United States Federal Government Communication Identifier</idValue></idCode>
 </idList>

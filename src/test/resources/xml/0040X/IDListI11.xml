@@ -1,19 +1,7 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <idList
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>00402</idCode>
-        <idValue>Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1998</idValue>
-    <idCode>00403</idCode>
-        <idValue>Standards  Approved for Publication by ASC X12 Procedures Review Board through October 1999</idValue>
-    <idCode>00404</idCode>
-	<idValue>Standards Approved for Publication by ASC X12 Procedures Review Board through October 2000</idValue>
-    <idCode>00405</idCode>
-	<idValue>Standards Approved for Publication by ASC X12 Procedures Review Board through October 2001</idValue>
-    <idCode>00406</idCode>
-	<idValue>Standards Approved for Publication by ASC X12 Procedures Review Board through October 2002</idValue>
-    <idCode>00500</idCode>
-	<idValue>ASC X12 Standards Issued by ANSI in 2003</idValue>
-    <idCode>00501</idCode>
-	<idValue>Standards Approved for Publication by ASC X12 Procedures Review Board through October 2003</idValue>
+       <idCode>0040X
+	<idValue>TEST</idValue></idCode>
 </idList>

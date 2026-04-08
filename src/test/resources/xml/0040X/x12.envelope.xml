@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<envelope
+<envelope  
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/ediRules.xsd"
 	type="X12">
   <segment name="Interchange Control Header" id="ISA"
     occurs="1"
@@ -218,7 +218,7 @@
             type="ID" required="M"
             minLength="2" maxLength="2"
             shortName="functionalIdentifierCode">
-             
+             <!-- idListFile fileName="IDList479.xml"/-->
           </dataElement>  
           <dataElement name="Application Sender&apos;s Code" id="142"
             sequence="2"
@@ -256,7 +256,7 @@
             type="ID" required="M"
             minLength="1" maxLength="2"
             shortName="responsibleAgencyCode">
-             
+            <!-- idListFile fileName="IDList455.xml"/-->
           </dataElement>  
           <dataElement name="Version / Release / Industry Identifier Code" id="480"
             sequence="8"

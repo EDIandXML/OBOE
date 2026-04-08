@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Do not mark suppliers company name</idValue>
-    <idCode>2</idCode>
-        <idValue>Mark customers company name</idValue>
-    <idCode>3</idCode>
-        <idValue>Mark customers references</idValue>
-    <idCode>4</idCode>
-        <idValue>Mark additionally customers article description</idValue>
-    <idCode>5</idCode>
-        <idValue>Mark exclusively customers article description</idValue>
-    <idCode>6</idCode>
-        <idValue>Mark packages dimensions</idValue>
-    <idCode>7</idCode>
-        <idValue>Mark net weight</idValue>
-    <idCode>8</idCode>
-        <idValue>Mark gross weight</idValue>
-    <idCode>9</idCode>
-        <idValue>Mark tare weight</idValue>
-    <idCode>10</idCode>
-        <idValue>Mark batch number</idValue>
-    <idCode>11</idCode>
-        <idValue>Mark article number customer</idValue>
-    <idCode>12</idCode>
-        <idValue>Mark running number of packages</idValue>
-    <idCode>13</idCode>
-        <idValue>Mark date of production</idValue>
-    <idCode>14</idCode>
-        <idValue>Mark expiry date</idValue>
-    <idCode>15</idCode>
-        <idValue>Mark supplier number</idValue>
-    <idCode>16</idCode>
-        <idValue>Buyer&apos;s instructions</idValue>
-    <idCode>17</idCode>
-        <idValue>Seller&apos;s instructions</idValue>
-    <idCode>18</idCode>
-        <idValue>Carrier&apos;s instructions</idValue>
-    <idCode>19</idCode>
-        <idValue>Legal requirements</idValue>
-    <idCode>20</idCode>
-        <idValue>Industry instructions</idValue>
-    <idCode>21</idCode>
-        <idValue>Line item only</idValue>
-    <idCode>22</idCode>
-        <idValue>Pre-marked by buyer</idValue>
-    <idCode>23</idCode>
-        <idValue>Entire shipment</idValue>
-    <idCode>24</idCode>
-        <idValue>Shipper assigned</idValue>
-    <idCode>25</idCode>
-        <idValue>Shipper assigned roll number</idValue>
-    <idCode>26</idCode>
-        <idValue>Shipper assigned skid number</idValue>
-    <idCode>27</idCode>
-        <idValue>Uniform Code Council (UCC) format</idValue>
-    <idCode>28</idCode>
-        <idValue>Mark free text</idValue>
-    <idCode>29</idCode>
-        <idValue>Mark case number</idValue>
-    <idCode>30</idCode>
-        <idValue>Mark serial shipping container code</idValue>
-    <idCode>ZZZ</idCode>
-        <idValue>Mutually defined</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Do not mark suppliers company name</idValue>
+	</idCode>
+	<idCode>2 <idValue>Mark customers company name</idValue>
+	</idCode>
+	<idCode>3 <idValue>Mark customers references</idValue>
+	</idCode>
+	<idCode>4 <idValue>Mark additionally customers article description</idValue>
+	</idCode>
+	<idCode>5 <idValue>Mark exclusively customers article description</idValue>
+	</idCode>
+	<idCode>6 <idValue>Mark packages dimensions</idValue>
+	</idCode>
+	<idCode>7 <idValue>Mark net weight</idValue>
+	</idCode>
+	<idCode>8 <idValue>Mark gross weight</idValue>
+	</idCode>
+	<idCode>9 <idValue>Mark tare weight</idValue>
+	</idCode>
+	<idCode>10 <idValue>Mark batch number</idValue>
+	</idCode>
+	<idCode>11 <idValue>Mark article number customer</idValue>
+	</idCode>
+	<idCode>12 <idValue>Mark running number of packages</idValue>
+	</idCode>
+	<idCode>13 <idValue>Mark date of production</idValue>
+	</idCode>
+	<idCode>14 <idValue>Mark expiry date</idValue>
+	</idCode>
+	<idCode>15 <idValue>Mark supplier number</idValue>
+	</idCode>
+	<idCode>16 <idValue>Buyer&apos;s instructions</idValue>
+	</idCode>
+	<idCode>17 <idValue>Seller&apos;s instructions</idValue>
+	</idCode>
+	<idCode>18 <idValue>Carrier&apos;s instructions</idValue>
+	</idCode>
+	<idCode>19 <idValue>Legal requirements</idValue>
+	</idCode>
+	<idCode>20 <idValue>Industry instructions</idValue>
+	</idCode>
+	<idCode>21 <idValue>Line item only</idValue>
+	</idCode>
+	<idCode>22 <idValue>Pre-marked by buyer</idValue>
+	</idCode>
+	<idCode>23 <idValue>Entire shipment</idValue>
+	</idCode>
+	<idCode>24 <idValue>Shipper assigned</idValue>
+	</idCode>
+	<idCode>25 <idValue>Shipper assigned roll number</idValue>
+	</idCode>
+	<idCode>26 <idValue>Shipper assigned skid number</idValue>
+	</idCode>
+	<idCode>27 <idValue>Uniform Code Council (UCC) format</idValue>
+	</idCode>
+	<idCode>28 <idValue>Mark free text</idValue>
+	</idCode>
+	<idCode>29 <idValue>Mark case number</idValue>
+	</idCode>
+	<idCode>30 <idValue>Mark serial shipping container code</idValue>
+	</idCode>
+	<idCode>ZZZ <idValue>Mutually defined</idValue>
+	</idCode>
 </idList>

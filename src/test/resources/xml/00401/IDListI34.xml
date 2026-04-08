@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<idList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/ediRules.xsd">
+	<idCode>
+		0
+		<idValue>Normal</idValue>
+	</idCode>
+	<idCode>
+		1
+		<idValue>Low</idValue>
+	</idCode>
+	<idCode>
+		2
+		<idValue>Urgent</idValue>
+	</idCode>
+</idList>

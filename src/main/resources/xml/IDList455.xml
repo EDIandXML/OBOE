@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>
+		T
+		<idValue>Transportation Data Coordinating Committee (TDCC)</idValue>
+	</idCode>
+	<idCode>
+		X
+		<idValue>Accredited Standards Committee X12</idValue>
+	</idCode>
+</idList>

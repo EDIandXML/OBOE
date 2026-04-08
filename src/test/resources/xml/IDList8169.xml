@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>More than one quarter volume available</idValue>
-    <idCode>2</idCode>
-        <idValue>More than half volume available</idValue>
-    <idCode>3</idCode>
-        <idValue>More than three quarters volume available</idValue>
-    <idCode>4</idCode>
-        <idValue>Empty</idValue>
-    <idCode>5</idCode>
-        <idValue>Full</idValue>
-    <idCode>6</idCode>
-        <idValue>No volume available</idValue>
-    <idCode>7</idCode>
-        <idValue>Full, mixed consignment</idValue>
-    <idCode>8</idCode>
-        <idValue>Full, single consignment</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>More than one quarter volume available</idValue>
+	</idCode>
+	<idCode>2 <idValue>More than half volume available</idValue>
+	</idCode>
+	<idCode>3 <idValue>More than three quarters volume available</idValue>
+	</idCode>
+	<idCode>4 <idValue>Empty</idValue>
+	</idCode>
+	<idCode>5 <idValue>Full</idValue>
+	</idCode>
+	<idCode>6 <idValue>No volume available</idValue>
+	</idCode>
+	<idCode>7 <idValue>Full, mixed consignment</idValue>
+	</idCode>
+	<idCode>8 <idValue>Full, single consignment</idValue>
+	</idCode>
 </idList>

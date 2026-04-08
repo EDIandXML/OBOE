@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<idList
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-	<idCode>C <idValue>Creation</idValue>
-	</idCode>
-	<idCode>F <idValue>Final</idValue>
-	</idCode>
-</idList>

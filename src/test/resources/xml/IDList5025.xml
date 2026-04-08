@@ -1,643 +1,651 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>VAT, 1st value</idValue>
-    <idCode>2</idCode>
-        <idValue>VAT, 2nd value</idValue>
-    <idCode>3</idCode>
-        <idValue>VAT, 3rd value</idValue>
-    <idCode>4</idCode>
-        <idValue>Additional royalties (Customs)</idValue>
-    <idCode>5</idCode>
-        <idValue>Adjusted amount</idValue>
-    <idCode>6</idCode>
-        <idValue>Amount reference currency</idValue>
-    <idCode>7</idCode>
-        <idValue>Agreed charge</idValue>
-    <idCode>8</idCode>
-        <idValue>Allowance or charge amount</idValue>
-    <idCode>9</idCode>
-        <idValue>Amount due/amount payable</idValue>
-    <idCode>10</idCode>
-        <idValue>Amount in charge currency</idValue>
-    <idCode>11</idCode>
-        <idValue>Amount paid</idValue>
-    <idCode>12</idCode>
-        <idValue>Amount remitted</idValue>
-    <idCode>13</idCode>
-        <idValue>Amount subject to total monetary discount</idValue>
-    <idCode>14</idCode>
-        <idValue>Amount target currency</idValue>
-    <idCode>15</idCode>
-        <idValue>Average ledger balance</idValue>
-    <idCode>16</idCode>
-        <idValue>Bank release fee</idValue>
-    <idCode>17</idCode>
-        <idValue>Batch total</idValue>
-    <idCode>18</idCode>
-        <idValue>Brokerage</idValue>
-    <idCode>19</idCode>
-        <idValue>Buying commission</idValue>
-    <idCode>20</idCode>
-        <idValue>Data value on carrier media (Customs)</idValue>
-    <idCode>21</idCode>
-        <idValue>Cash discount</idValue>
-    <idCode>22</idCode>
-        <idValue>Cash on delivery amount</idValue>
-    <idCode>23</idCode>
-        <idValue>Charge amount</idValue>
-    <idCode>24</idCode>
-        <idValue>Charge summary total</idValue>
-    <idCode>25</idCode>
-        <idValue>Charge/allowance basis</idValue>
-    <idCode>26</idCode>
-        <idValue>Charges collect fee</idValue>
-    <idCode>27</idCode>
-        <idValue>Charges in destination currency</idValue>
-    <idCode>28</idCode>
-        <idValue>Collect charge summary total</idValue>
-    <idCode>29</idCode>
-        <idValue>Collect charges in destination currency</idValue>
-    <idCode>30</idCode>
-        <idValue>Collect freight charge including VAT</idValue>
-    <idCode>31</idCode>
-        <idValue>Collect freight charge without VAT</idValue>
-    <idCode>32</idCode>
-        <idValue>Collect other charges due agent total</idValue>
-    <idCode>33</idCode>
-        <idValue>Collect taxes total</idValue>
-    <idCode>34</idCode>
-        <idValue>Collected balance required</idValue>
-    <idCode>35</idCode>
-        <idValue>Container cost</idValue>
-    <idCode>36</idCode>
-        <idValue>Converted amount</idValue>
-    <idCode>37</idCode>
-        <idValue>Credit on consignment</idValue>
-    <idCode>38</idCode>
-        <idValue>Invoice item amount</idValue>
-    <idCode>39</idCode>
-        <idValue>Invoice total amount</idValue>
-    <idCode>40</idCode>
-        <idValue>Customs value</idValue>
-    <idCode>41</idCode>
-        <idValue>Assigned Customs value</idValue>
-    <idCode>42</idCode>
-        <idValue>Total cash payments received by factor</idValue>
-    <idCode>43</idCode>
-        <idValue>Declared total Customs value</idValue>
-    <idCode>44</idCode>
-        <idValue>Declared value for carriage</idValue>
-    <idCode>45</idCode>
-        <idValue>Deductible after importation charges (Customs)</idValue>
-    <idCode>46</idCode>
-        <idValue>Deductions (Customs)</idValue>
-    <idCode>47</idCode>
-        <idValue>Delivery fee</idValue>
-    <idCode>48</idCode>
-        <idValue>Deposit total</idValue>
-    <idCode>49</idCode>
-        <idValue>Development necessary for production of imported goods (Customs)</idValue>
-    <idCode>50</idCode>
-        <idValue>Disbursements</idValue>
-    <idCode>51</idCode>
-        <idValue>Disbursements fee</idValue>
-    <idCode>52</idCode>
-        <idValue>Discount amount</idValue>
-    <idCode>53</idCode>
-        <idValue>Discount amount due</idValue>
-    <idCode>54</idCode>
-        <idValue>Distribution service fee</idValue>
-    <idCode>55</idCode>
-        <idValue>Duty amount</idValue>
-    <idCode>56</idCode>
-        <idValue>Duty/tax/fee basis amount</idValue>
-    <idCode>57</idCode>
-        <idValue>Equivalent amount</idValue>
-    <idCode>58</idCode>
-        <idValue>Fee amount</idValue>
-    <idCode>59</idCode>
-        <idValue>Fees paid year to date</idValue>
-    <idCode>60</idCode>
-        <idValue>Final (posted) amount</idValue>
-    <idCode>61</idCode>
-        <idValue>Float (e.g. &quot;cash float&quot;)</idValue>
-    <idCode>62</idCode>
-        <idValue>Total payments on account received by a factor</idValue>
-    <idCode>63</idCode>
-        <idValue>FOB value</idValue>
-    <idCode>64</idCode>
-        <idValue>Freight charge</idValue>
-    <idCode>65</idCode>
-        <idValue>Total indirect amount payments made to a seller or his agent instead of to a factor</idValue>
-    <idCode>66</idCode>
-        <idValue>Goods item total</idValue>
-    <idCode>67</idCode>
-        <idValue>Insurance</idValue>
-    <idCode>68</idCode>
-        <idValue>Insurance and transport charges (Customs)</idValue>
-    <idCode>69</idCode>
-        <idValue>Insurance and transport charges incurred outside Customs territory</idValue>
-    <idCode>70</idCode>
-        <idValue>Insurance charges (Customs)</idValue>
-    <idCode>71</idCode>
-        <idValue>Insurance charges incurred outside of Customs territory</idValue>
-    <idCode>72</idCode>
-        <idValue>Internal charges (Customs)</idValue>
-    <idCode>73</idCode>
-        <idValue>Total amount of payments booked to the collateral account</idValue>
-    <idCode>74</idCode>
-        <idValue>Amount to be paid in advance</idValue>
-    <idCode>75</idCode>
-        <idValue>Registered capital</idValue>
-    <idCode>76</idCode>
-        <idValue>Investable balance</idValue>
-    <idCode>77</idCode>
-        <idValue>Invoice amount</idValue>
-    <idCode>78</idCode>
-        <idValue>Landing charges</idValue>
-    <idCode>79</idCode>
-        <idValue>Total line items amount</idValue>
-    <idCode>80</idCode>
-        <idValue>Licence fees related to imported goods (Customs)</idValue>
-    <idCode>81</idCode>
-        <idValue>Loading and handling cost</idValue>
-    <idCode>82</idCode>
-        <idValue>Lock box total</idValue>
-    <idCode>83</idCode>
-        <idValue>Lumpsum</idValue>
-    <idCode>84</idCode>
-        <idValue>Material consumed in production of imported goods (Customs)</idValue>
-    <idCode>85</idCode>
-        <idValue>Maximum charge</idValue>
-    <idCode>86</idCode>
-        <idValue>Message total monetary amount</idValue>
-    <idCode>87</idCode>
-        <idValue>Minimum charge</idValue>
-    <idCode>88</idCode>
-        <idValue>National preference basis amount</idValue>
-    <idCode>89</idCode>
-        <idValue>Negative collected balance</idValue>
-    <idCode>90</idCode>
-        <idValue>Negative ledger balance</idValue>
-    <idCode>91</idCode>
-        <idValue>Net adjustment</idValue>
-    <idCode>92</idCode>
-        <idValue>Net fee position</idValue>
-    <idCode>93</idCode>
-        <idValue>Net year to date excess (deficit)</idValue>
-    <idCode>94</idCode>
-        <idValue>No amount of insurance</idValue>
-    <idCode>95</idCode>
-        <idValue>No declared value for carriage</idValue>
-    <idCode>96</idCode>
-        <idValue>No declared value for Customs</idValue>
-    <idCode>97</idCode>
-        <idValue>Offer amount</idValue>
-    <idCode>98</idCode>
-        <idValue>Original amount</idValue>
-    <idCode>99</idCode>
-        <idValue>Other charges at destination</idValue>
-    <idCode>100</idCode>
-        <idValue>Other charges due agent</idValue>
-    <idCode>101</idCode>
-        <idValue>Other charges due carrier</idValue>
-    <idCode>102</idCode>
-        <idValue>Other commissions</idValue>
-    <idCode>103</idCode>
-        <idValue>Other deductible charges</idValue>
-    <idCode>104</idCode>
-        <idValue>Other transport charges</idValue>
-    <idCode>105</idCode>
-        <idValue>Other valuation charges (Customs)</idValue>
-    <idCode>106</idCode>
-        <idValue>Packing cost</idValue>
-    <idCode>107</idCode>
-        <idValue>Packing cost (Customs)</idValue>
-    <idCode>108</idCode>
-        <idValue>Parts incorporated in imported goods (Customs)</idValue>
-    <idCode>109</idCode>
-        <idValue>Payment discount amount</idValue>
-    <idCode>110</idCode>
-        <idValue>Pick-up fee</idValue>
-    <idCode>111</idCode>
-        <idValue>Positive collected balance</idValue>
-    <idCode>112</idCode>
-        <idValue>Positive ledger balance</idValue>
-    <idCode>113</idCode>
-        <idValue>Prepaid amount</idValue>
-    <idCode>114</idCode>
-        <idValue>Prepaid charge summary total</idValue>
-    <idCode>115</idCode>
-        <idValue>Prepaid taxes total</idValue>
-    <idCode>116</idCode>
-        <idValue>Purchase amount</idValue>
-    <idCode>117</idCode>
-        <idValue>Quantity discount</idValue>
-    <idCode>118</idCode>
-        <idValue>Quota value</idValue>
-    <idCode>119</idCode>
-        <idValue>Received amount</idValue>
-    <idCode>120</idCode>
-        <idValue>Sales tax</idValue>
-    <idCode>121</idCode>
-        <idValue>Shipment value in domestic currency</idValue>
-    <idCode>122</idCode>
-        <idValue>Specific amount payable</idValue>
-    <idCode>123</idCode>
-        <idValue>Statistical value</idValue>
-    <idCode>124</idCode>
-        <idValue>Tax amount</idValue>
-    <idCode>125</idCode>
-        <idValue>Taxable amount</idValue>
-    <idCode>126</idCode>
-        <idValue>To collect</idValue>
-    <idCode>127</idCode>
-        <idValue>Tools used in production of imported goods (Customs)</idValue>
-    <idCode>128</idCode>
-        <idValue>Total amount</idValue>
-    <idCode>129</idCode>
-        <idValue>Total amount subject to payment discount</idValue>
-    <idCode>130</idCode>
-        <idValue>Total charge due</idValue>
-    <idCode>131</idCode>
-        <idValue>Total charges/allowances</idValue>
-    <idCode>132</idCode>
-        <idValue>Total collect charges</idValue>
-    <idCode>133</idCode>
-        <idValue>Total collect charges at destination</idValue>
-    <idCode>134</idCode>
-        <idValue>Total declared</idValue>
-    <idCode>135</idCode>
-        <idValue>Total freight due</idValue>
-    <idCode>136</idCode>
-        <idValue>Total invoice additional amount</idValue>
-    <idCode>138</idCode>
-        <idValue>Total monetary discount amount</idValue>
-    <idCode>139</idCode>
-        <idValue>Total payment amount</idValue>
-    <idCode>140</idCode>
-        <idValue>Total service charge</idValue>
-    <idCode>141</idCode>
-        <idValue>Cost, insurance and freight (CIF) value</idValue>
-    <idCode>142</idCode>
-        <idValue>Trade discount</idValue>
-    <idCode>143</idCode>
-        <idValue>Transfer amount</idValue>
-    <idCode>144</idCode>
-        <idValue>Transport charges (Customs)</idValue>
-    <idCode>145</idCode>
-        <idValue>Transport charges incurred outside Customs territory</idValue>
-    <idCode>146</idCode>
-        <idValue>Unit price</idValue>
-    <idCode>147</idCode>
-        <idValue>Acceptable quotation fluctuation amount</idValue>
-    <idCode>148</idCode>
-        <idValue>Total payments under guarantee</idValue>
-    <idCode>149</idCode>
-        <idValue>Valuation charge</idValue>
-    <idCode>150</idCode>
-        <idValue>Value added tax</idValue>
-    <idCode>151</idCode>
-        <idValue>Value insured</idValue>
-    <idCode>152</idCode>
-        <idValue>Subsequent resale of imported goods (Customs)</idValue>
-    <idCode>153</idCode>
-        <idValue>Weight charge</idValue>
-    <idCode>154</idCode>
-        <idValue>Amount to be collected</idValue>
-    <idCode>155</idCode>
-        <idValue>Standard duty</idValue>
-    <idCode>156</idCode>
-        <idValue>G-Amount</idValue>
-    <idCode>157</idCode>
-        <idValue>Insurance value</idValue>
-    <idCode>158</idCode>
-        <idValue>Insurance and transport charges incurred inside Customs territory</idValue>
-    <idCode>159</idCode>
-        <idValue>Licence (value deducted)</idValue>
-    <idCode>160</idCode>
-        <idValue>Other costs</idValue>
-    <idCode>161</idCode>
-        <idValue>Duty, tax or fee amount</idValue>
-    <idCode>162</idCode>
-        <idValue>Customs duty paid</idValue>
-    <idCode>163</idCode>
-        <idValue>Wage tax share</idValue>
-    <idCode>164</idCode>
-        <idValue>Social securities premiums share</idValue>
-    <idCode>165</idCode>
-        <idValue>Adjustment amount</idValue>
-    <idCode>166</idCode>
-        <idValue>Guarantee amount (Customs)</idValue>
-    <idCode>167</idCode>
-        <idValue>Actual versus calculated price difference</idValue>
-    <idCode>168</idCode>
-        <idValue>Tax sub-totals</idValue>
-    <idCode>169</idCode>
-        <idValue>Alternate currency total amount</idValue>
-    <idCode>170</idCode>
-        <idValue>Document amount</idValue>
-    <idCode>171</idCode>
-        <idValue>Total reassignments of factored invoices</idValue>
-    <idCode>172</idCode>
-        <idValue>Stated amount</idValue>
-    <idCode>173</idCode>
-        <idValue>Minimum amount</idValue>
-    <idCode>174</idCode>
-        <idValue>Balance brought forward</idValue>
-    <idCode>175</idCode>
-        <idValue>Message total additional amount</idValue>
-    <idCode>176</idCode>
-        <idValue>Message total duty/tax/fee amount</idValue>
-    <idCode>177</idCode>
-        <idValue>Message total amount prepaid</idValue>
-    <idCode>178</idCode>
-        <idValue>Exact amount</idValue>
-    <idCode>179</idCode>
-        <idValue>Maximum amount</idValue>
-    <idCode>180</idCode>
-        <idValue>Amount up to</idValue>
-    <idCode>181</idCode>
-        <idValue>Amount not exceeding</idValue>
-    <idCode>182</idCode>
-        <idValue>Any other specification/tolerance</idValue>
-    <idCode>183</idCode>
-        <idValue>No specification/tolerance</idValue>
-    <idCode>184</idCode>
-        <idValue>Final net acquisition cost</idValue>
-    <idCode>185</idCode>
-        <idValue>Labor cost</idValue>
-    <idCode>186</idCode>
-        <idValue>Material cost</idValue>
-    <idCode>187</idCode>
-        <idValue>Other cost</idValue>
-    <idCode>188</idCode>
-        <idValue>Overhead cost</idValue>
-    <idCode>189</idCode>
-        <idValue>Packaging cost</idValue>
-    <idCode>190</idCode>
-        <idValue>Prototype set up cost</idValue>
-    <idCode>192</idCode>
-        <idValue>Raw material per cart cost</idValue>
-    <idCode>193</idCode>
-        <idValue>Raw material per unit of measure cost</idValue>
-    <idCode>194</idCode>
-        <idValue>Total die model cost</idValue>
-    <idCode>195</idCode>
-        <idValue>Total gauge cost</idValue>
-    <idCode>196</idCode>
-        <idValue>Total material including purchased components cost</idValue>
-    <idCode>197</idCode>
-        <idValue>Total purchased components cost</idValue>
-    <idCode>198</idCode>
-        <idValue>Total tooling cost</idValue>
-    <idCode>199</idCode>
-        <idValue>Delivery limitation amount</idValue>
-    <idCode>200</idCode>
-        <idValue>Minimum amount due</idValue>
-    <idCode>201</idCode>
-        <idValue>Penalty amount</idValue>
-    <idCode>202</idCode>
-        <idValue>Interest amount</idValue>
-    <idCode>203</idCode>
-        <idValue>Line item amount</idValue>
-    <idCode>204</idCode>
-        <idValue>Allowance amount</idValue>
-    <idCode>205</idCode>
-        <idValue>Additional amount covered: freight costs</idValue>
-    <idCode>206</idCode>
-        <idValue>Additional amount covered: inspection costs</idValue>
-    <idCode>207</idCode>
-        <idValue>Additional amount covered: insurance costs</idValue>
-    <idCode>208</idCode>
-        <idValue>Additional amount covered: interest</idValue>
-    <idCode>209</idCode>
-        <idValue>Agent commission amount</idValue>
-    <idCode>210</idCode>
-        <idValue>Credit note amount</idValue>
-    <idCode>211</idCode>
-        <idValue>Debit note amount</idValue>
-    <idCode>212</idCode>
-        <idValue>Documentary credit amount</idValue>
-    <idCode>213</idCode>
-        <idValue>Part of documentary credit amount</idValue>
-    <idCode>214</idCode>
-        <idValue>Advance payment at the beginning of works</idValue>
-    <idCode>215</idCode>
-        <idValue>Deduction of advance payment amount at the beginning of works</idValue>
-    <idCode>216</idCode>
-        <idValue>Advance payment amount on building material</idValue>
-    <idCode>217</idCode>
-        <idValue>Deduction of the advance payment amount on building material</idValue>
-    <idCode>218</idCode>
-        <idValue>Advance payment amount on stock</idValue>
-    <idCode>219</idCode>
-        <idValue>Deduction of the advance payment amount on stock</idValue>
-    <idCode>220</idCode>
-        <idValue>Amount subject to guarantee retention</idValue>
-    <idCode>221</idCode>
-        <idValue>Amount not subject of guarantee retention</idValue>
-    <idCode>222</idCode>
-        <idValue>Amount subject to contractual retention</idValue>
-    <idCode>223</idCode>
-        <idValue>Works amount, initial</idValue>
-    <idCode>224</idCode>
-        <idValue>Works amount, variations</idValue>
-    <idCode>225</idCode>
-        <idValue>Works amount, total</idValue>
-    <idCode>226</idCode>
-        <idValue>Retention amount</idValue>
-    <idCode>227</idCode>
-        <idValue>Deposit</idValue>
-    <idCode>228</idCode>
-        <idValue>Deposit refund</idValue>
-    <idCode>229</idCode>
-        <idValue>Guarantee on retention refund</idValue>
-    <idCode>230</idCode>
-        <idValue>Amount subject to escalation</idValue>
-    <idCode>231</idCode>
-        <idValue>Amount subject to escalation, initial</idValue>
-    <idCode>232</idCode>
-        <idValue>Amount of variations subject to escalation</idValue>
-    <idCode>233</idCode>
-        <idValue>Amount not subject to escalation</idValue>
-    <idCode>234</idCode>
-        <idValue>Amount not subject to escalation, initial</idValue>
-    <idCode>235</idCode>
-        <idValue>Amount of variations not subject to escalation</idValue>
-    <idCode>236</idCode>
-        <idValue>Amount subject to price adjustment</idValue>
-    <idCode>237</idCode>
-        <idValue>Amount subject to price adjustment, initial</idValue>
-    <idCode>238</idCode>
-        <idValue>Amount of variations subject to price adjustment</idValue>
-    <idCode>239</idCode>
-        <idValue>Amount not subject to price adjustment</idValue>
-    <idCode>240</idCode>
-        <idValue>Amount not subject to price adjustment, initial</idValue>
-    <idCode>241</idCode>
-        <idValue>Amount of variations not subject to price adjustment</idValue>
-    <idCode>242</idCode>
-        <idValue>Escalation amount</idValue>
-    <idCode>243</idCode>
-        <idValue>Provisional escalation amount</idValue>
-    <idCode>244</idCode>
-        <idValue>Price adjustment amount</idValue>
-    <idCode>245</idCode>
-        <idValue>Provisional price adjustment amount</idValue>
-    <idCode>246</idCode>
-        <idValue>Price revaluation amount</idValue>
-    <idCode>247</idCode>
-        <idValue>Provisional price revaluation amount</idValue>
-    <idCode>248</idCode>
-        <idValue>Contractual retention amount total</idValue>
-    <idCode>249</idCode>
-        <idValue>Valuation amount</idValue>
-    <idCode>250</idCode>
-        <idValue>Deduction amount of direct payments to subcontractors</idValue>
-    <idCode>251</idCode>
-        <idValue>Amortization total amount</idValue>
-    <idCode>252</idCode>
-        <idValue>Amortization order amount</idValue>
-    <idCode>253</idCode>
-        <idValue>Amortization cumulated amount</idValue>
-    <idCode>254</idCode>
-        <idValue>Current credit cover</idValue>
-    <idCode>255</idCode>
-        <idValue>New credit cover</idValue>
-    <idCode>256</idCode>
-        <idValue>Order cover</idValue>
-    <idCode>257</idCode>
-        <idValue>Amount subject to dispute</idValue>
-    <idCode>258</idCode>
-        <idValue>Charge amount for information</idValue>
-    <idCode>259</idCode>
-        <idValue>Total charges</idValue>
-    <idCode>260</idCode>
-        <idValue>Total allowances</idValue>
-    <idCode>261</idCode>
-        <idValue>Alternate currency amount</idValue>
-    <idCode>262</idCode>
-        <idValue>Instalment amount</idValue>
-    <idCode>263</idCode>
-        <idValue>Outstanding amount</idValue>
-    <idCode>264</idCode>
-        <idValue>Gross contribution amount</idValue>
-    <idCode>265</idCode>
-        <idValue>Commission amount</idValue>
-    <idCode>266</idCode>
-        <idValue>Net contribution amount</idValue>
-    <idCode>267</idCode>
-        <idValue>Regular contribution amount</idValue>
-    <idCode>268</idCode>
-        <idValue>Previous regular contribution amount</idValue>
-    <idCode>269</idCode>
-        <idValue>Variation amount</idValue>
-    <idCode>270</idCode>
-        <idValue>Notional salary</idValue>
-    <idCode>271</idCode>
-        <idValue>Nominal salary</idValue>
-    <idCode>272</idCode>
-        <idValue>Taxable salary</idValue>
-    <idCode>273</idCode>
-        <idValue>Superannuation salary</idValue>
-    <idCode>274</idCode>
-        <idValue>Total remuneration</idValue>
-    <idCode>275</idCode>
-        <idValue>Other salary</idValue>
-    <idCode>276</idCode>
-        <idValue>Annual salary</idValue>
-    <idCode>277</idCode>
-        <idValue>Total contributions amount</idValue>
-    <idCode>278</idCode>
-        <idValue>Voluntary contribution amount</idValue>
-    <idCode>279</idCode>
-        <idValue>Instalment first amount</idValue>
-    <idCode>280</idCode>
-        <idValue>Instalment current amount</idValue>
-    <idCode>281</idCode>
-        <idValue>Instalment last amount</idValue>
-    <idCode>282</idCode>
-        <idValue>Current maintenance fee</idValue>
-    <idCode>283</idCode>
-        <idValue>Current leasing fee</idValue>
-    <idCode>284</idCode>
-        <idValue>Day works amount</idValue>
-    <idCode>285</idCode>
-        <idValue>Manufacturer&apos;s bonus</idValue>
-    <idCode>286</idCode>
-        <idValue>Administration charge</idValue>
-    <idCode>287</idCode>
-        <idValue>Fuel charge</idValue>
-    <idCode>288</idCode>
-        <idValue>Registration plate charge</idValue>
-    <idCode>289</idCode>
-        <idValue>Subtotal amount</idValue>
-    <idCode>290</idCode>
-        <idValue>Dumping export value</idValue>
-    <idCode>291</idCode>
-        <idValue>Foreign inland freight</idValue>
-    <idCode>292</idCode>
-        <idValue>Concession amount</idValue>
-    <idCode>293</idCode>
-        <idValue>Chargeback</idValue>
-    <idCode>294</idCode>
-        <idValue>Charge per credit cover</idValue>
-    <idCode>295</idCode>
-        <idValue>Charge per unused credit cover</idValue>
-    <idCode>296</idCode>
-        <idValue>Total authorised deduction</idValue>
-    <idCode>297</idCode>
-        <idValue>Total chargebacks</idValue>
-    <idCode>298</idCode>
-        <idValue>Total offsets</idValue>
-    <idCode>299</idCode>
-        <idValue>Total special entries</idValue>
-    <idCode>300</idCode>
-        <idValue>Balance carried forward</idValue>
-    <idCode>301</idCode>
-        <idValue>Total outstanding invoices past due</idValue>
-    <idCode>302</idCode>
-        <idValue>Off balance disputed items</idValue>
-    <idCode>303</idCode>
-        <idValue>Commission invoices</idValue>
-    <idCode>304</idCode>
-        <idValue>Other charges</idValue>
-    <idCode>305</idCode>
-        <idValue>Amount remittances</idValue>
-    <idCode>306</idCode>
-        <idValue>Total amount of payment commission invoices</idValue>
-    <idCode>307</idCode>
-        <idValue>Total amount of payment other charges invoices</idValue>
-    <idCode>308</idCode>
-        <idValue>Total amount credit notes</idValue>
-    <idCode>309</idCode>
-        <idValue>Total adjustment invoices</idValue>
-    <idCode>310</idCode>
-        <idValue>Total adjustment credit notes</idValue>
-    <idCode>311</idCode>
-        <idValue>Total adjustment payments</idValue>
-    <idCode>312</idCode>
-        <idValue>Base unit value</idValue>
-    <idCode>313</idCode>
-        <idValue>International freight</idValue>
-    <idCode>314</idCode>
-        <idValue>Own risk amount</idValue>
-    <idCode>315</idCode>
-        <idValue>Opening balance</idValue>
-    <idCode>316</idCode>
-        <idValue>Insurance premium</idValue>
-    <idCode>317</idCode>
-        <idValue>Insurance commission</idValue>
-    <idCode>318</idCode>
-        <idValue>Insurance tax</idValue>
-    <idCode>319</idCode>
-        <idValue>Fee of insurer</idValue>
-    <idCode>320</idCode>
-        <idValue>Fee of intermediary</idValue>
-    <idCode>ZZZ</idCode>
-        <idValue>Mutually defined</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>VAT, 1st value</idValue>
+	</idCode>
+	<idCode>2 <idValue>VAT, 2nd value</idValue>
+	</idCode>
+	<idCode>3 <idValue>VAT, 3rd value</idValue>
+	</idCode>
+	<idCode>4 <idValue>Additional royalties (Customs)</idValue>
+	</idCode>
+	<idCode>5 <idValue>Adjusted amount</idValue>
+	</idCode>
+	<idCode>6 <idValue>Amount reference currency</idValue>
+	</idCode>
+	<idCode>7 <idValue>Agreed charge</idValue>
+	</idCode>
+	<idCode>8 <idValue>Allowance or charge amount</idValue>
+	</idCode>
+	<idCode>9 <idValue>Amount due/amount payable</idValue>
+	</idCode>
+	<idCode>10 <idValue>Amount in charge currency</idValue>
+	</idCode>
+	<idCode>11 <idValue>Amount paid</idValue>
+	</idCode>
+	<idCode>12 <idValue>Amount remitted</idValue>
+	</idCode>
+	<idCode>13 <idValue>Amount subject to total monetary discount</idValue>
+	</idCode>
+	<idCode>14 <idValue>Amount target currency</idValue>
+	</idCode>
+	<idCode>15 <idValue>Average ledger balance</idValue>
+	</idCode>
+	<idCode>16 <idValue>Bank release fee</idValue>
+	</idCode>
+	<idCode>17 <idValue>Batch total</idValue>
+	</idCode>
+	<idCode>18 <idValue>Brokerage</idValue>
+	</idCode>
+	<idCode>19 <idValue>Buying commission</idValue>
+	</idCode>
+	<idCode>20 <idValue>Data value on carrier media (Customs)</idValue>
+	</idCode>
+	<idCode>21 <idValue>Cash discount</idValue>
+	</idCode>
+	<idCode>22 <idValue>Cash on delivery amount</idValue>
+	</idCode>
+	<idCode>23 <idValue>Charge amount</idValue>
+	</idCode>
+	<idCode>24 <idValue>Charge summary total</idValue>
+	</idCode>
+	<idCode>25 <idValue>Charge/allowance basis</idValue>
+	</idCode>
+	<idCode>26 <idValue>Charges collect fee</idValue>
+	</idCode>
+	<idCode>27 <idValue>Charges in destination currency</idValue>
+	</idCode>
+	<idCode>28 <idValue>Collect charge summary total</idValue>
+	</idCode>
+	<idCode>29 <idValue>Collect charges in destination currency</idValue>
+	</idCode>
+	<idCode>30 <idValue>Collect freight charge including VAT</idValue>
+	</idCode>
+	<idCode>31 <idValue>Collect freight charge without VAT</idValue>
+	</idCode>
+	<idCode>32 <idValue>Collect other charges due agent total</idValue>
+	</idCode>
+	<idCode>33 <idValue>Collect taxes total</idValue>
+	</idCode>
+	<idCode>34 <idValue>Collected balance required</idValue>
+	</idCode>
+	<idCode>35 <idValue>Container cost</idValue>
+	</idCode>
+	<idCode>36 <idValue>Converted amount</idValue>
+	</idCode>
+	<idCode>37 <idValue>Credit on consignment</idValue>
+	</idCode>
+	<idCode>38 <idValue>Invoice item amount</idValue>
+	</idCode>
+	<idCode>39 <idValue>Invoice total amount</idValue>
+	</idCode>
+	<idCode>40 <idValue>Customs value</idValue>
+	</idCode>
+	<idCode>41 <idValue>Assigned Customs value</idValue>
+	</idCode>
+	<idCode>42 <idValue>Total cash payments received by factor</idValue>
+	</idCode>
+	<idCode>43 <idValue>Declared total Customs value</idValue>
+	</idCode>
+	<idCode>44 <idValue>Declared value for carriage</idValue>
+	</idCode>
+	<idCode>45 <idValue>Deductible after importation charges (Customs)</idValue>
+	</idCode>
+	<idCode>46 <idValue>Deductions (Customs)</idValue>
+	</idCode>
+	<idCode>47 <idValue>Delivery fee</idValue>
+	</idCode>
+	<idCode>48 <idValue>Deposit total</idValue>
+	</idCode>
+	<idCode>49 <idValue>Development necessary for production of imported goods
+		(Customs)</idValue>
+	</idCode>
+	<idCode>50 <idValue>Disbursements</idValue>
+	</idCode>
+	<idCode>51 <idValue>Disbursements fee</idValue>
+	</idCode>
+	<idCode>52 <idValue>Discount amount</idValue>
+	</idCode>
+	<idCode>53 <idValue>Discount amount due</idValue>
+	</idCode>
+	<idCode>54 <idValue>Distribution service fee</idValue>
+	</idCode>
+	<idCode>55 <idValue>Duty amount</idValue>
+	</idCode>
+	<idCode>56 <idValue>Duty/tax/fee basis amount</idValue>
+	</idCode>
+	<idCode>57 <idValue>Equivalent amount</idValue>
+	</idCode>
+	<idCode>58 <idValue>Fee amount</idValue>
+	</idCode>
+	<idCode>59 <idValue>Fees paid year to date</idValue>
+	</idCode>
+	<idCode>60 <idValue>Final (posted) amount</idValue>
+	</idCode>
+	<idCode>61 <idValue>Float (e.g. &quot;cash float&quot;)</idValue>
+	</idCode>
+	<idCode>62 <idValue>Total payments on account received by a factor</idValue>
+	</idCode>
+	<idCode>63 <idValue>FOB value</idValue>
+	</idCode>
+	<idCode>64 <idValue>Freight charge</idValue>
+	</idCode>
+	<idCode>65 <idValue>Total indirect amount payments made to a seller or his
+		agent instead of to a factor</idValue>
+	</idCode>
+	<idCode>66 <idValue>Goods item total</idValue>
+	</idCode>
+	<idCode>67 <idValue>Insurance</idValue>
+	</idCode>
+	<idCode>68 <idValue>Insurance and transport charges (Customs)</idValue>
+	</idCode>
+	<idCode>69 <idValue>Insurance and transport charges incurred outside Customs
+		territory</idValue>
+	</idCode>
+	<idCode>70 <idValue>Insurance charges (Customs)</idValue>
+	</idCode>
+	<idCode>71 <idValue>Insurance charges incurred outside of Customs territory</idValue>
+	</idCode>
+	<idCode>72 <idValue>Internal charges (Customs)</idValue>
+	</idCode>
+	<idCode>73 <idValue>Total amount of payments booked to the collateral
+		account</idValue>
+	</idCode>
+	<idCode>74 <idValue>Amount to be paid in advance</idValue>
+	</idCode>
+	<idCode>75 <idValue>Registered capital</idValue>
+	</idCode>
+	<idCode>76 <idValue>Investable balance</idValue>
+	</idCode>
+	<idCode>77 <idValue>Invoice amount</idValue>
+	</idCode>
+	<idCode>78 <idValue>Landing charges</idValue>
+	</idCode>
+	<idCode>79 <idValue>Total line items amount</idValue>
+	</idCode>
+	<idCode>80 <idValue>Licence fees related to imported goods (Customs)</idValue>
+	</idCode>
+	<idCode>81 <idValue>Loading and handling cost</idValue>
+	</idCode>
+	<idCode>82 <idValue>Lock box total</idValue>
+	</idCode>
+	<idCode>83 <idValue>Lumpsum</idValue>
+	</idCode>
+	<idCode>84 <idValue>Material consumed in production of imported goods
+		(Customs)</idValue>
+	</idCode>
+	<idCode>85 <idValue>Maximum charge</idValue>
+	</idCode>
+	<idCode>86 <idValue>Message total monetary amount</idValue>
+	</idCode>
+	<idCode>87 <idValue>Minimum charge</idValue>
+	</idCode>
+	<idCode>88 <idValue>National preference basis amount</idValue>
+	</idCode>
+	<idCode>89 <idValue>Negative collected balance</idValue>
+	</idCode>
+	<idCode>90 <idValue>Negative ledger balance</idValue>
+	</idCode>
+	<idCode>91 <idValue>Net adjustment</idValue>
+	</idCode>
+	<idCode>92 <idValue>Net fee position</idValue>
+	</idCode>
+	<idCode>93 <idValue>Net year to date excess (deficit)</idValue>
+	</idCode>
+	<idCode>94 <idValue>No amount of insurance</idValue>
+	</idCode>
+	<idCode>95 <idValue>No declared value for carriage</idValue>
+	</idCode>
+	<idCode>96 <idValue>No declared value for Customs</idValue>
+	</idCode>
+	<idCode>97 <idValue>Offer amount</idValue>
+	</idCode>
+	<idCode>98 <idValue>Original amount</idValue>
+	</idCode>
+	<idCode>99 <idValue>Other charges at destination</idValue>
+	</idCode>
+	<idCode>100 <idValue>Other charges due agent</idValue>
+	</idCode>
+	<idCode>101 <idValue>Other charges due carrier</idValue>
+	</idCode>
+	<idCode>102 <idValue>Other commissions</idValue>
+	</idCode>
+	<idCode>103 <idValue>Other deductible charges</idValue>
+	</idCode>
+	<idCode>104 <idValue>Other transport charges</idValue>
+	</idCode>
+	<idCode>105 <idValue>Other valuation charges (Customs)</idValue>
+	</idCode>
+	<idCode>106 <idValue>Packing cost</idValue>
+	</idCode>
+	<idCode>107 <idValue>Packing cost (Customs)</idValue>
+	</idCode>
+	<idCode>108 <idValue>Parts incorporated in imported goods (Customs)</idValue>
+	</idCode>
+	<idCode>109 <idValue>Payment discount amount</idValue>
+	</idCode>
+	<idCode>110 <idValue>Pick-up fee</idValue>
+	</idCode>
+	<idCode>111 <idValue>Positive collected balance</idValue>
+	</idCode>
+	<idCode>112 <idValue>Positive ledger balance</idValue>
+	</idCode>
+	<idCode>113 <idValue>Prepaid amount</idValue>
+	</idCode>
+	<idCode>114 <idValue>Prepaid charge summary total</idValue>
+	</idCode>
+	<idCode>115 <idValue>Prepaid taxes total</idValue>
+	</idCode>
+	<idCode>116 <idValue>Purchase amount</idValue>
+	</idCode>
+	<idCode>117 <idValue>Quantity discount</idValue>
+	</idCode>
+	<idCode>118 <idValue>Quota value</idValue>
+	</idCode>
+	<idCode>119 <idValue>Received amount</idValue>
+	</idCode>
+	<idCode>120 <idValue>Sales tax</idValue>
+	</idCode>
+	<idCode>121 <idValue>Shipment value in domestic currency</idValue>
+	</idCode>
+	<idCode>122 <idValue>Specific amount payable</idValue>
+	</idCode>
+	<idCode>123 <idValue>Statistical value</idValue>
+	</idCode>
+	<idCode>124 <idValue>Tax amount</idValue>
+	</idCode>
+	<idCode>125 <idValue>Taxable amount</idValue>
+	</idCode>
+	<idCode>126 <idValue>To collect</idValue>
+	</idCode>
+	<idCode>127 <idValue>Tools used in production of imported goods (Customs)</idValue>
+	</idCode>
+	<idCode>128 <idValue>Total amount</idValue>
+	</idCode>
+	<idCode>129 <idValue>Total amount subject to payment discount</idValue>
+	</idCode>
+	<idCode>130 <idValue>Total charge due</idValue>
+	</idCode>
+	<idCode>131 <idValue>Total charges/allowances</idValue>
+	</idCode>
+	<idCode>132 <idValue>Total collect charges</idValue>
+	</idCode>
+	<idCode>133 <idValue>Total collect charges at destination</idValue>
+	</idCode>
+	<idCode>134 <idValue>Total declared</idValue>
+	</idCode>
+	<idCode>135 <idValue>Total freight due</idValue>
+	</idCode>
+	<idCode>136 <idValue>Total invoice additional amount</idValue>
+	</idCode>
+	<idCode>138 <idValue>Total monetary discount amount</idValue>
+	</idCode>
+	<idCode>139 <idValue>Total payment amount</idValue>
+	</idCode>
+	<idCode>140 <idValue>Total service charge</idValue>
+	</idCode>
+	<idCode>141 <idValue>Cost, insurance and freight (CIF) value</idValue>
+	</idCode>
+	<idCode>142 <idValue>Trade discount</idValue>
+	</idCode>
+	<idCode>143 <idValue>Transfer amount</idValue>
+	</idCode>
+	<idCode>144 <idValue>Transport charges (Customs)</idValue>
+	</idCode>
+	<idCode>145 <idValue>Transport charges incurred outside Customs territory</idValue>
+	</idCode>
+	<idCode>146 <idValue>Unit price</idValue>
+	</idCode>
+	<idCode>147 <idValue>Acceptable quotation fluctuation amount</idValue>
+	</idCode>
+	<idCode>148 <idValue>Total payments under guarantee</idValue>
+	</idCode>
+	<idCode>149 <idValue>Valuation charge</idValue>
+	</idCode>
+	<idCode>150 <idValue>Value added tax</idValue>
+	</idCode>
+	<idCode>151 <idValue>Value insured</idValue>
+	</idCode>
+	<idCode>152 <idValue>Subsequent resale of imported goods (Customs)</idValue>
+	</idCode>
+	<idCode>153 <idValue>Weight charge</idValue>
+	</idCode>
+	<idCode>154 <idValue>Amount to be collected</idValue>
+	</idCode>
+	<idCode>155 <idValue>Standard duty</idValue>
+	</idCode>
+	<idCode>156 <idValue>G-Amount</idValue>
+	</idCode>
+	<idCode>157 <idValue>Insurance value</idValue>
+	</idCode>
+	<idCode>158 <idValue>Insurance and transport charges incurred inside Customs
+		territory</idValue>
+	</idCode>
+	<idCode>159 <idValue>Licence (value deducted)</idValue>
+	</idCode>
+	<idCode>160 <idValue>Other costs</idValue>
+	</idCode>
+	<idCode>161 <idValue>Duty, tax or fee amount</idValue>
+	</idCode>
+	<idCode>162 <idValue>Customs duty paid</idValue>
+	</idCode>
+	<idCode>163 <idValue>Wage tax share</idValue>
+	</idCode>
+	<idCode>164 <idValue>Social securities premiums share</idValue>
+	</idCode>
+	<idCode>165 <idValue>Adjustment amount</idValue>
+	</idCode>
+	<idCode>166 <idValue>Guarantee amount (Customs)</idValue>
+	</idCode>
+	<idCode>167 <idValue>Actual versus calculated price difference</idValue>
+	</idCode>
+	<idCode>168 <idValue>Tax sub-totals</idValue>
+	</idCode>
+	<idCode>169 <idValue>Alternate currency total amount</idValue>
+	</idCode>
+	<idCode>170 <idValue>Document amount</idValue>
+	</idCode>
+	<idCode>171 <idValue>Total reassignments of factored invoices</idValue>
+	</idCode>
+	<idCode>172 <idValue>Stated amount</idValue>
+	</idCode>
+	<idCode>173 <idValue>Minimum amount</idValue>
+	</idCode>
+	<idCode>174 <idValue>Balance brought forward</idValue>
+	</idCode>
+	<idCode>175 <idValue>Message total additional amount</idValue>
+	</idCode>
+	<idCode>176 <idValue>Message total duty/tax/fee amount</idValue>
+	</idCode>
+	<idCode>177 <idValue>Message total amount prepaid</idValue>
+	</idCode>
+	<idCode>178 <idValue>Exact amount</idValue>
+	</idCode>
+	<idCode>179 <idValue>Maximum amount</idValue>
+	</idCode>
+	<idCode>180 <idValue>Amount up to</idValue>
+	</idCode>
+	<idCode>181 <idValue>Amount not exceeding</idValue>
+	</idCode>
+	<idCode>182 <idValue>Any other specification/tolerance</idValue>
+	</idCode>
+	<idCode>183 <idValue>No specification/tolerance</idValue>
+	</idCode>
+	<idCode>184 <idValue>Final net acquisition cost</idValue>
+	</idCode>
+	<idCode>185 <idValue>Labor cost</idValue>
+	</idCode>
+	<idCode>186 <idValue>Material cost</idValue>
+	</idCode>
+	<idCode>187 <idValue>Other cost</idValue>
+	</idCode>
+	<idCode>188 <idValue>Overhead cost</idValue>
+	</idCode>
+	<idCode>189 <idValue>Packaging cost</idValue>
+	</idCode>
+	<idCode>190 <idValue>Prototype set up cost</idValue>
+	</idCode>
+	<idCode>192 <idValue>Raw material per cart cost</idValue>
+	</idCode>
+	<idCode>193 <idValue>Raw material per unit of measure cost</idValue>
+	</idCode>
+	<idCode>194 <idValue>Total die model cost</idValue>
+	</idCode>
+	<idCode>195 <idValue>Total gauge cost</idValue>
+	</idCode>
+	<idCode>196 <idValue>Total material including purchased components cost</idValue>
+	</idCode>
+	<idCode>197 <idValue>Total purchased components cost</idValue>
+	</idCode>
+	<idCode>198 <idValue>Total tooling cost</idValue>
+	</idCode>
+	<idCode>199 <idValue>Delivery limitation amount</idValue>
+	</idCode>
+	<idCode>200 <idValue>Minimum amount due</idValue>
+	</idCode>
+	<idCode>201 <idValue>Penalty amount</idValue>
+	</idCode>
+	<idCode>202 <idValue>Interest amount</idValue>
+	</idCode>
+	<idCode>203 <idValue>Line item amount</idValue>
+	</idCode>
+	<idCode>204 <idValue>Allowance amount</idValue>
+	</idCode>
+	<idCode>205 <idValue>Additional amount covered: freight costs</idValue>
+	</idCode>
+	<idCode>206 <idValue>Additional amount covered: inspection costs</idValue>
+	</idCode>
+	<idCode>207 <idValue>Additional amount covered: insurance costs</idValue>
+	</idCode>
+	<idCode>208 <idValue>Additional amount covered: interest</idValue>
+	</idCode>
+	<idCode>209 <idValue>Agent commission amount</idValue>
+	</idCode>
+	<idCode>210 <idValue>Credit note amount</idValue>
+	</idCode>
+	<idCode>211 <idValue>Debit note amount</idValue>
+	</idCode>
+	<idCode>212 <idValue>Documentary credit amount</idValue>
+	</idCode>
+	<idCode>213 <idValue>Part of documentary credit amount</idValue>
+	</idCode>
+	<idCode>214 <idValue>Advance payment at the beginning of works</idValue>
+	</idCode>
+	<idCode>215 <idValue>Deduction of advance payment amount at the beginning of
+		works</idValue>
+	</idCode>
+	<idCode>216 <idValue>Advance payment amount on building material</idValue>
+	</idCode>
+	<idCode>217 <idValue>Deduction of the advance payment amount on building
+		material</idValue>
+	</idCode>
+	<idCode>218 <idValue>Advance payment amount on stock</idValue>
+	</idCode>
+	<idCode>219 <idValue>Deduction of the advance payment amount on stock</idValue>
+	</idCode>
+	<idCode>220 <idValue>Amount subject to guarantee retention</idValue>
+	</idCode>
+	<idCode>221 <idValue>Amount not subject of guarantee retention</idValue>
+	</idCode>
+	<idCode>222 <idValue>Amount subject to contractual retention</idValue>
+	</idCode>
+	<idCode>223 <idValue>Works amount, initial</idValue>
+	</idCode>
+	<idCode>224 <idValue>Works amount, variations</idValue>
+	</idCode>
+	<idCode>225 <idValue>Works amount, total</idValue>
+	</idCode>
+	<idCode>226 <idValue>Retention amount</idValue>
+	</idCode>
+	<idCode>227 <idValue>Deposit</idValue>
+	</idCode>
+	<idCode>228 <idValue>Deposit refund</idValue>
+	</idCode>
+	<idCode>229 <idValue>Guarantee on retention refund</idValue>
+	</idCode>
+	<idCode>230 <idValue>Amount subject to escalation</idValue>
+	</idCode>
+	<idCode>231 <idValue>Amount subject to escalation, initial</idValue>
+	</idCode>
+	<idCode>232 <idValue>Amount of variations subject to escalation</idValue>
+	</idCode>
+	<idCode>233 <idValue>Amount not subject to escalation</idValue>
+	</idCode>
+	<idCode>234 <idValue>Amount not subject to escalation, initial</idValue>
+	</idCode>
+	<idCode>235 <idValue>Amount of variations not subject to escalation</idValue>
+	</idCode>
+	<idCode>236 <idValue>Amount subject to price adjustment</idValue>
+	</idCode>
+	<idCode>237 <idValue>Amount subject to price adjustment, initial</idValue>
+	</idCode>
+	<idCode>238 <idValue>Amount of variations subject to price adjustment</idValue>
+	</idCode>
+	<idCode>239 <idValue>Amount not subject to price adjustment</idValue>
+	</idCode>
+	<idCode>240 <idValue>Amount not subject to price adjustment, initial</idValue>
+	</idCode>
+	<idCode>241 <idValue>Amount of variations not subject to price adjustment</idValue>
+	</idCode>
+	<idCode>242 <idValue>Escalation amount</idValue>
+	</idCode>
+	<idCode>243 <idValue>Provisional escalation amount</idValue>
+	</idCode>
+	<idCode>244 <idValue>Price adjustment amount</idValue>
+	</idCode>
+	<idCode>245 <idValue>Provisional price adjustment amount</idValue>
+	</idCode>
+	<idCode>246 <idValue>Price revaluation amount</idValue>
+	</idCode>
+	<idCode>247 <idValue>Provisional price revaluation amount</idValue>
+	</idCode>
+	<idCode>248 <idValue>Contractual retention amount total</idValue>
+	</idCode>
+	<idCode>249 <idValue>Valuation amount</idValue>
+	</idCode>
+	<idCode>250 <idValue>Deduction amount of direct payments to subcontractors</idValue>
+	</idCode>
+	<idCode>251 <idValue>Amortization total amount</idValue>
+	</idCode>
+	<idCode>252 <idValue>Amortization order amount</idValue>
+	</idCode>
+	<idCode>253 <idValue>Amortization cumulated amount</idValue>
+	</idCode>
+	<idCode>254 <idValue>Current credit cover</idValue>
+	</idCode>
+	<idCode>255 <idValue>New credit cover</idValue>
+	</idCode>
+	<idCode>256 <idValue>Order cover</idValue>
+	</idCode>
+	<idCode>257 <idValue>Amount subject to dispute</idValue>
+	</idCode>
+	<idCode>258 <idValue>Charge amount for information</idValue>
+	</idCode>
+	<idCode>259 <idValue>Total charges</idValue>
+	</idCode>
+	<idCode>260 <idValue>Total allowances</idValue>
+	</idCode>
+	<idCode>261 <idValue>Alternate currency amount</idValue>
+	</idCode>
+	<idCode>262 <idValue>Instalment amount</idValue>
+	</idCode>
+	<idCode>263 <idValue>Outstanding amount</idValue>
+	</idCode>
+	<idCode>264 <idValue>Gross contribution amount</idValue>
+	</idCode>
+	<idCode>265 <idValue>Commission amount</idValue>
+	</idCode>
+	<idCode>266 <idValue>Net contribution amount</idValue>
+	</idCode>
+	<idCode>267 <idValue>Regular contribution amount</idValue>
+	</idCode>
+	<idCode>268 <idValue>Previous regular contribution amount</idValue>
+	</idCode>
+	<idCode>269 <idValue>Variation amount</idValue>
+	</idCode>
+	<idCode>270 <idValue>Notional salary</idValue>
+	</idCode>
+	<idCode>271 <idValue>Nominal salary</idValue>
+	</idCode>
+	<idCode>272 <idValue>Taxable salary</idValue>
+	</idCode>
+	<idCode>273 <idValue>Superannuation salary</idValue>
+	</idCode>
+	<idCode>274 <idValue>Total remuneration</idValue>
+	</idCode>
+	<idCode>275 <idValue>Other salary</idValue>
+	</idCode>
+	<idCode>276 <idValue>Annual salary</idValue>
+	</idCode>
+	<idCode>277 <idValue>Total contributions amount</idValue>
+	</idCode>
+	<idCode>278 <idValue>Voluntary contribution amount</idValue>
+	</idCode>
+	<idCode>279 <idValue>Instalment first amount</idValue>
+	</idCode>
+	<idCode>280 <idValue>Instalment current amount</idValue>
+	</idCode>
+	<idCode>281 <idValue>Instalment last amount</idValue>
+	</idCode>
+	<idCode>282 <idValue>Current maintenance fee</idValue>
+	</idCode>
+	<idCode>283 <idValue>Current leasing fee</idValue>
+	</idCode>
+	<idCode>284 <idValue>Day works amount</idValue>
+	</idCode>
+	<idCode>285 <idValue>Manufacturer&apos;s bonus</idValue>
+	</idCode>
+	<idCode>286 <idValue>Administration charge</idValue>
+	</idCode>
+	<idCode>287 <idValue>Fuel charge</idValue>
+	</idCode>
+	<idCode>288 <idValue>Registration plate charge</idValue>
+	</idCode>
+	<idCode>289 <idValue>Subtotal amount</idValue>
+	</idCode>
+	<idCode>290 <idValue>Dumping export value</idValue>
+	</idCode>
+	<idCode>291 <idValue>Foreign inland freight</idValue>
+	</idCode>
+	<idCode>292 <idValue>Concession amount</idValue>
+	</idCode>
+	<idCode>293 <idValue>Chargeback</idValue>
+	</idCode>
+	<idCode>294 <idValue>Charge per credit cover</idValue>
+	</idCode>
+	<idCode>295 <idValue>Charge per unused credit cover</idValue>
+	</idCode>
+	<idCode>296 <idValue>Total authorised deduction</idValue>
+	</idCode>
+	<idCode>297 <idValue>Total chargebacks</idValue>
+	</idCode>
+	<idCode>298 <idValue>Total offsets</idValue>
+	</idCode>
+	<idCode>299 <idValue>Total special entries</idValue>
+	</idCode>
+	<idCode>300 <idValue>Balance carried forward</idValue>
+	</idCode>
+	<idCode>301 <idValue>Total outstanding invoices past due</idValue>
+	</idCode>
+	<idCode>302 <idValue>Off balance disputed items</idValue>
+	</idCode>
+	<idCode>303 <idValue>Commission invoices</idValue>
+	</idCode>
+	<idCode>304 <idValue>Other charges</idValue>
+	</idCode>
+	<idCode>305 <idValue>Amount remittances</idValue>
+	</idCode>
+	<idCode>306 <idValue>Total amount of payment commission invoices</idValue>
+	</idCode>
+	<idCode>307 <idValue>Total amount of payment other charges invoices</idValue>
+	</idCode>
+	<idCode>308 <idValue>Total amount credit notes</idValue>
+	</idCode>
+	<idCode>309 <idValue>Total adjustment invoices</idValue>
+	</idCode>
+	<idCode>310 <idValue>Total adjustment credit notes</idValue>
+	</idCode>
+	<idCode>311 <idValue>Total adjustment payments</idValue>
+	</idCode>
+	<idCode>312 <idValue>Base unit value</idValue>
+	</idCode>
+	<idCode>313 <idValue>International freight</idValue>
+	</idCode>
+	<idCode>314 <idValue>Own risk amount</idValue>
+	</idCode>
+	<idCode>315 <idValue>Opening balance</idValue>
+	</idCode>
+	<idCode>316 <idValue>Insurance premium</idValue>
+	</idCode>
+	<idCode>317 <idValue>Insurance commission</idValue>
+	</idCode>
+	<idCode>318 <idValue>Insurance tax</idValue>
+	</idCode>
+	<idCode>319 <idValue>Fee of insurer</idValue>
+	</idCode>
+	<idCode>320 <idValue>Fee of intermediary</idValue>
+	</idCode>
+	<idCode>ZZZ <idValue>Mutually defined</idValue>
+	</idCode>
 </idList>

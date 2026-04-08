@@ -1,535 +1,535 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>AA</idCode>
-        <idValue>Advertising allowance</idValue>
-    <idCode>AAA</idCode>
-        <idValue>Telecommunication charges</idValue>
-    <idCode>AAB</idCode>
-        <idValue>Returned goods charges</idValue>
-    <idCode>AAC</idCode>
-        <idValue>Modification costs</idValue>
-    <idCode>AAD</idCode>
-        <idValue>Job-order production</idValue>
-    <idCode>AAE</idCode>
-        <idValue>Outlays</idValue>
-    <idCode>AAF</idCode>
-        <idValue>Off-premises surcharge</idValue>
-    <idCode>AAG</idCode>
-        <idValue>Gold surcharge</idValue>
-    <idCode>AAH</idCode>
-        <idValue>Processing surcharge</idValue>
-    <idCode>AAI</idCode>
-        <idValue>Attestation fee</idValue>
-    <idCode>AAJ</idCode>
-        <idValue>Copper surcharge</idValue>
-    <idCode>AAK</idCode>
-        <idValue>Energy surcharge</idValue>
-    <idCode>AAL</idCode>
-        <idValue>Deduction for missing parts</idValue>
-    <idCode>AAM</idCode>
-        <idValue>Rubber surcharge</idValue>
-    <idCode>AAN</idCode>
-        <idValue>Brass surcharge</idValue>
-    <idCode>AAO</idCode>
-        <idValue>Material surcharge/deduction</idValue>
-    <idCode>AAP</idCode>
-        <idValue>Lead surcharge</idValue>
-    <idCode>AAQ</idCode>
-        <idValue>Price index surcharge</idValue>
-    <idCode>AAR</idCode>
-        <idValue>Platinum surcharge</idValue>
-    <idCode>AAS</idCode>
-        <idValue>Acceptance cost</idValue>
-    <idCode>AAT</idCode>
-        <idValue>Rush delivery</idValue>
-    <idCode>AAU</idCode>
-        <idValue>Selenium surcharge</idValue>
-    <idCode>AAV</idCode>
-        <idValue>Special construction charge</idValue>
-    <idCode>AAW</idCode>
-        <idValue>Deduction for delayed return</idValue>
-    <idCode>AAX</idCode>
-        <idValue>Wolfram surcharge</idValue>
-    <idCode>AAY</idCode>
-        <idValue>Airport fee</idValue>
-    <idCode>AAZ</idCode>
-        <idValue>Concession fee</idValue>
-    <idCode>ABA</idCode>
-        <idValue>Compulsory storage fee</idValue>
-    <idCode>ABB</idCode>
-        <idValue>Defuel</idValue>
-    <idCode>ABC</idCode>
-        <idValue>Into plane fee</idValue>
-    <idCode>ABD</idCode>
-        <idValue>Overtime</idValue>
-    <idCode>ABE</idCode>
-        <idValue>Reservicing charge</idValue>
-    <idCode>ABF</idCode>
-        <idValue>Tooling cost</idValue>
-    <idCode>ABG</idCode>
-        <idValue>Tooling charge</idValue>
-    <idCode>ABH</idCode>
-        <idValue>Throughput allowance</idValue>
-    <idCode>ABI</idCode>
-        <idValue>Superfund fee</idValue>
-    <idCode>ABJ</idCode>
-        <idValue>Airport system fee</idValue>
-    <idCode>ABK</idCode>
-        <idValue>Miscellaneous</idValue>
-    <idCode>ABL</idCode>
-        <idValue>Packaging surcharge</idValue>
-    <idCode>ABM</idCode>
-        <idValue>Scrap surcharge</idValue>
-    <idCode>ABN</idCode>
-        <idValue>Dunnage charge</idValue>
-    <idCode>ABO</idCode>
-        <idValue>Air freight transportation</idValue>
-    <idCode>ABP</idCode>
-        <idValue>Carriage charge</idValue>
-    <idCode>ABQ</idCode>
-        <idValue>Tonnage rebate</idValue>
-    <idCode>ABR</idCode>
-        <idValue>Containerisation</idValue>
-    <idCode>ABS</idCode>
-        <idValue>Carton packing</idValue>
-    <idCode>ABT</idCode>
-        <idValue>Hessian wrapped</idValue>
-    <idCode>ABU</idCode>
-        <idValue>Polyethylene wrap packing</idValue>
-    <idCode>ABV</idCode>
-        <idValue>Miscellaneous customs charge</idValue>
-    <idCode>ABW</idCode>
-        <idValue>Customs duty charge</idValue>
-    <idCode>ABX</idCode>
-        <idValue>Miscellaneous special tooling charge</idValue>
-    <idCode>ABY</idCode>
-        <idValue>Tooling amortisation</idValue>
-    <idCode>ABZ</idCode>
-        <idValue>Miscellaneous rebate or discount</idValue>
-    <idCode>ACA</idCode>
-        <idValue>Allowance</idValue>
-    <idCode>ACB</idCode>
-        <idValue>Future discount off retail</idValue>
-    <idCode>ACC</idCode>
-        <idValue>Miscellaneous setting costs (tooling)</idValue>
-    <idCode>ACD</idCode>
-        <idValue>Minimum amount costs for quantity based surcharges</idValue>
-    <idCode>ACE</idCode>
-        <idValue>Below schedule quantity after quantity-based surcharge</idValue>
-    <idCode>ACF</idCode>
-        <idValue>Miscellaneous treatment</idValue>
-    <idCode>ACG</idCode>
-        <idValue>Enamelling treatment</idValue>
-    <idCode>ACH</idCode>
-        <idValue>Heat treatment</idValue>
-    <idCode>ACI</idCode>
-        <idValue>Plating treatment</idValue>
-    <idCode>ACJ</idCode>
-        <idValue>Painting</idValue>
-    <idCode>ACK</idCode>
-        <idValue>Polishing</idValue>
-    <idCode>ACL</idCode>
-        <idValue>Priming</idValue>
-    <idCode>ACM</idCode>
-        <idValue>Preservation treatment</idValue>
-    <idCode>ACN</idCode>
-        <idValue>Miscellaneous other surcharges</idValue>
-    <idCode>ACO</idCode>
-        <idValue>Alloy surcharge</idValue>
-    <idCode>ACP</idCode>
-        <idValue>Coke surcharge</idValue>
-    <idCode>ACQ</idCode>
-        <idValue>Royalty surcharge</idValue>
-    <idCode>ACR</idCode>
-        <idValue>Wheel handling charge</idValue>
-    <idCode>ACS</idCode>
-        <idValue>Fitting surcharge</idValue>
-    <idCode>ACT</idCode>
-        <idValue>Non-standard surcharge</idValue>
-    <idCode>ACU</idCode>
-        <idValue>Standard surcharge</idValue>
-    <idCode>ACV</idCode>
-        <idValue>Wheel surcharge</idValue>
-    <idCode>ACW</idCode>
-        <idValue>Washer surcharge</idValue>
-    <idCode>ACX</idCode>
-        <idValue>Ocean freight charge</idValue>
-    <idCode>ACY</idCode>
-        <idValue>Container deposit charge</idValue>
-    <idCode>ACZ</idCode>
-        <idValue>Damaged merchandise</idValue>
-    <idCode>ADA</idCode>
-        <idValue>Bopsheet charge</idValue>
-    <idCode>ADB</idCode>
-        <idValue>Drum deposit</idValue>
-    <idCode>ADC</idCode>
-        <idValue>Consolidation</idValue>
-    <idCode>ADD</idCode>
-        <idValue>Inland transportation</idValue>
-    <idCode>ADE</idCode>
-        <idValue>Bill of lading charge</idValue>
-    <idCode>ADF</idCode>
-        <idValue>Excise tax-destination</idValue>
-    <idCode>ADG</idCode>
-        <idValue>Customs bond charge</idValue>
-    <idCode>ADH</idCode>
-        <idValue>Per pound charge</idValue>
-    <idCode>ADI</idCode>
-        <idValue>Royalties</idValue>
-    <idCode>ADJ</idCode>
-        <idValue>Airbag charge</idValue>
-    <idCode>ADK</idCode>
-        <idValue>Transfer charge</idValue>
-    <idCode>ADL</idCode>
-        <idValue>Slipsheet charge</idValue>
-    <idCode>ADM</idCode>
-        <idValue>Binding services</idValue>
-    <idCode>ADN</idCode>
-        <idValue>Repair or replacement of broken returnable package</idValue>
-    <idCode>ADO</idCode>
-        <idValue>Efficient logistics</idValue>
-    <idCode>ADP</idCode>
-        <idValue>Merchandising</idValue>
-    <idCode>ADQ</idCode>
-        <idValue>Product mix</idValue>
-    <idCode>ADR</idCode>
-        <idValue>Other services</idValue>
-    <idCode>ADS</idCode>
-        <idValue>Full pallet ordering</idValue>
-    <idCode>ADT</idCode>
-        <idValue>Pick-up</idValue>
-    <idCode>ADU</idCode>
-        <idValue>Handling by the 1st level sub-contractor</idValue>
-    <idCode>ADV</idCode>
-        <idValue>Handling by the 2nd level sub-contractor</idValue>
-    <idCode>ADX</idCode>
-        <idValue>Handling by the contractor</idValue>
-    <idCode>ADY</idCode>
-        <idValue>New product introduction</idValue>
-    <idCode>ADZ</idCode>
-        <idValue>Direct delivery</idValue>
-    <idCode>AEA</idCode>
-        <idValue>Diversion</idValue>
-    <idCode>AEB</idCode>
-        <idValue>Disconnect</idValue>
-    <idCode>AEC</idCode>
-        <idValue>Distribution</idValue>
-    <idCode>AED</idCode>
-        <idValue>Handling of hazardous cargo</idValue>
-    <idCode>AEF</idCode>
-        <idValue>Rents and leases</idValue>
-    <idCode>AEG</idCode>
-        <idValue>System usage</idValue>
-    <idCode>AEH</idCode>
-        <idValue>Location differential</idValue>
-    <idCode>AEI</idCode>
-        <idValue>Aircraft refueling</idValue>
-    <idCode>AEJ</idCode>
-        <idValue>Fuel shipped into storage</idValue>
-    <idCode>AG</idCode>
-        <idValue>Silver surcharge</idValue>
-    <idCode>AJ</idCode>
-        <idValue>Adjustments</idValue>
-    <idCode>AL</idCode>
-        <idValue>Aluminium surcharge</idValue>
-    <idCode>AM</idCode>
-        <idValue>Additional material</idValue>
-    <idCode>AU</idCode>
-        <idValue>Authentication charge</idValue>
-    <idCode>CA</idCode>
-        <idValue>Cataloguing services</idValue>
-    <idCode>CAA</idCode>
-        <idValue>Cancellation charge</idValue>
-    <idCode>CAB</idCode>
-        <idValue>Cartage</idValue>
-    <idCode>CAC</idCode>
-        <idValue>Cash discount</idValue>
-    <idCode>CAD</idCode>
-        <idValue>Certification fee</idValue>
-    <idCode>CAE</idCode>
-        <idValue>Certificate of conformance</idValue>
-    <idCode>CAF</idCode>
-        <idValue>Certificate of origin</idValue>
-    <idCode>CAG</idCode>
-        <idValue>Competitive allowance</idValue>
-    <idCode>CAH</idCode>
-        <idValue>Competitive auto allowance</idValue>
-    <idCode>CAI</idCode>
-        <idValue>Cutting charge</idValue>
-    <idCode>CAJ</idCode>
-        <idValue>Consular costs</idValue>
-    <idCode>CAK</idCode>
-        <idValue>Customer collection rebate</idValue>
-    <idCode>CB</idCode>
-        <idValue>Commission</idValue>
-    <idCode>CD</idCode>
-        <idValue>Car loading</idValue>
-    <idCode>CG</idCode>
-        <idValue>Cleaning charge</idValue>
-    <idCode>CK</idCode>
-        <idValue>COD charge</idValue>
-    <idCode>CL</idCode>
-        <idValue>Contract allowance</idValue>
-    <idCode>CO</idCode>
-        <idValue>Cents off</idValue>
-    <idCode>CP</idCode>
-        <idValue>Competitive price</idValue>
-    <idCode>CS</idCode>
-        <idValue>Cigarette stamping</idValue>
-    <idCode>CT</idCode>
-        <idValue>Count and recount</idValue>
-    <idCode>CW</idCode>
-        <idValue>Container allowance</idValue>
-    <idCode>DA</idCode>
-        <idValue>Defective allowance</idValue>
-    <idCode>DAA</idCode>
-        <idValue>Deficit freight</idValue>
-    <idCode>DAB</idCode>
-        <idValue>Layout/design</idValue>
-    <idCode>DAD</idCode>
-        <idValue>Driver assigned unloading</idValue>
-    <idCode>DAE</idCode>
-        <idValue>Distributor discount/allowance</idValue>
-    <idCode>DI</idCode>
-        <idValue>Discount</idValue>
-    <idCode>DL</idCode>
-        <idValue>Delivery</idValue>
-    <idCode>DM</idCode>
-        <idValue>Demurrage</idValue>
-    <idCode>EAA</idCode>
-        <idValue>Early buy allowance</idValue>
-    <idCode>EAB</idCode>
-        <idValue>Early payment allowance</idValue>
-    <idCode>EG</idCode>
-        <idValue>Engraving</idValue>
-    <idCode>EP</idCode>
-        <idValue>Expediting premium</idValue>
-    <idCode>ER</idCode>
-        <idValue>Exchange rate guarantee charge</idValue>
-    <idCode>EX</idCode>
-        <idValue>Export shipping charge</idValue>
-    <idCode>FA</idCode>
-        <idValue>Freight allowance</idValue>
-    <idCode>FAA</idCode>
-        <idValue>Fabrication charge</idValue>
-    <idCode>FAB</idCode>
-        <idValue>Freight equalization</idValue>
-    <idCode>FAC</idCode>
-        <idValue>Freight surcharge</idValue>
-    <idCode>FC</idCode>
-        <idValue>Freight charge</idValue>
-    <idCode>FG</idCode>
-        <idValue>Free goods</idValue>
-    <idCode>FH</idCode>
-        <idValue>Filling/handling charge</idValue>
-    <idCode>FI</idCode>
-        <idValue>Finance charge</idValue>
-    <idCode>FN</idCode>
-        <idValue>Special finish charge</idValue>
-    <idCode>FR</idCode>
-        <idValue>Flat rate</idValue>
-    <idCode>GAA</idCode>
-        <idValue>Grinding</idValue>
-    <idCode>HAA</idCode>
-        <idValue>Hose charge</idValue>
-    <idCode>HD</idCode>
-        <idValue>Handling</idValue>
-    <idCode>HH</idCode>
-        <idValue>Hoisting and hauling</idValue>
-    <idCode>IA</idCode>
-        <idValue>Invoice adjustment</idValue>
-    <idCode>IAA</idCode>
-        <idValue>Installation</idValue>
-    <idCode>IAB</idCode>
-        <idValue>Installation and warranty</idValue>
-    <idCode>ID</idCode>
-        <idValue>Inside delivery charge</idValue>
-    <idCode>IF</idCode>
-        <idValue>Inspection fee</idValue>
-    <idCode>IN</idCode>
-        <idValue>Insurance</idValue>
-    <idCode>IR</idCode>
-        <idValue>Installation and training</idValue>
-    <idCode>IS</idCode>
-        <idValue>Invoice services</idValue>
-    <idCode>KO</idCode>
-        <idValue>Koshering</idValue>
-    <idCode>L1</idCode>
-        <idValue>Shipper load, carrier count</idValue>
-    <idCode>LA</idCode>
-        <idValue>Labelling</idValue>
-    <idCode>LAA</idCode>
-        <idValue>Labour charge</idValue>
-    <idCode>LAB</idCode>
-        <idValue>Labour (repair and return orders)</idValue>
-    <idCode>LAC</idCode>
-        <idValue>License fee</idValue>
-    <idCode>LF</idCode>
-        <idValue>Legalisation fee</idValue>
-    <idCode>LS</idCode>
-        <idValue>Local sales tax</idValue>
-    <idCode>MA</idCode>
-        <idValue>Material allowance (special materials)</idValue>
-    <idCode>MAA</idCode>
-        <idValue>Mileage or travel</idValue>
-    <idCode>MAB</idCode>
-        <idValue>Mileage fee (for repair and return)</idValue>
-    <idCode>MAC</idCode>
-        <idValue>Minimum order/minimum billing charge</idValue>
-    <idCode>MAD</idCode>
-        <idValue>Monthly rental</idValue>
-    <idCode>MAE</idCode>
-        <idValue>Mounting</idValue>
-    <idCode>MC</idCode>
-        <idValue>Material surcharge (special materials)</idValue>
-    <idCode>MI</idCode>
-        <idValue>Mail invoice</idValue>
-    <idCode>ML</idCode>
-        <idValue>Mail invoice to each location</idValue>
-    <idCode>NAA</idCode>
-        <idValue>Non-returnable containers</idValue>
-    <idCode>OA</idCode>
-        <idValue>Outside cable connectors</idValue>
-    <idCode>OAA</idCode>
-        <idValue>Overtime loading</idValue>
-    <idCode>PA</idCode>
-        <idValue>Pack invoice with shipment</idValue>
-    <idCode>PAA</idCode>
-        <idValue>Phosphatizing (steel treatment)</idValue>
-    <idCode>PAB</idCode>
-        <idValue>Postage charge</idValue>
-    <idCode>PAC</idCode>
-        <idValue>Premium charge</idValue>
-    <idCode>PAD</idCode>
-        <idValue>Promotional allowance</idValue>
-    <idCode>PAE</idCode>
-        <idValue>Promotional discount</idValue>
-    <idCode>PC</idCode>
-        <idValue>Packing</idValue>
-    <idCode>PD</idCode>
-        <idValue>Palladium surcharge</idValue>
-    <idCode>PI</idCode>
-        <idValue>Pick-up allowance</idValue>
-    <idCode>PL</idCode>
-        <idValue>Palletizing</idValue>
-    <idCode>PN</idCode>
-        <idValue>Pallet charge</idValue>
-    <idCode>PO</idCode>
-        <idValue>Per order charge</idValue>
-    <idCode>QAA</idCode>
-        <idValue>Quantity surcharge</idValue>
-    <idCode>QD</idCode>
-        <idValue>Quantity discount</idValue>
-    <idCode>RAA</idCode>
-        <idValue>Rebate</idValue>
-    <idCode>RAB</idCode>
-        <idValue>Repack charge</idValue>
-    <idCode>RAC</idCode>
-        <idValue>Repair</idValue>
-    <idCode>RAD</idCode>
-        <idValue>Returnable container</idValue>
-    <idCode>RAE</idCode>
-        <idValue>Resellers discount</idValue>
-    <idCode>RAF</idCode>
-        <idValue>Restocking charge</idValue>
-    <idCode>RAG</idCode>
-        <idValue>Roll rebate</idValue>
-    <idCode>RAH</idCode>
-        <idValue>Road/rail tanker rebate</idValue>
-    <idCode>RE</idCode>
-        <idValue>Re-delivery charge</idValue>
-    <idCode>RF</idCode>
-        <idValue>Refurbishing charge</idValue>
-    <idCode>RH</idCode>
-        <idValue>Rail wagon hire</idValue>
-    <idCode>RO</idCode>
-        <idValue>Roe allowance/charge</idValue>
-    <idCode>RP</idCode>
-        <idValue>Repair charge</idValue>
-    <idCode>RV</idCode>
-        <idValue>Freight charge/costs of loading</idValue>
-    <idCode>SA</idCode>
-        <idValue>Salvage</idValue>
-    <idCode>SAA</idCode>
-        <idValue>Shipping and handling</idValue>
-    <idCode>SAB</idCode>
-        <idValue>Special allowance</idValue>
-    <idCode>SAC</idCode>
-        <idValue>Special credit</idValue>
-    <idCode>SAD</idCode>
-        <idValue>Special packaging</idValue>
-    <idCode>SAE</idCode>
-        <idValue>Stamping</idValue>
-    <idCode>SAF</idCode>
-        <idValue>Supplemental items</idValue>
-    <idCode>SAG</idCode>
-        <idValue>Surcharge (dollar value)</idValue>
-    <idCode>SAH</idCode>
-        <idValue>Surcharge (percentage)</idValue>
-    <idCode>SAI</idCode>
-        <idValue>Shipper load, consignee unload</idValue>
-    <idCode>SAJ</idCode>
-        <idValue>Small packages charge</idValue>
-    <idCode>SC</idCode>
-        <idValue>Surcharge</idValue>
-    <idCode>SD</idCode>
-        <idValue>Shrinkage allowance</idValue>
-    <idCode>SF</idCode>
-        <idValue>Special rebate</idValue>
-    <idCode>SG</idCode>
-        <idValue>Shrink-wrap charge</idValue>
-    <idCode>SH</idCode>
-        <idValue>Special handling service</idValue>
-    <idCode>SM</idCode>
-        <idValue>Special finish</idValue>
-    <idCode>ST</idCode>
-        <idValue>Stamp duties</idValue>
-    <idCode>SU</idCode>
-        <idValue>Set-up</idValue>
-    <idCode>SZ</idCode>
-        <idValue>Steel surcharge</idValue>
-    <idCode>TAA</idCode>
-        <idValue>Telephone charge</idValue>
-    <idCode>TAB</idCode>
-        <idValue>Tank rental</idValue>
-    <idCode>TAC</idCode>
-        <idValue>Testing charge</idValue>
-    <idCode>TAD</idCode>
-        <idValue>Testing allowance</idValue>
-    <idCode>TAE</idCode>
-        <idValue>Truckload discount</idValue>
-    <idCode>TD</idCode>
-        <idValue>Trade discount</idValue>
-    <idCode>TS</idCode>
-        <idValue>State tax</idValue>
-    <idCode>TT</idCode>
-        <idValue>Transportation - third party billing</idValue>
-    <idCode>TV</idCode>
-        <idValue>Transportation - vendor provided</idValue>
-    <idCode>TX</idCode>
-        <idValue>Tax</idValue>
-    <idCode>TZ</idCode>
-        <idValue>Temporary allowance</idValue>
-    <idCode>UM</idCode>
-        <idValue>Unsaleable merchandise allowance</idValue>
-    <idCode>V1</idCode>
-        <idValue>Drop yard</idValue>
-    <idCode>V2</idCode>
-        <idValue>Drop dock</idValue>
-    <idCode>VAA</idCode>
-        <idValue>Vendor freight</idValue>
-    <idCode>VAB</idCode>
-        <idValue>Volume discount</idValue>
-    <idCode>VL</idCode>
-        <idValue>Vehicle load allowance</idValue>
-    <idCode>WH</idCode>
-        <idValue>Warehousing</idValue>
-    <idCode>XAA</idCode>
-        <idValue>Combine all same day shipment</idValue>
-    <idCode>YY</idCode>
-        <idValue>Split pickup</idValue>
-    <idCode>ZZZ</idCode>
-        <idValue>Mutually defined</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>AA <idValue>Advertising allowance</idValue>
+	</idCode>
+	<idCode>AAA <idValue>Telecommunication charges</idValue>
+	</idCode>
+	<idCode>AAB <idValue>Returned goods charges</idValue>
+	</idCode>
+	<idCode>AAC <idValue>Modification costs</idValue>
+	</idCode>
+	<idCode>AAD <idValue>Job-order production</idValue>
+	</idCode>
+	<idCode>AAE <idValue>Outlays</idValue>
+	</idCode>
+	<idCode>AAF <idValue>Off-premises surcharge</idValue>
+	</idCode>
+	<idCode>AAG <idValue>Gold surcharge</idValue>
+	</idCode>
+	<idCode>AAH <idValue>Processing surcharge</idValue>
+	</idCode>
+	<idCode>AAI <idValue>Attestation fee</idValue>
+	</idCode>
+	<idCode>AAJ <idValue>Copper surcharge</idValue>
+	</idCode>
+	<idCode>AAK <idValue>Energy surcharge</idValue>
+	</idCode>
+	<idCode>AAL <idValue>Deduction for missing parts</idValue>
+	</idCode>
+	<idCode>AAM <idValue>Rubber surcharge</idValue>
+	</idCode>
+	<idCode>AAN <idValue>Brass surcharge</idValue>
+	</idCode>
+	<idCode>AAO <idValue>Material surcharge/deduction</idValue>
+	</idCode>
+	<idCode>AAP <idValue>Lead surcharge</idValue>
+	</idCode>
+	<idCode>AAQ <idValue>Price index surcharge</idValue>
+	</idCode>
+	<idCode>AAR <idValue>Platinum surcharge</idValue>
+	</idCode>
+	<idCode>AAS <idValue>Acceptance cost</idValue>
+	</idCode>
+	<idCode>AAT <idValue>Rush delivery</idValue>
+	</idCode>
+	<idCode>AAU <idValue>Selenium surcharge</idValue>
+	</idCode>
+	<idCode>AAV <idValue>Special construction charge</idValue>
+	</idCode>
+	<idCode>AAW <idValue>Deduction for delayed return</idValue>
+	</idCode>
+	<idCode>AAX <idValue>Wolfram surcharge</idValue>
+	</idCode>
+	<idCode>AAY <idValue>Airport fee</idValue>
+	</idCode>
+	<idCode>AAZ <idValue>Concession fee</idValue>
+	</idCode>
+	<idCode>ABA <idValue>Compulsory storage fee</idValue>
+	</idCode>
+	<idCode>ABB <idValue>Defuel</idValue>
+	</idCode>
+	<idCode>ABC <idValue>Into plane fee</idValue>
+	</idCode>
+	<idCode>ABD <idValue>Overtime</idValue>
+	</idCode>
+	<idCode>ABE <idValue>Reservicing charge</idValue>
+	</idCode>
+	<idCode>ABF <idValue>Tooling cost</idValue>
+	</idCode>
+	<idCode>ABG <idValue>Tooling charge</idValue>
+	</idCode>
+	<idCode>ABH <idValue>Throughput allowance</idValue>
+	</idCode>
+	<idCode>ABI <idValue>Superfund fee</idValue>
+	</idCode>
+	<idCode>ABJ <idValue>Airport system fee</idValue>
+	</idCode>
+	<idCode>ABK <idValue>Miscellaneous</idValue>
+	</idCode>
+	<idCode>ABL <idValue>Packaging surcharge</idValue>
+	</idCode>
+	<idCode>ABM <idValue>Scrap surcharge</idValue>
+	</idCode>
+	<idCode>ABN <idValue>Dunnage charge</idValue>
+	</idCode>
+	<idCode>ABO <idValue>Air freight transportation</idValue>
+	</idCode>
+	<idCode>ABP <idValue>Carriage charge</idValue>
+	</idCode>
+	<idCode>ABQ <idValue>Tonnage rebate</idValue>
+	</idCode>
+	<idCode>ABR <idValue>Containerisation</idValue>
+	</idCode>
+	<idCode>ABS <idValue>Carton packing</idValue>
+	</idCode>
+	<idCode>ABT <idValue>Hessian wrapped</idValue>
+	</idCode>
+	<idCode>ABU <idValue>Polyethylene wrap packing</idValue>
+	</idCode>
+	<idCode>ABV <idValue>Miscellaneous customs charge</idValue>
+	</idCode>
+	<idCode>ABW <idValue>Customs duty charge</idValue>
+	</idCode>
+	<idCode>ABX <idValue>Miscellaneous special tooling charge</idValue>
+	</idCode>
+	<idCode>ABY <idValue>Tooling amortisation</idValue>
+	</idCode>
+	<idCode>ABZ <idValue>Miscellaneous rebate or discount</idValue>
+	</idCode>
+	<idCode>ACA <idValue>Allowance</idValue>
+	</idCode>
+	<idCode>ACB <idValue>Future discount off retail</idValue>
+	</idCode>
+	<idCode>ACC <idValue>Miscellaneous setting costs (tooling)</idValue>
+	</idCode>
+	<idCode>ACD <idValue>Minimum amount costs for quantity based surcharges</idValue>
+	</idCode>
+	<idCode>ACE <idValue>Below schedule quantity after quantity-based surcharge</idValue>
+	</idCode>
+	<idCode>ACF <idValue>Miscellaneous treatment</idValue>
+	</idCode>
+	<idCode>ACG <idValue>Enamelling treatment</idValue>
+	</idCode>
+	<idCode>ACH <idValue>Heat treatment</idValue>
+	</idCode>
+	<idCode>ACI <idValue>Plating treatment</idValue>
+	</idCode>
+	<idCode>ACJ <idValue>Painting</idValue>
+	</idCode>
+	<idCode>ACK <idValue>Polishing</idValue>
+	</idCode>
+	<idCode>ACL <idValue>Priming</idValue>
+	</idCode>
+	<idCode>ACM <idValue>Preservation treatment</idValue>
+	</idCode>
+	<idCode>ACN <idValue>Miscellaneous other surcharges</idValue>
+	</idCode>
+	<idCode>ACO <idValue>Alloy surcharge</idValue>
+	</idCode>
+	<idCode>ACP <idValue>Coke surcharge</idValue>
+	</idCode>
+	<idCode>ACQ <idValue>Royalty surcharge</idValue>
+	</idCode>
+	<idCode>ACR <idValue>Wheel handling charge</idValue>
+	</idCode>
+	<idCode>ACS <idValue>Fitting surcharge</idValue>
+	</idCode>
+	<idCode>ACT <idValue>Non-standard surcharge</idValue>
+	</idCode>
+	<idCode>ACU <idValue>Standard surcharge</idValue>
+	</idCode>
+	<idCode>ACV <idValue>Wheel surcharge</idValue>
+	</idCode>
+	<idCode>ACW <idValue>Washer surcharge</idValue>
+	</idCode>
+	<idCode>ACX <idValue>Ocean freight charge</idValue>
+	</idCode>
+	<idCode>ACY <idValue>Container deposit charge</idValue>
+	</idCode>
+	<idCode>ACZ <idValue>Damaged merchandise</idValue>
+	</idCode>
+	<idCode>ADA <idValue>Bopsheet charge</idValue>
+	</idCode>
+	<idCode>ADB <idValue>Drum deposit</idValue>
+	</idCode>
+	<idCode>ADC <idValue>Consolidation</idValue>
+	</idCode>
+	<idCode>ADD <idValue>Inland transportation</idValue>
+	</idCode>
+	<idCode>ADE <idValue>Bill of lading charge</idValue>
+	</idCode>
+	<idCode>ADF <idValue>Excise tax-destination</idValue>
+	</idCode>
+	<idCode>ADG <idValue>Customs bond charge</idValue>
+	</idCode>
+	<idCode>ADH <idValue>Per pound charge</idValue>
+	</idCode>
+	<idCode>ADI <idValue>Royalties</idValue>
+	</idCode>
+	<idCode>ADJ <idValue>Airbag charge</idValue>
+	</idCode>
+	<idCode>ADK <idValue>Transfer charge</idValue>
+	</idCode>
+	<idCode>ADL <idValue>Slipsheet charge</idValue>
+	</idCode>
+	<idCode>ADM <idValue>Binding services</idValue>
+	</idCode>
+	<idCode>ADN <idValue>Repair or replacement of broken returnable package</idValue>
+	</idCode>
+	<idCode>ADO <idValue>Efficient logistics</idValue>
+	</idCode>
+	<idCode>ADP <idValue>Merchandising</idValue>
+	</idCode>
+	<idCode>ADQ <idValue>Product mix</idValue>
+	</idCode>
+	<idCode>ADR <idValue>Other services</idValue>
+	</idCode>
+	<idCode>ADS <idValue>Full pallet ordering</idValue>
+	</idCode>
+	<idCode>ADT <idValue>Pick-up</idValue>
+	</idCode>
+	<idCode>ADU <idValue>Handling by the 1st level sub-contractor</idValue>
+	</idCode>
+	<idCode>ADV <idValue>Handling by the 2nd level sub-contractor</idValue>
+	</idCode>
+	<idCode>ADX <idValue>Handling by the contractor</idValue>
+	</idCode>
+	<idCode>ADY <idValue>New product introduction</idValue>
+	</idCode>
+	<idCode>ADZ <idValue>Direct delivery</idValue>
+	</idCode>
+	<idCode>AEA <idValue>Diversion</idValue>
+	</idCode>
+	<idCode>AEB <idValue>Disconnect</idValue>
+	</idCode>
+	<idCode>AEC <idValue>Distribution</idValue>
+	</idCode>
+	<idCode>AED <idValue>Handling of hazardous cargo</idValue>
+	</idCode>
+	<idCode>AEF <idValue>Rents and leases</idValue>
+	</idCode>
+	<idCode>AEG <idValue>System usage</idValue>
+	</idCode>
+	<idCode>AEH <idValue>Location differential</idValue>
+	</idCode>
+	<idCode>AEI <idValue>Aircraft refueling</idValue>
+	</idCode>
+	<idCode>AEJ <idValue>Fuel shipped into storage</idValue>
+	</idCode>
+	<idCode>AG <idValue>Silver surcharge</idValue>
+	</idCode>
+	<idCode>AJ <idValue>Adjustments</idValue>
+	</idCode>
+	<idCode>AL <idValue>Aluminium surcharge</idValue>
+	</idCode>
+	<idCode>AM <idValue>Additional material</idValue>
+	</idCode>
+	<idCode>AU <idValue>Authentication charge</idValue>
+	</idCode>
+	<idCode>CA <idValue>Cataloguing services</idValue>
+	</idCode>
+	<idCode>CAA <idValue>Cancellation charge</idValue>
+	</idCode>
+	<idCode>CAB <idValue>Cartage</idValue>
+	</idCode>
+	<idCode>CAC <idValue>Cash discount</idValue>
+	</idCode>
+	<idCode>CAD <idValue>Certification fee</idValue>
+	</idCode>
+	<idCode>CAE <idValue>Certificate of conformance</idValue>
+	</idCode>
+	<idCode>CAF <idValue>Certificate of origin</idValue>
+	</idCode>
+	<idCode>CAG <idValue>Competitive allowance</idValue>
+	</idCode>
+	<idCode>CAH <idValue>Competitive auto allowance</idValue>
+	</idCode>
+	<idCode>CAI <idValue>Cutting charge</idValue>
+	</idCode>
+	<idCode>CAJ <idValue>Consular costs</idValue>
+	</idCode>
+	<idCode>CAK <idValue>Customer collection rebate</idValue>
+	</idCode>
+	<idCode>CB <idValue>Commission</idValue>
+	</idCode>
+	<idCode>CD <idValue>Car loading</idValue>
+	</idCode>
+	<idCode>CG <idValue>Cleaning charge</idValue>
+	</idCode>
+	<idCode>CK <idValue>COD charge</idValue>
+	</idCode>
+	<idCode>CL <idValue>Contract allowance</idValue>
+	</idCode>
+	<idCode>CO <idValue>Cents off</idValue>
+	</idCode>
+	<idCode>CP <idValue>Competitive price</idValue>
+	</idCode>
+	<idCode>CS <idValue>Cigarette stamping</idValue>
+	</idCode>
+	<idCode>CT <idValue>Count and recount</idValue>
+	</idCode>
+	<idCode>CW <idValue>Container allowance</idValue>
+	</idCode>
+	<idCode>DA <idValue>Defective allowance</idValue>
+	</idCode>
+	<idCode>DAA <idValue>Deficit freight</idValue>
+	</idCode>
+	<idCode>DAB <idValue>Layout/design</idValue>
+	</idCode>
+	<idCode>DAD <idValue>Driver assigned unloading</idValue>
+	</idCode>
+	<idCode>DAE <idValue>Distributor discount/allowance</idValue>
+	</idCode>
+	<idCode>DI <idValue>Discount</idValue>
+	</idCode>
+	<idCode>DL <idValue>Delivery</idValue>
+	</idCode>
+	<idCode>DM <idValue>Demurrage</idValue>
+	</idCode>
+	<idCode>EAA <idValue>Early buy allowance</idValue>
+	</idCode>
+	<idCode>EAB <idValue>Early payment allowance</idValue>
+	</idCode>
+	<idCode>EG <idValue>Engraving</idValue>
+	</idCode>
+	<idCode>EP <idValue>Expediting premium</idValue>
+	</idCode>
+	<idCode>ER <idValue>Exchange rate guarantee charge</idValue>
+	</idCode>
+	<idCode>EX <idValue>Export shipping charge</idValue>
+	</idCode>
+	<idCode>FA <idValue>Freight allowance</idValue>
+	</idCode>
+	<idCode>FAA <idValue>Fabrication charge</idValue>
+	</idCode>
+	<idCode>FAB <idValue>Freight equalization</idValue>
+	</idCode>
+	<idCode>FAC <idValue>Freight surcharge</idValue>
+	</idCode>
+	<idCode>FC <idValue>Freight charge</idValue>
+	</idCode>
+	<idCode>FG <idValue>Free goods</idValue>
+	</idCode>
+	<idCode>FH <idValue>Filling/handling charge</idValue>
+	</idCode>
+	<idCode>FI <idValue>Finance charge</idValue>
+	</idCode>
+	<idCode>FN <idValue>Special finish charge</idValue>
+	</idCode>
+	<idCode>FR <idValue>Flat rate</idValue>
+	</idCode>
+	<idCode>GAA <idValue>Grinding</idValue>
+	</idCode>
+	<idCode>HAA <idValue>Hose charge</idValue>
+	</idCode>
+	<idCode>HD <idValue>Handling</idValue>
+	</idCode>
+	<idCode>HH <idValue>Hoisting and hauling</idValue>
+	</idCode>
+	<idCode>IA <idValue>Invoice adjustment</idValue>
+	</idCode>
+	<idCode>IAA <idValue>Installation</idValue>
+	</idCode>
+	<idCode>IAB <idValue>Installation and warranty</idValue>
+	</idCode>
+	<idCode>ID <idValue>Inside delivery charge</idValue>
+	</idCode>
+	<idCode>IF <idValue>Inspection fee</idValue>
+	</idCode>
+	<idCode>IN <idValue>Insurance</idValue>
+	</idCode>
+	<idCode>IR <idValue>Installation and training</idValue>
+	</idCode>
+	<idCode>IS <idValue>Invoice services</idValue>
+	</idCode>
+	<idCode>KO <idValue>Koshering</idValue>
+	</idCode>
+	<idCode>L1 <idValue>Shipper load, carrier count</idValue>
+	</idCode>
+	<idCode>LA <idValue>Labelling</idValue>
+	</idCode>
+	<idCode>LAA <idValue>Labour charge</idValue>
+	</idCode>
+	<idCode>LAB <idValue>Labour (repair and return orders)</idValue>
+	</idCode>
+	<idCode>LAC <idValue>License fee</idValue>
+	</idCode>
+	<idCode>LF <idValue>Legalisation fee</idValue>
+	</idCode>
+	<idCode>LS <idValue>Local sales tax</idValue>
+	</idCode>
+	<idCode>MA <idValue>Material allowance (special materials)</idValue>
+	</idCode>
+	<idCode>MAA <idValue>Mileage or travel</idValue>
+	</idCode>
+	<idCode>MAB <idValue>Mileage fee (for repair and return)</idValue>
+	</idCode>
+	<idCode>MAC <idValue>Minimum order/minimum billing charge</idValue>
+	</idCode>
+	<idCode>MAD <idValue>Monthly rental</idValue>
+	</idCode>
+	<idCode>MAE <idValue>Mounting</idValue>
+	</idCode>
+	<idCode>MC <idValue>Material surcharge (special materials)</idValue>
+	</idCode>
+	<idCode>MI <idValue>Mail invoice</idValue>
+	</idCode>
+	<idCode>ML <idValue>Mail invoice to each location</idValue>
+	</idCode>
+	<idCode>NAA <idValue>Non-returnable containers</idValue>
+	</idCode>
+	<idCode>OA <idValue>Outside cable connectors</idValue>
+	</idCode>
+	<idCode>OAA <idValue>Overtime loading</idValue>
+	</idCode>
+	<idCode>PA <idValue>Pack invoice with shipment</idValue>
+	</idCode>
+	<idCode>PAA <idValue>Phosphatizing (steel treatment)</idValue>
+	</idCode>
+	<idCode>PAB <idValue>Postage charge</idValue>
+	</idCode>
+	<idCode>PAC <idValue>Premium charge</idValue>
+	</idCode>
+	<idCode>PAD <idValue>Promotional allowance</idValue>
+	</idCode>
+	<idCode>PAE <idValue>Promotional discount</idValue>
+	</idCode>
+	<idCode>PC <idValue>Packing</idValue>
+	</idCode>
+	<idCode>PD <idValue>Palladium surcharge</idValue>
+	</idCode>
+	<idCode>PI <idValue>Pick-up allowance</idValue>
+	</idCode>
+	<idCode>PL <idValue>Palletizing</idValue>
+	</idCode>
+	<idCode>PN <idValue>Pallet charge</idValue>
+	</idCode>
+	<idCode>PO <idValue>Per order charge</idValue>
+	</idCode>
+	<idCode>QAA <idValue>Quantity surcharge</idValue>
+	</idCode>
+	<idCode>QD <idValue>Quantity discount</idValue>
+	</idCode>
+	<idCode>RAA <idValue>Rebate</idValue>
+	</idCode>
+	<idCode>RAB <idValue>Repack charge</idValue>
+	</idCode>
+	<idCode>RAC <idValue>Repair</idValue>
+	</idCode>
+	<idCode>RAD <idValue>Returnable container</idValue>
+	</idCode>
+	<idCode>RAE <idValue>Resellers discount</idValue>
+	</idCode>
+	<idCode>RAF <idValue>Restocking charge</idValue>
+	</idCode>
+	<idCode>RAG <idValue>Roll rebate</idValue>
+	</idCode>
+	<idCode>RAH <idValue>Road/rail tanker rebate</idValue>
+	</idCode>
+	<idCode>RE <idValue>Re-delivery charge</idValue>
+	</idCode>
+	<idCode>RF <idValue>Refurbishing charge</idValue>
+	</idCode>
+	<idCode>RH <idValue>Rail wagon hire</idValue>
+	</idCode>
+	<idCode>RO <idValue>Roe allowance/charge</idValue>
+	</idCode>
+	<idCode>RP <idValue>Repair charge</idValue>
+	</idCode>
+	<idCode>RV <idValue>Freight charge/costs of loading</idValue>
+	</idCode>
+	<idCode>SA <idValue>Salvage</idValue>
+	</idCode>
+	<idCode>SAA <idValue>Shipping and handling</idValue>
+	</idCode>
+	<idCode>SAB <idValue>Special allowance</idValue>
+	</idCode>
+	<idCode>SAC <idValue>Special credit</idValue>
+	</idCode>
+	<idCode>SAD <idValue>Special packaging</idValue>
+	</idCode>
+	<idCode>SAE <idValue>Stamping</idValue>
+	</idCode>
+	<idCode>SAF <idValue>Supplemental items</idValue>
+	</idCode>
+	<idCode>SAG <idValue>Surcharge (dollar value)</idValue>
+	</idCode>
+	<idCode>SAH <idValue>Surcharge (percentage)</idValue>
+	</idCode>
+	<idCode>SAI <idValue>Shipper load, consignee unload</idValue>
+	</idCode>
+	<idCode>SAJ <idValue>Small packages charge</idValue>
+	</idCode>
+	<idCode>SC <idValue>Surcharge</idValue>
+	</idCode>
+	<idCode>SD <idValue>Shrinkage allowance</idValue>
+	</idCode>
+	<idCode>SF <idValue>Special rebate</idValue>
+	</idCode>
+	<idCode>SG <idValue>Shrink-wrap charge</idValue>
+	</idCode>
+	<idCode>SH <idValue>Special handling service</idValue>
+	</idCode>
+	<idCode>SM <idValue>Special finish</idValue>
+	</idCode>
+	<idCode>ST <idValue>Stamp duties</idValue>
+	</idCode>
+	<idCode>SU <idValue>Set-up</idValue>
+	</idCode>
+	<idCode>SZ <idValue>Steel surcharge</idValue>
+	</idCode>
+	<idCode>TAA <idValue>Telephone charge</idValue>
+	</idCode>
+	<idCode>TAB <idValue>Tank rental</idValue>
+	</idCode>
+	<idCode>TAC <idValue>Testing charge</idValue>
+	</idCode>
+	<idCode>TAD <idValue>Testing allowance</idValue>
+	</idCode>
+	<idCode>TAE <idValue>Truckload discount</idValue>
+	</idCode>
+	<idCode>TD <idValue>Trade discount</idValue>
+	</idCode>
+	<idCode>TS <idValue>State tax</idValue>
+	</idCode>
+	<idCode>TT <idValue>Transportation - third party billing</idValue>
+	</idCode>
+	<idCode>TV <idValue>Transportation - vendor provided</idValue>
+	</idCode>
+	<idCode>TX <idValue>Tax</idValue>
+	</idCode>
+	<idCode>TZ <idValue>Temporary allowance</idValue>
+	</idCode>
+	<idCode>UM <idValue>Unsaleable merchandise allowance</idValue>
+	</idCode>
+	<idCode>V1 <idValue>Drop yard</idValue>
+	</idCode>
+	<idCode>V2 <idValue>Drop dock</idValue>
+	</idCode>
+	<idCode>VAA <idValue>Vendor freight</idValue>
+	</idCode>
+	<idCode>VAB <idValue>Volume discount</idValue>
+	</idCode>
+	<idCode>VL <idValue>Vehicle load allowance</idValue>
+	</idCode>
+	<idCode>WH <idValue>Warehousing</idValue>
+	</idCode>
+	<idCode>XAA <idValue>Combine all same day shipment</idValue>
+	</idCode>
+	<idCode>YY <idValue>Split pickup</idValue>
+	</idCode>
+	<idCode>ZZZ <idValue>Mutually defined</idValue>
+	</idCode>
 </idList>

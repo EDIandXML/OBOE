@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<idList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/ediRules.xsd">
+	<idCode>
+		U
+		<idValue>U.S. EDI Community of ASC X12, TDCC, and UCS</idValue>
+	</idCode>
+</idList>

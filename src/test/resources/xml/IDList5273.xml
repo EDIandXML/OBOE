@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Value</idValue>
-    <idCode>2</idCode>
-        <idValue>Weight</idValue>
-    <idCode>3</idCode>
-        <idValue>Quantity</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Value</idValue>
+	</idCode>
+	<idCode>2 <idValue>Weight</idValue>
+	</idCode>
+	<idCode>3 <idValue>Quantity</idValue>
+	</idCode>
 </idList>

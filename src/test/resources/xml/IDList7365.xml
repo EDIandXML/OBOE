@@ -1,127 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Message content accepted</idValue>
-    <idCode>2</idCode>
-        <idValue>Message content rejected with comment</idValue>
-    <idCode>3</idCode>
-        <idValue>Message content rejected without comment</idValue>
-    <idCode>4</idCode>
-        <idValue>Goods released</idValue>
-    <idCode>5</idCode>
-        <idValue>Goods required for examination</idValue>
-    <idCode>6</idCode>
-        <idValue>All documents or as specified to be produced</idValue>
-    <idCode>7</idCode>
-        <idValue>Goods detained</idValue>
-    <idCode>8</idCode>
-        <idValue>Goods may move under Customs transfer</idValue>
-    <idCode>9</idCode>
-        <idValue>Declaration accepted awaiting goods arrival</idValue>
-    <idCode>10</idCode>
-        <idValue>Declaration requested</idValue>
-    <idCode>11</idCode>
-        <idValue>Pre-entry information</idValue>
-    <idCode>12</idCode>
-        <idValue>Sender not allowed the message type</idValue>
-    <idCode>13</idCode>
-        <idValue>Message type not supported</idValue>
-    <idCode>14</idCode>
-        <idValue>Error message</idValue>
-    <idCode>15</idCode>
-        <idValue>Response after correction, correction approved</idValue>
-    <idCode>16</idCode>
-        <idValue>Response after correction, correction non approved</idValue>
-    <idCode>17</idCode>
-        <idValue>Message received</idValue>
-    <idCode>18</idCode>
-        <idValue>Request for clearance</idValue>
-    <idCode>19</idCode>
-        <idValue>Bulk goods</idValue>
-    <idCode>20</idCode>
-        <idValue>Cash payment deferred</idValue>
-    <idCode>21</idCode>
-        <idValue>Unsolicited text</idValue>
-    <idCode>22</idCode>
-        <idValue>Export</idValue>
-    <idCode>23</idCode>
-        <idValue>Import</idValue>
-    <idCode>24</idCode>
-        <idValue>Transit</idValue>
-    <idCode>25</idCode>
-        <idValue>Prohibited/restricted goods</idValue>
-    <idCode>26</idCode>
-        <idValue>Container quarantine</idValue>
-    <idCode>27</idCode>
-        <idValue>Onward carriage: immediate export</idValue>
-    <idCode>28</idCode>
-        <idValue>Transhipment</idValue>
-    <idCode>29</idCode>
-        <idValue>Onward carriage: inland clearance</idValue>
-    <idCode>30</idCode>
-        <idValue>Transaction will not be processed until action is taken by sender</idValue>
-    <idCode>31</idCode>
-        <idValue>Transaction cannot be processed by the recipient</idValue>
-    <idCode>32</idCode>
-        <idValue>Transaction accepted</idValue>
-    <idCode>33</idCode>
-        <idValue>Transaction rejected</idValue>
-    <idCode>34</idCode>
-        <idValue>Transaction awaiting processing</idValue>
-    <idCode>35</idCode>
-        <idValue>Transaction unknown</idValue>
-    <idCode>36</idCode>
-        <idValue>Changed information</idValue>
-    <idCode>37</idCode>
-        <idValue>Complete information</idValue>
-    <idCode>38</idCode>
-        <idValue>Manual procedures</idValue>
-    <idCode>39</idCode>
-        <idValue>Unrestow</idValue>
-    <idCode>40</idCode>
-        <idValue>Seal intact</idValue>
-    <idCode>41</idCode>
-        <idValue>Seal not intact</idValue>
-    <idCode>42</idCode>
-        <idValue>Container equipment not damaged</idValue>
-    <idCode>43</idCode>
-        <idValue>Container equipment damaged</idValue>
-    <idCode>44</idCode>
-        <idValue>Status of message</idValue>
-    <idCode>45</idCode>
-        <idValue>Beneficiary&apos;s account number unknown</idValue>
-    <idCode>46</idCode>
-        <idValue>Payee&apos;s account number unknown</idValue>
-    <idCode>47</idCode>
-        <idValue>Payor&apos; account number unknown</idValue>
-    <idCode>48</idCode>
-        <idValue>Correspondent bank not possible</idValue>
-    <idCode>49</idCode>
-        <idValue>Execution date not possible</idValue>
-    <idCode>50</idCode>
-        <idValue>Value date not possible</idValue>
-    <idCode>51</idCode>
-        <idValue>Currency code not possible</idValue>
-    <idCode>52</idCode>
-        <idValue>Invalid decimal number</idValue>
-    <idCode>53</idCode>
-        <idValue>Orders executed (on)</idValue>
-    <idCode>54</idCode>
-        <idValue>Transaction(s) effected and advised (on)</idValue>
-    <idCode>55</idCode>
-        <idValue>Not yet debited</idValue>
-    <idCode>56</idCode>
-        <idValue>Beneficiary is unable to identify the transaction</idValue>
-    <idCode>57</idCode>
-        <idValue>Restowage of cargo</idValue>
-    <idCode>58</idCode>
-        <idValue>Onward carriage: sea clearance</idValue>
-    <idCode>59</idCode>
-        <idValue>Perishable goods</idValue>
-    <idCode>60</idCode>
-        <idValue>Fumigation</idValue>
-    <idCode>ZZZ</idCode>
-        <idValue>Mutually defined</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Message content accepted</idValue>
+	</idCode>
+	<idCode>2 <idValue>Message content rejected with comment</idValue>
+	</idCode>
+	<idCode>3 <idValue>Message content rejected without comment</idValue>
+	</idCode>
+	<idCode>4 <idValue>Goods released</idValue>
+	</idCode>
+	<idCode>5 <idValue>Goods required for examination</idValue>
+	</idCode>
+	<idCode>6 <idValue>All documents or as specified to be produced</idValue>
+	</idCode>
+	<idCode>7 <idValue>Goods detained</idValue>
+	</idCode>
+	<idCode>8 <idValue>Goods may move under Customs transfer</idValue>
+	</idCode>
+	<idCode>9 <idValue>Declaration accepted awaiting goods arrival</idValue>
+	</idCode>
+	<idCode>10 <idValue>Declaration requested</idValue>
+	</idCode>
+	<idCode>11 <idValue>Pre-entry information</idValue>
+	</idCode>
+	<idCode>12 <idValue>Sender not allowed the message type</idValue>
+	</idCode>
+	<idCode>13 <idValue>Message type not supported</idValue>
+	</idCode>
+	<idCode>14 <idValue>Error message</idValue>
+	</idCode>
+	<idCode>15 <idValue>Response after correction, correction approved</idValue>
+	</idCode>
+	<idCode>16 <idValue>Response after correction, correction non approved</idValue>
+	</idCode>
+	<idCode>17 <idValue>Message received</idValue>
+	</idCode>
+	<idCode>18 <idValue>Request for clearance</idValue>
+	</idCode>
+	<idCode>19 <idValue>Bulk goods</idValue>
+	</idCode>
+	<idCode>20 <idValue>Cash payment deferred</idValue>
+	</idCode>
+	<idCode>21 <idValue>Unsolicited text</idValue>
+	</idCode>
+	<idCode>22 <idValue>Export</idValue>
+	</idCode>
+	<idCode>23 <idValue>Import</idValue>
+	</idCode>
+	<idCode>24 <idValue>Transit</idValue>
+	</idCode>
+	<idCode>25 <idValue>Prohibited/restricted goods</idValue>
+	</idCode>
+	<idCode>26 <idValue>Container quarantine</idValue>
+	</idCode>
+	<idCode>27 <idValue>Onward carriage: immediate export</idValue>
+	</idCode>
+	<idCode>28 <idValue>Transhipment</idValue>
+	</idCode>
+	<idCode>29 <idValue>Onward carriage: inland clearance</idValue>
+	</idCode>
+	<idCode>30 <idValue>Transaction will not be processed until action is taken
+		by sender</idValue>
+	</idCode>
+	<idCode>31 <idValue>Transaction cannot be processed by the recipient</idValue>
+	</idCode>
+	<idCode>32 <idValue>Transaction accepted</idValue>
+	</idCode>
+	<idCode>33 <idValue>Transaction rejected</idValue>
+	</idCode>
+	<idCode>34 <idValue>Transaction awaiting processing</idValue>
+	</idCode>
+	<idCode>35 <idValue>Transaction unknown</idValue>
+	</idCode>
+	<idCode>36 <idValue>Changed information</idValue>
+	</idCode>
+	<idCode>37 <idValue>Complete information</idValue>
+	</idCode>
+	<idCode>38 <idValue>Manual procedures</idValue>
+	</idCode>
+	<idCode>39 <idValue>Unrestow</idValue>
+	</idCode>
+	<idCode>40 <idValue>Seal intact</idValue>
+	</idCode>
+	<idCode>41 <idValue>Seal not intact</idValue>
+	</idCode>
+	<idCode>42 <idValue>Container equipment not damaged</idValue>
+	</idCode>
+	<idCode>43 <idValue>Container equipment damaged</idValue>
+	</idCode>
+	<idCode>44 <idValue>Status of message</idValue>
+	</idCode>
+	<idCode>45 <idValue>Beneficiary&apos;s account number unknown</idValue>
+	</idCode>
+	<idCode>46 <idValue>Payee&apos;s account number unknown</idValue>
+	</idCode>
+	<idCode>47 <idValue>Payor&apos; account number unknown</idValue>
+	</idCode>
+	<idCode>48 <idValue>Correspondent bank not possible</idValue>
+	</idCode>
+	<idCode>49 <idValue>Execution date not possible</idValue>
+	</idCode>
+	<idCode>50 <idValue>Value date not possible</idValue>
+	</idCode>
+	<idCode>51 <idValue>Currency code not possible</idValue>
+	</idCode>
+	<idCode>52 <idValue>Invalid decimal number</idValue>
+	</idCode>
+	<idCode>53 <idValue>Orders executed (on)</idValue>
+	</idCode>
+	<idCode>54 <idValue>Transaction(s) effected and advised (on)</idValue>
+	</idCode>
+	<idCode>55 <idValue>Not yet debited</idValue>
+	</idCode>
+	<idCode>56 <idValue>Beneficiary is unable to identify the transaction</idValue>
+	</idCode>
+	<idCode>57 <idValue>Restowage of cargo</idValue>
+	</idCode>
+	<idCode>58 <idValue>Onward carriage: sea clearance</idValue>
+	</idCode>
+	<idCode>59 <idValue>Perishable goods</idValue>
+	</idCode>
+	<idCode>60 <idValue>Fumigation</idValue>
+	</idCode>
+	<idCode>ZZZ <idValue>Mutually defined</idValue>
+	</idCode>
 </idList>

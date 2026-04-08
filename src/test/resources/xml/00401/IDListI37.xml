@@ -1,0 +1,161 @@
+<?xml version="1.0" ?>
+<idList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/ediRules.xsd">
+	<idCode>
+		01
+		<idValue>Equivalent to ISO P01</idValue>
+	</idCode>
+	<idCode>
+		02
+		<idValue>Equivalent to ISO P02</idValue>
+	</idCode>
+	<idCode>
+		03
+		<idValue>Equivalent to ISO P03</idValue>
+	</idCode>
+	<idCode>
+		04
+		<idValue>Equivalent to ISO P04</idValue>
+	</idCode>
+	<idCode>
+		05
+		<idValue>Equivalent to ISO P05</idValue>
+	</idCode>
+	<idCode>
+		06
+		<idValue>Equivalent to ISO P06</idValue>
+	</idCode>
+	<idCode>
+		07
+		<idValue>Equivalent to ISO P07</idValue>
+	</idCode>
+	<idCode>
+		08
+		<idValue>Equivalent to ISO P08</idValue>
+	</idCode>
+	<idCode>
+		09
+		<idValue>Equivalent to ISO P09</idValue>
+	</idCode>
+	<idCode>
+		10
+		<idValue>Equivalent to ISO P10</idValue>
+	</idCode>
+	<idCode>
+		11
+		<idValue>Equivalent to ISO P11</idValue>
+	</idCode>
+	<idCode>
+		12
+		<idValue>Equivalent to ISO P12</idValue>
+	</idCode>
+	<idCode>
+		13
+		<idValue>Equivalent to ISO M12</idValue>
+	</idCode>
+	<idCode>
+		14
+		<idValue>Equivalent to ISO M11</idValue>
+	</idCode>
+	<idCode>
+		15
+		<idValue>Equivalent to ISO M10</idValue>
+	</idCode>
+	<idCode>
+		16
+		<idValue>Equivalent to ISO M09</idValue>
+	</idCode>
+	<idCode>
+		17
+		<idValue>Equivalent to ISO M08</idValue>
+	</idCode>
+	<idCode>
+		18
+		<idValue>Equivalent to ISO M07</idValue>
+	</idCode>
+	<idCode>
+		19
+		<idValue>Equivalent to ISO M06</idValue>
+	</idCode>
+	<idCode>
+		20
+		<idValue>Equivalent to ISO M05</idValue>
+	</idCode>
+	<idCode>
+		21
+		<idValue>Equivalent to ISO M04</idValue>
+	</idCode>
+	<idCode>
+		22
+		<idValue>Equivalent to ISO M03</idValue>
+	</idCode>
+	<idCode>
+		23
+		<idValue>Equivalent to ISO M02</idValue>
+	</idCode>
+	<idCode>
+		24
+		<idValue>Equivalent to ISO M01</idValue>
+	</idCode>
+	<idCode>
+		CD
+		<idValue>Central Daylight Time</idValue>
+	</idCode>
+	<idCode>
+		CS
+		<idValue>Central Standard Time</idValue>
+	</idCode>
+	<idCode>
+		CT
+		<idValue>Central Time</idValue>
+	</idCode>
+	<idCode>
+		ED
+		<idValue>Eastern Daylight Time</idValue>
+	</idCode>
+	<idCode>
+		ES
+		<idValue>Eastern Standard Time</idValue>
+	</idCode>
+	<idCode>
+		ET
+		<idValue>Eastern Time</idValue>
+	</idCode>
+	<idCode>
+		GM
+		<idValue>Greenwich Mean Time</idValue>
+	</idCode>
+	<idCode>
+		LT
+		<idValue>Local Time</idValue>
+	</idCode>
+	<idCode>
+		MD
+		<idValue>Mountain Daylight Time</idValue>
+	</idCode>
+	<idCode>
+		MS
+		<idValue>Mountain Standard Time</idValue>
+	</idCode>
+	<idCode>
+		MT
+		<idValue>Mountain Time</idValue>
+	</idCode>
+	<idCode>
+		PD
+		<idValue>Pacific Daylight Time</idValue>
+	</idCode>
+	<idCode>
+		PS
+		<idValue>Pacific Standard Time</idValue>
+	</idCode>
+	<idCode>
+		PT
+		<idValue>Pacific Time</idValue>
+	</idCode>
+	<idCode>
+		UT
+		<idValue>Universal Time Coordinate</idValue>
+		 
+	</idCode>
+	</idList>

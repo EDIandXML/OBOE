@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>D</idCode>
-        <idValue>Header/detail section separation</idValue>
-    <idCode>S</idCode>
-        <idValue>Detail/summary section separation</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>D <idValue>Header/detail section separation</idValue>
+	</idCode>
+	<idCode>S <idValue>Detail/summary section separation</idValue>
+	</idCode>
 </idList>

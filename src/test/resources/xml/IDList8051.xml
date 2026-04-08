@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Inland transport</idValue>
-    <idCode>2</idCode>
-        <idValue>At the statistical territory limit</idValue>
-    <idCode>10</idCode>
-        <idValue>Pre-carriage transport</idValue>
-    <idCode>11</idCode>
-        <idValue>At border</idValue>
-    <idCode>12</idCode>
-        <idValue>At departure</idValue>
-    <idCode>13</idCode>
-        <idValue>At destination</idValue>
-    <idCode>14</idCode>
-        <idValue>At the statistical territory limit</idValue>
-    <idCode>20</idCode>
-        <idValue>Main-carriage transport</idValue>
-    <idCode>21</idCode>
-        <idValue>Main carriage - first carrier</idValue>
-    <idCode>22</idCode>
-        <idValue>Main carriage - second carrier</idValue>
-    <idCode>23</idCode>
-        <idValue>Main carriage - third carrier</idValue>
-    <idCode>30</idCode>
-        <idValue>On-carriage transport</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Inland transport</idValue>
+	</idCode>
+	<idCode>2 <idValue>At the statistical territory limit</idValue>
+	</idCode>
+	<idCode>10 <idValue>Pre-carriage transport</idValue>
+	</idCode>
+	<idCode>11 <idValue>At border</idValue>
+	</idCode>
+	<idCode>12 <idValue>At departure</idValue>
+	</idCode>
+	<idCode>13 <idValue>At destination</idValue>
+	</idCode>
+	<idCode>14 <idValue>At the statistical territory limit</idValue>
+	</idCode>
+	<idCode>20 <idValue>Main-carriage transport</idValue>
+	</idCode>
+	<idCode>21 <idValue>Main carriage - first carrier</idValue>
+	</idCode>
+	<idCode>22 <idValue>Main carriage - second carrier</idValue>
+	</idCode>
+	<idCode>23 <idValue>Main carriage - third carrier</idValue>
+	</idCode>
+	<idCode>30 <idValue>On-carriage transport</idValue>
+	</idCode>
 </idList>

@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Firm</idValue>
-    <idCode>2</idCode>
-        <idValue>Commitment for manufacturing and material</idValue>
-    <idCode>3</idCode>
-        <idValue>Commitment for material</idValue>
-    <idCode>4</idCode>
-        <idValue>Planning/forecast</idValue>
-    <idCode>5</idCode>
-        <idValue>Short delivered on previous delivery</idValue>
-    <idCode>6</idCode>
-        <idValue>Capacity available</idValue>
-    <idCode>9</idCode>
-        <idValue>User defined</idValue>
-    <idCode>10</idCode>
-        <idValue>Immediate</idValue>
-    <idCode>11</idCode>
-        <idValue>Pilot/Pre-volume</idValue>
-    <idCode>12</idCode>
-        <idValue>Planning</idValue>
-    <idCode>13</idCode>
-        <idValue>Potential order increase</idValue>
-    <idCode>14</idCode>
-        <idValue>Average plant usage</idValue>
-    <idCode>15</idCode>
-        <idValue>First time reported firm</idValue>
-    <idCode>16</idCode>
-        <idValue>Maximum</idValue>
-    <idCode>17</idCode>
-        <idValue>Tooling capacity</idValue>
-    <idCode>18</idCode>
-        <idValue>Normal tooling capacity</idValue>
-    <idCode>19</idCode>
-        <idValue>Prototype</idValue>
-    <idCode>20</idCode>
-        <idValue>Strike protection</idValue>
-    <idCode>21</idCode>
-        <idValue>Required tooling capacity</idValue>
-    <idCode>22</idCode>
-        <idValue>Deliver to schedule</idValue>
-    <idCode>23</idCode>
-        <idValue>Await manual pull</idValue>
-    <idCode>24</idCode>
-        <idValue>Reference to commercial agreement between partners</idValue>
-    <idCode>25</idCode>
-        <idValue>Reference to commercial agreement between partners</idValue>
-    <idCode>26</idCode>
-        <idValue>Proposed</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Firm</idValue>
+	</idCode>
+	<idCode>2 <idValue>Commitment for manufacturing and material</idValue>
+	</idCode>
+	<idCode>3 <idValue>Commitment for material</idValue>
+	</idCode>
+	<idCode>4 <idValue>Planning/forecast</idValue>
+	</idCode>
+	<idCode>5 <idValue>Short delivered on previous delivery</idValue>
+	</idCode>
+	<idCode>6 <idValue>Capacity available</idValue>
+	</idCode>
+	<idCode>9 <idValue>User defined</idValue>
+	</idCode>
+	<idCode>10 <idValue>Immediate</idValue>
+	</idCode>
+	<idCode>11 <idValue>Pilot/Pre-volume</idValue>
+	</idCode>
+	<idCode>12 <idValue>Planning</idValue>
+	</idCode>
+	<idCode>13 <idValue>Potential order increase</idValue>
+	</idCode>
+	<idCode>14 <idValue>Average plant usage</idValue>
+	</idCode>
+	<idCode>15 <idValue>First time reported firm</idValue>
+	</idCode>
+	<idCode>16 <idValue>Maximum</idValue>
+	</idCode>
+	<idCode>17 <idValue>Tooling capacity</idValue>
+	</idCode>
+	<idCode>18 <idValue>Normal tooling capacity</idValue>
+	</idCode>
+	<idCode>19 <idValue>Prototype</idValue>
+	</idCode>
+	<idCode>20 <idValue>Strike protection</idValue>
+	</idCode>
+	<idCode>21 <idValue>Required tooling capacity</idValue>
+	</idCode>
+	<idCode>22 <idValue>Deliver to schedule</idValue>
+	</idCode>
+	<idCode>23 <idValue>Await manual pull</idValue>
+	</idCode>
+	<idCode>24 <idValue>Reference to commercial agreement between partners</idValue>
+	</idCode>
+	<idCode>25 <idValue>Reference to commercial agreement between partners</idValue>
+	</idCode>
+	<idCode>26 <idValue>Proposed</idValue>
+	</idCode>
 </idList>

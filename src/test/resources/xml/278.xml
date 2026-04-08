@@ -12,7 +12,8 @@
 			shortName="TransactionSetHeader">
 			<dataElement name="Transaction Set Identifier Code"
 				id="143" sequence="1"
-				description="Code uniquely identifying a Transaction Set" type="AN"
+				description="Code uniquely identifying a Transaction Set"
+				type="AN"
 				required="M" minLength="3" maxLength="3"
 				shortName="transactionSetIdentifierCode">
 			</dataElement>
@@ -38,24 +39,25 @@
 				type="ID" required="M" minLength="4" maxLength="4"
 				shortName="hierarchicalStructureCode">
 				<idList>
-					<idCode>0001</idCode>
-					<idValue>Shipment, Order, Packaging, Item</idValue>
-					<idCode>0002</idCode>
-					<idValue>Shipment, Order, Item, Packaging</idValue>
-					<idCode>0003</idCode>
-					<idValue>Shipment, Packaging, Order, Item</idValue>
+					<idCode> 0001 <idValue>Shipment, Order, Packaging, Item</idValue>
+					</idCode>
+					<idCode> 0002 <idValue>Shipment, Order, Item, Packaging</idValue>
+					</idCode>
+					<idCode> 0003 <idValue>Shipment, Packaging, Order, Item</idValue>
+					</idCode>
 				</idList>
 			</dataElement>
 			<dataElement name="Transaction Set Purpose Code" id="353"
 				sequence="2"
-				description="Code identifying purpose of transaction set" type="ID"
+				description="Code identifying purpose of transaction set"
+				type="ID"
 				required="M" minLength="2" maxLength="2"
 				shortName="transactionSetPurposeCode">
 				<idList>
-					<idCode>00</idCode>
-					<idValue>Original</idValue>
-					<idCode>11</idCode>
-					<idValue>Response</idValue>
+					<idCode> 00 <idValue>Original</idValue>
+					</idCode>
+					<idCode> 11 <idValue>Response</idValue>
+					</idCode>
 				</idList>
 			</dataElement>
 			<dataElement name="Reference Identification" id="127"
@@ -66,19 +68,22 @@
 			</dataElement>
 			<dataElement name="Date" id="373" sequence="4"
 				description="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"
-				type="DT" required="O" minLength="8" maxLength="8" shortName="date">
+				type="DT" required="O" minLength="8" maxLength="8"
+				shortName="date">
 			</dataElement>
 			<dataElement name="Time" id="337" sequence="5"
 				description="Time expressed in 24-hour clock time as follows: HHMM, or HHMMSS, or HHMMSSD, or HHMMSSDD, where H = hours (00-23), M = minutes (00-59), S = integer seconds (00-59) and DD = decimal seconds; decimal seconds are expressed as follows: D = tenths (0-9) and DD = hundredths (00-99)"
-				type="TM" required="O" minLength="4" maxLength="8" shortName="time">
+				type="TM" required="O" minLength="4" maxLength="8"
+				shortName="time">
 			</dataElement>
 			<dataElement name="Transaction Type Code" id="640"
-				sequence="6" description="Code specifying the type of transaction"
+				sequence="6"
+				description="Code specifying the type of transaction"
 				type="ID" required="O" minLength="2" maxLength="2"
 				shortName="transactionTypeCode">
 				<idList>
-					<idCode>19</idCode>
-					<idValue>Response - Further Updates to Follow</idValue>
+					<idCode> 19 <idValue>Response - Further Updates to Follow</idValue>
+					</idCode>
 				</idList>
 			</dataElement>
 		</segment>
@@ -87,7 +92,8 @@
 		<loop name="loopHL" id="loopHL" occurs="-1" required='M'
 			shortName="loopHL">
 			<segment name="Hierarchical Level" id="HL" description=""
-				sequence="100" occurs="1" required='M' shortName="HierarchicalLevel">
+				sequence="100" occurs="1" required='M'
+				shortName="HierarchicalLevel">
 				<dataElement name="Hierarchical ID Number" id="628"
 					sequence="1"
 					description="A unique number assigned by the sender to identify a particular data segment in a hierarchical structure"
@@ -106,10 +112,10 @@
 					type="ID" required="M" minLength="1" maxLength="2"
 					shortName="hierarchicalLevelCode">
 					<idList>
-						<idCode>20</idCode>
-						<idValue>Information Source</idValue>
-						<idCode>21</idCode>
-						<idValue>Information Receiver</idValue>
+						<idCode> 20 <idValue>Information Source</idValue>
+						</idCode>
+						<idCode> 21 <idValue>Information Receiver</idValue>
+						</idCode>
 					</idList>
 				</dataElement>
 				<dataElement name="Hierarchical Child Code" id="736"
@@ -118,12 +124,16 @@
 					type="ID" required="O" minLength="1" maxLength="1"
 					shortName="hierarchicalChildCode">
 					<idList>
-						<idCode>0</idCode>
-						<idValue>No Subordinate HL Segment in This Hierarchical Structure.
-						</idValue>
-						<idCode>1</idCode>
-						<idValue>Additional Subordinate HL Data Segment in This
-							Hierarchical Structure.</idValue>
+						<idCode> 0 <idValue>No Subordinate HL Segment in This
+							Hierarchical
+								Structure.
+							</idValue>
+						</idCode>
+						<idCode> 1 <idValue>Additional Subordinate HL Data
+							Segment in This
+								Hierarchical Structure.
+							</idValue>
+						</idCode>
 					</idList>
 				</dataElement>
 			</segment>
@@ -136,10 +146,10 @@
 					type="ID" required="M" minLength="1" maxLength="2"
 					shortName="traceTypeCode">
 					<idList>
-						<idCode>1</idCode>
-						<idValue>Current Transaction Trace Numbers</idValue>
-						<idCode>2</idCode>
-						<idValue>Referenced Transaction Trace Numbers</idValue>
+						<idCode> 1 <idValue>Current Transaction Trace Numbers</idValue>
+						</idCode>
+						<idCode> 2 <idValue>Referenced Transaction Trace Numbers</idValue>
+						</idCode>
 					</idList>
 				</dataElement>
 				<dataElement name="Reference Identification" id="127"
@@ -163,18 +173,19 @@
 					type="ID" required="M" minLength="1" maxLength="2"
 					shortName="requestCategoryCode">
 					<idList>
-						<idCode>AR</idCode>
-						<idValue>Admission Review</idValue>
+						<idCode> AR <idValue>Admission Review</idValue>
+						</idCode>
 					</idList>
 				</dataElement>
 				<dataElement name="Certification Type Code" id="1322"
 					sequence="2"
-					description="Code indicating the type of certification" type="ID"
+					description="Code indicating the type of certification"
+					type="ID"
 					required="O" minLength="1" maxLength="1"
 					shortName="certificationTypeCode">
 					<idList>
-						<idCode>I</idCode>
-						<idValue>Initial</idValue>
+						<idCode> I <idValue>Initial</idValue>
+						</idCode>
 					</idList>
 				</dataElement>
 				<dataElement name="Service Type Code" id="1365"
@@ -183,10 +194,10 @@
 					type="ID" required="O" minLength="1" maxLength="2"
 					shortName="serviceTypeCode">
 					<idList>
-						<idCode>A4</idCode>
-						<idValue>Psychiatric</idValue>
-						<idCode>A5</idCode>
-						<idValue>Psychiatric - Room and Board</idValue>
+						<idCode> A4 <idValue>Psychiatric</idValue>
+						</idCode>
+						<idCode> A5 <idValue>Psychiatric - Room and Board</idValue>
+						</idCode>
 					</idList>
 				</dataElement>
 				<compositeDE
@@ -205,9 +216,12 @@
 						type="ID" required="O" minLength="1" maxLength="2"
 						shortName="facilityCodeQualifier">
 						<idList>
-							<idCode>B</idCode>
-							<idValue>Place of service code from the FAO record of the
-								Electronic Media Claims National Standard Format</idValue>
+							<idCode> B <idValue>Place of service code from the
+								FAO record of the
+									Electronic Media Claims National Standard
+								Format
+								</idValue>
+							</idCode>
 						</idList>
 					</dataElement>
 				</compositeDE>
@@ -217,10 +231,10 @@
 					type="ID" required="O" minLength="1" maxLength="3"
 					shortName="levelOfServiceCode">
 					<idList>
-						<idCode>03</idCode>
-						<idValue>Emergency</idValue>
-						<idCode>04</idCode>
-						<idValue>24 Hour</idValue>
+						<idCode> 03 <idValue>Emergency</idValue>
+						</idCode>
+						<idCode> 04 <idValue>24 Hour</idValue>
+						</idCode>
 					</idList>
 				</dataElement>
 			</segment>
@@ -229,16 +243,18 @@
 				sequence="500" occurs="1" required='O'
 				shortName="HealthCareServicesReview">
 				<dataElement name="Action Code" id="306" sequence="1"
-					description="Code indicating type of action" type="ID" required="M"
+					description="Code indicating type of action" type="ID"
+					required="M"
 					minLength="1" maxLength="2" shortName="actionCode">
 					<idList>
-						<idCode>A4</idCode>
-						<idValue>Pended</idValue>
+						<idCode> A4 <idValue>Pended</idValue>
+						</idCode>
 					</idList>
 				</dataElement>
 				<dataElement name="Industry Code" id="1271" sequence="3"
 					description="Code indicating a code from a specific industry code list"
-					occurs="5" type="AN" required="O" minLength="1" maxLength="30"
+					occurs="5" type="AN" required="O" minLength="1"
+					maxLength="30"
 					shortName="industryCode">
 				</dataElement>
 			</segment>
@@ -251,8 +267,9 @@
 					type="ID" required="M" minLength="2" maxLength="3"
 					shortName="referenceIdentificationQualifier">
 					<idList>
-						<idCode>NT</idCode>
-						<idValue>Administrator&apos;s Reference Number</idValue>
+						<idCode> NT <idValue>Administrator&apos;s Reference
+							Number</idValue>
+						</idCode>
 					</idList>
 				</dataElement>
 				<dataElement name="Reference Identification" id="127"
@@ -274,24 +291,35 @@
 						type="ID" required="M" minLength="2" maxLength="3"
 						shortName="referenceIdentificationQualifier">
 						<idList>
-							<idCode>01</idCode>
-							<idValue>American Bankers Assoc. (ABA) Transit/Routing Number
-								(Including Check Digit, 9 Digits)</idValue>
-							<idCode>02</idCode>
-							<idValue>Society for Worldwide Interbank Financial
-								Telecommunication (S.W.I.F.T.) Identification (8 or 11
-								Characters)</idValue>
-							<idCode>03</idCode>
-							<idValue>Clearing House Interbank Payment System (CHIPS)
-								Participant Number (3 or 4 Digits)</idValue>
-							<idCode>04</idCode>
-							<idValue>Canadian Financial Institution Branch and Institution
-								Number</idValue>
-							<idCode>05</idCode>
-							<idValue>Clearing House Interbank Payment System (CHIPS) User
-								Identification (6 digits)</idValue>
-							<idCode>06</idCode>
-							<idValue>System Number</idValue>
+							<idCode> 01 <idValue>American Bankers Assoc. (ABA)
+								Transit/Routing Number
+									(Including Check Digit, 9 Digits)
+								</idValue>
+							</idCode>
+							<idCode> 02 <idValue>Society for Worldwide Interbank
+								Financial
+									Telecommunication (S.W.I.F.T.)
+								Identification (8 or 11
+									Characters)
+								</idValue>
+							</idCode>
+							<idCode> 03 <idValue>Clearing House Interbank
+								Payment System (CHIPS)
+									Participant Number (3 or 4 Digits)
+								</idValue>
+							</idCode>
+							<idCode> 04 <idValue>Canadian Financial Institution
+								Branch and Institution
+									Number
+								</idValue>
+							</idCode>
+							<idCode> 05 <idValue>Clearing House Interbank
+								Payment System (CHIPS) User
+									Identification (6 digits)
+								</idValue>
+							</idCode>
+							<idCode> 06 <idValue>System Number</idValue>
+							</idCode>
 						</idList>
 					</dataElement>
 					<dataElement name="Reference Identification" id="127"
@@ -306,24 +334,35 @@
 						type="ID" required="C" minLength="2" maxLength="3"
 						shortName="referenceIdentificationQualifier">
 						<idList>
-							<idCode>01</idCode>
-							<idValue>American Bankers Assoc. (ABA) Transit/Routing Number
-								(Including Check Digit, 9 Digits)</idValue>
-							<idCode>02</idCode>
-							<idValue>Society for Worldwide Interbank Financial
-								Telecommunication (S.W.I.F.T.) Identification (8 or 11
-								Characters)</idValue>
-							<idCode>03</idCode>
-							<idValue>Clearing House Interbank Payment System (CHIPS)
-								Participant Number (3 or 4 Digits)</idValue>
-							<idCode>04</idCode>
-							<idValue>Canadian Financial Institution Branch and Institution
-								Number</idValue>
-							<idCode>05</idCode>
-							<idValue>Clearing House Interbank Payment System (CHIPS) User
-								Identification (6 digits)</idValue>
-							<idCode>07</idCode>
-							<idValue>Add-On System Number</idValue>
+							<idCode> 01 <idValue>American Bankers Assoc. (ABA)
+								Transit/Routing Number
+									(Including Check Digit, 9 Digits)
+								</idValue>
+							</idCode>
+							<idCode> 02 <idValue>Society for Worldwide Interbank
+								Financial
+									Telecommunication (S.W.I.F.T.)
+								Identification (8 or 11
+									Characters)
+								</idValue>
+							</idCode>
+							<idCode> 03 <idValue>Clearing House Interbank
+								Payment System (CHIPS)
+									Participant Number (3 or 4 Digits)
+								</idValue>
+							</idCode>
+							<idCode> 04 <idValue>Canadian Financial Institution
+								Branch and Institution
+									Number
+								</idValue>
+							</idCode>
+							<idCode> 05 <idValue>Clearing House Interbank
+								Payment System (CHIPS) User
+									Identification (6 digits)
+								</idValue>
+							</idCode>
+							<idCode> 07 <idValue>Add-On System Number</idValue>
+							</idCode>
 						</idList>
 					</dataElement>
 					<dataElement name="Reference Identification" id="127"
@@ -338,22 +377,33 @@
 						type="ID" required="C" minLength="2" maxLength="3"
 						shortName="referenceIdentificationQualifier">
 						<idList>
-							<idCode>01</idCode>
-							<idValue>American Bankers Assoc. (ABA) Transit/Routing Number
-								(Including Check Digit, 9 Digits)</idValue>
-							<idCode>02</idCode>
-							<idValue>Society for Worldwide Interbank Financial
-								Telecommunication (S.W.I.F.T.) Identification (8 or 11
-								Characters)</idValue>
-							<idCode>03</idCode>
-							<idValue>Clearing House Interbank Payment System (CHIPS)
-								Participant Number (3 or 4 Digits)</idValue>
-							<idCode>04</idCode>
-							<idValue>Canadian Financial Institution Branch and Institution
-								Number</idValue>
-							<idCode>05</idCode>
-							<idValue>Clearing House Interbank Payment System (CHIPS) User
-								Identification (6 digits)</idValue>
+							<idCode> 01 <idValue>American Bankers Assoc. (ABA)
+								Transit/Routing Number
+									(Including Check Digit, 9 Digits)
+								</idValue>
+							</idCode>
+							<idCode> 02 <idValue>Society for Worldwide Interbank
+								Financial
+									Telecommunication (S.W.I.F.T.)
+								Identification (8 or 11
+									Characters)
+								</idValue>
+							</idCode>
+							<idCode> 03 <idValue>Clearing House Interbank
+								Payment System (CHIPS)
+									Participant Number (3 or 4 Digits)
+								</idValue>
+							</idCode>
+							<idCode> 04 <idValue>Canadian Financial Institution
+								Branch and Institution
+									Number
+								</idValue>
+							</idCode>
+							<idCode> 05 <idValue>Clearing House Interbank
+								Payment System (CHIPS) User
+									Identification (6 digits)
+								</idValue>
+							</idCode>
 						</idList>
 					</dataElement>
 					<dataElement name="Reference Identification" id="127"
@@ -377,8 +427,8 @@
 						type="ID" required="M" minLength="1" maxLength="3"
 						shortName="codeListQualifierCode">
 						<idList>
-							<idCode>BF</idCode>
-							<idValue>Diagnosis</idValue>
+							<idCode> BF <idValue>Diagnosis</idValue>
+							</idCode>
 						</idList>
 					</dataElement>
 					<dataElement name="Industry Code" id="1271"
@@ -393,8 +443,9 @@
 						type="ID" required="C" minLength="2" maxLength="3"
 						shortName="dateTimePeriodFormatQualifier">
 						<idList>
-							<idCode>D8</idCode>
-							<idValue>Date Expressed in Format CCYYMMDD</idValue>
+							<idCode> D8 <idValue>Date Expressed in Format
+								CCYYMMDD</idValue>
+							</idCode>
 						</idList>
 					</dataElement>
 					<dataElement name="Date Time Period" id="1251"
@@ -414,8 +465,8 @@
 					type="ID" required="M" minLength="2" maxLength="2"
 					shortName="reportTypeCode">
 					<idList>
-						<idCode>AS</idCode>
-						<idValue>Admission Summary</idValue>
+						<idCode> AS <idValue>Admission Summary</idValue>
+						</idCode>
 					</idList>
 				</dataElement>
 				<dataElement name="Report Transmission Code" id="756"
@@ -424,8 +475,8 @@
 					type="ID" required="O" minLength="1" maxLength="2"
 					shortName="reportTransmissionCode">
 					<idList>
-						<idCode>VO</idCode>
-						<idValue>Voice</idValue>
+						<idCode> VO <idValue>Voice</idValue>
+						</idCode>
 					</idList>
 				</dataElement>
 			</segment>
@@ -441,27 +492,29 @@
 						type="ID" required="M" minLength="2" maxLength="3"
 						shortName="entityIdentifierCode">
 						<idList>
-							<idCode>71</idCode>
-							<idValue>Attending Physician</idValue>
-							<idCode>FA</idCode>
-							<idValue>Facility</idValue>
-							<idCode>IL</idCode>
-							<idValue>Insured or Subscriber</idValue>
-							<idCode>SJ</idCode>
-							<idValue>Service Provider</idValue>
-							<idCode>X3</idCode>
-							<idValue>Utilization Management Organization</idValue>
+							<idCode> 71 <idValue>Attending Physician</idValue>
+							</idCode>
+							<idCode> FA <idValue>Facility</idValue>
+							</idCode>
+							<idCode> IL <idValue>Insured or Subscriber</idValue>
+							</idCode>
+							<idCode> SJ <idValue>Service Provider</idValue>
+							</idCode>
+							<idCode> X3 <idValue>Utilization Management
+								Organization</idValue>
+							</idCode>
 						</idList>
 					</dataElement>
 					<dataElement name="Entity Type Qualifier" id="1065"
-						sequence="2" description="Code qualifying the type of entity"
+						sequence="2"
+						description="Code qualifying the type of entity"
 						type="ID" required="M" minLength="1" maxLength="1"
 						shortName="entityTypeQualifier">
 						<idList>
-							<idCode>1</idCode>
-							<idValue>Person</idValue>
-							<idCode>2</idCode>
-							<idValue>Non-Person Entity</idValue>
+							<idCode> 1 <idValue>Person</idValue>
+							</idCode>
+							<idCode> 2 <idValue>Non-Person Entity</idValue>
+							</idCode>
 						</idList>
 					</dataElement>
 					<dataElement name="Name Last or Organization Name"
@@ -471,7 +524,8 @@
 						shortName="nameLastOrOrganizationName">
 					</dataElement>
 					<dataElement name="Name First" id="1036" sequence="4"
-						description="Individual first name" type="AN" required="O"
+						description="Individual first name" type="AN"
+						required="O"
 						minLength="1" maxLength="35" shortName="nameFirst">
 					</dataElement>
 					<dataElement name="Identification Code Qualifier"
@@ -480,17 +534,20 @@
 						type="ID" required="C" minLength="1" maxLength="2"
 						shortName="identificationCodeQualifier">
 						<idList>
-							<idCode>24</idCode>
-							<idValue>Employer&apos;s Identification Number</idValue>
-							<idCode>46</idCode>
-							<idValue>Electronic Transmitter Identification Number (ETIN)
-							</idValue>
-							<idCode>MI</idCode>
-							<idValue>Member Identification Number</idValue>
+							<idCode> 24 <idValue>Employer&apos;s Identification
+								Number</idValue>
+							</idCode>
+							<idCode> 46 <idValue>Electronic Transmitter
+								Identification Number (ETIN)
+								</idValue>
+							</idCode>
+							<idCode> MI <idValue>Member Identification Number</idValue>
+							</idCode>
 						</idList>
 					</dataElement>
 					<dataElement name="Identification Code" id="67"
-						sequence="9" description="Code identifying a party or other code"
+						sequence="9"
+						description="Code identifying a party or other code"
 						type="AN" required="C" minLength="2" maxLength="80"
 						shortName="identificationCode">
 					</dataElement>
@@ -507,8 +564,9 @@
 						type="ID" required="M" minLength="2" maxLength="2"
 						shortName="contactFunctionCode">
 						<idList>
-							<idCode>1C</idCode>
-							<idValue>Health Maintenance Organization (HMO) Contact</idValue>
+							<idCode> 1C <idValue>Health Maintenance Organization
+								(HMO) Contact</idValue>
+							</idCode>
 						</idList>
 					</dataElement>
 					<dataElement name="Communication Number Qualifier"
@@ -517,8 +575,8 @@
 						type="ID" required="C" minLength="2" maxLength="2"
 						shortName="communicationNumberQualifier">
 						<idList>
-							<idCode>TE</idCode>
-							<idValue>Telephone</idValue>
+							<idCode> TE <idValue>Telephone</idValue>
+							</idCode>
 						</idList>
 					</dataElement>
 					<dataElement name="Communication Number" id="364"

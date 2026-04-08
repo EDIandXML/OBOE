@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<idList
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-	<idCode>1 <idValue>Transport for the owner&apos;s account</idValue>
-	</idCode>
-	<idCode>2 <idValue>Transport for another account</idValue>
-	</idCode>
-</idList>

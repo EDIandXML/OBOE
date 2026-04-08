@@ -59,12 +59,12 @@
 			sequence="8" description="Transmisstion Priority Code" required="C"
 			minLength="1" maxLength="1" shortName="TransmissionPriority">
 			<idList>
-				<idCode>A</idCode>
-				<idValue>Urgent</idValue>
-				<idCode>B</idCode>
-				<idValue>Normal</idValue>
-				<idCode>C</idCode>
-				<idValue>Low</idValue>
+				<idCode>A <idValue>Urgent</idValue>
+				</idCode>
+				<idCode>B <idValue>Normal</idValue>
+				</idCode>
+				<idCode>C <idValue>Low</idValue>
+				</idCode>
 			</idList>
 		</dataElement>
 	</segment>

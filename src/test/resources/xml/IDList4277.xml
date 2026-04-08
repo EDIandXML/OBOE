@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Draft(s) drawn on issuing bank</idValue>
-    <idCode>2</idCode>
-        <idValue>Draft(s) drawn on advising bank</idValue>
-    <idCode>3</idCode>
-        <idValue>Draft(s) drawn on reimbursing bank</idValue>
-    <idCode>4</idCode>
-        <idValue>Draft(s) drawn on applicant</idValue>
-    <idCode>5</idCode>
-        <idValue>Draft(s) drawn on any other drawee</idValue>
-    <idCode>6</idCode>
-        <idValue>No drafts</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Draft(s) drawn on issuing bank</idValue>
+	</idCode>
+	<idCode>2 <idValue>Draft(s) drawn on advising bank</idValue>
+	</idCode>
+	<idCode>3 <idValue>Draft(s) drawn on reimbursing bank</idValue>
+	</idCode>
+	<idCode>4 <idValue>Draft(s) drawn on applicant</idValue>
+	</idCode>
+	<idCode>5 <idValue>Draft(s) drawn on any other drawee</idValue>
+	</idCode>
+	<idCode>6 <idValue>No drafts</idValue>
+	</idCode>
 </idList>

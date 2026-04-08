@@ -1,1013 +1,1023 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>AAA</idCode>
-        <idValue>Acknowledgement of order number</idValue>
-    <idCode>AAB</idCode>
-        <idValue>Proforma invoice number</idValue>
-    <idCode>AAC</idCode>
-        <idValue>Documentary credit number</idValue>
-    <idCode>AAD</idCode>
-        <idValue>Contract addendum number</idValue>
-    <idCode>AAE</idCode>
-        <idValue>Goods declaration number</idValue>
-    <idCode>AAG</idCode>
-        <idValue>Offer number</idValue>
-    <idCode>AAJ</idCode>
-        <idValue>Delivery order number</idValue>
-    <idCode>AAK</idCode>
-        <idValue>Despatch advice number</idValue>
-    <idCode>AAL</idCode>
-        <idValue>Drawing number</idValue>
-    <idCode>AAM</idCode>
-        <idValue>Waybill number</idValue>
-    <idCode>AAN</idCode>
-        <idValue>Delivery schedule number</idValue>
-    <idCode>AAO</idCode>
-        <idValue>Consignee&apos;s shipment reference number</idValue>
-    <idCode>AAP</idCode>
-        <idValue>Part consignment number</idValue>
-    <idCode>AAQ</idCode>
-        <idValue>Unit load device (e.g. container) identification number</idValue>
-    <idCode>AAS</idCode>
-        <idValue>Transport document number</idValue>
-    <idCode>AAT</idCode>
-        <idValue>Master label number</idValue>
-    <idCode>AAU</idCode>
-        <idValue>Despatch note number</idValue>
-    <idCode>AAV</idCode>
-        <idValue>Enquiry number</idValue>
-    <idCode>AAY</idCode>
-        <idValue>Carrier&apos;s agent reference number</idValue>
-    <idCode>AAZ</idCode>
-        <idValue>Standard Carrier Alpha Code (SCAC) number</idValue>
-    <idCode>ABA</idCode>
-        <idValue>Customs valuation decision number</idValue>
-    <idCode>ABB</idCode>
-        <idValue>End use authorization number</idValue>
-    <idCode>ABC</idCode>
-        <idValue>Anti-dumping case number</idValue>
-    <idCode>ABD</idCode>
-        <idValue>Customs tariff number</idValue>
-    <idCode>ABE</idCode>
-        <idValue>Declarant&apos;s reference number</idValue>
-    <idCode>ABG</idCode>
-        <idValue>Customs decision request number</idValue>
-    <idCode>ABH</idCode>
-        <idValue>Sub-house bill of lading number</idValue>
-    <idCode>ABI</idCode>
-        <idValue>Deferred payment reference</idValue>
-    <idCode>ABJ</idCode>
-        <idValue>Quota number</idValue>
-    <idCode>ABK</idCode>
-        <idValue>Transit (onward carriage) guarantee (bond) number</idValue>
-    <idCode>ABL</idCode>
-        <idValue>Customs guarantee number</idValue>
-    <idCode>ABO</idCode>
-        <idValue>Originator&apos;s reference</idValue>
-    <idCode>ABP</idCode>
-        <idValue>Declarant&apos;s Customs identity number</idValue>
-    <idCode>ABQ</idCode>
-        <idValue>Importer reference number</idValue>
-    <idCode>ABR</idCode>
-        <idValue>Export clearance instruction reference number</idValue>
-    <idCode>ABS</idCode>
-        <idValue>Import clearance instruction reference number</idValue>
-    <idCode>ABT</idCode>
-        <idValue>Customs declaration number</idValue>
-    <idCode>ABU</idCode>
-        <idValue>Article number</idValue>
-    <idCode>ABW</idCode>
-        <idValue>Stock keeping unit number</idValue>
-    <idCode>ABX</idCode>
-        <idValue>Text Element Identifier deletion reference</idValue>
-    <idCode>ABY</idCode>
-        <idValue>Allotment identification (Air)</idValue>
-    <idCode>ABZ</idCode>
-        <idValue>Vehicle licence number</idValue>
-    <idCode>AC</idCode>
-        <idValue>Air cargo transfer manifest</idValue>
-    <idCode>ACA</idCode>
-        <idValue>Cargo acceptance order reference number</idValue>
-    <idCode>ACB</idCode>
-        <idValue>US government agency number</idValue>
-    <idCode>ACC</idCode>
-        <idValue>Shipping unit identification</idValue>
-    <idCode>ACD</idCode>
-        <idValue>Additional reference number</idValue>
-    <idCode>ACE</idCode>
-        <idValue>Related document number</idValue>
-    <idCode>ACF</idCode>
-        <idValue>Addressee reference</idValue>
-    <idCode>ACG</idCode>
-        <idValue>ATA carnet number</idValue>
-    <idCode>ACH</idCode>
-        <idValue>Packaging unit identification</idValue>
-    <idCode>ACI</idCode>
-        <idValue>Outerpackaging unit identification</idValue>
-    <idCode>ACJ</idCode>
-        <idValue>Customer material specification number</idValue>
-    <idCode>ACK</idCode>
-        <idValue>Bank reference</idValue>
-    <idCode>ACL</idCode>
-        <idValue>Principal reference number</idValue>
-    <idCode>ACM</idCode>
-        <idValue>Unique REINAC reference number of the sender</idValue>
-    <idCode>ACN</idCode>
-        <idValue>Advice of collection number</idValue>
-    <idCode>ACO</idCode>
-        <idValue>Iron charge number</idValue>
-    <idCode>ACP</idCode>
-        <idValue>Hot roll number</idValue>
-    <idCode>ACQ</idCode>
-        <idValue>Cold roll number</idValue>
-    <idCode>ACR</idCode>
-        <idValue>Railway wagon number</idValue>
-    <idCode>ACS</idCode>
-        <idValue>Unique CURRAC reference number of the sender</idValue>
-    <idCode>ACT</idCode>
-        <idValue>Unique claims reference number of the sender</idValue>
-    <idCode>ACU</idCode>
-        <idValue>Loss/event number</idValue>
-    <idCode>ACV</idCode>
-        <idValue>Estimate order reference number</idValue>
-    <idCode>ACW</idCode>
-        <idValue>Reference number to previous message</idValue>
-    <idCode>ACX</idCode>
-        <idValue>Banker&apos;s acceptance</idValue>
-    <idCode>ACY</idCode>
-        <idValue>Duty memo number</idValue>
-    <idCode>ACZ</idCode>
-        <idValue>Equipment transport charge number</idValue>
-    <idCode>ADA</idCode>
-        <idValue>Buyer&apos;s item number</idValue>
-    <idCode>ADB</idCode>
-        <idValue>Matured certificate of deposit</idValue>
-    <idCode>ADC</idCode>
-        <idValue>Loan</idValue>
-    <idCode>ADD</idCode>
-        <idValue>Analysis number/test number</idValue>
-    <idCode>ADE</idCode>
-        <idValue>Account number</idValue>
-    <idCode>ADF</idCode>
-        <idValue>Treaty number</idValue>
-    <idCode>ADG</idCode>
-        <idValue>Catastrophe number</idValue>
-    <idCode>ADH</idCode>
-        <idValue>PCS Catastrophe</idValue>
-    <idCode>ADI</idCode>
-        <idValue>Bureau signing (statement reference)</idValue>
-    <idCode>ADJ</idCode>
-        <idValue>Company / syndicate reference 1</idValue>
-    <idCode>ADK</idCode>
-        <idValue>Company / syndicate reference 2</idValue>
-    <idCode>ADL</idCode>
-        <idValue>Ordering customer consignment reference number</idValue>
-    <idCode>ADM</idCode>
-        <idValue>Shipowner&apos;s authorization number</idValue>
-    <idCode>ADN</idCode>
-        <idValue>Inland transport order number</idValue>
-    <idCode>ADO</idCode>
-        <idValue>Container work order reference number</idValue>
-    <idCode>ADP</idCode>
-        <idValue>Statement number</idValue>
-    <idCode>ADQ</idCode>
-        <idValue>Unique market reference</idValue>
-    <idCode>ADR</idCode>
-        <idValue>Bureau signing (original FDO reference)</idValue>
-    <idCode>ADS</idCode>
-        <idValue>Original FDO transaction reference</idValue>
-    <idCode>ADT</idCode>
-        <idValue>Group accounting</idValue>
-    <idCode>ADU</idCode>
-        <idValue>Broker reference 1</idValue>
-    <idCode>ADV</idCode>
-        <idValue>Broker reference 2</idValue>
-    <idCode>ADW</idCode>
-        <idValue>Lloyd&apos;s claims office reference</idValue>
-    <idCode>ADY</idCode>
-        <idValue>Report number</idValue>
-    <idCode>ADZ</idCode>
-        <idValue>Trader account number</idValue>
-    <idCode>AE</idCode>
-        <idValue>Authorization for expense (AFE) number</idValue>
-    <idCode>AEA</idCode>
-        <idValue>Government agency reference number</idValue>
-    <idCode>AEB</idCode>
-        <idValue>Assembly number</idValue>
-    <idCode>AEC</idCode>
-        <idValue>Symbol number</idValue>
-    <idCode>AED</idCode>
-        <idValue>Commodity number</idValue>
-    <idCode>AEE</idCode>
-        <idValue>Eur 1 certificate number</idValue>
-    <idCode>AEF</idCode>
-        <idValue>Customer process specification number</idValue>
-    <idCode>AEG</idCode>
-        <idValue>Customer specification number</idValue>
-    <idCode>AEH</idCode>
-        <idValue>Applicable instructions or standards</idValue>
-    <idCode>AEI</idCode>
-        <idValue>Registration number of previous Customs declaration</idValue>
-    <idCode>AEJ</idCode>
-        <idValue>Post-entry reference</idValue>
-    <idCode>AEK</idCode>
-        <idValue>Payment order number</idValue>
-    <idCode>AEL</idCode>
-        <idValue>Delivery number (transport)</idValue>
-    <idCode>AEM</idCode>
-        <idValue>Transport route</idValue>
-    <idCode>AEN</idCode>
-        <idValue>Customer&apos;s unit inventory number</idValue>
-    <idCode>AEO</idCode>
-        <idValue>Product reservation number</idValue>
-    <idCode>AEP</idCode>
-        <idValue>Project number</idValue>
-    <idCode>AEQ</idCode>
-        <idValue>Drawing list number</idValue>
-    <idCode>AER</idCode>
-        <idValue>Project specification number</idValue>
-    <idCode>AES</idCode>
-        <idValue>Primary reference</idValue>
-    <idCode>AET</idCode>
-        <idValue>Request for cancellation number</idValue>
-    <idCode>AEU</idCode>
-        <idValue>Supplier&apos;s control number</idValue>
-    <idCode>AEV</idCode>
-        <idValue>Shipping note number</idValue>
-    <idCode>AEW</idCode>
-        <idValue>Empty container bill number</idValue>
-    <idCode>AEX</idCode>
-        <idValue>Non-negotiable maritime transport document number</idValue>
-    <idCode>AEY</idCode>
-        <idValue>Substitute air waybill number</idValue>
-    <idCode>AEZ</idCode>
-        <idValue>Despatch note (post parcels) number</idValue>
-    <idCode>AF</idCode>
-        <idValue>Airlines flight identification number</idValue>
-    <idCode>AFA</idCode>
-        <idValue>Through bill of lading number</idValue>
-    <idCode>AFB</idCode>
-        <idValue>Cargo manifest number</idValue>
-    <idCode>AFC</idCode>
-        <idValue>Bordereau number</idValue>
-    <idCode>AFD</idCode>
-        <idValue>Customs item number</idValue>
-    <idCode>AFE</idCode>
-        <idValue>Export Control Commodity number (ECCN)</idValue>
-    <idCode>AFF</idCode>
-        <idValue>Marking/label reference</idValue>
-    <idCode>AFG</idCode>
-        <idValue>Tariff number</idValue>
-    <idCode>AFH</idCode>
-        <idValue>Replenishment purchase order number</idValue>
-    <idCode>AFI</idCode>
-        <idValue>Immediate transportation no. for in bond movement</idValue>
-    <idCode>AFJ</idCode>
-        <idValue>Transportation exportation no. for in bond movement</idValue>
-    <idCode>AFK</idCode>
-        <idValue>Immediate exportation no. for in bond movement</idValue>
-    <idCode>AFL</idCode>
-        <idValue>Associated invoices</idValue>
-    <idCode>AFM</idCode>
-        <idValue>Secondary Customs reference</idValue>
-    <idCode>AFN</idCode>
-        <idValue>Account party&apos;s reference</idValue>
-    <idCode>AFO</idCode>
-        <idValue>Beneficiary&apos;s reference</idValue>
-    <idCode>AFP</idCode>
-        <idValue>Second beneficiary&apos;s reference</idValue>
-    <idCode>AFQ</idCode>
-        <idValue>Applicant&apos;s bank reference</idValue>
-    <idCode>AFR</idCode>
-        <idValue>Issuing bank&apos;s reference</idValue>
-    <idCode>AFS</idCode>
-        <idValue>Beneficiary&apos;s bank reference</idValue>
-    <idCode>AFT</idCode>
-        <idValue>Direct payment valuation number</idValue>
-    <idCode>AFU</idCode>
-        <idValue>Direct payment valuation request number</idValue>
-    <idCode>AFV</idCode>
-        <idValue>Quantity valuation number</idValue>
-    <idCode>AFW</idCode>
-        <idValue>Quantity valuation request number</idValue>
-    <idCode>AFX</idCode>
-        <idValue>Bill of quantities number</idValue>
-    <idCode>AFY</idCode>
-        <idValue>Payment valuation number</idValue>
-    <idCode>AFZ</idCode>
-        <idValue>Situation number</idValue>
-    <idCode>AGA</idCode>
-        <idValue>Agreement to pay number</idValue>
-    <idCode>AGB</idCode>
-        <idValue>Contract party reference number</idValue>
-    <idCode>AGC</idCode>
-        <idValue>Account party&apos;s bank reference</idValue>
-    <idCode>AGD</idCode>
-        <idValue>Agent&apos;s bank reference</idValue>
-    <idCode>AGE</idCode>
-        <idValue>Agent&apos;s reference</idValue>
-    <idCode>AGF</idCode>
-        <idValue>Applicant&apos;s reference</idValue>
-    <idCode>AGG</idCode>
-        <idValue>Dispute number</idValue>
-    <idCode>AGH</idCode>
-        <idValue>Credit rating agency&apos;s reference number</idValue>
-    <idCode>AGI</idCode>
-        <idValue>Request number</idValue>
-    <idCode>AGJ</idCode>
-        <idValue>Single transaction sequence number</idValue>
-    <idCode>AGK</idCode>
-        <idValue>Application reference number</idValue>
-    <idCode>AGL</idCode>
-        <idValue>Delivery verification certificate</idValue>
-    <idCode>AGM</idCode>
-        <idValue>Number of temporary importation document</idValue>
-    <idCode>AGN</idCode>
-        <idValue>Reference number quoted on statement</idValue>
-    <idCode>AGO</idCode>
-        <idValue>Sender&apos;s reference to the original message</idValue>
-    <idCode>AGP</idCode>
-        <idValue>Company issued equipment ID</idValue>
-    <idCode>AGQ</idCode>
-        <idValue>Domestic flight number</idValue>
-    <idCode>AGR</idCode>
-        <idValue>International flight number</idValue>
-    <idCode>AGS</idCode>
-        <idValue>Employer identification number of service bureau</idValue>
-    <idCode>AGT</idCode>
-        <idValue>Service group identification number</idValue>
-    <idCode>AGU</idCode>
-        <idValue>Member number</idValue>
-    <idCode>AGV</idCode>
-        <idValue>Previous member number</idValue>
-    <idCode>AGW</idCode>
-        <idValue>Scheme/plan number</idValue>
-    <idCode>AGX</idCode>
-        <idValue>Previous scheme/plan number</idValue>
-    <idCode>AGY</idCode>
-        <idValue>Receiving party&apos;s member identification</idValue>
-    <idCode>AGZ</idCode>
-        <idValue>Payroll number</idValue>
-    <idCode>AHA</idCode>
-        <idValue>Packaging specification number</idValue>
-    <idCode>AHB</idCode>
-        <idValue>Authority issued equipment identification</idValue>
-    <idCode>AHC</idCode>
-        <idValue>Training flight number</idValue>
-    <idCode>AHD</idCode>
-        <idValue>Fund code number</idValue>
-    <idCode>AHE</idCode>
-        <idValue>Signal code number</idValue>
-    <idCode>AHF</idCode>
-        <idValue>Major force program number</idValue>
-    <idCode>AHG</idCode>
-        <idValue>Nomination number</idValue>
-    <idCode>AHH</idCode>
-        <idValue>Laboratory registration number</idValue>
-    <idCode>AHI</idCode>
-        <idValue>Transport contract reference number</idValue>
-    <idCode>AHJ</idCode>
-        <idValue>Payee&apos;s reference number</idValue>
-    <idCode>AHK</idCode>
-        <idValue>Payer&apos;s reference number</idValue>
-    <idCode>AHL</idCode>
-        <idValue>Creditor&apos;s reference number</idValue>
-    <idCode>AHM</idCode>
-        <idValue>Debtor&apos;s reference number</idValue>
-    <idCode>AHN</idCode>
-        <idValue>Joint venture reference number</idValue>
-    <idCode>AHO</idCode>
-        <idValue>Chamber of Commerce registration number</idValue>
-    <idCode>AHP</idCode>
-        <idValue>Tax registration number</idValue>
-    <idCode>AHQ</idCode>
-        <idValue>Wool identification number</idValue>
-    <idCode>AHR</idCode>
-        <idValue>Wool tax reference number</idValue>
-    <idCode>AHS</idCode>
-        <idValue>Meat processing establishment registration number</idValue>
-    <idCode>AHT</idCode>
-        <idValue>Quarantine/treatment status reference number</idValue>
-    <idCode>AHU</idCode>
-        <idValue>Request for quote number</idValue>
-    <idCode>AHV</idCode>
-        <idValue>Manual processing authority number</idValue>
-    <idCode>AHW</idCode>
-        <idValue>Import permit number</idValue>
-    <idCode>AHX</idCode>
-        <idValue>Rate note number</idValue>
-    <idCode>AHY</idCode>
-        <idValue>Freight Forwarder number</idValue>
-    <idCode>AHZ</idCode>
-        <idValue>Customs release code</idValue>
-    <idCode>AIA</idCode>
-        <idValue>Compliance code number</idValue>
-    <idCode>AIB</idCode>
-        <idValue>Department of transportation bond number</idValue>
-    <idCode>AIC</idCode>
-        <idValue>Export establishment number</idValue>
-    <idCode>AID</idCode>
-        <idValue>Certificate of conformity</idValue>
-    <idCode>AIE</idCode>
-        <idValue>Ministerial certificate of homologation</idValue>
-    <idCode>AIF</idCode>
-        <idValue>Previous delivery instruction number</idValue>
-    <idCode>AIG</idCode>
-        <idValue>Passport number</idValue>
-    <idCode>AIH</idCode>
-        <idValue>Common transaction reference number</idValue>
-    <idCode>AII</idCode>
-        <idValue>Bank&apos;s common transaction reference number</idValue>
-    <idCode>AIJ</idCode>
-        <idValue>Customer&apos;s individual transaction reference number</idValue>
-    <idCode>AIK</idCode>
-        <idValue>Bank&apos;s individual transaction reference number</idValue>
-    <idCode>AIL</idCode>
-        <idValue>Customer&apos;s common transaction reference number</idValue>
-    <idCode>AIM</idCode>
-        <idValue>Individual transaction reference number</idValue>
-    <idCode>AIN</idCode>
-        <idValue>Product sourcing agreement number</idValue>
-    <idCode>AIO</idCode>
-        <idValue>Customs transhipment number</idValue>
-    <idCode>AIP</idCode>
-        <idValue>Customs preference inquiry number</idValue>
-    <idCode>AIQ</idCode>
-        <idValue>Packing plant number</idValue>
-    <idCode>AIR</idCode>
-        <idValue>Original certificate number</idValue>
-    <idCode>AIS</idCode>
-        <idValue>Processing plant number</idValue>
-    <idCode>AIT</idCode>
-        <idValue>Slaughter plant number</idValue>
-    <idCode>AIU</idCode>
-        <idValue>Charge card account number</idValue>
-    <idCode>AIV</idCode>
-        <idValue>Event reference number</idValue>
-    <idCode>AIW</idCode>
-        <idValue>Transport section reference number</idValue>
-    <idCode>AIX</idCode>
-        <idValue>Referred product for mechanical analysis</idValue>
-    <idCode>AIY</idCode>
-        <idValue>Referred product for chemical analysis</idValue>
-    <idCode>AIZ</idCode>
-        <idValue>Consolidated invoice number</idValue>
-    <idCode>AJA</idCode>
-        <idValue>Part reference indicator in a drawing</idValue>
-    <idCode>AJB</idCode>
-        <idValue>U.S. Code of Federal Regulations (CFR)</idValue>
-    <idCode>AJC</idCode>
-        <idValue>Purchasing activity clause number</idValue>
-    <idCode>AJD</idCode>
-        <idValue>U.S. Defense Federal Acquisition Regulation Supplement</idValue>
-    <idCode>AJE</idCode>
-        <idValue>Agency clause number</idValue>
-    <idCode>AJF</idCode>
-        <idValue>Circular publication number</idValue>
-    <idCode>AJG</idCode>
-        <idValue>U.S. Federal Acquisition Regulation</idValue>
-    <idCode>AJH</idCode>
-        <idValue>U.S. General Services Administration Regulation</idValue>
-    <idCode>AJI</idCode>
-        <idValue>U.S. Federal Information Resources Management Regulation</idValue>
-    <idCode>AJJ</idCode>
-        <idValue>Paragraph</idValue>
-    <idCode>AJK</idCode>
-        <idValue>Special instructions number</idValue>
-    <idCode>AJL</idCode>
-        <idValue>Site specific procedures, terms, and conditions number</idValue>
-    <idCode>AJM</idCode>
-        <idValue>Master solicitation procedures, terms, and conditions number</idValue>
-    <idCode>AJN</idCode>
-        <idValue>U.S. Department of Veterans Affairs Acquisition Regulation</idValue>
-    <idCode>AJO</idCode>
-        <idValue>Military Interdepartmental Purchase Request (MIPR) number</idValue>
-    <idCode>AJP</idCode>
-        <idValue>Foreign military sales number</idValue>
-    <idCode>AJQ</idCode>
-        <idValue>Defense priorities allocation system priority rating</idValue>
-    <idCode>AJR</idCode>
-        <idValue>Wage determination number</idValue>
-    <idCode>AJS</idCode>
-        <idValue>Agreement number</idValue>
-    <idCode>AJT</idCode>
-        <idValue>Standard Industry Classification (SIC) number</idValue>
-    <idCode>AJU</idCode>
-        <idValue>End item number</idValue>
-    <idCode>AJV</idCode>
-        <idValue>Federal supply schedule item number</idValue>
-    <idCode>AJW</idCode>
-        <idValue>Technical document number</idValue>
-    <idCode>AJX</idCode>
-        <idValue>Technical order number</idValue>
-    <idCode>AJY</idCode>
-        <idValue>Suffix</idValue>
-    <idCode>AJZ</idCode>
-        <idValue>Transportation account number</idValue>
-    <idCode>AKA</idCode>
-        <idValue>Container disposition order reference number</idValue>
-    <idCode>AKB</idCode>
-        <idValue>Container prefix</idValue>
-    <idCode>AKC</idCode>
-        <idValue>Transport equipment return reference</idValue>
-    <idCode>AKD</idCode>
-        <idValue>Transport equipment survey reference</idValue>
-    <idCode>AKE</idCode>
-        <idValue>Transport equipment survey report number</idValue>
-    <idCode>AKF</idCode>
-        <idValue>Transport equipment stuffing order</idValue>
-    <idCode>AKG</idCode>
-        <idValue>Vehicle Identification Number (VIN)</idValue>
-    <idCode>AKK</idCode>
-        <idValue>Meter reading at the beginning of the delivery</idValue>
-    <idCode>AKL</idCode>
-        <idValue>Meter reading at the end of delivery</idValue>
-    <idCode>AKM</idCode>
-        <idValue>Replenishment purchase order range start number</idValue>
-    <idCode>AKO</idCode>
-        <idValue>Action authorization number</idValue>
-    <idCode>AKP</idCode>
-        <idValue>Appropriation number</idValue>
-    <idCode>AKQ</idCode>
-        <idValue>Product change authority number</idValue>
-    <idCode>AKR</idCode>
-        <idValue>General cargo consignment reference number</idValue>
-    <idCode>AKS</idCode>
-        <idValue>Catalogue sequence number</idValue>
-    <idCode>AKT</idCode>
-        <idValue>Forwarding order number</idValue>
-    <idCode>AKU</idCode>
-        <idValue>Transport equipment survey reference number</idValue>
-    <idCode>AKV</idCode>
-        <idValue>Lease contract reference</idValue>
-    <idCode>AKW</idCode>
-        <idValue>Transport costs reference number</idValue>
-    <idCode>AKX</idCode>
-        <idValue>Transport equipment stripping order</idValue>
-    <idCode>ALA</idCode>
-        <idValue>Procurement budget number</idValue>
-    <idCode>ALB</idCode>
-        <idValue>Domestic inventory management code</idValue>
-    <idCode>ALC</idCode>
-        <idValue>Customer reference number assigned to previous balance of payment information</idValue>
-    <idCode>ALD</idCode>
-        <idValue>Previous credit advice reference number</idValue>
-    <idCode>ALE</idCode>
-        <idValue>Reporting form number</idValue>
-    <idCode>ALF</idCode>
-        <idValue>Authorization number for exception to dangerous goods regulations</idValue>
-    <idCode>ALG</idCode>
-        <idValue>Dangerous goods security number</idValue>
-    <idCode>ALH</idCode>
-        <idValue>Dangerous goods transport licence number</idValue>
-    <idCode>ALI</idCode>
-        <idValue>Previous rental agreement number</idValue>
-    <idCode>ALJ</idCode>
-        <idValue>Next rental agreement reason number</idValue>
-    <idCode>ALK</idCode>
-        <idValue>Consignee&apos;s invoice number</idValue>
-    <idCode>ALL</idCode>
-        <idValue>Message batch number</idValue>
-    <idCode>ALM</idCode>
-        <idValue>Previous delivery schedule number</idValue>
-    <idCode>ALN</idCode>
-        <idValue>Physical inventory recount reference number</idValue>
-    <idCode>ALO</idCode>
-        <idValue>Receiving advice number</idValue>
-    <idCode>ALP</idCode>
-        <idValue>Returnable container reference number</idValue>
-    <idCode>ALQ</idCode>
-        <idValue>Returns notice number</idValue>
-    <idCode>ALR</idCode>
-        <idValue>Sales forecast number</idValue>
-    <idCode>ALS</idCode>
-        <idValue>Sales report number</idValue>
-    <idCode>ALT</idCode>
-        <idValue>Previous tax control number</idValue>
-    <idCode>ALU</idCode>
-        <idValue>AGERD (Aerospace Ground Equipment Requirement Data) number</idValue>
-    <idCode>ALV</idCode>
-        <idValue>Registered capital reference</idValue>
-    <idCode>ALW</idCode>
-        <idValue>Standard number of inspection document</idValue>
-    <idCode>ALX</idCode>
-        <idValue>Model</idValue>
-    <idCode>ALY</idCode>
-        <idValue>Financial management reference</idValue>
-    <idCode>ALZ</idCode>
-        <idValue>NOTIfication for COLlection number (NOTICOL)</idValue>
-    <idCode>AMA</idCode>
-        <idValue>Previous request for metered reading reference number</idValue>
-    <idCode>AMB</idCode>
-        <idValue>Next rental agreement number</idValue>
-    <idCode>AMC</idCode>
-        <idValue>Reference number of a request for metered reading</idValue>
-    <idCode>AMD</idCode>
-        <idValue>Hastening number</idValue>
-    <idCode>AME</idCode>
-        <idValue>Repair data request number</idValue>
-    <idCode>AMF</idCode>
-        <idValue>Consumption data request number</idValue>
-    <idCode>AMG</idCode>
-        <idValue>Profile number</idValue>
-    <idCode>AMI</idCode>
-        <idValue>Government quality assurance and control level Number</idValue>
-    <idCode>AMJ</idCode>
-        <idValue>Payment plan reference</idValue>
-    <idCode>AMK</idCode>
-        <idValue>Procurement budget number</idValue>
-    <idCode>AML</idCode>
-        <idValue>Replenishment purchase order range end number</idValue>
-    <idCode>AMN</idCode>
-        <idValue>Canadian excise entry number</idValue>
-    <idCode>AMQ</idCode>
-        <idValue>US, Department of Transportation bond surety code</idValue>
-    <idCode>AMR</idCode>
-        <idValue>US, Food and Drug Administration establishment indicator</idValue>
-    <idCode>AMS</idCode>
-        <idValue>US, Federal Communications Commission (FCC) import condition number</idValue>
-    <idCode>AMT</idCode>
-        <idValue>Goods and Services Tax identification number</idValue>
-    <idCode>AMU</idCode>
-        <idValue>Integrated logistic support cross reference number</idValue>
-    <idCode>AP</idCode>
-        <idValue>Accounts receivable number</idValue>
-    <idCode>ASC</idCode>
-        <idValue>Assuming company</idValue>
-    <idCode>AU</idCode>
-        <idValue>Authorization to meet competition No.</idValue>
-    <idCode>AV</idCode>
-        <idValue>Account payable number</idValue>
-    <idCode>AWB</idCode>
-        <idValue>Air waybill number</idValue>
-    <idCode>BA</idCode>
-        <idValue>Beginning meter reading actual</idValue>
-    <idCode>BC</idCode>
-        <idValue>Buyer&apos;s contract number</idValue>
-    <idCode>BD</idCode>
-        <idValue>Bid number</idValue>
-    <idCode>BE</idCode>
-        <idValue>Beginning meter reading estimated</idValue>
-    <idCode>BH</idCode>
-        <idValue>House bill of lading number</idValue>
-    <idCode>BM</idCode>
-        <idValue>Bill of lading number</idValue>
-    <idCode>BN</idCode>
-        <idValue>Booking reference number</idValue>
-    <idCode>BO</idCode>
-        <idValue>Blanket order number</idValue>
-    <idCode>BR</idCode>
-        <idValue>Broker or sales office number</idValue>
-    <idCode>BT</idCode>
-        <idValue>Batch number/lot number</idValue>
-    <idCode>BW</idCode>
-        <idValue>Blended with number</idValue>
-    <idCode>CAS</idCode>
-        <idValue>IATA Cargo Agent CASS Address number</idValue>
-    <idCode>CD</idCode>
-        <idValue>Credit note number</idValue>
-    <idCode>CEC</idCode>
-        <idValue>Ceding company</idValue>
-    <idCode>CFE</idCode>
-        <idValue>Consignee&apos;s further order</idValue>
-    <idCode>CFO</idCode>
-        <idValue>Consignor&apos;s further order</idValue>
-    <idCode>CG</idCode>
-        <idValue>Consignee&apos;s order number</idValue>
-    <idCode>CH</idCode>
-        <idValue>Customer catalogue number</idValue>
-    <idCode>CK</idCode>
-        <idValue>Cheque number</idValue>
-    <idCode>CKN</idCode>
-        <idValue>Checking number</idValue>
-    <idCode>CM</idCode>
-        <idValue>Credit memo number</idValue>
-    <idCode>CMR</idCode>
-        <idValue>Road consignment note number</idValue>
-    <idCode>CN</idCode>
-        <idValue>Carrier&apos;s reference number</idValue>
-    <idCode>CNO</idCode>
-        <idValue>Charge note reference number</idValue>
-    <idCode>CO</idCode>
-        <idValue>Buyers order number</idValue>
-    <idCode>COF</idCode>
-        <idValue>Call off order number</idValue>
-    <idCode>CP</idCode>
-        <idValue>Condition of purchase document number</idValue>
-    <idCode>CR</idCode>
-        <idValue>Customer reference number</idValue>
-    <idCode>CRN</idCode>
-        <idValue>Conveyance reference number</idValue>
-    <idCode>CS</idCode>
-        <idValue>Condition of sale document number</idValue>
-    <idCode>CST</idCode>
-        <idValue>Team assignment number</idValue>
-    <idCode>CT</idCode>
-        <idValue>Contract number</idValue>
-    <idCode>CU</idCode>
-        <idValue>Consignor&apos;s reference number</idValue>
-    <idCode>CV</idCode>
-        <idValue>Container operators reference number</idValue>
-    <idCode>CW</idCode>
-        <idValue>Package number</idValue>
-    <idCode>CZ</idCode>
-        <idValue>Cooperation contract number</idValue>
-    <idCode>DA</idCode>
-        <idValue>Deferment approval number</idValue>
-    <idCode>DAN</idCode>
-        <idValue>Debit account number</idValue>
-    <idCode>DB</idCode>
-        <idValue>Buyer&apos;s debtor number</idValue>
-    <idCode>DI</idCode>
-        <idValue>Distributor invoice number</idValue>
-    <idCode>DL</idCode>
-        <idValue>Debit note number</idValue>
-    <idCode>DM</idCode>
-        <idValue>Document number</idValue>
-    <idCode>DQ</idCode>
-        <idValue>Delivery note number</idValue>
-    <idCode>DR</idCode>
-        <idValue>Dock receipt number</idValue>
-    <idCode>EA</idCode>
-        <idValue>Ending meter reading actual</idValue>
-    <idCode>EB</idCode>
-        <idValue>Embargo permit number</idValue>
-    <idCode>ED</idCode>
-        <idValue>Export declaration</idValue>
-    <idCode>EE</idCode>
-        <idValue>Ending meter reading estimated</idValue>
-    <idCode>EI</idCode>
-        <idValue>Employer&apos;s identification number</idValue>
-    <idCode>EN</idCode>
-        <idValue>Embargo number</idValue>
-    <idCode>EP</idCode>
-        <idValue>Export permit number</idValue>
-    <idCode>EQ</idCode>
-        <idValue>Equipment number</idValue>
-    <idCode>ER</idCode>
-        <idValue>Container/equipment receipt number</idValue>
-    <idCode>ERN</idCode>
-        <idValue>Exporter&apos;s reference number</idValue>
-    <idCode>ET</idCode>
-        <idValue>Excess transportation number</idValue>
-    <idCode>EX</idCode>
-        <idValue>Export licence number</idValue>
-    <idCode>FC</idCode>
-        <idValue>Fiscal number</idValue>
-    <idCode>FF</idCode>
-        <idValue>Freight forwarder&apos;s reference number</idValue>
-    <idCode>FI</idCode>
-        <idValue>File line identifier</idValue>
-    <idCode>FLW</idCode>
-        <idValue>Flow reference number</idValue>
-    <idCode>FN</idCode>
-        <idValue>Freight bill number</idValue>
-    <idCode>FO</idCode>
-        <idValue>Foreign exchange</idValue>
-    <idCode>FS</idCode>
-        <idValue>Final sequence number</idValue>
-    <idCode>FT</idCode>
-        <idValue>Free zone identifier</idValue>
-    <idCode>FV</idCode>
-        <idValue>File version number</idValue>
-    <idCode>FX</idCode>
-        <idValue>Foreign exchange contract number</idValue>
-    <idCode>GA</idCode>
-        <idValue>Standard&apos;s number</idValue>
-    <idCode>GC</idCode>
-        <idValue>Government contract number</idValue>
-    <idCode>GD</idCode>
-        <idValue>Standard&apos;s code number</idValue>
-    <idCode>GDN</idCode>
-        <idValue>General declaration number</idValue>
-    <idCode>GN</idCode>
-        <idValue>Government reference number</idValue>
-    <idCode>HS</idCode>
-        <idValue>Harmonised system number</idValue>
-    <idCode>HWB</idCode>
-        <idValue>House waybill number</idValue>
-    <idCode>IA</idCode>
-        <idValue>Internal vendor number</idValue>
-    <idCode>IB</idCode>
-        <idValue>In bond number</idValue>
-    <idCode>ICA</idCode>
-        <idValue>IATA cargo agent code number</idValue>
-    <idCode>ICE</idCode>
-        <idValue>Insurance certificate reference number</idValue>
-    <idCode>ICO</idCode>
-        <idValue>Insurance contract reference number</idValue>
-    <idCode>II</idCode>
-        <idValue>Initial sample inspection report number</idValue>
-    <idCode>IL</idCode>
-        <idValue>Internal order number</idValue>
-    <idCode>INB</idCode>
-        <idValue>Intermediary broker</idValue>
-    <idCode>INN</idCode>
-        <idValue>Interchange number new</idValue>
-    <idCode>INO</idCode>
-        <idValue>Interchange number old</idValue>
-    <idCode>IP</idCode>
-        <idValue>Import licence number</idValue>
-    <idCode>IS</idCode>
-        <idValue>Invoice number suffix</idValue>
-    <idCode>IT</idCode>
-        <idValue>Internal customer number</idValue>
-    <idCode>IV</idCode>
-        <idValue>Invoice number</idValue>
-    <idCode>JB</idCode>
-        <idValue>Job number</idValue>
-    <idCode>JE</idCode>
-        <idValue>Ending job sequence number</idValue>
-    <idCode>LA</idCode>
-        <idValue>Shipping label serial number</idValue>
-    <idCode>LAN</idCode>
-        <idValue>Loading authorization number</idValue>
-    <idCode>LAR</idCode>
-        <idValue>Lower article number of range</idValue>
-    <idCode>LB</idCode>
-        <idValue>Lockbox</idValue>
-    <idCode>LC</idCode>
-        <idValue>Letter of credit number</idValue>
-    <idCode>LI</idCode>
-        <idValue>Line item reference number</idValue>
-    <idCode>LO</idCode>
-        <idValue>Load planning number</idValue>
-    <idCode>LS</idCode>
-        <idValue>Bar coded label serial number</idValue>
-    <idCode>MA</idCode>
-        <idValue>Ship notice/manifest number</idValue>
-    <idCode>MB</idCode>
-        <idValue>Master bill of lading number</idValue>
-    <idCode>MF</idCode>
-        <idValue>Manufacturer&apos;s part number</idValue>
-    <idCode>MG</idCode>
-        <idValue>Meter unit number</idValue>
-    <idCode>MH</idCode>
-        <idValue>Manufacturing order number</idValue>
-    <idCode>MR</idCode>
-        <idValue>Message recipient</idValue>
-    <idCode>MRN</idCode>
-        <idValue>Mailing reference number</idValue>
-    <idCode>MS</idCode>
-        <idValue>Message sender</idValue>
-    <idCode>MSS</idCode>
-        <idValue>Manufacturer&apos;s material safety data sheet number</idValue>
-    <idCode>MWB</idCode>
-        <idValue>Master air waybill number</idValue>
-    <idCode>NA</idCode>
-        <idValue>North American hazardous goods classification number</idValue>
-    <idCode>OH</idCode>
-        <idValue>Current invoice number</idValue>
-    <idCode>OI</idCode>
-        <idValue>Previous invoice number</idValue>
-    <idCode>ON</idCode>
-        <idValue>Order number (purchase)</idValue>
-    <idCode>OP</idCode>
-        <idValue>Original purchase order</idValue>
-    <idCode>OR</idCode>
-        <idValue>General order number</idValue>
-    <idCode>PB</idCode>
-        <idValue>Payer&apos;s financial institution account number</idValue>
-    <idCode>PC</idCode>
-        <idValue>Production code</idValue>
-    <idCode>PD</idCode>
-        <idValue>Promotion deal number</idValue>
-    <idCode>PE</idCode>
-        <idValue>Plant number</idValue>
-    <idCode>PF</idCode>
-        <idValue>Prime contractor contract number</idValue>
-    <idCode>PI</idCode>
-        <idValue>Price list version number</idValue>
-    <idCode>PK</idCode>
-        <idValue>Packing list number</idValue>
-    <idCode>PL</idCode>
-        <idValue>Price list number</idValue>
-    <idCode>POR</idCode>
-        <idValue>Purchase order response number</idValue>
-    <idCode>PP</idCode>
-        <idValue>Purchase order change number</idValue>
-    <idCode>PQ</idCode>
-        <idValue>Payment reference</idValue>
-    <idCode>PR</idCode>
-        <idValue>Price quote number</idValue>
-    <idCode>PS</idCode>
-        <idValue>Purchase order number suffix</idValue>
-    <idCode>PW</idCode>
-        <idValue>Prior purchase order number</idValue>
-    <idCode>PY</idCode>
-        <idValue>Payee&apos;s financial institution account number</idValue>
-    <idCode>RA</idCode>
-        <idValue>Remittance advice number</idValue>
-    <idCode>RC</idCode>
-        <idValue>Rail/road routing code</idValue>
-    <idCode>RCN</idCode>
-        <idValue>Railway consignment note number</idValue>
-    <idCode>RE</idCode>
-        <idValue>Release number</idValue>
-    <idCode>REN</idCode>
-        <idValue>Received number</idValue>
-    <idCode>RF</idCode>
-        <idValue>Export reference number</idValue>
-    <idCode>RR</idCode>
-        <idValue>Payer&apos;s financial institution transit routing No.(ACH transfers)</idValue>
-    <idCode>RT</idCode>
-        <idValue>Payee&apos;s financial institution transit routing No.</idValue>
-    <idCode>SA</idCode>
-        <idValue>Sales person number</idValue>
-    <idCode>SB</idCode>
-        <idValue>Sales region number</idValue>
-    <idCode>SD</idCode>
-        <idValue>Sales department number</idValue>
-    <idCode>SE</idCode>
-        <idValue>Serial number</idValue>
-    <idCode>SF</idCode>
-        <idValue>Ship from</idValue>
-    <idCode>SH</idCode>
-        <idValue>Previous highest schedule number</idValue>
-    <idCode>SI</idCode>
-        <idValue>SID (Shipper&apos;s identifying number for shipment)</idValue>
-    <idCode>SM</idCode>
-        <idValue>Sales office number</idValue>
-    <idCode>SN</idCode>
-        <idValue>Seal number</idValue>
-    <idCode>SP</idCode>
-        <idValue>Scan line</idValue>
-    <idCode>SQ</idCode>
-        <idValue>Container sequence number</idValue>
-    <idCode>SRN</idCode>
-        <idValue>Shipment reference number</idValue>
-    <idCode>SS</idCode>
-        <idValue>Sellers reference number</idValue>
-    <idCode>STA</idCode>
-        <idValue>Station reference number</idValue>
-    <idCode>SW</idCode>
-        <idValue>Swap order number</idValue>
-    <idCode>SZ</idCode>
-        <idValue>Specification number</idValue>
-    <idCode>TB</idCode>
-        <idValue>Trucker&apos;s bill of lading</idValue>
-    <idCode>TE</idCode>
-        <idValue>Telex message number</idValue>
-    <idCode>TF</idCode>
-        <idValue>Transfer number</idValue>
-    <idCode>TI</idCode>
-        <idValue>TIR carnet number</idValue>
-    <idCode>TL</idCode>
-        <idValue>Tax exemption licence number</idValue>
-    <idCode>TN</idCode>
-        <idValue>Transaction reference number</idValue>
-    <idCode>TP</idCode>
-        <idValue>Test report number</idValue>
-    <idCode>UAR</idCode>
-        <idValue>Upper serial number of range</idValue>
-    <idCode>UC</idCode>
-        <idValue>Ultimate customer&apos;s reference number</idValue>
-    <idCode>UCN</idCode>
-        <idValue>Unique consignment reference number</idValue>
-    <idCode>UN</idCode>
-        <idValue>United Nations dangerous goods (UNDG) number</idValue>
-    <idCode>UO</idCode>
-        <idValue>Ultimate customer&apos;s order number</idValue>
-    <idCode>VA</idCode>
-        <idValue>VAT registration number</idValue>
-    <idCode>VC</idCode>
-        <idValue>Vendor contract number</idValue>
-    <idCode>VM</idCode>
-        <idValue>Vessel identification</idValue>
-    <idCode>VN</idCode>
-        <idValue>Order number (vendor)</idValue>
-    <idCode>VON</idCode>
-        <idValue>Voyage number</idValue>
-    <idCode>VP</idCode>
-        <idValue>Vendor product number</idValue>
-    <idCode>VR</idCode>
-        <idValue>Vendor ID number</idValue>
-    <idCode>VS</idCode>
-        <idValue>Vendor order number suffix</idValue>
-    <idCode>VT</idCode>
-        <idValue>Motor vehicle identification number</idValue>
-    <idCode>VV</idCode>
-        <idValue>Voucher number</idValue>
-    <idCode>WE</idCode>
-        <idValue>Warehouse entry number</idValue>
-    <idCode>WM</idCode>
-        <idValue>Weight agreement number</idValue>
-    <idCode>WN</idCode>
-        <idValue>Well number</idValue>
-    <idCode>WR</idCode>
-        <idValue>Warehouse receipt number</idValue>
-    <idCode>WS</idCode>
-        <idValue>Warehouse storage location number</idValue>
-    <idCode>WY</idCode>
-        <idValue>Rail waybill number</idValue>
-    <idCode>XA</idCode>
-        <idValue>Company/place registration number</idValue>
-    <idCode>XC</idCode>
-        <idValue>Cargo control number</idValue>
-    <idCode>XP</idCode>
-        <idValue>Previous cargo control number</idValue>
-    <idCode>ZZZ</idCode>
-        <idValue>Mutually defined reference number</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>AAA <idValue>Acknowledgement of order number</idValue>
+	</idCode>
+	<idCode>AAB <idValue>Proforma invoice number</idValue>
+	</idCode>
+	<idCode>AAC <idValue>Documentary credit number</idValue>
+	</idCode>
+	<idCode>AAD <idValue>Contract addendum number</idValue>
+	</idCode>
+	<idCode>AAE <idValue>Goods declaration number</idValue>
+	</idCode>
+	<idCode>AAG <idValue>Offer number</idValue>
+	</idCode>
+	<idCode>AAJ <idValue>Delivery order number</idValue>
+	</idCode>
+	<idCode>AAK <idValue>Despatch advice number</idValue>
+	</idCode>
+	<idCode>AAL <idValue>Drawing number</idValue>
+	</idCode>
+	<idCode>AAM <idValue>Waybill number</idValue>
+	</idCode>
+	<idCode>AAN <idValue>Delivery schedule number</idValue>
+	</idCode>
+	<idCode>AAO <idValue>Consignee&apos;s shipment reference number</idValue>
+	</idCode>
+	<idCode>AAP <idValue>Part consignment number</idValue>
+	</idCode>
+	<idCode>AAQ <idValue>Unit load device (e.g. container) identification number</idValue>
+	</idCode>
+	<idCode>AAS <idValue>Transport document number</idValue>
+	</idCode>
+	<idCode>AAT <idValue>Master label number</idValue>
+	</idCode>
+	<idCode>AAU <idValue>Despatch note number</idValue>
+	</idCode>
+	<idCode>AAV <idValue>Enquiry number</idValue>
+	</idCode>
+	<idCode>AAY <idValue>Carrier&apos;s agent reference number</idValue>
+	</idCode>
+	<idCode>AAZ <idValue>Standard Carrier Alpha Code (SCAC) number</idValue>
+	</idCode>
+	<idCode>ABA <idValue>Customs valuation decision number</idValue>
+	</idCode>
+	<idCode>ABB <idValue>End use authorization number</idValue>
+	</idCode>
+	<idCode>ABC <idValue>Anti-dumping case number</idValue>
+	</idCode>
+	<idCode>ABD <idValue>Customs tariff number</idValue>
+	</idCode>
+	<idCode>ABE <idValue>Declarant&apos;s reference number</idValue>
+	</idCode>
+	<idCode>ABG <idValue>Customs decision request number</idValue>
+	</idCode>
+	<idCode>ABH <idValue>Sub-house bill of lading number</idValue>
+	</idCode>
+	<idCode>ABI <idValue>Deferred payment reference</idValue>
+	</idCode>
+	<idCode>ABJ <idValue>Quota number</idValue>
+	</idCode>
+	<idCode>ABK <idValue>Transit (onward carriage) guarantee (bond) number</idValue>
+	</idCode>
+	<idCode>ABL <idValue>Customs guarantee number</idValue>
+	</idCode>
+	<idCode>ABO <idValue>Originator&apos;s reference</idValue>
+	</idCode>
+	<idCode>ABP <idValue>Declarant&apos;s Customs identity number</idValue>
+	</idCode>
+	<idCode>ABQ <idValue>Importer reference number</idValue>
+	</idCode>
+	<idCode>ABR <idValue>Export clearance instruction reference number</idValue>
+	</idCode>
+	<idCode>ABS <idValue>Import clearance instruction reference number</idValue>
+	</idCode>
+	<idCode>ABT <idValue>Customs declaration number</idValue>
+	</idCode>
+	<idCode>ABU <idValue>Article number</idValue>
+	</idCode>
+	<idCode>ABW <idValue>Stock keeping unit number</idValue>
+	</idCode>
+	<idCode>ABX <idValue>Text Element Identifier deletion reference</idValue>
+	</idCode>
+	<idCode>ABY <idValue>Allotment identification (Air)</idValue>
+	</idCode>
+	<idCode>ABZ <idValue>Vehicle licence number</idValue>
+	</idCode>
+	<idCode>AC <idValue>Air cargo transfer manifest</idValue>
+	</idCode>
+	<idCode>ACA <idValue>Cargo acceptance order reference number</idValue>
+	</idCode>
+	<idCode>ACB <idValue>US government agency number</idValue>
+	</idCode>
+	<idCode>ACC <idValue>Shipping unit identification</idValue>
+	</idCode>
+	<idCode>ACD <idValue>Additional reference number</idValue>
+	</idCode>
+	<idCode>ACE <idValue>Related document number</idValue>
+	</idCode>
+	<idCode>ACF <idValue>Addressee reference</idValue>
+	</idCode>
+	<idCode>ACG <idValue>ATA carnet number</idValue>
+	</idCode>
+	<idCode>ACH <idValue>Packaging unit identification</idValue>
+	</idCode>
+	<idCode>ACI <idValue>Outerpackaging unit identification</idValue>
+	</idCode>
+	<idCode>ACJ <idValue>Customer material specification number</idValue>
+	</idCode>
+	<idCode>ACK <idValue>Bank reference</idValue>
+	</idCode>
+	<idCode>ACL <idValue>Principal reference number</idValue>
+	</idCode>
+	<idCode>ACM <idValue>Unique REINAC reference number of the sender</idValue>
+	</idCode>
+	<idCode>ACN <idValue>Advice of collection number</idValue>
+	</idCode>
+	<idCode>ACO <idValue>Iron charge number</idValue>
+	</idCode>
+	<idCode>ACP <idValue>Hot roll number</idValue>
+	</idCode>
+	<idCode>ACQ <idValue>Cold roll number</idValue>
+	</idCode>
+	<idCode>ACR <idValue>Railway wagon number</idValue>
+	</idCode>
+	<idCode>ACS <idValue>Unique CURRAC reference number of the sender</idValue>
+	</idCode>
+	<idCode>ACT <idValue>Unique claims reference number of the sender</idValue>
+	</idCode>
+	<idCode>ACU <idValue>Loss/event number</idValue>
+	</idCode>
+	<idCode>ACV <idValue>Estimate order reference number</idValue>
+	</idCode>
+	<idCode>ACW <idValue>Reference number to previous message</idValue>
+	</idCode>
+	<idCode>ACX <idValue>Banker&apos;s acceptance</idValue>
+	</idCode>
+	<idCode>ACY <idValue>Duty memo number</idValue>
+	</idCode>
+	<idCode>ACZ <idValue>Equipment transport charge number</idValue>
+	</idCode>
+	<idCode>ADA <idValue>Buyer&apos;s item number</idValue>
+	</idCode>
+	<idCode>ADB <idValue>Matured certificate of deposit</idValue>
+	</idCode>
+	<idCode>ADC <idValue>Loan</idValue>
+	</idCode>
+	<idCode>ADD <idValue>Analysis number/test number</idValue>
+	</idCode>
+	<idCode>ADE <idValue>Account number</idValue>
+	</idCode>
+	<idCode>ADF <idValue>Treaty number</idValue>
+	</idCode>
+	<idCode>ADG <idValue>Catastrophe number</idValue>
+	</idCode>
+	<idCode>ADH <idValue>PCS Catastrophe</idValue>
+	</idCode>
+	<idCode>ADI <idValue>Bureau signing (statement reference)</idValue>
+	</idCode>
+	<idCode>ADJ <idValue>Company / syndicate reference 1</idValue>
+	</idCode>
+	<idCode>ADK <idValue>Company / syndicate reference 2</idValue>
+	</idCode>
+	<idCode>ADL <idValue>Ordering customer consignment reference number</idValue>
+	</idCode>
+	<idCode>ADM <idValue>Shipowner&apos;s authorization number</idValue>
+	</idCode>
+	<idCode>ADN <idValue>Inland transport order number</idValue>
+	</idCode>
+	<idCode>ADO <idValue>Container work order reference number</idValue>
+	</idCode>
+	<idCode>ADP <idValue>Statement number</idValue>
+	</idCode>
+	<idCode>ADQ <idValue>Unique market reference</idValue>
+	</idCode>
+	<idCode>ADR <idValue>Bureau signing (original FDO reference)</idValue>
+	</idCode>
+	<idCode>ADS <idValue>Original FDO transaction reference</idValue>
+	</idCode>
+	<idCode>ADT <idValue>Group accounting</idValue>
+	</idCode>
+	<idCode>ADU <idValue>Broker reference 1</idValue>
+	</idCode>
+	<idCode>ADV <idValue>Broker reference 2</idValue>
+	</idCode>
+	<idCode>ADW <idValue>Lloyd&apos;s claims office reference</idValue>
+	</idCode>
+	<idCode>ADY <idValue>Report number</idValue>
+	</idCode>
+	<idCode>ADZ <idValue>Trader account number</idValue>
+	</idCode>
+	<idCode>AE <idValue>Authorization for expense (AFE) number</idValue>
+	</idCode>
+	<idCode>AEA <idValue>Government agency reference number</idValue>
+	</idCode>
+	<idCode>AEB <idValue>Assembly number</idValue>
+	</idCode>
+	<idCode>AEC <idValue>Symbol number</idValue>
+	</idCode>
+	<idCode>AED <idValue>Commodity number</idValue>
+	</idCode>
+	<idCode>AEE <idValue>Eur 1 certificate number</idValue>
+	</idCode>
+	<idCode>AEF <idValue>Customer process specification number</idValue>
+	</idCode>
+	<idCode>AEG <idValue>Customer specification number</idValue>
+	</idCode>
+	<idCode>AEH <idValue>Applicable instructions or standards</idValue>
+	</idCode>
+	<idCode>AEI <idValue>Registration number of previous Customs declaration</idValue>
+	</idCode>
+	<idCode>AEJ <idValue>Post-entry reference</idValue>
+	</idCode>
+	<idCode>AEK <idValue>Payment order number</idValue>
+	</idCode>
+	<idCode>AEL <idValue>Delivery number (transport)</idValue>
+	</idCode>
+	<idCode>AEM <idValue>Transport route</idValue>
+	</idCode>
+	<idCode>AEN <idValue>Customer&apos;s unit inventory number</idValue>
+	</idCode>
+	<idCode>AEO <idValue>Product reservation number</idValue>
+	</idCode>
+	<idCode>AEP <idValue>Project number</idValue>
+	</idCode>
+	<idCode>AEQ <idValue>Drawing list number</idValue>
+	</idCode>
+	<idCode>AER <idValue>Project specification number</idValue>
+	</idCode>
+	<idCode>AES <idValue>Primary reference</idValue>
+	</idCode>
+	<idCode>AET <idValue>Request for cancellation number</idValue>
+	</idCode>
+	<idCode>AEU <idValue>Supplier&apos;s control number</idValue>
+	</idCode>
+	<idCode>AEV <idValue>Shipping note number</idValue>
+	</idCode>
+	<idCode>AEW <idValue>Empty container bill number</idValue>
+	</idCode>
+	<idCode>AEX <idValue>Non-negotiable maritime transport document number</idValue>
+	</idCode>
+	<idCode>AEY <idValue>Substitute air waybill number</idValue>
+	</idCode>
+	<idCode>AEZ <idValue>Despatch note (post parcels) number</idValue>
+	</idCode>
+	<idCode>AF <idValue>Airlines flight identification number</idValue>
+	</idCode>
+	<idCode>AFA <idValue>Through bill of lading number</idValue>
+	</idCode>
+	<idCode>AFB <idValue>Cargo manifest number</idValue>
+	</idCode>
+	<idCode>AFC <idValue>Bordereau number</idValue>
+	</idCode>
+	<idCode>AFD <idValue>Customs item number</idValue>
+	</idCode>
+	<idCode>AFE <idValue>Export Control Commodity number (ECCN)</idValue>
+	</idCode>
+	<idCode>AFF <idValue>Marking/label reference</idValue>
+	</idCode>
+	<idCode>AFG <idValue>Tariff number</idValue>
+	</idCode>
+	<idCode>AFH <idValue>Replenishment purchase order number</idValue>
+	</idCode>
+	<idCode>AFI <idValue>Immediate transportation no. for in bond movement</idValue>
+	</idCode>
+	<idCode>AFJ <idValue>Transportation exportation no. for in bond movement</idValue>
+	</idCode>
+	<idCode>AFK <idValue>Immediate exportation no. for in bond movement</idValue>
+	</idCode>
+	<idCode>AFL <idValue>Associated invoices</idValue>
+	</idCode>
+	<idCode>AFM <idValue>Secondary Customs reference</idValue>
+	</idCode>
+	<idCode>AFN <idValue>Account party&apos;s reference</idValue>
+	</idCode>
+	<idCode>AFO <idValue>Beneficiary&apos;s reference</idValue>
+	</idCode>
+	<idCode>AFP <idValue>Second beneficiary&apos;s reference</idValue>
+	</idCode>
+	<idCode>AFQ <idValue>Applicant&apos;s bank reference</idValue>
+	</idCode>
+	<idCode>AFR <idValue>Issuing bank&apos;s reference</idValue>
+	</idCode>
+	<idCode>AFS <idValue>Beneficiary&apos;s bank reference</idValue>
+	</idCode>
+	<idCode>AFT <idValue>Direct payment valuation number</idValue>
+	</idCode>
+	<idCode>AFU <idValue>Direct payment valuation request number</idValue>
+	</idCode>
+	<idCode>AFV <idValue>Quantity valuation number</idValue>
+	</idCode>
+	<idCode>AFW <idValue>Quantity valuation request number</idValue>
+	</idCode>
+	<idCode>AFX <idValue>Bill of quantities number</idValue>
+	</idCode>
+	<idCode>AFY <idValue>Payment valuation number</idValue>
+	</idCode>
+	<idCode>AFZ <idValue>Situation number</idValue>
+	</idCode>
+	<idCode>AGA <idValue>Agreement to pay number</idValue>
+	</idCode>
+	<idCode>AGB <idValue>Contract party reference number</idValue>
+	</idCode>
+	<idCode>AGC <idValue>Account party&apos;s bank reference</idValue>
+	</idCode>
+	<idCode>AGD <idValue>Agent&apos;s bank reference</idValue>
+	</idCode>
+	<idCode>AGE <idValue>Agent&apos;s reference</idValue>
+	</idCode>
+	<idCode>AGF <idValue>Applicant&apos;s reference</idValue>
+	</idCode>
+	<idCode>AGG <idValue>Dispute number</idValue>
+	</idCode>
+	<idCode>AGH <idValue>Credit rating agency&apos;s reference number</idValue>
+	</idCode>
+	<idCode>AGI <idValue>Request number</idValue>
+	</idCode>
+	<idCode>AGJ <idValue>Single transaction sequence number</idValue>
+	</idCode>
+	<idCode>AGK <idValue>Application reference number</idValue>
+	</idCode>
+	<idCode>AGL <idValue>Delivery verification certificate</idValue>
+	</idCode>
+	<idCode>AGM <idValue>Number of temporary importation document</idValue>
+	</idCode>
+	<idCode>AGN <idValue>Reference number quoted on statement</idValue>
+	</idCode>
+	<idCode>AGO <idValue>Sender&apos;s reference to the original message</idValue>
+	</idCode>
+	<idCode>AGP <idValue>Company issued equipment ID</idValue>
+	</idCode>
+	<idCode>AGQ <idValue>Domestic flight number</idValue>
+	</idCode>
+	<idCode>AGR <idValue>International flight number</idValue>
+	</idCode>
+	<idCode>AGS <idValue>Employer identification number of service bureau</idValue>
+	</idCode>
+	<idCode>AGT <idValue>Service group identification number</idValue>
+	</idCode>
+	<idCode>AGU <idValue>Member number</idValue>
+	</idCode>
+	<idCode>AGV <idValue>Previous member number</idValue>
+	</idCode>
+	<idCode>AGW <idValue>Scheme/plan number</idValue>
+	</idCode>
+	<idCode>AGX <idValue>Previous scheme/plan number</idValue>
+	</idCode>
+	<idCode>AGY <idValue>Receiving party&apos;s member identification</idValue>
+	</idCode>
+	<idCode>AGZ <idValue>Payroll number</idValue>
+	</idCode>
+	<idCode>AHA <idValue>Packaging specification number</idValue>
+	</idCode>
+	<idCode>AHB <idValue>Authority issued equipment identification</idValue>
+	</idCode>
+	<idCode>AHC <idValue>Training flight number</idValue>
+	</idCode>
+	<idCode>AHD <idValue>Fund code number</idValue>
+	</idCode>
+	<idCode>AHE <idValue>Signal code number</idValue>
+	</idCode>
+	<idCode>AHF <idValue>Major force program number</idValue>
+	</idCode>
+	<idCode>AHG <idValue>Nomination number</idValue>
+	</idCode>
+	<idCode>AHH <idValue>Laboratory registration number</idValue>
+	</idCode>
+	<idCode>AHI <idValue>Transport contract reference number</idValue>
+	</idCode>
+	<idCode>AHJ <idValue>Payee&apos;s reference number</idValue>
+	</idCode>
+	<idCode>AHK <idValue>Payer&apos;s reference number</idValue>
+	</idCode>
+	<idCode>AHL <idValue>Creditor&apos;s reference number</idValue>
+	</idCode>
+	<idCode>AHM <idValue>Debtor&apos;s reference number</idValue>
+	</idCode>
+	<idCode>AHN <idValue>Joint venture reference number</idValue>
+	</idCode>
+	<idCode>AHO <idValue>Chamber of Commerce registration number</idValue>
+	</idCode>
+	<idCode>AHP <idValue>Tax registration number</idValue>
+	</idCode>
+	<idCode>AHQ <idValue>Wool identification number</idValue>
+	</idCode>
+	<idCode>AHR <idValue>Wool tax reference number</idValue>
+	</idCode>
+	<idCode>AHS <idValue>Meat processing establishment registration number</idValue>
+	</idCode>
+	<idCode>AHT <idValue>Quarantine/treatment status reference number</idValue>
+	</idCode>
+	<idCode>AHU <idValue>Request for quote number</idValue>
+	</idCode>
+	<idCode>AHV <idValue>Manual processing authority number</idValue>
+	</idCode>
+	<idCode>AHW <idValue>Import permit number</idValue>
+	</idCode>
+	<idCode>AHX <idValue>Rate note number</idValue>
+	</idCode>
+	<idCode>AHY <idValue>Freight Forwarder number</idValue>
+	</idCode>
+	<idCode>AHZ <idValue>Customs release code</idValue>
+	</idCode>
+	<idCode>AIA <idValue>Compliance code number</idValue>
+	</idCode>
+	<idCode>AIB <idValue>Department of transportation bond number</idValue>
+	</idCode>
+	<idCode>AIC <idValue>Export establishment number</idValue>
+	</idCode>
+	<idCode>AID <idValue>Certificate of conformity</idValue>
+	</idCode>
+	<idCode>AIE <idValue>Ministerial certificate of homologation</idValue>
+	</idCode>
+	<idCode>AIF <idValue>Previous delivery instruction number</idValue>
+	</idCode>
+	<idCode>AIG <idValue>Passport number</idValue>
+	</idCode>
+	<idCode>AIH <idValue>Common transaction reference number</idValue>
+	</idCode>
+	<idCode>AII <idValue>Bank&apos;s common transaction reference number</idValue>
+	</idCode>
+	<idCode>AIJ <idValue>Customer&apos;s individual transaction reference number</idValue>
+	</idCode>
+	<idCode>AIK <idValue>Bank&apos;s individual transaction reference number</idValue>
+	</idCode>
+	<idCode>AIL <idValue>Customer&apos;s common transaction reference number</idValue>
+	</idCode>
+	<idCode>AIM <idValue>Individual transaction reference number</idValue>
+	</idCode>
+	<idCode>AIN <idValue>Product sourcing agreement number</idValue>
+	</idCode>
+	<idCode>AIO <idValue>Customs transhipment number</idValue>
+	</idCode>
+	<idCode>AIP <idValue>Customs preference inquiry number</idValue>
+	</idCode>
+	<idCode>AIQ <idValue>Packing plant number</idValue>
+	</idCode>
+	<idCode>AIR <idValue>Original certificate number</idValue>
+	</idCode>
+	<idCode>AIS <idValue>Processing plant number</idValue>
+	</idCode>
+	<idCode>AIT <idValue>Slaughter plant number</idValue>
+	</idCode>
+	<idCode>AIU <idValue>Charge card account number</idValue>
+	</idCode>
+	<idCode>AIV <idValue>Event reference number</idValue>
+	</idCode>
+	<idCode>AIW <idValue>Transport section reference number</idValue>
+	</idCode>
+	<idCode>AIX <idValue>Referred product for mechanical analysis</idValue>
+	</idCode>
+	<idCode>AIY <idValue>Referred product for chemical analysis</idValue>
+	</idCode>
+	<idCode>AIZ <idValue>Consolidated invoice number</idValue>
+	</idCode>
+	<idCode>AJA <idValue>Part reference indicator in a drawing</idValue>
+	</idCode>
+	<idCode>AJB <idValue>U.S. Code of Federal Regulations (CFR)</idValue>
+	</idCode>
+	<idCode>AJC <idValue>Purchasing activity clause number</idValue>
+	</idCode>
+	<idCode>AJD <idValue>U.S. Defense Federal Acquisition Regulation Supplement</idValue>
+	</idCode>
+	<idCode>AJE <idValue>Agency clause number</idValue>
+	</idCode>
+	<idCode>AJF <idValue>Circular publication number</idValue>
+	</idCode>
+	<idCode>AJG <idValue>U.S. Federal Acquisition Regulation</idValue>
+	</idCode>
+	<idCode>AJH <idValue>U.S. General Services Administration Regulation</idValue>
+	</idCode>
+	<idCode>AJI <idValue>U.S. Federal Information Resources Management
+		Regulation</idValue>
+	</idCode>
+	<idCode>AJJ <idValue>Paragraph</idValue>
+	</idCode>
+	<idCode>AJK <idValue>Special instructions number</idValue>
+	</idCode>
+	<idCode>AJL <idValue>Site specific procedures, terms, and conditions number</idValue>
+	</idCode>
+	<idCode>AJM <idValue>Master solicitation procedures, terms, and conditions
+		number</idValue>
+	</idCode>
+	<idCode>AJN <idValue>U.S. Department of Veterans Affairs Acquisition
+		Regulation</idValue>
+	</idCode>
+	<idCode>AJO <idValue>Military Interdepartmental Purchase Request (MIPR)
+		number</idValue>
+	</idCode>
+	<idCode>AJP <idValue>Foreign military sales number</idValue>
+	</idCode>
+	<idCode>AJQ <idValue>Defense priorities allocation system priority rating</idValue>
+	</idCode>
+	<idCode>AJR <idValue>Wage determination number</idValue>
+	</idCode>
+	<idCode>AJS <idValue>Agreement number</idValue>
+	</idCode>
+	<idCode>AJT <idValue>Standard Industry Classification (SIC) number</idValue>
+	</idCode>
+	<idCode>AJU <idValue>End item number</idValue>
+	</idCode>
+	<idCode>AJV <idValue>Federal supply schedule item number</idValue>
+	</idCode>
+	<idCode>AJW <idValue>Technical document number</idValue>
+	</idCode>
+	<idCode>AJX <idValue>Technical order number</idValue>
+	</idCode>
+	<idCode>AJY <idValue>Suffix</idValue>
+	</idCode>
+	<idCode>AJZ <idValue>Transportation account number</idValue>
+	</idCode>
+	<idCode>AKA <idValue>Container disposition order reference number</idValue>
+	</idCode>
+	<idCode>AKB <idValue>Container prefix</idValue>
+	</idCode>
+	<idCode>AKC <idValue>Transport equipment return reference</idValue>
+	</idCode>
+	<idCode>AKD <idValue>Transport equipment survey reference</idValue>
+	</idCode>
+	<idCode>AKE <idValue>Transport equipment survey report number</idValue>
+	</idCode>
+	<idCode>AKF <idValue>Transport equipment stuffing order</idValue>
+	</idCode>
+	<idCode>AKG <idValue>Vehicle Identification Number (VIN)</idValue>
+	</idCode>
+	<idCode>AKK <idValue>Meter reading at the beginning of the delivery</idValue>
+	</idCode>
+	<idCode>AKL <idValue>Meter reading at the end of delivery</idValue>
+	</idCode>
+	<idCode>AKM <idValue>Replenishment purchase order range start number</idValue>
+	</idCode>
+	<idCode>AKO <idValue>Action authorization number</idValue>
+	</idCode>
+	<idCode>AKP <idValue>Appropriation number</idValue>
+	</idCode>
+	<idCode>AKQ <idValue>Product change authority number</idValue>
+	</idCode>
+	<idCode>AKR <idValue>General cargo consignment reference number</idValue>
+	</idCode>
+	<idCode>AKS <idValue>Catalogue sequence number</idValue>
+	</idCode>
+	<idCode>AKT <idValue>Forwarding order number</idValue>
+	</idCode>
+	<idCode>AKU <idValue>Transport equipment survey reference number</idValue>
+	</idCode>
+	<idCode>AKV <idValue>Lease contract reference</idValue>
+	</idCode>
+	<idCode>AKW <idValue>Transport costs reference number</idValue>
+	</idCode>
+	<idCode>AKX <idValue>Transport equipment stripping order</idValue>
+	</idCode>
+	<idCode>ALA <idValue>Procurement budget number</idValue>
+	</idCode>
+	<idCode>ALB <idValue>Domestic inventory management code</idValue>
+	</idCode>
+	<idCode>ALC <idValue>Customer reference number assigned to previous balance
+		of payment information</idValue>
+	</idCode>
+	<idCode>ALD <idValue>Previous credit advice reference number</idValue>
+	</idCode>
+	<idCode>ALE <idValue>Reporting form number</idValue>
+	</idCode>
+	<idCode>ALF <idValue>Authorization number for exception to dangerous goods
+		regulations</idValue>
+	</idCode>
+	<idCode>ALG <idValue>Dangerous goods security number</idValue>
+	</idCode>
+	<idCode>ALH <idValue>Dangerous goods transport licence number</idValue>
+	</idCode>
+	<idCode>ALI <idValue>Previous rental agreement number</idValue>
+	</idCode>
+	<idCode>ALJ <idValue>Next rental agreement reason number</idValue>
+	</idCode>
+	<idCode>ALK <idValue>Consignee&apos;s invoice number</idValue>
+	</idCode>
+	<idCode>ALL <idValue>Message batch number</idValue>
+	</idCode>
+	<idCode>ALM <idValue>Previous delivery schedule number</idValue>
+	</idCode>
+	<idCode>ALN <idValue>Physical inventory recount reference number</idValue>
+	</idCode>
+	<idCode>ALO <idValue>Receiving advice number</idValue>
+	</idCode>
+	<idCode>ALP <idValue>Returnable container reference number</idValue>
+	</idCode>
+	<idCode>ALQ <idValue>Returns notice number</idValue>
+	</idCode>
+	<idCode>ALR <idValue>Sales forecast number</idValue>
+	</idCode>
+	<idCode>ALS <idValue>Sales report number</idValue>
+	</idCode>
+	<idCode>ALT <idValue>Previous tax control number</idValue>
+	</idCode>
+	<idCode>ALU <idValue>AGERD (Aerospace Ground Equipment Requirement Data)
+		number</idValue>
+	</idCode>
+	<idCode>ALV <idValue>Registered capital reference</idValue>
+	</idCode>
+	<idCode>ALW <idValue>Standard number of inspection document</idValue>
+	</idCode>
+	<idCode>ALX <idValue>Model</idValue>
+	</idCode>
+	<idCode>ALY <idValue>Financial management reference</idValue>
+	</idCode>
+	<idCode>ALZ <idValue>NOTIfication for COLlection number (NOTICOL)</idValue>
+	</idCode>
+	<idCode>AMA <idValue>Previous request for metered reading reference number</idValue>
+	</idCode>
+	<idCode>AMB <idValue>Next rental agreement number</idValue>
+	</idCode>
+	<idCode>AMC <idValue>Reference number of a request for metered reading</idValue>
+	</idCode>
+	<idCode>AMD <idValue>Hastening number</idValue>
+	</idCode>
+	<idCode>AME <idValue>Repair data request number</idValue>
+	</idCode>
+	<idCode>AMF <idValue>Consumption data request number</idValue>
+	</idCode>
+	<idCode>AMG <idValue>Profile number</idValue>
+	</idCode>
+	<idCode>AMI <idValue>Government quality assurance and control level Number</idValue>
+	</idCode>
+	<idCode>AMJ <idValue>Payment plan reference</idValue>
+	</idCode>
+	<idCode>AMK <idValue>Procurement budget number</idValue>
+	</idCode>
+	<idCode>AML <idValue>Replenishment purchase order range end number</idValue>
+	</idCode>
+	<idCode>AMN <idValue>Canadian excise entry number</idValue>
+	</idCode>
+	<idCode>AMQ <idValue>US, Department of Transportation bond surety code</idValue>
+	</idCode>
+	<idCode>AMR <idValue>US, Food and Drug Administration establishment
+		indicator</idValue>
+	</idCode>
+	<idCode>AMS <idValue>US, Federal Communications Commission (FCC) import
+		condition number</idValue>
+	</idCode>
+	<idCode>AMT <idValue>Goods and Services Tax identification number</idValue>
+	</idCode>
+	<idCode>AMU <idValue>Integrated logistic support cross reference number</idValue>
+	</idCode>
+	<idCode>AP <idValue>Accounts receivable number</idValue>
+	</idCode>
+	<idCode>ASC <idValue>Assuming company</idValue>
+	</idCode>
+	<idCode>AU <idValue>Authorization to meet competition No.</idValue>
+	</idCode>
+	<idCode>AV <idValue>Account payable number</idValue>
+	</idCode>
+	<idCode>AWB <idValue>Air waybill number</idValue>
+	</idCode>
+	<idCode>BA <idValue>Beginning meter reading actual</idValue>
+	</idCode>
+	<idCode>BC <idValue>Buyer&apos;s contract number</idValue>
+	</idCode>
+	<idCode>BD <idValue>Bid number</idValue>
+	</idCode>
+	<idCode>BE <idValue>Beginning meter reading estimated</idValue>
+	</idCode>
+	<idCode>BH <idValue>House bill of lading number</idValue>
+	</idCode>
+	<idCode>BM <idValue>Bill of lading number</idValue>
+	</idCode>
+	<idCode>BN <idValue>Booking reference number</idValue>
+	</idCode>
+	<idCode>BO <idValue>Blanket order number</idValue>
+	</idCode>
+	<idCode>BR <idValue>Broker or sales office number</idValue>
+	</idCode>
+	<idCode>BT <idValue>Batch number/lot number</idValue>
+	</idCode>
+	<idCode>BW <idValue>Blended with number</idValue>
+	</idCode>
+	<idCode>CAS <idValue>IATA Cargo Agent CASS Address number</idValue>
+	</idCode>
+	<idCode>CD <idValue>Credit note number</idValue>
+	</idCode>
+	<idCode>CEC <idValue>Ceding company</idValue>
+	</idCode>
+	<idCode>CFE <idValue>Consignee&apos;s further order</idValue>
+	</idCode>
+	<idCode>CFO <idValue>Consignor&apos;s further order</idValue>
+	</idCode>
+	<idCode>CG <idValue>Consignee&apos;s order number</idValue>
+	</idCode>
+	<idCode>CH <idValue>Customer catalogue number</idValue>
+	</idCode>
+	<idCode>CK <idValue>Cheque number</idValue>
+	</idCode>
+	<idCode>CKN <idValue>Checking number</idValue>
+	</idCode>
+	<idCode>CM <idValue>Credit memo number</idValue>
+	</idCode>
+	<idCode>CMR <idValue>Road consignment note number</idValue>
+	</idCode>
+	<idCode>CN <idValue>Carrier&apos;s reference number</idValue>
+	</idCode>
+	<idCode>CNO <idValue>Charge note reference number</idValue>
+	</idCode>
+	<idCode>CO <idValue>Buyers order number</idValue>
+	</idCode>
+	<idCode>COF <idValue>Call off order number</idValue>
+	</idCode>
+	<idCode>CP <idValue>Condition of purchase document number</idValue>
+	</idCode>
+	<idCode>CR <idValue>Customer reference number</idValue>
+	</idCode>
+	<idCode>CRN <idValue>Conveyance reference number</idValue>
+	</idCode>
+	<idCode>CS <idValue>Condition of sale document number</idValue>
+	</idCode>
+	<idCode>CST <idValue>Team assignment number</idValue>
+	</idCode>
+	<idCode>CT <idValue>Contract number</idValue>
+	</idCode>
+	<idCode>CU <idValue>Consignor&apos;s reference number</idValue>
+	</idCode>
+	<idCode>CV <idValue>Container operators reference number</idValue>
+	</idCode>
+	<idCode>CW <idValue>Package number</idValue>
+	</idCode>
+	<idCode>CZ <idValue>Cooperation contract number</idValue>
+	</idCode>
+	<idCode>DA <idValue>Deferment approval number</idValue>
+	</idCode>
+	<idCode>DAN <idValue>Debit account number</idValue>
+	</idCode>
+	<idCode>DB <idValue>Buyer&apos;s debtor number</idValue>
+	</idCode>
+	<idCode>DI <idValue>Distributor invoice number</idValue>
+	</idCode>
+	<idCode>DL <idValue>Debit note number</idValue>
+	</idCode>
+	<idCode>DM <idValue>Document number</idValue>
+	</idCode>
+	<idCode>DQ <idValue>Delivery note number</idValue>
+	</idCode>
+	<idCode>DR <idValue>Dock receipt number</idValue>
+	</idCode>
+	<idCode>EA <idValue>Ending meter reading actual</idValue>
+	</idCode>
+	<idCode>EB <idValue>Embargo permit number</idValue>
+	</idCode>
+	<idCode>ED <idValue>Export declaration</idValue>
+	</idCode>
+	<idCode>EE <idValue>Ending meter reading estimated</idValue>
+	</idCode>
+	<idCode>EI <idValue>Employer&apos;s identification number</idValue>
+	</idCode>
+	<idCode>EN <idValue>Embargo number</idValue>
+	</idCode>
+	<idCode>EP <idValue>Export permit number</idValue>
+	</idCode>
+	<idCode>EQ <idValue>Equipment number</idValue>
+	</idCode>
+	<idCode>ER <idValue>Container/equipment receipt number</idValue>
+	</idCode>
+	<idCode>ERN <idValue>Exporter&apos;s reference number</idValue>
+	</idCode>
+	<idCode>ET <idValue>Excess transportation number</idValue>
+	</idCode>
+	<idCode>EX <idValue>Export licence number</idValue>
+	</idCode>
+	<idCode>FC <idValue>Fiscal number</idValue>
+	</idCode>
+	<idCode>FF <idValue>Freight forwarder&apos;s reference number</idValue>
+	</idCode>
+	<idCode>FI <idValue>File line identifier</idValue>
+	</idCode>
+	<idCode>FLW <idValue>Flow reference number</idValue>
+	</idCode>
+	<idCode>FN <idValue>Freight bill number</idValue>
+	</idCode>
+	<idCode>FO <idValue>Foreign exchange</idValue>
+	</idCode>
+	<idCode>FS <idValue>Final sequence number</idValue>
+	</idCode>
+	<idCode>FT <idValue>Free zone identifier</idValue>
+	</idCode>
+	<idCode>FV <idValue>File version number</idValue>
+	</idCode>
+	<idCode>FX <idValue>Foreign exchange contract number</idValue>
+	</idCode>
+	<idCode>GA <idValue>Standard&apos;s number</idValue>
+	</idCode>
+	<idCode>GC <idValue>Government contract number</idValue>
+	</idCode>
+	<idCode>GD <idValue>Standard&apos;s code number</idValue>
+	</idCode>
+	<idCode>GDN <idValue>General declaration number</idValue>
+	</idCode>
+	<idCode>GN <idValue>Government reference number</idValue>
+	</idCode>
+	<idCode>HS <idValue>Harmonised system number</idValue>
+	</idCode>
+	<idCode>HWB <idValue>House waybill number</idValue>
+	</idCode>
+	<idCode>IA <idValue>Internal vendor number</idValue>
+	</idCode>
+	<idCode>IB <idValue>In bond number</idValue>
+	</idCode>
+	<idCode>ICA <idValue>IATA cargo agent code number</idValue>
+	</idCode>
+	<idCode>ICE <idValue>Insurance certificate reference number</idValue>
+	</idCode>
+	<idCode>ICO <idValue>Insurance contract reference number</idValue>
+	</idCode>
+	<idCode>II <idValue>Initial sample inspection report number</idValue>
+	</idCode>
+	<idCode>IL <idValue>Internal order number</idValue>
+	</idCode>
+	<idCode>INB <idValue>Intermediary broker</idValue>
+	</idCode>
+	<idCode>INN <idValue>Interchange number new</idValue>
+	</idCode>
+	<idCode>INO <idValue>Interchange number old</idValue>
+	</idCode>
+	<idCode>IP <idValue>Import licence number</idValue>
+	</idCode>
+	<idCode>IS <idValue>Invoice number suffix</idValue>
+	</idCode>
+	<idCode>IT <idValue>Internal customer number</idValue>
+	</idCode>
+	<idCode>IV <idValue>Invoice number</idValue>
+	</idCode>
+	<idCode>JB <idValue>Job number</idValue>
+	</idCode>
+	<idCode>JE <idValue>Ending job sequence number</idValue>
+	</idCode>
+	<idCode>LA <idValue>Shipping label serial number</idValue>
+	</idCode>
+	<idCode>LAN <idValue>Loading authorization number</idValue>
+	</idCode>
+	<idCode>LAR <idValue>Lower article number of range</idValue>
+	</idCode>
+	<idCode>LB <idValue>Lockbox</idValue>
+	</idCode>
+	<idCode>LC <idValue>Letter of credit number</idValue>
+	</idCode>
+	<idCode>LI <idValue>Line item reference number</idValue>
+	</idCode>
+	<idCode>LO <idValue>Load planning number</idValue>
+	</idCode>
+	<idCode>LS <idValue>Bar coded label serial number</idValue>
+	</idCode>
+	<idCode>MA <idValue>Ship notice/manifest number</idValue>
+	</idCode>
+	<idCode>MB <idValue>Master bill of lading number</idValue>
+	</idCode>
+	<idCode>MF <idValue>Manufacturer&apos;s part number</idValue>
+	</idCode>
+	<idCode>MG <idValue>Meter unit number</idValue>
+	</idCode>
+	<idCode>MH <idValue>Manufacturing order number</idValue>
+	</idCode>
+	<idCode>MR <idValue>Message recipient</idValue>
+	</idCode>
+	<idCode>MRN <idValue>Mailing reference number</idValue>
+	</idCode>
+	<idCode>MS <idValue>Message sender</idValue>
+	</idCode>
+	<idCode>MSS <idValue>Manufacturer&apos;s material safety data sheet number</idValue>
+	</idCode>
+	<idCode>MWB <idValue>Master air waybill number</idValue>
+	</idCode>
+	<idCode>NA <idValue>North American hazardous goods classification number</idValue>
+	</idCode>
+	<idCode>OH <idValue>Current invoice number</idValue>
+	</idCode>
+	<idCode>OI <idValue>Previous invoice number</idValue>
+	</idCode>
+	<idCode>ON <idValue>Order number (purchase)</idValue>
+	</idCode>
+	<idCode>OP <idValue>Original purchase order</idValue>
+	</idCode>
+	<idCode>OR <idValue>General order number</idValue>
+	</idCode>
+	<idCode>PB <idValue>Payer&apos;s financial institution account number</idValue>
+	</idCode>
+	<idCode>PC <idValue>Production code</idValue>
+	</idCode>
+	<idCode>PD <idValue>Promotion deal number</idValue>
+	</idCode>
+	<idCode>PE <idValue>Plant number</idValue>
+	</idCode>
+	<idCode>PF <idValue>Prime contractor contract number</idValue>
+	</idCode>
+	<idCode>PI <idValue>Price list version number</idValue>
+	</idCode>
+	<idCode>PK <idValue>Packing list number</idValue>
+	</idCode>
+	<idCode>PL <idValue>Price list number</idValue>
+	</idCode>
+	<idCode>POR <idValue>Purchase order response number</idValue>
+	</idCode>
+	<idCode>PP <idValue>Purchase order change number</idValue>
+	</idCode>
+	<idCode>PQ <idValue>Payment reference</idValue>
+	</idCode>
+	<idCode>PR <idValue>Price quote number</idValue>
+	</idCode>
+	<idCode>PS <idValue>Purchase order number suffix</idValue>
+	</idCode>
+	<idCode>PW <idValue>Prior purchase order number</idValue>
+	</idCode>
+	<idCode>PY <idValue>Payee&apos;s financial institution account number</idValue>
+	</idCode>
+	<idCode>RA <idValue>Remittance advice number</idValue>
+	</idCode>
+	<idCode>RC <idValue>Rail/road routing code</idValue>
+	</idCode>
+	<idCode>RCN <idValue>Railway consignment note number</idValue>
+	</idCode>
+	<idCode>RE <idValue>Release number</idValue>
+	</idCode>
+	<idCode>REN <idValue>Received number</idValue>
+	</idCode>
+	<idCode>RF <idValue>Export reference number</idValue>
+	</idCode>
+	<idCode>RR <idValue>Payer&apos;s financial institution transit routing
+		No.(ACH transfers)</idValue>
+	</idCode>
+	<idCode>RT <idValue>Payee&apos;s financial institution transit routing No.</idValue>
+	</idCode>
+	<idCode>SA <idValue>Sales person number</idValue>
+	</idCode>
+	<idCode>SB <idValue>Sales region number</idValue>
+	</idCode>
+	<idCode>SD <idValue>Sales department number</idValue>
+	</idCode>
+	<idCode>SE <idValue>Serial number</idValue>
+	</idCode>
+	<idCode>SF <idValue>Ship from</idValue>
+	</idCode>
+	<idCode>SH <idValue>Previous highest schedule number</idValue>
+	</idCode>
+	<idCode>SI <idValue>SID (Shipper&apos;s identifying number for shipment)</idValue>
+	</idCode>
+	<idCode>SM <idValue>Sales office number</idValue>
+	</idCode>
+	<idCode>SN <idValue>Seal number</idValue>
+	</idCode>
+	<idCode>SP <idValue>Scan line</idValue>
+	</idCode>
+	<idCode>SQ <idValue>Container sequence number</idValue>
+	</idCode>
+	<idCode>SRN <idValue>Shipment reference number</idValue>
+	</idCode>
+	<idCode>SS <idValue>Sellers reference number</idValue>
+	</idCode>
+	<idCode>STA <idValue>Station reference number</idValue>
+	</idCode>
+	<idCode>SW <idValue>Swap order number</idValue>
+	</idCode>
+	<idCode>SZ <idValue>Specification number</idValue>
+	</idCode>
+	<idCode>TB <idValue>Trucker&apos;s bill of lading</idValue>
+	</idCode>
+	<idCode>TE <idValue>Telex message number</idValue>
+	</idCode>
+	<idCode>TF <idValue>Transfer number</idValue>
+	</idCode>
+	<idCode>TI <idValue>TIR carnet number</idValue>
+	</idCode>
+	<idCode>TL <idValue>Tax exemption licence number</idValue>
+	</idCode>
+	<idCode>TN <idValue>Transaction reference number</idValue>
+	</idCode>
+	<idCode>TP <idValue>Test report number</idValue>
+	</idCode>
+	<idCode>UAR <idValue>Upper serial number of range</idValue>
+	</idCode>
+	<idCode>UC <idValue>Ultimate customer&apos;s reference number</idValue>
+	</idCode>
+	<idCode>UCN <idValue>Unique consignment reference number</idValue>
+	</idCode>
+	<idCode>UN <idValue>United Nations dangerous goods (UNDG) number</idValue>
+	</idCode>
+	<idCode>UO <idValue>Ultimate customer&apos;s order number</idValue>
+	</idCode>
+	<idCode>VA <idValue>VAT registration number</idValue>
+	</idCode>
+	<idCode>VC <idValue>Vendor contract number</idValue>
+	</idCode>
+	<idCode>VM <idValue>Vessel identification</idValue>
+	</idCode>
+	<idCode>VN <idValue>Order number (vendor)</idValue>
+	</idCode>
+	<idCode>VON <idValue>Voyage number</idValue>
+	</idCode>
+	<idCode>VP <idValue>Vendor product number</idValue>
+	</idCode>
+	<idCode>VR <idValue>Vendor ID number</idValue>
+	</idCode>
+	<idCode>VS <idValue>Vendor order number suffix</idValue>
+	</idCode>
+	<idCode>VT <idValue>Motor vehicle identification number</idValue>
+	</idCode>
+	<idCode>VV <idValue>Voucher number</idValue>
+	</idCode>
+	<idCode>WE <idValue>Warehouse entry number</idValue>
+	</idCode>
+	<idCode>WM <idValue>Weight agreement number</idValue>
+	</idCode>
+	<idCode>WN <idValue>Well number</idValue>
+	</idCode>
+	<idCode>WR <idValue>Warehouse receipt number</idValue>
+	</idCode>
+	<idCode>WS <idValue>Warehouse storage location number</idValue>
+	</idCode>
+	<idCode>WY <idValue>Rail waybill number</idValue>
+	</idCode>
+	<idCode>XA <idValue>Company/place registration number</idValue>
+	</idCode>
+	<idCode>XC <idValue>Cargo control number</idValue>
+	</idCode>
+	<idCode>XP <idValue>Previous cargo control number</idValue>
+	</idCode>
+	<idCode>ZZZ <idValue>Mutually defined reference number</idValue>
+	</idCode>
 </idList>

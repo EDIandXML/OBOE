@@ -1,0 +1,181 @@
+<?xml version="1.0" ?>
+<idList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/ediRules.xsd">
+	<idCode>
+		01
+		<idValue>Duns (Dun &amp; Bradstreet)</idValue>
+	</idCode>
+	<idCode>
+		02
+		<idValue>SCAC (Standard Carrier Alpha Code)</idValue>
+	</idCode>
+	<idCode>
+		03
+		<idValue>FMC (Federal Maritime Commission)</idValue>
+	</idCode>
+	<idCode>
+		04
+		<idValue>IATA (International Air Transport Association)</idValue>
+	</idCode>
+	<idCode>
+		08
+		<idValue>UCC EDI Communications ID (Comm ID)</idValue>
+	</idCode>
+	<idCode>
+		09
+		<idValue>X.121 (CCITT)</idValue>
+	</idCode>
+	<idCode>
+		10
+		<idValue>Department of Defense (DoD) Activity Address Code</idValue>
+	</idCode>
+	<idCode>
+		11
+		<idValue>DEA (Drug Enforcement Administration)</idValue>
+	</idCode>
+	<idCode>
+		12
+		<idValue>Phone (Telephone Companies)</idValue>
+	</idCode>
+	<idCode>
+		13
+		<idValue>UCS Code (The UCS Code is a Code Used for UCS Transmissions;
+			it includes the Area Code and Telephone Number of a Modem; it Does
+			Not Include Punctuation, Blanks or Access Code)</idValue>
+	</idCode>
+	<idCode>
+		14
+		<idValue>Duns Plus Suffix</idValue>
+	</idCode>
+	<idCode>
+		15
+		<idValue>Petroleum Accountants Society of Canada Company Code
+		</idValue>
+	</idCode>
+	<idCode>
+		16
+		<idValue>Duns Number With 4-Character Suffix</idValue>
+	</idCode>
+	<idCode>
+		17
+		<idValue>American Bankers Association (ABA) Transit Routing Number
+			(Including Check Digit, 9 Digit)</idValue>
+	</idCode>
+	<idCode>
+		18
+		<idValue>Association of American Railroads (AAR) Standard Distribution
+			Code</idValue>
+	</idCode>
+	<idCode>
+		19
+		<idValue>EDI Council of Australia (EDICA) Communications ID Number
+			(COMM ID)</idValue>
+	</idCode>
+	<idCode>
+		20
+		<idValue>Health Industry Number (HIN)</idValue>
+	</idCode>
+	<idCode>
+		21
+		<idValue>Integrated Postsecondary Education Data System, or (IPEDS)
+		</idValue>
+	</idCode>
+	<idCode>
+		22
+		<idValue>Federal Interagency Commission on Education, or FICE
+		</idValue>
+	</idCode>
+	<idCode>
+		23
+		<idValue>National Center for Education Statistics Common Core of Data
+			12-Digit Number for Pre-K-Grade 12 Institutes, or NCES</idValue>
+	</idCode>
+	<idCode>
+		24
+		<idValue>The College Board&apos;s Admission Testing Program 4-Digit
+			Code of Postsecondary Institutes, or ATP</idValue>
+	</idCode>
+	<idCode>
+		25
+		<idValue>American College Testing Program 4-Digit Code of
+			Postsecondary Institutions, or ACT</idValue>
+	</idCode>
+	<idCode>
+		26
+		<idValue>Statistics of Canada List of Postsecondary Institutions
+		</idValue>
+	</idCode>
+	<idCode>
+		27
+		<idValue>Carrier Identification Number as assigned by Health Care
+			Financing Administration (HCFA)</idValue>
+	</idCode>
+	<idCode>
+		28
+		<idValue>Fiscal Intermediary Identification Number as assigned by
+			Health Care Financing Administration (HCFA)</idValue>
+	</idCode>
+	<idCode>
+		29
+		<idValue>Medicare Provider and Supplier Identification Number as
+			assigned by Health Care Financing Administration (HCFA)</idValue>
+	</idCode>
+	<idCode>
+		30
+		<idValue>U.S. Federal Tax Identification Number</idValue>
+	</idCode>
+	<idCode>
+		31
+		<idValue>Jurisdiction Identification Number Plus 4 as assigned by the
+			International Association of Industrial Accident Boards and
+			Commissions (IAIABC)</idValue>
+	</idCode>
+	<idCode>
+		32
+		<idValue>U.S. Federal Employer Identification Number (FEIN)</idValue>
+	</idCode>
+	<idCode>
+		33
+		<idValue>National Association of Insurance Commissioners Company Code
+			(NAIC)</idValue>
+	</idCode>
+	<idCode>
+		34
+		<idValue>Medicaid Provider and Supplier Identification Number as
+			assigned by individual State Medicaid Agencies in conjunction with
+			Health Care Financing Administration (HCFA)</idValue>
+	</idCode>
+	<idCode>
+		35
+		<idValue>Statistics Canada Canadian College Student Information System
+			Institution Codes</idValue>
+	</idCode>
+	<idCode>
+		36
+		<idValue>Statistics Canada University Student Information System
+			Institution Codes</idValue>
+	</idCode>
+	<idCode>
+		37
+		<idValue>Society of Property Information Compilers and Analysts
+		</idValue>
+	</idCode>
+	<idCode>
+		AM
+		<idValue>Association Mexicana del Codigo de Producto (AMECOP)
+			Communication ID</idValue>
+	</idCode>
+	<idCode>
+		NR
+		<idValue>National Retail Merchants Association (NRMA) - Assigned
+		</idValue>
+	</idCode>
+	<idCode>
+		SN
+		<idValue>Standard Address Number</idValue>
+	</idCode>
+	<idCode>
+		ZZ
+		<idValue>Mutually Defined</idValue>
+	</idCode>
+</idList>

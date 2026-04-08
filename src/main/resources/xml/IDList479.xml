@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>
+		AA
+		<idValue>Account Analysis (822)</idValue>
+	</idCode>
+	<idCode>
+		AB
+		<idValue>Logistics Service Request (219)</idValue>
+	</idCode>
+	<idCode>
+		AD
+		<idValue>Individual Life, Annuity and Disability Application (267)
+		</idValue>
+	</idCode>
+	<idCode>
+		AF
+		<idValue>Application for Admission to Educational Institutions (189)
+		</idValue>
+	</idCode>
+	<idCode>
+		AG
+		<idValue>Application Advice (824)</idValue>
+	</idCode>
+	<idCode>
+		AH
+		<idValue>Logistics Service Response (220)</idValue>
+	</idCode>
+	<idCode>
+		AI
+		<idValue>Automotive Inspection Detail (928)</idValue>
+	</idCode>
+	<idCode>
+		AK
+		<idValue>Student Educational Record (Transcript) Acknowledgment (131)
+		</idValue>
+	</idCode>
+	<idCode>
+		AL
+		<idValue>Set Cancellation (998) and Application Acceptance/Rejection
+			Advice (499)</idValue>
+	</idCode>
+	<idCode>
+		AN
+		<idValue>Return Merchandise Authorization and Notification (180)
+		</idValue>
+	</idCode>
+	<idCode>
+		AO
+		<idValue>Income or Asset Offset (521)</idValue>
+	</idCode>
+	<idCode>
+		AR
+		<idValue>Warehouse Stock Transfer Shipment Advice (943)</idValue>
+	</idCode>
+	<idCode>
+		AS
+		<idValue>Transportation Appointment Schedule Information (163)
+		</idValue>
+	</idCode>
+	<idCode>
+		AT
+		<idValue>Animal Toxicological Data (249)</idValue>
+	</idCode>
+	<idCode>
+		AW
+		<idValue>Warehouse Inventory Adjustment Advice (947)</idValue>
+	</idCode>
+	<idCode>
+		BC
+		<idValue>Business Credit Report (155)</idValue>
+	</idCode>
+	<idCode>
+		BE
+		<idValue>Benefit Enrollment and Maintenance (834)</idValue>
+	</idCode>
+	<idCode>
+		BF
+		<idValue>Business Entity Filings (105)</idValue>
+	</idCode>
+	<idCode>
+		BL
+		<idValue>Motor Carrier Bill of Lading (211)</idValue>
+	</idCode>
+	<idCode>
+		BS
+		<idValue>Shipment and Billing Notice (857)</idValue>
+	</idCode>
+	<idCode>
+		CA
+		<idValue>Purchase Order Change Acknowledgment/Request - Seller
+			Initiated (865)</idValue>
+	</idCode>
+	<idCode>
+		CB
+		<idValue>Unemployment Insurance Tax Claim or Charge Information (153)
+		</idValue>
+	</idCode>
+	<idCode>
+		CC
+		<idValue>Clauses and Provisions (504)</idValue>
+	</idCode>
+	<idCode>
+		CD
+		<idValue>Credit/Debit Adjustment (812)</idValue>
+	</idCode>
+	<idCode>
+		CE
+		<idValue>Cartage Work Assignment (222)</idValue>
+	</idCode>
+	<idCode>
+		CF
+		<idValue>Corporate Financial Adjustment Information (844 and 849)
+		</idValue>
+	</idCode>
+	<idCode>
+		CG
+		<idValue>Administrative Message (994)</idValue>
+	</idCode>
+	<idCode>
+		CH
+		<idValue>Car Handling Information (420)</idValue>
+	</idCode>
+	<idCode>
+		CI
+		<idValue>Consolidated Service Invoice/Statement (811)</idValue>
+	</idCode>
+	<idCode>
+		CJ
+		<idValue>Manufacturer Coupon Family Code Structure (877)</idValue>
+	</idCode>
+	<idCode>
+		CK
+		<idValue>Manufacturer Coupon Redemption Detail (881)</idValue>
+	</idCode>
+	<idCode>
+		CM
+		<idValue>Component Parts Content (871)</idValue>
+	</idCode>
+	<idCode>
+		CN
+		<idValue>Coupon Notification (887)</idValue>
+	</idCode>
+	<idCode>
+		CO
+		<idValue>Cooperative Advertising Agreements (290)</idValue>
+	</idCode>
+	<idCode>
+		CP
+		<idValue>Electronic Proposal Information (251, 805)</idValue>
+	</idCode>
+	<idCode>
+		CR
+		<idValue>Rail Carhire Settlements (414)</idValue>
+	</idCode>
+	<idCode>
+		CS
+		<idValue>Cryptographic Service Message (815)</idValue>
+	</idCode>
+	<idCode>
+		CT
+		<idValue>Application Control Totals (831)</idValue>
+	</idCode>
+	<idCode>
+		CV
+		<idValue>Commercial Vehicle Safety and Credentials Information
+			Exchange (285)</idValue>
+	</idCode>
+	<idCode>
+		D3
+		<idValue>Contract Completion Status (567)</idValue>
+	</idCode>
+	<idCode>
+		D4
+		<idValue>Contract Abstract (561)</idValue>
+	</idCode>
+	<idCode>
+		D5
+		<idValue>Contract Payment Management Report (568)</idValue>
+	</idCode>
+	<idCode>
+		DA
+		<idValue>Debit Authorization (828)</idValue>
+	</idCode>
+	<idCode>
+		DD
+		<idValue>Shipment Delivery Discrepancy Information (854)</idValue>
+	</idCode>
+	<idCode>
+		DF
+		<idValue>Market Development Fund Allocation (883)</idValue>
+	</idCode>
+	<idCode>
+		DI
+		<idValue>Dealer Information (128)</idValue>
+	</idCode>
+	<idCode>
+		DM
+		<idValue>Shipper&apos;s Car Order (422)</idValue>
+	</idCode>
+	<idCode>
+		DS
+		<idValue>Data Status Tracking (242)</idValue>
+	</idCode>
+	<idCode>
+		DX
+		<idValue>Direct Exchange Delivery and Return Information (894, 895)
+		</idValue>
+	</idCode>
+	<idCode>
+		EC
+		<idValue>Educational Course Inventory (188)</idValue>
+	</idCode>
+	<idCode>
+		ED
+		<idValue>Student Educational Record (Transcript) (130)</idValue>
+	</idCode>
+	<idCode>
+		EI
+		<idValue>Railroad Equipment Inquiry or Advice (456)</idValue>
+	</idCode>
+	<idCode>
+		ER
+		<idValue>Revenue Receipts Statement (170)</idValue>
+	</idCode>
+	<idCode>
+		ES
+		<idValue>Notice of Employment Status (540)</idValue>
+	</idCode>
+	<idCode>
+		EV
+		<idValue>Railroad Event Report (451)</idValue>
+	</idCode>
+	<idCode>
+		EX
+		<idValue>Excavation Communication (620)</idValue>
+	</idCode>
+	<idCode>
+		FA
+		<idValue>Functional Acknowledgment (997)</idValue>
+	</idCode>
+	<idCode>
+		FB
+		<idValue>Freight Invoice (859)</idValue>
+	</idCode>
+	<idCode>
+		FC
+		<idValue>Court and Law Enforcement Information (175, 176)</idValue>
+	</idCode>
+	<idCode>
+		FG
+		<idValue>Motor Carrier Loading and Route Guide (217)</idValue>
+	</idCode>
+	<idCode>
+		FH
+		<idValue>Motor Carrier Tariff Information (218)</idValue>
+	</idCode>
+	<idCode>
+		FR
+		<idValue>Financial Reporting (821, 827)</idValue>
+	</idCode>
+	<idCode>
+		FT
+		<idValue>File Transfer (996)</idValue>
+	</idCode>
+	<idCode>
+		GB
+		<idValue>Average Agreement Demurrage (423)</idValue>
+	</idCode>
+	<idCode>
+		GC
+		<idValue>Damage Claim Transaction Sets (920, 924, 925, 926)</idValue>
+	</idCode>
+	<idCode>
+		GE
+		<idValue>General Request, Response or Confirmation (814)</idValue>
+	</idCode>
+	<idCode>
+		GF
+		<idValue>Response to a Load Tender (990)</idValue>
+	</idCode>
+	<idCode>
+		GL
+		<idValue>Intermodal Group Loading Plan (715)</idValue>
+	</idCode>
+	<idCode>
+		GP
+		<idValue>Grocery Products Invoice (880)</idValue>
+	</idCode>
+	<idCode>
+		GR
+		<idValue>Statistical Government Information (152)</idValue>
+	</idCode>
+	<idCode>
+		GT
+		<idValue>Grant or Assistance Application (194)</idValue>
+	</idCode>
+	<idCode>
+		HB
+		<idValue>Eligibility, Coverage or Benefit Information (271)</idValue>
+	</idCode>
+	<idCode>
+		HC
+		<idValue>Health Care Claim (837)</idValue>
+	</idCode>
+	<idCode>
+		HI
+		<idValue>Health Care Services Review Information (278)</idValue>
+	</idCode>
+	<idCode>
+		HN
+		<idValue>Health Care Claim Status Notification (277)</idValue>
+	</idCode>
+	<idCode>
+		HP
+		<idValue>Health Care Claim Payment/Advice (835)</idValue>
+	</idCode>
+	<idCode>
+		HR
+		<idValue>Health Care Claim Status Request (276)</idValue>
+	</idCode>
+	<idCode>
+		HS
+		<idValue>Eligibility, Coverage or Benefit Inquiry (270)</idValue>
+	</idCode>
+	<idCode>
+		IA
+		<idValue>Air Freight Details and Invoice (110, 980)</idValue>
+	</idCode>
+	<idCode>
+		IB
+		<idValue>Inventory Inquiry/Advice (846)</idValue>
+	</idCode>
+	<idCode>
+		IC
+		<idValue>Rail Advance Interchange Consist (418)</idValue>
+	</idCode>
+	<idCode>
+		ID
+		<idValue>Insurance/Annuity Application Status (273)</idValue>
+	</idCode>
+	<idCode>
+		IE
+		<idValue>Insurance Producer Administration (252)</idValue>
+	</idCode>
+	<idCode>
+		IG
+		<idValue>Direct Store Delivery Summary Information (882)</idValue>
+	</idCode>
+	<idCode>
+		II
+		<idValue>Rail Freight Details and Invoice Summary (411)</idValue>
+	</idCode>
+	<idCode>
+		IJ
+		<idValue>Report of Injury, Illness or Incident (148)</idValue>
+	</idCode>
+	<idCode>
+		IM
+		<idValue>Motor Carrier Freight Details and Invoice (210, 980)
+		</idValue>
+	</idCode>
+	<idCode>
+		IN
+		<idValue>Invoice Information (810,819)</idValue>
+	</idCode>
+	<idCode>
+		IO
+		<idValue>Ocean Shipment Billing Details (310, 312, 980)</idValue>
+	</idCode>
+	<idCode>
+		IP
+		<idValue>Intermodal Ramp Activity (622)</idValue>
+	</idCode>
+	<idCode>
+		IR
+		<idValue>Rail Carrier Freight Details and Invoice (410, 980)</idValue>
+	</idCode>
+	<idCode>
+		IS
+		<idValue>Estimated Time of Arrival and Car Scheduling (421)</idValue>
+	</idCode>
+	<idCode>
+		KM
+		<idValue>Commercial Vehicle Credentials (286)</idValue>
+	</idCode>
+	<idCode>
+		LA
+		<idValue>Federal Communications Commission (FCC) License Application
+			(195)</idValue>
+	</idCode>
+	<idCode>
+		LB
+		<idValue>Lockbox (823)</idValue>
+	</idCode>
+	<idCode>
+		LI
+		<idValue>Locomotive Information (436)</idValue>
+	</idCode>
+	<idCode>
+		LN
+		<idValue>Property and Casualty Loss Notification (272)</idValue>
+	</idCode>
+	<idCode>
+		LR
+		<idValue>Logistics Reassignment (536)</idValue>
+	</idCode>
+	<idCode>
+		LS
+		<idValue>Asset Schedule (851)</idValue>
+	</idCode>
+	<idCode>
+		LT
+		<idValue>Student Loan Transfer and Status Verification (144)</idValue>
+	</idCode>
+	<idCode>
+		MA
+		<idValue>Motor Carrier Summary Freight Bill Manifest (224)</idValue>
+	</idCode>
+	<idCode>
+		MC
+		<idValue>Request for Motor Carrier Rate Proposal (107)</idValue>
+	</idCode>
+	<idCode>
+		MD
+		<idValue>Department of Defense Inventory Management (527)</idValue>
+	</idCode>
+	<idCode>
+		ME
+		<idValue>Mortgage Origination (198, 200, 201, 261, 262, 263, 833, 872)
+		</idValue>
+	</idCode>
+	<idCode>
+		MF
+		<idValue>Market Development Funds Settlement (884)</idValue>
+	</idCode>
+	<idCode>
+		MG
+		<idValue>Mortgage Servicing Transaction Sets (203, 206, 260, 264, 266)
+		</idValue>
+	</idCode>
+	<idCode>
+		MH
+		<idValue>Motor Carrier Rate Proposal (106)</idValue>
+	</idCode>
+	<idCode>
+		MI
+		<idValue>Motor Carrier Shipment Status Inquiry (213)</idValue>
+	</idCode>
+	<idCode>
+		MJ
+		<idValue>Secondary Mortgage Market Loan Delivery (202)</idValue>
+	</idCode>
+	<idCode>
+		MK
+		<idValue>Response to a Motor Carrier Rate Proposal (108)</idValue>
+	</idCode>
+	<idCode>
+		MM
+		<idValue>Medical Event Reporting (500)</idValue>
+	</idCode>
+	<idCode>
+		MN
+		<idValue>Mortgage Note (205)</idValue>
+	</idCode>
+	<idCode>
+		MO
+		<idValue>Maintenance Service Order (650)</idValue>
+	</idCode>
+	<idCode>
+		MP
+		<idValue>Motion Picture Booking Confirmation (159)</idValue>
+	</idCode>
+	<idCode>
+		MQ
+		<idValue>Consolidators Freight Bill and Invoice (223)</idValue>
+	</idCode>
+	<idCode>
+		MR
+		<idValue>Multilevel Railcar Load Details (125)</idValue>
+	</idCode>
+	<idCode>
+		MS
+		<idValue>Material Safety Data Sheet (848)</idValue>
+	</idCode>
+	<idCode>
+		MT
+		<idValue>Electronic Form Structure (868)</idValue>
+	</idCode>
+	<idCode>
+		MV
+		<idValue>Material Obligation Validation (517)</idValue>
+	</idCode>
+	<idCode>
+		MW
+		<idValue>Rail Waybill Response (427)</idValue>
+	</idCode>
+	<idCode>
+		MX
+		<idValue>Material Claim (847)</idValue>
+	</idCode>
+	<idCode>
+		MY
+		<idValue>Response to a Cartage Work Assignment (225)</idValue>
+	</idCode>
+	<idCode>
+		NC
+		<idValue>Nonconformance Report (842)</idValue>
+	</idCode>
+	<idCode>
+		NL
+		<idValue>Name and Address Lists (101)</idValue>
+	</idCode>
+	<idCode>
+		NP
+		<idValue>Notice of Power of Attorney (157)</idValue>
+	</idCode>
+	<idCode>
+		NT
+		<idValue>Notice of Tax Adjustment or Assessment (149)</idValue>
+	</idCode>
+	<idCode>
+		OC
+		<idValue>Cargo Insurance Advice of Shipment (362)</idValue>
+	</idCode>
+	<idCode>
+		OG
+		<idValue>Order Group - Grocery (875, 876)</idValue>
+	</idCode>
+	<idCode>
+		OR
+		<idValue>Organizational Relationships (816)</idValue>
+	</idCode>
+	<idCode>
+		OW
+		<idValue>Warehouse Shipping Order (940)</idValue>
+	</idCode>
+	<idCode>
+		PA
+		<idValue>Price Authorization Acknowledgment/Status (845)</idValue>
+	</idCode>
+	<idCode>
+		PB
+		<idValue>Railroad Parameter Trace Registration (455)</idValue>
+	</idCode>
+	<idCode>
+		PC
+		<idValue>Purchase Order Change Request - Buyer Initiated (860)
+		</idValue>
+	</idCode>
+	<idCode>
+		PD
+		<idValue>Product Activity Data (852)</idValue>
+	</idCode>
+	<idCode>
+		PE
+		<idValue>Periodic Compensation (256)</idValue>
+	</idCode>
+	<idCode>
+		PF
+		<idValue>Annuity Activity (268)</idValue>
+	</idCode>
+	<idCode>
+		PG
+		<idValue>Insurance Plan Description (100)</idValue>
+	</idCode>
+	<idCode>
+		PH
+		<idValue>Pricing History (503)</idValue>
+	</idCode>
+	<idCode>
+		PI
+		<idValue>Patient Information (275)</idValue>
+	</idCode>
+	<idCode>
+		PJ
+		<idValue>Project Schedule Reporting (806)</idValue>
+	</idCode>
+	<idCode>
+		PK
+		<idValue>Project Cost Reporting (839) and Contractor Cost Data
+			Reporting (196)</idValue>
+	</idCode>
+	<idCode>
+		PL
+		<idValue>Railroad Problem Log Inquiry or Advice (452)</idValue>
+	</idCode>
+	<idCode>
+		PN
+		<idValue>Product Source Information (244)</idValue>
+	</idCode>
+	<idCode>
+		PO
+		<idValue>Purchase Order (850)</idValue>
+	</idCode>
+	<idCode>
+		PQ
+		<idValue>Property Damage Report (112)</idValue>
+	</idCode>
+	<idCode>
+		PR
+		<idValue>Purchase Order Acknowledgement (855)</idValue>
+	</idCode>
+	<idCode>
+		PS
+		<idValue>Planning Schedule with Release Capability (830)</idValue>
+	</idCode>
+	<idCode>
+		PT
+		<idValue>Product Transfer and Resale Report (867)</idValue>
+	</idCode>
+	<idCode>
+		PU
+		<idValue>Motor Carrier Shipment Pick-up Notification (216)</idValue>
+	</idCode>
+	<idCode>
+		PV
+		<idValue>Purchase Order Shipment Management Document (250)</idValue>
+	</idCode>
+	<idCode>
+		PW
+		<idValue>Healthcare Provider Information (274</idValue>
+	</idCode>
+	<idCode>
+		PY
+		<idValue>Payment Cancellation Request (829)</idValue>
+	</idCode>
+	<idCode>
+		QG
+		<idValue>Product Information (878, 879, 888, 889, 893, 896)</idValue>
+	</idCode>
+	<idCode>
+		QM
+		<idValue>Transportation Carrier Shipment Status Message (214)
+		</idValue>
+	</idCode>
+	<idCode>
+		QO
+		<idValue>Ocean Shipment Status Information (313, 315)</idValue>
+	</idCode>
+	<idCode>
+		RA
+		<idValue>Payment Order/Remittance Advice (820)</idValue>
+	</idCode>
+	<idCode>
+		RB
+		<idValue>Railroad Clearance (470)</idValue>
+	</idCode>
+	<idCode>
+		RC
+		<idValue>Receiving Advice/Acceptance Certificate (861)</idValue>
+	</idCode>
+	<idCode>
+		RD
+		<idValue>Royalty Regulatory Report (185)</idValue>
+	</idCode>
+	<idCode>
+		RE
+		<idValue>Warehouse Stock Receipt Advice (944)</idValue>
+	</idCode>
+	<idCode>
+		RF
+		<idValue>Request for Routing Instructions (753)</idValue>
+	</idCode>
+	<idCode>
+		RH
+		<idValue>Railroad Reciprocal Switch File (433)</idValue>
+	</idCode>
+	<idCode>
+		RI
+		<idValue>Routing and Carrier Instruction (853)</idValue>
+	</idCode>
+	<idCode>
+		RJ
+		<idValue>Railroad Mark Register Update Activity (434)</idValue>
+	</idCode>
+	<idCode>
+		RK
+		<idValue>Standard Transportation Commodity Code Master (435)</idValue>
+	</idCode>
+	<idCode>
+		RL
+		<idValue>Rail Industrial Switch List (423)</idValue>
+	</idCode>
+	<idCode>
+		RM
+		<idValue>Railroad Station Master File (431)</idValue>
+	</idCode>
+	<idCode>
+		RN
+		<idValue>Requisition Transaction (511)</idValue>
+	</idCode>
+	<idCode>
+		RO
+		<idValue>Ocean Booking Information (300, 301, 303)</idValue>
+	</idCode>
+	<idCode>
+		RP
+		<idValue>Commission Sales Report (818)</idValue>
+	</idCode>
+	<idCode>
+		RQ
+		<idValue>Request for Quotation (840) and Procurement Notices (836)
+		</idValue>
+	</idCode>
+	<idCode>
+		RR
+		<idValue>Response to Request For Quotation (843)</idValue>
+	</idCode>
+	<idCode>
+		RS
+		<idValue>Order Status Information (869, 870)</idValue>
+	</idCode>
+	<idCode>
+		RT
+		<idValue>Report of Test Results (863)</idValue>
+	</idCode>
+	<idCode>
+		RU
+		<idValue>Railroad Retirement Activity (429)</idValue>
+	</idCode>
+	<idCode>
+		RV
+		<idValue>Railroad Junctions and Interchanges Activity (437)</idValue>
+	</idCode>
+	<idCode>
+		RW
+		<idValue>Rail Revenue Waybill (426)</idValue>
+	</idCode>
+	<idCode>
+		RX
+		<idValue>Rail Deprescription (432)</idValue>
+	</idCode>
+	<idCode>
+		RY
+		<idValue>Request for Student Educational Record (Transcript) (146)
+		</idValue>
+	</idCode>
+	<idCode>
+		RZ
+		<idValue>Response to Request for Student Educational Record
+			(Transcript) (147)</idValue>
+	</idCode>
+	<idCode>
+		SA
+		<idValue>Air Shipment Information (104)</idValue>
+	</idCode>
+	<idCode>
+		SB
+		<idValue>Switch Rails (424)</idValue>
+	</idCode>
+	<idCode>
+		SC
+		<idValue>Price/Sales Catalog (832)</idValue>
+	</idCode>
+	<idCode>
+		SD
+		<idValue>Student Loan Pre-Claims and Claims (191)</idValue>
+	</idCode>
+	<idCode>
+		SE
+		<idValue>Shipper&apos;s Export Declaration (601)</idValue>
+	</idCode>
+	<idCode>
+		SG
+		<idValue>SG Receiving Advice - Grocery (885)</idValue>
+	</idCode>
+	<idCode>
+		SH
+		<idValue>Ship Notice/Manifest (856)</idValue>
+	</idCode>
+	<idCode>
+		SI
+		<idValue>Shipment Information (858)</idValue>
+	</idCode>
+	<idCode>
+		SJ
+		<idValue>Transportation Automatic Equipment Identification (160)
+		</idValue>
+	</idCode>
+	<idCode>
+		SL
+		<idValue>Student Loan Application and Guarantee (135, 139)</idValue>
+	</idCode>
+	<idCode>
+		SM
+		<idValue>Motor Carrier Load Tender (204)</idValue>
+	</idCode>
+	<idCode>
+		SN
+		<idValue>Rail Route File Maintenance (475)</idValue>
+	</idCode>
+	<idCode>
+		SO
+		<idValue>Owner</idValue>
+	</idCode>
+	<idCode>
+		SP
+		<idValue>Specifications/Technical Information (841)</idValue>
+	</idCode>
+	<idCode>
+		SQ
+		<idValue>Production Sequence (866)</idValue>
+	</idCode>
+	<idCode>
+		SR
+		<idValue>Rail Carrier Shipment Information (404, 419)</idValue>
+	</idCode>
+	<idCode>
+		SS
+		<idValue>Shipping Schedule (862)</idValue>
+	</idCode>
+	<idCode>
+		ST
+		<idValue>Railroad Service Commitment Advice (453)</idValue>
+	</idCode>
+	<idCode>
+		SU
+		<idValue>Account Assignment/Inquiry and Service/Status (248)</idValue>
+	</idCode>
+	<idCode>
+		SV
+		<idValue>Student Enrollment Verification (190)</idValue>
+	</idCode>
+	<idCode>
+		SW
+		<idValue>Warehouse Shipping Advice (945)</idValue>
+	</idCode>
+	<idCode>
+		TA
+		<idValue>Electronic Filing of Tax Return Data Acknowledgment (151)
+		</idValue>
+	</idCode>
+	<idCode>
+		TC
+		<idValue>Court Submission (176)</idValue>
+	</idCode>
+	<idCode>
+		TD
+		<idValue>Trading Partner Profile (838)</idValue>
+	</idCode>
+	<idCode>
+		TF
+		<idValue>Electronic Filing of Tax Return Data (813)</idValue>
+	</idCode>
+	<idCode>
+		TI
+		<idValue>Tax Information Exchange (826)</idValue>
+	</idCode>
+	<idCode>
+		TM
+		<idValue>Motor Carrier Delivery Trailer Manifest (212)</idValue>
+	</idCode>
+	<idCode>
+		TN
+		<idValue>Tax Rate Notification (150)</idValue>
+	</idCode>
+	<idCode>
+		TO
+		<idValue>Real Estate Title Services (197, 199, 265)</idValue>
+	</idCode>
+	<idCode>
+		TP
+		<idValue>Rail Rate Transactions (460, 463, 466, 468, 485, 486, 490,
+			492, 494)</idValue>
+	</idCode>
+	<idCode>
+		TR
+		<idValue>Train Sheet (161)</idValue>
+	</idCode>
+	<idCode>
+		TS
+		<idValue>Transportation Services Tender (602)</idValue>
+	</idCode>
+	<idCode>
+		TT
+		<idValue>Testing Results Request and Report (138)</idValue>
+	</idCode>
+	<idCode>
+		TX
+		<idValue>Text Message (864)</idValue>
+	</idCode>
+	<idCode>
+		UA
+		<idValue>Retail Account Characteristics (885)</idValue>
+	</idCode>
+	<idCode>
+		UB
+		<idValue>Customer Call Reporting (886)</idValue>
+	</idCode>
+	<idCode>
+		UC
+		<idValue>Uniform Commercial Code Filing (154)</idValue>
+	</idCode>
+	<idCode>
+		UD
+		<idValue>Deduction Research Report (891)</idValue>
+	</idCode>
+	<idCode>
+		UI
+		<idValue>Underwriting Information Services (255)</idValue>
+	</idCode>
+	<idCode>
+		UP
+		<idValue>Motor Carrier Pick-up Manifest (215)</idValue>
+	</idCode>
+	<idCode>
+		UW
+		<idValue>Insurance Underwriting Requirements Reporting (186)</idValue>
+	</idCode>
+	<idCode>
+		VA
+		<idValue>Vehicle Application Advice (126)</idValue>
+	</idCode>
+	<idCode>
+		VB
+		<idValue>Vehicle Baying Order (127)</idValue>
+	</idCode>
+	<idCode>
+		VC
+		<idValue>Vehicle Shipping Order (120)</idValue>
+	</idCode>
+	<idCode>
+		VD
+		<idValue>Vehicle Damage (124)</idValue>
+	</idCode>
+	<idCode>
+		VE
+		<idValue>Vessel Content Details (109)</idValue>
+	</idCode>
+	<idCode>
+		VH
+		<idValue>Vehicle Carrier Rate Update (129)</idValue>
+	</idCode>
+	<idCode>
+		VI
+		<idValue>Voter Registration Information (280)</idValue>
+	</idCode>
+	<idCode>
+		VS
+		<idValue>Vehicle Service (121)</idValue>
+	</idCode>
+	<idCode>
+		WA
+		<idValue>Product Service Transaction Sets (140, 141, 142, 143)
+		</idValue>
+	</idCode>
+	<idCode>
+		WB
+		<idValue>Rail Carrier Waybill Interchange (417)</idValue>
+	</idCode>
+	<idCode>
+		WG
+		<idValue>Vendor Performance Review (501)</idValue>
+	</idCode>
+	<idCode>
+		WI
+		<idValue>Wage Determination (288)</idValue>
+	</idCode>
+	<idCode>
+		WL
+		<idValue>Well Information (625)</idValue>
+	</idCode>
+	<idCode>
+		WR
+		<idValue>Shipment Weights (440)</idValue>
+	</idCode>
+	<idCode>
+		WT
+		<idValue>Rail Waybill Request (425)</idValue>
+	</idCode>
+	<idCode>
+		ZZ
+		<idValue>Anonymous (006)</idValue>
+	</idCode>
+</idList>

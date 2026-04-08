@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<idList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/ediRules.xsd">
+	<idCode>
+		I
+		<idValue>Information</idValue>
+	</idCode>
+	<idCode>
+		P
+		<idValue>Production Data</idValue>
+	</idCode>
+	<idCode>
+		T
+		<idValue>Test Data</idValue>
+	</idCode>
+</idList>

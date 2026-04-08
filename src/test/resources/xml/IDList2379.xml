@@ -1,145 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>2</idCode>
-        <idValue>DDMMYY</idValue>
-    <idCode>3</idCode>
-        <idValue>MMDDYY</idValue>
-    <idCode>101</idCode>
-        <idValue>YYMMDD</idValue>
-    <idCode>102</idCode>
-        <idValue>CCYYMMDD</idValue>
-    <idCode>103</idCode>
-        <idValue>YYWWD</idValue>
-    <idCode>105</idCode>
-        <idValue>YYDDD</idValue>
-    <idCode>106</idCode>
-        <idValue>MMDD</idValue>
-    <idCode>107</idCode>
-        <idValue>DDD</idValue>
-    <idCode>108</idCode>
-        <idValue>WW</idValue>
-    <idCode>109</idCode>
-        <idValue>MM</idValue>
-    <idCode>110</idCode>
-        <idValue>DD</idValue>
-    <idCode>201</idCode>
-        <idValue>YYMMDDHHMM</idValue>
-    <idCode>202</idCode>
-        <idValue>YYMMDDHHMMSS</idValue>
-    <idCode>203</idCode>
-        <idValue>CCYYMMDDHHMM</idValue>
-    <idCode>204</idCode>
-        <idValue>CCYYMMDDHHMMSS</idValue>
-    <idCode>301</idCode>
-        <idValue>YYMMDDHHMMZZZ</idValue>
-    <idCode>302</idCode>
-        <idValue>YYMMDDHHMMSSZZZ</idValue>
-    <idCode>303</idCode>
-        <idValue>CCYYMMDDHHMMZZZ</idValue>
-    <idCode>304</idCode>
-        <idValue>CCYYMMDDHHMMSSZZZ</idValue>
-    <idCode>305</idCode>
-        <idValue>MMDDHHMM</idValue>
-    <idCode>306</idCode>
-        <idValue>DDHHMM</idValue>
-    <idCode>401</idCode>
-        <idValue>HHMM</idValue>
-    <idCode>402</idCode>
-        <idValue>HHMMSS</idValue>
-    <idCode>404</idCode>
-        <idValue>HHMMSSZZZ</idValue>
-    <idCode>405</idCode>
-        <idValue>MMMMSS</idValue>
-    <idCode>501</idCode>
-        <idValue>HHMMHHMM</idValue>
-    <idCode>502</idCode>
-        <idValue>HHMMSS-HHMMSS</idValue>
-    <idCode>503</idCode>
-        <idValue>HHMMSSZZZ-HHMMSSZZZ</idValue>
-    <idCode>600</idCode>
-        <idValue>CC</idValue>
-    <idCode>601</idCode>
-        <idValue>YY</idValue>
-    <idCode>602</idCode>
-        <idValue>CCYY</idValue>
-    <idCode>603</idCode>
-        <idValue>YYS</idValue>
-    <idCode>604</idCode>
-        <idValue>CCYYS</idValue>
-    <idCode>608</idCode>
-        <idValue>CCYYQ</idValue>
-    <idCode>609</idCode>
-        <idValue>YYMM</idValue>
-    <idCode>610</idCode>
-        <idValue>CCYYMM</idValue>
-    <idCode>613</idCode>
-        <idValue>YYMMA</idValue>
-    <idCode>614</idCode>
-        <idValue>CCYYMMA</idValue>
-    <idCode>615</idCode>
-        <idValue>YYWW</idValue>
-    <idCode>616</idCode>
-        <idValue>CCYYWW</idValue>
-    <idCode>701</idCode>
-        <idValue>YY-YY</idValue>
-    <idCode>702</idCode>
-        <idValue>CCYY-CCYY</idValue>
-    <idCode>703</idCode>
-        <idValue>YYS-YYS</idValue>
-    <idCode>704</idCode>
-        <idValue>CCYYS-CCYYS</idValue>
-    <idCode>705</idCode>
-        <idValue>YYPYYP</idValue>
-    <idCode>706</idCode>
-        <idValue>CCYYP-CCYYP</idValue>
-    <idCode>707</idCode>
-        <idValue>YYQ-YYQ</idValue>
-    <idCode>708</idCode>
-        <idValue>CCYYQ-CCYYQ</idValue>
-    <idCode>709</idCode>
-        <idValue>YYMM-YYMM</idValue>
-    <idCode>710</idCode>
-        <idValue>CCYYMM-CCYYMM</idValue>
-    <idCode>711</idCode>
-        <idValue>CCYYMMDD-CCYYMMDD</idValue>
-    <idCode>713</idCode>
-        <idValue>YYMMDDHHMM-YYMMDDHHMM</idValue>
-    <idCode>715</idCode>
-        <idValue>YYWW-YYWW</idValue>
-    <idCode>716</idCode>
-        <idValue>CCYYWW-CCYYWW</idValue>
-    <idCode>717</idCode>
-        <idValue>YYMMDD-YYMMDD</idValue>
-    <idCode>718</idCode>
-        <idValue>CCYYMMDD-CCYYMMDD</idValue>
-    <idCode>801</idCode>
-        <idValue>Year</idValue>
-    <idCode>802</idCode>
-        <idValue>Month</idValue>
-    <idCode>803</idCode>
-        <idValue>Week</idValue>
-    <idCode>804</idCode>
-        <idValue>Day</idValue>
-    <idCode>805</idCode>
-        <idValue>Hour</idValue>
-    <idCode>806</idCode>
-        <idValue>Minute</idValue>
-    <idCode>807</idCode>
-        <idValue>Second</idValue>
-    <idCode>808</idCode>
-        <idValue>Semester</idValue>
-    <idCode>809</idCode>
-        <idValue>Four months period</idValue>
-    <idCode>810</idCode>
-        <idValue>Trimester</idValue>
-    <idCode>811</idCode>
-        <idValue>Half month</idValue>
-    <idCode>812</idCode>
-        <idValue>Ten days</idValue>
-    <idCode>813</idCode>
-        <idValue>Day of the week</idValue>
-    <idCode>814</idCode>
-        <idValue>Working days</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>2 <idValue>DDMMYY</idValue>
+	</idCode>
+	<idCode>3 <idValue>MMDDYY</idValue>
+	</idCode>
+	<idCode>101 <idValue>YYMMDD</idValue>
+	</idCode>
+	<idCode>102 <idValue>CCYYMMDD</idValue>
+	</idCode>
+	<idCode>103 <idValue>YYWWD</idValue>
+	</idCode>
+	<idCode>105 <idValue>YYDDD</idValue>
+	</idCode>
+	<idCode>106 <idValue>MMDD</idValue>
+	</idCode>
+	<idCode>107 <idValue>DDD</idValue>
+	</idCode>
+	<idCode>108 <idValue>WW</idValue>
+	</idCode>
+	<idCode>109 <idValue>MM</idValue>
+	</idCode>
+	<idCode>110 <idValue>DD</idValue>
+	</idCode>
+	<idCode>201 <idValue>YYMMDDHHMM</idValue>
+	</idCode>
+	<idCode>202 <idValue>YYMMDDHHMMSS</idValue>
+	</idCode>
+	<idCode>203 <idValue>CCYYMMDDHHMM</idValue>
+	</idCode>
+	<idCode>204 <idValue>CCYYMMDDHHMMSS</idValue>
+	</idCode>
+	<idCode>301 <idValue>YYMMDDHHMMZZZ</idValue>
+	</idCode>
+	<idCode>302 <idValue>YYMMDDHHMMSSZZZ</idValue>
+	</idCode>
+	<idCode>303 <idValue>CCYYMMDDHHMMZZZ</idValue>
+	</idCode>
+	<idCode>304 <idValue>CCYYMMDDHHMMSSZZZ</idValue>
+	</idCode>
+	<idCode>305 <idValue>MMDDHHMM</idValue>
+	</idCode>
+	<idCode>306 <idValue>DDHHMM</idValue>
+	</idCode>
+	<idCode>401 <idValue>HHMM</idValue>
+	</idCode>
+	<idCode>402 <idValue>HHMMSS</idValue>
+	</idCode>
+	<idCode>404 <idValue>HHMMSSZZZ</idValue>
+	</idCode>
+	<idCode>405 <idValue>MMMMSS</idValue>
+	</idCode>
+	<idCode>501 <idValue>HHMMHHMM</idValue>
+	</idCode>
+	<idCode>502 <idValue>HHMMSS-HHMMSS</idValue>
+	</idCode>
+	<idCode>503 <idValue>HHMMSSZZZ-HHMMSSZZZ</idValue>
+	</idCode>
+	<idCode>600 <idValue>CC</idValue>
+	</idCode>
+	<idCode>601 <idValue>YY</idValue>
+	</idCode>
+	<idCode>602 <idValue>CCYY</idValue>
+	</idCode>
+	<idCode>603 <idValue>YYS</idValue>
+	</idCode>
+	<idCode>604 <idValue>CCYYS</idValue>
+	</idCode>
+	<idCode>608 <idValue>CCYYQ</idValue>
+	</idCode>
+	<idCode>609 <idValue>YYMM</idValue>
+	</idCode>
+	<idCode>610 <idValue>CCYYMM</idValue>
+	</idCode>
+	<idCode>613 <idValue>YYMMA</idValue>
+	</idCode>
+	<idCode>614 <idValue>CCYYMMA</idValue>
+	</idCode>
+	<idCode>615 <idValue>YYWW</idValue>
+	</idCode>
+	<idCode>616 <idValue>CCYYWW</idValue>
+	</idCode>
+	<idCode>701 <idValue>YY-YY</idValue>
+	</idCode>
+	<idCode>702 <idValue>CCYY-CCYY</idValue>
+	</idCode>
+	<idCode>703 <idValue>YYS-YYS</idValue>
+	</idCode>
+	<idCode>704 <idValue>CCYYS-CCYYS</idValue>
+	</idCode>
+	<idCode>705 <idValue>YYPYYP</idValue>
+	</idCode>
+	<idCode>706 <idValue>CCYYP-CCYYP</idValue>
+	</idCode>
+	<idCode>707 <idValue>YYQ-YYQ</idValue>
+	</idCode>
+	<idCode>708 <idValue>CCYYQ-CCYYQ</idValue>
+	</idCode>
+	<idCode>709 <idValue>YYMM-YYMM</idValue>
+	</idCode>
+	<idCode>710 <idValue>CCYYMM-CCYYMM</idValue>
+	</idCode>
+	<idCode>711 <idValue>CCYYMMDD-CCYYMMDD</idValue>
+	</idCode>
+	<idCode>713 <idValue>YYMMDDHHMM-YYMMDDHHMM</idValue>
+	</idCode>
+	<idCode>715 <idValue>YYWW-YYWW</idValue>
+	</idCode>
+	<idCode>716 <idValue>CCYYWW-CCYYWW</idValue>
+	</idCode>
+	<idCode>717 <idValue>YYMMDD-YYMMDD</idValue>
+	</idCode>
+	<idCode>718 <idValue>CCYYMMDD-CCYYMMDD</idValue>
+	</idCode>
+	<idCode>801 <idValue>Year</idValue>
+	</idCode>
+	<idCode>802 <idValue>Month</idValue>
+	</idCode>
+	<idCode>803 <idValue>Week</idValue>
+	</idCode>
+	<idCode>804 <idValue>Day</idValue>
+	</idCode>
+	<idCode>805 <idValue>Hour</idValue>
+	</idCode>
+	<idCode>806 <idValue>Minute</idValue>
+	</idCode>
+	<idCode>807 <idValue>Second</idValue>
+	</idCode>
+	<idCode>808 <idValue>Semester</idValue>
+	</idCode>
+	<idCode>809 <idValue>Four months period</idValue>
+	</idCode>
+	<idCode>810 <idValue>Trimester</idValue>
+	</idCode>
+	<idCode>811 <idValue>Half month</idValue>
+	</idCode>
+	<idCode>812 <idValue>Ten days</idValue>
+	</idCode>
+	<idCode>813 <idValue>Day of the week</idValue>
+	</idCode>
+	<idCode>814 <idValue>Working days</idValue>
+	</idCode>
 </idList>

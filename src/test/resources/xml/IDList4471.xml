@@ -1,55 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idList
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
-    <idCode>1</idCode>
-        <idValue>Bill back</idValue>
-    <idCode>2</idCode>
-        <idValue>Off invoice</idValue>
-    <idCode>3</idCode>
-        <idValue>Vendor check to customer</idValue>
-    <idCode>4</idCode>
-        <idValue>Credit customer account</idValue>
-    <idCode>5</idCode>
-        <idValue>Charge to be paid by vendor</idValue>
-    <idCode>6</idCode>
-        <idValue>Charge to be paid by customer</idValue>
-    <idCode>7</idCode>
-        <idValue>Optional</idValue>
-    <idCode>8</idCode>
-        <idValue>Off gross quantity invoiced</idValue>
-    <idCode>9</idCode>
-        <idValue>Electric cost recovery factor</idValue>
-    <idCode>10</idCode>
-        <idValue>Gas cost recovery factor</idValue>
-    <idCode>11</idCode>
-        <idValue>Prior credit balance</idValue>
-    <idCode>12</idCode>
-        <idValue>Non-dutiable</idValue>
-    <idCode>13</idCode>
-        <idValue>All charges borne by payee</idValue>
-    <idCode>14</idCode>
-        <idValue>Each pay own cost</idValue>
-    <idCode>15</idCode>
-        <idValue>All charges borne by payor</idValue>
-    <idCode>16</idCode>
-        <idValue>All bank charges to be borne by applicant</idValue>
-    <idCode>17</idCode>
-        <idValue>All bank charges except confirmation commission to be borne by applicant</idValue>
-    <idCode>18</idCode>
-        <idValue>All bank charges to be borne by beneficiary</idValue>
-    <idCode>19</idCode>
-        <idValue>All bank charges outside country of applicant borne by beneficiary</idValue>
-    <idCode>20</idCode>
-        <idValue>Amendment charges to be borne by applicant</idValue>
-    <idCode>21</idCode>
-        <idValue>Amendment charges to be borne by beneficiary</idValue>
-    <idCode>22</idCode>
-        <idValue>Discount charges to be borne by applicant</idValue>
-    <idCode>23</idCode>
-        <idValue>Discount charges to be borne by beneficiary</idValue>
-    <idCode>24</idCode>
-        <idValue>All bank charges other than those of the issuing bank to be borne by beneficiary</idValue>
-    <idCode>ZZZ</idCode>
-        <idValue>Mutually defined</idValue>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://raw.githubusercontent.com/EDIandXML/OBOE/main/EDIRules.xsd">
+	<idCode>1 <idValue>Bill back</idValue>
+	</idCode>
+	<idCode>2 <idValue>Off invoice</idValue>
+	</idCode>
+	<idCode>3 <idValue>Vendor check to customer</idValue>
+	</idCode>
+	<idCode>4 <idValue>Credit customer account</idValue>
+	</idCode>
+	<idCode>5 <idValue>Charge to be paid by vendor</idValue>
+	</idCode>
+	<idCode>6 <idValue>Charge to be paid by customer</idValue>
+	</idCode>
+	<idCode>7 <idValue>Optional</idValue>
+	</idCode>
+	<idCode>8 <idValue>Off gross quantity invoiced</idValue>
+	</idCode>
+	<idCode>9 <idValue>Electric cost recovery factor</idValue>
+	</idCode>
+	<idCode>10 <idValue>Gas cost recovery factor</idValue>
+	</idCode>
+	<idCode>11 <idValue>Prior credit balance</idValue>
+	</idCode>
+	<idCode>12 <idValue>Non-dutiable</idValue>
+	</idCode>
+	<idCode>13 <idValue>All charges borne by payee</idValue>
+	</idCode>
+	<idCode>14 <idValue>Each pay own cost</idValue>
+	</idCode>
+	<idCode>15 <idValue>All charges borne by payor</idValue>
+	</idCode>
+	<idCode>16 <idValue>All bank charges to be borne by applicant</idValue>
+	</idCode>
+	<idCode>17 <idValue>All bank charges except confirmation commission to be
+		borne by applicant</idValue>
+	</idCode>
+	<idCode>18 <idValue>All bank charges to be borne by beneficiary</idValue>
+	</idCode>
+	<idCode>19 <idValue>All bank charges outside country of applicant borne by
+		beneficiary</idValue>
+	</idCode>
+	<idCode>20 <idValue>Amendment charges to be borne by applicant</idValue>
+	</idCode>
+	<idCode>21 <idValue>Amendment charges to be borne by beneficiary</idValue>
+	</idCode>
+	<idCode>22 <idValue>Discount charges to be borne by applicant</idValue>
+	</idCode>
+	<idCode>23 <idValue>Discount charges to be borne by beneficiary</idValue>
+	</idCode>
+	<idCode>24 <idValue>All bank charges other than those of the issuing bank to
+		be borne by beneficiary</idValue>
+	</idCode>
+	<idCode>ZZZ <idValue>Mutually defined</idValue>
+	</idCode>
 </idList>
