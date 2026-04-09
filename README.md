@@ -46,3 +46,10 @@ Add this to your `pom.xml`:
     <artifactId>OBOE</artifactId>
     <version>2026.04.08</version>
 </dependency>
+```
+
+## 📖 Tutorial & Documentation
+
+Read the full step-by-step guide on Dev.to:
+
+**[Parsing X12 850 Purchase Orders in Java – The Easy & Lightweight Way with OBOE](https://dev.to/stock_trendswithjoe_712/parsing-x12-850-purchase-orders-in-java-with-oboe-1nnp)**
