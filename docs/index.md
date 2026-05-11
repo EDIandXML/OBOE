@@ -8,7 +8,6 @@ Welcome to the official documentation for **OBOE** — Open Business Objects for
 - [Parsing EDI Documents](./parsing.md)
 - [Generating EDI Documents](./generating.md)
 - [Rules XML Guide](./rules-xml-guide.md)
-- [HIPAA Specifics](./hipaa-specific.md)
 - [Contributing](./contributing.md)
 
 ## Overview
