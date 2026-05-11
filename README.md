@@ -3,7 +3,7 @@
 **Modern, lightweight, high-performance Java library for parsing, validating, and generating EDI documents.**
 
 Supports:
-- **ANSI X12** (including HIPAA variants)
+- **ANSI X12** (including all HIPAA variants)
 - **EDIFACT**
 - **TRADACOMS**
 
@@ -11,6 +11,10 @@ OBOE is an open-source, actively maintained Java EDI engine with Maven Central s
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.ediandxml/oboe)](https://central.sonatype.com/artifact/com.ediandxml/oboe)
 [![Java](https://img.shields.io/badge/Java-8%2B-blue.svg)](https://www.java.com/)
+
+**📖 [Full Documentation](https://EDIandXML.github.io/OBOE/)**
+
+---
 
 ## Quick Start
 
@@ -42,8 +46,8 @@ Full runnable examples are located in the [`examples/`](examples/) directory:
 - More examples coming soon (EDIFACT, 837, JSON conversion, etc.)
 
 ## Documentation
+- [📖 Full Documentation Site](https://EDIandXML.github.io/OBOE/)
 - Full tutorial: [Parsing X12 850 with OBOE](https://dev.to/stock_trendswithjoe_712/parsing-x12-850-purchase-orders-in-java-with-oboe-1nnp)
-- More docs and GitHub Pages coming soon
 
 ## Why Choose OBOE?
 Commercial EDI solutions are often expensive and complex. OBOE gives you full control, no vendor lock-in, and clean modern Java integration.
