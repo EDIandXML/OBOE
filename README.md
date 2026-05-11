@@ -1,55 +1,55 @@
-# OBOE - Open Business Objects for EDI
+# OBOE — Open Business Objects for EDI
 
-[![Java](https://img.shields.io/badge/Java-8+-blue.svg)](https://www.java.com)
-[![Maven](https://img.shields.io/badge/Maven-Ready-brightgreen)](pom.xml)
-[![License](https://img.shields.io/github/license/EDIandXML/OBOE)](LICENSE)
+**Modern, lightweight, high-performance Java library for parsing, validating, and generating EDI documents.**
 
-**OBOE** is a lightweight, mature, and flexible Java library for parsing, validating, and generating Electronic Data Interchange (EDI) documents.
-
-It fully supports:
-- **ANSI X12** (4010, 5010, and many others)
-- **UN/EDIFACT**
+Supports:
+- **ANSI X12** (including HIPAA variants)
+- **EDIFACT**
 - **TRADACOMS**
-- **HIPAA** transactions (837, 835, 834, 270/271, etc.)
 
-OBOE uses **simple XML-based message definition files** (rules files) to define the structure of each transaction set. This makes it extremely extensible without hard-coding formats.
+OBOE is an open-source, actively maintained Java EDI engine with Maven Central support, clean API, and production-grade performance.
 
----
+[![Maven Central](https://img.shields.io/maven-central/v/com.ediandxml/oboe)](https://central.sonatype.com/artifact/com.ediandxml/oboe)
+[![Java](https://img.shields.io/badge/Java-8%2B-blue.svg)](https://www.java.com/)
 
-## ✨ Features
+## Quick Start
 
-- Pure Java — no heavy commercial EDI engines required
-- XML-driven rules engine (`ediRules.xsd`)
-- Built-in code generator that creates strongly-typed Java classes
-- Graphical Message Editor (`Util.TransactionSetMessageEditor`)
-- Support for envelopes (ISA/GS/ST, UNB/UNH, etc.)
-- Robust error handling and validation
-- Lightweight with minimal dependencies
-- 25+ years of real-world EDI battle-testing
-
-## 🚀 Recent Updates (2025–2026)
-
-- Package name migrated from `americancoders.com` → `io.github.EDIandXML`
-- Repository cleaned up and modernized on GitHub
-- Improved build process (Maven-ready)
-- Better documentation and community readiness
-
-## 📦 Installation
-
-### Maven (Recommended)
-
-Add this to your `pom.xml`:
-
+### Maven Dependency
 ```xml
 <dependency>
-    <groupId>io.github.ediandxml</groupId>
-    <artifactId>OBOE</artifactId>
+    <groupId>com.ediandxml</groupId>
+    <artifactId>oboe</artifactId>
     <version>2026.04.08</version>
 </dependency>
 ```
 
-## 📖 Tutorial & Documentation
+### Basic Usage Example
+See the `examples/` folder for complete working samples.
 
-Read the full step-by-step guide on Dev.to:
+## Features
+- Streaming / SAX-style parsing (memory efficient)
+- Full support for X12 envelopes and segments
+- Strong HIPAA transaction support
+- XML rules-based engine (`ediRules.xsd`)
+- Built-in code generation capabilities
+- Easy integration with Spring Boot and modern Java
 
-**[Parsing X12 850 Purchase Orders in Java – The Easy & Lightweight Way with OBOE](https://dev.to/stock_trendswithjoe_712/parsing-x12-850-purchase-orders-in-java-with-oboe-1nnp)**
+## Examples
+Full runnable examples are located in the [`examples/`](examples/) directory:
+
+- `ParseX12_850.java` – Reading a Purchase Order
+- `GenerateX12_850.java` – Creating an 850 from code
+- More examples coming soon (EDIFACT, 837, JSON conversion, etc.)
+
+## Documentation
+- Full tutorial: [Parsing X12 850 with OBOE](https://dev.to/stock_trendswithjoe_712/parsing-x12-850-purchase-orders-in-java-with-oboe-1nnp)
+- More docs and GitHub Pages coming soon
+
+## Why Choose OBOE?
+Commercial EDI solutions are often expensive and complex. OBOE gives you full control, no vendor lock-in, and clean modern Java integration.
+
+## Contributing
+Contributions, issues, and feature requests are welcome!
+
+## License
+See the [LICENSE](LICENSE) file for details.
