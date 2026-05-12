@@ -38,6 +38,10 @@ See the `examples/` folder for complete working samples.
 - Built-in code generation capabilities
 - Easy integration with Spring Boot and modern Java
 
+## Roadmap
+
+See our **[public roadmap](https://github.com/EDIandXML/OBOE/issues?q=is%3Aissue+is%3Aopen+label%3Aroadmap)** for planned features, priorities, and upcoming releases.
+
 ## Examples
 Full runnable examples are located in the [`examples/`](examples/) directory:
 
