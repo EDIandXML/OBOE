@@ -9,7 +9,7 @@ Supports:
 
 OBOE is an open-source, actively maintained Java EDI engine with Maven Central support, clean API, and production-grade performance.
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.ediandxml/oboe)](https://central.sonatype.com/artifact/com.ediandxml/oboe)
+[![Maven Central](https://img.shields.io/maven-central/v/com.ediandxml/oboe)]([https://central.sonatype.com/artifact/com.ediandxml/oboe](https://central.sonatype.com/artifact/io.github.ediandxml/OBOE))
 [![Java](https://img.shields.io/badge/Java-8%2B-blue.svg)](https://www.java.com/)
 
 **📖 [Full Documentation](https://EDIandXML.github.io/OBOE/)**
