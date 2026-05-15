@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!DOCTYPE envelope PUBLIC "envelope" "https://raw.githubusercontent.com/ediandxml/OBOE/main/envelope.dtd">
+<!DOCTYPE envelope PUBLIC "envelope" "https://raw.githubusercontent.com/EDIandXML/OBOE/main/src/main/resources/envelope.dtd">
 <envelope format="X12">
 <segment code="ISA" name="Interchange Control Header">
 <element code="I01" name="Authorization Information Qualifier"><value description="No Authorization Information Present (No Meaningful

@@ -683,7 +683,7 @@ public class X12Envelope extends Envelope {
 		} else if ((format == Format.VALID_XML_FORMAT) || (format == Format.VALID_XML_FORMAT_WITH_POSITION)) {
 			sb.append("<?xml version=\"1.0\"?>" + io.github.ediandxml.oboe.util.Util.lineFeed);
 			sb.append("<!DOCTYPE envelope PUBLIC \"envelope\" "
-					+ "\"https://raw.githubusercontent.com/ediandxml/OBOE/main/envelope.dtd\">"
+					+ "\"https://raw.githubusercontent.com/EDIandXML/OBOE/main/src/main/resources/envelope.dtd\">"
 					+ io.github.ediandxml.oboe.util.Util.lineFeed);
 			sb.append("<envelope format=\"X12\"");
 			sb.append(">" + io.github.ediandxml.oboe.util.Util.lineFeed);

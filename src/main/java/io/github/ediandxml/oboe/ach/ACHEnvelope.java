@@ -220,7 +220,7 @@ public class ACHEnvelope extends Envelope {
 		} else if ((format == Format.VALID_XML_FORMAT) || (format == Format.VALID_XML_FORMAT_WITH_POSITION)) {
 			sb.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>" + io.github.ediandxml.oboe.util.Util.lineFeed);
 			sb.append("<!DOCTYPE envelope PUBLIC \"envelope\" "
-					+ "\"https://raw.githubusercontent.com/ediandxml/OBOE/main/envelope.dtd\">"
+					+ "\"https://raw.githubusercontent.com/EDIandXML/OBOE/main/src/main/resources/envelope.dtd\">"
 					+ io.github.ediandxml.oboe.util.Util.lineFeed);
 			sb.append("<envelope format=\""
 					+ ((transID.equals("CBR")) || (transID.equals("PBR")) ? "ACH-CBR-PBR" : "ACH") + "\"");
