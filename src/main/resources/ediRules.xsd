@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified" attributeFormDefault="unqualified">
-
 	<!-- Root elements: envelope or transactionSet -->
 	<xs:element name="envelope">
 		<xs:complexType>
@@ -26,26 +25,29 @@
 
 	<xs:element name="transactionSet">
 		<xs:complexType>
-            <xs:sequence>
-                <xs:element ref="table" maxOccurs="unbounded"/>
-            </xs:sequence>
-            <xs:attribute name="name" type="xs:string" use="required"/>
-            <xs:attribute name="id" type="xs:string" use="required"/>
-            <xs:attribute name="revision" type="xs:string"/>
-            <xs:attribute name="functionalGroup" type="xs:string"/>
-            <xs:attribute name="description" type="xs:string"/>
-            <xs:attribute name="validatingMethod" type="xs:string"/>
-            <xs:attribute name="shortName" type="xs:string"/>
-        </xs:complexType>
+			<xs:sequence>
+				<xs:element ref="table" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string"
+				use="required" />
+			<xs:attribute name="id" type="xs:string" use="required" />
+			<xs:attribute name="revision" type="xs:string" />
+			<xs:attribute name="functionalGroup" type="xs:string" />
+			<xs:attribute name="description" type="xs:string" />
+			<xs:attribute name="validatingMethod" type="xs:string" />
+			<xs:attribute name="shortName" type="xs:string" />
+		</xs:complexType>
 	</xs:element>
 
 	<!-- Functional Group -->
 	<xs:element name="functionalGroup">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="segment" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="segment" minOccurs="0"
+					maxOccurs="unbounded" />
 				<xs:element ref="transactionSet" />
-				<xs:element ref="segment" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="segment" minOccurs="0"
+					maxOccurs="unbounded" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -84,9 +86,11 @@
 				</xs:sequence>
 				<xs:element ref="copyLoop" />
 			</xs:choice>
-			<xs:attribute name="name" type="xs:string" use="required" />
+			<xs:attribute name="name" type="xs:string"
+				use="required" />
 			<xs:attribute name="id" type="xs:string" use="required" />
-			<xs:attribute name="occurs" type="xs:string" use="required" />
+			<xs:attribute name="occurs" type="xs:string"
+				use="required" />
 			<xs:attribute name="required" default="M">
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -112,7 +116,8 @@
 	<!-- CopyLoop -->
 	<xs:element name="copyLoop">
 		<xs:complexType>
-			<xs:attribute name="refid" type="xs:string" use="required" />
+			<xs:attribute name="refid" type="xs:string"
+				use="required" />
 		</xs:complexType>
 	</xs:element>
 
@@ -125,13 +130,16 @@
 						<xs:element ref="compositeDE" minOccurs="0" />
 						<xs:element ref="dataElement" minOccurs="0" />
 					</xs:choice>
-					<xs:element ref="elementRule" minOccurs="0" maxOccurs="unbounded" />
+					<xs:element ref="elementRule" minOccurs="0"
+						maxOccurs="unbounded" />
 				</xs:sequence>
 				<xs:element ref="copySegment" />
 			</xs:choice>
-			<xs:attribute name="name" type="xs:string" use="required" />
+			<xs:attribute name="name" type="xs:string"
+				use="required" />
 			<xs:attribute name="id" type="xs:string" use="required" />
-			<xs:attribute name="sequence" type="xs:string" use="required" />
+			<xs:attribute name="sequence" type="xs:string"
+				use="required" />
 			<xs:attribute name="description" type="xs:string" />
 			<xs:attribute name="occurs" type="xs:string" />
 			<xs:attribute name="required" default="M">
@@ -159,7 +167,8 @@
 	<!-- CopySegment -->
 	<xs:element name="copySegment">
 		<xs:complexType>
-			<xs:attribute name="refid" type="xs:string" use="required" />
+			<xs:attribute name="refid" type="xs:string"
+				use="required" />
 		</xs:complexType>
 	</xs:element>
 
@@ -169,7 +178,8 @@
 			<xs:sequence>
 				<xs:element ref="dataElement" maxOccurs="unbounded" />
 			</xs:sequence>
-			<xs:attribute name="name" type="xs:string" use="required" />
+			<xs:attribute name="name" type="xs:string"
+				use="required" />
 			<xs:attribute name="id" type="xs:string" use="required" />
 			<xs:attribute name="description" type="xs:string" />
 			<xs:attribute name="occurs" type="xs:string" default="1" />
@@ -199,7 +209,8 @@
 				</xs:choice>
 				<xs:element ref="default" minOccurs="0" />
 			</xs:sequence>
-			<xs:attribute name="name" type="xs:string" use="required" />
+			<xs:attribute name="name" type="xs:string"
+				use="required" />
 			<xs:attribute name="id" type="xs:string" use="required" />
 			<xs:attribute name="type" use="required">
 				<xs:simpleType>
@@ -229,8 +240,10 @@
 			<xs:attribute name="required" type="xs:string" />
 			<xs:attribute name="description" type="xs:string" />
 			<xs:attribute name="occurs" type="xs:string" default="1" />
-			<xs:attribute name="minLength" type="xs:string" use="required" />
-			<xs:attribute name="maxLength" type="xs:string" use="required" />
+			<xs:attribute name="minLength" type="xs:string"
+				use="required" />
+			<xs:attribute name="maxLength" type="xs:string"
+				use="required" />
 			<xs:attribute name="validatingMethod" type="xs:string" />
 			<xs:attribute name="used" default="Y">
 				<xs:simpleType>
@@ -245,8 +258,7 @@
 	</xs:element>
 
 	<!-- ============================================= -->
-	<!-- idList is NOT a child of idCode               -->
-	<!-- idValue IS a direct child of idCode           -->
+	<!-- idValue IS a direct child of idCode -->
 	<!-- ============================================= -->
 
 	<xs:element name="idList">
@@ -256,10 +268,8 @@
 					<xs:complexType mixed="true">
 						<!-- idValue is a direct child of idCode -->
 						<xs:sequence>
-							<xs:element name="idValue"
-								type="xs:string"
-								minOccurs="0"
-								maxOccurs="1" />
+							<xs:element name="idValue" type="xs:string"
+								minOccurs="0" maxOccurs="1" />
 						</xs:sequence>
 						<!-- Original 'used' attribute is preserved -->
 						<xs:attribute name="used" default="Y">
@@ -279,14 +289,16 @@
 	<!-- idListClass -->
 	<xs:element name="idListClass">
 		<xs:complexType>
-			<xs:attribute name="className" type="xs:string" use="required" />
+			<xs:attribute name="className" type="xs:string"
+				use="required" />
 		</xs:complexType>
 	</xs:element>
 
 	<!-- idListFile -->
 	<xs:element name="idListFile">
 		<xs:complexType>
-			<xs:attribute name="fileName" type="xs:string" use="required" />
+			<xs:attribute name="fileName" type="xs:string"
+				use="required" />
 			<xs:attribute name="include" type="xs:string" />
 			<xs:attribute name="exclude" type="xs:string" />
 		</xs:complexType>
@@ -318,16 +330,19 @@
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
 						<xs:enumeration value="oneOrMoreMustExist" />
-						<xs:enumeration value="ifFirstExistsThenAllMustExist" />
+						<xs:enumeration
+							value="ifFirstExistsThenAllMustExist" />
 						<xs:enumeration value="oneAndOnlyOneMayExist" />
-						<xs:enumeration value="ifFirstExistsThenAtLeastOneMoreMustExist" />
+						<xs:enumeration
+							value="ifFirstExistsThenAtLeastOneMoreMustExist" />
 						<xs:enumeration value="allOrNoneMayExist" />
-						<xs:enumeration value="ifFirstExistsThenNoOthersMayExist" />
+						<xs:enumeration
+							value="ifFirstExistsThenNoOthersMayExist" />
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:attribute>
-			<xs:attribute name="positions" type="xs:string" use="required" />
+			<xs:attribute name="positions" type="xs:string"
+				use="required" />
 		</xs:complexType>
 	</xs:element>
-
 </xs:schema>
